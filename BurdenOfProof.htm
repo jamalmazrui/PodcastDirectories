@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Jamal Mazrui" />
+  <title>Burden of Proof Directory</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Burden of Proof Directory</h1>
+<p class="subtitle">A Screen-Reader-Friendly Guide to the Burden of
+Proof Podcast</p>
+<p class="author">Jamal Mazrui</p>
+<p class="date">September 2026</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>A screen-reader-friendly directory of the podcast Burden of Proof,
+covering 37 public episodes from 2025 to 2026. Each episode links to its
+page and lists its metadata in separate, alphabetically sorted
+fields.</p>
+</div>
+</header>
+<h1 id="burden-of-proof-directory">Burden of Proof Directory</h1>
+<p>Burden of Proof, from ABC News and 20/20, is a narrative true-crime
+series hosted by legal analyst Brian Buckmire. Its seasons examine a
+single high-profile case, including Bad Rap: The Case Against Diddy and
+the Luigi Mangione trial.</p>
+<p>This directory covers <strong>37 public episodes</strong>, 2025 to
+2026. Each episode links to its page and lists the metadata on record,
+one kind per field, in alphabetical order: <strong>Date</strong>,
+<strong>Duration</strong>, <strong>Episode</strong>, and
+<strong>Summary</strong>, each shown only when available. Titles ignore
+a leading “A”, “An”, or “The”; people are sorted by surname; all sorting
+ignores case.</p>
+<p>Episodes are grouped by season and, within each group, listed in
+order by title. Appendixes reorder them by date, by title.</p>
+<p>For current details, the linked pages are authoritative. This
+directory was compiled by Jamal Mazrui from the show’s public feed.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><p><a href="#season-2">Season 2 (4)</a></p></li>
+<li><p><a href="#season-1">Season 1 (30)</a></p></li>
+<li><p><a href="#trailers-and-cross-promotions">Trailers and
+Cross-Promotions (3)</a></p></li>
+<li><p><a href="#appendix-a-episodes-by-date">Appendix A: Episodes by
+Date</a></p></li>
+<li><p><a href="#appendix-b-episodes-by-title">Appendix B: Episodes by
+Title</a></p></li>
+</ul>
+<h2 id="season-2">Season 2 (4)</h2>
+<h3 id="burdenofproof-b-t"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP5394070569.mp3">“B.T.”</a></h3>
+<p><strong>Date:</strong> August 17, 2026</p>
+<p><strong>Duration:</strong> 36:58</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Summary:</strong> Who was UnitedHealthcare CEO Brian
+Thompson?</p>
+<h3 id="burdenofproof-christmastime-in-altoona"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP2917256879.mp3">Christmastime
+in Altoona</a></h3>
+<p><strong>Date:</strong> August 10, 2026</p>
+<p><strong>Duration:</strong> 41:02</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Summary:</strong> The manhunt for the alleged shooter of
+UnitedHealthcare CEO Brian Thompson comes to an end at a McDonald’s in
+Altoona, PA.</p>
+<h3 id="burdenofproof-free-luigi"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP8170228904.mp3">“Free
+Luigi”</a></h3>
+<p><strong>Date:</strong> August 31, 2026</p>
+<p><strong>Duration:</strong> 38:36</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Summary:</strong> How did the killing of one man become a
+flashpoint for widespread frustration with America’s healthcare
+industry?</p>
+<h3 id="burdenofproof-mister-cactus"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP6573198558.mp3">“Mister
+Cactus”</a></h3>
+<p><strong>Date:</strong> August 24, 2026</p>
+<p><strong>Duration:</strong> 43:09</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Summary:</strong> Some people who crossed paths with Luigi
+Mangione throughout his life say he was kind and had a promising future.
+How did Brian Thompson’s shooter change in the lead-up to his
+arrest?</p>
+<h2 id="season-1">Season 1 (30)</h2>
+<h3 id="burdenofproof-before-and-after"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP4643485020.mp3?updated=1744659985">Before
+and After</a></h3>
+<p><strong>Date:</strong> April 15, 2025</p>
+<p><strong>Duration:</strong> 32:49</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Summary:</strong> Soon after Cassie and Diddy end their
+relationship, Diddy rebrands himself again, as Sean “Love” Combs. He’s
+on his way to becoming hip hop’s third billionaire, wins lifetime
+achievement awards and gets the key to New York City. But in 2023,
+Cassie files a 35-page lawsuit against him, alleging he physically and
+sexually abused her. Her suit is settled quickly and quietly, but it’s
+just the beginning of Diddy’s legal issues. In the weeks and months
+following Cassie’s suit, he’s hit with dozens more lawsuits from people
+alleging he abused them too. Combs denies abusing anyone. If you or
+someone you know is a victim of sexual assault, please call the National
+Sexual Assault Hotline: 1-800-656-HOPE or go to rainn.org</p>
+<h3
+id="burdenofproof-burden-of-proof-diddy-made-death-threats-according-to-key-witness"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP7746090172.mp3?updated=1748390002">Burden
+of Proof: Diddy Made Death Threats, According to Key Witness</a></h3>
+<p><strong>Date:</strong> May 28, 2025</p>
+<p><strong>Duration:</strong> 23:37</p>
+<p><strong>Episode:</strong> 16</p>
+<p><strong>Summary:</strong> Diddy’s former assistant Capricorn Clark
+takes the stand and testifies that Diddy threatened to kill rapper Kid
+Cudi. Clark also testifies to being held against her will twice and made
+to undergo lie detector tests – repeatedly – because of suspicion that
+she stole jewelry loaned to Combs. Analysis of Clark’s testimony from
+Brian Buckmire and others on “Burden of Proof: The Case Against Diddy”
+which streams weekdays at 5:30PM Eastern on ABC News Live. Find it on
+Disney+, Hulu, or on most of your favorite streaming apps</p>
+<h3 id="burdenofproof-burden-of-proof-follow-the-money"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP8887242444.mp3?updated=1748994480">Burden
+of Proof: Follow the Money</a></h3>
+<p><strong>Date:</strong> June 3, 2025</p>
+<p><strong>Duration:</strong> 26:31</p>
+<p><strong>Episode:</strong> 19</p>
+<p><strong>Summary:</strong> Today was all about the money, in the trial
+of Sean ‘Diddy’ Combs. An Intercontinental Hotel employee testified that
+Combs paid him $100,000 in cash to hand over the video of Diddy
+attacking Cassie. Eddy Garcia told the courtroom that the mogul called
+him “Eddy, my Angel.” Also, longtime Combs’ Enterprises Chief of Finance
+explained to the jury how business was conducted in the company.
+Analysis of witness testimony from Brian Buckmire and others on “Burden
+of Proof: The Case Against Diddy” which streams weekdays at 5:30PM
+Eastern on ABC News Live. Find it on Disney+, Hulu, or on most of your
+favorite streaming apps</p>
+<h3 id="burdenofproof-burden-of-proof-the-defense-s-closing-argument"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP3970891905.mp3?updated=1751305787">Burden
+of Proof: The Defense’s Closing Argument</a></h3>
+<p><strong>Date:</strong> June 27, 2025</p>
+<p><strong>Duration:</strong> 26:31</p>
+<p><strong>Episode:</strong> 27</p>
+<p><strong>Summary:</strong> Court adjourned Friday with the conclusion
+of closing arguments. Sean Combs’ lead defense attorney Marc Agnifilo
+attacked the government’s charges, accusing them of turning Diddy’s sex
+life into a crime scene. Analysis of closings from Brian Buckmire and
+others on “Burden of Proof: The Case Against Diddy” which streams
+weekdays at 5:30 PM Eastern on ABC News Live. Find it on Disney+, Hulu,
+or on most of your favorite streaming apps</p>
+<h3 id="burdenofproof-downfall"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP4597428755.mp3?updated=1745282451">Downfall</a></h3>
+<p><strong>Date:</strong> April 22, 2025</p>
+<p><strong>Duration:</strong> 47:34</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Summary:</strong> As the wave of civil lawsuits against Diddy
+continues to grow, in March of 2024, federal agents raid two of his
+properties in connection to a human trafficking investigation. Just a
+couple months later, an old video of Diddy beating, kicking and dragging
+his then-girlfriend Cassie Ventura in the hallway of a hotel surfaces,
+with devastating consequences. He publicly apologizes for his behavior
+and says he went to therapy. By September 2024, he’s arrested and
+indicted on federal charges of racketeering, sex trafficking, and
+transportation to engage in prostitution. He pleads not guilty to all
+charges. If you or someone you know is a victim of sexual assault,
+please call the National Sexual Assault Hotline: 1-800-656-HOPE or go to
+rainn.org</p>
+<h3 id="burdenofproof-invincible"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP6968982464.mp3?updated=1743104631">Invincible</a></h3>
+<p><strong>Date:</strong> April 1, 2025</p>
+<p><strong>Duration:</strong> 51:41</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Summary:</strong> We chart Diddy’s rise from musician to
+mogul, from the center of hip-hop to the center of American culture. But
+that rise wasn’t always a smooth ascent. Along the way, he had moments
+of alleged violence and brushes with the law. Were these lapses in
+judgment or serious red flags that signaled a darker side to his
+success?</p>
+<h3 id="burdenofproof-it-s-all-about-the-sentence"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP5816706872.mp3?updated=1759555918">It’s
+All About the Sentence</a></h3>
+<p><strong>Date:</strong> October 4, 2025</p>
+<p><strong>Duration:</strong> 20:45</p>
+<p><strong>Episode:</strong> 31</p>
+<p><strong>Summary:</strong> Diddy’s sentencing hearing featured a
+highly-produced video from the defense, tearful testimony from his
+children, and attorneys who gave statements testifying to his character.
+None of his victims appeared in court. The judge sentenced him to a
+little more than four years in prison</p>
+<h3 id="burdenofproof-me-u"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP1296784107.mp3?updated=1744131271">Me
+&amp; U</a></h3>
+<p><strong>Date:</strong> April 8, 2025</p>
+<p><strong>Duration:</strong> 51:08</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Summary:</strong> Diddy signs a young singer with a hit
+single who’s on the fast track to fame. Cassie Ventura reportedly agrees
+to a 10 album deal. They become romantically involved and Cassie’s
+career flatlines, leaving fans wondering why she only released one
+studio album. We chart their decade-long relationship – from the
+glamorous red carpet appearances to allegations of hidden abuse. A
+warning that this episode includes discussion of sexual violence and
+abuse. If you or someone you know is a victim of domestic violence,
+please call the domestic violence hotline at: 1-800-942-6906 or go
+to</p>
+<h3 id="burdenofproof-party-s-over"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP3085443973.mp3?updated=1742907990">Party’s
+Over</a></h3>
+<p><strong>Date:</strong> March 25, 2025</p>
+<p><strong>Duration:</strong> 36:07</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Summary:</strong> Diddy was a legendary party host. His
+star-studded “white parties” were glittering displays of wealth and
+social capital that started in the world of hip-hop, and ultimately
+expanded far beyond it. But after a criminal indictment alleging sex
+trafficking, Diddy is now locked up, fighting to prove his innocence,
+stuck in a place that couldn’t be more different from the luxury he’s
+used to</p>
+<h3 id="burdenofproof-the-trial-a-good-juror"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP4751285979.mp3?updated=1748014383">The
+Trial: A “Good Juror”</a></h3>
+<p><strong>Date:</strong> May 9, 2025</p>
+<p><strong>Duration:</strong> 24:00</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Summary:</strong> Jury experts say it’s more like jury
+“de-selection,” than selection. Picking a jury is about trying to
+eliminate potential jurors who might be bad for your side, while leaving
+the ones who might be favorable. Jury consultant Eric Rudich explains
+how attorneys try to suss these out</p>
+<h3 id="burdenofproof-the-trial-a-heated-cross"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP2861688825.mp3?updated=1748917883">The
+Trial: A Heated Cross</a></h3>
+<p><strong>Date:</strong> June 3, 2025</p>
+<p><strong>Duration:</strong> 20:54</p>
+<p><strong>Episode:</strong> 18</p>
+<p><strong>Summary:</strong> Cross-examination of “Mia,” a former Combs
+assistant, gets contentious. Plus, we answer more of your questions on
+non-disclosure agreements, no-show witnesses and lesser charges.
+Meanwhile, outside the courtroom, the looming question of a presidential
+pardon, and Suge Knight weighs in</p>
+<h3 id="burdenofproof-the-trial-a-jury-of-one-s-peers"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP5617785370.mp3?updated=1746790762">The
+Trial: A Jury of One’s Peers</a></h3>
+<p><strong>Date:</strong> May 6, 2025</p>
+<p><strong>Duration:</strong> 16:39</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Summary:</strong> The citizens of New York who may serve on
+the jury in Sean Combs’ federal trial begin to answer questions. What it
+takes to assemble a jury in a high-profile case like this</p>
+<h3 id="burdenofproof-the-trial-abuse-or-coercion"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP6185956704.mp3?updated=1747142645">The
+Trial: Abuse or Coercion?</a></h3>
+<p><strong>Date:</strong> May 13, 2025</p>
+<p><strong>Duration:</strong> 18:06</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Summary:</strong> The newly seated jury heard opening
+statements with dueling explanations of events: The government said the
+evidence will show that the sexual conduct in this case was coercive and
+criminal. The defense conceded Combs “has a temper” and “got violent”
+when they say he drank or used drugs, but said domestic violence is not
+part of the charges. Early prosecution witnesses included a former hotel
+security guard who testified about Combs’s violence toward Cassie in a
+2016 incident and a male escort</p>
+<h3 id="burdenofproof-the-trial-after-the-verdict"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP2845263469.mp3?updated=1751950880">The
+Trial: After the Verdict</a></h3>
+<p><strong>Date:</strong> July 8, 2025</p>
+<p><strong>Duration:</strong> 43:46</p>
+<p><strong>Episode:</strong> 30</p>
+<p><strong>Summary:</strong> Last week, the jury in USA v. Sean Combs
+returned a split verdict. Reactions have been split, too. Lots of people
+have weighed in – from Sean Combs’ family to other celebrities, to you:
+our listeners. As we wrap up trial coverage, ABC News Legal Contributor
+Brian Buckmire sits down with ABC’s Tonya Simpson to dissect the verdict
+and process what it might mean for Diddy’s legacy. Also, Brian answers
+your post-verdict questions. We’ll be back in your feed for Diddy’s
+sentencing</p>
+<h3 id="burdenofproof-the-trial-cassie-ventura-takes-the-stand"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP9311004219.mp3?updated=1747176983">The
+Trial: Cassie Ventura Takes the Stand</a></h3>
+<p><strong>Date:</strong> May 13, 2025</p>
+<p><strong>Duration:</strong> 27:34</p>
+<p><strong>Episode:</strong> 11</p>
+<p><strong>Summary:</strong> All eyes were on Cassie Ventura as she
+testified in a packed Manhattan courtroom today. Analysis of her
+testimony from Brian Buckmire and others on ” Burden of Proof: The Case
+Against Diddy” which streams weekdays at 5:30 PM Eastern on ABC News
+Live. Find it on Disney+, Hulu, or on most of your favorite streaming
+apps</p>
+<h3
+id="burdenofproof-the-trial-cassie-ventura-s-second-day-of-testimony"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP5130610433.mp3?updated=1747342171">The
+Trial: Cassie Ventura’s Second Day of Testimony</a></h3>
+<p><strong>Date:</strong> May 14, 2025</p>
+<p><strong>Duration:</strong> 26:00</p>
+<p><strong>Episode:</strong> 12</p>
+<p><strong>Summary:</strong> For a second day, Cassie Ventura was on the
+stand in the trial of Sean Diddy Combs. Hear analysis from ABC News
+Live’s “Burden of Proof: The Case Against Diddy.” The show streams
+weekdays at 5:30 p.m. Eastern on ABC News Live. You can find it on
+Disney+, Hulu, or on most of your favorite streaming apps</p>
+<h3 id="burdenofproof-the-trial-diddy-gets-scolded"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP1736102469.mp3?updated=1749177762">The
+Trial: Diddy Gets Scolded</a></h3>
+<p><strong>Date:</strong> June 6, 2025</p>
+<p><strong>Duration:</strong> 23:11</p>
+<p><strong>Episode:</strong> 20</p>
+<p><strong>Summary:</strong> Brian Buckmire talks with someone at ABC
+who’s been tracking Diddy’s story very closely: Stephanie Maurice
+coordinates all the interview bookings for ABC’s coverage of Diddy
+(including this podcast!). She’s been in the courtroom watching the
+explosive testimony and comparing it with allegations from the civil
+lawsuits against Diddy. She’s got her eyes on Diddy everyday in court
+and she’s noticed how expressive he’s been during testimony. The judge
+has taken note, too</p>
+<h3 id="burdenofproof-the-trial-evidence"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP3090705498.mp3?updated=1748573707">The
+Trial: Evidence</a></h3>
+<p><strong>Date:</strong> May 30, 2025</p>
+<p><strong>Duration:</strong> 24:59</p>
+<p><strong>Episode:</strong> 17</p>
+<p><strong>Summary:</strong> Brian Buckmire sits down with ABC’s Peter
+Charalambous for a deep dive into the evidence of USA v. Sean Combs.
+Over 200 exhibits have been entered into evidence and seen by the jury
+to try to bolster both the prosecution and defense’s cases. Plus, the
+biggest moments from court this week – including the defense moving for
+a mistrial and testimony from former employees of Combs. One telling the
+jury she was kidnapped and another testifying that she couldn’t leave
+whenever she wanted, only when she had permission</p>
+<h3 id="burdenofproof-the-trial-new-week-new-juror"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP2284702587.mp3?updated=1750127298">The
+Trial: New Week, New Juror</a></h3>
+<p><strong>Date:</strong> June 17, 2025</p>
+<p><strong>Duration:</strong> 22:32</p>
+<p><strong>Episode:</strong> 23</p>
+<p><strong>Summary:</strong> The judge in Sean Combs’ trial removed a
+juror following questions about his candor and whether – as the judge
+said – he “shaded answers to get on and stay on the jury.” An alternate
+juror took his place. The prosecution could rest its case as soon as
+Wednesday. And Brian Buckmire answers your questions about why the jury
+isn’t sequestered, why there are no cameras in federal court and if
+prosecutors would ever go after alleged victims as co-conspirators</p>
+<h3 id="burdenofproof-the-trial-prosecutors-go-for-the-big-fish"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP5105723385.mp3?updated=1748013218">The
+Trial: Prosecutors Go for the Big Fish</a></h3>
+<p><strong>Date:</strong> May 23, 2025</p>
+<p><strong>Duration:</strong> 35:46</p>
+<p><strong>Episode:</strong> 15</p>
+<p><strong>Summary:</strong> Brian recaps key moments in court this
+week, including Kid Cudi taking the stand. Then, a conversation with
+former prosecutor Moira Penza who won a conviction in the high profile
+RICO and sex trafficking case against Keith Raniere of NXIVM. Diddy
+faces those charges as well, and two of the defense attorneys Penza went
+up against in that 2019 trial are now representing him</p>
+<h3 id="burdenofproof-the-trial-split-verdict"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP1630766719.mp3?updated=1751498387">The
+Trial: Split Verdict</a></h3>
+<p><strong>Date:</strong> July 3, 2025</p>
+<p><strong>Duration:</strong> 12:32</p>
+<p><strong>Episode:</strong> 29</p>
+<p><strong>Summary:</strong> The jury in USA v. Sean Combs returned a
+verdict in his trial Wednesday morning. They found him guilty of two
+counts of transportation to engage in prostitution, but not guilty on
+the more serious charges he faced. ABC New Legal Contributor Brian
+Buckmire brings us this breaking news episode, sharing his reactions to
+the verdict, as well as what to expect from Combs’s future
+sentencing</p>
+<h3 id="burdenofproof-the-trial-star-witness"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP5181519981.mp3?updated=1747403764">The
+Trial: Star Witness</a></h3>
+<p><strong>Date:</strong> May 16, 2025</p>
+<p><strong>Duration:</strong> 22:48</p>
+<p><strong>Episode:</strong> 13</p>
+<p><strong>Summary:</strong> With no cameras in the courtroom, one of
+the key people taking in every word and noting reactions in the
+courtroom is ABC Coordinating Producer Tonya Simpson who’s there with
+her pen and notebook. We’ll get her take on the dramatic testimony of
+Cassie Ventura, the government’s first major witness</p>
+<h3 id="burdenofproof-the-trial-the-prosecution-s-closing-argument"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP6516931201.mp3?updated=1751305821">The
+Trial: The Prosecution’s Closing Argument</a></h3>
+<p><strong>Date:</strong> June 27, 2025</p>
+<p><strong>Duration:</strong> 29:29</p>
+<p><strong>Episode:</strong> 26</p>
+<p><strong>Summary:</strong> The government reminded jurors of the
+complex web of witnesses and evidence it has presented over the past
+month and a half to try to prove Sean Combs guilty of racketeering and
+sex trafficking. The defense team will make its closing arguments
+Friday. ABC News legal contributors Channa Lloyd and Bernarda Villalona
+join Brian Buckmire to break down how prosecutors made their case</p>
+<h3 id="burdenofproof-the-trial-verdict-watch"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP6715064538.mp3?updated=1751950887">The
+Trial: Verdict Watch</a></h3>
+<p><strong>Date:</strong> July 1, 2025</p>
+<p><strong>Duration:</strong> 18:31</p>
+<p><strong>Episode:</strong> 28</p>
+<p><strong>Summary:</strong> The jury picked a foreperson, and not long
+after, the foreperson sent the judge a note about a juror who they claim
+could not follow the judge’s instructions. ABC News legal contributor
+Brian Buckmire examines the first day of deliberations and answers your
+questions about hung juries, what jurors can reveal after they’ve
+executed their duties, and the sentence Sean Combs could face if
+convicted. Combs maintains his innocence</p>
+<h3 id="burdenofproof-the-trial-who-s-the-leak"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP6755700181.mp3?updated=1750352372">The
+Trial: Who’s the Leak?</a></h3>
+<p><strong>Date:</strong> June 20, 2025</p>
+<p><strong>Duration:</strong> 31:05</p>
+<p><strong>Episode:</strong> 24</p>
+<p><strong>Summary:</strong> This week in USA v Sean Combs: The judge is
+concerned that his court has a leak, there’s another issue with one of
+the jurors, and the jury saw videos of freak offs for the first time.
+Brian Buckmire also talks to prominent defense attorney Donna Rotunno,
+who represented Harvey Weinstein, about possible strategies for Sean
+Combs’ defense</p>
+<h3 id="burdenofproof-the-trial-your-questions-asked-and-answered"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP4776904103.mp3?updated=1748014545">The
+Trial: Your Questions Asked and Answered</a></h3>
+<p><strong>Date:</strong> May 20, 2025</p>
+<p><strong>Duration:</strong> 15:57</p>
+<p><strong>Episode:</strong> 14</p>
+<p><strong>Summary:</strong> Brian Buckmire answers your questions about
+domestic violence, jury notes and the possibility of a presidential
+pardon</p>
+<h3 id="burdenofproof-the-trial-zero-witnesses-for-the-defense"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP1123996386.mp3?updated=1750729354">The
+Trial: Zero Witnesses for the Defense</a></h3>
+<p><strong>Date:</strong> June 24, 2025</p>
+<p><strong>Duration:</strong> 21:04</p>
+<p><strong>Episode:</strong> 25</p>
+<p><strong>Summary:</strong> The case could be in the hands of the jury
+by Friday, and Brian Buckmire answers more of your questions</p>
+<h3 id="burdenofproof-the-trial-i-m-not-a-sex-robot"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP8108755837.mp3?updated=1749527200">The
+Trial: “I’m not a sex robot”</a></h3>
+<p><strong>Date:</strong> June 10, 2025</p>
+<p><strong>Duration:</strong> 20:10</p>
+<p><strong>Episode:</strong> 21</p>
+<p><strong>Summary:</strong> “Jane” returned to the stand and told
+jurors that Cassie Ventura’s lawsuit was like “reading my own sexual
+trauma.” She testified her alleged “hotel nights” were a lot like
+Cassie’s alleged freak-offs. The jury also heard Diddy’s voice in audio
+evidence. “Jane” told the jury she stood up to her boyfriend but also
+felt trapped because he paid for the roof over her head. And, Brian
+Buckmire answers your questions about jury nullification, mistrials, and
+Bibles in court</p>
+<h3 id="burdenofproof-the-trial-you-went-to-another-man-s-freak-off"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP5764687758.mp3?updated=1749822723">The
+Trial: “You went to another man’s freak-off?”</a></h3>
+<p><strong>Date:</strong> June 13, 2025</p>
+<p><strong>Duration:</strong> 18:36</p>
+<p><strong>Episode:</strong> 22</p>
+<p><strong>Summary:</strong> “Jane” wrapped up a week on the stand.
+Combs’ former girlfriend told jurors about her resentment over
+participating in “hotel nights” which she believed other girlfriends
+didn’t do. She also described a trip to Las Vegas with another famous
+rapper. Brian Buckmire talks with ABC Chief Investigative Correspondent
+Aaron Katersky about the cross examination of “Jane.”</p>
+<h3 id="burdenofproof-usa-v-sean-combs"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP2691171072.mp3?updated=1745876311">USA
+v. Sean Combs</a></h3>
+<p><strong>Date:</strong> April 29, 2025</p>
+<p><strong>Duration:</strong> 31:23</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Summary:</strong> Sean Combs now awaits trial in Brooklyn’s
+infamous Metropolitan Detention Center. In May, his highly publicized
+case is scheduled to go to trial. What do we know about the charges
+Diddy faces, the case prosecutors plan to present, and how his legal
+team might try to get him acquitted? Host and attorney Brian Buckmire
+breaks down the legal issues of Diddy’s upcoming trial with Aaron
+Katersky, Sean Combs now awaits trial in Brooklyn’s infamous
+Metropolitan Detention Center. In May, his highly publicized case is
+scheduled to go to trial. What do we know about the charges Diddy faces,
+the case prosecutors plan to present, and how his legal team might try
+to get him acquitted? Host and attorney Brian Buckmire breaks down the
+legal issues of Diddy’s upcoming trial with Aaron Katersky, Chief
+Investigative Correspondent for ABC News</p>
+<h2 id="trailers-and-cross-promotions">Trailers and Cross-Promotions
+(3)</h2>
+<h3 id="burdenofproof-coming-soon-burden-of-proof-luigi-mangione"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP4209116507.mp3">Coming
+Soon: ‘Burden of Proof: Luigi Mangione’</a></h3>
+<p><strong>Date:</strong> July 28, 2026</p>
+<p><strong>Duration:</strong> 2:02</p>
+<p><strong>Summary:</strong> Nearly a year after Bad Rap: The Case
+Against Diddy, ABC News and 20/20 are back with season two of Burden of
+Proof. This season, Brian Buckmire will follow the latest case to
+captivate the American public. Luigi Mangione will soon be in a
+Manhattan courtroom, standing trial for the murder of United Healthcare
+CEO Brian Thompson, who was shot dead on a New York City sidewalk in
+December 2024. In this five-part series, ABC News Legal Analyst Brian
+Buckmire examines the case against Mangione – and explores how Brian
+Thompson’s murder affected the conversation about healthcare in America.
+New episodes release weekly right here in this feed beginning Monday,
+August 10, or early and ad-free for subscribers to 20/20 True Crime+.
+Visit apple.co/2020truecrime to learn more about 20/20 True Crime+ and
+start your free trial today. Terms apply</p>
+<h3 id="burdenofproof-introducing-bad-rap-the-case-against-diddy"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP8878166522.mp3?updated=1741896092">Introducing
+‘Bad Rap: The Case Against Diddy’</a></h3>
+<p><strong>Date:</strong> March 11, 2025</p>
+<p><strong>Duration:</strong> 3:12</p>
+<p><strong>Summary:</strong> A new podcast from 20/20 and ABC Audio
+traces how whispers of abuse came to light and led to Diddy’s downfall.
+ABC News legal contributor Brian Buckmire takes listeners inside the
+rise and fall of Diddy, the allegations and his defense in a six-part
+weekly narrative series launching March 25, and returning with twice
+weekly real-time updates once the trial slated for May gets underway</p>
+<h3 id="burdenofproof-the-trial-countdown"><a
+href="https://www.podtrac.com/pts/redirect.mp3/pscrb.fm/rss/p/traffic.megaphone.fm/ESP8629925340.mp3?updated=1746746200">The
+Trial: Countdown</a></h3>
+<p><strong>Date:</strong> May 2, 2025</p>
+<p><strong>Duration:</strong> 14:33</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Summary:</strong> As the podcast shifts into trial coverage
+mode, host and ABC News legal contributor Brian Buckmire analyzes wins
+for both the prosecution and the defense in terms of what evidence the
+jury may see</p>
+<h2 id="appendix-a-episodes-by-date">Appendix A: Episodes by Date</h2>
+<p>Every episode in publication order, newest first, grouped by
+year.</p>
+<h3 id="section">2026</h3>
+<ul>
+<li><a href="#burdenofproof-free-luigi">“Free Luigi”</a> — August
+31</li>
+<li><a href="#burdenofproof-mister-cactus">“Mister Cactus”</a> — August
+24</li>
+<li><a href="#burdenofproof-b-t">“B.T.”</a> — August 17</li>
+<li><a href="#burdenofproof-christmastime-in-altoona">Christmastime in
+Altoona</a> — August 10</li>
+<li><a
+href="#burdenofproof-coming-soon-burden-of-proof-luigi-mangione">Coming
+Soon: ‘Burden of Proof: Luigi Mangione’</a> — July 28</li>
+</ul>
+<h3 id="section-1">2025</h3>
+<ul>
+<li><a href="#burdenofproof-it-s-all-about-the-sentence">It’s All About
+the Sentence</a> — October 4</li>
+<li><a href="#burdenofproof-the-trial-after-the-verdict">The Trial:
+After the Verdict</a> — July 8</li>
+<li><a href="#burdenofproof-the-trial-split-verdict">The Trial: Split
+Verdict</a> — July 3</li>
+<li><a href="#burdenofproof-the-trial-verdict-watch">The Trial: Verdict
+Watch</a> — July 1</li>
+<li><a
+href="#burdenofproof-burden-of-proof-the-defense-s-closing-argument">Burden
+of Proof: The Defense’s Closing Argument</a> — June 27</li>
+<li><a
+href="#burdenofproof-the-trial-the-prosecution-s-closing-argument">The
+Trial: The Prosecution’s Closing Argument</a> — June 27</li>
+<li><a
+href="#burdenofproof-the-trial-zero-witnesses-for-the-defense">The
+Trial: Zero Witnesses for the Defense</a> — June 24</li>
+<li><a href="#burdenofproof-the-trial-who-s-the-leak">The Trial: Who’s
+the Leak?</a> — June 20</li>
+<li><a href="#burdenofproof-the-trial-new-week-new-juror">The Trial: New
+Week, New Juror</a> — June 17</li>
+<li><a
+href="#burdenofproof-the-trial-you-went-to-another-man-s-freak-off">The
+Trial: “You went to another man’s freak-off?”</a> — June 13</li>
+<li><a href="#burdenofproof-the-trial-i-m-not-a-sex-robot">The Trial:
+“I’m not a sex robot”</a> — June 10</li>
+<li><a href="#burdenofproof-the-trial-diddy-gets-scolded">The Trial:
+Diddy Gets Scolded</a> — June 6</li>
+<li><a href="#burdenofproof-burden-of-proof-follow-the-money">Burden of
+Proof: Follow the Money</a> — June 3</li>
+<li><a href="#burdenofproof-the-trial-a-heated-cross">The Trial: A
+Heated Cross</a> — June 3</li>
+<li><a href="#burdenofproof-the-trial-evidence">The Trial: Evidence</a>
+— May 30</li>
+<li><a
+href="#burdenofproof-burden-of-proof-diddy-made-death-threats-according-to-key-witness">Burden
+of Proof: Diddy Made Death Threats, According to Key Witness</a> — May
+28</li>
+<li><a
+href="#burdenofproof-the-trial-prosecutors-go-for-the-big-fish">The
+Trial: Prosecutors Go for the Big Fish</a> — May 23</li>
+<li><a
+href="#burdenofproof-the-trial-your-questions-asked-and-answered">The
+Trial: Your Questions Asked and Answered</a> — May 20</li>
+<li><a href="#burdenofproof-the-trial-star-witness">The Trial: Star
+Witness</a> — May 16</li>
+<li><a
+href="#burdenofproof-the-trial-cassie-ventura-s-second-day-of-testimony">The
+Trial: Cassie Ventura’s Second Day of Testimony</a> — May 14</li>
+<li><a
+href="#burdenofproof-the-trial-cassie-ventura-takes-the-stand">The
+Trial: Cassie Ventura Takes the Stand</a> — May 13</li>
+<li><a href="#burdenofproof-the-trial-abuse-or-coercion">The Trial:
+Abuse or Coercion?</a> — May 13</li>
+<li><a href="#burdenofproof-the-trial-a-good-juror">The Trial: A “Good
+Juror”</a> — May 9</li>
+<li><a href="#burdenofproof-the-trial-a-jury-of-one-s-peers">The Trial:
+A Jury of One’s Peers</a> — May 6</li>
+<li><a href="#burdenofproof-the-trial-countdown">The Trial:
+Countdown</a> — May 2</li>
+<li><a href="#burdenofproof-usa-v-sean-combs">USA v. Sean Combs</a> —
+April 29</li>
+<li><a href="#burdenofproof-downfall">Downfall</a> — April 22</li>
+<li><a href="#burdenofproof-before-and-after">Before and After</a> —
+April 15</li>
+<li><a href="#burdenofproof-me-u">Me &amp; U</a> — April 8</li>
+<li><a href="#burdenofproof-invincible">Invincible</a> — April 1</li>
+<li><a href="#burdenofproof-party-s-over">Party’s Over</a> — March
+25</li>
+<li><a
+href="#burdenofproof-introducing-bad-rap-the-case-against-diddy">Introducing
+‘Bad Rap: The Case Against Diddy’</a> — March 11</li>
+</ul>
+<h2 id="appendix-b-episodes-by-title">Appendix B: Episodes by Title</h2>
+<p>Every episode in order by title, ignoring a leading “A”, “An”, or
+“The”.</p>
+<ul>
+<li><a href="#burdenofproof-b-t">“B.T.”</a></li>
+<li><a href="#burdenofproof-before-and-after">Before and After</a></li>
+<li><a
+href="#burdenofproof-burden-of-proof-diddy-made-death-threats-according-to-key-witness">Burden
+of Proof: Diddy Made Death Threats, According to Key Witness</a></li>
+<li><a href="#burdenofproof-burden-of-proof-follow-the-money">Burden of
+Proof: Follow the Money</a></li>
+<li><a
+href="#burdenofproof-burden-of-proof-the-defense-s-closing-argument">Burden
+of Proof: The Defense’s Closing Argument</a></li>
+<li><a href="#burdenofproof-christmastime-in-altoona">Christmastime in
+Altoona</a></li>
+<li><a
+href="#burdenofproof-coming-soon-burden-of-proof-luigi-mangione">Coming
+Soon: ‘Burden of Proof: Luigi Mangione’</a></li>
+<li><a href="#burdenofproof-downfall">Downfall</a></li>
+<li><a href="#burdenofproof-free-luigi">“Free Luigi”</a></li>
+<li><a
+href="#burdenofproof-introducing-bad-rap-the-case-against-diddy">Introducing
+‘Bad Rap: The Case Against Diddy’</a></li>
+<li><a href="#burdenofproof-invincible">Invincible</a></li>
+<li><a href="#burdenofproof-it-s-all-about-the-sentence">It’s All About
+the Sentence</a></li>
+<li><a href="#burdenofproof-me-u">Me &amp; U</a></li>
+<li><a href="#burdenofproof-mister-cactus">“Mister Cactus”</a></li>
+<li><a href="#burdenofproof-party-s-over">Party’s Over</a></li>
+<li><a href="#burdenofproof-the-trial-a-good-juror">The Trial: A “Good
+Juror”</a></li>
+<li><a href="#burdenofproof-the-trial-a-heated-cross">The Trial: A
+Heated Cross</a></li>
+<li><a href="#burdenofproof-the-trial-a-jury-of-one-s-peers">The Trial:
+A Jury of One’s Peers</a></li>
+<li><a href="#burdenofproof-the-trial-abuse-or-coercion">The Trial:
+Abuse or Coercion?</a></li>
+<li><a href="#burdenofproof-the-trial-after-the-verdict">The Trial:
+After the Verdict</a></li>
+<li><a
+href="#burdenofproof-the-trial-cassie-ventura-takes-the-stand">The
+Trial: Cassie Ventura Takes the Stand</a></li>
+<li><a
+href="#burdenofproof-the-trial-cassie-ventura-s-second-day-of-testimony">The
+Trial: Cassie Ventura’s Second Day of Testimony</a></li>
+<li><a href="#burdenofproof-the-trial-countdown">The Trial:
+Countdown</a></li>
+<li><a href="#burdenofproof-the-trial-diddy-gets-scolded">The Trial:
+Diddy Gets Scolded</a></li>
+<li><a href="#burdenofproof-the-trial-evidence">The Trial:
+Evidence</a></li>
+<li><a href="#burdenofproof-the-trial-new-week-new-juror">The Trial: New
+Week, New Juror</a></li>
+<li><a
+href="#burdenofproof-the-trial-prosecutors-go-for-the-big-fish">The
+Trial: Prosecutors Go for the Big Fish</a></li>
+<li><a href="#burdenofproof-the-trial-split-verdict">The Trial: Split
+Verdict</a></li>
+<li><a href="#burdenofproof-the-trial-star-witness">The Trial: Star
+Witness</a></li>
+<li><a
+href="#burdenofproof-the-trial-the-prosecution-s-closing-argument">The
+Trial: The Prosecution’s Closing Argument</a></li>
+<li><a href="#burdenofproof-the-trial-verdict-watch">The Trial: Verdict
+Watch</a></li>
+<li><a href="#burdenofproof-the-trial-who-s-the-leak">The Trial: Who’s
+the Leak?</a></li>
+<li><a
+href="#burdenofproof-the-trial-your-questions-asked-and-answered">The
+Trial: Your Questions Asked and Answered</a></li>
+<li><a
+href="#burdenofproof-the-trial-zero-witnesses-for-the-defense">The
+Trial: Zero Witnesses for the Defense</a></li>
+<li><a href="#burdenofproof-the-trial-i-m-not-a-sex-robot">The Trial:
+“I’m not a sex robot”</a></li>
+<li><a
+href="#burdenofproof-the-trial-you-went-to-another-man-s-freak-off">The
+Trial: “You went to another man’s freak-off?”</a></li>
+<li><a href="#burdenofproof-usa-v-sean-combs">USA v. Sean Combs</a></li>
+</ul>
+</body>
+</html>

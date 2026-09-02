@@ -1,0 +1,556 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Jamal Mazrui" />
+  <title>Dr. Death Directory</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Dr. Death Directory</h1>
+<p class="subtitle">A Screen-Reader-Friendly Guide to the Dr. Death
+Podcast</p>
+<p class="author">Jamal Mazrui</p>
+<p class="date">September 2026</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>A screen-reader-friendly directory of the podcast Dr. Death, covering
+17 public episodes from 2018 to 2026. Each episode links to its page and
+lists its metadata in separate, alphabetically sorted fields.</p>
+</div>
+</header>
+<h1 id="dr.-death-directory">Dr. Death Directory</h1>
+<p>Dr. Death, from Wondery and hosted by journalist Laura Beil,
+investigates egregious cases of medical malpractice and the doctors
+behind them, across multi-part seasons.</p>
+<p>This directory covers <strong>17 public episodes</strong>, 2018 to
+2026. Each episode links to its page and lists the metadata on record,
+one kind per field, in alphabetical order: <strong>Date</strong>,
+<strong>Duration</strong>, <strong>Episode</strong>, and
+<strong>Summary</strong>, each shown only when available. Titles ignore
+a leading “A”, “An”, or “The”; people are sorted by surname; all sorting
+ignores case.</p>
+<p>Episodes are grouped by season and, within each group, listed in
+order by title. Appendixes reorder them by date, by title.</p>
+<p>For current details, the linked pages are authoritative. This
+directory was compiled by Jamal Mazrui from the show’s public feed.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><p><a href="#season-5">Season 5 (7)</a></p></li>
+<li><p><a href="#season-4">Season 4 (6)</a></p></li>
+<li><p><a href="#season-3">Season 3 (1)</a></p></li>
+<li><p><a href="#season-2">Season 2 (1)</a></p></li>
+<li><p><a href="#season-1">Season 1 (1)</a></p></li>
+<li><p><a href="#trailers-and-cross-promotions">Trailers and
+Cross-Promotions (1)</a></p></li>
+<li><p><a href="#appendix-a-episodes-by-date">Appendix A: Episodes by
+Date</a></p></li>
+<li><p><a href="#appendix-b-episodes-by-title">Appendix B: Episodes by
+Title</a></p></li>
+</ul>
+<h2 id="season-5">Season 5 (7)</h2>
+<h3 id="drdeath-the-cowboy-dirty-laundry-s5-e4"><a
+href="https://rss.art19.com/episodes/fd5cef0d-3d6b-40e2-844e-36273df805da.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">The
+Cowboy | Dirty Laundry | S5-E4</a></h3>
+<p><strong>Date:</strong> June 18, 2026</p>
+<p><strong>Duration:</strong> 27:18</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Summary:</strong> A forgotten pair of surgical scrubs - and a
+thumb drive tucked inside - bring new revelations. While Dr Schneider
+juggles mounting pressure on all sides. See Privacy Policy at and
+California Privacy Notice at</p>
+<h3 id="drdeath-the-cowboy-icarus-s5-e6"><a
+href="https://rss.art19.com/episodes/05fd2407-4dc3-4456-8cc1-48c0468517d0.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">The
+Cowboy | Icarus | S5-E6</a></h3>
+<p><strong>Date:</strong> July 2, 2026</p>
+<p><strong>Duration:</strong> 35:42</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Summary:</strong> Dr Schneider finds an unexpected new
+calling. He says he’s a changed man. But will it be enough to convince
+the judge? Our theme song is “Death Don’t Have No Mercy” performed by
+Delaney Davidson and Marlon Williams, courtesy of Rough Diamond Records.
+See Privacy Policy at and California Privacy Notice at</p>
+<h3 id="drdeath-the-cowboy-lonesome-doc-s5-e5"><a
+href="https://rss.art19.com/episodes/fde539d2-5105-4eda-adc8-499019222ec2.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">The
+Cowboy | Lonesome Doc | S5-E5</a></h3>
+<p><strong>Date:</strong> June 25, 2026</p>
+<p><strong>Duration:</strong> 36:32</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Summary:</strong> A visit to a ranch sparks a new
+investigation. But as the authorities close in, Dr Schneider drops off
+the map. See Privacy Policy at and California Privacy Notice at</p>
+<h3 id="drdeath-the-cowboy-paper-trail-s5-e1"><a
+href="https://rss.art19.com/episodes/86c33016-9c20-4e6a-89db-1fc165401bd9.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">The
+Cowboy | Paper Trail | S5-E1</a></h3>
+<p><strong>Date:</strong> June 4, 2026</p>
+<p><strong>Duration:</strong> 38:59</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Summary:</strong> When Kathy goes to see the new surgeon in
+town, she and her family expect a routine operation - until find
+themselves in a life-threatening emergency. And when a mysterious letter
+starts making the round, Kathy begins to wonder: what kind of doctor is
+he? See Privacy Policy at and California Privacy Notice at</p>
+<h3 id="drdeath-the-cowboy-screwed-over-s5-e3"><a
+href="https://rss.art19.com/episodes/50ed4b7d-648b-4fb0-b39a-41920fbcac78.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">The
+Cowboy | Screwed Over | S5-E3</a></h3>
+<p><strong>Date:</strong> June 11, 2026</p>
+<p><strong>Duration:</strong> 38:19</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Summary:</strong> When a former Schneider patient’s family
+searches for help, they find the same answer everywhere: no one wants to
+touch the case. Until one surgeon decides to take the risk. And things
+start to get personal. The National Suicide Prevention Lifeline can be
+reached by call or text at 988. More resources are available online at
+See Privacy Policy at and California Privacy Notice at</p>
+<h3 id="drdeath-the-cowboy-shoot-from-the-hip-s5-e2"><a
+href="https://rss.art19.com/episodes/240ffb5e-36ec-41c9-b783-9b2193d0a87f.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">The
+Cowboy | Shoot from the Hip | S5-E2</a></h3>
+<p><strong>Date:</strong> June 4, 2026</p>
+<p><strong>Duration:</strong> 47:13</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Summary:</strong> Way before Wyoming, John Schneider was the
+hotshot trainee everyone noticed. With his cowboy boots, swagger and
+decisiveness under pressure, he seemed to have a bright future ahead of
+him. But the first hints of what was to come were already starting to
+show. See Privacy Policy at and California Privacy Notice at</p>
+<h3
+id="drdeath-what-to-listen-to-next-dan-taberski-s-manifesto-s5-e7"><a
+href="https://rss.art19.com/episodes/6d358530-b8bc-4adf-b734-cb277c36f270.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">What
+To Listen To Next: Dan Taberski’s Manifesto | S5-E7</a></h3>
+<p><strong>Date:</strong> July 13, 2026</p>
+<p><strong>Duration:</strong> 35:28</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Summary:</strong> Just in time for America’s 250th birthday,
+follow Dan Taberski ( Hysterical, 9/12, Missing Richard Simmons ) as he
+sets off on his most complicated quest yet: to reclaim the manifesto and
+write his own. Dan attempts to rescue the manifesto as a form from the
+sweaty clutches of cynical politicians and mass shooters and return it
+to its rightful place: with the artists, the warriors, the visionaries,
+and the mildly crazy regular folks with something to say, the passion to
+say it, and the courage to do something about it. From Audible Originals
+and Please &amp; Thanks Productions, this 6-part series explores the
+power of the manifesto and asks: Can we get inspired again… and can we
+do it without a bullet? Listen to Dan Taberski’s Manifesto wherever you
+get your podcasts. Or binge all episodes of Manifesto ad-free right now
+on Audible. Start your Audible subscription in the Audible App or on
+Apple Podcasts. See Privacy Policy at and California Privacy Notice
+at</p>
+<h2 id="season-4">Season 4 (6)</h2>
+<h3 id="drdeath-bad-magic-language-of-angels-s4-e3"><a
+href="https://rss.art19.com/episodes/45534382-5454-4884-bc0c-975830bed20c.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">Bad
+Magic | Language of Angels | S4-E3</a></h3>
+<p><strong>Date:</strong> January 29, 2024</p>
+<p><strong>Duration:</strong> 28:02</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Summary:</strong> As Serhat builds a new life for himself in
+Los Angeles, he sees an opportunity for his biggest magic trick yet.
+Need more Dr. Death? Audible subscribers can listen to all episodes of
+Dr. Death ad-free right now. Join Audible today by downloading the
+Audible app. Support us by supporting our sponsors. BetterHelp: This
+episode is brought to you by BetterHelp. Give online therapy a try at
+betterhelp.com/DOCTOR and get on your way to being your best self. ADT:
+Go to ADT.com today or call 1-800-ADT-ASAP. See Privacy Policy at and
+California Privacy Notice at</p>
+<h3 id="drdeath-bad-magic-the-closing-bell-s4-e4"><a
+href="https://rss.art19.com/episodes/bf4838b3-aff1-4787-8a80-68f97fd9bab7.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">Bad
+Magic | The Closing Bell | S4-E4</a></h3>
+<p><strong>Date:</strong> February 5, 2024</p>
+<p><strong>Duration:</strong> 28:58</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Summary:</strong> A cold day in Vermont, an unexpected
+visitor and a mysterious 911 call lead to a dramatic revelation. Need
+more Dr. Death? Audible subscribers can listen to all episodes of
+Dr. Death ad-free right now. Join Audible today by downloading the
+Audible app. See Privacy Policy at and California Privacy Notice at</p>
+<h3 id="drdeath-bad-magic-the-data-are-the-data-s4-e5"><a
+href="https://rss.art19.com/episodes/737385b6-2cb6-4e4a-8d5f-9f0ea535bf3b.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">Bad
+Magic | The Data are the Data | S4-E5</a></h3>
+<p><strong>Date:</strong> February 12, 2024</p>
+<p><strong>Duration:</strong> 34:00</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Summary:</strong> The team at Hindenburg race to publish
+their discoveries about Serhat. But how will he answer the charges? Need
+more Dr. Death? Audible subscribers can listen to all episodes of
+Dr. Death ad-free right now. Join Audible today by downloading the
+Audible app. Support us by supporting our sponsors. Zip Recruiter: Go to
+ziprecruiter.com/doctor to try Zip Recruiter for free. BetterHelp: This
+episode is brought to you by BetterHelp. Give online therapy a try at
+betterhelp.com/DOCTOR and get on your way to being your best self. ADT:
+Go to ADT.com today or call 1-800-ADT-ASAP. See Privacy Policy at and
+California Privacy Notice at</p>
+<h3 id="drdeath-bad-magic-the-golden-kid-s4-e2"><a
+href="https://rss.art19.com/episodes/f565fb8f-94c6-4e2e-b0c9-4fe7ce5c7222.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">Bad
+Magic | The Golden Kid | S4-E2</a></h3>
+<p><strong>Date:</strong> January 22, 2024</p>
+<p><strong>Duration:</strong> 29:27</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Summary:</strong> The search for answers leads to a prince,
+an apprentice and a stage show. Does an old video hold the key to
+Dr. Serhat’s past? Need more Dr. Death? Audible subscribers can listen
+to all episodes of Dr. Death ad-free right now. Join Audible today by
+downloading the Audible app. See Privacy Policy at and California
+Privacy Notice at</p>
+<h3 id="drdeath-bad-magic-the-lawsuit-s4-e6"><a
+href="https://rss.art19.com/episodes/cbd765fe-f09b-4737-9be0-7e257f58127a.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">Bad
+Magic | The Lawsuit | S4-E6</a></h3>
+<p><strong>Date:</strong> February 19, 2024</p>
+<p><strong>Duration:</strong> 27:41</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Summary:</strong> Enochian reinvents itself amid the
+revelations about its disgraced founder. But Serhat’s family strikes
+back. Need more Dr. Death? Audible subscribers can listen to all
+episodes of Dr. Death ad-free right now. Join Audible today by
+downloading the Audible app. See Privacy Policy at and California
+Privacy Notice at</p>
+<h3 id="drdeath-bad-magic-the-man-in-the-linen-pants-s4-e1"><a
+href="https://rss.art19.com/episodes/40bbef5c-b60c-4241-8c15-6d99323f696d.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">Bad
+Magic | The Man in the Linen Pants | S4-E1</a></h3>
+<p><strong>Date:</strong> January 22, 2024</p>
+<p><strong>Duration:</strong> 41:46</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Summary:</strong> When a filmmaker hears about a secret trial
+of a new HIV treatment, he begins to wonder about the mysterious doctor
+behind it. Meanwhile, two podcasters are invited to an unusual birthday
+party… Need more Dr. Death? Audible subscribers can listen to all
+episodes of Dr. Death ad-free right now. Join Audible today by
+downloading the Audible app. See Privacy Policy at and California
+Privacy Notice at</p>
+<h2 id="season-3">Season 3 (1)</h2>
+<h3 id="drdeath-miracle-man-head-over-heels-s3-e1"><a
+href="https://rss.art19.com/episodes/8e128af2-d51d-4c93-8889-95d354cd1e9b.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">Miracle
+Man | Head Over Heels | S3-E1</a></h3>
+<p><strong>Date:</strong> August 16, 2021</p>
+<p><strong>Duration:</strong> 37:41</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Summary:</strong> Benita Alexander thinks she’s found the
+perfect surgeon to feature in her documentary: he’s charming, talented,
+and the creator of a groundbreaking surgery that involves implanting
+biosynthetic organs into his patients. Then Benita falls in love with
+him. Will she get her fairy tale ending? Need more Dr. Death? With
+Wondery+, you can listen to all episodes, unlock exclusive content, get
+early access to upcoming episodes, and enjoy an always ad-free
+experience. Start your free trial in the Wondery App or visit
+wondery.com/links/dr-death/ now. Support us by supporting our sponsors!
+ADT - Thanks to our presenting sponsor ADT ! Get all the latest security
+upgrades from the largest name in home security by visiting ADT.com
+today. BetterHelp - Get 10% off your first month at
+BetterHelp.com/DOCTOR . ZipRecruiter - Try ZipRecruiter for free at
+ziprecruiter.com/death . The Zebra - Visit TheZebra.com/DOCTOR to start
+comparing quote for free today. Parachute - Go to
+parachutehome.com/doctor for free shipping and free returns. See Privacy
+Policy at and California Privacy Notice at</p>
+<h2 id="season-2">Season 2 (1)</h2>
+<h3 id="drdeath-dr-fata-top-doc-s2-e1"><a
+href="https://rss.art19.com/episodes/a3625244-dc23-480f-8493-5b53caa7f2e1.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">Dr. Fata
+| Top Doc | S2-E1</a></h3>
+<p><strong>Date:</strong> October 20, 2020</p>
+<p><strong>Duration:</strong> 37:47</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Summary:</strong> Patty Hester starts her care with Dr. Fata,
+but quickly realizes something is wrong. She’s not the only one. Listen
+to exclusive bonus episodes of Dr. Death exclusively and ad-free by
+joining Wondery+ in the Wondery App, Apple Podcasts or Spotify. Start
+your free trial by visiting wondery.com/links/dr-death/ now. See Privacy
+Policy at and California Privacy Notice at</p>
+<h2 id="season-1">Season 1 (1)</h2>
+<h3 id="drdeath-dr-duntsch-three-days-in-dallas-s1-e1"><a
+href="https://rss.art19.com/episodes/295efe81-1e0b-4e41-a941-895241141bb0.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">Dr. Duntsch
+| Three Days In Dallas | S1-E1</a></h3>
+<p><strong>Date:</strong> August 21, 2018</p>
+<p><strong>Duration:</strong> 33:44</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Summary:</strong> All physicians are taught, “First do no
+harm.” But what happens when a doctor does harm his patients? Dr. Robert
+Henderson was a veteran spinal surgeon in Dallas when he got an unusual
+phone call from a local hospital: a new surgeon had operated so poorly
+that a patient who’d walked in on her own two feet now couldn’t even
+wiggle her toes. Dr. Henderson had seen a lot, but he wasn’t prepared
+for this. The surgery was so bad, in fact, he asked himself whether this
+person possibly be an impostor impersonating a physician? “Death Don’t
+Have No Mercy” performed by Delaney Davidson and Marlon Williams,
+courtesy of Rough Diamond Records. Please tell us what you think about
+our show and help us by answering a few questions at wondery.com/survey
+Need more Dr. Death? With Wondery+, you can listen to all episodes,
+unlock exclusive content, get early access to upcoming episodes, and
+enjoy an always ad-free experience. Start your free trial in the Wondery
+App or visit wondery.com/links/dr-death/ now. See Privacy Policy at and
+California Privacy Notice at</p>
+<h2 id="trailers-and-cross-promotions">Trailers and Cross-Promotions
+(1)</h2>
+<h3 id="drdeath-introducing-dr-death-season-5-the-cowboy"><a
+href="https://rss.art19.com/episodes/b0e3ec56-f151-4fc9-a4d5-360e51c24bd8.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">Introducing:
+Dr. Death Season 5 | The Cowboy</a></h3>
+<p><strong>Date:</strong> June 5, 2026</p>
+<p><strong>Duration:</strong> 2:38</p>
+<p><strong>Summary:</strong> When Dr John Schneider arrived in rural
+Wyoming, his cowboy charm seemed like an answer to patients’prayers.
+That is until surgeries start going wrong. See Privacy Policy at and
+California Privacy Notice at</p>
+<h2 id="appendix-a-episodes-by-date">Appendix A: Episodes by Date</h2>
+<p>Every episode in publication order, newest first, grouped by
+year.</p>
+<h3 id="section">2026</h3>
+<ul>
+<li><a
+href="#drdeath-what-to-listen-to-next-dan-taberski-s-manifesto-s5-e7">What
+To Listen To Next: Dan Taberski’s Manifesto | S5-E7</a> — July 13</li>
+<li><a href="#drdeath-the-cowboy-icarus-s5-e6">The Cowboy | Icarus |
+S5-E6</a> — July 2</li>
+<li><a href="#drdeath-the-cowboy-lonesome-doc-s5-e5">The Cowboy |
+Lonesome Doc | S5-E5</a> — June 25</li>
+<li><a href="#drdeath-the-cowboy-dirty-laundry-s5-e4">The Cowboy | Dirty
+Laundry | S5-E4</a> — June 18</li>
+<li><a href="#drdeath-the-cowboy-screwed-over-s5-e3">The Cowboy |
+Screwed Over | S5-E3</a> — June 11</li>
+<li><a
+href="#drdeath-introducing-dr-death-season-5-the-cowboy">Introducing:
+Dr. Death Season 5 | The Cowboy</a> — June 5</li>
+<li><a href="#drdeath-the-cowboy-paper-trail-s5-e1">The Cowboy | Paper
+Trail | S5-E1</a> — June 4</li>
+<li><a href="#drdeath-the-cowboy-shoot-from-the-hip-s5-e2">The Cowboy |
+Shoot from the Hip | S5-E2</a> — June 4</li>
+</ul>
+<h3 id="section-1">2024</h3>
+<ul>
+<li><a href="#drdeath-bad-magic-the-lawsuit-s4-e6">Bad Magic | The
+Lawsuit | S4-E6</a> — February 19</li>
+<li><a href="#drdeath-bad-magic-the-data-are-the-data-s4-e5">Bad Magic |
+The Data are the Data | S4-E5</a> — February 12</li>
+<li><a href="#drdeath-bad-magic-the-closing-bell-s4-e4">Bad Magic | The
+Closing Bell | S4-E4</a> — February 5</li>
+<li><a href="#drdeath-bad-magic-language-of-angels-s4-e3">Bad Magic |
+Language of Angels | S4-E3</a> — January 29</li>
+<li><a href="#drdeath-bad-magic-the-golden-kid-s4-e2">Bad Magic | The
+Golden Kid | S4-E2</a> — January 22</li>
+<li><a href="#drdeath-bad-magic-the-man-in-the-linen-pants-s4-e1">Bad
+Magic | The Man in the Linen Pants | S4-E1</a> — January 22</li>
+</ul>
+<h3 id="section-2">2021</h3>
+<ul>
+<li><a href="#drdeath-miracle-man-head-over-heels-s3-e1">Miracle Man |
+Head Over Heels | S3-E1</a> — August 16</li>
+</ul>
+<h3 id="section-3">2020</h3>
+<ul>
+<li><a href="#drdeath-dr-fata-top-doc-s2-e1">Dr. Fata | Top Doc |
+S2-E1</a> — October 20</li>
+</ul>
+<h3 id="section-4">2018</h3>
+<ul>
+<li><a href="#drdeath-dr-duntsch-three-days-in-dallas-s1-e1">Dr. Duntsch
+| Three Days In Dallas | S1-E1</a> — August 21</li>
+</ul>
+<h2 id="appendix-b-episodes-by-title">Appendix B: Episodes by Title</h2>
+<p>Every episode in order by title, ignoring a leading “A”, “An”, or
+“The”.</p>
+<ul>
+<li><a href="#drdeath-bad-magic-language-of-angels-s4-e3">Bad Magic |
+Language of Angels | S4-E3</a></li>
+<li><a href="#drdeath-bad-magic-the-closing-bell-s4-e4">Bad Magic | The
+Closing Bell | S4-E4</a></li>
+<li><a href="#drdeath-bad-magic-the-data-are-the-data-s4-e5">Bad Magic |
+The Data are the Data | S4-E5</a></li>
+<li><a href="#drdeath-bad-magic-the-golden-kid-s4-e2">Bad Magic | The
+Golden Kid | S4-E2</a></li>
+<li><a href="#drdeath-bad-magic-the-lawsuit-s4-e6">Bad Magic | The
+Lawsuit | S4-E6</a></li>
+<li><a href="#drdeath-bad-magic-the-man-in-the-linen-pants-s4-e1">Bad
+Magic | The Man in the Linen Pants | S4-E1</a></li>
+<li><a href="#drdeath-the-cowboy-dirty-laundry-s5-e4">The Cowboy | Dirty
+Laundry | S5-E4</a></li>
+<li><a href="#drdeath-the-cowboy-icarus-s5-e6">The Cowboy | Icarus |
+S5-E6</a></li>
+<li><a href="#drdeath-the-cowboy-lonesome-doc-s5-e5">The Cowboy |
+Lonesome Doc | S5-E5</a></li>
+<li><a href="#drdeath-the-cowboy-paper-trail-s5-e1">The Cowboy | Paper
+Trail | S5-E1</a></li>
+<li><a href="#drdeath-the-cowboy-screwed-over-s5-e3">The Cowboy |
+Screwed Over | S5-E3</a></li>
+<li><a href="#drdeath-the-cowboy-shoot-from-the-hip-s5-e2">The Cowboy |
+Shoot from the Hip | S5-E2</a></li>
+<li><a href="#drdeath-dr-duntsch-three-days-in-dallas-s1-e1">Dr. Duntsch
+| Three Days In Dallas | S1-E1</a></li>
+<li><a href="#drdeath-dr-fata-top-doc-s2-e1">Dr. Fata | Top Doc |
+S2-E1</a></li>
+<li><a
+href="#drdeath-introducing-dr-death-season-5-the-cowboy">Introducing:
+Dr. Death Season 5 | The Cowboy</a></li>
+<li><a href="#drdeath-miracle-man-head-over-heels-s3-e1">Miracle Man |
+Head Over Heels | S3-E1</a></li>
+<li><a
+href="#drdeath-what-to-listen-to-next-dan-taberski-s-manifesto-s5-e7">What
+To Listen To Next: Dan Taberski’s Manifesto | S5-E7</a></li>
+</ul>
+</body>
+</html>

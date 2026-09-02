@@ -1,0 +1,1345 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Jamal Mazrui" />
+  <title>Unobscured Directory</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Unobscured Directory</h1>
+<p class="subtitle">A Screen-Reader-Friendly Guide to the Unobscured
+Podcast</p>
+<p class="author">Jamal Mazrui</p>
+<p class="date">September 2026</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>A screen-reader-friendly directory of the podcast Unobscured,
+covering 72 public episodes from 2018 to 2026. Each episode links to its
+page and lists its metadata in separate, alphabetically sorted
+fields.</p>
+</div>
+</header>
+<h1 id="unobscured-directory">Unobscured Directory</h1>
+<p>Unobscured, hosted by Aaron Mahnke, is a documentary history podcast
+whose seasons dig into misunderstood moments such as the Salem witch
+trials and Jack the Ripper, paired with historian interviews.</p>
+<p>This directory covers <strong>72 public episodes</strong>, 2018 to
+2026. Each episode links to its page and lists the metadata on record,
+one kind per field, in alphabetical order: <strong>Date</strong>,
+<strong>Duration</strong>, <strong>Episode</strong>, and
+<strong>Summary</strong>, each shown only when available. Titles ignore
+a leading “A”, “An”, or “The”; people are sorted by surname; all sorting
+ignores case.</p>
+<p>Episodes are grouped by season and, within each group, listed in
+order by title. Appendixes reorder them by date, by title.</p>
+<p>For current details, the linked pages are authoritative. This
+directory was compiled by Jamal Mazrui from the show’s public feed.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><p><a href="#season-4">Season 4 (13)</a></p></li>
+<li><p><a href="#season-3">Season 3 (15)</a></p></li>
+<li><p><a href="#season-2">Season 2 (20)</a></p></li>
+<li><p><a href="#season-1">Season 1 (18)</a></p></li>
+<li><p><a href="#trailers-and-cross-promotions">Trailers and
+Cross-Promotions (4)</a></p></li>
+<li><p><a href="#other-episodes">Other Episodes (2)</a></p></li>
+<li><p><a href="#appendix-a-episodes-by-date">Appendix A: Episodes by
+Date</a></p></li>
+<li><p><a href="#appendix-b-episodes-by-title">Appendix B: Episodes by
+Title</a></p></li>
+</ul>
+<h2 id="season-4">Season 4 (13)</h2>
+<h3 id="unobscured-s4-10-ghosts"><a
+href="https://omny.fm/shows/unobscured/ghosts">S4 – 10: Ghosts</a></h3>
+<p><strong>Date:</strong> December 8, 2021</p>
+<p><strong>Duration:</strong> 49:21</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Summary:</strong> Grigory was mortal. The autopsy proved
+that. But as the Romanovs grappled with that reality, the world found
+that legends and myths were much harder to kill. Learn more about your
+ad-choices at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s4-1-in-search-of-a-friend"><a
+href="https://omny.fm/shows/unobscured/in-search-of-a-friend">S4 – 1: In
+Search of a Friend</a></h3>
+<p><strong>Date:</strong> October 6, 2021</p>
+<p><strong>Duration:</strong> 42:17</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Summary:</strong> When she traded her name for an empire,
+Alexandra faced a world that bewildered her—imperial Russia. Even her
+wedding was overshadowed by death. The darkness of those waters left her
+searching for a lineline. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s4-2-man-of-contradictions"><a
+href="https://omny.fm/shows/unobscured/man-of-contradictions">S4 – 2:
+Man of Contradictions</a></h3>
+<p><strong>Date:</strong> October 13, 2021</p>
+<p><strong>Duration:</strong> 36:06</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Summary:</strong> His hometown was a crossroads. Money and
+merchandise passed him by, so when Grigory set out on the road himself,
+it just made since. But he walked into a future that no one could see
+coming. Learn more about your ad-choices at See omnystudio.com/listener
+for privacy information</p>
+<h3 id="unobscured-s4-3-made-manifest"><a
+href="https://omny.fm/shows/unobscured/made-manifest">S4 – 3: Made
+Manifest</a></h3>
+<p><strong>Date:</strong> October 20, 2021</p>
+<p><strong>Duration:</strong> 50:54</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Summary:</strong> The Tsar and his people wrestled for
+control of the empire. A voice whispering that control was his divine
+right was exactly what Nicholas wanted to hear. Learn more about your
+ad-choices at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s4-4-sheep-s-clothing"><a
+href="https://omny.fm/shows/unobscured/sheeps-clothing">S4 – 4: Sheep’s
+Clothing</a></h3>
+<p><strong>Date:</strong> October 27, 2021</p>
+<p><strong>Duration:</strong> 42:03</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Summary:</strong> At the right hand of the Tsar, Grigory
+Rasputin turned his newfound power and prestige to vicious ends. And he
+wasn’t the only one. Predators across the empire were howling for blood.
+Learn more about your ad-choices at See omnystudio.com/listener for
+privacy information</p>
+<h3 id="unobscured-s4-5-standoff"><a
+href="https://omny.fm/shows/unobscured/standoff">S4 – 5:
+Standoff</a></h3>
+<p><strong>Date:</strong> November 3, 2021</p>
+<p><strong>Duration:</strong> 40:41</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Summary:</strong> Nicholas and Alexandra found themselves in
+an endless cascade of battles. Comfort and rest was in short supply.
+Every path before them seemed to lead to the same dead end. But one
+voice promised to guide them home. Learn more about your ad-choices at
+See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s4-6-laying-on-of-hands"><a
+href="https://omny.fm/shows/unobscured/laying-on-of-hands">S4 – 6:
+Laying On of Hands</a></h3>
+<p><strong>Date:</strong> November 10, 2021</p>
+<p><strong>Duration:</strong> 43:02</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Summary:</strong> Venomous rumors wrapped Rasputin and the
+Romanovs in a whirlwind. Grigory himself was at the center of the storm.
+But when the holy man seemed to promise the only path to healing, it
+made his grateful patrons turn a blind eye. Learn more about your
+ad-choices at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s4-7-great-will-be-the-ruin"><a
+href="https://omny.fm/shows/unobscured/great-will-be-the-ruin">S4 – 7:
+Great Will Be the Ruin</a></h3>
+<p><strong>Date:</strong> November 17, 2021</p>
+<p><strong>Duration:</strong> 37:54</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Summary:</strong> Grigory struggled to heal. But as he swam
+back to life, another more successful assassination shot a hole in
+divine autocracy, and The Great War swept over the empires of his world.
+Learn more about your ad-choices at See omnystudio.com/listener for
+privacy information</p>
+<h3 id="unobscured-s4-8-a-time-to-live"><a
+href="https://omny.fm/shows/unobscured/a-time-to-live">S4 – 8: A Time to
+Live</a></h3>
+<p><strong>Date:</strong> November 24, 2021</p>
+<p><strong>Duration:</strong> 41:44</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Summary:</strong> The empire was bleeding. Who was to blame?
+As the accusations flew thick and fast, Grigory Rasputin proved once
+again that the ladder of chaos was an old friend. Learn more about your
+ad-choices at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s4-9-let-this-cup-pass"><a
+href="https://omny.fm/shows/unobscured/let-this-cup-pass">S4 – 9: Let
+This Cup Pass</a></h3>
+<p><strong>Date:</strong> December 1, 2021</p>
+<p><strong>Duration:</strong> 40:23</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Summary:</strong> It seemed Grigory Rasputin was untouchable.
+If the plots laid against him weren’t exposed before they hatched, then
+the hands set against him failed in their courage at the last moment.
+But even for a man like Grigory, some day the charm runs out. Learn more
+about your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s4-interview-1-douglas-smith"><a
+href="https://omny.fm/shows/unobscured/interview-douglas-smith">S4 –
+Interview 1: Douglas Smith</a></h3>
+<p><strong>Date:</strong> January 5, 2022</p>
+<p><strong>Duration:</strong> 1:58:17</p>
+<p><strong>Summary:</strong> Our interview with Douglas Smith,
+award-winning historian, author, and translator. His book “Rasputin:
+Faith, Power, and the Twilight of the Romanovs” is a major study of
+Rasputin’s rise and influence, and the very best historical work
+available on the life, death, and legacy of the Siberian peasant who
+became advisor to the Tsar. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s4-interview-3-joshua-sanborn"><a
+href="https://omny.fm/shows/unobscured/interview-joshua-sanborn">S4 –
+Interview 3: Joshua Sanborn</a></h3>
+<p><strong>Date:</strong> January 19, 2022</p>
+<p><strong>Duration:</strong> 1:34:23</p>
+<p><strong>Summary:</strong> Our interview with Dr. Joshua Sanborn,
+Professor of History at Lafayette College. His book on the collapse of
+the Romanov regime, “Imperial Apocalypse: The Great War and the
+Destruction of the Russian Empire,” provides a rich history of the Great
+War through stories of the people on the ground. Restoring focus on the
+Eastern Front of the war, Dr. Sanborn’s work traces the forces changing
+early twentieth centry Russia, and through Russia, the world. Learn more
+about your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s4-interview-4-helen-rappaport"><a
+href="https://omny.fm/shows/unobscured/interview-helen-rappaport">S4 –
+Interview 4: Helen Rappaport</a></h3>
+<p><strong>Date:</strong> January 26, 2022</p>
+<p><strong>Duration:</strong> 1:25:22</p>
+<p><strong>Summary:</strong> Our interview with Helen Rappaport, Fellow
+of the Royal Historical Society and best-selling author of books on
+Russia and the Romanovs. Her books like “Four Sisters: The Lost Lives of
+the Romanov Grand Duchesses,” and “The Race to Save the Romanovs: The
+Truth Behind the Secret Plans to Rescue Russia’s Imperial Family,”
+provide the most intimate and dramatic portraits available of the lives
+of the Romanov family and their place in the modern world. Learn more
+about your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h2 id="season-3">Season 3 (15)</h2>
+<h3 id="unobscured-s3-10-never-done"><a
+href="https://omny.fm/shows/unobscured/never-done">S3 – 10: Never
+Done</a></h3>
+<p><strong>Date:</strong> December 9, 2020</p>
+<p><strong>Duration:</strong> 44:04</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Summary:</strong> Cases were closed and the files were
+sealed. Investigators went back to careers scattered across the British
+empire. It would be decades before their conclusions would shed light on
+London’s dark Autumn of Terror. It would be almost one hundred years
+before what they knew offered answers. Learn more about your ad-choices
+at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s3-1-temple-mount"><a
+href="https://omny.fm/shows/unobscured/temple-mount">S3 – 1: Temple
+Mount</a></h3>
+<p><strong>Date:</strong> October 7, 2020</p>
+<p><strong>Duration:</strong> 38:08</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Summary:</strong> Victorian London was the world’s greatest
+city. But building an industrial empire of steel and treasure comes at a
+startling human cost. The ancient city’s cults of personality raised
+heroes and villains for a new era: the Scotland Yard Detective and the
+killer he hunted. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s3-2-rome-babylon"><a
+href="https://omny.fm/shows/unobscured/rome-babylon">S3 – 2: Rome &amp;
+Babylon</a></h3>
+<p><strong>Date:</strong> October 14, 2020</p>
+<p><strong>Duration:</strong> 44:13</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Summary:</strong> A city divided. It didn’t happen by
+accident. A century of destroying the old to bring in the new left many
+without homes. If glossy West London was the city’s pride, the poor
+pushed to the margins were shamed. All the more when the knives came
+out. Learn more about your ad-choices at See omnystudio.com/listener for
+privacy information</p>
+<h3 id="unobscured-s3-3-stardom"><a
+href="https://omny.fm/shows/unobscured/stardom">S3 – 3: Stardom</a></h3>
+<p><strong>Date:</strong> October 21, 2020</p>
+<p><strong>Duration:</strong> 49:25</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Summary:</strong> Victorian journalists had learned the
+lesson well: true crime sells. They were investigators, but they were
+storytellers too. And the story they told was meant to shock middle
+class London, as much as it was meant to inform. Not a hard job when the
+news was this horrifying. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s3-4-synthetical-turn"><a
+href="https://omny.fm/shows/unobscured/synthetical-turn">S3 – 4:
+Synthetical Turn</a></h3>
+<p><strong>Date:</strong> October 28, 2020</p>
+<p><strong>Duration:</strong> 46:47</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Summary:</strong> They said London was a den of vice and
+violence growing grimmer by the day. The police had their orders to put
+the pieces together. But there were plenty of visitors who had no
+trouble taking pleasure in a community falling apart. Learn more about
+your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s3-5-flaws"><a
+href="https://omny.fm/shows/unobscured/flaws">S3 – 5: Flaws</a></h3>
+<p><strong>Date:</strong> November 4, 2020</p>
+<p><strong>Duration:</strong> 37:23</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Summary:</strong> Chief Inspector Swanson inherited a
+complicated legacy. The history of the Metropolitan Police was full of
+twists and turns. No less the city they patrolled, that had never grown
+completely comfortable under a watchman’s eye. Learn more about your
+ad-choices at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s3-6-mismatch"><a
+href="https://omny.fm/shows/unobscured/mismatch">S3 – 6:
+Mismatch</a></h3>
+<p><strong>Date:</strong> November 11, 2020</p>
+<p><strong>Duration:</strong> 39:25</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Summary:</strong> The version of events all depends on where
+you stand. Eye witnesses and identifications are key to detective work,
+but even veteran investigators can struggle to see through the screen of
+their assumptions. Matching perception to reality can be the biggest
+challenge of all. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s3-7-house-to-house"><a
+href="https://omny.fm/shows/unobscured/house-to-house">S3 – 7: House to
+House</a></h3>
+<p><strong>Date:</strong> November 18, 2020</p>
+<p><strong>Duration:</strong> 46:41</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Summary:</strong> Taunts in red ink sent a wave of fear
+through London. The Metropolitan police knew they had to respond. So the
+forces under Charles Warren mobilized like never before, and everything
+was on the line. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s3-8-solitary"><a
+href="https://omny.fm/shows/unobscured/solitary">S3 – 8:
+Solitary</a></h3>
+<p><strong>Date:</strong> November 25, 2020</p>
+<p><strong>Duration:</strong> 45:25</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Summary:</strong> A terrorist bombing campaign left London
+crawling with spies. Paranoia and isolation afflicted everyone, from the
+clandestine service to the people they were sworn to protect. But even
+efforts of the government’s Special Branch couldn’t prevent one of the
+most horrifying moments in the history of English crime. Learn more
+about your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s3-9-making-a-killing"><a
+href="https://omny.fm/shows/unobscured/making-a-killing">S3 – 9: Making
+a Killing</a></h3>
+<p><strong>Date:</strong> December 2, 2020</p>
+<p><strong>Duration:</strong> 31:40</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Summary:</strong> Turmoil swept England, from Whitechapel’s
+mean streets to the halls of power. Public servants savaged each other
+in person and in the press. Blame was thrown on all sides. None of it
+helped. Vulnerable women continued to die. Learn more about your
+ad-choices at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s3-interview-1-adam-wood"><a
+href="https://omny.fm/shows/unobscured/interview-1-adam-wood">S3 –
+INTERVIEW 1: Adam Wood</a></h3>
+<p><strong>Date:</strong> January 6, 2021</p>
+<p><strong>Duration:</strong> 1:48:22</p>
+<p><strong>Summary:</strong> Our interview with Adam Wood, publisher of
+Mango Books and executive editor of “Ripperologist Magazine.” His book,
+“Donald Swanson: The Life and Times of a Victorian Detective,” gave us a
+dramatic and on-the-ground perspective. Our conversation explores how it
+came to be and what the life of Donald Swanson offers to readers today.
+Learn more about your ad-choices at See omnystudio.com/listener for
+privacy information</p>
+<h3 id="unobscured-s3-interview-2-louise-raw"><a
+href="https://omny.fm/shows/unobscured/interview-louise-raw">S3 –
+INTERVIEW 2: Louise Raw</a></h3>
+<p><strong>Date:</strong> January 13, 2021</p>
+<p><strong>Duration:</strong> 2:57:08</p>
+<p><strong>Summary:</strong> Our interview with Dr. Louise Raw, whose
+book, “Striking a Light,” became a new landmark in British labor
+history. We explore her journey into historical writing, the process of
+discovering the matchwomen, and hear the stories that brought them to
+life for Dr. Raw and for all of us as well. Learn more about your
+ad-choices at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s3-interview-3-drew-gray"><a
+href="https://omny.fm/shows/unobscured/interview-drew-gray">S3 –
+INTERVIEW 3: Drew Gray</a></h3>
+<p><strong>Date:</strong> January 20, 2021</p>
+<p><strong>Duration:</strong> 2:16:06</p>
+<p><strong>Summary:</strong> Our interview with Dr. Drew Gray, historian
+of the 18th and 19th centuries, and Subject Lead in History at the
+University of Northampton. With Dr. Gray, we explore the history of
+police magistrate hearing, the development of Victorian model dwellings,
+and meditate on the power of the Ripper industry. Learn more about your
+ad-choices at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s3-interview-4-paul-begg"><a
+href="https://omny.fm/shows/unobscured/interview-4-paul-begg">S3 –
+INTERVIEW 4: Paul Begg</a></h3>
+<p><strong>Date:</strong> January 27, 2021</p>
+<p><strong>Duration:</strong> 2:25:22</p>
+<p><strong>Summary:</strong> Our interview with writer Paul Begg. To
+wrap up our exploration of Whitechapel in 1888, we turn to the historian
+and researcher whose dedication to the original documents laid the
+foundation for deep and rigorous study of the murders. Learn more about
+your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s4-interview-2-heather-coleman"><a
+href="https://omny.fm/shows/unobscured/interview-heather-coleman">S4 –
+Interview 2: Heather Coleman</a></h3>
+<p><strong>Date:</strong> January 12, 2022</p>
+<p><strong>Duration:</strong> 1:47:34</p>
+<p><strong>Summary:</strong> Our interview with Dr. Heather Coleman,
+Professor of History at the University of Alberta. In her teaching and
+writing on the religion of the ninteenth and twentieth centuries,
+Dr. Coleman has shed new light on the role that religious life played in
+the modernization of the Russian empire in the last years of the
+Romanovs. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h2 id="season-2">Season 2 (20)</h2>
+<h3 id="unobscured-s2-10-invisible-hands"><a
+href="https://omny.fm/shows/unobscured/invisible-hands">S2 – 10:
+Invisible Hands</a></h3>
+<p><strong>Date:</strong> December 4, 2019</p>
+<p><strong>Duration:</strong> 46:01</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Summary:</strong> Seances circled a high stakes table.
+Spirits were still comforting families, but in cities like New Orleans
+and New York, they also held to a glowing vision. The future of the
+nation’s laws, and the levers of its economy, were up for grabs. Now was
+the time to bring heaven down to earth. Learn more about your ad-choices
+at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-11-the-sheep-and-the-ghosts"><a
+href="https://omny.fm/shows/unobscured/the-sheep-and-the-ghosts">S2 –
+11: The Sheep and the Ghosts</a></h3>
+<p><strong>Date:</strong> December 11, 2019</p>
+<p><strong>Duration:</strong> 50:35</p>
+<p><strong>Episode:</strong> 11</p>
+<p><strong>Summary:</strong> What power did the spirits wield? They had
+convinced millions of their presence. They had moved mediums into high
+places. They had crossed oceans and shaken slumbering nations. Now the
+movement’s leading lights saw a world to win. Learn more about your
+ad-choices at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-12-there-is-no-death"><a
+href="https://omny.fm/shows/unobscured/there-is-no-death">S2 – 12: There
+Is No Death</a></h3>
+<p><strong>Date:</strong> December 18, 2019</p>
+<p><strong>Duration:</strong> 51:48</p>
+<p><strong>Episode:</strong> 12</p>
+<p><strong>Summary:</strong> Blows fell. Times changed. New voices rose
+up with answers to the nation’s pressing questions. But through it all,
+spiritualists worked to create an enduring place for themselves where
+the spirits could go on speaking. Learn more about your ad-choices at
+See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-1-seer"><a
+href="https://omny.fm/shows/unobscured/seer">S2 – 1: Seer</a></h3>
+<p><strong>Date:</strong> October 2, 2019</p>
+<p><strong>Duration:</strong> 39:33</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Summary:</strong> It was all wide open. Great awakenings
+shattered the old religions. Showmen made spectacles of cutting-edge
+science. Radicals campaigned for a social revolution. The nation waited
+with bated breath for a new kind of prophet to take the stage. Learn
+more about your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s2-2-instruments"><a
+href="https://omny.fm/shows/unobscured/instruments">S2 – 2:
+Instruments</a></h3>
+<p><strong>Date:</strong> October 9, 2019</p>
+<p><strong>Duration:</strong> 46:27</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Summary:</strong> A Harmonial Philosophy was one thing. But
+Rochester, New York, was about to become the cradle for so much more.
+The city wanted more than just words. They wanted a demonstration of
+power. Learn more about your ad-choices at See omnystudio.com/listener
+for privacy information</p>
+<h3 id="unobscured-s2-3-a-spirit-globe"><a
+href="https://omny.fm/shows/unobscured/a-spirit-globe">S2 – 3: A Spirit
+Globe</a></h3>
+<p><strong>Date:</strong> October 16, 2019</p>
+<p><strong>Duration:</strong> 44:54</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Summary:</strong> Who could have imagined how quickly their
+message would cross oceans? Even as they traveled from city to city, the
+first spiritualists were celebrated by seekers. But an anarchic new
+faith wasn’t met kindly when it faced the authorities of the old world.
+Learn more about your ad-choices at See omnystudio.com/listener for
+privacy information</p>
+<h3 id="unobscured-s2-4-the-way-the-truth-the-lie"><a
+href="https://omny.fm/shows/unobscured/the-way-the-truth-the-lie">S2 –
+4: The Way, The Truth, The Lie</a></h3>
+<p><strong>Date:</strong> October 23, 2019</p>
+<p><strong>Duration:</strong> 47:38</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Summary:</strong> Spiritualists weren’t the only ones who
+believed the dead could still be heard. That belief came trailing many
+stories. And with many aims. Some found a nourishing home. Others found
+a hunting ground. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-5-seek-and-ye-shall-find"><a
+href="https://omny.fm/shows/unobscured/seek-and-ye-shall-find">S2 – 5:
+Seek and Ye Shall Find</a></h3>
+<p><strong>Date:</strong> October 30, 2019</p>
+<p><strong>Duration:</strong> 46:48</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Summary:</strong> The movement continued to swell. It found
+friends in high places. But everywhere it went, it found entrenched
+beliefs threatened by this new source of revelation. Finding harmony
+around a table was one thing. But when mediums met ministers, the seance
+became a street fight. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-6-restless"><a
+href="https://omny.fm/shows/unobscured/restless">S2 – 6:
+Restless</a></h3>
+<p><strong>Date:</strong> November 6, 2019</p>
+<p><strong>Duration:</strong> 45:10</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Summary:</strong> The child stars of spiritualism were
+growing up. And facing a whole host of new realities about their world.
+Were the spirits up to helping their young vessels find love and fight
+for reform as the storm clouds gathered? Learn more about your
+ad-choices at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-7-preach-the-word"><a
+href="https://omny.fm/shows/unobscured/preach-the-word">S2 – 7: Preach
+the Word</a></h3>
+<p><strong>Date:</strong> November 13, 2019</p>
+<p><strong>Duration:</strong> 45:45</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Summary:</strong> The news was grim. Across the south, slave
+states were withdrawing from the nation. In the north, some
+spiritualists saw their chance to take their winnings and withdraw from
+conflict. But others kept their printing presses running. In their
+pages, the spirits raised their voices to a military march, singing
+songs of freedom—and war. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-8-open-graves"><a
+href="https://omny.fm/shows/unobscured/open-graves">S2 – 8: Open
+Graves</a></h3>
+<p><strong>Date:</strong> November 20, 2019</p>
+<p><strong>Duration:</strong> 43:14</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Summary:</strong> As shots rang out and armies crossed the
+nation, black spiritualists in New Orleans found themselves fighting for
+their homes against all comers. But most of the nation’s spirit
+believers were focused on the spirits clamoring around a different
+residence—Abraham Lincoln’s White House. Could they guide a generation
+of followers through the fires of conflict into the light of a new day?
+Learn more about your ad-choices at See omnystudio.com/listener for
+privacy information</p>
+<h3 id="unobscured-s2-9-wounds"><a
+href="https://omny.fm/shows/unobscured/wounds">S2 – 9: Wounds</a></h3>
+<p><strong>Date:</strong> November 27, 2019</p>
+<p><strong>Duration:</strong> 44:36</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Summary:</strong> The war was over but the fight to determine
+the future of the nation continued. And the spirits had much to say.
+Devastated families cried out for their lost loved ones. Sometimes, the
+beloved dead answered back. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-interview-1-ann-braude"><a
+href="https://omny.fm/shows/unobscured/interview-1-ann-braude">S2 –
+INTERVIEW 1: Ann Braude</a></h3>
+<p><strong>Date:</strong> January 8, 2020</p>
+<p><strong>Duration:</strong> 2:16:12</p>
+<p><strong>Summary:</strong> Our interview with Ann Braude, Senior
+Lecturer on American Religious History at Harvard Divinity School. Her
+book, Radical Spirits , was a guiding light for our exploration of the
+role of spiritualism in American life. Learn more about your ad-choices
+at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-interview-2-margaret-washington"><a
+href="https://omny.fm/shows/unobscured/interview-2-margaret-washington">S2
+– INTERVIEW 2: Margaret Washington</a></h3>
+<p><strong>Date:</strong> January 15, 2020</p>
+<p><strong>Duration:</strong> 1:49:49</p>
+<p><strong>Summary:</strong> Our interview with Margaret Washington,
+professor of History and American Studies at Cornell University. Her
+work on Sojourner Truth’s life in the American landscape was invaluable
+for seeing spiritualism in a broad historical context. Learn more about
+your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s2-interview-3-emily-clark"><a
+href="https://omny.fm/shows/unobscured/interview-3-emily-clark">S2 –
+INTERVIEW 3: Emily Clark</a></h3>
+<p><strong>Date:</strong> January 22, 2020</p>
+<p><strong>Duration:</strong> 1:56:18</p>
+<p><strong>Summary:</strong> Our interview with Emily Clark, Associate
+Professor of Religious Studies at Gonzaga University. Her first book, A
+Luminous Brotherhood , explores spiritualism in New Orleans, giving us a
+perspective on spiritualism beyond the northeastern hubs of the
+movement. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-interview-4-nancy-rubin-stuart"><a
+href="https://omny.fm/shows/unobscured/interview-4-nancy-rubin-stuart">S2
+– INTERVIEW 4: Nancy Rubin Stuart</a></h3>
+<p><strong>Date:</strong> January 29, 2020</p>
+<p><strong>Duration:</strong> 1:03:56</p>
+<p><strong>Summary:</strong> Our interview with Nancy Rubin Stuart,
+whose award winning biographies of American women include The Reluctant
+Spiritualist , our guide to the life of Maggie Fox for this season of
+Unobscured . Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-interview-5-mary-gabriel"><a
+href="https://omny.fm/shows/unobscured/interview-5-mary-gabriel">S2 –
+INTERVIEW 5: Mary Gabriel</a></h3>
+<p><strong>Date:</strong> February 5, 2020</p>
+<p><strong>Duration:</strong> 1:46:35</p>
+<p><strong>Summary:</strong> Our interview with Mary Gabriel, whose
+books have been finalists for the Pulitzer Prize, the National Book
+Award, and the National Book Critic’s Circle Award. Her biographies of
+Victoria Woodhull and Karl &amp; Jenny Marx unveil the radical threads
+running through American spiritualism. Learn more about your ad-choices
+at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-interview-6-john-buescher"><a
+href="https://omny.fm/shows/unobscured/interview-6-john-buescher">S2 –
+INTERVIEW 6: John Buescher</a></h3>
+<p><strong>Date:</strong> February 12, 2020</p>
+<p><strong>Duration:</strong> 2:13:44</p>
+<p><strong>Summary:</strong> Our interview with John Buescher,
+co-director of the International Association for the Preservation of
+Spiritualist and Occult Periodicals. His dedication to cataloging and
+preserving spiritualist newspapers give his books on mediums a
+remarkable command of the people and ideas driving the movement forward.
+Learn more about your ad-choices at See omnystudio.com/listener for
+privacy information</p>
+<h3 id="unobscured-s2-interview-7-cathy-gutierrez"><a
+href="https://omny.fm/shows/unobscured/interview-7-cathy-gutierrez">S2 –
+INTERVIEW 7: Cathy Gutierrez</a></h3>
+<p><strong>Date:</strong> February 19, 2020</p>
+<p><strong>Duration:</strong> 1:44:53</p>
+<p><strong>Summary:</strong> Our interview with Cathy Gutierrez, who has
+served as Professor of Religion at Sweet Briar College and Scholar in
+Residence at the New York Public Library. We discuss the nuances and
+historical development of spiritualist theology, as she explores it in
+her book Plato’s Ghost: Spiritualism in the American Renaissance . Learn
+more about your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s2-interview-8-molly-mcgarry"><a
+href="https://omny.fm/shows/unobscured/interview-8-molly-mcgarry">S2 –
+INTERVIEW 8: Molly McGarry</a></h3>
+<p><strong>Date:</strong> February 26, 2020</p>
+<p><strong>Duration:</strong> 1:23:22</p>
+<p><strong>Summary:</strong> Our interview with Molly McGarry, Associate
+Professor of History at the University of California, Riverside. To wrap
+up our exploration of spiritualism, we follow her observations about the
+power and influence of spiritualism in American life, from past to
+present. Learn more about your ad-choices at See omnystudio.com/listener
+for privacy information</p>
+<h2 id="season-1">Season 1 (18)</h2>
+<h3 id="unobscured-s1-10-pen-and-paper"><a
+href="https://omny.fm/shows/unobscured/pen-and-paper">S1 – 10: Pen and
+Paper</a></h3>
+<p><strong>Date:</strong> December 5, 2018</p>
+<p><strong>Duration:</strong> 41:44</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Summary:</strong> Between the examinations and the hangings,
+it was easy to see the witch trials as a battle fought inside the
+courtroom. But outside, word was spreading about the injustice of it
+all, and so the fight was taken to a brand new arena—one that would do
+far more to change minds than any hanging or spectral testimony. Learn
+more about your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s1-11-floundering"><a
+href="https://omny.fm/shows/unobscured/floundering">S1 – 11:
+Floundering</a></h3>
+<p><strong>Date:</strong> December 12, 2018</p>
+<p><strong>Duration:</strong> 47:44</p>
+<p><strong>Episode:</strong> 11</p>
+<p><strong>Summary:</strong> With the Court of Oyer and Terminer
+officially disbanded, the fog of uncertainly rolled into Salem. What
+would happen to those still in jail? When would a new trial session
+begin? And most importantly, who would grab the wheel of power and steer
+Salem to victory over darkness? Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s1-12-making-amends"><a
+href="https://omny.fm/shows/unobscured/making-amends">S1 – 12: Making
+Amends</a></h3>
+<p><strong>Date:</strong> December 19, 2018</p>
+<p><strong>Duration:</strong> 52:10</p>
+<p><strong>Episode:</strong> 12</p>
+<p><strong>Summary:</strong> How does a community recover from a tragedy
+that claims over two dozen lives? How do they even begin to pick up the
+pieces and make things right again? And when it’s all said and done,
+what can the rest of the world learn from the 300-year old mistakes of
+colonial New England village? The answers aren’t as easy as they might
+appear. Learn more about your ad-choices at See omnystudio.com/listener
+for privacy information</p>
+<h3 id="unobscured-s1-1-the-arrival"><a
+href="https://omny.fm/shows/unobscured/the-arrival">S1 – 1: The
+Arrival</a></h3>
+<p><strong>Date:</strong> October 3, 2018</p>
+<p><strong>Duration:</strong> 38:38</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Summary:</strong> The stage is set, the characters are
+introduced, and the spell is cast. Welcome to Salem Village, home to a
+diverse and complicated gathering of families and personalities. It is a
+pile of dry kindling, and the match is about to be struck. Learn more
+about your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s1-2-the-outsiders"><a
+href="https://omny.fm/shows/unobscured/the-outsiders">S1 – 2: The
+Outsiders</a></h3>
+<p><strong>Date:</strong> October 10, 2018</p>
+<p><strong>Duration:</strong> 41:21</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Summary:</strong> Even though Salem had been without an
+official charter from England for almost a decade, there was no question
+that witchcraft was still a crime. The only question left was how to
+handle them, and the answer would involve pitting a group of outsiders
+against a few powerful insiders. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s1-3-by-the-book"><a
+href="https://omny.fm/shows/unobscured/by-the-book">S1 – 3: By the
+Book</a></h3>
+<p><strong>Date:</strong> October 17, 2018</p>
+<p><strong>Duration:</strong> 45:52</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Summary:</strong> As the first suspects are rounded up and
+questioned by the biased and partisan officials, their confessions
+unleash more trouble than relief. And as the number of witches
+multiplies, so too does the number of accusers. In an increasingly
+uncertain time, the Village leans on its faith. Learn more about your
+ad-choices at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s1-4-the-refugees"><a
+href="https://omny.fm/shows/unobscured/the-refugees">S1 – 4: The
+Refugees</a></h3>
+<p><strong>Date:</strong> October 24, 2018</p>
+<p><strong>Duration:</strong> 31:03</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Summary:</strong> While the events of the Salem witch trials
+began within the borders of the Salem village community, many of the
+forces that drove it forward were external. As we’re about to see, Salem
+was full of more than stories about witchcraft—and those external
+threats were about to come home. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s1-5-a-higher-power"><a
+href="https://omny.fm/shows/unobscured/a-higher-power">S1 – 5: A Higher
+Power</a></h3>
+<p><strong>Date:</strong> October 31, 2018</p>
+<p><strong>Duration:</strong> 39:04</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Summary:</strong> Some people saw the growing witch panic in
+Salem as a threat to their lives, and they tried to run and hide. Others
+saw an opportunity for profit and advancement. Through it all, though,
+the fire would continue to burn, and unlikely individuals would be
+caught up in the blaze. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s1-6-consequences"><a
+href="https://omny.fm/shows/unobscured/consequences">S1 – 6:
+Consequences</a></h3>
+<p><strong>Date:</strong> November 7, 2018</p>
+<p><strong>Duration:</strong> 38:10</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Summary:</strong> Until now, the daily flood of examinations
+had been a temporary fix while everyone waited for the new government to
+set up an official trial. For many, that trial would represent hope and
+conclusion. For some, however, it would extract a heavy, deadly price.
+Learn more about your ad-choices at See omnystudio.com/listener for
+privacy information</p>
+<h3 id="unobscured-s1-7-she-is-one-of-us"><a
+href="https://omny.fm/shows/unobscured/she-is-one-of-us">S1 – 7: She Is
+One Of Us</a></h3>
+<p><strong>Date:</strong> November 14, 2018</p>
+<p><strong>Duration:</strong> 35:48</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Summary:</strong> It’s easy for a community to turn on the
+outsiders among them. The Salem witch trials had become a textbook
+example of this over the first few months. But in July of 1692, all of
+that changed. As the Court of Oyer and Terminer rolled full speed ahead,
+it seems anyone could be a witch. Learn more about your ad-choices at
+See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s1-8-king-and-queen"><a
+href="https://omny.fm/shows/unobscured/king-and-queen">S1 – 8: King and
+Queen</a></h3>
+<p><strong>Date:</strong> November 21, 2018</p>
+<p><strong>Duration:</strong> 48:26</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Summary:</strong> As the trials continued to roll forward in
+Salem, crushing more and more lives beneath its wheels, the panic began
+to spread outside its borders. In the community of Andover, those old
+fears found a new home—and the results would defy all expectations.
+Learn more about your ad-choices at See omnystudio.com/listener for
+privacy information</p>
+<h3 id="unobscured-s1-9-fight-or-flight"><a
+href="https://omny.fm/shows/unobscured/fight-or-flight">S1 – 9: Fight or
+Flight</a></h3>
+<p><strong>Date:</strong> November 28, 2018</p>
+<p><strong>Duration:</strong> 44:31</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Summary:</strong> The witchcraft panic had been gathering
+victims for months by the time George Burroughs was hanged, and many of
+them were still in jail. With nothing but torture and certain death
+awaiting them at the end of their imprisonment, many of the accused in
+Salem began to plot a more hopeful conclusion to their story. Learn more
+about your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s1-interview-1-emerson-baker"><a
+href="https://omny.fm/shows/unobscured/interview-1-emerson-baker">S1 –
+INTERVIEW 1: Emerson Baker</a></h3>
+<p><strong>Date:</strong> January 2, 2019</p>
+<p><strong>Duration:</strong> 1:23:28</p>
+<p><strong>Summary:</strong> Our interview with Emerson Baker, interim
+dean and history professor at Salem State University and author of A
+Storm of Witchcraft: The Salem Trials and the American Experience. Learn
+more about your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s1-interview-2-mary-beth-norton"><a
+href="https://omny.fm/shows/unobscured/interview-2-mary-beth-norton">S1
+– INTERVIEW 2: Mary Beth Norton</a></h3>
+<p><strong>Date:</strong> January 9, 2019</p>
+<p><strong>Duration:</strong> 1:21:03</p>
+<p><strong>Summary:</strong> Our interview with Mary Beth Norton,
+professor of American history at Cornell University and author of In the
+Devil’s Snare . Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s1-interview-3-richard-trask"><a
+href="https://omny.fm/shows/unobscured/interview-3-richard-trask">S1 –
+INTERVIEW 3: Richard Trask</a></h3>
+<p><strong>Date:</strong> January 16, 2019</p>
+<p><strong>Duration:</strong> 1:34:22</p>
+<p><strong>Summary:</strong> Our interview with Richard B. Trask who has
+served as Archivist for the Town of Danvers, Massachusetts (old Salem
+Village) since 1972. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s1-interview-4-marilynne-k-roach"><a
+href="https://omny.fm/shows/unobscured/interview-4-marilynne-k-roach">S1
+– INTERVIEW 4: Marilynne K. Roach</a></h3>
+<p><strong>Date:</strong> January 24, 2019</p>
+<p><strong>Duration:</strong> 1:31:56</p>
+<p><strong>Summary:</strong> Our interview with Marilynne K. Roach,
+author of “Six Women of Salem” and “The Salem Witch Trials: A Day-by-Day
+Chronicle of a Community Under Siege.” Learn more about your ad-choices
+at See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s1-interview-5-jane-kamensky"><a
+href="https://omny.fm/shows/unobscured/interview-5-jane-kamensky">S1 –
+INTERVIEW 5: Jane Kamensky</a></h3>
+<p><strong>Date:</strong> January 30, 2019</p>
+<p><strong>Duration:</strong> 50:38</p>
+<p><strong>Summary:</strong> Our interview with Jane Kamensky, professor
+of American history at Harvard University and author of Governing the
+Tongue: The Politics of Speech in Early New England . Learn more about
+your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s1-interview-6-stacy-schiff"><a
+href="https://omny.fm/shows/unobscured/interview-6-stacy-schiff">S1 –
+INTERVIEW 6: Stacy Schiff</a></h3>
+<p><strong>Date:</strong> February 6, 2019</p>
+<p><strong>Duration:</strong> 50:20</p>
+<p><strong>Summary:</strong> Our interview with the Pulitzer prize
+winning author Stacy Schiff whose 2015 book The Witches was a source for
+this series. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h2 id="trailers-and-cross-promotions">Trailers and Cross-Promotions
+(4)</h2>
+<h3 id="unobscured-s1-trailer"><a
+href="https://omny.fm/shows/unobscured/trailer">S1 – Trailer</a></h3>
+<p><strong>Date:</strong> September 26, 2018</p>
+<p><strong>Duration:</strong> 2:18</p>
+<p><strong>Summary:</strong> History is full of stories we think we
+know. They are old and dark, but time has robbed us of perspective and
+clarity. They’ve become obscured and misunderstood. Which is why this
+series exists: to dig deep and shed light on some of history’s darkest
+moments. To help us better understand where we’ve come from. To make it
+Unobscured. Each season pairs narrative storytelling from Aaron Mahnke,
+the creator the hit podcast Lore, with prominent historian interviews.
+Season One: The Salem Witch Trials Learn more about your ad-choices at
+See omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s2-season-2-trailer"><a
+href="https://omny.fm/shows/unobscured/unobscured-season-2-trailer">S2 –
+Season 2 Trailer</a></h3>
+<p><strong>Date:</strong> September 25, 2019</p>
+<p><strong>Duration:</strong> 1:19</p>
+<p><strong>Summary:</strong> The critically acclaimed historical
+documentary series is back with a powerful new season. With insightful
+research, expert interviews, and Aaron Mahnke’s trademark narrative
+style, the Unobscured team returns for a new season to delve deep into
+the world of Spiritualism. By tracing its bizarre trajectory from a
+scattered fad to a worldwide phenomenon, listeners will discover the
+truth about the movement—and how it still impacts our world today. Learn
+more about your ad-choices at See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-s3-trailer"><a
+href="https://omny.fm/shows/unobscured/trailer-unobscured-season-3">S3 –
+Trailer</a></h3>
+<p><strong>Date:</strong> September 30, 2020</p>
+<p><strong>Duration:</strong> 3:08</p>
+<p><strong>Summary:</strong> The deep-dive historical documentary
+podcast, Unobscured, returns for a dark and bloody 3rd season. Follow
+along as we take a journey into what many consider to be the most
+infamous true crime story in history: Jack the Ripper. Season 3
+premieres on October 7th. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h3 id="unobscured-s4-trailer"><a
+href="https://omny.fm/shows/unobscured/trailer-unobscured-season-4">S4 –
+Trailer</a></h3>
+<p><strong>Date:</strong> September 29, 2021</p>
+<p><strong>Duration:</strong> 1:52</p>
+<p><strong>Summary:</strong> Unobscured—the popular historical
+documentary podcast from Aaron Mahnke—returns for a brand new season.
+This time, the team aims to separate fact from fiction about one of
+history’s most mysterious characters: Grigori Rasputin. Season 4
+premieres on October 6th, 2021. Learn more about your ad-choices at See
+omnystudio.com/listener for privacy information</p>
+<h2 id="other-episodes">Other Episodes (2)</h2>
+<h3 id="unobscured-exhumed-is-coming"><a
+href="https://omny.fm/shows/unobscured/exhumed-is-coming">EXHUMED is
+coming…</a></h3>
+<p><strong>Date:</strong> January 29, 2026</p>
+<p><strong>Duration:</strong> 2:59</p>
+<p><strong>Summary:</strong> Let’s go on a brand new adventure together.
+EXHUMED officially arrives on August 4th, but you can pre-order it right
+now. Visit aaronmahnke.com/exhumed to pre-order your copy today! And, if
+you buy the hardcover, you can submit your receipt and get a free
+EXHUMED tote bag. See omnystudio.com/listener for privacy
+information</p>
+<h3 id="unobscured-some-unobscured-news"><a
+href="https://omny.fm/shows/unobscured/some-unobscured-news">Some
+Unobscured News</a></h3>
+<p><strong>Date:</strong> May 5, 2022</p>
+<p><strong>Duration:</strong> 2:13</p>
+<p><strong>Summary:</strong> The spirit of UNOBSCURED has evolved and
+transformed into a brand new show called GRIM &amp; MILD PRESENTS. We’ll
+still be doing season-long deep-dives into major topics, but releasing
+episodes bi-weekly throughout the year, rather than all lumped into
+October and November. Learn more here .</p>
+<h2 id="appendix-a-episodes-by-date">Appendix A: Episodes by Date</h2>
+<p>Every episode in publication order, newest first, grouped by
+year.</p>
+<h3 id="section">2026</h3>
+<ul>
+<li><a href="#unobscured-exhumed-is-coming">EXHUMED is coming…</a> —
+January 29</li>
+</ul>
+<h3 id="section-1">2022</h3>
+<ul>
+<li><a href="#unobscured-some-unobscured-news">Some Unobscured News</a>
+— May 5</li>
+<li><a href="#unobscured-s4-interview-4-helen-rappaport">S4 – Interview
+4: Helen Rappaport</a> — January 26</li>
+<li><a href="#unobscured-s4-interview-3-joshua-sanborn">S4 – Interview
+3: Joshua Sanborn</a> — January 19</li>
+<li><a href="#unobscured-s4-interview-2-heather-coleman">S4 – Interview
+2: Heather Coleman</a> — January 12</li>
+<li><a href="#unobscured-s4-interview-1-douglas-smith">S4 – Interview 1:
+Douglas Smith</a> — January 5</li>
+</ul>
+<h3 id="section-2">2021</h3>
+<ul>
+<li><a href="#unobscured-s4-10-ghosts">S4 – 10: Ghosts</a> — December
+8</li>
+<li><a href="#unobscured-s4-9-let-this-cup-pass">S4 – 9: Let This Cup
+Pass</a> — December 1</li>
+<li><a href="#unobscured-s4-8-a-time-to-live">S4 – 8: A Time to Live</a>
+— November 24</li>
+<li><a href="#unobscured-s4-7-great-will-be-the-ruin">S4 – 7: Great Will
+Be the Ruin</a> — November 17</li>
+<li><a href="#unobscured-s4-6-laying-on-of-hands">S4 – 6: Laying On of
+Hands</a> — November 10</li>
+<li><a href="#unobscured-s4-5-standoff">S4 – 5: Standoff</a> — November
+3</li>
+<li><a href="#unobscured-s4-4-sheep-s-clothing">S4 – 4: Sheep’s
+Clothing</a> — October 27</li>
+<li><a href="#unobscured-s4-3-made-manifest">S4 – 3: Made Manifest</a> —
+October 20</li>
+<li><a href="#unobscured-s4-2-man-of-contradictions">S4 – 2: Man of
+Contradictions</a> — October 13</li>
+<li><a href="#unobscured-s4-1-in-search-of-a-friend">S4 – 1: In Search
+of a Friend</a> — October 6</li>
+<li><a href="#unobscured-s4-trailer">S4 – Trailer</a> — September
+29</li>
+<li><a href="#unobscured-s3-interview-4-paul-begg">S3 – INTERVIEW 4:
+Paul Begg</a> — January 27</li>
+<li><a href="#unobscured-s3-interview-3-drew-gray">S3 – INTERVIEW 3:
+Drew Gray</a> — January 20</li>
+<li><a href="#unobscured-s3-interview-2-louise-raw">S3 – INTERVIEW 2:
+Louise Raw</a> — January 13</li>
+<li><a href="#unobscured-s3-interview-1-adam-wood">S3 – INTERVIEW 1:
+Adam Wood</a> — January 6</li>
+</ul>
+<h3 id="section-3">2020</h3>
+<ul>
+<li><a href="#unobscured-s3-10-never-done">S3 – 10: Never Done</a> —
+December 9</li>
+<li><a href="#unobscured-s3-9-making-a-killing">S3 – 9: Making a
+Killing</a> — December 2</li>
+<li><a href="#unobscured-s3-8-solitary">S3 – 8: Solitary</a> — November
+25</li>
+<li><a href="#unobscured-s3-7-house-to-house">S3 – 7: House to House</a>
+— November 18</li>
+<li><a href="#unobscured-s3-6-mismatch">S3 – 6: Mismatch</a> — November
+11</li>
+<li><a href="#unobscured-s3-5-flaws">S3 – 5: Flaws</a> — November 4</li>
+<li><a href="#unobscured-s3-4-synthetical-turn">S3 – 4: Synthetical
+Turn</a> — October 28</li>
+<li><a href="#unobscured-s3-3-stardom">S3 – 3: Stardom</a> — October
+21</li>
+<li><a href="#unobscured-s3-2-rome-babylon">S3 – 2: Rome &amp;
+Babylon</a> — October 14</li>
+<li><a href="#unobscured-s3-1-temple-mount">S3 – 1: Temple Mount</a> —
+October 7</li>
+<li><a href="#unobscured-s3-trailer">S3 – Trailer</a> — September
+30</li>
+<li><a href="#unobscured-s2-interview-8-molly-mcgarry">S2 – INTERVIEW 8:
+Molly McGarry</a> — February 26</li>
+<li><a href="#unobscured-s2-interview-7-cathy-gutierrez">S2 – INTERVIEW
+7: Cathy Gutierrez</a> — February 19</li>
+<li><a href="#unobscured-s2-interview-6-john-buescher">S2 – INTERVIEW 6:
+John Buescher</a> — February 12</li>
+<li><a href="#unobscured-s2-interview-5-mary-gabriel">S2 – INTERVIEW 5:
+Mary Gabriel</a> — February 5</li>
+<li><a href="#unobscured-s2-interview-4-nancy-rubin-stuart">S2 –
+INTERVIEW 4: Nancy Rubin Stuart</a> — January 29</li>
+<li><a href="#unobscured-s2-interview-3-emily-clark">S2 – INTERVIEW 3:
+Emily Clark</a> — January 22</li>
+<li><a href="#unobscured-s2-interview-2-margaret-washington">S2 –
+INTERVIEW 2: Margaret Washington</a> — January 15</li>
+<li><a href="#unobscured-s2-interview-1-ann-braude">S2 – INTERVIEW 1:
+Ann Braude</a> — January 8</li>
+</ul>
+<h3 id="section-4">2019</h3>
+<ul>
+<li><a href="#unobscured-s2-12-there-is-no-death">S2 – 12: There Is No
+Death</a> — December 18</li>
+<li><a href="#unobscured-s2-11-the-sheep-and-the-ghosts">S2 – 11: The
+Sheep and the Ghosts</a> — December 11</li>
+<li><a href="#unobscured-s2-10-invisible-hands">S2 – 10: Invisible
+Hands</a> — December 4</li>
+<li><a href="#unobscured-s2-9-wounds">S2 – 9: Wounds</a> — November
+27</li>
+<li><a href="#unobscured-s2-8-open-graves">S2 – 8: Open Graves</a> —
+November 20</li>
+<li><a href="#unobscured-s2-7-preach-the-word">S2 – 7: Preach the
+Word</a> — November 13</li>
+<li><a href="#unobscured-s2-6-restless">S2 – 6: Restless</a> — November
+6</li>
+<li><a href="#unobscured-s2-5-seek-and-ye-shall-find">S2 – 5: Seek and
+Ye Shall Find</a> — October 30</li>
+<li><a href="#unobscured-s2-4-the-way-the-truth-the-lie">S2 – 4: The
+Way, The Truth, The Lie</a> — October 23</li>
+<li><a href="#unobscured-s2-3-a-spirit-globe">S2 – 3: A Spirit Globe</a>
+— October 16</li>
+<li><a href="#unobscured-s2-2-instruments">S2 – 2: Instruments</a> —
+October 9</li>
+<li><a href="#unobscured-s2-1-seer">S2 – 1: Seer</a> — October 2</li>
+<li><a href="#unobscured-s2-season-2-trailer">S2 – Season 2 Trailer</a>
+— September 25</li>
+<li><a href="#unobscured-s1-interview-6-stacy-schiff">S1 – INTERVIEW 6:
+Stacy Schiff</a> — February 6</li>
+<li><a href="#unobscured-s1-interview-5-jane-kamensky">S1 – INTERVIEW 5:
+Jane Kamensky</a> — January 30</li>
+<li><a href="#unobscured-s1-interview-4-marilynne-k-roach">S1 –
+INTERVIEW 4: Marilynne K. Roach</a> — January 24</li>
+<li><a href="#unobscured-s1-interview-3-richard-trask">S1 – INTERVIEW 3:
+Richard Trask</a> — January 16</li>
+<li><a href="#unobscured-s1-interview-2-mary-beth-norton">S1 – INTERVIEW
+2: Mary Beth Norton</a> — January 9</li>
+<li><a href="#unobscured-s1-interview-1-emerson-baker">S1 – INTERVIEW 1:
+Emerson Baker</a> — January 2</li>
+</ul>
+<h3 id="section-5">2018</h3>
+<ul>
+<li><a href="#unobscured-s1-12-making-amends">S1 – 12: Making Amends</a>
+— December 19</li>
+<li><a href="#unobscured-s1-11-floundering">S1 – 11: Floundering</a> —
+December 12</li>
+<li><a href="#unobscured-s1-10-pen-and-paper">S1 – 10: Pen and Paper</a>
+— December 5</li>
+<li><a href="#unobscured-s1-9-fight-or-flight">S1 – 9: Fight or
+Flight</a> — November 28</li>
+<li><a href="#unobscured-s1-8-king-and-queen">S1 – 8: King and Queen</a>
+— November 21</li>
+<li><a href="#unobscured-s1-7-she-is-one-of-us">S1 – 7: She Is One Of
+Us</a> — November 14</li>
+<li><a href="#unobscured-s1-6-consequences">S1 – 6: Consequences</a> —
+November 7</li>
+<li><a href="#unobscured-s1-5-a-higher-power">S1 – 5: A Higher Power</a>
+— October 31</li>
+<li><a href="#unobscured-s1-4-the-refugees">S1 – 4: The Refugees</a> —
+October 24</li>
+<li><a href="#unobscured-s1-3-by-the-book">S1 – 3: By the Book</a> —
+October 17</li>
+<li><a href="#unobscured-s1-2-the-outsiders">S1 – 2: The Outsiders</a> —
+October 10</li>
+<li><a href="#unobscured-s1-1-the-arrival">S1 – 1: The Arrival</a> —
+October 3</li>
+<li><a href="#unobscured-s1-trailer">S1 – Trailer</a> — September
+26</li>
+</ul>
+<h2 id="appendix-b-episodes-by-title">Appendix B: Episodes by Title</h2>
+<p>Every episode in order by title, ignoring a leading “A”, “An”, or
+“The”.</p>
+<ul>
+<li><a href="#unobscured-exhumed-is-coming">EXHUMED is coming…</a></li>
+<li><a href="#unobscured-s1-10-pen-and-paper">S1 – 10: Pen and
+Paper</a></li>
+<li><a href="#unobscured-s1-11-floundering">S1 – 11:
+Floundering</a></li>
+<li><a href="#unobscured-s1-12-making-amends">S1 – 12: Making
+Amends</a></li>
+<li><a href="#unobscured-s1-1-the-arrival">S1 – 1: The Arrival</a></li>
+<li><a href="#unobscured-s1-2-the-outsiders">S1 – 2: The
+Outsiders</a></li>
+<li><a href="#unobscured-s1-3-by-the-book">S1 – 3: By the Book</a></li>
+<li><a href="#unobscured-s1-4-the-refugees">S1 – 4: The
+Refugees</a></li>
+<li><a href="#unobscured-s1-5-a-higher-power">S1 – 5: A Higher
+Power</a></li>
+<li><a href="#unobscured-s1-6-consequences">S1 – 6:
+Consequences</a></li>
+<li><a href="#unobscured-s1-7-she-is-one-of-us">S1 – 7: She Is One Of
+Us</a></li>
+<li><a href="#unobscured-s1-8-king-and-queen">S1 – 8: King and
+Queen</a></li>
+<li><a href="#unobscured-s1-9-fight-or-flight">S1 – 9: Fight or
+Flight</a></li>
+<li><a href="#unobscured-s1-interview-1-emerson-baker">S1 – INTERVIEW 1:
+Emerson Baker</a></li>
+<li><a href="#unobscured-s1-interview-2-mary-beth-norton">S1 – INTERVIEW
+2: Mary Beth Norton</a></li>
+<li><a href="#unobscured-s1-interview-3-richard-trask">S1 – INTERVIEW 3:
+Richard Trask</a></li>
+<li><a href="#unobscured-s1-interview-4-marilynne-k-roach">S1 –
+INTERVIEW 4: Marilynne K. Roach</a></li>
+<li><a href="#unobscured-s1-interview-5-jane-kamensky">S1 – INTERVIEW 5:
+Jane Kamensky</a></li>
+<li><a href="#unobscured-s1-interview-6-stacy-schiff">S1 – INTERVIEW 6:
+Stacy Schiff</a></li>
+<li><a href="#unobscured-s1-trailer">S1 – Trailer</a></li>
+<li><a href="#unobscured-s2-10-invisible-hands">S2 – 10: Invisible
+Hands</a></li>
+<li><a href="#unobscured-s2-11-the-sheep-and-the-ghosts">S2 – 11: The
+Sheep and the Ghosts</a></li>
+<li><a href="#unobscured-s2-12-there-is-no-death">S2 – 12: There Is No
+Death</a></li>
+<li><a href="#unobscured-s2-1-seer">S2 – 1: Seer</a></li>
+<li><a href="#unobscured-s2-2-instruments">S2 – 2: Instruments</a></li>
+<li><a href="#unobscured-s2-3-a-spirit-globe">S2 – 3: A Spirit
+Globe</a></li>
+<li><a href="#unobscured-s2-4-the-way-the-truth-the-lie">S2 – 4: The
+Way, The Truth, The Lie</a></li>
+<li><a href="#unobscured-s2-5-seek-and-ye-shall-find">S2 – 5: Seek and
+Ye Shall Find</a></li>
+<li><a href="#unobscured-s2-6-restless">S2 – 6: Restless</a></li>
+<li><a href="#unobscured-s2-7-preach-the-word">S2 – 7: Preach the
+Word</a></li>
+<li><a href="#unobscured-s2-8-open-graves">S2 – 8: Open Graves</a></li>
+<li><a href="#unobscured-s2-9-wounds">S2 – 9: Wounds</a></li>
+<li><a href="#unobscured-s2-interview-1-ann-braude">S2 – INTERVIEW 1:
+Ann Braude</a></li>
+<li><a href="#unobscured-s2-interview-2-margaret-washington">S2 –
+INTERVIEW 2: Margaret Washington</a></li>
+<li><a href="#unobscured-s2-interview-3-emily-clark">S2 – INTERVIEW 3:
+Emily Clark</a></li>
+<li><a href="#unobscured-s2-interview-4-nancy-rubin-stuart">S2 –
+INTERVIEW 4: Nancy Rubin Stuart</a></li>
+<li><a href="#unobscured-s2-interview-5-mary-gabriel">S2 – INTERVIEW 5:
+Mary Gabriel</a></li>
+<li><a href="#unobscured-s2-interview-6-john-buescher">S2 – INTERVIEW 6:
+John Buescher</a></li>
+<li><a href="#unobscured-s2-interview-7-cathy-gutierrez">S2 – INTERVIEW
+7: Cathy Gutierrez</a></li>
+<li><a href="#unobscured-s2-interview-8-molly-mcgarry">S2 – INTERVIEW 8:
+Molly McGarry</a></li>
+<li><a href="#unobscured-s2-season-2-trailer">S2 – Season 2
+Trailer</a></li>
+<li><a href="#unobscured-s3-10-never-done">S3 – 10: Never Done</a></li>
+<li><a href="#unobscured-s3-1-temple-mount">S3 – 1: Temple
+Mount</a></li>
+<li><a href="#unobscured-s3-2-rome-babylon">S3 – 2: Rome &amp;
+Babylon</a></li>
+<li><a href="#unobscured-s3-3-stardom">S3 – 3: Stardom</a></li>
+<li><a href="#unobscured-s3-4-synthetical-turn">S3 – 4: Synthetical
+Turn</a></li>
+<li><a href="#unobscured-s3-5-flaws">S3 – 5: Flaws</a></li>
+<li><a href="#unobscured-s3-6-mismatch">S3 – 6: Mismatch</a></li>
+<li><a href="#unobscured-s3-7-house-to-house">S3 – 7: House to
+House</a></li>
+<li><a href="#unobscured-s3-8-solitary">S3 – 8: Solitary</a></li>
+<li><a href="#unobscured-s3-9-making-a-killing">S3 – 9: Making a
+Killing</a></li>
+<li><a href="#unobscured-s3-interview-1-adam-wood">S3 – INTERVIEW 1:
+Adam Wood</a></li>
+<li><a href="#unobscured-s3-interview-2-louise-raw">S3 – INTERVIEW 2:
+Louise Raw</a></li>
+<li><a href="#unobscured-s3-interview-3-drew-gray">S3 – INTERVIEW 3:
+Drew Gray</a></li>
+<li><a href="#unobscured-s3-interview-4-paul-begg">S3 – INTERVIEW 4:
+Paul Begg</a></li>
+<li><a href="#unobscured-s3-trailer">S3 – Trailer</a></li>
+<li><a href="#unobscured-s4-10-ghosts">S4 – 10: Ghosts</a></li>
+<li><a href="#unobscured-s4-1-in-search-of-a-friend">S4 – 1: In Search
+of a Friend</a></li>
+<li><a href="#unobscured-s4-2-man-of-contradictions">S4 – 2: Man of
+Contradictions</a></li>
+<li><a href="#unobscured-s4-3-made-manifest">S4 – 3: Made
+Manifest</a></li>
+<li><a href="#unobscured-s4-4-sheep-s-clothing">S4 – 4: Sheep’s
+Clothing</a></li>
+<li><a href="#unobscured-s4-5-standoff">S4 – 5: Standoff</a></li>
+<li><a href="#unobscured-s4-6-laying-on-of-hands">S4 – 6: Laying On of
+Hands</a></li>
+<li><a href="#unobscured-s4-7-great-will-be-the-ruin">S4 – 7: Great Will
+Be the Ruin</a></li>
+<li><a href="#unobscured-s4-8-a-time-to-live">S4 – 8: A Time to
+Live</a></li>
+<li><a href="#unobscured-s4-9-let-this-cup-pass">S4 – 9: Let This Cup
+Pass</a></li>
+<li><a href="#unobscured-s4-interview-1-douglas-smith">S4 – Interview 1:
+Douglas Smith</a></li>
+<li><a href="#unobscured-s4-interview-2-heather-coleman">S4 – Interview
+2: Heather Coleman</a></li>
+<li><a href="#unobscured-s4-interview-3-joshua-sanborn">S4 – Interview
+3: Joshua Sanborn</a></li>
+<li><a href="#unobscured-s4-interview-4-helen-rappaport">S4 – Interview
+4: Helen Rappaport</a></li>
+<li><a href="#unobscured-s4-trailer">S4 – Trailer</a></li>
+<li><a href="#unobscured-some-unobscured-news">Some Unobscured
+News</a></li>
+</ul>
+</body>
+</html>
