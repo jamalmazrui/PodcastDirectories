@@ -1,0 +1,2835 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Jamal Mazrui" />
+  <title>The Disappearing Spoon Directory</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">The Disappearing Spoon Directory</h1>
+<p class="subtitle">A Screen-Reader-Friendly Guide to Sam Kean’s
+Science-History Podcast</p>
+<p class="author">Jamal Mazrui</p>
+<p class="date">September 2026</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>A screen-reader-friendly directory of the podcast The Disappearing
+Spoon, covering 138 public episodes from 2019 to 2026. Each episode
+links to its audio and lists its metadata in separate, alphabetically
+sorted fields.</p>
+</div>
+</header>
+<h1 id="the-disappearing-spoon-directory">The Disappearing Spoon
+Directory</h1>
+<p>The Disappearing Spoon, hosted by best-selling author Sam Kean and
+co-produced with the Science History Institute, tells overlooked stories
+from the history of science: the small, strange moments where the
+footnote turns out to be the real story.</p>
+<p>This directory covers <strong>138 public episodes</strong>, 2019 to
+2026. Each episode’s title link plays its audio; an <strong>Episode
+page</strong> link follows the title when the show offers a separate
+page; and the metadata on record appears one kind per field, in
+alphabetical order: <strong>Date</strong>, <strong>Duration</strong>,
+<strong>Episode</strong>, <strong>Season</strong>, and
+<strong>Summary</strong>, each shown only when available. Titles ignore
+a leading “A”, “An”, or “The”; people are sorted by surname; all sorting
+ignores case.</p>
+<p>Episodes are grouped by year, earliest first, and within each group
+they are in date order, oldest first, so a show reads the way it
+unfolded. Appendixes reorder them by date (newest first), by title.</p>
+<p>For current details, the linked pages are authoritative. This
+directory was compiled by Jamal Mazrui from the show’s public feed.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><p><a href="#2019">2019 (1)</a></p></li>
+<li><p><a href="#2020">2020 (19)</a></p></li>
+<li><p><a href="#2021">2021 (22)</a></p></li>
+<li><p><a href="#2022">2022 (21)</a></p></li>
+<li><p><a href="#2023">2023 (21)</a></p></li>
+<li><p><a href="#2024">2024 (22)</a></p></li>
+<li><p><a href="#2025">2025 (21)</a></p></li>
+<li><p><a href="#2026">2026 (11)</a></p></li>
+<li><p><a href="#appendix-a-episodes-by-date">Appendix A: Episodes by
+Date</a></p></li>
+<li><p><a href="#appendix-b-episodes-by-title">Appendix B: Episodes by
+Title</a></p></li>
+</ul>
+<h2 id="2019">2019 (1)</h2>
+<h3 id="thedisappearingspoon-tea-test-tempest"><a
+href="https://audio2.redcircle.com/episodes/3eadb970-0a44-4ace-bc23-1ca6fb100768/stream.mp3">Tea
+Test Tempest</a></h3>
+<p><strong>Date:</strong> October 26, 2019</p>
+<p><strong>Duration:</strong> 899</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How a not-so-friendly bet over afternoon
+tea revolutionized modern science… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h2 id="2020">2020 (19)</h2>
+<h3 id="thedisappearingspoon-galileo-and-art-part-1"><a
+href="https://audio2.redcircle.com/episodes/b3cb4acb-b887-4daa-802a-b0eaefd5579e/stream.mp3">Galileo
+and Art, part 1</a></h3>
+<p><strong>Date:</strong> April 20, 2020</p>
+<p><strong>Duration:</strong> 1195</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How a nasty Renaissance spat toppled 2,000
+years of Pythagoras… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-galileo-and-art-part-2"><a
+href="https://audio2.redcircle.com/episodes/c464ac4e-2f9a-43f8-a4f7-fc6855a8b6fb/stream.mp3">Galileo
+and Art, part 2</a></h3>
+<p><strong>Date:</strong> April 20, 2020</p>
+<p><strong>Duration:</strong> 1030</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How Galileo’s training in art helped topple
+the ancient Greek dogma about the moon… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-glove-at-first-sight"><a
+href="https://audio2.redcircle.com/episodes/87506b6c-1d5f-4f3e-96c0-055fc1febb2c/stream.mp3">Glove
+at First Sight</a></h3>
+<p><strong>Date:</strong> April 27, 2020</p>
+<p><strong>Duration:</strong> 1120</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How a long-forgotten woman pioneered the
+first personal protective equipment (PPE) in history, rubber gloves for
+surgery, equipment that has been vital in fighting infections and
+pandemics ever since… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-exposing-nazi-medical-atrocities"><a
+href="https://audio2.redcircle.com/episodes/8c3c59fd-e93a-4f0d-b553-d8848769fa43/stream.mp3">Exposing
+Nazi Medical Atrocities</a></h3>
+<p><strong>Date:</strong> May 11, 2020</p>
+<p><strong>Duration:</strong> 1159</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How one Jewish doctor, Leo Alexander,
+single-handedly exposed the worst Nazi medical atrocities of World War
+II… Our Sponsors: * Check out ElevenReader and use my code “Spoon” for a
+great deal: * Check out my new book, The Museum of Lost Things! * Check
+out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-lost-dinosaurs-of-central-park"><a
+href="https://audio2.redcircle.com/episodes/5c6e2c06-a45a-4013-ba6f-35ab5137712f/stream.mp3">The
+Lost Dinosaurs of Central Park</a></h3>
+<p><strong>Date:</strong> May 22, 2020</p>
+<p><strong>Duration:</strong> 1098</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How a New York mob boss destroyed what
+would have been greatest dinosaur museum in the world… Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-tyrannosaurus-sex"><a
+href="https://audio2.redcircle.com/episodes/e8ee040f-5552-4f36-bc97-7d3e86444c3e/stream.mp3">Tyrannosaurus
+Sex</a></h3>
+<p><strong>Date:</strong> June 2, 2020</p>
+<p><strong>Duration:</strong> 1032</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How a man who hated dinosaurs ended up
+revolutionizing our understanding of them, including dinosaur beauty and
+dinosaur sex… Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-science-immigrants-who-saved-millions"><a
+href="https://audio2.redcircle.com/episodes/fa139e66-b028-446f-8cc1-15226a35e078/stream.mp3">The
+Science Immigrants Who Saved Millions</a></h3>
+<p><strong>Date:</strong> June 9, 2020</p>
+<p><strong>Duration:</strong> 1171</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How two unlikely immigrants teamed up and
+saved millions of women’s lives by developing the most successful cancer
+screening tool in history… Our Sponsors: * Check out ElevenReader and
+use my code “Spoon” for a great deal: * Check out my new book, The
+Museum of Lost Things! * Check out my new book, The Museum of Lost
+Things!</p>
+<h3 id="thedisappearingspoon-are-braces-a-health-disaster"><a
+href="https://audio2.redcircle.com/episodes/00a8249b-d134-45f2-b379-0779ce2e4153/stream.mp3">Are
+Braces a Health Disaster?</a></h3>
+<p><strong>Date:</strong> June 23, 2020</p>
+<p><strong>Duration:</strong> 1168</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Why hunter-gatherers had perfect teeth, why
+modern humans rarely do, and the profound consequences for our health…
+Our Sponsors: * Check out ElevenReader and use my code “Spoon” for a
+great deal: * Check out my new book, The Museum of Lost Things! * Check
+out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-our-slimy-nazi-saviors"><a
+href="https://audio2.redcircle.com/episodes/ed3a8e91-477d-4d67-b2fd-fa5dfb0489d3/stream.mp3">Our
+Slimy Nazi Saviors</a></h3>
+<p><strong>Date:</strong> July 7, 2020</p>
+<p><strong>Duration:</strong> 1018</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How two crooked Nazis—and one top-secret
+scientific mission—saved thousands of American lives during World War
+II… Our Sponsors: * Check out ElevenReader and use my code “Spoon” for a
+great deal: * Check out my new book, The Museum of Lost Things! * Check
+out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-ice-island-murder"><a
+href="https://audio2.redcircle.com/episodes/93b266fc-121b-4856-a86e-3504917d1008/stream.mp3">The
+Ice Island Murder</a></h3>
+<p><strong>Date:</strong> July 14, 2020</p>
+<p><strong>Duration:</strong> 1173</p>
+<p><strong>Episode:</strong> 11</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How one of the messiest homicides in
+history - when one scientist killed another scientist over a jug of
+raisin wine way up inside the Arctic Circle - foreshadows the first
+murder in outer space… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-chocolate-cake-atomic-bombs"><a
+href="https://audio2.redcircle.com/episodes/9ea009bd-ea09-4744-8f1e-d976190d5e0e/stream.mp3">Chocolate
+Cake &amp; Atomic Bombs</a></h3>
+<p><strong>Date:</strong> August 1, 2020</p>
+<p><strong>Duration:</strong> 1172</p>
+<p><strong>Episode:</strong> 12</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> A story for the 75th anniversary of the
+Hiroshima and Nagasaki atomic bombs: How a now-forgotten teahouse in Los
+Alamos and its unlikely owners—the spitfire Edith Warner and the Pueblo
+builder Tilano Montoya—influenced Robert Oppenheimer and changed the
+face of the whole Manhattan Project… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-teflon-bomb"><a
+href="https://audio2.redcircle.com/episodes/3b9de8f8-40c8-48ca-bb9e-d214b0acc853/stream.mp3">The
+Teflon Bomb</a></h3>
+<p><strong>Date:</strong> August 6, 2020</p>
+<p><strong>Duration:</strong> 1182</p>
+<p><strong>Episode:</strong> 13</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How did the nonstick frying pan in your
+kitchen make the first atomic bomb possible? A story about the
+innocent-seeming Teflon for this week’s 75th anniversary of the
+Hiroshima and Nagasaki atomic bombs… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-man-who-couldn-t-read-numbers"><a
+href="https://audio2.redcircle.com/episodes/2df51742-4b24-488c-90e4-a459a68d0720/stream.mp3">The
+Man Who Couldn’t Read Numbers</a></h3>
+<p><strong>Date:</strong> August 17, 2020</p>
+<p><strong>Duration:</strong> 890</p>
+<p><strong>Episode:</strong> 14</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> An Oliver-Sacks-like tale of a man with
+brain damage who can’t read numbers—even though he can still read words
+just fine! His amazing case could also shed light on the mysteries of
+human consciousness… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-from-siberia-with-manipulative-love"><a
+href="https://audio2.redcircle.com/episodes/7f59ccfd-8a67-4222-9b5e-abe4f232d824/stream.mp3">From
+Siberia with (Manipulative) Love</a></h3>
+<p><strong>Date:</strong> September 1, 2020</p>
+<p><strong>Duration:</strong> 1185</p>
+<p><strong>Episode:</strong> 15</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How two Russian scientists defied death and
+imprisonment to run a top-secret genetics experiment, and what it
+revealed about how dogs, babies, and stuffed animals manipulate our
+minds… Our Sponsors: * Check out ElevenReader and use my code “Spoon”
+for a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-cia-s-drug-fueled-orgies-and-you"><a
+href="https://audio2.redcircle.com/episodes/749d97e9-7ab1-4d59-95e4-16ae01234956/stream.mp3">The
+CIA’s Drug-Fueled Orgies and You</a></h3>
+<p><strong>Date:</strong> September 15, 2020</p>
+<p><strong>Duration:</strong> 1033</p>
+<p><strong>Episode:</strong> 16</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How the Central Intelligence Agency’s
+recklessly outrageous Operation Midnight Climax revealed some surprising
+psychological insights into sex, drugs, and human nature… Our Sponsors:
+* Check out ElevenReader and use my code “Spoon” for a great deal: *
+Check out my new book, The Museum of Lost Things! * Check out my new
+book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-vitamin-g"><a
+href="https://audio2.redcircle.com/episodes/1151b0a2-db18-47b8-8dd5-d62624cc364a/stream.mp3">Vitamin
+G</a></h3>
+<p><strong>Date:</strong> October 1, 2020</p>
+<p><strong>Duration:</strong> 1181</p>
+<p><strong>Episode:</strong> 17</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How one heroic doctor, and his revolting
+experiments, singlehandedly ended the deadliest dietary epidemic disease
+in American history… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-star-wars-death-rays-and-donald-trump"><a
+href="https://audio2.redcircle.com/episodes/8beb6b8d-52af-4cd0-a26f-180d9732c309/stream.mp3">Star
+Wars, Death Rays, and Donald Trump</a></h3>
+<p><strong>Date:</strong> October 15, 2020</p>
+<p><strong>Duration:</strong> 1194</p>
+<p><strong>Episode:</strong> 18</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> How the brilliant geek Nikola Tesla grew
+obsessed with an outlandish “death ray,” and the ray’s surprising
+connection to Donald Trump Our Sponsors: * Check out ElevenReader and
+use my code “Spoon” for a great deal: * Check out my new book, The
+Museum of Lost Things! * Check out my new book, The Museum of Lost
+Things!</p>
+<h3 id="thedisappearingspoon-a-school-shooting-for-science"><a
+href="https://audio2.redcircle.com/episodes/b7538f98-7878-486f-9b91-513c97302069/stream.mp3">A
+School Shooting for Science</a></h3>
+<p><strong>Date:</strong> November 13, 2020</p>
+<p><strong>Duration:</strong> 1188</p>
+<p><strong>Episode:</strong> 19</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> When a crank scientist needed to get the
+attention of Einstein and others for his crazy physics theory, there was
+only one sure way he knew to get publicity: murder… Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-joys-and-pains-of-operating-on-yourself"><a
+href="https://audio2.redcircle.com/episodes/54d94055-12ed-4f1b-b08d-40f9085f670a/stream.mp3">The
+Joys, and Pains, of Operating on Yourself</a></h3>
+<p><strong>Date:</strong> November 30, 2020</p>
+<p><strong>Duration:</strong> 1017</p>
+<p><strong>Episode:</strong> 20</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Why otherwise sane and rational doctors
+love experimenting on themselves—up to and including self-surgery… Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h2 id="2021">2021 (22)</h2>
+<h3
+id="thedisappearingspoon-the-world-s-first-global-vaccine-supply-chain-was-orphan-children"><a
+href="https://audio2.redcircle.com/episodes/f7f374a6-44d9-43c0-a885-0cb92481dab6/stream.mp3">The
+World’s First Global Vaccine Supply Chain Was Orphan Children</a></h3>
+<p><strong>Date:</strong> March 30, 2021</p>
+<p><strong>Duration:</strong> 1226</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> How did they spread vaccines around the
+world in the early 1800s? By injecting orphans and forcing them onto a
+ship… Our Sponsors: * Check out ElevenReader and use my code “Spoon” for
+a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-most-important-lost-fossils-in-history"><a
+href="https://audio2.redcircle.com/episodes/fc50bca3-a802-4f52-8900-bf646889c315/stream.mp3">The
+Most Important Lost Fossils in History</a></h3>
+<p><strong>Date:</strong> April 6, 2021</p>
+<p><strong>Duration:</strong> 1166</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> How the legendary Peking Man fossils from
+China disappeared in the 1940s, and why archaeologists think that
+maybe—just maybe—they now know where to find them… Our Sponsors: * Check
+out ElevenReader and use my code “Spoon” for a great deal: * Check out
+my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-marie-curie-s-nearly-disastrous-trip-to-america"><a
+href="https://audio2.redcircle.com/episodes/112f41cb-665e-4808-8f6c-be93a66cb701/stream.mp3">Marie
+Curie’s (Nearly Disastrous) Trip to America</a></h3>
+<p><strong>Date:</strong> April 13, 2021</p>
+<p><strong>Duration:</strong> 1028</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> How the women of America, exactly 100 years
+ago, scrimped and saved and sacrificed to secure a vital gram of radium
+for their scientific hero, Marie Curie… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3
+id="thedisappearingspoon-bonus-interview-with-wnyc-s-science-diction"><a
+href="https://audio2.redcircle.com/episodes/8a0b2698-c77a-447f-8710-54ced6f8afe6/stream.mp3">Bonus
+interview with WNYC’s Science Diction</a></h3>
+<p><strong>Date:</strong> April 16, 2021</p>
+<p><strong>Duration:</strong> 864</p>
+<p><strong>Summary:</strong> A two-fer: (1) A bonus interview with me
+about the orphan vaccine episode, from a great WNYC podcast called
+Science Diction. (2) A short episode of Science Diction on Edward Jenner
+and the very first vaccines. Our Sponsors: * Check out ElevenReader and
+use my code “Spoon” for a great deal: * Check out my new book, The
+Museum of Lost Things! * Check out my new book, The Museum of Lost
+Things!</p>
+<h3
+id="thedisappearingspoon-why-don-t-we-have-a-male-birth-control-pill-yet"><a
+href="https://audio2.redcircle.com/episodes/74dacb36-5563-4193-9d54-ba3fe9978f09/stream.mp3">Why
+Don’t We Have a Male Birth Control Pill Yet?</a></h3>
+<p><strong>Date:</strong> April 20, 2021</p>
+<p><strong>Duration:</strong> 1094</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> How a bottle of prison hooch doomed the
+most promising candidate in history for a male birth-control pill, and
+why scientists still can’t make one today… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3
+id="thedisappearingspoon-what-s-the-longest-word-in-the-english-language"><a
+href="https://audio2.redcircle.com/episodes/354538a0-35c9-4f37-afbc-c59659f61145/stream.mp3">What’s
+the Longest Word in the English Language?</a></h3>
+<p><strong>Date:</strong> April 27, 2021</p>
+<p><strong>Duration:</strong> 1117</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> How the unique properties of carbon
+produced a 1,185-letter word… Our Sponsors: * Check out ElevenReader and
+use my code “Spoon” for a great deal: * Check out my new book, The
+Museum of Lost Things! * Check out my new book, The Museum of Lost
+Things!</p>
+<h3
+id="thedisappearingspoon-chewing-it-over-and-over-and-over-and-over"><a
+href="https://audio2.redcircle.com/episodes/8dcae7b7-fc82-4f15-9e1a-96e439f46e62/stream.mp3">Chewing
+it Over—and Over and Over and Over</a></h3>
+<p><strong>Date:</strong> May 4, 2021</p>
+<p><strong>Duration:</strong> 1076</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> How a weird “scientific” diet fad conquered
+America in the early 1900s—and easily could have lost World War One for
+the Allies… Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-death-of-the-lord-god-bird"><a
+href="https://audio2.redcircle.com/episodes/8dd33390-c789-478f-8b05-23e1996c3eed/stream.mp3">The
+Death of the Lord God Bird</a></h3>
+<p><strong>Date:</strong> May 11, 2021</p>
+<p><strong>Duration:</strong> 1174</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> How greed, and a group of Nazi prisoners,
+killed off one of the most iconic birds in American history, the
+ivory-billed woodpecker… Our Sponsors: * Check out ElevenReader and use
+my code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-when-mosquitos-cured-insanity"><a
+href="https://audio2.redcircle.com/episodes/3f719597-eb57-4be3-aa9b-8dca86bb8dd6/stream.mp3">When
+Mosquitos Cured Insanity</a></h3>
+<p><strong>Date:</strong> May 18, 2021</p>
+<p><strong>Duration:</strong> 1037</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> How one doctor in the early 1900s risked
+the lives of patients by pitting one ancient scourge (malaria) against
+another (syphilis)—and won a Nobel Prize in the process… Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-when-a-hole-in-the-head-is-good-for-you"><a
+href="https://audio2.redcircle.com/episodes/277ea85b-7958-4647-8a65-25f41446f93f/stream.mp3">When
+a Hole in the Head Is Good for You</a></h3>
+<p><strong>Date:</strong> May 25, 2021</p>
+<p><strong>Duration:</strong> 984</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> How a rogue archaeologist in Peru—and a
+stolen skull—provided the first real evidence that ancient people
+practiced neurosurgery… Our Sponsors: * Check out ElevenReader and use
+my code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-anatomy-riots"><a
+href="https://audio2.redcircle.com/episodes/785d45e4-6327-4bcb-a3db-c5718335c61d/stream.mp3">The
+Anatomy Riots</a></h3>
+<p><strong>Date:</strong> June 1, 2021</p>
+<p><strong>Duration:</strong> 1029</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> How early anatomists provoked some of the
+strangest riots in history, over stolen corpses (plus, bonus preview of
+my new book, The Icepick Surgeon!) Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-icepick-surgeon-audiobook-excerpt"><a
+href="https://audio2.redcircle.com/episodes/06a6a61c-af1d-4791-84b9-9ce91ea29be0/stream.mp3">Icepick
+Surgeon audiobook excerpt</a></h3>
+<p><strong>Date:</strong> July 13, 2021</p>
+<p><strong>Duration:</strong> 1346</p>
+<p><strong>Episode:</strong> 31</p>
+<p><strong>Summary:</strong> The prologue and introduction to the book
+The Icepick Surgeon. Written by Sam Kean, read by Ben Sullivan. Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-kangaroo-and-pig-and-monkey-and-dog-and-donkey-courts"><a
+href="https://audio2.redcircle.com/episodes/ad7fe422-0396-412a-b1ea-52d60e8c3082/stream.mp3">Kangaroo
+(and Pig and Monkey and Dog and Donkey) Courts</a></h3>
+<p><strong>Date:</strong> October 5, 2021</p>
+<p><strong>Duration:</strong> 1162</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> The long, wacky, and surprisingly
+thought-provoking history of trying animals in human courts… Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-mary-poppins-cancer"><a
+href="https://audio2.redcircle.com/episodes/3c8d4626-9ce8-4b45-92bc-5f919d2f2333/stream.mp3">The
+‘Mary Poppins’ Cancer</a></h3>
+<p><strong>Date:</strong> October 12, 2021</p>
+<p><strong>Duration:</strong> 1139</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> The life of chimneysweeps was nasty, poor,
+brutish, filthy dirty, and usually short, thanks to a rare cancer of the
+genitals… Our Sponsors: * Check out ElevenReader and use my code “Spoon”
+for a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-how-climate-change-will-remake-the-human-body"><a
+href="https://audio2.redcircle.com/episodes/d8b3d093-4679-41c5-925f-dacba7fa313d/stream.mp3">How
+Climate Change Will Remake the Human Body</a></h3>
+<p><strong>Date:</strong> October 19, 2021</p>
+<p><strong>Duration:</strong> 1143</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> Scientists know how other animals’ bodies
+will change in warmer climates, but how will human beings respond? Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-real-life-zombies"><a
+href="https://audio2.redcircle.com/episodes/4764482d-efe9-45e6-8183-a06180cfed33/stream.mp3">Real
+Life Zombies</a></h3>
+<p><strong>Date:</strong> October 26, 2021</p>
+<p><strong>Duration:</strong> 1053</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> What a bizarre psychological disorder can
+teach us about memory, human nature, and our sense of who we are Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-history-s-first-car-crash-victim"><a
+href="https://audio2.redcircle.com/episodes/dd0ae71e-71d4-4c08-8341-d0c8be253caa/stream.mp3">History’s
+First Car Crash Victim</a></h3>
+<p><strong>Date:</strong> November 2, 2021</p>
+<p><strong>Duration:</strong> 896</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> How a steam-powered automobile in 1869
+snuffed out the life of the brilliant female naturalist and astronomer
+Mary Ward… Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-burn-after-watching"><a
+href="https://audio2.redcircle.com/episodes/c63921f1-3037-4fc6-984e-a3719e44fe8a/stream.mp3">Burn
+After Watching</a></h3>
+<p><strong>Date:</strong> November 9, 2021</p>
+<p><strong>Duration:</strong> 1204</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> The world’s first plastic made Hollywood
+possible—and killed thousands of people along the way… Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-harvard-medical-school-janitor-who-solved-a-murder"><a
+href="https://audio2.redcircle.com/episodes/805e637e-a2dd-455a-9301-3e90b1cfe344/stream.mp3">The
+Harvard Medical School Janitor Who Solved a Murder</a></h3>
+<p><strong>Date:</strong> November 16, 2021</p>
+<p><strong>Duration:</strong> 1287</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> In a building full of dead bodies, how can
+you tell a murder victim from an unlucky stiff? Our Sponsors: * Check
+out ElevenReader and use my code “Spoon” for a great deal: * Check out
+my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-big-what-if-of-cancer"><a
+href="https://audio2.redcircle.com/episodes/06b5f0ff-b244-4c95-a2a6-4e89adb8277d/stream.mp3">The
+Big ‘What If’ of Cancer</a></h3>
+<p><strong>Date:</strong> November 23, 2021</p>
+<p><strong>Duration:</strong> 1211</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> How a feisty, suicidal Nobel laureate
+infuriated both Hitler and Stalin, and stalled cancer research for fifty
+years along the way… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-murderous-origins-of-the-american-medical-association"><a
+href="https://audio2.redcircle.com/episodes/25d5eed7-f3fd-4a3f-a37c-fcd96168b965/stream.mp3">The
+Murderous Origins of the American Medical Association</a></h3>
+<p><strong>Date:</strong> November 30, 2021</p>
+<p><strong>Duration:</strong> 1221</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> How a bloody gun duel between two doctors
+in Transylvania sparked a frenzy of outrage—as well as the American
+Medical Association… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-sinister-angel-singers-of-rome"><a
+href="https://audio2.redcircle.com/episodes/ba35a850-cb1c-4a8a-87c8-0a1f1d429f16/stream.mp3">The
+Sinister Angel Singers of Rome</a></h3>
+<p><strong>Date:</strong> December 7, 2021</p>
+<p><strong>Duration:</strong> 1120</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> How a simple operation—castrating little
+boys—produced the greatest singers the world has ever known… Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h2 id="2022">2022 (21)</h2>
+<h3 id="thedisappearingspoon-the-unsung-heroes-of-darwin-s-evolution"><a
+href="https://audio2.redcircle.com/episodes/ba46dbda-fe40-40b8-b901-bbb0103897e2/stream.mp3">The
+Unsung Heroes of Darwin’s Evolution</a></h3>
+<p><strong>Date:</strong> March 8, 2022</p>
+<p><strong>Duration:</strong> 1242</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> Charles Darwin didn’t give a crap about
+Galápagos finches, despite what you maybe heard. So what animals did
+light his fire while forming his theory of evolution? Pigeons, worms,
+and especially a despised marine pest—the lowly barnacle… Our Sponsors:
+* Check out ElevenReader and use my code “Spoon” for a great deal: *
+Check out my new book, The Museum of Lost Things! * Check out my new
+book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-claude-monet-and-bee-purple"><a
+href="https://audio2.redcircle.com/episodes/af1ba47f-ca82-4d5c-9be4-9b0093e90661/stream.mp3">Claude
+Monet and Bee Purple</a></h3>
+<p><strong>Date:</strong> March 15, 2022</p>
+<p><strong>Duration:</strong> 1165</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> When Impressionist painter Claude Monet
+developed cataracts, he thought his painting career was over. Hardly. He
+actually developed a human superpower—the ability to see, like bees do,
+a much wider range of colors… Our Sponsors: * Check out ElevenReader and
+use my code “Spoon” for a great deal: * Check out my new book, The
+Museum of Lost Things! * Check out my new book, The Museum of Lost
+Things!</p>
+<h3 id="thedisappearingspoon-how-to-be-smarter-than-isaac-newton"><a
+href="https://audio2.redcircle.com/episodes/e725462f-1696-4454-b5a9-58d4ea1c6d50/stream.mp3">How
+to Be Smarter than Isaac Newton</a></h3>
+<p><strong>Date:</strong> March 22, 2022</p>
+<p><strong>Duration:</strong> 1050</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> You think Isaac Newton was smart? Not so
+fast. He made one mistake so dumb that scholars still shake their heads
+over it. Find out how to avoid this mistake—and be smarter than
+Newton—in this episode… Our Sponsors: * Check out ElevenReader and use
+my code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-albert-einstein-and-the-worst-prediction-in-the-history-of-science"><a
+href="https://audio2.redcircle.com/episodes/7ac640df-f7a1-4077-9b0d-e2684745a35f/stream.mp3">Albert
+Einstein and the Worst Prediction in the History of Science</a></h3>
+<p><strong>Date:</strong> March 29, 2022</p>
+<p><strong>Duration:</strong> 1130</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> Albert Einstein’s self-proclaimed “biggest
+blunder”—the cosmological constant in his theory of relativity—turned
+out to not be blunder at all. In fact, it might hold the key to the
+future of physics. (Now that’s genius!) Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3
+id="thedisappearingspoon-stephen-hawking-and-the-black-hole-mistake-that-made-his-career"><a
+href="https://audio2.redcircle.com/episodes/660c88ae-9592-47a4-852b-ac2393b710cd/stream.mp3">Stephen
+Hawking and the Black Hole Mistake that Made His Career</a></h3>
+<p><strong>Date:</strong> April 5, 2022</p>
+<p><strong>Duration:</strong> 1203</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> In 1971, Stephen Hawking made a hasty,
+emotional mistake in a paper about black holes—and it turned out to be
+the smartest thing he ever did. Sometimes in science, big blunders are
+the best way forward… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-when-the-brain-deceives-itself"><a
+href="https://audio2.redcircle.com/episodes/84d95c2e-0668-4195-ba50-cc1690092ad5/stream.mp3">When
+the Brain Deceives Itself</a></h3>
+<p><strong>Date:</strong> April 12, 2022</p>
+<p><strong>Duration:</strong> 1090</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> Can we ever truly lie to ourselves?
+Actually, yes—just ask Woodrow Wilson and William O. Douglas. They’re
+two famous examples of a bizarrely common neurological disorder. One
+that you might have fallen victim to yourself… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-bird-with-four-sexes"><a
+href="https://audio2.redcircle.com/episodes/550adacb-55c3-4882-8fff-24ef1b9dd3de/stream.mp3">The
+Bird with Four Sexes</a></h3>
+<p><strong>Date:</strong> April 19, 2022</p>
+<p><strong>Duration:</strong> 1197</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> What a strange little sparrow can teach us
+about love, sex, human biology, and a whole lot more… Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-screwiest-and-perhaps-most-original-idea-of-the-20th-century"><a
+href="https://audio2.redcircle.com/episodes/97171655-8bba-4cfb-871a-253b9b0004b1/stream.mp3">The
+Screwiest—and Perhaps Most Original—Idea of the 20th Century</a></h3>
+<p><strong>Date:</strong> April 26, 2022</p>
+<p><strong>Duration:</strong> 1239</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> The New York Times one credited biologist
+Edward Knipling with “the most original idea of the 20th century.” What
+was it? A way to fight the screwworm, the vilest parasite on earth—and
+maybe stop malaria, the deadliest disease in human history, too. Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-dr-jekyll-mr-hyde-and-the-irish-giant"><a
+href="https://audio2.redcircle.com/episodes/b1c2504d-ff73-4285-9aef-980f1ceb0174/stream.mp3">Dr. Jekyll,
+Mr. Hyde, and the Irish Giant</a></h3>
+<p><strong>Date:</strong> May 3, 2022</p>
+<p><strong>Duration:</strong> 1112</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> Charles Byrne was an eight-foot Irish giant
+️who loved a beer or 3 with the lads. His funeral became a legendary
+party—as well as one of biggest scandals in science history, when a
+famous anatomist named John Hunter stole his body for dissection. Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-murderer-who-made-movies-possible"><a
+href="https://audio2.redcircle.com/episodes/b6bae3bf-b9e7-4e9c-955e-941df0b537af/stream.mp3">The
+Murderer Who Made Movies Possible</a></h3>
+<p><strong>Date:</strong> May 10, 2022</p>
+<p><strong>Duration:</strong> 1263</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> Like Leonardo and Albrecht Dürer before
+him, photographer Eadweard Muybridge was a legendary pioneer in both art
+and science. He was also a cold-blooded murderer. Our Sponsors: * Check
+out ElevenReader and use my code “Spoon” for a great deal: * Check out
+my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-icepick-surgeon-bonus-excerpt-on-the-making-of-the-unabomber"><a
+href="https://audio2.redcircle.com/episodes/17d2dc31-489c-490a-9ac2-56c451ccd67e/stream.mp3">Icepick
+Surgeon bonus excerpt on the making of the Unabomber</a></h3>
+<p><strong>Date:</strong> July 12, 2022</p>
+<p><strong>Duration:</strong> 1163</p>
+<p><strong>Summary:</strong> A bonus excerpt from my book The Icepick
+Surgeon on the making of the Unabomber, through a cruel, unethical
+psychology experiment at Harvard University… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-making-of-a-lobotomist"><a
+href="https://audio2.redcircle.com/episodes/28cb543a-774f-4db6-af6c-57ed6015c446/stream.mp3">The
+Making of a Lobotomist</a></h3>
+<p><strong>Date:</strong> September 27, 2022</p>
+<p><strong>Duration:</strong> 1136</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> Dr. Walter Freeman blamed himself for the
+death of his favorite son. But instead of reflecting or growing
+personally, he used that death to become the most notorious lobotomist
+in the history of medicine… Our Sponsors: * Check out ElevenReader and
+use my code “Spoon” for a great deal: * Check out my new book, The
+Museum of Lost Things! * Check out my new book, The Museum of Lost
+Things!</p>
+<h3 id="thedisappearingspoon-the-life-saving-rat-poison"><a
+href="https://audio2.redcircle.com/episodes/007866bd-1325-4626-92cd-09273ed7be03/stream.mp3">The
+Life-Saving Rat Poison</a></h3>
+<p><strong>Date:</strong> October 4, 2022</p>
+<p><strong>Duration:</strong> 1251</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> Warfarin was the best rat poison in
+history. It’s also, now, one of the most important, life-saving—and
+freakishly unlikely—drugs in the history of medicine… Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-most-evil-molecule"><a
+href="https://audio2.redcircle.com/episodes/4df6691b-b009-4ab0-ae8b-4bb33e0cbf4a/stream.mp3">The
+Most Evil Molecule</a></h3>
+<p><strong>Date:</strong> October 11, 2022</p>
+<p><strong>Duration:</strong> 1138</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> It fueled slavery, as well as the Nazi
+death machine. It kills millions of people every year through cancer and
+heart disease. And you almost certainly have some in your home. That’s
+the legacy of sugar… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-debaucherous-legacy-of-johnny-appleseed"><a
+href="https://audio2.redcircle.com/episodes/06d91c02-f3b0-4a4d-b6d3-a339ed2cb653/stream.mp3">The
+Debaucherous Legacy of Johnny Appleseed</a></h3>
+<p><strong>Date:</strong> October 18, 2022</p>
+<p><strong>Duration:</strong> 1299</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> The Johnny Appleseed of Disney fame was
+complete bunk. He brought not wholesome apples to people, but liquor—and
+lots of it, all thanks to the bizarre biology of this misunderstood
+fruit… Our Sponsors: * Check out ElevenReader and use my code “Spoon”
+for a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-naked-shibboleth"><a
+href="https://audio2.redcircle.com/episodes/d773aff7-68cc-46fe-bbb8-d96d7dd140f5/stream.mp3">The
+Naked Shibboleth</a></h3>
+<p><strong>Date:</strong> October 25, 2022</p>
+<p><strong>Duration:</strong> 1255</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> Naked mole-rats are medical
+marvels—impervious to cancer and immune to old age. Too bad they’re also
+vicious murderers… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-scariest-paradise-on-earth"><a
+href="https://audio2.redcircle.com/episodes/f689b7e5-4909-45bc-a2ff-5f9ac50e625e/stream.mp3">The
+Scariest Paradise on Earth</a></h3>
+<p><strong>Date:</strong> November 1, 2022</p>
+<p><strong>Duration:</strong> 1117</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> The Demilitarized Zone (DMZ) in Korea is a
+place of guns and heartache and anger—and also one of the most thriving
+natural wildlife habitats on Earth… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-blind-visionary"><a
+href="https://audio2.redcircle.com/episodes/37816473-da33-4c07-be59-5e8c49ca8d3a/stream.mp3">The
+Blind Visionary</a></h3>
+<p><strong>Date:</strong> November 8, 2022</p>
+<p><strong>Duration:</strong> 1297</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> Thomas Schall was first blind member of
+Congress. There, he envisioned a better, smarter, more efficient
+world—brought about by his radical new calendar. Too bad the rest of us
+couldn’t see the future as clearly as he did… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-roadside-apocalypse"><a
+href="https://audio2.redcircle.com/episodes/55a4ef5b-662c-44fb-baa5-e2e8c6a4bbcc/stream.mp3">The
+Roadside Apocalypse</a></h3>
+<p><strong>Date:</strong> November 15, 2022</p>
+<p><strong>Duration:</strong> 1214</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> Automobiles kill several million animals
+every single day. Scientists are still coming to grips with the carnage…
+Our Sponsors: * Check out ElevenReader and use my code “Spoon” for a
+great deal: * Check out my new book, The Museum of Lost Things! * Check
+out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-death-by-nutrition"><a
+href="https://audio2.redcircle.com/episodes/8fcf3579-ae3f-4d84-a487-cf302d649d6c/stream.mp3">Death
+by Nutrition</a></h3>
+<p><strong>Date:</strong> November 22, 2022</p>
+<p><strong>Duration:</strong> 1224</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> Polar explorer Douglas Mawson made several
+mistakes on his harrowing journey across Antarctica. But the biggest
+blunder involved eating animal livers oversaturated with vitamin A, a
+sure death sentence… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-death-squared"><a
+href="https://audio2.redcircle.com/episodes/a382d7e0-97c5-45dc-8553-0ca1104c49ab/stream.mp3">Death
+Squared</a></h3>
+<p><strong>Date:</strong> November 29, 2022</p>
+<p><strong>Duration:</strong> 1215</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> The “mouse utopia” experiment showed just
+how quickly animal heaven can turn into animal hell—and revealed how
+eager human beings are to interpret science through the lens of
+extremist politics… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h2 id="2023">2023 (21)</h2>
+<h3 id="thedisappearingspoon-spring-update-and-innate-trailer"><a
+href="https://audio2.redcircle.com/episodes/e7b5b5f3-264e-464d-b3c0-ed134213f63a/stream.mp3">Spring
+update and “Innate” trailer</a></h3>
+<p><strong>Date:</strong> February 6, 2023</p>
+<p><strong>Duration:</strong> 422</p>
+<p><strong>Summary:</strong> An update on the spring season of
+Disappearing Spoon (early episodes for Patreon subscribers!), plus a
+trailer for the new “Innate” series from the great people behind the
+Science History Institute’s “Distillations podcast” Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-brilliant-groundbreaking-and-wildly-overrated-leonardo-da-vinci"><a
+href="https://audio2.redcircle.com/episodes/57d1f7d9-1210-484c-b9e2-fc49aca1ff05/stream.mp3">The
+Brilliant, Groundbreaking, and Wildly Overrated Leonardo da
+Vinci</a></h3>
+<p><strong>Date:</strong> May 2, 2023</p>
+<p><strong>Duration:</strong> 1224</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> Leonardo da Vinci was brilliant,
+groundbreaking—and especially with regard to his science—wildly
+overrated. All because he lacked one all-important quality: sitzfleisch…
+Our Sponsors: * Check out ElevenReader and use my code “Spoon” for a
+great deal: * Check out my new book, The Museum of Lost Things! * Check
+out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-real-tragedy-of-robert-oppenheimer"><a
+href="https://audio2.redcircle.com/episodes/880825bf-1129-4709-aa03-2ee0e863344f/stream.mp3">The
+Real Tragedy of Robert Oppenheimer</a></h3>
+<p><strong>Date:</strong> May 9, 2023</p>
+<p><strong>Duration:</strong> 1232</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> He coulda would shoulda been the next
+Einstein. Instead, Robert Oppenheimer fritted away his talents on trendy
+science and political gamesmanship—and it burned him deep in his soul…
+Our Sponsors: * Check out ElevenReader and use my code “Spoon” for a
+great deal: * Check out my new book, The Museum of Lost Things! * Check
+out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-how-new-dna-sleuthing-can-expose-dangerous-killers-and-you"><a
+href="https://audio2.redcircle.com/episodes/33ac61bb-2889-4129-9ad7-0c8a4eeff965/stream.mp3">How
+New DNA Sleuthing Can Expose Dangerous Killers—and You</a></h3>
+<p><strong>Date:</strong> May 16, 2023</p>
+<p><strong>Duration:</strong> 1205</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> Genetic genealogy can catch brutal killers.
+It can also unmask affairs, secret adoptions, and other dark secrets. As
+well as expose you—yes, you—to the unholy alliance of Big Tech and shady
+police work… Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-world-s-only-natural-nuclear-reactor"><a
+href="https://audio2.redcircle.com/episodes/9885c5af-c576-4bad-ac36-29dcc36a7452/stream.mp3">The
+World’s Only Natural Nuclear Reactor</a></h3>
+<p><strong>Date:</strong> May 23, 2023</p>
+<p><strong>Duration:</strong> 1308</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> What a bizarre site in Africa—a
+1.7-billion-year-old, completely natural nuclear reactor—says about the
+future of energy production on planet Earth… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-enigmas-of-foreign-accent-syndrome"><a
+href="https://audio2.redcircle.com/episodes/46408c01-156e-4c7f-8a73-9e60b3a2a97d/stream.mp3">The
+Enigmas of Foreign Accent Syndrome</a></h3>
+<p><strong>Date:</strong> May 30, 2023</p>
+<p><strong>Duration:</strong> 1094</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> Can you really collapse and wake up
+speaking a totally new language? Not quite. But “foreign accent
+syndrome” is a real, frightening—and bizarre—neurological disorder… Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-curse-of-knowing-too-much"><a
+href="https://audio2.redcircle.com/episodes/9c73e514-d9a5-4f26-a499-7402677cb5d0/stream.mp3">The
+Curse of Knowing Too Much</a></h3>
+<p><strong>Date:</strong> June 6, 2023</p>
+<p><strong>Duration:</strong> 1145</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> Paul Stoutenburgh knew more atomic secrets
+than anyone on Earth. So was that why he killed himself? And if not, why
+was the government (seemingly) so uninterested in getting to the bottom
+of his death? Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-when-scientific-brilliance-isn-t-enough"><a
+href="https://audio2.redcircle.com/episodes/2961f0d3-de32-45bc-bfbc-06da10f706fc/stream.mp3">When
+Scientific Brilliance Isn’t Enough</a></h3>
+<p><strong>Date:</strong> June 13, 2023</p>
+<p><strong>Duration:</strong> 1185</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> William Halford thought he had a surefire
+vaccine to stop herpes. And he wasn’t going to let anything—laws,
+ethics, his patients’ well-being—stop him from saving the world… Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-seeds-of-starvation"><a
+href="https://audio2.redcircle.com/episodes/5afc0840-8991-4cff-bf00-54af67a5cd9c/stream.mp3">The
+Seeds of Starvation</a></h3>
+<p><strong>Date:</strong> June 20, 2023</p>
+<p><strong>Duration:</strong> 1268</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> During the Nazi invasion of Russia during
+World War II, nine Soviet scientists starved to death surrounded by
+millions of delicious fruits, seeds, and nuts. Were they mad? No. They
+wanted to save humankind from doomsday… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3
+id="thedisappearingspoon-why-do-we-obsess-over-charles-darwin-s-health"><a
+href="https://audio2.redcircle.com/episodes/f2ea2862-ead0-4f35-8974-454b3f58bdd4/stream.mp3">Why
+Do We Obsess Over Charles Darwin’s Health?</a></h3>
+<p><strong>Date:</strong> June 27, 2023</p>
+<p><strong>Duration:</strong> 1247</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> Is it serious historical work? Respectable
+gossip? Blatantly prying into people’s lives? Retro-diagnosing
+historical celebrities like Darwin and Lincoln and Hitler and Poe is all
+of the above and more… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-everything-you-know-about-phineas-gage-is-wrong"><a
+href="https://audio2.redcircle.com/episodes/a18871e5-0c93-4b8a-ac87-0341753a1d16/stream.mp3">Everything
+You Know About Phineas Gage Is Wrong</a></h3>
+<p><strong>Date:</strong> July 11, 2023</p>
+<p><strong>Duration:</strong> 1167</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> Despite what you’ve heard, neuroscience’s
+most famous patient did not turn into a lying, drunken psychopath. He’s
+actually an amazing example of resiliency and overcoming trauma… Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-einstein-s-golden-moment"><a
+href="https://audio2.redcircle.com/episodes/2f7a24a4-a942-49f4-bb86-c7e47244912e/stream.mp3">Einstein’s
+Golden Moment</a></h3>
+<p><strong>Date:</strong> September 12, 2023</p>
+<p><strong>Duration:</strong> 1199</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> It was the most powerful emotional moment
+of Albert Einstein’s life—the instant he knew he was a genius. But in
+confirming his theory of relativity, it also opened him up to attacks,
+sometimes rather vicious, from around the world… Our Sponsors: * Check
+out ElevenReader and use my code “Spoon” for a great deal: * Check out
+my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-proving-einstein-right"><a
+href="https://audio2.redcircle.com/episodes/e3ee6566-3148-4188-b896-33cb8f3f39a6/stream.mp3">Proving
+Einstein Right</a></h3>
+<p><strong>Date:</strong> September 20, 2023</p>
+<p><strong>Duration:</strong> 1192</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> Albert Einstein’s relativity was just
+another theory at first, speculative and unproven—until Arthur Eddington
+and a special eclipse. Meet the weirdo scientist who made Einstein into
+<em>Einstein</em>… Our Sponsors: * Check out ElevenReader and use my
+code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-death-defying-science-at-75-000-feet"><a
+href="https://audio2.redcircle.com/episodes/1e4c2d03-3b0e-43de-a58f-8e49729cf79d/stream.mp3">Death-Defying
+Science at 75,000 Feet</a></h3>
+<p><strong>Date:</strong> September 26, 2023</p>
+<p><strong>Duration:</strong> 1221</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> You wouldn’t think a lanky, awkward balloon
+geek would inspire Hollywood. But the death-defying Auguste Piccard was
+a worthy namesake for Jean-Luc Picard of Star Trek fame… Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-most-exclusive-club-in-the-world"><a
+href="https://audio2.redcircle.com/episodes/3f60d72b-5e1d-4b67-9343-b539c35e2c3f/stream.mp3">The
+Most Exclusive Club in the World</a></h3>
+<p><strong>Date:</strong> October 3, 2023</p>
+<p><strong>Duration:</strong> 1159</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> As recent submersible tragedies reveal,
+it’s harder to reach extreme ocean depths than the Moon. Meet the people
+who got there first—and barely lived to tell to the tale… Our Sponsors:
+* Check out ElevenReader and use my code “Spoon” for a great deal: *
+Check out my new book, The Museum of Lost Things! * Check out my new
+book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-moldy-mary-the-forgotten-mother-of-penicillin"><a
+href="https://audio2.redcircle.com/episodes/31627936-b787-431c-be5e-fa345e7cb7a1/stream.mp3">“Moldy
+Mary,” The Forgotten Mother of Penicillin</a></h3>
+<p><strong>Date:</strong> October 10, 2023</p>
+<p><strong>Duration:</strong> 1262</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> She helped discover arguably the most
+important drug in history. And she got zero credit. They called her
+Moldy Mary—but she turned that insult into triumph… Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-british-tobacco-empire"><a
+href="https://audio2.redcircle.com/episodes/c773fcb3-9836-4e03-89c6-d03c2b050b9d/stream.mp3">The
+British Tobacco Empire</a></h3>
+<p><strong>Date:</strong> October 17, 2023</p>
+<p><strong>Duration:</strong> 1156</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> He helped launch the British Empire and
+spawned a public-health epidemic that killed hundreds of millions of
+people. Blame him for the lost colony of Roanoke, too. Thomas Harriot
+has a lot to answer for… Our Sponsors: * Check out ElevenReader and use
+my code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-if-indiana-jones-were-a-swindler"><a
+href="https://audio2.redcircle.com/episodes/33fe7a9a-688a-4579-9d8a-dc7d6acb21b8/stream.mp3">If
+Indiana Jones Were a Swindler</a></h3>
+<p><strong>Date:</strong> October 24, 2023</p>
+<p><strong>Duration:</strong> 1167</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Summary:</strong> James Mellaart discovered one of the most
+important archaeological sites ever, Çatalhöyük in Turkey. But his lust
+for treasure—and a penchant for fraud—led him to throw it all away… Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-accounting-for-taste"><a
+href="https://audio2.redcircle.com/episodes/f2bb366a-5213-469d-87d4-6435405faf6b/stream.mp3">Accounting
+for Taste</a></h3>
+<p><strong>Date:</strong> October 31, 2023</p>
+<p><strong>Duration:</strong> 1091</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> Scientists have confirmed five basic human
+tastes—sweet, salty, bitter, sour, and umami. But is that all? Debate
+now rages about adding a sixth or seventh or even eighth(!) to the Big
+Five… Our Sponsors: * Check out ElevenReader and use my code “Spoon” for
+a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-mass-psychosis-in-food-science"><a
+href="https://audio2.redcircle.com/episodes/d1d843fd-a638-4a14-89c4-b5ab1eb73aaa/stream.mp3">Mass
+Psychosis in Food Science</a></h3>
+<p><strong>Date:</strong> November 7, 2023</p>
+<p><strong>Duration:</strong> 1181</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> Americans happily ate monosodium glutamate
+for decades. Then one (possibly fake) letter sparked mass hysteria over
+“Chinese Restaurant Syndrome”, and the bogus MSG scare was born… Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-was-darwin-a-murderer"><a
+href="https://audio2.redcircle.com/episodes/80f3a423-9e73-4872-a98a-e61e278d7468/stream.mp3">Was
+Darwin a Murderer?</a></h3>
+<p><strong>Date:</strong> November 14, 2023</p>
+<p><strong>Duration:</strong> 1214</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> In 1878, two Paris dandies murdered an old
+woman—and blamed Charles Darwin for their crime. But the wild scandal
+that followed only solidified Darwin as the greatest scientist of his
+age… Our Sponsors: * Check out ElevenReader and use my code “Spoon” for
+a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h2 id="2024">2024 (22)</h2>
+<h3
+id="thedisappearingspoon-don-t-drink-the-milk-bonus-episode-milk-from-mutations-to-mustaches"><a
+href="https://audio2.redcircle.com/episodes/8d2aa054-3528-4ff5-8fa7-7d87c31b5791/stream.mp3">Don’t
+Drink the Milk bonus episode - Milk: From mutations to
+mustaches</a></h3>
+<p><strong>Date:</strong> January 16, 2024</p>
+<p><strong>Duration:</strong> 2786</p>
+<p><strong>Episode:</strong> 84</p>
+<p><strong>Summary:</strong> Who put the cheese in your stuffed-crust
+pizza? Or cows on a Caribbean island? And when more than half the
+world’s population can’t actually digest milk, is it really essential
+for a healthy diet? On a trip through time and taste—to dairy-obsessed
+Bulgaria, colonial Trinidad and Tobago and the ‘Got Milk?’ era—we
+explore humanity’s millennia-long relationship with milk. Listen to
+Don’t Drink the Milk wherever you get your podcasts! Also on YouTube!
+Our Sponsors: * Check out ElevenReader and use my code “Spoon” for a
+great deal: * Check out my new book, The Museum of Lost Things! * Check
+out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-sex-cult-antichrist-who-rocketed-us-to-space-part-1"><a
+href="https://audio2.redcircle.com/episodes/68666241-23ab-4088-93e5-6f676e8aa536/stream.mp3">The
+Sex-Cult “Antichrist” Who Rocketed Us to Space (part 1)</a></h3>
+<p><strong>Date:</strong> March 12, 2024</p>
+<p><strong>Duration:</strong> 1183</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 8</p>
+<p><strong>Summary:</strong> Jack Parsons was a devil-worshiping FBI rat
+who led a sex cult and was bosom buddies with L. Ron Hubbard. He was
+also one of the most important rocket scientists in history. (Episode 1
+of 2) Our Sponsors: * Check out ElevenReader and use my code “Spoon” for
+a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-sex-cult-antichrist-who-rocketed-us-to-space-part-2"><a
+href="https://audio2.redcircle.com/episodes/388ad8cd-abf4-4a8a-83c0-1ab9ac2c5d16/stream.mp3">The
+Sex-Cult “Antichrist” Who Rocketed Us to Space (part 2)</a></h3>
+<p><strong>Date:</strong> March 19, 2024</p>
+<p><strong>Duration:</strong> 1307</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 8</p>
+<p><strong>Summary:</strong> Jack Parsons was a devil-worshipping FBI
+rat who led a sex cult and was bosom buddies with L. Ron Hubbard. He was
+also one of the most important rocket scientists in history. (Episode 2
+of 2) Our Sponsors: * Check out ElevenReader and use my code “Spoon” for
+a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-when-generosity-turns-pathological"><a
+href="https://audio2.redcircle.com/episodes/a7a4eeb6-59c7-44d4-860f-b731a95d0d6f/stream.mp3">When
+Generosity Turns Pathological</a></h3>
+<p><strong>Date:</strong> March 26, 2024</p>
+<p><strong>Duration:</strong> 1126</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 8</p>
+<p><strong>Summary:</strong> One Brazilian man’s brain damage
+transformed him into a selfless giver. So why did he infuriate so many
+people—and what does his case say about the biological roots of
+generosity? Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-eclipse-that-killed-a-king"><a
+href="https://audio2.redcircle.com/episodes/6a70ec3d-8104-4faf-8618-0bf92c5bab4f/stream.mp3">The
+Eclipse that Killed a King</a></h3>
+<p><strong>Date:</strong> April 2, 2024</p>
+<p><strong>Duration:</strong> 1173</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 8</p>
+<p><strong>Summary:</strong> Rama IV of Siam (from the “King and I”
+musical) used an eclipse to save his kingdom from greedy colonial
+powers. But it cost him his own life in the end. Our Sponsors: * Check
+out ElevenReader and use my code “Spoon” for a great deal: * Check out
+my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-how-the-worst-serial-killer-in-holland-s-history-went-free"><a
+href="https://audio2.redcircle.com/episodes/4150de33-7ec7-47fb-9e39-579bc69d1a18/stream.mp3">How
+the “Worst Serial Killer in Holland’s History” Went Free</a></h3>
+<p><strong>Date:</strong> April 9, 2024</p>
+<p><strong>Duration:</strong> 1258</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 8</p>
+<p><strong>Summary:</strong> Patient after patient died under the care
+of a single nurse in Holland. So why did so many statisticians think
+Lucia de Berk was innocent? Our Sponsors: * Check out ElevenReader and
+use my code “Spoon” for a great deal: * Check out my new book, The
+Museum of Lost Things! * Check out my new book, The Museum of Lost
+Things!</p>
+<h3 id="thedisappearingspoon-a-deadly-soup-for-babies"><a
+href="https://audio2.redcircle.com/episodes/0e66e7c8-3c4b-4feb-aaa8-88d044519d18/stream.mp3">A
+Deadly Soup for Babies</a></h3>
+<p><strong>Date:</strong> April 16, 2024</p>
+<p><strong>Duration:</strong> 1216</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 8</p>
+<p><strong>Summary:</strong> Chemist Justus von Liebig was perhaps the
+most famous scientist in the world in the mid-1800s—but quickly became
+infamous for his role in the killing of four starving infants. Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-when-tenure-means-life-and-death"><a
+href="https://audio2.redcircle.com/episodes/19c63f82-c202-4fd7-8163-746fe287e059/stream.mp3">When
+Tenure Means Life and Death</a></h3>
+<p><strong>Date:</strong> April 23, 2024</p>
+<p><strong>Duration:</strong> 1215</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 8</p>
+<p><strong>Summary:</strong> After a tenure dispute, mechanical engineer
+Valery Fabrikant murdered four colleagues in cold blood at his
+university in Montreal. So why is he still allowed to publish scientific
+papers? Our Sponsors: * Check out ElevenReader and use my code “Spoon”
+for a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-russian-roswell"><a
+href="https://audio2.redcircle.com/episodes/68599779-6411-4d5c-afa7-8dd258b3becd/stream.mp3">The
+Russian Roswell</a></h3>
+<p><strong>Date:</strong> April 30, 2024</p>
+<p><strong>Duration:</strong> 1260</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 8</p>
+<p><strong>Summary:</strong> In 1959, nine Russian hikers mysteriously
+died on a trek through the snowy wilderness—fueling a half-century of
+hysterical conspiracies. Has science finally cracked the case? Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-can-plastic-surgery-keep-you-out-of-prison"><a
+href="https://audio2.redcircle.com/episodes/5a6536c3-6473-4528-8280-39396ae0fd90/stream.mp3">Can
+Plastic Surgery Keep You out of Prison?</a></h3>
+<p><strong>Date:</strong> May 7, 2024</p>
+<p><strong>Duration:</strong> 1209</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 8</p>
+<p><strong>Summary:</strong> One doctor’s controversial crusade to keep
+men and women out of prison through nose jobs, eye lifts, and other
+plastic surgery. Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-science-of-d-day"><a
+href="https://audio2.redcircle.com/episodes/a4308ede-1afc-4f8a-8e54-230183b1543f/stream.mp3">The
+Science of D-Day</a></h3>
+<p><strong>Date:</strong> May 14, 2024</p>
+<p><strong>Duration:</strong> 1189</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 8</p>
+<p><strong>Summary:</strong> Ahead of the 80th anniversary of the D-Day
+landings, a look at the surprisingly important role science played in
+shaping—and remaking—an invasion that could have easily been a disaster…
+Our Sponsors: * Check out ElevenReader and use my code “Spoon” for a
+great deal: * Check out my new book, The Museum of Lost Things! * Check
+out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-mysterious-mote"><a
+href="https://audio2.redcircle.com/episodes/57220de9-5238-4109-95ab-1cb0b2fcbe36/stream.mp3">The
+Mysterious Mote</a></h3>
+<p><strong>Date:</strong> June 26, 2024</p>
+<p><strong>Duration:</strong> 1080</p>
+<p><strong>Summary:</strong> A summer bonus episode: Russ Schnell’s
+professors mocked him for believing that plants somehow caused
+hailstorms. He not only proved them wrong, but uncovered profound
+connections between life, earth, and the air above… Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-scientific-way-to-fool-a-nazi"><a
+href="https://audio2.redcircle.com/episodes/476d0fa4-79db-40d6-9c93-b02f880d594a/stream.mp3">The
+Scientific Way to Fool a Nazi</a></h3>
+<p><strong>Date:</strong> September 30, 2024</p>
+<p><strong>Duration:</strong> 1161</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 9</p>
+<p><strong>Summary:</strong> Physicist Gyorgy Hevesy had a talent for
+tricks and stunts—including one that prevented Nazi stormtroopers from
+stealing a gold Nobel Prize. Our Sponsors: * Check out ElevenReader and
+use my code “Spoon” for a great deal: * Check out my new book, The
+Museum of Lost Things! * Check out my new book, The Museum of Lost
+Things!</p>
+<h3 id="thedisappearingspoon-the-sadder-side-of-the-nobel-prizes"><a
+href="https://audio2.redcircle.com/episodes/6b9c4c6e-793e-4300-bbfb-08ecd69b4eeb/stream.mp3">The
+Sadder Side of the Nobel Prizes</a></h3>
+<p><strong>Date:</strong> October 8, 2024</p>
+<p><strong>Duration:</strong> 1117</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 9</p>
+<p><strong>Summary:</strong> How did a man who developed a Nobel
+Prize–worthy idea (green-fluorescing protein, GFP) end up driving a
+shuttle van for a living, and missing the Prize completely? Therein lies
+a sad story… Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-when-mummymania-swept-the-world"><a
+href="https://audio2.redcircle.com/episodes/e1c3a319-57ed-49f0-8690-bfa799087f93/stream.mp3">When
+Mummymania Swept the World</a></h3>
+<p><strong>Date:</strong> October 15, 2024</p>
+<p><strong>Duration:</strong> 1064</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 9</p>
+<p><strong>Summary:</strong> In the 1800s, mummies found their way into
+everything from fertilizer to food, and were especially prized as
+medicine. Mummymania was a strange time… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-savant-idiots"><a
+href="https://audio2.redcircle.com/episodes/3f31ae74-2fd9-4479-8de6-69751a2000e7/stream.mp3">Savant
+Idiots</a></h3>
+<p><strong>Date:</strong> October 22, 2024</p>
+<p><strong>Duration:</strong> 1070</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 9</p>
+<p><strong>Summary:</strong> In the early 1800s, the first Egyptian
+mummies in Europe served as a crucial test for evolution—a test that,
+according to people then, evolution flunked. Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-mona-lisa-of-the-seine"><a
+href="https://audio2.redcircle.com/episodes/74b071fe-97cb-4712-b814-e785124e7ff3/stream.mp3">The
+Mona Lisa of the Seine</a></h3>
+<p><strong>Date:</strong> October 29, 2024</p>
+<p><strong>Duration:</strong> 1094</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 9</p>
+<p><strong>Summary:</strong> A woman who drowned in Paris became one of
+the most famous faces in the world as the model for CPR dummies, saving
+millions of lives and inspiring artists from Pablo Picasso to Michael
+Jackson—all while remaining completely unknown. Our Sponsors: * Check
+out ElevenReader and use my code “Spoon” for a great deal: * Check out
+my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-doom-lurking-inside-trees"><a
+href="https://audio2.redcircle.com/episodes/cdec3302-e9d3-44f5-b80b-b13de0836337/stream.mp3">The
+Doom Lurking inside Trees</a></h3>
+<p><strong>Date:</strong> November 4, 2024</p>
+<p><strong>Duration:</strong> 1071</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 9</p>
+<p><strong>Summary:</strong> Japanese physicist Fusa Miyake has sparked
+a revolution in archaeology by studying radioactive tree rings—work that
+also terrifies astronomers, who fear it foretells doom for our
+civilization. Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-woman-who-turned-back-a-plague-of-old-testament-proportions"><a
+href="https://audio2.redcircle.com/episodes/7d95fa65-1c98-4344-9e7e-6620c88b39b7/stream.mp3">The
+Woman Who “Turned Back a Plague of Old Testament Proportions”</a></h3>
+<p><strong>Date:</strong> November 12, 2024</p>
+<p><strong>Duration:</strong> 1155</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 9</p>
+<p><strong>Summary:</strong> In refusing to approve the drug
+thalidomide, FDA scientist Frances Oldham Kelsey spared thousands of
+babies from deadly birth defects and revolutionized drug research. But
+was her legacy all good? Our Sponsors: * Check out ElevenReader and use
+my code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-machiavellian-microbes"><a
+href="https://audio2.redcircle.com/episodes/3044c3aa-bc7c-4b1c-bc6d-9068f5269103/stream.mp3">Machiavellian
+Microbes</a></h3>
+<p><strong>Date:</strong> November 19, 2024</p>
+<p><strong>Duration:</strong> 1118</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 9</p>
+<p><strong>Summary:</strong> Parasites can force animals to do nefarious
+things by manipulating their minds—including, uncomfortably, the minds
+of human beings. Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-why-keep-a-diary-of-a-toxic-snakebite"><a
+href="https://audio2.redcircle.com/episodes/ec6d8f66-5498-4f5d-8731-16986d07e025/stream.mp3">Why
+Keep a Diary of a Toxic Snakebite?</a></h3>
+<p><strong>Date:</strong> December 3, 2024</p>
+<p><strong>Duration:</strong> 1029</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 9</p>
+<p><strong>Summary:</strong> After 40 years of studying snakes, Karl
+Schmidt finally suffered his first bite. And when he did, he kept a
+gruesome diary to document the suffering and danger—right up to the edge
+of death… Our Sponsors: * Check out ElevenReader and use my code “Spoon”
+for a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-winter-when-people-ate-tulips"><a
+href="https://audio2.redcircle.com/episodes/96f8bf64-7dbb-4d79-9240-1c9305aaf2e7/stream.mp3">The
+Winter when People Ate Tulips</a></h3>
+<p><strong>Date:</strong> December 10, 2024</p>
+<p><strong>Duration:</strong> 1170</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 9</p>
+<p><strong>Summary:</strong> It’s the 80th anniversary of the Dutch
+Hongerwinter during World War II, which led to widespread starvation,
+and an inadvertent breakthrough in treating deadly celiac disease. Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h2 id="2025">2025 (21)</h2>
+<h3 id="thedisappearingspoon-the-halley-s-comet-panic"><a
+href="https://audio2.redcircle.com/episodes/5e63a0f3-930b-436d-beb2-f6a0f5a074c9/stream.mp3">The
+Halley’s Comet Panic</a></h3>
+<p><strong>Date:</strong> March 25, 2025</p>
+<p><strong>Duration:</strong> 1125</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 10</p>
+<p><strong>Summary:</strong> The 1910 return of Halley’s comet was
+greeted with rapture around the world—at least at first. Due to
+irresponsible speculation by scientists about the theoretical dangers of
+a close encounter with a comet, many people grew terrified of Halley’s
+approach and took drastic measures. They fled their homes, hid out in
+wells or caves, even committed suicide. It’s a grave reminder of
+scientific communication gone very wrong. Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-battle-over-human-chromosomes"><a
+href="https://audio2.redcircle.com/episodes/d870adc8-6253-4900-bf85-b8ed9aa5a6f2/stream.mp3">The
+Battle over Human Chromosomes</a></h3>
+<p><strong>Date:</strong> April 1, 2025</p>
+<p><strong>Duration:</strong> 1135</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 10</p>
+<p><strong>Summary:</strong> It seems like a simple question: how many
+chromosomes do human beings have? But getting an accurate count proved
+surprisingly hard for much of last century. In fact, virtually every
+textbook once cited an incorrect number, until in 1956, a fiery
+Indonesian scientist finally determined the true count—and had to battle
+his boss over who would receive credit for this legacy-making discovery.
+Our Sponsors: * Check out ElevenReader and use my code “Spoon” for a
+great deal: * Check out my new book, The Museum of Lost Things! * Check
+out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-would-be-saint-s-battle-over-down-syndrome"><a
+href="https://audio2.redcircle.com/episodes/b3052e64-8e17-434e-954a-2116e520eff7/stream.mp3">The
+Would-Be Saint’s Battle over Down Syndrome</a></h3>
+<p><strong>Date:</strong> April 8, 2025</p>
+<p><strong>Duration:</strong> 1126</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 10</p>
+<p><strong>Summary:</strong> After scientists had a handle on how many
+chromosomes humans have, other researchers began exploring whether
+certain ailments might be caused by chromosomal abnormalities. To this
+end, a French cardiologist discovered that Down syndrome was caused by
+the presence of an extra chromosome in humans. But a colleague stole
+credit for her work, and the battle over their legacies continues to
+this day, in part because the colleague is on track to become a
+certified Catholic saint. Our Sponsors: * Check out ElevenReader and use
+my code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-birds-and-the-bees-and-the-frogs"><a
+href="https://audio2.redcircle.com/episodes/4fbe074d-c0bd-447a-9b5d-28978a43f1f8/stream.mp3">The
+Birds and the Bees and the Frogs</a></h3>
+<p><strong>Date:</strong> April 15, 2025</p>
+<p><strong>Duration:</strong> 1112</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 10</p>
+<p><strong>Summary:</strong> A young woman in the mid-1900s couldn’t
+take an at-home pregnancy test. Instead, she sent a vial of urine to a
+clinic, where a technician would, of all things, inject it into a frog,
+and hormones in the urine would cause the frog to lay eggs. This
+frog-based test was far faster, easier, and cleaner than any pregnancy
+test before, and it shifted power for family planning from doctors to
+women themselves. Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-sad-story-of-darwin-s-self-procleimed-stupidest-child"><a
+href="https://audio2.redcircle.com/episodes/8c692e54-7a44-433c-b0fb-4f3ecd23b9af/stream.mp3">The
+Sad Story of Darwin’s Self-Procleimed “Stupidest” Child</a></h3>
+<p><strong>Date:</strong> April 22, 2025</p>
+<p><strong>Duration:</strong> 1110</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 10</p>
+<p><strong>Summary:</strong> Leonard Darwin had a lot to live up to. He
+was the son of the legendary Charles, and several siblings proved to be
+brilliant scientists as well. But Leonard never quite measured up as a
+mediocre military officer and two-bit politician. In his fifties, he
+pronounced his life a “failure.” But in his sixties, he finally found
+his calling—the dark pseudoscience of eugenics, a field he embraced in
+part to prove that he wasn’t the failure he imagined. Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-human-photosynthesis"><a
+href="https://audio2.redcircle.com/episodes/c0e171cb-1023-4310-9e28-0a7f85d0fce9/stream.mp3">Human
+Photosynthesis</a></h3>
+<p><strong>Date:</strong> April 29, 2025</p>
+<p><strong>Duration:</strong> 1135</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 10</p>
+<p><strong>Summary:</strong> Rickets was once a devastating disease: up
+to 90 percent of the children showed symptoms in some cities, including
+bent spines and bowed legs, and it resulted in many women dying during
+childbirth. The search for the cause of rickets took decades, and ended
+with a startling discovery—that much like plants, human beings had the
+ability to photosynthesize. Our Sponsors: * Check out ElevenReader and
+use my code “Spoon” for a great deal: * Check out my new book, The
+Museum of Lost Things! * Check out my new book, The Museum of Lost
+Things!</p>
+<h3 id="thedisappearingspoon-the-worst-of-times-the-asbestos-times"><a
+href="https://audio2.redcircle.com/episodes/52d963cd-62fc-4e12-9341-768b0b30f286/stream.mp3">The
+Worst of Times, the Asbestos Times</a></h3>
+<p><strong>Date:</strong> May 6, 2025</p>
+<p><strong>Duration:</strong> 1067</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 10</p>
+<p><strong>Summary:</strong> Asbestos was once considered a miracle
+substance—a wonder of the modern age, due to its role in stopping the
+fires that once plagued every major city. Unfortunately, it also shreds
+people’s lungs. Most countries were willing to live with that trade-off,
+until a crusading doctor named Irving Selikoff made it his life’s
+mission to get asbestos banned. Our Sponsors: * Check out ElevenReader
+and use my code “Spoon” for a great deal: * Check out my new book, The
+Museum of Lost Things! * Check out my new book, The Museum of Lost
+Things!</p>
+<h3 id="thedisappearingspoon-jake-leg-blues"><a
+href="https://audio2.redcircle.com/episodes/3acfbc71-4ae3-4bdc-bc4e-b602901c73f3/stream.mp3">Jake
+Leg Blues</a></h3>
+<p><strong>Date:</strong> May 13, 2025</p>
+<p><strong>Duration:</strong> 1220</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 10</p>
+<p><strong>Summary:</strong> It was one the largest epidemics in
+American history: 30,000 people paralyzed over a few months in 1930. A
+dogged epidemiologist eventually traced the cause to adulterated bottles
+of an illegal liquor/medicine called “jake.” Yet the epidemic is almost
+completely forgotten. About the only place it survived was in blues
+songs… Our Sponsors: * Check out ElevenReader and use my code “Spoon”
+for a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-hotter-than-the-dickens"><a
+href="https://audio2.redcircle.com/episodes/3eea75fa-1d5d-47db-a1d8-3a9581715855/stream.mp3">Hotter
+than the Dickens</a></h3>
+<p><strong>Date:</strong> May 20, 2025</p>
+<p><strong>Duration:</strong> 1087</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 10</p>
+<p><strong>Summary:</strong> When Charles Dickens published Bleak House
+in 1852, he included a scene where one character spontaneously combusts.
+🔥 🔥 🔥 Readers loved it, but one of Dickens’s good friends—a former
+scientist—blasted Dickens for his scientific ignorance. It ignited one
+of the strangest controversies in literary history. Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-why-doctors-and-scientists-embraced-the-nazis"><a
+href="https://audio2.redcircle.com/episodes/8a57954e-6b8c-433c-99f4-6925ef97ac6d/stream.mp3">Why
+Doctors and Scientists Embraced the Nazis</a></h3>
+<p><strong>Date:</strong> May 27, 2025</p>
+<p><strong>Duration:</strong> 1279</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 10</p>
+<p><strong>Summary:</strong> Nazism was a society-wide catastrophe for
+Germany, but some professions deserve more blame than others. In
+particular, there was a surprisingly large percentage of doctors and
+engineers among the Nazis. Sociologists and historians have now worked
+out why. Our Sponsors: * Check out ElevenReader and use my code “Spoon”
+for a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-dinner-with-king-tut-audiobook-preview"><a
+href="https://audio2.redcircle.com/episodes/36445407-f647-4670-a9d0-d7743b11cdcc/stream.mp3">Dinner
+with King Tut audiobook preview</a></h3>
+<p><strong>Date:</strong> June 24, 2025</p>
+<p><strong>Duration:</strong> 1667</p>
+<p><strong>Summary:</strong> A preview of my brand new book, Dinner with
+King Tut! Our Sponsors: * Check out ElevenReader and use my code “Spoon”
+for a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-nobel-disease"><a
+href="https://audio2.redcircle.com/episodes/a39a8544-8786-47cf-bfef-42e6ebd1b14b/stream.mp3">The
+Nobel Disease</a></h3>
+<p><strong>Date:</strong> October 6, 2025</p>
+<p><strong>Duration:</strong> 1080</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 11</p>
+<p><strong>Summary:</strong> Winning a Nobel Prize is a good
+thing—mostly. But surprisingly often, Nobel laureates go kooky and start
+promoting bizarre things like homeopathy, ESP, AIDS denialism, and
+worse. Psychologists are starting to understand why… Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-dignity-of-the-ig-nobel-prizes"><a
+href="https://audio2.redcircle.com/episodes/d1857013-06a3-47b5-aafa-ffbdf8ed2e14/stream.mp3">The
+Dignity of the Ig Nobel Prizes</a></h3>
+<p><strong>Date:</strong> October 14, 2025</p>
+<p><strong>Duration:</strong> 1107</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 11</p>
+<p><strong>Summary:</strong> The Ig Nobel Prize is the bizarro cousin of
+the Nobel Prize—awarded for odd or unusual research “that first makes
+you laugh, then makes you think.” Some scientists hate them, and have
+refused to accept the award. But they’ve grown into a beloved
+institution—and one with some surprising benefits to science. Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-bird-that-made-john-james-audubon-a-legend"><a
+href="https://audio2.redcircle.com/episodes/c67bd69d-8090-4fe7-9a6a-677bcd74e4bd/stream.mp3">The
+Bird that Made John James Audubon a Legend</a></h3>
+<p><strong>Date:</strong> October 21, 2025</p>
+<p><strong>Duration:</strong> 1121</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 11</p>
+<p><strong>Summary:</strong> After several heartbreaking setbacks, John
+James Audubon’s career was in ruins—until he hatched a desperate plan to
+win new patrons. It involved a rare American eagle, the Bird of
+Washington. And when the gamble paid off, it made Audubon the most
+famous ornithologist in history… Our Sponsors: * Check out ElevenReader
+and use my code “Spoon” for a great deal: * Check out my new book, The
+Museum of Lost Things! * Check out my new book, The Museum of Lost
+Things!</p>
+<h3 id="thedisappearingspoon-john-james-fraudubon"><a
+href="https://audio2.redcircle.com/episodes/63484d4f-bdf8-44d5-a53c-4009ed6ce4e6/stream.mp3">John
+James Fraudubon</a></h3>
+<p><strong>Date:</strong> October 28, 2025</p>
+<p><strong>Duration:</strong> 1097</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 11</p>
+<p><strong>Summary:</strong> The eagle that made John James Audubon
+famous, the Bird of Washington was nothing but an elaborate lie. Fawning
+biographers have suppressed this fact for years, but careful historical
+work has unraveled the Audubon legend, and shown that much of his life,
+and work, was built on deceit. (Part 2 of 2) Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-why-not-just-rename-the-hitler-beetle"><a
+href="https://audio2.redcircle.com/episodes/c3d685f3-d335-4b34-aa21-9696bb103d7f/stream.mp3">Why
+Not Just Rename the “Hitler Beetle”?</a></h3>
+<p><strong>Date:</strong> November 4, 2025</p>
+<p><strong>Duration:</strong> 1158</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 11</p>
+<p><strong>Summary:</strong> Taxonomy has a sadly ugly history of naming
+species after despicable people—even Adolf Hitler. Given the controversy
+these names generate, there have been many calls to drop them. But
+taxonomists have so far resisted most of these efforts, for reasons both
+good and bad… Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-trickster-birder-soldier-spy"><a
+href="https://audio2.redcircle.com/episodes/3cecaa67-09e4-4264-8470-ea38c2fc7e05/stream.mp3">Trickster,
+Birder, Soldier, Spy</a></h3>
+<p><strong>Date:</strong> November 11, 2025</p>
+<p><strong>Duration:</strong> 1083</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 11</p>
+<p><strong>Summary:</strong> He was a brilliant ornithologist—and a spy
+so colorful that James Bond was based on him. Richard Meinertzhagen was
+also a liar and a thief, and perpetrated the biggest fraud in biology
+history. Episode below! Our Sponsors: * Check out ElevenReader and use
+my code “Spoon” for a great deal: * Check out my new book, The Museum of
+Lost Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-bringing-an-extinct-owl-back-to-life"><a
+href="https://audio2.redcircle.com/episodes/0dc58174-c7c1-44bf-a055-f7f54217a53e/stream.mp3">Bringing
+an Extinct Owl Back to Life</a></h3>
+<p><strong>Date:</strong> November 18, 2025</p>
+<p><strong>Duration:</strong> 1163</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 11</p>
+<p><strong>Summary:</strong> The work of Richard Meinertzhagen helped
+convince biologists that the Forest Owlet of India had gone extinct. But
+after Meinertzhagen’s frauds were exposed, one biologist grew obsessed
+with finding out whether it just might be alive still. (Part 2 of 2) Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-corny-cringy-very-bad-television-show-that-just-might-save-your-li"><a
+href="https://audio2.redcircle.com/episodes/324d5d50-b00d-489b-9a29-a758ce6c45ac/stream.mp3">The
+Corny, Cringy, Very Bad Television Show that Just Might Save Your
+Life</a></h3>
+<p><strong>Date:</strong> December 2, 2025</p>
+<p><strong>Duration:</strong> 1108</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 11</p>
+<p><strong>Summary:</strong> In the 1970s, paramedic units were illegal
+in the United States. One (very bad) television show, Emergency! , set
+out to change that—and saved tens of thousands of lives in the process.
+Our Sponsors: * Check out ElevenReader and use my code “Spoon” for a
+great deal: * Check out my new book, The Museum of Lost Things! * Check
+out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-great-balloon-escape"><a
+href="https://audio2.redcircle.com/episodes/79c6cc71-44d3-4e82-9102-d7fb453de0cf/stream.mp3">The
+Great Balloon Escape</a></h3>
+<p><strong>Date:</strong> December 9, 2025</p>
+<p><strong>Duration:</strong> 1087</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Summary:</strong> Astronomer Jules Janssen was desperate to
+escape the siege of Paris in 1870 and observe an eclipse in Africa—work
+that he hoped would confirm his discovery of a brand new element in the
+Sun, helium. So he devised a plan to escape the city in a hot-air
+balloon, despite promises by the German army to shoot him as a spy if he
+dared try… Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3
+id="thedisappearingspoon-the-publicity-stunt-that-sparked-the-scopes-monkey-trial"><a
+href="https://audio2.redcircle.com/episodes/bf937ecc-b95f-4edc-a8c4-6e05d56ab80f/stream.mp3">The
+Publicity Stunt that Sparked the Scopes Monkey Trial</a></h3>
+<p><strong>Date:</strong> December 16, 2025</p>
+<p><strong>Duration:</strong> 1139</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 11</p>
+<p><strong>Summary:</strong> Exactly a century ago, teacher John Scopes
+was charged with the “crime” of teaching evolution. But Scopes was
+hardly a defiant Galileo, nobly standing up for truth. In fact, he never
+even taught evolution. (Really.) But despite the unseemly origins of the
+Monkey Trial, Scopes proved himself a genuine hero… Our Sponsors: *
+Check out ElevenReader and use my code “Spoon” for a great deal: * Check
+out my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h2 id="2026">2026 (11)</h2>
+<h3 id="thedisappearingspoon-charles-lindbergh-lab-rat"><a
+href="https://audio2.redcircle.com/episodes/0936847d-96b6-4ef9-a0b0-fece98ff419b/stream.mp3">Charles
+Lindbergh, Lab Rat</a></h3>
+<p><strong>Date:</strong> April 7, 2026</p>
+<p><strong>Duration:</strong> 1150</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 12</p>
+<p><strong>Summary:</strong> When Charles Lindbergh’s sister-in-law
+developed heart trouble, he teamed up with a Nobel-Prize-winning doctor
+to save her. He had no idea the dark paths his work would lead him down,
+including Nazi politics and eugenics… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-canaries-in-the-submarine"><a
+href="https://audio2.redcircle.com/episodes/7053534f-41e6-4a7a-80e4-e5d1a75bf4db/stream.mp3">The
+Canaries in the Submarine</a></h3>
+<p><strong>Date:</strong> April 14, 2026</p>
+<p><strong>Duration:</strong> 1033</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 12</p>
+<p><strong>Summary:</strong> There’s only one thing Dr. John Haldane
+loved more than running dangerous experiments on himself—running them on
+his son Jack. But the duo would revolutionize our understanding of the
+human body. Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-back-breaking-science"><a
+href="https://audio2.redcircle.com/episodes/7c353d83-5b8c-4844-b1ab-f1d6ef68d01c/stream.mp3">Back-Breaking
+Science</a></h3>
+<p><strong>Date:</strong> April 21, 2026</p>
+<p><strong>Duration:</strong> 1085</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 12</p>
+<p><strong>Summary:</strong> When a British sub sank with all hands, JBS
+Haldane volunteered to investigate by experimenting on himself—even if
+it meant losing his own life in the process. (Part 2 of 2.) Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-manhattan-project-propaganda"><a
+href="https://audio2.redcircle.com/episodes/ca1c85f8-6a84-40a4-a2bf-ea8a15ff065b/stream.mp3">Manhattan
+Project Propaganda</a></h3>
+<p><strong>Date:</strong> April 28, 2026</p>
+<p><strong>Duration:</strong> 1066</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 12</p>
+<p><strong>Summary:</strong> The Smyth Report is the strangest book ever
+written on atomic bombs—as well as highly effective science propaganda,
+warping our view of everything from the Manhattan Project to Robert
+Oppenheimer. Our Sponsors: * Check out ElevenReader and use my code
+“Spoon” for a great deal: * Check out my new book, The Museum of Lost
+Things! * Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-forensic-pseudoscience"><a
+href="https://audio2.redcircle.com/episodes/7659a97c-8313-493b-9a68-466e4bc76e34/stream.mp3">Forensic
+Pseudoscience</a></h3>
+<p><strong>Date:</strong> May 5, 2026</p>
+<p><strong>Duration:</strong> 1104</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 12</p>
+<p><strong>Summary:</strong> When the Mona Lisa was stolen from the
+Louvre, the two most scientific detectives in the world took on the
+case. But they overlooked the real enemy—their own petty prejudice. Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-making-of-the-flat-earth-myth"><a
+href="https://audio2.redcircle.com/episodes/e096d9ff-36ef-434b-9f72-e9ccba2976d2/stream.mp3">The
+Making of the “Flat Earth” Myth</a></h3>
+<p><strong>Date:</strong> May 12, 2026</p>
+<p><strong>Duration:</strong> 1041</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 12</p>
+<p><strong>Summary:</strong> No one in Columbus’s time believed the
+world was flat. So why did so many children learn this bogus “fact” in
+school? It all goes back to Rip van Winkle… Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-battery-dope"><a
+href="https://audio2.redcircle.com/episodes/d4c73ca9-b835-4450-a282-8db1a76070ad/stream.mp3">The
+Battery Dope</a></h3>
+<p><strong>Date:</strong> May 19, 2026</p>
+<p><strong>Duration:</strong> 1132</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 12</p>
+<p><strong>Summary:</strong> In the 1950s, scientists hated politics.
+Then one Allen Astin got fired. After that, scientists knew they had to
+play politics—or face professional annihilation. Our Sponsors: * Check
+out ElevenReader and use my code “Spoon” for a great deal: * Check out
+my new book, The Museum of Lost Things! * Check out my new book, The
+Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-angel-of-the-concentration-camp"><a
+href="https://audio2.redcircle.com/episodes/7384d7db-dfef-4650-9bba-c4a311f1485c/stream.mp3">The
+Angel of the Concentration Camp</a></h3>
+<p><strong>Date:</strong> May 26, 2026</p>
+<p><strong>Duration:</strong> 1049</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 12</p>
+<p><strong>Summary:</strong> Nurse Laura Cobb saved more lives than
+Clara Barton or Florence Nightingale, and under far worse conditions—in
+a brutal World War II concentration camp. So why did the world forget
+her? Our Sponsors: * Check out ElevenReader and use my code “Spoon” for
+a great deal: * Check out my new book, The Museum of Lost Things! *
+Check out my new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-pioneers-and-vestiges-of-evolution"><a
+href="https://audio2.redcircle.com/episodes/2889d1ae-9b29-4e9c-9479-4cf8aaf0086a/stream.mp3">The
+Pioneers and Vestiges of Evolution</a></h3>
+<p><strong>Date:</strong> June 2, 2026</p>
+<p><strong>Duration:</strong> 1108</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 12</p>
+<p><strong>Summary:</strong> His book on evolution rocked 1800s England.
+Not Charles Darwin. Robert Chambers, whose infamous tome both horrified
+Darwin, yet paved the way for him. Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h3 id="thedisappearingspoon-nasa-s-unmentionable-s-adventure"><a
+href="https://audio2.redcircle.com/episodes/d847b1b2-fb14-4c50-901f-13cc4305a4ef/stream.mp3">NASA’s
+Unmentionable(s) Adventure</a></h3>
+<p><strong>Date:</strong> June 9, 2026</p>
+<p><strong>Duration:</strong> 1130</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 12</p>
+<p><strong>Summary:</strong> In the 1960s, NASA needed a better
+spacesuit. So they turned to the one firm on earth capable of meeting
+their strict standards—the Playtex underwear company. Episode below! Our
+Sponsors: * Check out ElevenReader and use my code “Spoon” for a great
+deal: * Check out my new book, The Museum of Lost Things! * Check out my
+new book, The Museum of Lost Things!</p>
+<h3 id="thedisappearingspoon-the-museum-of-lost-things"><a
+href="https://audio2.redcircle.com/episodes/cbacece5-ad44-4b76-a427-c7d8324e932e/stream.mp3">The
+Museum of Lost Things</a></h3>
+<p><strong>Date:</strong> September 11, 2026</p>
+<p><strong>Duration:</strong> 1593</p>
+<p><strong>Summary:</strong> An audio excerpt from my new book, The
+Museum of Long Things. Available now! Our Sponsors: * Check out
+ElevenReader and use my code “Spoon” for a great deal: * Check out my
+new book, The Museum of Lost Things! * Check out my new book, The Museum
+of Lost Things!</p>
+<h2 id="appendix-a-episodes-by-date">Appendix A: Episodes by Date</h2>
+<p>Every episode in publication order, newest first, grouped by
+year.</p>
+<h3 id="section">2026</h3>
+<ul>
+<li><a href="#thedisappearingspoon-the-museum-of-lost-things">The Museum
+of Lost Things</a> — September 11</li>
+<li><a
+href="#thedisappearingspoon-nasa-s-unmentionable-s-adventure">NASA’s
+Unmentionable(s) Adventure</a> — June 9</li>
+<li><a
+href="#thedisappearingspoon-the-pioneers-and-vestiges-of-evolution">The
+Pioneers and Vestiges of Evolution</a> — June 2</li>
+<li><a
+href="#thedisappearingspoon-the-angel-of-the-concentration-camp">The
+Angel of the Concentration Camp</a> — May 26</li>
+<li><a href="#thedisappearingspoon-the-battery-dope">The Battery
+Dope</a> — May 19</li>
+<li><a
+href="#thedisappearingspoon-the-making-of-the-flat-earth-myth">The
+Making of the “Flat Earth” Myth</a> — May 12</li>
+<li><a href="#thedisappearingspoon-forensic-pseudoscience">Forensic
+Pseudoscience</a> — May 5</li>
+<li><a
+href="#thedisappearingspoon-manhattan-project-propaganda">Manhattan
+Project Propaganda</a> — April 28</li>
+<li><a href="#thedisappearingspoon-back-breaking-science">Back-Breaking
+Science</a> — April 21</li>
+<li><a href="#thedisappearingspoon-the-canaries-in-the-submarine">The
+Canaries in the Submarine</a> — April 14</li>
+<li><a href="#thedisappearingspoon-charles-lindbergh-lab-rat">Charles
+Lindbergh, Lab Rat</a> — April 7</li>
+</ul>
+<h3 id="section-1">2025</h3>
+<ul>
+<li><a
+href="#thedisappearingspoon-the-publicity-stunt-that-sparked-the-scopes-monkey-trial">The
+Publicity Stunt that Sparked the Scopes Monkey Trial</a> — December
+16</li>
+<li><a href="#thedisappearingspoon-the-great-balloon-escape">The Great
+Balloon Escape</a> — December 9</li>
+<li><a
+href="#thedisappearingspoon-the-corny-cringy-very-bad-television-show-that-just-might-save-your-li">The
+Corny, Cringy, Very Bad Television Show that Just Might Save Your
+Life</a> — December 2</li>
+<li><a
+href="#thedisappearingspoon-bringing-an-extinct-owl-back-to-life">Bringing
+an Extinct Owl Back to Life</a> — November 18</li>
+<li><a
+href="#thedisappearingspoon-trickster-birder-soldier-spy">Trickster,
+Birder, Soldier, Spy</a> — November 11</li>
+<li><a
+href="#thedisappearingspoon-why-not-just-rename-the-hitler-beetle">Why
+Not Just Rename the “Hitler Beetle”?</a> — November 4</li>
+<li><a href="#thedisappearingspoon-john-james-fraudubon">John James
+Fraudubon</a> — October 28</li>
+<li><a
+href="#thedisappearingspoon-the-bird-that-made-john-james-audubon-a-legend">The
+Bird that Made John James Audubon a Legend</a> — October 21</li>
+<li><a
+href="#thedisappearingspoon-the-dignity-of-the-ig-nobel-prizes">The
+Dignity of the Ig Nobel Prizes</a> — October 14</li>
+<li><a href="#thedisappearingspoon-the-nobel-disease">The Nobel
+Disease</a> — October 6</li>
+<li><a
+href="#thedisappearingspoon-dinner-with-king-tut-audiobook-preview">Dinner
+with King Tut audiobook preview</a> — June 24</li>
+<li><a
+href="#thedisappearingspoon-why-doctors-and-scientists-embraced-the-nazis">Why
+Doctors and Scientists Embraced the Nazis</a> — May 27</li>
+<li><a href="#thedisappearingspoon-hotter-than-the-dickens">Hotter than
+the Dickens</a> — May 20</li>
+<li><a href="#thedisappearingspoon-jake-leg-blues">Jake Leg Blues</a> —
+May 13</li>
+<li><a
+href="#thedisappearingspoon-the-worst-of-times-the-asbestos-times">The
+Worst of Times, the Asbestos Times</a> — May 6</li>
+<li><a href="#thedisappearingspoon-human-photosynthesis">Human
+Photosynthesis</a> — April 29</li>
+<li><a
+href="#thedisappearingspoon-the-sad-story-of-darwin-s-self-procleimed-stupidest-child">The
+Sad Story of Darwin’s Self-Procleimed “Stupidest” Child</a> — April
+22</li>
+<li><a
+href="#thedisappearingspoon-the-birds-and-the-bees-and-the-frogs">The
+Birds and the Bees and the Frogs</a> — April 15</li>
+<li><a
+href="#thedisappearingspoon-the-would-be-saint-s-battle-over-down-syndrome">The
+Would-Be Saint’s Battle over Down Syndrome</a> — April 8</li>
+<li><a
+href="#thedisappearingspoon-the-battle-over-human-chromosomes">The
+Battle over Human Chromosomes</a> — April 1</li>
+<li><a href="#thedisappearingspoon-the-halley-s-comet-panic">The
+Halley’s Comet Panic</a> — March 25</li>
+</ul>
+<h3 id="section-2">2024</h3>
+<ul>
+<li><a
+href="#thedisappearingspoon-the-winter-when-people-ate-tulips">The
+Winter when People Ate Tulips</a> — December 10</li>
+<li><a
+href="#thedisappearingspoon-why-keep-a-diary-of-a-toxic-snakebite">Why
+Keep a Diary of a Toxic Snakebite?</a> — December 3</li>
+<li><a href="#thedisappearingspoon-machiavellian-microbes">Machiavellian
+Microbes</a> — November 19</li>
+<li><a
+href="#thedisappearingspoon-the-woman-who-turned-back-a-plague-of-old-testament-proportions">The
+Woman Who “Turned Back a Plague of Old Testament Proportions”</a> —
+November 12</li>
+<li><a href="#thedisappearingspoon-the-doom-lurking-inside-trees">The
+Doom Lurking inside Trees</a> — November 4</li>
+<li><a href="#thedisappearingspoon-the-mona-lisa-of-the-seine">The Mona
+Lisa of the Seine</a> — October 29</li>
+<li><a href="#thedisappearingspoon-savant-idiots">Savant Idiots</a> —
+October 22</li>
+<li><a href="#thedisappearingspoon-when-mummymania-swept-the-world">When
+Mummymania Swept the World</a> — October 15</li>
+<li><a
+href="#thedisappearingspoon-the-sadder-side-of-the-nobel-prizes">The
+Sadder Side of the Nobel Prizes</a> — October 8</li>
+<li><a
+href="#thedisappearingspoon-the-scientific-way-to-fool-a-nazi">The
+Scientific Way to Fool a Nazi</a> — September 30</li>
+<li><a href="#thedisappearingspoon-the-mysterious-mote">The Mysterious
+Mote</a> — June 26</li>
+<li><a href="#thedisappearingspoon-the-science-of-d-day">The Science of
+D-Day</a> — May 14</li>
+<li><a
+href="#thedisappearingspoon-can-plastic-surgery-keep-you-out-of-prison">Can
+Plastic Surgery Keep You out of Prison?</a> — May 7</li>
+<li><a href="#thedisappearingspoon-the-russian-roswell">The Russian
+Roswell</a> — April 30</li>
+<li><a
+href="#thedisappearingspoon-when-tenure-means-life-and-death">When
+Tenure Means Life and Death</a> — April 23</li>
+<li><a href="#thedisappearingspoon-a-deadly-soup-for-babies">A Deadly
+Soup for Babies</a> — April 16</li>
+<li><a
+href="#thedisappearingspoon-how-the-worst-serial-killer-in-holland-s-history-went-free">How
+the “Worst Serial Killer in Holland’s History” Went Free</a> — April
+9</li>
+<li><a href="#thedisappearingspoon-the-eclipse-that-killed-a-king">The
+Eclipse that Killed a King</a> — April 2</li>
+<li><a
+href="#thedisappearingspoon-when-generosity-turns-pathological">When
+Generosity Turns Pathological</a> — March 26</li>
+<li><a
+href="#thedisappearingspoon-the-sex-cult-antichrist-who-rocketed-us-to-space-part-2">The
+Sex-Cult “Antichrist” Who Rocketed Us to Space (part 2)</a> — March
+19</li>
+<li><a
+href="#thedisappearingspoon-the-sex-cult-antichrist-who-rocketed-us-to-space-part-1">The
+Sex-Cult “Antichrist” Who Rocketed Us to Space (part 1)</a> — March
+12</li>
+<li><a
+href="#thedisappearingspoon-don-t-drink-the-milk-bonus-episode-milk-from-mutations-to-mustaches">Don’t
+Drink the Milk bonus episode - Milk: From mutations to mustaches</a> —
+January 16</li>
+</ul>
+<h3 id="section-3">2023</h3>
+<ul>
+<li><a href="#thedisappearingspoon-was-darwin-a-murderer">Was Darwin a
+Murderer?</a> — November 14</li>
+<li><a href="#thedisappearingspoon-mass-psychosis-in-food-science">Mass
+Psychosis in Food Science</a> — November 7</li>
+<li><a href="#thedisappearingspoon-accounting-for-taste">Accounting for
+Taste</a> — October 31</li>
+<li><a href="#thedisappearingspoon-if-indiana-jones-were-a-swindler">If
+Indiana Jones Were a Swindler</a> — October 24</li>
+<li><a href="#thedisappearingspoon-the-british-tobacco-empire">The
+British Tobacco Empire</a> — October 17</li>
+<li><a
+href="#thedisappearingspoon-moldy-mary-the-forgotten-mother-of-penicillin">“Moldy
+Mary,” The Forgotten Mother of Penicillin</a> — October 10</li>
+<li><a
+href="#thedisappearingspoon-the-most-exclusive-club-in-the-world">The
+Most Exclusive Club in the World</a> — October 3</li>
+<li><a
+href="#thedisappearingspoon-death-defying-science-at-75-000-feet">Death-Defying
+Science at 75,000 Feet</a> — September 26</li>
+<li><a href="#thedisappearingspoon-proving-einstein-right">Proving
+Einstein Right</a> — September 20</li>
+<li><a href="#thedisappearingspoon-einstein-s-golden-moment">Einstein’s
+Golden Moment</a> — September 12</li>
+<li><a
+href="#thedisappearingspoon-everything-you-know-about-phineas-gage-is-wrong">Everything
+You Know About Phineas Gage Is Wrong</a> — July 11</li>
+<li><a
+href="#thedisappearingspoon-why-do-we-obsess-over-charles-darwin-s-health">Why
+Do We Obsess Over Charles Darwin’s Health?</a> — June 27</li>
+<li><a href="#thedisappearingspoon-the-seeds-of-starvation">The Seeds of
+Starvation</a> — June 20</li>
+<li><a
+href="#thedisappearingspoon-when-scientific-brilliance-isn-t-enough">When
+Scientific Brilliance Isn’t Enough</a> — June 13</li>
+<li><a href="#thedisappearingspoon-the-curse-of-knowing-too-much">The
+Curse of Knowing Too Much</a> — June 6</li>
+<li><a
+href="#thedisappearingspoon-the-enigmas-of-foreign-accent-syndrome">The
+Enigmas of Foreign Accent Syndrome</a> — May 30</li>
+<li><a
+href="#thedisappearingspoon-the-world-s-only-natural-nuclear-reactor">The
+World’s Only Natural Nuclear Reactor</a> — May 23</li>
+<li><a
+href="#thedisappearingspoon-how-new-dna-sleuthing-can-expose-dangerous-killers-and-you">How
+New DNA Sleuthing Can Expose Dangerous Killers—and You</a> — May 16</li>
+<li><a
+href="#thedisappearingspoon-the-real-tragedy-of-robert-oppenheimer">The
+Real Tragedy of Robert Oppenheimer</a> — May 9</li>
+<li><a
+href="#thedisappearingspoon-the-brilliant-groundbreaking-and-wildly-overrated-leonardo-da-vinci">The
+Brilliant, Groundbreaking, and Wildly Overrated Leonardo da Vinci</a> —
+May 2</li>
+<li><a
+href="#thedisappearingspoon-spring-update-and-innate-trailer">Spring
+update and “Innate” trailer</a> — February 6</li>
+</ul>
+<h3 id="section-4">2022</h3>
+<ul>
+<li><a href="#thedisappearingspoon-death-squared">Death Squared</a> —
+November 29</li>
+<li><a href="#thedisappearingspoon-death-by-nutrition">Death by
+Nutrition</a> — November 22</li>
+<li><a href="#thedisappearingspoon-the-roadside-apocalypse">The Roadside
+Apocalypse</a> — November 15</li>
+<li><a href="#thedisappearingspoon-the-blind-visionary">The Blind
+Visionary</a> — November 8</li>
+<li><a href="#thedisappearingspoon-the-scariest-paradise-on-earth">The
+Scariest Paradise on Earth</a> — November 1</li>
+<li><a href="#thedisappearingspoon-the-naked-shibboleth">The Naked
+Shibboleth</a> — October 25</li>
+<li><a
+href="#thedisappearingspoon-the-debaucherous-legacy-of-johnny-appleseed">The
+Debaucherous Legacy of Johnny Appleseed</a> — October 18</li>
+<li><a href="#thedisappearingspoon-the-most-evil-molecule">The Most Evil
+Molecule</a> — October 11</li>
+<li><a href="#thedisappearingspoon-the-life-saving-rat-poison">The
+Life-Saving Rat Poison</a> — October 4</li>
+<li><a href="#thedisappearingspoon-the-making-of-a-lobotomist">The
+Making of a Lobotomist</a> — September 27</li>
+<li><a
+href="#thedisappearingspoon-icepick-surgeon-bonus-excerpt-on-the-making-of-the-unabomber">Icepick
+Surgeon bonus excerpt on the making of the Unabomber</a> — July 12</li>
+<li><a
+href="#thedisappearingspoon-the-murderer-who-made-movies-possible">The
+Murderer Who Made Movies Possible</a> — May 10</li>
+<li><a
+href="#thedisappearingspoon-dr-jekyll-mr-hyde-and-the-irish-giant">Dr. Jekyll,
+Mr. Hyde, and the Irish Giant</a> — May 3</li>
+<li><a
+href="#thedisappearingspoon-the-screwiest-and-perhaps-most-original-idea-of-the-20th-century">The
+Screwiest—and Perhaps Most Original—Idea of the 20th Century</a> — April
+26</li>
+<li><a href="#thedisappearingspoon-the-bird-with-four-sexes">The Bird
+with Four Sexes</a> — April 19</li>
+<li><a href="#thedisappearingspoon-when-the-brain-deceives-itself">When
+the Brain Deceives Itself</a> — April 12</li>
+<li><a
+href="#thedisappearingspoon-stephen-hawking-and-the-black-hole-mistake-that-made-his-career">Stephen
+Hawking and the Black Hole Mistake that Made His Career</a> — April
+5</li>
+<li><a
+href="#thedisappearingspoon-albert-einstein-and-the-worst-prediction-in-the-history-of-science">Albert
+Einstein and the Worst Prediction in the History of Science</a> — March
+29</li>
+<li><a
+href="#thedisappearingspoon-how-to-be-smarter-than-isaac-newton">How to
+Be Smarter than Isaac Newton</a> — March 22</li>
+<li><a href="#thedisappearingspoon-claude-monet-and-bee-purple">Claude
+Monet and Bee Purple</a> — March 15</li>
+<li><a
+href="#thedisappearingspoon-the-unsung-heroes-of-darwin-s-evolution">The
+Unsung Heroes of Darwin’s Evolution</a> — March 8</li>
+</ul>
+<h3 id="section-5">2021</h3>
+<ul>
+<li><a
+href="#thedisappearingspoon-the-sinister-angel-singers-of-rome">The
+Sinister Angel Singers of Rome</a> — December 7</li>
+<li><a
+href="#thedisappearingspoon-the-murderous-origins-of-the-american-medical-association">The
+Murderous Origins of the American Medical Association</a> — November
+30</li>
+<li><a href="#thedisappearingspoon-the-big-what-if-of-cancer">The Big
+‘What If’ of Cancer</a> — November 23</li>
+<li><a
+href="#thedisappearingspoon-the-harvard-medical-school-janitor-who-solved-a-murder">The
+Harvard Medical School Janitor Who Solved a Murder</a> — November
+16</li>
+<li><a href="#thedisappearingspoon-burn-after-watching">Burn After
+Watching</a> — November 9</li>
+<li><a
+href="#thedisappearingspoon-history-s-first-car-crash-victim">History’s
+First Car Crash Victim</a> — November 2</li>
+<li><a href="#thedisappearingspoon-real-life-zombies">Real Life
+Zombies</a> — October 26</li>
+<li><a
+href="#thedisappearingspoon-how-climate-change-will-remake-the-human-body">How
+Climate Change Will Remake the Human Body</a> — October 19</li>
+<li><a href="#thedisappearingspoon-the-mary-poppins-cancer">The ‘Mary
+Poppins’ Cancer</a> — October 12</li>
+<li><a
+href="#thedisappearingspoon-kangaroo-and-pig-and-monkey-and-dog-and-donkey-courts">Kangaroo
+(and Pig and Monkey and Dog and Donkey) Courts</a> — October 5</li>
+<li><a
+href="#thedisappearingspoon-icepick-surgeon-audiobook-excerpt">Icepick
+Surgeon audiobook excerpt</a> — July 13</li>
+<li><a href="#thedisappearingspoon-the-anatomy-riots">The Anatomy
+Riots</a> — June 1</li>
+<li><a
+href="#thedisappearingspoon-when-a-hole-in-the-head-is-good-for-you">When
+a Hole in the Head Is Good for You</a> — May 25</li>
+<li><a href="#thedisappearingspoon-when-mosquitos-cured-insanity">When
+Mosquitos Cured Insanity</a> — May 18</li>
+<li><a href="#thedisappearingspoon-the-death-of-the-lord-god-bird">The
+Death of the Lord God Bird</a> — May 11</li>
+<li><a
+href="#thedisappearingspoon-chewing-it-over-and-over-and-over-and-over">Chewing
+it Over—and Over and Over and Over</a> — May 4</li>
+<li><a
+href="#thedisappearingspoon-what-s-the-longest-word-in-the-english-language">What’s
+the Longest Word in the English Language?</a> — April 27</li>
+<li><a
+href="#thedisappearingspoon-why-don-t-we-have-a-male-birth-control-pill-yet">Why
+Don’t We Have a Male Birth Control Pill Yet?</a> — April 20</li>
+<li><a
+href="#thedisappearingspoon-bonus-interview-with-wnyc-s-science-diction">Bonus
+interview with WNYC’s Science Diction</a> — April 16</li>
+<li><a
+href="#thedisappearingspoon-marie-curie-s-nearly-disastrous-trip-to-america">Marie
+Curie’s (Nearly Disastrous) Trip to America</a> — April 13</li>
+<li><a
+href="#thedisappearingspoon-the-most-important-lost-fossils-in-history">The
+Most Important Lost Fossils in History</a> — April 6</li>
+<li><a
+href="#thedisappearingspoon-the-world-s-first-global-vaccine-supply-chain-was-orphan-children">The
+World’s First Global Vaccine Supply Chain Was Orphan Children</a> —
+March 30</li>
+</ul>
+<h3 id="section-6">2020</h3>
+<ul>
+<li><a
+href="#thedisappearingspoon-the-joys-and-pains-of-operating-on-yourself">The
+Joys, and Pains, of Operating on Yourself</a> — November 30</li>
+<li><a href="#thedisappearingspoon-a-school-shooting-for-science">A
+School Shooting for Science</a> — November 13</li>
+<li><a
+href="#thedisappearingspoon-star-wars-death-rays-and-donald-trump">Star
+Wars, Death Rays, and Donald Trump</a> — October 15</li>
+<li><a href="#thedisappearingspoon-vitamin-g">Vitamin G</a> — October
+1</li>
+<li><a
+href="#thedisappearingspoon-the-cia-s-drug-fueled-orgies-and-you">The
+CIA’s Drug-Fueled Orgies and You</a> — September 15</li>
+<li><a
+href="#thedisappearingspoon-from-siberia-with-manipulative-love">From
+Siberia with (Manipulative) Love</a> — September 1</li>
+<li><a
+href="#thedisappearingspoon-the-man-who-couldn-t-read-numbers">The Man
+Who Couldn’t Read Numbers</a> — August 17</li>
+<li><a href="#thedisappearingspoon-the-teflon-bomb">The Teflon Bomb</a>
+— August 6</li>
+<li><a
+href="#thedisappearingspoon-chocolate-cake-atomic-bombs">Chocolate Cake
+&amp; Atomic Bombs</a> — August 1</li>
+<li><a href="#thedisappearingspoon-the-ice-island-murder">The Ice Island
+Murder</a> — July 14</li>
+<li><a href="#thedisappearingspoon-our-slimy-nazi-saviors">Our Slimy
+Nazi Saviors</a> — July 7</li>
+<li><a href="#thedisappearingspoon-are-braces-a-health-disaster">Are
+Braces a Health Disaster?</a> — June 23</li>
+<li><a
+href="#thedisappearingspoon-the-science-immigrants-who-saved-millions">The
+Science Immigrants Who Saved Millions</a> — June 9</li>
+<li><a href="#thedisappearingspoon-tyrannosaurus-sex">Tyrannosaurus
+Sex</a> — June 2</li>
+<li><a
+href="#thedisappearingspoon-the-lost-dinosaurs-of-central-park">The Lost
+Dinosaurs of Central Park</a> — May 22</li>
+<li><a
+href="#thedisappearingspoon-exposing-nazi-medical-atrocities">Exposing
+Nazi Medical Atrocities</a> — May 11</li>
+<li><a href="#thedisappearingspoon-glove-at-first-sight">Glove at First
+Sight</a> — April 27</li>
+<li><a href="#thedisappearingspoon-galileo-and-art-part-1">Galileo and
+Art, part 1</a> — April 20</li>
+<li><a href="#thedisappearingspoon-galileo-and-art-part-2">Galileo and
+Art, part 2</a> — April 20</li>
+</ul>
+<h3 id="section-7">2019</h3>
+<ul>
+<li><a href="#thedisappearingspoon-tea-test-tempest">Tea Test
+Tempest</a> — October 26</li>
+</ul>
+<h2 id="appendix-b-episodes-by-title">Appendix B: Episodes by Title</h2>
+<p>Every episode in order by title, ignoring a leading “A”, “An”, or
+“The”.</p>
+<ul>
+<li><a
+href="#thedisappearingspoon-moldy-mary-the-forgotten-mother-of-penicillin">“Moldy
+Mary,” The Forgotten Mother of Penicillin</a></li>
+<li><a href="#thedisappearingspoon-accounting-for-taste">Accounting for
+Taste</a></li>
+<li><a
+href="#thedisappearingspoon-albert-einstein-and-the-worst-prediction-in-the-history-of-science">Albert
+Einstein and the Worst Prediction in the History of Science</a></li>
+<li><a href="#thedisappearingspoon-the-anatomy-riots">The Anatomy
+Riots</a></li>
+<li><a
+href="#thedisappearingspoon-the-angel-of-the-concentration-camp">The
+Angel of the Concentration Camp</a></li>
+<li><a href="#thedisappearingspoon-are-braces-a-health-disaster">Are
+Braces a Health Disaster?</a></li>
+<li><a href="#thedisappearingspoon-back-breaking-science">Back-Breaking
+Science</a></li>
+<li><a href="#thedisappearingspoon-the-battery-dope">The Battery
+Dope</a></li>
+<li><a
+href="#thedisappearingspoon-the-battle-over-human-chromosomes">The
+Battle over Human Chromosomes</a></li>
+<li><a href="#thedisappearingspoon-the-big-what-if-of-cancer">The Big
+‘What If’ of Cancer</a></li>
+<li><a
+href="#thedisappearingspoon-the-bird-that-made-john-james-audubon-a-legend">The
+Bird that Made John James Audubon a Legend</a></li>
+<li><a href="#thedisappearingspoon-the-bird-with-four-sexes">The Bird
+with Four Sexes</a></li>
+<li><a
+href="#thedisappearingspoon-the-birds-and-the-bees-and-the-frogs">The
+Birds and the Bees and the Frogs</a></li>
+<li><a href="#thedisappearingspoon-the-blind-visionary">The Blind
+Visionary</a></li>
+<li><a
+href="#thedisappearingspoon-bonus-interview-with-wnyc-s-science-diction">Bonus
+interview with WNYC’s Science Diction</a></li>
+<li><a
+href="#thedisappearingspoon-the-brilliant-groundbreaking-and-wildly-overrated-leonardo-da-vinci">The
+Brilliant, Groundbreaking, and Wildly Overrated Leonardo da
+Vinci</a></li>
+<li><a
+href="#thedisappearingspoon-bringing-an-extinct-owl-back-to-life">Bringing
+an Extinct Owl Back to Life</a></li>
+<li><a href="#thedisappearingspoon-the-british-tobacco-empire">The
+British Tobacco Empire</a></li>
+<li><a href="#thedisappearingspoon-burn-after-watching">Burn After
+Watching</a></li>
+<li><a
+href="#thedisappearingspoon-can-plastic-surgery-keep-you-out-of-prison">Can
+Plastic Surgery Keep You out of Prison?</a></li>
+<li><a href="#thedisappearingspoon-the-canaries-in-the-submarine">The
+Canaries in the Submarine</a></li>
+<li><a href="#thedisappearingspoon-charles-lindbergh-lab-rat">Charles
+Lindbergh, Lab Rat</a></li>
+<li><a
+href="#thedisappearingspoon-chewing-it-over-and-over-and-over-and-over">Chewing
+it Over—and Over and Over and Over</a></li>
+<li><a
+href="#thedisappearingspoon-chocolate-cake-atomic-bombs">Chocolate Cake
+&amp; Atomic Bombs</a></li>
+<li><a
+href="#thedisappearingspoon-the-cia-s-drug-fueled-orgies-and-you">The
+CIA’s Drug-Fueled Orgies and You</a></li>
+<li><a href="#thedisappearingspoon-claude-monet-and-bee-purple">Claude
+Monet and Bee Purple</a></li>
+<li><a
+href="#thedisappearingspoon-the-corny-cringy-very-bad-television-show-that-just-might-save-your-li">The
+Corny, Cringy, Very Bad Television Show that Just Might Save Your
+Life</a></li>
+<li><a href="#thedisappearingspoon-the-curse-of-knowing-too-much">The
+Curse of Knowing Too Much</a></li>
+<li><a href="#thedisappearingspoon-a-deadly-soup-for-babies">A Deadly
+Soup for Babies</a></li>
+<li><a href="#thedisappearingspoon-death-by-nutrition">Death by
+Nutrition</a></li>
+<li><a href="#thedisappearingspoon-the-death-of-the-lord-god-bird">The
+Death of the Lord God Bird</a></li>
+<li><a href="#thedisappearingspoon-death-squared">Death Squared</a></li>
+<li><a
+href="#thedisappearingspoon-death-defying-science-at-75-000-feet">Death-Defying
+Science at 75,000 Feet</a></li>
+<li><a
+href="#thedisappearingspoon-the-debaucherous-legacy-of-johnny-appleseed">The
+Debaucherous Legacy of Johnny Appleseed</a></li>
+<li><a
+href="#thedisappearingspoon-the-dignity-of-the-ig-nobel-prizes">The
+Dignity of the Ig Nobel Prizes</a></li>
+<li><a
+href="#thedisappearingspoon-dinner-with-king-tut-audiobook-preview">Dinner
+with King Tut audiobook preview</a></li>
+<li><a
+href="#thedisappearingspoon-don-t-drink-the-milk-bonus-episode-milk-from-mutations-to-mustaches">Don’t
+Drink the Milk bonus episode - Milk: From mutations to
+mustaches</a></li>
+<li><a href="#thedisappearingspoon-the-doom-lurking-inside-trees">The
+Doom Lurking inside Trees</a></li>
+<li><a
+href="#thedisappearingspoon-dr-jekyll-mr-hyde-and-the-irish-giant">Dr. Jekyll,
+Mr. Hyde, and the Irish Giant</a></li>
+<li><a href="#thedisappearingspoon-the-eclipse-that-killed-a-king">The
+Eclipse that Killed a King</a></li>
+<li><a href="#thedisappearingspoon-einstein-s-golden-moment">Einstein’s
+Golden Moment</a></li>
+<li><a
+href="#thedisappearingspoon-the-enigmas-of-foreign-accent-syndrome">The
+Enigmas of Foreign Accent Syndrome</a></li>
+<li><a
+href="#thedisappearingspoon-everything-you-know-about-phineas-gage-is-wrong">Everything
+You Know About Phineas Gage Is Wrong</a></li>
+<li><a
+href="#thedisappearingspoon-exposing-nazi-medical-atrocities">Exposing
+Nazi Medical Atrocities</a></li>
+<li><a href="#thedisappearingspoon-forensic-pseudoscience">Forensic
+Pseudoscience</a></li>
+<li><a
+href="#thedisappearingspoon-from-siberia-with-manipulative-love">From
+Siberia with (Manipulative) Love</a></li>
+<li><a href="#thedisappearingspoon-galileo-and-art-part-1">Galileo and
+Art, part 1</a></li>
+<li><a href="#thedisappearingspoon-galileo-and-art-part-2">Galileo and
+Art, part 2</a></li>
+<li><a href="#thedisappearingspoon-glove-at-first-sight">Glove at First
+Sight</a></li>
+<li><a href="#thedisappearingspoon-the-great-balloon-escape">The Great
+Balloon Escape</a></li>
+<li><a href="#thedisappearingspoon-the-halley-s-comet-panic">The
+Halley’s Comet Panic</a></li>
+<li><a
+href="#thedisappearingspoon-the-harvard-medical-school-janitor-who-solved-a-murder">The
+Harvard Medical School Janitor Who Solved a Murder</a></li>
+<li><a
+href="#thedisappearingspoon-history-s-first-car-crash-victim">History’s
+First Car Crash Victim</a></li>
+<li><a href="#thedisappearingspoon-hotter-than-the-dickens">Hotter than
+the Dickens</a></li>
+<li><a
+href="#thedisappearingspoon-how-climate-change-will-remake-the-human-body">How
+Climate Change Will Remake the Human Body</a></li>
+<li><a
+href="#thedisappearingspoon-how-new-dna-sleuthing-can-expose-dangerous-killers-and-you">How
+New DNA Sleuthing Can Expose Dangerous Killers—and You</a></li>
+<li><a
+href="#thedisappearingspoon-how-the-worst-serial-killer-in-holland-s-history-went-free">How
+the “Worst Serial Killer in Holland’s History” Went Free</a></li>
+<li><a
+href="#thedisappearingspoon-how-to-be-smarter-than-isaac-newton">How to
+Be Smarter than Isaac Newton</a></li>
+<li><a href="#thedisappearingspoon-human-photosynthesis">Human
+Photosynthesis</a></li>
+<li><a href="#thedisappearingspoon-the-ice-island-murder">The Ice Island
+Murder</a></li>
+<li><a
+href="#thedisappearingspoon-icepick-surgeon-audiobook-excerpt">Icepick
+Surgeon audiobook excerpt</a></li>
+<li><a
+href="#thedisappearingspoon-icepick-surgeon-bonus-excerpt-on-the-making-of-the-unabomber">Icepick
+Surgeon bonus excerpt on the making of the Unabomber</a></li>
+<li><a href="#thedisappearingspoon-if-indiana-jones-were-a-swindler">If
+Indiana Jones Were a Swindler</a></li>
+<li><a href="#thedisappearingspoon-jake-leg-blues">Jake Leg
+Blues</a></li>
+<li><a href="#thedisappearingspoon-john-james-fraudubon">John James
+Fraudubon</a></li>
+<li><a
+href="#thedisappearingspoon-the-joys-and-pains-of-operating-on-yourself">The
+Joys, and Pains, of Operating on Yourself</a></li>
+<li><a
+href="#thedisappearingspoon-kangaroo-and-pig-and-monkey-and-dog-and-donkey-courts">Kangaroo
+(and Pig and Monkey and Dog and Donkey) Courts</a></li>
+<li><a href="#thedisappearingspoon-the-life-saving-rat-poison">The
+Life-Saving Rat Poison</a></li>
+<li><a
+href="#thedisappearingspoon-the-lost-dinosaurs-of-central-park">The Lost
+Dinosaurs of Central Park</a></li>
+<li><a href="#thedisappearingspoon-machiavellian-microbes">Machiavellian
+Microbes</a></li>
+<li><a href="#thedisappearingspoon-the-making-of-a-lobotomist">The
+Making of a Lobotomist</a></li>
+<li><a
+href="#thedisappearingspoon-the-making-of-the-flat-earth-myth">The
+Making of the “Flat Earth” Myth</a></li>
+<li><a
+href="#thedisappearingspoon-the-man-who-couldn-t-read-numbers">The Man
+Who Couldn’t Read Numbers</a></li>
+<li><a
+href="#thedisappearingspoon-manhattan-project-propaganda">Manhattan
+Project Propaganda</a></li>
+<li><a
+href="#thedisappearingspoon-marie-curie-s-nearly-disastrous-trip-to-america">Marie
+Curie’s (Nearly Disastrous) Trip to America</a></li>
+<li><a href="#thedisappearingspoon-mass-psychosis-in-food-science">Mass
+Psychosis in Food Science</a></li>
+<li><a href="#thedisappearingspoon-the-mona-lisa-of-the-seine">The Mona
+Lisa of the Seine</a></li>
+<li><a href="#thedisappearingspoon-the-most-evil-molecule">The Most Evil
+Molecule</a></li>
+<li><a
+href="#thedisappearingspoon-the-most-exclusive-club-in-the-world">The
+Most Exclusive Club in the World</a></li>
+<li><a
+href="#thedisappearingspoon-the-most-important-lost-fossils-in-history">The
+Most Important Lost Fossils in History</a></li>
+<li><a
+href="#thedisappearingspoon-the-murderer-who-made-movies-possible">The
+Murderer Who Made Movies Possible</a></li>
+<li><a
+href="#thedisappearingspoon-the-murderous-origins-of-the-american-medical-association">The
+Murderous Origins of the American Medical Association</a></li>
+<li><a href="#thedisappearingspoon-the-museum-of-lost-things">The Museum
+of Lost Things</a></li>
+<li><a href="#thedisappearingspoon-the-mysterious-mote">The Mysterious
+Mote</a></li>
+<li><a href="#thedisappearingspoon-the-naked-shibboleth">The Naked
+Shibboleth</a></li>
+<li><a
+href="#thedisappearingspoon-nasa-s-unmentionable-s-adventure">NASA’s
+Unmentionable(s) Adventure</a></li>
+<li><a href="#thedisappearingspoon-the-nobel-disease">The Nobel
+Disease</a></li>
+<li><a href="#thedisappearingspoon-our-slimy-nazi-saviors">Our Slimy
+Nazi Saviors</a></li>
+<li><a
+href="#thedisappearingspoon-the-pioneers-and-vestiges-of-evolution">The
+Pioneers and Vestiges of Evolution</a></li>
+<li><a href="#thedisappearingspoon-proving-einstein-right">Proving
+Einstein Right</a></li>
+<li><a
+href="#thedisappearingspoon-the-publicity-stunt-that-sparked-the-scopes-monkey-trial">The
+Publicity Stunt that Sparked the Scopes Monkey Trial</a></li>
+<li><a href="#thedisappearingspoon-real-life-zombies">Real Life
+Zombies</a></li>
+<li><a
+href="#thedisappearingspoon-the-real-tragedy-of-robert-oppenheimer">The
+Real Tragedy of Robert Oppenheimer</a></li>
+<li><a href="#thedisappearingspoon-the-roadside-apocalypse">The Roadside
+Apocalypse</a></li>
+<li><a href="#thedisappearingspoon-the-russian-roswell">The Russian
+Roswell</a></li>
+<li><a
+href="#thedisappearingspoon-the-sad-story-of-darwin-s-self-procleimed-stupidest-child">The
+Sad Story of Darwin’s Self-Procleimed “Stupidest” Child</a></li>
+<li><a
+href="#thedisappearingspoon-the-sadder-side-of-the-nobel-prizes">The
+Sadder Side of the Nobel Prizes</a></li>
+<li><a href="#thedisappearingspoon-savant-idiots">Savant Idiots</a></li>
+<li><a href="#thedisappearingspoon-the-scariest-paradise-on-earth">The
+Scariest Paradise on Earth</a></li>
+<li><a href="#thedisappearingspoon-a-school-shooting-for-science">A
+School Shooting for Science</a></li>
+<li><a
+href="#thedisappearingspoon-the-science-immigrants-who-saved-millions">The
+Science Immigrants Who Saved Millions</a></li>
+<li><a href="#thedisappearingspoon-the-science-of-d-day">The Science of
+D-Day</a></li>
+<li><a
+href="#thedisappearingspoon-the-scientific-way-to-fool-a-nazi">The
+Scientific Way to Fool a Nazi</a></li>
+<li><a
+href="#thedisappearingspoon-the-screwiest-and-perhaps-most-original-idea-of-the-20th-century">The
+Screwiest—and Perhaps Most Original—Idea of the 20th Century</a></li>
+<li><a href="#thedisappearingspoon-the-seeds-of-starvation">The Seeds of
+Starvation</a></li>
+<li><a
+href="#thedisappearingspoon-the-sex-cult-antichrist-who-rocketed-us-to-space-part-1">The
+Sex-Cult “Antichrist” Who Rocketed Us to Space (part 1)</a></li>
+<li><a
+href="#thedisappearingspoon-the-sex-cult-antichrist-who-rocketed-us-to-space-part-2">The
+Sex-Cult “Antichrist” Who Rocketed Us to Space (part 2)</a></li>
+<li><a
+href="#thedisappearingspoon-the-sinister-angel-singers-of-rome">The
+Sinister Angel Singers of Rome</a></li>
+<li><a
+href="#thedisappearingspoon-spring-update-and-innate-trailer">Spring
+update and “Innate” trailer</a></li>
+<li><a
+href="#thedisappearingspoon-star-wars-death-rays-and-donald-trump">Star
+Wars, Death Rays, and Donald Trump</a></li>
+<li><a
+href="#thedisappearingspoon-stephen-hawking-and-the-black-hole-mistake-that-made-his-career">Stephen
+Hawking and the Black Hole Mistake that Made His Career</a></li>
+<li><a href="#thedisappearingspoon-tea-test-tempest">Tea Test
+Tempest</a></li>
+<li><a href="#thedisappearingspoon-the-teflon-bomb">The Teflon
+Bomb</a></li>
+<li><a
+href="#thedisappearingspoon-trickster-birder-soldier-spy">Trickster,
+Birder, Soldier, Spy</a></li>
+<li><a href="#thedisappearingspoon-tyrannosaurus-sex">Tyrannosaurus
+Sex</a></li>
+<li><a
+href="#thedisappearingspoon-the-unsung-heroes-of-darwin-s-evolution">The
+Unsung Heroes of Darwin’s Evolution</a></li>
+<li><a href="#thedisappearingspoon-vitamin-g">Vitamin G</a></li>
+<li><a href="#thedisappearingspoon-was-darwin-a-murderer">Was Darwin a
+Murderer?</a></li>
+<li><a
+href="#thedisappearingspoon-what-s-the-longest-word-in-the-english-language">What’s
+the Longest Word in the English Language?</a></li>
+<li><a
+href="#thedisappearingspoon-when-a-hole-in-the-head-is-good-for-you">When
+a Hole in the Head Is Good for You</a></li>
+<li><a
+href="#thedisappearingspoon-when-generosity-turns-pathological">When
+Generosity Turns Pathological</a></li>
+<li><a href="#thedisappearingspoon-when-mosquitos-cured-insanity">When
+Mosquitos Cured Insanity</a></li>
+<li><a href="#thedisappearingspoon-when-mummymania-swept-the-world">When
+Mummymania Swept the World</a></li>
+<li><a
+href="#thedisappearingspoon-when-scientific-brilliance-isn-t-enough">When
+Scientific Brilliance Isn’t Enough</a></li>
+<li><a
+href="#thedisappearingspoon-when-tenure-means-life-and-death">When
+Tenure Means Life and Death</a></li>
+<li><a href="#thedisappearingspoon-when-the-brain-deceives-itself">When
+the Brain Deceives Itself</a></li>
+<li><a
+href="#thedisappearingspoon-why-do-we-obsess-over-charles-darwin-s-health">Why
+Do We Obsess Over Charles Darwin’s Health?</a></li>
+<li><a
+href="#thedisappearingspoon-why-doctors-and-scientists-embraced-the-nazis">Why
+Doctors and Scientists Embraced the Nazis</a></li>
+<li><a
+href="#thedisappearingspoon-why-don-t-we-have-a-male-birth-control-pill-yet">Why
+Don’t We Have a Male Birth Control Pill Yet?</a></li>
+<li><a
+href="#thedisappearingspoon-why-keep-a-diary-of-a-toxic-snakebite">Why
+Keep a Diary of a Toxic Snakebite?</a></li>
+<li><a
+href="#thedisappearingspoon-why-not-just-rename-the-hitler-beetle">Why
+Not Just Rename the “Hitler Beetle”?</a></li>
+<li><a
+href="#thedisappearingspoon-the-winter-when-people-ate-tulips">The
+Winter when People Ate Tulips</a></li>
+<li><a
+href="#thedisappearingspoon-the-woman-who-turned-back-a-plague-of-old-testament-proportions">The
+Woman Who “Turned Back a Plague of Old Testament Proportions”</a></li>
+<li><a
+href="#thedisappearingspoon-the-world-s-first-global-vaccine-supply-chain-was-orphan-children">The
+World’s First Global Vaccine Supply Chain Was Orphan Children</a></li>
+<li><a
+href="#thedisappearingspoon-the-world-s-only-natural-nuclear-reactor">The
+World’s Only Natural Nuclear Reactor</a></li>
+<li><a
+href="#thedisappearingspoon-the-worst-of-times-the-asbestos-times">The
+Worst of Times, the Asbestos Times</a></li>
+<li><a
+href="#thedisappearingspoon-the-would-be-saint-s-battle-over-down-syndrome">The
+Would-Be Saint’s Battle over Down Syndrome</a></li>
+<li><a href="#thedisappearingspoon-the-mary-poppins-cancer">The ‘Mary
+Poppins’ Cancer</a></li>
+</ul>
+</body>
+</html>
