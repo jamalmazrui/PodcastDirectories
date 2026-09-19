@@ -1,0 +1,809 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Jamal Mazrui" />
+  <title>Serial Directory</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Serial Directory</h1>
+<p class="subtitle">A Screen-Reader-Friendly Guide to the Serial
+Podcast</p>
+<p class="author">Jamal Mazrui</p>
+<p class="date">September 2026</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>A screen-reader-friendly directory of the podcast Serial, covering 33
+public episodes from 2014 to 2026. Each episode links to its audio and
+lists its metadata in separate, alphabetically sorted fields.</p>
+</div>
+</header>
+<h1 id="serial-directory">Serial Directory</h1>
+<p>Serial, from Serial Productions and The New York Times, tells one
+true story over the course of a season. Its first season, a
+re-investigation of a 1999 Baltimore murder, helped launch the modern
+true-crime podcast.</p>
+<p>This directory covers <strong>33 public episodes</strong>, 2014 to
+2026. Each episode’s title link plays its audio; an <strong>Episode
+page</strong> link follows the title when the show offers a separate
+page; and the metadata on record appears one kind per field, in
+alphabetical order: <strong>Date</strong>, <strong>Duration</strong>,
+<strong>Episode</strong>, <strong>Season</strong>, and
+<strong>Summary</strong>, each shown only when available. Titles ignore
+a leading “A”, “An”, or “The”; people are sorted by surname; all sorting
+ignores case.</p>
+<p>Episodes are grouped by year, earliest first, and within each group
+they are in date order, oldest first, so a show reads the way it
+unfolded. Appendixes reorder them by date (newest first), by title.</p>
+<p>For current details, the linked pages are authoritative. This
+directory was compiled by Jamal Mazrui from the show’s public feed.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><p><a href="#2014">2014 (1)</a></p></li>
+<li><p><a href="#2015">2015 (1)</a></p></li>
+<li><p><a href="#2018">2018 (2)</a></p></li>
+<li><p><a href="#2020">2020 (1)</a></p></li>
+<li><p><a href="#2021">2021 (1)</a></p></li>
+<li><p><a href="#2022">2022 (2)</a></p></li>
+<li><p><a href="#2023">2023 (3)</a></p></li>
+<li><p><a href="#2024">2024 (1)</a></p></li>
+<li><p><a href="#2025">2025 (3)</a></p></li>
+<li><p><a href="#2026">2026 (6)</a></p></li>
+<li><p><a href="#trailers-and-cross-promotions">Trailers and
+Cross-Promotions (12)</a></p></li>
+<li><p><a href="#appendix-a-episodes-by-date">Appendix A: Episodes by
+Date</a></p></li>
+<li><p><a href="#appendix-b-episodes-by-title">Appendix B: Episodes by
+Title</a></p></li>
+</ul>
+<h2 id="2014">2014 (1)</h2>
+<h3 id="serial-serial-s01-ep-1-the-alibi"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/d11df4d6-5fe9-40fb-a0e0-48bcd4651225/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=d11df4d6-5fe9-40fb-a0e0-48bcd4651225&amp;feed=PpzWFGhg">Serial
+S01 - Ep. 1: The Alibi</a></h3>
+<p><a href="https://serialpodcast.org/season-one/1/the-alibi">Episode
+page</a></p>
+<p><strong>Date:</strong> October 3, 2014</p>
+<p><strong>Duration:</strong> 00:53:34</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> It’s Baltimore, 1999. Hae Min Lee, a
+popular high-school senior, disappears after school one day. Six weeks
+later detectives arrest her classmate and ex-boyfriend, Adnan Syed, for
+her murder. He says he’s innocent - though he can’t exactly remember
+what he was doing on that January afternoon. But someone can. A
+classmate at Woodlawn High School says she knows where Adnan was. The
+trouble is, she’s nowhere to be found</p>
+<h2 id="2015">2015 (1)</h2>
+<h3 id="serial-serial-s02-ep-1-dustwun"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/5536f6f7-32b5-468b-8a0b-1c07a87ad551/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=5536f6f7-32b5-468b-8a0b-1c07a87ad551&amp;feed=PpzWFGhg">Serial
+S02 - Ep. 1: DUSTWUN</a></h3>
+<p><a href="https://serialpodcast.org/season-two/1/dustwun">Episode
+page</a></p>
+<p><strong>Date:</strong> December 10, 2015</p>
+<p><strong>Duration:</strong> 00:44:57</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> In the middle of the night, Pfc. Bowe
+Bergdahl grabs a notebook, snacks, water, some cash. Then he quietly
+slips off a remote U.S. Army outpost in eastern Afghanistan and into the
+dark, open desert. About 20 minutes later, it occurs to him: he’s in
+over his head</p>
+<h2 id="2018">2018 (2)</h2>
+<h3
+id="serial-serial-s03-ep-1-a-bar-fight-walks-into-the-justice-center"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/4cafa159-57ae-49c6-88da-e492b70e2437/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=4cafa159-57ae-49c6-88da-e492b70e2437&amp;feed=PpzWFGhg">Serial
+S03 - Ep. 1: A Bar Fight Walks into the Justice Center</a></h3>
+<p><a
+href="https://serialpodcast.org/season-three/1/a-bar-fight-walks-into-the-justice-center">Episode
+page</a></p>
+<p><strong>Date:</strong> September 20, 2018</p>
+<p><strong>Duration:</strong> 00:52:32</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> A young woman at a bar is slapped on the
+butt. So why’s she the one in jail?</p>
+<h3 id="serial-s-town-chapter-i"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/20746161-61de-4b8d-8299-bf08514906ed/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=20746161-61de-4b8d-8299-bf08514906ed&amp;feed=PpzWFGhg">S-Town
+- Chapter I</a></h3>
+<p><strong>Date:</strong> November 20, 2018</p>
+<p><strong>Duration:</strong> 00:53:12</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> “If you keep your mouth shut, you’ll be
+surprised what you can learn.”</p>
+<h2 id="2020">2020 (1)</h2>
+<h3 id="serial-nice-white-parents-ep-1"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/e3d04957-807e-4e35-b44f-bfab1509d3d7/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=e3d04957-807e-4e35-b44f-bfab1509d3d7&amp;feed=PpzWFGhg">Nice
+White Parents - Ep. 1</a></h3>
+<p><strong>Date:</strong> August 20, 2020</p>
+<p><strong>Duration:</strong> 01:02:34</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> It’s 2015 and one Brooklyn middle school is
+about to receive a huge influx of new students. Reporter Chana Joffe
+Walt follows what happens when the School for International Studies’s
+6th grade class swells from 30 mostly Latino, Black and Middle Eastern
+students, to a class of 103 —an influx almost entirely driven by white
+families. Everyone wants “what’s best for the school” but it becomes
+clear that they don’t share the same vision of what “best” means</p>
+<h2 id="2021">2021 (1)</h2>
+<h3 id="serial-the-improvement-association-ep-1"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/7a0e1e44-6914-40cf-bc2f-c199465a8af7/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=7a0e1e44-6914-40cf-bc2f-c199465a8af7&amp;feed=PpzWFGhg">The
+Improvement Association - Ep. 1</a></h3>
+<p><strong>Date:</strong> April 28, 2021</p>
+<p><strong>Duration:</strong> 00:46:02</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> Following a notorious case of election
+fraud in Bladen County, North Carolina, in 2018, the reporter Zoe Chace
+gets an invitation from Horace Munn, the leader of the Bladen County
+Improvement Association PAC, a Black political advocacy group whose name
+was dragged into the scandal. Horace asks Zoe to come down and
+investigate for herself and find out who is really cheating</p>
+<h2 id="2022">2022 (2)</h2>
+<h3 id="serial-the-trojan-horse-affair-part-1"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/847a5005-c7c8-4312-acc2-21e62dd07f62/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=847a5005-c7c8-4312-acc2-21e62dd07f62&amp;feed=PpzWFGhg">The
+Trojan Horse Affair - Part 1</a></h3>
+<p><strong>Date:</strong> March 18, 2022</p>
+<p><strong>Duration:</strong> 01:01:01</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 8</p>
+<p><strong>Summary:</strong> A strange letter appears outlining a plot
+by Islamic extremists to infiltrate Birmingham schools. Hamza and Brian
+visit the supposed mastermind of the plot, and he tells them he did take
+over a bunch of schools – just not for the reasons in the letter</p>
+<h3 id="serial-we-were-three-ep-1"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/8c4a5b7b-929c-48eb-8ff8-df63b0c5d2eb/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=8c4a5b7b-929c-48eb-8ff8-df63b0c5d2eb&amp;feed=PpzWFGhg">We
+Were Three - Ep. 1</a></h3>
+<p><strong>Date:</strong> October 13, 2022</p>
+<p><strong>Duration:</strong> 00:45:47</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 9</p>
+<p><strong>Summary:</strong> Rachel goes back to California, to the
+place where she grew up and where her brother and father died, to find
+answers</p>
+<h2 id="2023">2023 (3)</h2>
+<h3 id="serial-the-coldest-case-in-laramie-episode-1"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/cc1a8485-5540-4e6e-9e8e-e9a8b2067df9/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=cc1a8485-5540-4e6e-9e8e-e9a8b2067df9&amp;feed=PpzWFGhg">The
+Coldest Case In Laramie - Episode 1</a></h3>
+<p><strong>Date:</strong> March 30, 2023</p>
+<p><strong>Duration:</strong> 00:25:34</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 10</p>
+<p><strong>Summary:</strong> A Times investigative reporter, Kim Barker,
+revisits the murder of Shelli Wiley — a long-unsolved case from Kim’s
+time in high school. She reaches out to Shelli’s family to understand
+why the police arrested a man named Fred Lamb for Shelli’s murder in
+2016, and why prosecutors abruptly dropped the charges against him</p>
+<h3 id="serial-the-retrievals-s01-ep-1"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/b9ba1f07-9e8c-4eac-86f0-7137067ee5eb/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=b9ba1f07-9e8c-4eac-86f0-7137067ee5eb&amp;feed=PpzWFGhg">The
+Retrievals S01 - Ep. 1</a></h3>
+<p><a
+href="https://www.nytimes.com/2023/06/29/podcasts/serial-the-retrievals-yale-fertility-clinic.html">Episode
+page</a></p>
+<p><strong>Date:</strong> August 17, 2023</p>
+<p><strong>Duration:</strong> 00:58:21</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 11</p>
+<p><strong>Summary:</strong> Patients at a fertility clinic experience
+excruciating, unexpected pain. For months the reason for that pain
+remains hidden. Then they get a letter from the clinic</p>
+<h3 id="serial-the-kids-of-rutherford-county-ep-1"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/312bc538-452e-40d0-b4dd-86ecde12db65/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=312bc538-452e-40d0-b4dd-86ecde12db65&amp;feed=PpzWFGhg">The
+Kids of Rutherford County - Ep. 1</a></h3>
+<p><strong>Date:</strong> November 16, 2023</p>
+<p><strong>Duration:</strong> 00:29:40</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 12</p>
+<p><strong>Summary:</strong> A police officer in Rutherford County,
+Tenn., sees a video of little kids fighting, and decides to investigate.
+This leads to the arrest of 11 kids for watching the fight. The arrests
+do not go smoothly. From Serial Productions and The New York Times in
+partnership with ProPublica and Nashville Public Radio, “The Kids of
+Rutherford County” is reported and hosted by Meribah Knight, a
+Peabody-award winning reporter based in the South</p>
+<h2 id="2024">2024 (1)</h2>
+<h3 id="serial-serial-s04-ep-1-poor-baby-raul"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/ae9320ce-7aad-46af-8f5b-342cc81d3a1c/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=ae9320ce-7aad-46af-8f5b-342cc81d3a1c&amp;feed=PpzWFGhg">Serial
+S04 - Ep. 1: Poor Baby Raul</a></h3>
+<p><strong>Date:</strong> March 28, 2024</p>
+<p><strong>Duration:</strong> 00:42:56</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> Maybe you have an idea in your head about
+what it was like to work at Guantánamo, one of the most notorious
+prisons in the world. Think again</p>
+<h2 id="2025">2025 (3)</h2>
+<h3 id="serial-the-good-whale-ep-1"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/b24343b6-c428-4fa5-ae67-00d9ea55718a/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=b24343b6-c428-4fa5-ae67-00d9ea55718a&amp;feed=PpzWFGhg">The
+Good Whale - Ep. 1</a></h3>
+<p><strong>Date:</strong> January 2, 2025</p>
+<p><strong>Duration:</strong> 00:47:49</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 13</p>
+<p><strong>Summary:</strong> When the movie “Free Willy” is released,
+word gets out that the star, a killer whale named Keiko, is sick and
+living in a tiny pool at a Mexican amusement park. An environmentalist
+sets out to give the fans what they want: their favorite celebrity orca
+back in the sea</p>
+<h3 id="serial-the-retrievals-s02-ep-1"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/1bc17233-2e46-4fba-9dc3-c24dc564c49c/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=1bc17233-2e46-4fba-9dc3-c24dc564c49c&amp;feed=PpzWFGhg">The
+Retrievals S02 - Ep. 1</a></h3>
+<p><strong>Date:</strong> August 7, 2025</p>
+<p><strong>Duration:</strong> 00:49:04</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 14</p>
+<p><strong>Summary:</strong> Clara is a labor and delivery nurse, so she
+has a pretty good idea of what to expect when she delivers her own twins
+at the same hospital where she works. But she wasn’t prepared for
+this</p>
+<h3 id="serial-the-preventionist-ep-1"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/5c9184db-dbac-4548-aaab-a3fe77d5024d/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=5c9184db-dbac-4548-aaab-a3fe77d5024d&amp;feed=PpzWFGhg">The
+Preventionist - Ep. 1</a></h3>
+<p><strong>Date:</strong> October 30, 2025</p>
+<p><strong>Duration:</strong> 00:40:23</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 15</p>
+<p><strong>Summary:</strong> The story of how this extraordinary
+situation in the Lehigh Valley came to light — because it almost
+didn’t</p>
+<h2 id="2026">2026 (6)</h2>
+<h3 id="serial-the-idiot-chapter-1"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/8ae43bfe-4ffd-40ef-a827-c2c15ae49db5/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=8ae43bfe-4ffd-40ef-a827-c2c15ae49db5&amp;feed=PpzWFGhg">The
+Idiot - Chapter 1</a></h3>
+<p><strong>Date:</strong> March 26, 2026</p>
+<p><strong>Duration:</strong> 00:21:43</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 16</p>
+<p><strong>Summary:</strong> For decades, M. simply disliked Allen. They
+saw him as a fool, a pompous “international businessman” who bragged
+about shady deals and drove fancy cars while living in Eastern Europe
+and Africa. But one day Allen suddenly shows up at their father’s home
+in Cape Cod with his mother and 5-year-old son. He says he has separated
+from his wife, whom he has left behind in Moscow. M. suspects this could
+be a kidnapping, but their family seems to disagree. But finally Allen
+does something so bad, even M.’s family can’t ignore it</p>
+<h3 id="serial-the-last-12-weeks-ep-1"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/4990f699-46ab-48fa-b4fc-b8f3c4d3e165/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=4990f699-46ab-48fa-b4fc-b8f3c4d3e165&amp;feed=PpzWFGhg">The
+Last 12 Weeks - Ep. 1</a></h3>
+<p><strong>Date:</strong> June 18, 2026</p>
+<p><strong>Duration:</strong> 00:41:08</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 17</p>
+<p><strong>Summary:</strong> In 1992, David Wood became El Paso’s most
+notorious convicted serial killer. He has been on death row ever since.
+More than 30 years later, his lawyers have just a few months to argue
+his innocence and stop his execution. To find out about new shows from
+Serial Productions, and get a look behind the scenes, sign up for our
+newsletter at nytimes.com/serialnewsletter. Have a story pitch, a tip,
+or feedback on our shows? Email us at serialshows@nytimes.com</p>
+<h3 id="serial-the-last-12-weeks-ep-2"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/397329da-7a3d-476a-8135-17629ac88ff8/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=397329da-7a3d-476a-8135-17629ac88ff8&amp;feed=PpzWFGhg">The
+Last 12 Weeks - Ep. 2</a></h3>
+<p><strong>Date:</strong> June 18, 2026</p>
+<p><strong>Duration:</strong> 00:45:35</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 17</p>
+<p><strong>Summary:</strong> The way the state constructed the case,
+there’s no one big shiny piece of evidence for the defense to knock
+down. Instead, there are a million little threads to pull at. With less
+than two months until the execution, the lawyers comb through the
+evidence one last time, and a new witness offers unexpected revelations.
+To find out about new shows from Serial Productions, and get a look
+behind the scenes, sign up for our newsletter at
+nytimes.com/serialnewsletter. Have a story pitch, a tip, or feedback on
+our shows? Email us at serialshows@nytimes.com</p>
+<h3 id="serial-the-last-12-weeks-ep-3"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/7b0fab6d-c1fd-4b52-b35c-244e87973642/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=7b0fab6d-c1fd-4b52-b35c-244e87973642&amp;feed=PpzWFGhg">The
+Last 12 Weeks - Ep. 3</a></h3>
+<p><strong>Date:</strong> June 18, 2026</p>
+<p><strong>Duration:</strong> 00:43:42</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 17</p>
+<p><strong>Summary:</strong> In the final weeks before the execution
+date, the defense team has to decide just how far it’s willing to push
+people to save David Wood’s life. The team’s deliberations lead to a key
+witness on his deathbed … and the mother of one of the Desert Killer’s
+victims. To find out about new shows from Serial Productions, and get a
+look behind the scenes, sign up for our newsletter at
+nytimes.com/serialnewsletter. Have a story pitch, a tip, or feedback on
+our shows? Email us at serialshows@nytimes.com</p>
+<h3 id="serial-the-last-12-weeks-ep-4"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/fd032538-94da-4389-be55-89f83d02a9b3/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=fd032538-94da-4389-be55-89f83d02a9b3&amp;feed=PpzWFGhg">The
+Last 12 Weeks - Ep. 4</a></h3>
+<p><strong>Date:</strong> June 18, 2026</p>
+<p><strong>Duration:</strong> 00:30:30</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 17</p>
+<p><strong>Summary:</strong> To justify sentencing David Wood to death,
+prosecutors argued that he was a convicted rapist turned serial killer.
+And yet, Wood has insisted all along that isn’t true. We head to death
+row to hear him tell us why. But not before a victim of his earlier
+crimes has her say about the kind of person she believes he is. To find
+out about new shows from Serial Productions, and get a look behind the
+scenes, sign up for our newsletter at nytimes.com/serialnewsletter. Have
+a story pitch, a tip, or feedback on our shows? Email us at
+serialshows@nytimes.com</p>
+<h3 id="serial-the-last-12-weeks-ep-5"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/1e91c884-35d6-4747-9b03-191454f731b8/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=1e91c884-35d6-4747-9b03-191454f731b8&amp;feed=PpzWFGhg">The
+Last 12 Weeks - Ep. 5</a></h3>
+<p><strong>Date:</strong> June 18, 2026</p>
+<p><strong>Duration:</strong> 00:39:22</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 17</p>
+<p><strong>Summary:</strong> Days before the execution, the defense team
+scrambles to respond to an unexpected ruling, while the lead lawyer
+makes what may be his final visit to David Wood on death row. Everyone
+waits to find out Wood’s fate. To find out about new shows from Serial
+Productions, and get a look behind the scenes, sign up for our
+newsletter at nytimes.com/serialnewsletter. Have a story pitch, a tip,
+or feedback on our shows? Email us at serialshows@nytimes.com</p>
+<h2 id="trailers-and-cross-promotions">Trailers and Cross-Promotions
+(12)</h2>
+<h3 id="serial-the-improvement-association-trailer"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/b4f53163-53e0-4259-89c9-982a83e9eb6e/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=b4f53163-53e0-4259-89c9-982a83e9eb6e&amp;feed=PpzWFGhg">The
+Improvement Association - Trailer</a></h3>
+<p><strong>Date:</strong> March 30, 2021</p>
+<p><strong>Duration:</strong> 00:03:37</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> Listen to the trailer for our newest show,
+“The Improvement Association.” From Serial Productions and The New York
+Times, hosted by Zoe Chace</p>
+<h3 id="serial-the-trojan-horse-affair-trailer"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/4a811d9f-2d6c-4241-b65d-7fa8aad789f2/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=4a811d9f-2d6c-4241-b65d-7fa8aad789f2&amp;feed=PpzWFGhg">The
+Trojan Horse Affair - Trailer</a></h3>
+<p><strong>Date:</strong> February 3, 2022</p>
+<p><strong>Duration:</strong> 00:04:07</p>
+<p><strong>Season:</strong> 8</p>
+<p><strong>Summary:</strong> A mysterious letter detailing a supposed
+Islamist plot to take over schools shocked Britain in 2014. But who
+wrote it? From Serial Productions and The New York Times, “The Trojan
+Horse Affair,” an investigation that became bigger than we ever
+imagined. All eight parts are available now, wherever you get your
+podcasts. Search “The Trojan Horse Affair.”</p>
+<h3 id="serial-we-were-three-trailer"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/4bf0c0c2-fbe0-4739-84d0-ca97d0ac39bd/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=4bf0c0c2-fbe0-4739-84d0-ca97d0ac39bd&amp;feed=PpzWFGhg">We
+Were Three - Trailer</a></h3>
+<p><strong>Date:</strong> October 13, 2022</p>
+<p><strong>Duration:</strong> 00:03:02</p>
+<p><strong>Season:</strong> 9</p>
+<p><strong>Summary:</strong> A three-part series from This American Life
+producer Nancy Updike. When Rachel McKibbens’s father and brother died
+suddenly last fall, two weeks apart, from Covid, she’d had no idea her
+father was sick, and no idea her brother was dying. They were
+unvaccinated, but the story of what happened started long before that.
+All three episodes of “We Were Three,” a new show from Serial
+Productions and The New York Times, are available now wherever you get
+your podcasts</p>
+<h3 id="serial-the-coldest-case-in-laramie-trailer"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/71199b2c-bb12-4c89-a6bc-0a4a3f90fb0d/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=71199b2c-bb12-4c89-a6bc-0a4a3f90fb0d&amp;feed=PpzWFGhg">The
+Coldest Case In Laramie - Trailer</a></h3>
+<p><strong>Date:</strong> February 16, 2023</p>
+<p><strong>Duration:</strong> 00:04:41</p>
+<p><strong>Season:</strong> 10</p>
+<p><strong>Summary:</strong> Kim Barker, a Pulitzer Prize-winning
+investigative reporter for The New York Times, revisits an unsolved
+murder that took place while she was in high school in Laramie, Wyoming,
+nearly 40 years ago. She confronts the conflicting stories people have
+told themselves about the crime because of an unexpected development:
+the arrest of a former Laramie police officer accused in the murder. All
+eight episodes of “The Coldest Case in Laramie,” a new show from Serial
+Productions and The New York Times, are available on Thursday, February
+23rd wherever you get your podcasts</p>
+<h3 id="serial-the-retrievals-s01-trailer"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/9ec793e2-a8cb-4273-8540-615fa085ba96/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=9ec793e2-a8cb-4273-8540-615fa085ba96&amp;feed=PpzWFGhg">The
+Retrievals S01 - Trailer</a></h3>
+<p><strong>Date:</strong> June 22, 2023</p>
+<p><strong>Duration:</strong> 00:04:24</p>
+<p><strong>Season:</strong> 11</p>
+<p><strong>Summary:</strong> The patients in this story came to the Yale
+Fertility Center to pursue pregnancy. They began their I.V.F. cycles
+full of expectation and hope. Then a surgical procedure called egg
+retrieval caused them excruciating pain. Some of the patients screamed
+out in the procedure room. Others called the clinic from home to report
+pain in the hours that followed. But most of the staff members who
+fielded the patients’ reports did not know the real reason for the pain,
+which was that a nurse at the clinic was stealing fentanyl, and
+replacing it with saline. From Serial Productions and The New York
+Times, The Retrievals is a five-part narrative series reported by Susan
+Burton, a veteran staff member at “This American Life” and author of the
+memoir “Empty.” Susan details the events that unfolded at the clinic,
+and examines how the patients’ distinct identities informed the way they
+made sense of what happened to them in the procedure room. The nurse,
+too, has her own story, about her own pain, that she tells to the court.
+And then there is the story of how this all could have happened at the
+Yale clinic in the first place. Throughout, Burton explores the stories
+we tell about women’s pain. How do we tolerate, interpret and account
+for it? What happens when pain is minimized or dismissed? Episode 1 of
+The Retrievals arrives Thursday, June 29th</p>
+<h3 id="serial-the-kids-of-rutherford-county-trailer"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/148b21be-dc22-4af9-b547-f04f703384be/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=148b21be-dc22-4af9-b547-f04f703384be&amp;feed=PpzWFGhg">The
+Kids of Rutherford County - Trailer</a></h3>
+<p><strong>Date:</strong> October 19, 2023</p>
+<p><strong>Duration:</strong> 00:03:56</p>
+<p><strong>Season:</strong> 12</p>
+<p><strong>Summary:</strong> For over a decade, one Tennessee county
+arrested and illegally jailed hundreds, maybe thousands, of children. A
+four-part narrative series reveals how this came to be, the adults
+responsible for it, and the two lawyers, former juvenile delinquents
+themselves, who try to do something about it. From Serial Productions
+and The New York Times, “The Kids of Rutherford County” is reported and
+hosted by Meribah Knight, a Peabody-award winning reporter based in the
+South. Get it everywhere you get your podcasts on Thursday, October
+26th</p>
+<h3 id="serial-serial-s04-trailer"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/63a6e5ee-1930-40dd-9cb2-89d3c0791e0a/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=63a6e5ee-1930-40dd-9cb2-89d3c0791e0a&amp;feed=PpzWFGhg">Serial
+S04 - Trailer</a></h3>
+<p><strong>Date:</strong> March 21, 2024</p>
+<p><strong>Duration:</strong> 00:02:22</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> From Serial Productions and The New York
+Times, Serial Season 4 is a history of Guantánamo told by people who
+lived through key moments in Guantánamo’s evolution, who know things the
+rest of us don’t about what it’s like to be caught inside an improvised
+justice system. Episodes 1 and 2 arrive Thursday, March 28</p>
+<h3 id="serial-the-good-whale-trailer"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/80d90c3e-607e-4c39-8612-0e5e4f5a680d/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=80d90c3e-607e-4c39-8612-0e5e4f5a680d&amp;feed=PpzWFGhg">The
+Good Whale - Trailer</a></h3>
+<p><strong>Date:</strong> November 7, 2024</p>
+<p><strong>Duration:</strong> 00:02:32</p>
+<p><strong>Season:</strong> 13</p>
+<p><strong>Summary:</strong> After the movie “Free Willy” became a hit,
+word got out that the star of the film, a killer whale named Keiko, was
+sick and living in a tiny pool at a Mexican amusement park. Fans were
+outraged and pleaded for his release. “The Good Whale” tells the story
+of the wildly ambitious science experiment to return Keiko to the ocean
+— while the world watched. An epic tale that starts in Mexico and ends
+in Norway, the six-episode series follows Keiko as he’s transported from
+country to country, each time landing in the hands of well-intentioned
+people who believe they know what’s best for him – people who still
+disagree, decades later, about whether they did the right thing</p>
+<h3 id="serial-the-retrievals-s02-trailer"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/2ee1a2e9-75bf-4f07-8b4f-e4de1b215381/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=2ee1a2e9-75bf-4f07-8b4f-e4de1b215381&amp;feed=PpzWFGhg">The
+Retrievals S02 - Trailer</a></h3>
+<p><strong>Date:</strong> July 10, 2025</p>
+<p><strong>Duration:</strong> 00:04:24</p>
+<p><strong>Season:</strong> 14</p>
+<p><strong>Summary:</strong> C-sections are the most frequently
+performed major surgeries in the world. So why do so many patients feel
+severe pain during them? Season 2 of the award-winning podcast “The
+Retrievals” is an investigation into this underreported problem — and
+the new effort to solve it. Listen wherever you get your podcasts</p>
+<h3 id="serial-the-preventionist-trailer"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/4fa4b47d-9c2c-4128-b7a8-1c3851579ba9/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=4fa4b47d-9c2c-4128-b7a8-1c3851579ba9&amp;feed=PpzWFGhg">The
+Preventionist - Trailer</a></h3>
+<p><strong>Date:</strong> October 16, 2025</p>
+<p><strong>Duration:</strong> 00:03:15</p>
+<p><strong>Season:</strong> 15</p>
+<p><strong>Summary:</strong> In the summer of 2023, reporter Dyan Neary
+received a tip about a problematic doctor in Pennsylvania. Families were
+claiming that when they sought medical care for their children, this
+pediatrician falsely accused them of abuse, and their children were
+taken away from them. The Preventionist traces this doctor’s
+decades-long career across multiple states, and explores the rise of a
+new and powerful kind of specialist, the “child abuse pediatrician” —
+whose decisions can be incredibly difficult to challenge</p>
+<h3 id="serial-the-idiot-trailer"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/bdcff10b-5a7c-4620-8c59-414503126372/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=bdcff10b-5a7c-4620-8c59-414503126372&amp;feed=PpzWFGhg">The
+Idiot - Trailer</a></h3>
+<p><strong>Date:</strong> March 19, 2026</p>
+<p><strong>Duration:</strong> 00:01:51</p>
+<p><strong>Season:</strong> 16</p>
+<p><strong>Summary:</strong> The New York Times writer M. Gessen is
+widely known for their award-winning writing about totalitarianism,
+terrorism and the erosion of human rights. Now, M. is examining a more
+personal target: their least favorite cousin, Allen. For decades, they
+saw Allen as a fool, a pompous ‘international businessman’ who bragged
+about shady deals. But then Allen is arrested for trying to put a hit
+out on his ex-wife, and M. cannot wrap their head around the news. He’s
+just an idiot, right? Not a would-be murderer?</p>
+<h3 id="serial-the-last-12-weeks-trailer"><a
+href="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/nyt.simplecastaudio.com/521189a6-a4f6-404d-85cf-455a989a10a4/episodes/b4f92e6c-dfd8-4bcf-97ff-d6579151531d/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=521189a6-a4f6-404d-85cf-455a989a10a4&amp;awEpisodeId=b4f92e6c-dfd8-4bcf-97ff-d6579151531d&amp;feed=PpzWFGhg">The
+Last 12 Weeks - Trailer</a></h3>
+<p><strong>Date:</strong> June 16, 2026</p>
+<p><strong>Duration:</strong> 00:02:05</p>
+<p><strong>Season:</strong> 17</p>
+<p><strong>Summary:</strong> In 1992, David Wood was convicted of
+murdering young women and girls and burying them in the desert outside
+El Paso. He has been on death row ever since. “The Last 12 Weeks” takes
+you behind the scenes as a capital defense team races against the clock
+to stop an execution 30 years in the making. To find out about new shows
+from Serial Productions, and get a look behind the scenes, sign up for
+our newsletter at nytimes.com/serialnewsletter. Have a story pitch, a
+tip, or feedback on our shows? Email us at serialshows@nytimes.com</p>
+<h2 id="appendix-a-episodes-by-date">Appendix A: Episodes by Date</h2>
+<p>Every episode in publication order, newest first, grouped by
+year.</p>
+<h3 id="section">2026</h3>
+<ul>
+<li><a href="#serial-the-last-12-weeks-ep-1">The Last 12 Weeks - Ep.
+1</a> — June 18</li>
+<li><a href="#serial-the-last-12-weeks-ep-2">The Last 12 Weeks - Ep.
+2</a> — June 18</li>
+<li><a href="#serial-the-last-12-weeks-ep-3">The Last 12 Weeks - Ep.
+3</a> — June 18</li>
+<li><a href="#serial-the-last-12-weeks-ep-4">The Last 12 Weeks - Ep.
+4</a> — June 18</li>
+<li><a href="#serial-the-last-12-weeks-ep-5">The Last 12 Weeks - Ep.
+5</a> — June 18</li>
+<li><a href="#serial-the-idiot-chapter-1">The Idiot - Chapter 1</a> —
+March 26</li>
+</ul>
+<h3 id="section-1">2025</h3>
+<ul>
+<li><a href="#serial-the-preventionist-ep-1">The Preventionist - Ep.
+1</a> — October 30</li>
+<li><a href="#serial-the-retrievals-s02-ep-1">The Retrievals S02 - Ep.
+1</a> — August 7</li>
+<li><a href="#serial-the-good-whale-ep-1">The Good Whale - Ep. 1</a> —
+January 2</li>
+</ul>
+<h3 id="section-2">2024</h3>
+<ul>
+<li><a href="#serial-serial-s04-ep-1-poor-baby-raul">Serial S04 - Ep. 1:
+Poor Baby Raul</a> — March 28</li>
+</ul>
+<h3 id="section-3">2023</h3>
+<ul>
+<li><a href="#serial-the-kids-of-rutherford-county-ep-1">The Kids of
+Rutherford County - Ep. 1</a> — November 16</li>
+<li><a href="#serial-the-retrievals-s01-ep-1">The Retrievals S01 - Ep.
+1</a> — August 17</li>
+<li><a href="#serial-the-coldest-case-in-laramie-episode-1">The Coldest
+Case In Laramie - Episode 1</a> — March 30</li>
+</ul>
+<h3 id="section-4">2022</h3>
+<ul>
+<li><a href="#serial-we-were-three-ep-1">We Were Three - Ep. 1</a> —
+October 13</li>
+<li><a href="#serial-the-trojan-horse-affair-part-1">The Trojan Horse
+Affair - Part 1</a> — March 18</li>
+</ul>
+<h3 id="section-5">2021</h3>
+<ul>
+<li><a href="#serial-the-improvement-association-ep-1">The Improvement
+Association - Ep. 1</a> — April 28</li>
+</ul>
+<h3 id="section-6">2020</h3>
+<ul>
+<li><a href="#serial-nice-white-parents-ep-1">Nice White Parents - Ep.
+1</a> — August 20</li>
+</ul>
+<h3 id="section-7">2018</h3>
+<ul>
+<li><a href="#serial-s-town-chapter-i">S-Town - Chapter I</a> — November
+20</li>
+<li><a
+href="#serial-serial-s03-ep-1-a-bar-fight-walks-into-the-justice-center">Serial
+S03 - Ep. 1: A Bar Fight Walks into the Justice Center</a> — September
+20</li>
+</ul>
+<h3 id="section-8">2015</h3>
+<ul>
+<li><a href="#serial-serial-s02-ep-1-dustwun">Serial S02 - Ep. 1:
+DUSTWUN</a> — December 10</li>
+</ul>
+<h3 id="section-9">2014</h3>
+<ul>
+<li><a href="#serial-serial-s01-ep-1-the-alibi">Serial S01 - Ep. 1: The
+Alibi</a> — October 3</li>
+</ul>
+<h2 id="appendix-b-episodes-by-title">Appendix B: Episodes by Title</h2>
+<p>Every episode in order by title, ignoring a leading “A”, “An”, or
+“The”.</p>
+<ul>
+<li><a href="#serial-the-coldest-case-in-laramie-episode-1">The Coldest
+Case In Laramie - Episode 1</a></li>
+<li><a href="#serial-the-good-whale-ep-1">The Good Whale - Ep.
+1</a></li>
+<li><a href="#serial-the-idiot-chapter-1">The Idiot - Chapter 1</a></li>
+<li><a href="#serial-the-improvement-association-ep-1">The Improvement
+Association - Ep. 1</a></li>
+<li><a href="#serial-the-kids-of-rutherford-county-ep-1">The Kids of
+Rutherford County - Ep. 1</a></li>
+<li><a href="#serial-the-last-12-weeks-ep-1">The Last 12 Weeks - Ep.
+1</a></li>
+<li><a href="#serial-the-last-12-weeks-ep-2">The Last 12 Weeks - Ep.
+2</a></li>
+<li><a href="#serial-the-last-12-weeks-ep-3">The Last 12 Weeks - Ep.
+3</a></li>
+<li><a href="#serial-the-last-12-weeks-ep-4">The Last 12 Weeks - Ep.
+4</a></li>
+<li><a href="#serial-the-last-12-weeks-ep-5">The Last 12 Weeks - Ep.
+5</a></li>
+<li><a href="#serial-nice-white-parents-ep-1">Nice White Parents - Ep.
+1</a></li>
+<li><a href="#serial-the-preventionist-ep-1">The Preventionist - Ep.
+1</a></li>
+<li><a href="#serial-the-retrievals-s01-ep-1">The Retrievals S01 - Ep.
+1</a></li>
+<li><a href="#serial-the-retrievals-s02-ep-1">The Retrievals S02 - Ep.
+1</a></li>
+<li><a href="#serial-s-town-chapter-i">S-Town - Chapter I</a></li>
+<li><a href="#serial-serial-s01-ep-1-the-alibi">Serial S01 - Ep. 1: The
+Alibi</a></li>
+<li><a href="#serial-serial-s02-ep-1-dustwun">Serial S02 - Ep. 1:
+DUSTWUN</a></li>
+<li><a
+href="#serial-serial-s03-ep-1-a-bar-fight-walks-into-the-justice-center">Serial
+S03 - Ep. 1: A Bar Fight Walks into the Justice Center</a></li>
+<li><a href="#serial-serial-s04-ep-1-poor-baby-raul">Serial S04 - Ep. 1:
+Poor Baby Raul</a></li>
+<li><a href="#serial-the-trojan-horse-affair-part-1">The Trojan Horse
+Affair - Part 1</a></li>
+<li><a href="#serial-we-were-three-ep-1">We Were Three - Ep. 1</a></li>
+</ul>
+</body>
+</html>

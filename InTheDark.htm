@@ -1,0 +1,637 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Jamal Mazrui" />
+  <title>In the Dark Directory</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">In the Dark Directory</h1>
+<p class="subtitle">A Screen-Reader-Friendly Guide to the In the Dark
+Podcast</p>
+<p class="author">Jamal Mazrui</p>
+<p class="date">September 2026</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>A screen-reader-friendly directory of the podcast In the Dark,
+covering 23 public episodes from 2016 to 2026. Each episode links to its
+audio and lists its metadata in separate, alphabetically sorted
+fields.</p>
+</div>
+</header>
+<h1 id="in-the-dark-directory">In the Dark Directory</h1>
+<p>In the Dark, hosted by Madeleine Baran, is an award-winning
+investigative-journalism series, now produced by The New Yorker after
+years at American Public Media. Each season spends a year or more on a
+single case, from the Jacob Wetterling abduction to the six trials of
+Curtis Flowers to the killings at Haditha, which won the Pulitzer Prize
+for audio.</p>
+<p>This directory covers <strong>23 public episodes</strong>, 2016 to
+2026. Each episode’s title link plays its audio; an <strong>Episode
+page</strong> link follows the title when the show offers a separate
+page; and the metadata on record appears one kind per field, in
+alphabetical order: <strong>Date</strong>, <strong>Duration</strong>,
+<strong>Episode</strong>, <strong>Season</strong>, and
+<strong>Summary</strong>, each shown only when available. Titles ignore
+a leading “A”, “An”, or “The”; people are sorted by surname; all sorting
+ignores case.</p>
+<p>Episodes are grouped by year, earliest first, and within each group
+they are in date order, oldest first, so a show reads the way it
+unfolded. Appendixes reorder them by date (newest first), by title.</p>
+<p>For current details, the linked pages are authoritative. This
+directory was compiled by Jamal Mazrui from the show’s public feed.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><p><a href="#2016">2016 (2)</a></p></li>
+<li><p><a href="#2018">2018 (2)</a></p></li>
+<li><p><a href="#2020">2020 (2)</a></p></li>
+<li><p><a href="#2023">2023 (1)</a></p></li>
+<li><p><a href="#2024">2024 (5)</a></p></li>
+<li><p><a href="#2025">2025 (3)</a></p></li>
+<li><p><a href="#2026">2026 (1)</a></p></li>
+<li><p><a href="#trailers-and-cross-promotions">Trailers and
+Cross-Promotions (7)</a></p></li>
+<li><p><a href="#appendix-a-episodes-by-date">Appendix A: Episodes by
+Date</a></p></li>
+<li><p><a href="#appendix-b-episodes-by-title">Appendix B: Episodes by
+Title</a></p></li>
+</ul>
+<h2 id="2016">2016 (2)</h2>
+<h3 id="inthedark-season-1-episode-1-the-crime"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE1185639619.mp3">Season
+1, Episode 1: The Crime</a></h3>
+<p><strong>Date:</strong> September 7, 2016</p>
+<p><strong>Duration:</strong> 2225</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> The abduction of Jacob Wetterling, which
+made parents more vigilant and led to the first national requirement
+that states track sex offenders via registries, took place before
+moonrise on a warm October night in 1989</p>
+<h3 id="inthedark-season-1-episode-2-the-circle"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE8036588004.mp3">Season
+1, Episode 2: The Circle</a></h3>
+<p><strong>Date:</strong> September 7, 2016</p>
+<p><strong>Duration:</strong> 2450</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> When Jacob Wetterling was taken,
+authorities launched what would turn into one of the largest searches
+for any missing person in the history of the United States. But that
+first night, law enforcement didn’t cover all the basics</p>
+<h2 id="2018">2018 (2)</h2>
+<h3 id="inthedark-season-2-episode-1-july-16-1996"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE3398759971.mp3">Season
+2, Episode 1: July 16, 1996</a></h3>
+<p><strong>Date:</strong> May 1, 2018</p>
+<p><strong>Duration:</strong> 2737</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> On the morning of July 16, 1996, someone
+walked into a furniture store in downtown Winona, Mississippi, and
+murdered four employees. Each was shot in the head. It was perhaps the
+most shocking crime the small town had ever seen. Investigators charged
+a man named Curtis Flowers with the murders. What followed was a
+two-decade legal odyssey in which Flowers was tried six times for the
+same crime. He remains on death row, though some people believe he’s
+innocent. For the second season of In the Dark, we spent a year digging
+into the Flowers case. We found a town divided by race and a murder
+conviction supported by questionable evidence. And it all began that
+summer morning in 1996 with a horrifying crime scene that left
+investigators puzzled</p>
+<h3 id="inthedark-season-2-episode-2-the-route"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE3793918521.mp3">Season
+2, Episode 2: The Route</a></h3>
+<p><strong>Date:</strong> May 1, 2018</p>
+<p><strong>Duration:</strong> 3354</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> The case against Curtis Flowers relies
+heavily on three threads of evidence: the route he allegedly walked the
+morning of the murders, the gun that investigators believe he used, and
+the people he supposedly confessed to in jail. In this episode, we meet
+the witnesses who said they saw Flowers walking through downtown Winona,
+Mississippi, the morning of the murders. Some of their stories now waver
+on key details</p>
+<h2 id="2020">2020 (2)</h2>
+<h3 id="inthedark-coronavirus-in-the-delta-episode-1-greenville"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE5430948494.mp3">Coronavirus
+in the Delta, Episode 1: Greenville</a></h3>
+<p><strong>Date:</strong> April 30, 2020</p>
+<p><strong>Duration:</strong> 2619</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> A storm hits Greenville just in time for
+Easter. Two pastors and a mayor clash over how to do church during a
+pandemic</p>
+<h3 id="inthedark-coronavirus-in-the-delta-episode-2-parchman"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE8362436758.mp3">Coronavirus
+in the Delta, Episode 2: Parchman</a></h3>
+<p><strong>Date:</strong> May 6, 2020</p>
+<p><strong>Duration:</strong> 2010</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> How do you self-isolate when your home is a
+single room that you share with 107 men? That’s what inmates at
+Mississippi’s infamous Parchman prison have been wondering for six
+weeks</p>
+<h2 id="2023">2023 (1)</h2>
+<h3 id="inthedark-an-announcement"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE9396183707.mp3">An
+Announcement</a></h3>
+<p><strong>Date:</strong> March 9, 2023</p>
+<p><strong>Duration:</strong> 706</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> Big news! In the Dark has a new home and a
+new team of partners. The podcast now comes to you from The New Yorker
+—the legendary home of extraordinary journalism. ____ In the Dark is a
+Peabody Award-winning podcast that tells deeply reported stories. Season
+1 investigates lapses by law enforcement after the kidnapping of
+eleven-year-old Jacob Wetterling. Season 2 examines the case of Curtis
+Flowers, a Mississippi man tried six times for the same crime. In the
+Dark journalists have already started reporting on Season 3. We can’t
+tell you what it’s about yet, but it’s the most ambitious story we’ve
+pursued, and we’re thrilled to have the resources of The New Yorker and
+Condé Nast Entertainment to help us tell it. For more on the new
+partnership, check out the team’s interview with David Remnick on The
+New Yorker Radio Hour . And follow other podcasts from The New Yorker ,
+including The Political Scene , The Writer’s Voice , the Fiction podcast
+, and the Poetry podcast</p>
+<h2 id="2024">2024 (5)</h2>
+<h3 id="inthedark-the-runaway-princesses-episode-1-sisters"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE6015432686.mp3">The
+Runaway Princesses, Episode 1: Sisters</a></h3>
+<p><strong>Date:</strong> January 30, 2024</p>
+<p><strong>Duration:</strong> 2586</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> As sex workers flee Sheikh Mohammed’s U.K.
+estate bruised and weeping, no one is held to account. British
+authorities look the other way after one of the sheikh’s own daughters
+tries to escape. “The Runaway Princesses” is a four-part narrative
+series from In the Dark and The New Yorker . Subscribers to The New
+Yorker have early, ad-free access to all episodes. Visit
+newyorker.com/dark to subscribe</p>
+<h3 id="inthedark-the-runaway-princesses-episode-2-escape"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE5223858303.mp3">The
+Runaway Princesses, Episode 2: Escape</a></h3>
+<p><strong>Date:</strong> February 6, 2024</p>
+<p><strong>Duration:</strong> 2881</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> Princess Latifa is desperate to help her
+sister Shamsa, who’s been captured, drugged, and imprisoned on her
+father’s orders. She makes a plan to flee Dubai. “The Runaway
+Princesses” is a four-part narrative series from In the Dark and The New
+Yorker . Subscribers to The New Yorker have early, ad-free access to all
+episodes. Visit newyorker.com/dark to subscribe</p>
+<h3 id="inthedark-season-3-episode-1-the-green-grass"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE3013901110.mp3">Season
+3, Episode 1: The Green Grass</a></h3>
+<p><strong>Date:</strong> July 30, 2024</p>
+<p><strong>Duration:</strong> 2804</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> A man in Haditha, Iraq, has a request for
+the In the Dark team: Can you investigate how my family was killed? To
+get episodes early and ad-free, visit newyorker.com/dark</p>
+<h3 id="inthedark-season-3-episode-2-i-have-questions"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE6836518654.mp3">Season
+3, Episode 2: I Have Questions</a></h3>
+<p><strong>Date:</strong> July 30, 2024</p>
+<p><strong>Duration:</strong> 2387</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> A trip to a Marine Corps archive reveals a
+clue about something that the U.S. military is keeping secret. To get
+episodes early and ad-free, visit newyorker.com/dark</p>
+<h3 id="inthedark-season-3-episode-3-sounds-like-murder"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE1987180611.mp3">Season
+3, Episode 3: Sounds Like Murder</a></h3>
+<p><strong>Date:</strong> August 6, 2024</p>
+<p><strong>Duration:</strong> 2701</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> We travel around the U.S. to find the
+Marines who were on the ground in Haditha on the day of the killings. To
+get episodes early and ad-free, visit newyorker.com/dark</p>
+<h2 id="2025">2025 (3)</h2>
+<h3 id="inthedark-season-2-update-five-years-later"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE3725573279.mp3">Season
+2 Update: Five Years Later</a></h3>
+<p><strong>Date:</strong> October 8, 2025</p>
+<p><strong>Duration:</strong> 2921</p>
+<p><strong>Episode:</strong> 20</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> After nearly twenty-three years behind
+bars, Curtis Flowers was freed, in part due to In the Dark’s reporting.
+Now he’s back in Winona, Mississippi, where his saga began. What brought
+him home, and how is he doing? We visited him to find out. New Yorker
+subscribers get new In the Dark episodes early and ad-free. Subscribe
+today at newyorker.com/dark . In the Dark has merch! Buy hats, T-shirts,
+and totes at store.newyorker.com</p>
+<h3 id="inthedark-blood-relatives-episode-1"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE1669586832.mp3">Blood
+Relatives, Episode 1</a></h3>
+<p><strong>Date:</strong> October 28, 2025</p>
+<p><strong>Duration:</strong> 2975</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> On August 7, 1985, five family members were
+shot dead in their English country manor, Whitehouse Farm. It looked
+like an open-and-shut case. But the New Yorker staff writer Heidi Blake
+finds that almost nothing about this story is as it seems. New Yorker
+subscribers get full, ad-free access to “Blood Relatives” and every
+season of In the Dark. In Apple Podcasts, tap the link at the top of the
+feed to subscribe or link an existing subscription. Or visit
+newyorker.com/dark to subscribe and listen in the New Yorker app. In the
+Dark has merch! Buy specially designed hats, T-shirts, and totes for
+yourself or a loved one at store.newyorker.com</p>
+<h3 id="inthedark-blood-relatives-episode-2"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE9268474356.mp3">Blood
+Relatives, Episode 2</a></h3>
+<p><strong>Date:</strong> October 28, 2025</p>
+<p><strong>Duration:</strong> 3581</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> Heidi visits an unlikely group of
+detectives: the victims’ extended family. Their sleuthing upended the
+police’s original theory of the case. New Yorker subscribers get full,
+ad-free access to “Blood Relatives” and every season of In the Dark. In
+Apple Podcasts, tap the link at the top of the feed to subscribe or link
+an existing subscription. Or visit newyorker.com/dark to subscribe and
+listen in the New Yorker app. In the Dark has merch! Buy specially
+designed hats, T-shirts, and totes for yourself or a loved one at
+store.newyorker.com</p>
+<h2 id="2026">2026 (1)</h2>
+<h3 id="inthedark-the-journey-episode-1-gifts"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE5642450963.mp3">The
+Journey, Episode 1: Gifts</a></h3>
+<p><strong>Date:</strong> September 15, 2026</p>
+<p><strong>Duration:</strong> 3559</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> A woman in Texas agrees to carry a child
+for a wealthy couple in California. She thinks she’s helping a family in
+need. Then she becomes a whistle-blower. New Yorker subscribers get
+early, ad-free access to “The Journey.” In Apple Podcasts, tap the link
+at the top of the feed to subscribe or link an existing subscription. Or
+visit newyorker.com/dark to subscribe and listen in the New Yorker
+app</p>
+<h2 id="trailers-and-cross-promotions">Trailers and Cross-Promotions
+(7)</h2>
+<h3 id="inthedark-trailer-season-1"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE2322916663.mp3">Trailer:
+Season 1</a></h3>
+<p><strong>Date:</strong> August 29, 2016</p>
+<p><strong>Duration:</strong> 218</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> After he disappeared nearly 27 years ago,
+Jacob Wetterling’s remains have been found. Why did it take so long?</p>
+<h3 id="inthedark-trailer-season-2"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE7381217485.mp3">Trailer:
+Season 2</a></h3>
+<p><strong>Date:</strong> April 16, 2018</p>
+<p><strong>Duration:</strong> 139</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> Curtis Flowers has been tried six times for
+the same crime. For 21 years, Flowers has maintained his innocence. He’s
+won appeal after appeal, but every time, the prosecutor just tries the
+case again. What does the evidence reveal? And how can the justice
+system ignore the prosecutor’s record and keep Flowers on death row?</p>
+<h3 id="inthedark-trailer-coronavirus-in-the-delta"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE8804415055.mp3">Trailer:
+Coronavirus in the Delta</a></h3>
+<p><strong>Date:</strong> April 23, 2020</p>
+<p><strong>Duration:</strong> 195</p>
+<p><strong>Season:</strong> 4</p>
+<p><strong>Summary:</strong> A new limited-run series from In the Dark,
+reporting on Covid-19 in the Mississippi Delta. Episodes every Thursday,
+beginning April 30. Support journalism with a donation to In the
+Dark</p>
+<h3 id="inthedark-trailer-the-runaway-princesses"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE6240547527.mp3">Trailer:
+The Runaway Princesses</a></h3>
+<p><strong>Date:</strong> January 23, 2024</p>
+<p><strong>Duration:</strong> 198</p>
+<p><strong>Season:</strong> 5</p>
+<p><strong>Summary:</strong> The wives and daughters of Dubai’s ruler
+live in unbelievable luxury. So why do the women in Sheikh Mohammed’s
+family keep trying to run away? The New Yorker staff writer Heidi Blake
+joins In the Dark’s Madeleine Baran to tell the story of the royal women
+who risked everything to flee the brutality of one of the world’s most
+powerful men. In four episodes, drawing on thousands of pages of secret
+correspondence and never-before-heard audio recordings, “The Runaway
+Princesses” takes listeners behind palace walls, revealing a story of
+astonishing courage and cruelty. “The Runaway Princesses” is a four-part
+narrative series from In the Dark and The New Yorker . Subscribers to
+The New Yorker have early, ad-free access to all episodes. Visit
+newyorker.com/dark to subscribe</p>
+<h3 id="inthedark-trailer-season-3"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE6652324702.mp3">Trailer:
+Season 3</a></h3>
+<p><strong>Date:</strong> July 16, 2024</p>
+<p><strong>Duration:</strong> 168</p>
+<p><strong>Season:</strong> 3</p>
+<p><strong>Summary:</strong> A crime committed. A crime forgotten. A
+crime unpunished. Season 3 of In the Dark, coming July 30th. Listen
+early and ad-free at newyorker.com/dark</p>
+<h3 id="inthedark-trailer-blood-relatives"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE4055460437.mp3">Trailer:
+Blood Relatives</a></h3>
+<p><strong>Date:</strong> October 21, 2025</p>
+<p><strong>Duration:</strong> 162</p>
+<p><strong>Season:</strong> 6</p>
+<p><strong>Summary:</strong> Five family members, murdered. A sixth in
+prison for life. It’s one of Britain’s most infamous crimes. But did the
+justice system get it wrong? “Blood Relatives,” a six-part series from
+In the Dark, is coming on October 28th. New Yorker subscribers get full,
+ad-free access to “Blood Relatives” and every season of In the Dark. In
+Apple Podcasts, tap the link at the top of the feed to subscribe or link
+an existing subscription. Or visit newyorker.com/dark to subscribe and
+listen in the New Yorker app. In the Dark has merch! Buy specially
+designed hats, T-shirts, and totes for yourself or a loved one at
+store.newyorker.com</p>
+<h3 id="inthedark-trailer-the-journey"><a
+href="https://www.podtrac.com/pts/redirect.mp3/traffic.megaphone.fm/CNE4748766181.mp3">Trailer:
+The Journey</a></h3>
+<p><strong>Date:</strong> September 8, 2026</p>
+<p><strong>Duration:</strong> 167</p>
+<p><strong>Season:</strong> 7</p>
+<p><strong>Summary:</strong> Why did a mysterious couple collect babies
+in a Los Angeles mansion? A five-part series from In the Dark, hosted by
+the New Yorker staff writer Ava Kofman, investigates. New Yorker
+subscribers get early, ad-free access to “The Journey.” In Apple
+Podcasts, tap the link at the top of the feed to subscribe or link an
+existing subscription. Or visit newyorker.com/dark to subscribe and
+listen in the New Yorker app</p>
+<h2 id="appendix-a-episodes-by-date">Appendix A: Episodes by Date</h2>
+<p>Every episode in publication order, newest first, grouped by
+year.</p>
+<h3 id="section">2026</h3>
+<ul>
+<li><a href="#inthedark-the-journey-episode-1-gifts">The Journey,
+Episode 1: Gifts</a> — September 15</li>
+</ul>
+<h3 id="section-1">2025</h3>
+<ul>
+<li><a href="#inthedark-blood-relatives-episode-1">Blood Relatives,
+Episode 1</a> — October 28</li>
+<li><a href="#inthedark-blood-relatives-episode-2">Blood Relatives,
+Episode 2</a> — October 28</li>
+<li><a href="#inthedark-season-2-update-five-years-later">Season 2
+Update: Five Years Later</a> — October 8</li>
+</ul>
+<h3 id="section-2">2024</h3>
+<ul>
+<li><a href="#inthedark-season-3-episode-3-sounds-like-murder">Season 3,
+Episode 3: Sounds Like Murder</a> — August 6</li>
+<li><a href="#inthedark-season-3-episode-1-the-green-grass">Season 3,
+Episode 1: The Green Grass</a> — July 30</li>
+<li><a href="#inthedark-season-3-episode-2-i-have-questions">Season 3,
+Episode 2: I Have Questions</a> — July 30</li>
+<li><a href="#inthedark-the-runaway-princesses-episode-2-escape">The
+Runaway Princesses, Episode 2: Escape</a> — February 6</li>
+<li><a href="#inthedark-the-runaway-princesses-episode-1-sisters">The
+Runaway Princesses, Episode 1: Sisters</a> — January 30</li>
+</ul>
+<h3 id="section-3">2023</h3>
+<ul>
+<li><a href="#inthedark-an-announcement">An Announcement</a> — March
+9</li>
+</ul>
+<h3 id="section-4">2020</h3>
+<ul>
+<li><a
+href="#inthedark-coronavirus-in-the-delta-episode-2-parchman">Coronavirus
+in the Delta, Episode 2: Parchman</a> — May 6</li>
+<li><a
+href="#inthedark-coronavirus-in-the-delta-episode-1-greenville">Coronavirus
+in the Delta, Episode 1: Greenville</a> — April 30</li>
+</ul>
+<h3 id="section-5">2018</h3>
+<ul>
+<li><a href="#inthedark-season-2-episode-1-july-16-1996">Season 2,
+Episode 1: July 16, 1996</a> — May 1</li>
+<li><a href="#inthedark-season-2-episode-2-the-route">Season 2, Episode
+2: The Route</a> — May 1</li>
+</ul>
+<h3 id="section-6">2016</h3>
+<ul>
+<li><a href="#inthedark-season-1-episode-1-the-crime">Season 1, Episode
+1: The Crime</a> — September 7</li>
+<li><a href="#inthedark-season-1-episode-2-the-circle">Season 1, Episode
+2: The Circle</a> — September 7</li>
+</ul>
+<h2 id="appendix-b-episodes-by-title">Appendix B: Episodes by Title</h2>
+<p>Every episode in order by title, ignoring a leading “A”, “An”, or
+“The”.</p>
+<ul>
+<li><a href="#inthedark-an-announcement">An Announcement</a></li>
+<li><a href="#inthedark-blood-relatives-episode-1">Blood Relatives,
+Episode 1</a></li>
+<li><a href="#inthedark-blood-relatives-episode-2">Blood Relatives,
+Episode 2</a></li>
+<li><a
+href="#inthedark-coronavirus-in-the-delta-episode-1-greenville">Coronavirus
+in the Delta, Episode 1: Greenville</a></li>
+<li><a
+href="#inthedark-coronavirus-in-the-delta-episode-2-parchman">Coronavirus
+in the Delta, Episode 2: Parchman</a></li>
+<li><a href="#inthedark-the-journey-episode-1-gifts">The Journey,
+Episode 1: Gifts</a></li>
+<li><a href="#inthedark-the-runaway-princesses-episode-1-sisters">The
+Runaway Princesses, Episode 1: Sisters</a></li>
+<li><a href="#inthedark-the-runaway-princesses-episode-2-escape">The
+Runaway Princesses, Episode 2: Escape</a></li>
+<li><a href="#inthedark-season-1-episode-1-the-crime">Season 1, Episode
+1: The Crime</a></li>
+<li><a href="#inthedark-season-1-episode-2-the-circle">Season 1, Episode
+2: The Circle</a></li>
+<li><a href="#inthedark-season-2-update-five-years-later">Season 2
+Update: Five Years Later</a></li>
+<li><a href="#inthedark-season-2-episode-1-july-16-1996">Season 2,
+Episode 1: July 16, 1996</a></li>
+<li><a href="#inthedark-season-2-episode-2-the-route">Season 2, Episode
+2: The Route</a></li>
+<li><a href="#inthedark-season-3-episode-1-the-green-grass">Season 3,
+Episode 1: The Green Grass</a></li>
+<li><a href="#inthedark-season-3-episode-2-i-have-questions">Season 3,
+Episode 2: I Have Questions</a></li>
+<li><a href="#inthedark-season-3-episode-3-sounds-like-murder">Season 3,
+Episode 3: Sounds Like Murder</a></li>
+</ul>
+</body>
+</html>
