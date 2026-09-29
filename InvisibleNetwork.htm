@@ -1,0 +1,1115 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Jamal Mazrui" />
+  <title>The Invisible Network Directory</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">The Invisible Network Directory</h1>
+<p class="subtitle">A Screen-Reader-Friendly Guide to NASA’s The
+Invisible Network Podcast</p>
+<p class="author">Jamal Mazrui</p>
+<p class="date">September 2026</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>A screen-reader-friendly directory of the podcast The Invisible
+Network, covering 39 public episodes from 2018 to 2022. Each episode
+links to its audio and lists its metadata in separate, alphabetically
+sorted fields.</p>
+</div>
+</header>
+<h1 id="the-invisible-network-directory">The Invisible Network
+Directory</h1>
+<p>The Invisible Network, from NASA, tells the story of the
+often-overlooked technologies that let NASA talk to and navigate its
+spacecraft, from laser communications to the Deep Space Network. It was
+NASA’s first podcast built on narrative storytelling.</p>
+<p>This directory covers <strong>39 public episodes</strong>, 2018 to
+2022. Each episode’s title link plays its audio; an <strong>Episode
+page</strong> link follows the title when the show offers a separate
+page; and the metadata on record appears one kind per field, in
+alphabetical order: <strong>Date</strong>, <strong>Duration</strong>,
+<strong>Episode</strong>, <strong>Season</strong>, and
+<strong>Summary</strong>, each shown only when available. Titles ignore
+a leading “A”, “An”, or “The”; people are sorted by surname; all sorting
+ignores case.</p>
+<p>Episodes are grouped by year, earliest first, and within each group
+they are in date order, oldest first, so a show reads the way it
+unfolded. Appendixes reorder them by date (newest first), by title.</p>
+<p>For current details, the linked pages are authoritative. This
+directory was compiled by Jamal Mazrui from the show’s public feed.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><p><a href="#2018">2018 (7)</a></p></li>
+<li><p><a href="#2019">2019 (9)</a></p></li>
+<li><p><a href="#2020">2020 (3)</a></p></li>
+<li><p><a href="#2021">2021 (11)</a></p></li>
+<li><p><a href="#2022">2022 (9)</a></p></li>
+<li><p><a href="#appendix-a-episodes-by-date">Appendix A: Episodes by
+Date</a></p></li>
+<li><p><a href="#appendix-b-episodes-by-title">Appendix B: Episodes by
+Title</a></p></li>
+</ul>
+<h2 id="2018">2018 (7)</h2>
+<h3
+id="invisiblenetwork-show-trailer-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/episode_00_-_promo_short.mp3">Show
+Trailer | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/show-trailer-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> October 12, 2018</p>
+<p><strong>Duration:</strong> 61</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> NASA presents The Invisible Network, a
+podcast giving you a behind-the-scenes glimpse into the feats of
+engineering that make possible humanity’s ambitions among the stars.
+Join us October 16, as we reveal these invisible networks</p>
+<h3
+id="invisiblenetwork-01-ascension-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/episode_01_-_ascension.mp3">01.
+Ascension | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/01-ascension-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> October 16, 2018</p>
+<p><strong>Duration:</strong> 1039</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Just south of the equator lies a tiny plot
+of volcanic soil, a thousand miles from the nearest continent. This
+bizarre, remote island had mammoth importance to America’s first efforts
+in space</p>
+<h3
+id="invisiblenetwork-02-lemnos-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/episode02lemnos_-_update.mp3">02.
+Lemnos | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/02-lemnos-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> October 16, 2018</p>
+<p><strong>Duration:</strong> 1160</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> The mythic hunter Orion, son of the sea-god
+Poseidon, was himself mortal, but his godly lineage enabled impossible
+heroic feats, earning him a place in the night sky as a constellation.
+NASA has developed its own Orion, a hunter for knowledge not of this
+Earth: a spacecraft designed for humanity’s return to the Moon and
+exploration of deep space</p>
+<h3
+id="invisiblenetwork-03-time-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/episode_03_-_time.mp3">03.
+Time | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/03-time-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> October 16, 2018</p>
+<p><strong>Duration:</strong> 948</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Whether you’re relying on the careful
+observations of 1950s amateur astronomers and backyard telescopes or
+state-of-the-art GPS tracking and navigation technology: knowing where
+you are in space means needing to know what time it is</p>
+<h3
+id="invisiblenetwork-04-automation-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/episode_04_-_automation_-_update.mp3">04.
+Automation | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/04-automation-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> October 16, 2018</p>
+<p><strong>Duration:</strong> 1016</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In the telephone switchboard’s earliest
+days, the late 1800s, operators served a limited number of customers
+within their own communities. As telephone use expanded, automation
+helped switchboards keep up. NASA is working on a similar approach,
+infusing its satellite networks with a sort of artificial
+intelligence</p>
+<h3
+id="invisiblenetwork-05-marrow-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/episode_05_-_marrow.mp3">05:
+Marrow | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/05-marrow-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> October 16, 2018</p>
+<p><strong>Duration:</strong> 878</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> The technologies that fuel NASA’s
+exploration don’t just stay in space. They benefit humanity in everyday
+life — sometimes in surprising ways, like how a NASA communications
+engineer helped create a system that freezes bone marrow</p>
+<h3
+id="invisiblenetwork-06-next-gen-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/episode_06_-_next-gen.mp3">06.
+Next-Gen | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/06-next-gen-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> October 16, 2018</p>
+<p><strong>Duration:</strong> 721</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> CubeSats are small satellites, some
+weighing as little as 3 pounds. They provide opportunities for
+small-scale research in space, and an avenue for young scientists — some
+as young as middle school-aged — to see their curiosity take literal
+flight</p>
+<h2 id="2019">2019 (9)</h2>
+<h3
+id="invisiblenetwork-2019-interns-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/internepd2.mp3">2019
+Interns | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/2019-interns-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> October 10, 2019</p>
+<p><strong>Duration:</strong> 928</p>
+<p><strong>Episode:</strong> 2019</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Every summer, fresh faces flood NASA’s
+Goddard Space Flight Center. They are the interns. Each new face comes
+with an idea to share — a contribution to make to the agency. Space
+Communications and Navigation interns contribute across many diverse
+disciplines, from cybersecurity to public outreach</p>
+<h3
+id="invisiblenetwork-07-hunter-gatherer-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/in02-ep07.mp3">07.
+Hunter-Gatherer | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/07-hunter-gatherer-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> November 14, 2019</p>
+<p><strong>Duration:</strong> 1067</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In recent years, NASA has renewed its focus
+on the Moon. Soon, we will look up at the Moon and rediscover a magic
+first experienced in 1969. It’s a magic that will flow through networks
+more sophisticated than ever before — an appreciation for the
+technological wonders that lay ahead, just above and all around us</p>
+<h3
+id="invisiblenetwork-08-form-and-function-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/in02-ep08.mp3">08.
+Form and Function | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/08-form-and-function-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> November 21, 2019</p>
+<p><strong>Duration:</strong> 1429</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> “Form follows function” is an oft-cited
+architectural axiom. In space, form doesn’t necessarily follow function.
+Human space habitation is rooted, by necessity, in pragmatism. The
+architectures of Earth won’t work in space, but there is plenty to learn
+from Earthbound architectural theories as we extend our reach among the
+stars</p>
+<h3
+id="invisiblenetwork-09-lobes-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/in02-ep09v2.mp3">09.
+Lobes | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/09-lobes-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> November 25, 2019</p>
+<p><strong>Duration:</strong> 1198</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Spacecraft near Earth have long relied on
+GPS signals for navigation, just as users on the ground might use their
+phones to navigate the highways. Farther away, navigation — and the math
+behind it — becomes a great deal more challenging</p>
+<h3
+id="invisiblenetwork-10-406-mhz-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/in02-ep10.mp3">10.
+406 MHz | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/10-406-mhz-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> December 5, 2019</p>
+<p><strong>Duration:</strong> 1468</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Amidst the grandeur of spaceflight, there
+is a tiny bit of technology that, if not for its major role, might
+otherwise go unnoticed: distress beacons. This NASA-developed
+search-and-rescue technology could be life-saving not just for
+astronauts, but for travelers across the globe as well</p>
+<h3
+id="invisiblenetwork-11-reflections-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/in02-ep11.mp3">11.
+Reflections | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/11-reflections-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> December 9, 2019</p>
+<p><strong>Duration:</strong> 815</p>
+<p><strong>Episode:</strong> 11</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> For billions of years, the Earth and the
+Moon have danced together. Since the Apollo era, scientists have used
+lasers — a technology then in its infancy — to measure their waltz.
+Lasers have since played increasingly important roles in spaceflight.
+They may even play a part in keeping the next generation of lunar
+astronauts connected to home</p>
+<h3
+id="invisiblenetwork-12-reconnaissance-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/ep12v3.mp3">12.
+Reconnaissance | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/12-reconnaissance-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> December 12, 2019</p>
+<p><strong>Duration:</strong> 1662</p>
+<p><strong>Episode:</strong> 12</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Without communications there is no
+exploration: To reveal the unknown, a spacecraft must be able to share
+its data. In a sense, today’s space communications networks are like the
+roadways of ancient empires, allowing information to move across vast
+distances. But how might our satellite data highways evolve to enable
+exploration centuries from now?</p>
+<h3
+id="invisiblenetwork-13-pony-express-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/ep13.mp3">13. Pony
+Express | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/13-pony-express-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> December 16, 2019</p>
+<p><strong>Duration:</strong> 2350</p>
+<p><strong>Episode:</strong> 13</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> What does the Pony Express of the 19th
+century have in common with the internet and disruption-tolerant
+networking? They’re all (for their times) innovative communications
+technologies that revolutionize the way we share data</p>
+<h3
+id="invisiblenetwork-14-ansible-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/ep14.mp3">14.
+Ansible | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/14-ansible-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> December 19, 2019</p>
+<p><strong>Duration:</strong> 1552</p>
+<p><strong>Episode:</strong> 14</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Faster-than-light communications might not
+be a possibility now — our current understanding of natural laws don’t
+allow for it. But who knows what innovations await us just beyond the
+horizon?</p>
+<h2 id="2020">2020 (3)</h2>
+<h3
+id="invisiblenetwork-bonus-dan-curry-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/01-dancurry.mp3">Bonus
+- Dan Curry | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/bonus-dan-curry-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> January 16, 2020</p>
+<p><strong>Duration:</strong> 1439</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Science fiction and science fact have long
+enjoyed a symbiotic relationship, with ideas in one prompting
+innovations in the other, and so on. Dan Curry, a filmmaker, artist and
+visual effects producer best known for his Star Trek work, shares his
+perspectives</p>
+<h3
+id="invisiblenetwork-bonus-dr-jim-garvin-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/02-jimgarvin.mp3">Bonus
+- Dr. Jim Garvin | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/bonus-dr-jim-garvin-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> January 23, 2020</p>
+<p><strong>Duration:</strong> 993</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> There is perhaps no one better than Jim
+Garvin to outline the unique opportunities for research that the Artemis
+missions to the Moon could provide scientists on Earth. Jim is chief
+scientist at NASA’s Goddard Space Flight Center in Greenbelt, Maryland,
+and a tireless champion for crewed exploration of the Moon</p>
+<h3
+id="invisiblenetwork-bonus-nasa-historian-bill-barry-nasa-s-the-invisible-network-pod"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/03-billbarry.mp3">Bonus
+- NASA Historian Bill Barry | NASA’s The Invisible Network Pod</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/bonus-nasa-historian-bill-barry-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> January 30, 2020</p>
+<p><strong>Duration:</strong> 1340</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> At its core the NASA History Office ensures
+that, as we look forward to the Moon, Mars and beyond, we remember the
+lessons we’ve learned from our predecessors. The race to the Moon in the
+1960s occurred against a very different backdrop than today’s Artemis
+program — but both exhibit what humanity can achieve when we set
+ourselves to lofty aims</p>
+<h2 id="2021">2021 (11)</h2>
+<h3
+id="invisiblenetwork-15-commercialization-crew-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/the-invisible-network-ep15-commercialization-crew.mp3">15.
+Commercialization - Crew | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/15-commercialization-crew-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> May 5, 2021</p>
+<p><strong>Duration:</strong> 942</p>
+<p><strong>Episode:</strong> 15</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> NASA is fostering a commercial space
+economy. In this episode of “The Invisible Network” podcast, we look at
+space communications support of the Commercial Crew Program</p>
+<h3
+id="invisiblenetwork-16-commercialization-marketplace-nasa-s-the-invisible-network-pod"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/the-invisible-network-ep16-commercialization-marketplace.mp3">16.
+Commercialization - Marketplace | NASA’s The Invisible Network
+Pod</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/16-commercialization-marketplace-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> May 12, 2021</p>
+<p><strong>Duration:</strong> 1311</p>
+<p><strong>Episode:</strong> 16</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> NASA is fostering a commercial space
+economy. In this episode of “The Invisible Network” podcast, we look at
+how NASA is working with industry to nurture a space communications
+marketplace</p>
+<h3
+id="invisiblenetwork-17-commercialization-lunanet-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/the-invisible-network-ep17-commercialization-lunanet.mp3">17.
+Commercialization - LunaNet | NASA’s The Invisible Network
+Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/17-commercialization-lunanet-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> May 19, 2021</p>
+<p><strong>Duration:</strong> 1181</p>
+<p><strong>Episode:</strong> 17</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> NASA is fostering a commercial space
+economy. In this episode of “The Invisible Network” podcast, we look at
+how NASA’s LunaNet communications architecture allows industry to
+participate in Artemis</p>
+<h3
+id="invisiblenetwork-2021-interns-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/the-invisible-network-2021-nationalinternday-0.mp3">2021
+Interns | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/2021-interns-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> July 29, 2021</p>
+<p><strong>Duration:</strong> 1314</p>
+<p><strong>Episode:</strong> 2021</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Each year, NASA’s Space Communications and
+Navigation (SCaN) Internship Project welcomes students of all levels to
+develop projects of real benefit to the agency while earning real world
+experience in their fields. In this episode of The Invisible Network
+podcast, we’ll speak with members of 2021’s intern cohort at three
+different NASA centers</p>
+<h3
+id="invisiblenetwork-international-podcast-day-2021-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/theinvisiblenetwork-internationalpodcastday-2021.mp3">International
+Podcast Day 2021 | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/international-podcast-day-2021-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> September 30, 2021</p>
+<p><strong>Duration:</strong> 111</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Happy International Podcast Day! The
+Invisible Network has some exciting things coming up, including seasons
+about NASA’s Laser Communications Relay Demonstration and NASA’s Deep
+Space Network. In the meantime, you can find all of NASA’s out of this
+world podcasts at nasa.gov/podcasts</p>
+<h3
+id="invisiblenetwork-lcrd-season-trailer-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/theinvisiblenetwork_lcrd_trailer.mp3">LCRD
+Season Trailer | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/lcrd-season-trailer-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> December 1, 2021</p>
+<p><strong>Duration:</strong> 76</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Over five episodes, this new season of The
+Invisible Network will dive into NASA’s Laser Communications Relay
+Demonstration (LCRD), which will showcase the benefits of optical
+communications, which uses infrared lasers instead of radio waves to
+communicate</p>
+<h3
+id="invisiblenetwork-18-lcrd-the-launch-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2021/11/lcrd-ep1_dec7.mp3">18.
+LCRD - The Launch | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/18-lcrd-the-launch-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> December 7, 2021</p>
+<p><strong>Duration:</strong> 687</p>
+<p><strong>Episode:</strong> 18</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Today, Tuesday, December 7, 2021, the U.S.
+Space Force’s Space Test Program Satellite-6 launched from Kennedy Space
+Center on Florida’s space coast. The spacecraft contains a revolutionary
+space communications mission, NASA’s Laser Communications Relay
+Demonstration, or LCRD</p>
+<h3
+id="invisiblenetwork-19-lcrd-the-dream-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2021/12/lcrd-ep2_dec7_0.mp3">19.
+LCRD - The Dream | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/19-lcrd-the-dream-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> December 8, 2021</p>
+<p><strong>Duration:</strong> 794</p>
+<p><strong>Episode:</strong> 19</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In this second episode of an LCRD-focused
+season of The Invisible Network podcast, we take a look at the reasons
+NASA is embracing optical communications technologies and what
+challenges LCRD will overcome</p>
+<h3
+id="invisiblenetwork-20-lcrd-the-design-flight-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2021/12/lcrd-ep3_0.mp3">20.
+LCRD - The Design: Flight | NASA’s The Invisible Network
+Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/20-lcrd-the-design-flight-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> December 15, 2021</p>
+<p><strong>Duration:</strong> 1176</p>
+<p><strong>Episode:</strong> 20</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In this third episode of a five-part series
+about NASA’s Laser Communications Relay Demonstration, we look at the
+LCRD flight payload, which launched on the U.S. Space Force’s Space Test
+Program Satellite-6 earlier on December 7</p>
+<h3
+id="invisiblenetwork-21-lcrd-the-design-ground-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/lcrd-ep4.mp3">21.
+LCRD - The Design: Ground | NASA’s The Invisible Network
+Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/21-lcrd-the-design-ground-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> December 22, 2021</p>
+<p><strong>Duration:</strong> 1125</p>
+<p><strong>Episode:</strong> 21</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In this fourth episode of a five-part
+series about NASA’s Laser Communications Relay Demonstration, we look at
+the LCRD ground segment, which consists of infrastructure in Hawaii,
+California, and New Mexico</p>
+<h3
+id="invisiblenetwork-22-lcrd-the-future-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2021/12/lcrd-ep5.mp3">22.
+LCRD - The Future | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/22-lcrd-the-future-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> December 29, 2021</p>
+<p><strong>Duration:</strong> 1241</p>
+<p><strong>Episode:</strong> 22</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In this final episode of a five-part series
+about NASA’s Laser Communications Relay Demonstration, we look at the
+future of optical communications technologies at NASA</p>
+<h2 id="2022">2022 (9)</h2>
+<h3
+id="invisiblenetwork-bonus-lcrd-your-questions-answered-nasa-s-the-invisible-network"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/lcrd-podbonus1.mp3">Bonus
+- LCRD: Your Questions Answered | NASA’s The Invisible Network</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/bonus-lcrd-your-questions-answered-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> April 11, 2022</p>
+<p><strong>Duration:</strong> 538</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In this bonus episode of NASA’s The
+Invisible Network podcast, NASA subject matter experts answer questions
+about the Laser Communications Relay Demonstration (LCRD) submitted on
+social media</p>
+<h3
+id="invisiblenetwork-dsn-season-trailer-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/dsn-trailer.mp3">DSN
+Season Trailer | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/deep-space-network-season-trailer-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> April 19, 2022</p>
+<p><strong>Duration:</strong> 143</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> A new season of NASA’s The Invisible
+Network podcast is coming soon! This time around, we’ll focus on the
+communications and navigation services provided by NASA’s Deep Space
+Network. Based at NASA’s Jet Propulsion Laboratory, the Deep Space
+Network has a global infrastructure of huge importance to NASA’s past,
+present, and future</p>
+<h3
+id="invisiblenetwork-23-dsn-origins-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/dsn-01-origins-final-trim.mp3">23.
+DSN - Origins | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/23-deep-space-network-origins-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> June 9, 2022</p>
+<p><strong>Duration:</strong> 1288</p>
+<p><strong>Episode:</strong> 23</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In this first episode in the fifth season
+of NASA’s “The Invisible Network” podcast, we examine the origins,
+evolution, and basic structure of NASA’s Deep Space Network</p>
+<h3
+id="invisiblenetwork-24-dsn-follow-the-sun-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/dsn-02_followthesun_final.mp3">24.
+DSN - Follow the Sun | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/24-deep-space-network-follow-the-sun-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> June 16, 2022</p>
+<p><strong>Duration:</strong> 1417</p>
+<p><strong>Episode:</strong> 24</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In this second episode in the fifth season
+of NASA’s “The Invisible Network” podcast, we take a tour of the Deep
+Space Network’s worldwide infrastructure</p>
+<h3
+id="invisiblenetwork-25-dsn-negotiators-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/dsn-03_negotiators-final.mp3">25.
+DSN - Negotiators | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/25-deep-space-network-negotiators-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> June 23, 2022</p>
+<p><strong>Duration:</strong> 1615</p>
+<p><strong>Episode:</strong> 25</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In this third episode in the fifth season
+of NASA’s “The Invisible Network” podcast, we meet the Mission Interface
+Managers who furnish missions with Deep Space Network services</p>
+<h3
+id="invisiblenetwork-26-dsn-radio-science-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/dsn-04_radioscience_final.mp3">26.
+DSN - Radio Science | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/26-deep-space-network-radio-science-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> June 30, 2022</p>
+<p><strong>Duration:</strong> 1488</p>
+<p><strong>Episode:</strong> 26</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In this fourth episode in the fifth season
+of NASA’s “The Invisible Network” podcast, we discuss the unique type of
+radio science empowered by Deep Space Network antennas</p>
+<h3
+id="invisiblenetwork-27-dsn-the-ultimate-classroom-nasa-s-the-invisible-network-pod"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/dsn-05_theultimateclassroom_final.mp3">27.
+DSN - The Ultimate Classroom | NASA’s The Invisible Network Pod</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/27-deep-space-network-the-ultimate-classroom-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> July 7, 2022</p>
+<p><strong>Duration:</strong> 1513</p>
+<p><strong>Episode:</strong> 27</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In this fifth episode in the fifth season
+of NASA’s “The Invisible Network” podcast, we discuss a unique
+educational opportunity that allows students to use a Deep Space Network
+antenna for real science</p>
+<h3
+id="invisiblenetwork-28-dsn-explore-tomorrow-nasa-s-the-invisible-network-podcast"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/03/dsn-06-exploretomorrow-final.mp3">28.
+DSN - Explore Tomorrow | NASA’s The Invisible Network Podcast</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/28-deep-space-network-explore-tomorrow-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> July 14, 2022</p>
+<p><strong>Duration:</strong> 1270</p>
+<p><strong>Episode:</strong> 28</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In this final episode of the fifth season
+of NASA’s “The Invisible Network” podcast, we discuss the technologies
+and capabilities key to the Deep Space Network’s future</p>
+<h3
+id="invisiblenetwork-bonus-dsn-your-questions-answered-nasa-s-the-invisible-network"><a
+href="https://www.nasa.gov/wp-content/uploads/2023/07/dsn-bonus.mp3">Bonus
+- DSN: Your Questions Answered | NASA’s The Invisible Network</a></h3>
+<p><a
+href="https://www.nasa.gov/podcasts/invisible-network/bonus-dsn-your-questions-answered-nasas-the-invisible-network-podcast/">Episode
+page</a></p>
+<p><strong>Date:</strong> September 23, 2022</p>
+<p><strong>Duration:</strong> 624</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> In this bonus episode of NASA’s The
+Invisible Network podcast, a NASA subject matter expert answers
+questions about the Deep Space Network (DSN) submitted on social
+media</p>
+<h2 id="appendix-a-episodes-by-date">Appendix A: Episodes by Date</h2>
+<p>Every episode in publication order, newest first, grouped by
+year.</p>
+<h3 id="section">2022</h3>
+<ul>
+<li><a
+href="#invisiblenetwork-bonus-dsn-your-questions-answered-nasa-s-the-invisible-network">Bonus
+- DSN: Your Questions Answered | NASA’s The Invisible Network</a> —
+September 23</li>
+<li><a
+href="#invisiblenetwork-28-dsn-explore-tomorrow-nasa-s-the-invisible-network-podcast">28.
+DSN - Explore Tomorrow | NASA’s The Invisible Network Podcast</a> — July
+14</li>
+<li><a
+href="#invisiblenetwork-27-dsn-the-ultimate-classroom-nasa-s-the-invisible-network-pod">27.
+DSN - The Ultimate Classroom | NASA’s The Invisible Network Pod</a> —
+July 7</li>
+<li><a
+href="#invisiblenetwork-26-dsn-radio-science-nasa-s-the-invisible-network-podcast">26.
+DSN - Radio Science | NASA’s The Invisible Network Podcast</a> — June
+30</li>
+<li><a
+href="#invisiblenetwork-25-dsn-negotiators-nasa-s-the-invisible-network-podcast">25.
+DSN - Negotiators | NASA’s The Invisible Network Podcast</a> — June
+23</li>
+<li><a
+href="#invisiblenetwork-24-dsn-follow-the-sun-nasa-s-the-invisible-network-podcast">24.
+DSN - Follow the Sun | NASA’s The Invisible Network Podcast</a> — June
+16</li>
+<li><a
+href="#invisiblenetwork-23-dsn-origins-nasa-s-the-invisible-network-podcast">23.
+DSN - Origins | NASA’s The Invisible Network Podcast</a> — June 9</li>
+<li><a
+href="#invisiblenetwork-dsn-season-trailer-nasa-s-the-invisible-network-podcast">DSN
+Season Trailer | NASA’s The Invisible Network Podcast</a> — April
+19</li>
+<li><a
+href="#invisiblenetwork-bonus-lcrd-your-questions-answered-nasa-s-the-invisible-network">Bonus
+- LCRD: Your Questions Answered | NASA’s The Invisible Network</a> —
+April 11</li>
+</ul>
+<h3 id="section-1">2021</h3>
+<ul>
+<li><a
+href="#invisiblenetwork-22-lcrd-the-future-nasa-s-the-invisible-network-podcast">22.
+LCRD - The Future | NASA’s The Invisible Network Podcast</a> — December
+29</li>
+<li><a
+href="#invisiblenetwork-21-lcrd-the-design-ground-nasa-s-the-invisible-network-podcast">21.
+LCRD - The Design: Ground | NASA’s The Invisible Network Podcast</a> —
+December 22</li>
+<li><a
+href="#invisiblenetwork-20-lcrd-the-design-flight-nasa-s-the-invisible-network-podcast">20.
+LCRD - The Design: Flight | NASA’s The Invisible Network Podcast</a> —
+December 15</li>
+<li><a
+href="#invisiblenetwork-19-lcrd-the-dream-nasa-s-the-invisible-network-podcast">19.
+LCRD - The Dream | NASA’s The Invisible Network Podcast</a> — December
+8</li>
+<li><a
+href="#invisiblenetwork-18-lcrd-the-launch-nasa-s-the-invisible-network-podcast">18.
+LCRD - The Launch | NASA’s The Invisible Network Podcast</a> — December
+7</li>
+<li><a
+href="#invisiblenetwork-lcrd-season-trailer-nasa-s-the-invisible-network-podcast">LCRD
+Season Trailer | NASA’s The Invisible Network Podcast</a> — December
+1</li>
+<li><a
+href="#invisiblenetwork-international-podcast-day-2021-nasa-s-the-invisible-network-podcast">International
+Podcast Day 2021 | NASA’s The Invisible Network Podcast</a> — September
+30</li>
+<li><a
+href="#invisiblenetwork-2021-interns-nasa-s-the-invisible-network-podcast">2021
+Interns | NASA’s The Invisible Network Podcast</a> — July 29</li>
+<li><a
+href="#invisiblenetwork-17-commercialization-lunanet-nasa-s-the-invisible-network-podcast">17.
+Commercialization - LunaNet | NASA’s The Invisible Network Podcast</a> —
+May 19</li>
+<li><a
+href="#invisiblenetwork-16-commercialization-marketplace-nasa-s-the-invisible-network-pod">16.
+Commercialization - Marketplace | NASA’s The Invisible Network Pod</a> —
+May 12</li>
+<li><a
+href="#invisiblenetwork-15-commercialization-crew-nasa-s-the-invisible-network-podcast">15.
+Commercialization - Crew | NASA’s The Invisible Network Podcast</a> —
+May 5</li>
+</ul>
+<h3 id="section-2">2020</h3>
+<ul>
+<li><a
+href="#invisiblenetwork-bonus-nasa-historian-bill-barry-nasa-s-the-invisible-network-pod">Bonus
+- NASA Historian Bill Barry | NASA’s The Invisible Network Pod</a> —
+January 30</li>
+<li><a
+href="#invisiblenetwork-bonus-dr-jim-garvin-nasa-s-the-invisible-network-podcast">Bonus
+- Dr. Jim Garvin | NASA’s The Invisible Network Podcast</a> — January
+23</li>
+<li><a
+href="#invisiblenetwork-bonus-dan-curry-nasa-s-the-invisible-network-podcast">Bonus
+- Dan Curry | NASA’s The Invisible Network Podcast</a> — January 16</li>
+</ul>
+<h3 id="section-3">2019</h3>
+<ul>
+<li><a
+href="#invisiblenetwork-14-ansible-nasa-s-the-invisible-network-podcast">14.
+Ansible | NASA’s The Invisible Network Podcast</a> — December 19</li>
+<li><a
+href="#invisiblenetwork-13-pony-express-nasa-s-the-invisible-network-podcast">13.
+Pony Express | NASA’s The Invisible Network Podcast</a> — December
+16</li>
+<li><a
+href="#invisiblenetwork-12-reconnaissance-nasa-s-the-invisible-network-podcast">12.
+Reconnaissance | NASA’s The Invisible Network Podcast</a> — December
+12</li>
+<li><a
+href="#invisiblenetwork-11-reflections-nasa-s-the-invisible-network-podcast">11.
+Reflections | NASA’s The Invisible Network Podcast</a> — December 9</li>
+<li><a
+href="#invisiblenetwork-10-406-mhz-nasa-s-the-invisible-network-podcast">10.
+406 MHz | NASA’s The Invisible Network Podcast</a> — December 5</li>
+<li><a
+href="#invisiblenetwork-09-lobes-nasa-s-the-invisible-network-podcast">09.
+Lobes | NASA’s The Invisible Network Podcast</a> — November 25</li>
+<li><a
+href="#invisiblenetwork-08-form-and-function-nasa-s-the-invisible-network-podcast">08.
+Form and Function | NASA’s The Invisible Network Podcast</a> — November
+21</li>
+<li><a
+href="#invisiblenetwork-07-hunter-gatherer-nasa-s-the-invisible-network-podcast">07.
+Hunter-Gatherer | NASA’s The Invisible Network Podcast</a> — November
+14</li>
+<li><a
+href="#invisiblenetwork-2019-interns-nasa-s-the-invisible-network-podcast">2019
+Interns | NASA’s The Invisible Network Podcast</a> — October 10</li>
+</ul>
+<h3 id="section-4">2018</h3>
+<ul>
+<li><a
+href="#invisiblenetwork-01-ascension-nasa-s-the-invisible-network-podcast">01.
+Ascension | NASA’s The Invisible Network Podcast</a> — October 16</li>
+<li><a
+href="#invisiblenetwork-02-lemnos-nasa-s-the-invisible-network-podcast">02.
+Lemnos | NASA’s The Invisible Network Podcast</a> — October 16</li>
+<li><a
+href="#invisiblenetwork-03-time-nasa-s-the-invisible-network-podcast">03.
+Time | NASA’s The Invisible Network Podcast</a> — October 16</li>
+<li><a
+href="#invisiblenetwork-04-automation-nasa-s-the-invisible-network-podcast">04.
+Automation | NASA’s The Invisible Network Podcast</a> — October 16</li>
+<li><a
+href="#invisiblenetwork-05-marrow-nasa-s-the-invisible-network-podcast">05:
+Marrow | NASA’s The Invisible Network Podcast</a> — October 16</li>
+<li><a
+href="#invisiblenetwork-06-next-gen-nasa-s-the-invisible-network-podcast">06.
+Next-Gen | NASA’s The Invisible Network Podcast</a> — October 16</li>
+<li><a
+href="#invisiblenetwork-show-trailer-nasa-s-the-invisible-network-podcast">Show
+Trailer | NASA’s The Invisible Network Podcast</a> — October 12</li>
+</ul>
+<h2 id="appendix-b-episodes-by-title">Appendix B: Episodes by Title</h2>
+<p>Every episode in order by title, ignoring a leading “A”, “An”, or
+“The”.</p>
+<ul>
+<li><a
+href="#invisiblenetwork-01-ascension-nasa-s-the-invisible-network-podcast">01.
+Ascension | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-02-lemnos-nasa-s-the-invisible-network-podcast">02.
+Lemnos | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-03-time-nasa-s-the-invisible-network-podcast">03.
+Time | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-04-automation-nasa-s-the-invisible-network-podcast">04.
+Automation | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-05-marrow-nasa-s-the-invisible-network-podcast">05:
+Marrow | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-06-next-gen-nasa-s-the-invisible-network-podcast">06.
+Next-Gen | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-07-hunter-gatherer-nasa-s-the-invisible-network-podcast">07.
+Hunter-Gatherer | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-08-form-and-function-nasa-s-the-invisible-network-podcast">08.
+Form and Function | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-09-lobes-nasa-s-the-invisible-network-podcast">09.
+Lobes | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-10-406-mhz-nasa-s-the-invisible-network-podcast">10.
+406 MHz | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-11-reflections-nasa-s-the-invisible-network-podcast">11.
+Reflections | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-12-reconnaissance-nasa-s-the-invisible-network-podcast">12.
+Reconnaissance | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-13-pony-express-nasa-s-the-invisible-network-podcast">13.
+Pony Express | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-14-ansible-nasa-s-the-invisible-network-podcast">14.
+Ansible | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-15-commercialization-crew-nasa-s-the-invisible-network-podcast">15.
+Commercialization - Crew | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-16-commercialization-marketplace-nasa-s-the-invisible-network-pod">16.
+Commercialization - Marketplace | NASA’s The Invisible Network
+Pod</a></li>
+<li><a
+href="#invisiblenetwork-17-commercialization-lunanet-nasa-s-the-invisible-network-podcast">17.
+Commercialization - LunaNet | NASA’s The Invisible Network
+Podcast</a></li>
+<li><a
+href="#invisiblenetwork-18-lcrd-the-launch-nasa-s-the-invisible-network-podcast">18.
+LCRD - The Launch | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-19-lcrd-the-dream-nasa-s-the-invisible-network-podcast">19.
+LCRD - The Dream | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-20-lcrd-the-design-flight-nasa-s-the-invisible-network-podcast">20.
+LCRD - The Design: Flight | NASA’s The Invisible Network
+Podcast</a></li>
+<li><a
+href="#invisiblenetwork-2019-interns-nasa-s-the-invisible-network-podcast">2019
+Interns | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-2021-interns-nasa-s-the-invisible-network-podcast">2021
+Interns | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-21-lcrd-the-design-ground-nasa-s-the-invisible-network-podcast">21.
+LCRD - The Design: Ground | NASA’s The Invisible Network
+Podcast</a></li>
+<li><a
+href="#invisiblenetwork-22-lcrd-the-future-nasa-s-the-invisible-network-podcast">22.
+LCRD - The Future | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-23-dsn-origins-nasa-s-the-invisible-network-podcast">23.
+DSN - Origins | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-24-dsn-follow-the-sun-nasa-s-the-invisible-network-podcast">24.
+DSN - Follow the Sun | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-25-dsn-negotiators-nasa-s-the-invisible-network-podcast">25.
+DSN - Negotiators | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-26-dsn-radio-science-nasa-s-the-invisible-network-podcast">26.
+DSN - Radio Science | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-27-dsn-the-ultimate-classroom-nasa-s-the-invisible-network-pod">27.
+DSN - The Ultimate Classroom | NASA’s The Invisible Network Pod</a></li>
+<li><a
+href="#invisiblenetwork-28-dsn-explore-tomorrow-nasa-s-the-invisible-network-podcast">28.
+DSN - Explore Tomorrow | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-bonus-dan-curry-nasa-s-the-invisible-network-podcast">Bonus
+- Dan Curry | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-bonus-dr-jim-garvin-nasa-s-the-invisible-network-podcast">Bonus
+- Dr. Jim Garvin | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-bonus-dsn-your-questions-answered-nasa-s-the-invisible-network">Bonus
+- DSN: Your Questions Answered | NASA’s The Invisible Network</a></li>
+<li><a
+href="#invisiblenetwork-bonus-lcrd-your-questions-answered-nasa-s-the-invisible-network">Bonus
+- LCRD: Your Questions Answered | NASA’s The Invisible Network</a></li>
+<li><a
+href="#invisiblenetwork-bonus-nasa-historian-bill-barry-nasa-s-the-invisible-network-pod">Bonus
+- NASA Historian Bill Barry | NASA’s The Invisible Network Pod</a></li>
+<li><a
+href="#invisiblenetwork-dsn-season-trailer-nasa-s-the-invisible-network-podcast">DSN
+Season Trailer | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-international-podcast-day-2021-nasa-s-the-invisible-network-podcast">International
+Podcast Day 2021 | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-lcrd-season-trailer-nasa-s-the-invisible-network-podcast">LCRD
+Season Trailer | NASA’s The Invisible Network Podcast</a></li>
+<li><a
+href="#invisiblenetwork-show-trailer-nasa-s-the-invisible-network-podcast">Show
+Trailer | NASA’s The Invisible Network Podcast</a></li>
+</ul>
+</body>
+</html>
