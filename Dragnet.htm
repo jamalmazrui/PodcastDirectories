@@ -1,0 +1,3682 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Dragnet</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="dragnet">Dragnet</h1>
+<p>Sergeant Joe Friday works cases drawn from real Los Angeles police
+files.</p>
+<ul>
+<li>Episodes: 344</li>
+<li>Network: NBC</li>
+<li>Source: <a
+href="https://archive.org/details/OTRR_Dragnet_Singles">Internet
+Archive: OTRR_Dragnet_Singles</a></li>
+<li>Years: 1949 to 1957</li>
+</ul>
+<p>Each episode title is a link that plays its audio. These broadcasts
+can reflect the attitudes of their time. This page is part of <a
+href="OldTimeRadioDramas.htm">Old Time Radio Dramas</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#y1949">1949</a></li>
+<li><a href="#y1950">1950</a></li>
+<li><a href="#y1951">1951</a></li>
+<li><a href="#y1952">1952</a></li>
+<li><a href="#y1953">1953</a></li>
+<li><a href="#y1954">1954</a></li>
+<li><a href="#y1955">1955</a></li>
+<li><a href="#y1956">1956</a></li>
+<li><a href="#byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle">Appendix B: By Title</a></li>
+</ul>
+<h2 id="y1949">1949</h2>
+<h3 id="e0001"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-06-10_002_Production_2_aka_Homicide_aka_The_Nickel_Plated_Gun.mp3">Production
+2 aka Homicide aka The Nickel Plated Gun</a></h3>
+<ul>
+<li>Date: June 10, 1949</li>
+<li>Duration: 29:44</li>
+<li>Episode: 2</li>
+</ul>
+<h3 id="e0002"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-06-17_003_Production_3_aka_The_Werewolf.mp3">Production
+3 aka The Werewolf</a></h3>
+<ul>
+<li>Date: June 17, 1949</li>
+<li>Duration: 29:28</li>
+<li>Episode: 3</li>
+</ul>
+<h3 id="e0003"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-06-24_004_Production_4_aka_Homicide_aka_Quick_Trigger_Gun_Men.mp3">Production
+4 aka Homicide aka Quick Trigger Gun Men</a></h3>
+<ul>
+<li>Date: June 24, 1949</li>
+<li>Duration: 29:54</li>
+<li>Episode: 4</li>
+</ul>
+<h3 id="e0004"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-07-07_005_The_Helen_Corday_Murder.mp3">The
+Helen Corday Murder</a></h3>
+<ul>
+<li>Date: July 7, 1949</li>
+<li>Duration: 29:51</li>
+<li>Episode: 5</li>
+</ul>
+<h3 id="e0005"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-07-14_006_Red_Light_Bandit.mp3">Red
+Light Bandit</a></h3>
+<ul>
+<li>Date: July 14, 1949</li>
+<li>Duration: 29:37</li>
+<li>Episode: 6</li>
+</ul>
+<h3 id="e0006"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-07-21_007_Attempted_City_Hall_Bombing.mp3">Attempted
+City Hall Bombing</a></h3>
+<ul>
+<li>Date: July 21, 1949</li>
+<li>Duration: 29:59</li>
+<li>Episode: 7</li>
+</ul>
+<h3 id="e0007"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-07-28_008_Missing_Persons_-_Juanita_Lasky.mp3">Missing
+Persons - Juanita Lasky</a></h3>
+<ul>
+<li>Date: July 28, 1949</li>
+<li>Duration: 29:56</li>
+<li>Episode: 8</li>
+</ul>
+<h3 id="e0008"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-08-04_009_Benny_Trounsel_-_Narcotics.mp3">Benny
+Trounsel - Narcotics</a></h3>
+<ul>
+<li>Date: August 4, 1949</li>
+<li>Duration: 29:43</li>
+<li>Episode: 9</li>
+</ul>
+<h3 id="e0009"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-08-11_010_Production_10_aka_Homicide_aka_Maniac_Murderer_aka_Mad_Killer_At_Large.mp3">Production
+10 aka Homicide aka Maniac Murderer aka Mad Killer At Large</a></h3>
+<ul>
+<li>Date: August 11, 1949</li>
+<li>Duration: 29:55</li>
+<li>Episode: 10</li>
+</ul>
+<h3 id="e0010"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-08-18_011_Production_11_aka_Sixteen_Jewel_Thieves.mp3">Production
+11 aka Sixteen Jewel Thieves</a></h3>
+<ul>
+<li>Date: August 18, 1949</li>
+<li>Duration: 29:43</li>
+<li>Episode: 11</li>
+</ul>
+<h3 id="e0011"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-08-25_012_Police_Academy_-_Mario_Koski.mp3">Police
+Academy - Mario Koski</a></h3>
+<ul>
+<li>Date: August 25, 1949</li>
+<li>Duration: 29:20</li>
+<li>Episode: 12</li>
+</ul>
+<h3 id="e0012"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-09-01_013_Auto_Burglaries_-_Myra_the_Redhead.mp3">Auto
+Burglaries - Myra the Redhead</a></h3>
+<ul>
+<li>Date: September 1, 1949</li>
+<li>Duration: 29:57</li>
+<li>Episode: 13</li>
+</ul>
+<h3 id="e0013"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-09-03_014_Eric_Kelby_-_Body_Buried_In_Nursery.mp3">Eric
+Kelby - Body Buried In Nursery</a></h3>
+<ul>
+<li>Date: September 3, 1949</li>
+<li>Duration: 29:52</li>
+<li>Episode: 14</li>
+</ul>
+<h3 id="e0014"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-09-10_015_Sullivan_Kidnapping.mp3">Sullivan
+Kidnapping</a></h3>
+<ul>
+<li>Date: September 10, 1949</li>
+<li>Duration: 29:27</li>
+<li>Episode: 15</li>
+</ul>
+<h3 id="e0015"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-09-17_016_James_Vickers_-_Cop_Killing_-_Tunnel_Chase.mp3">James
+Vickers - Cop Killing - Tunnel Chase</a></h3>
+<ul>
+<li>Date: September 17, 1949</li>
+<li>Duration: 29:12</li>
+<li>Episode: 16</li>
+</ul>
+<h3 id="e0016"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-09-24_017_Brick-Bat_Slayer.mp3">Brick-Bat
+Slayer</a></h3>
+<ul>
+<li>Date: September 24, 1949</li>
+<li>Duration: 29:13</li>
+<li>Episode: 17</li>
+</ul>
+<h3 id="e0017"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-10-01_018_Truck_Hi-jackers_-_Tom_Laval.mp3">Truck
+Hi-jackers - Tom Laval</a></h3>
+<ul>
+<li>Date: October 1, 1949</li>
+<li>Duration: 29:15</li>
+<li>Episode: 18</li>
+</ul>
+<h3 id="e0018"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-11-24_026_Mrs._Rinard_Albert_Barry_-_Mother-In-Law_Murder.mp3">Mrs. Rinard
+Albert Barry - Mother-In-Law Murder</a></h3>
+<ul>
+<li>Date: November 24, 1949</li>
+<li>Duration: 29:17</li>
+<li>Episode: 26</li>
+</ul>
+<h3 id="e0019"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-12-01_027_Spring_Street_Gang_-_Juveniles.mp3">Spring
+Street Gang - Juveniles</a></h3>
+<ul>
+<li>Date: December 1, 1949</li>
+<li>Duration: 29:16</li>
+<li>Episode: 27</li>
+</ul>
+<h3 id="e0020"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-12-08_028_George_Quan_-_The_Jade_Thumb_Rings.mp3">George
+Quan - The Jade Thumb Rings</a></h3>
+<ul>
+<li>Date: December 8, 1949</li>
+<li>Duration: 29:14</li>
+<li>Episode: 28</li>
+</ul>
+<h3 id="e0021"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-12-22_030_22_Rifle_for_Christmas.mp3">22
+Rifle for Christmas</a></h3>
+<ul>
+<li>Date: December 22, 1949</li>
+<li>Duration: 29:22</li>
+<li>Episode: 30</li>
+</ul>
+<h3 id="e0022"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_49-12-29_031_The_Roseland_Roof_Murders.mp3">The
+Roseland Roof Murders</a></h3>
+<ul>
+<li>Date: December 29, 1949</li>
+<li>Duration: 30:44</li>
+<li>Episode: 31</li>
+</ul>
+<h2 id="y1950">1950</h2>
+<h3 id="e0023"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-01-05_032_Max_Tyler_-_Escaped_Convict.mp3">Max
+Tyler - Escaped Convict</a></h3>
+<ul>
+<li>Date: January 5, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 32</li>
+</ul>
+<h3 id="e0024"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-01-12_033_The_Big_Man_Part_1_Narcotics.mp3">The
+Big Man Part 1 Narcotics</a></h3>
+<ul>
+<li>Date: January 12, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 33</li>
+</ul>
+<h3 id="e0025"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-01-19_034_The_Big_Man_Part_2_Narcotics.mp3">The
+Big Man Part 2 Narcotics</a></h3>
+<ul>
+<li>Date: January 19, 1950</li>
+<li>Duration: 58:55</li>
+<li>Episode: 34</li>
+</ul>
+<h3 id="e0026"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-02-02_035_Claude_Jimmerson_Child_Killer.mp3">Claude
+Jimmerson Child Killer</a></h3>
+<ul>
+<li>Date: February 2, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 35</li>
+</ul>
+<h3 id="e0027"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-02-09_036_The_Big_Girl.mp3">The
+Big Girl</a></h3>
+<ul>
+<li>Date: February 9, 1950</li>
+<li>Duration: 29:20</li>
+<li>Episode: 36</li>
+</ul>
+<h3 id="e0028"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-02-23_037_The_Big_Grifter.mp3">The
+Big Grifter</a></h3>
+<ul>
+<li>Date: February 23, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 37</li>
+</ul>
+<h3 id="e0029"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-03-02_038_The_Big_Kill.mp3">The
+Big Kill</a></h3>
+<ul>
+<li>Date: March 2, 1950</li>
+<li>Duration: 29:23</li>
+<li>Episode: 38</li>
+</ul>
+<h3 id="e0030"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-03-09_039_The_Big_Thank_You.mp3">The
+Big Thank You</a></h3>
+<ul>
+<li>Date: March 9, 1950</li>
+<li>Duration: 29:38</li>
+<li>Episode: 39</li>
+</ul>
+<h3 id="e0031"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-03-16_040_The_Big_Boys.mp3">The
+Big Boys</a></h3>
+<ul>
+<li>Date: March 16, 1950</li>
+<li>Duration: 29:13</li>
+<li>Episode: 40</li>
+</ul>
+<h3 id="e0032"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-03-23_041_The_Big_Gangster_Part_1.mp3">The
+Big Gangster Part 1</a></h3>
+<ul>
+<li>Date: March 23, 1950</li>
+<li>Duration: 29:13</li>
+<li>Episode: 41</li>
+</ul>
+<h3 id="e0033"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-03-30_042_The_Big_Gangster_Part_2.mp3">The
+Big Gangster Part 2</a></h3>
+<ul>
+<li>Date: March 30, 1950</li>
+<li>Duration: 29:19</li>
+<li>Episode: 42</li>
+</ul>
+<h3 id="e0034"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-04-06_043_The_Big_Book.mp3">The
+Big Book</a></h3>
+<ul>
+<li>Date: April 6, 1950</li>
+<li>Duration: 29:27</li>
+<li>Episode: 43</li>
+</ul>
+<h3 id="e0035"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-04-13_044_The_Big_Watch.mp3">The
+Big Watch</a></h3>
+<ul>
+<li>Date: April 13, 1950</li>
+<li>Duration: 29:23</li>
+<li>Episode: 44</li>
+</ul>
+<h3 id="e0036"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-04-20_045_The_Big_Trial.mp3">The
+Big Trial</a></h3>
+<ul>
+<li>Date: April 20, 1950</li>
+<li>Duration: 29:19</li>
+<li>Episode: 45</li>
+</ul>
+<h3 id="e0037"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-04-27_046_The_Big_Job.mp3">The
+Big Job</a></h3>
+<ul>
+<li>Date: April 27, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 46</li>
+</ul>
+<h3 id="e0038"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-05-04_047_The_Big_Badge.mp3">The
+Big Badge</a></h3>
+<ul>
+<li>Date: May 4, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 47</li>
+</ul>
+<h3 id="e0039"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-05-11_048_The_Big_Knife.mp3">The
+Big Knife</a></h3>
+<ul>
+<li>Date: May 11, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 48</li>
+</ul>
+<h3 id="e0040"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-05-18_049_The_Big_Pug.mp3">The
+Big Pug</a></h3>
+<ul>
+<li>Date: May 18, 1950</li>
+<li>Duration: 29:20</li>
+<li>Episode: 49</li>
+</ul>
+<h3 id="e0041"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-05-25_050_The_Big_Key.mp3">The
+Big Key</a></h3>
+<ul>
+<li>Date: May 25, 1950</li>
+<li>Duration: 29:47</li>
+<li>Episode: 50</li>
+</ul>
+<h3 id="e0042"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-06-01_051_The_Big_Fake.mp3">The
+Big Fake</a></h3>
+<ul>
+<li>Date: June 1, 1950</li>
+<li>Duration: 29:37</li>
+<li>Episode: 51</li>
+</ul>
+<h3 id="e0043"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-06-08_052_The_Big_Smart_Guy.mp3">The
+Big Smart Guy</a></h3>
+<ul>
+<li>Date: June 8, 1950</li>
+<li>Duration: 29:38</li>
+<li>Episode: 52</li>
+</ul>
+<h3 id="e0044"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-06-08_052_Big_Smart_Guy_AFRS46.mp3">Big
+Smart Guy AFRS46</a></h3>
+<ul>
+<li>Date: June 8, 1950</li>
+<li>Duration: 24:35</li>
+<li>Episode: 52</li>
+</ul>
+<h3 id="e0045"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-06-15_053_The_Big_Press.mp3">The
+Big Press</a></h3>
+<ul>
+<li>Date: June 15, 1950</li>
+<li>Duration: 29:19</li>
+<li>Episode: 53</li>
+</ul>
+<h3 id="e0046"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-06-22_054_The_Big_Mink.mp3">The
+Big Mink</a></h3>
+<ul>
+<li>Date: June 22, 1950</li>
+<li>Duration: 29:19</li>
+<li>Episode: 54</li>
+</ul>
+<h3 id="e0047"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-06-22_054_Big_Mink_AFRS48.mp3">Big
+Mink AFRS48</a></h3>
+<ul>
+<li>Date: June 22, 1950</li>
+<li>Duration: 24:02</li>
+<li>Episode: 54</li>
+</ul>
+<h3 id="e0048"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-06-29_055_The_Big_Grab.mp3">The
+Big Grab</a></h3>
+<ul>
+<li>Date: June 29, 1950</li>
+<li>Duration: 29:06</li>
+<li>Episode: 55</li>
+</ul>
+<h3 id="e0049"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-07-06_056_The_Big_Frame.mp3">The
+Big Frame</a></h3>
+<ul>
+<li>Date: July 6, 1950</li>
+<li>Duration: 29:17</li>
+<li>Episode: 56</li>
+</ul>
+<h3 id="e0050"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-07-13_057_The_Big_Bomb.mp3">The
+Big Bomb</a></h3>
+<ul>
+<li>Date: July 13, 1950</li>
+<li>Duration: 29:20</li>
+<li>Episode: 57</li>
+</ul>
+<h3 id="e0051"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-07-20_058_The_Big_Gent_Part_1.mp3">The
+Big Gent Part 1</a></h3>
+<ul>
+<li>Date: July 20, 1950</li>
+<li>Duration: 29:13</li>
+<li>Episode: 58</li>
+</ul>
+<h3 id="e0052"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-07-27_059_The_Big_Gent_Part_2.mp3">The
+Big Gent Part 2</a></h3>
+<ul>
+<li>Date: July 27, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 59</li>
+</ul>
+<h3 id="e0053"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-08-03_060_The_Big_Dare.mp3">The
+Big Dare</a></h3>
+<ul>
+<li>Date: August 3, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 60</li>
+</ul>
+<h3 id="e0054"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-08-10_061_The_Big_Actor.mp3">The
+Big Actor</a></h3>
+<ul>
+<li>Date: August 10, 1950</li>
+<li>Duration: 29:19</li>
+<li>Episode: 61</li>
+</ul>
+<h3 id="e0055"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-08-17_062_The_Big_Youngster.mp3">The
+Big Youngster</a></h3>
+<ul>
+<li>Date: August 17, 1950</li>
+<li>Duration: 29:20</li>
+<li>Episode: 62</li>
+</ul>
+<h3 id="e0056"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-08-24_063_The_Big_Chance.mp3">The
+Big Chance</a></h3>
+<ul>
+<li>Date: August 24, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 63</li>
+</ul>
+<h3 id="e0057"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-08-31_064_The_Big_Check.mp3">The
+Big Check</a></h3>
+<ul>
+<li>Date: August 31, 1950</li>
+<li>Duration: 29:19</li>
+<li>Episode: 64</li>
+</ul>
+<h3 id="e0058"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-09-07_065_The_Big_Poison.mp3">The
+Big Poison</a></h3>
+<ul>
+<li>Date: September 7, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 65</li>
+</ul>
+<h3 id="e0059"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-09-14_066_The_Big_Make.mp3">The
+Big Make</a></h3>
+<ul>
+<li>Date: September 14, 1950</li>
+<li>Duration: 29:22</li>
+<li>Episode: 66</li>
+</ul>
+<h3 id="e0060"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-09-21_067_The_Big_Pair.mp3">The
+Big Pair</a></h3>
+<ul>
+<li>Date: September 21, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 67</li>
+</ul>
+<h3 id="e0061"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-09-28_068_The_Big_Death.mp3">The
+Big Death</a></h3>
+<ul>
+<li>Date: September 28, 1950</li>
+<li>Duration: 29:14</li>
+<li>Episode: 68</li>
+</ul>
+<h3 id="e0062"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-10-05_069_The_Big_38.mp3">The
+Big 38</a></h3>
+<ul>
+<li>Date: October 5, 1950</li>
+<li>Duration: 29:14</li>
+<li>Episode: 69</li>
+</ul>
+<h3 id="e0063"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-10-12_070_The_Big_Quack.mp3">The
+Big Quack</a></h3>
+<ul>
+<li>Date: October 12, 1950</li>
+<li>Duration: 29:10</li>
+<li>Episode: 70</li>
+</ul>
+<h3 id="e0064"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-10-19_071_The_Big_Grandma.mp3">The
+Big Grandma</a></h3>
+<ul>
+<li>Date: October 19, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 71</li>
+</ul>
+<h3 id="e0065"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-10-26_072_The_Big_Meet.mp3">The
+Big Meet</a></h3>
+<ul>
+<li>Date: October 26, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 72</li>
+</ul>
+<h3 id="e0066"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-11-02_073_The_Big_Church.mp3">The
+Big Church</a></h3>
+<ul>
+<li>Date: November 2, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 73</li>
+</ul>
+<h3 id="e0067"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-11-09_074_The_Big_Mother.mp3">The
+Big Mother</a></h3>
+<ul>
+<li>Date: November 9, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 74</li>
+</ul>
+<h3 id="e0068"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-11-16_075_The_Big_Parrot.mp3">The
+Big Parrot</a></h3>
+<ul>
+<li>Date: November 16, 1950</li>
+<li>Duration: 29:17</li>
+<li>Episode: 75</li>
+</ul>
+<h3 id="e0069"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-11-23_076_The_Big_Betty.mp3">The
+Big Betty</a></h3>
+<ul>
+<li>Date: November 23, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 76</li>
+</ul>
+<h3 id="e0070"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-11-30_077_The_Big_Car.mp3">The
+Big Car</a></h3>
+<ul>
+<li>Date: November 30, 1950</li>
+<li>Duration: 29:19</li>
+<li>Episode: 77</li>
+</ul>
+<h3 id="e0071"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-12-07_078_The_Big_Picture.mp3">The
+Big Picture</a></h3>
+<ul>
+<li>Date: December 7, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 78</li>
+</ul>
+<h3 id="e0072"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-12-14_079_The_Big_Break.mp3">The
+Big Break</a></h3>
+<ul>
+<li>Date: December 14, 1950</li>
+<li>Duration: 29:23</li>
+<li>Episode: 79</li>
+</ul>
+<h3 id="e0073"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-12-21_080_22_Rifle_for_Christmas.mp3">22
+Rifle for Christmas</a></h3>
+<ul>
+<li>Date: December 21, 1950</li>
+<li>Duration: 29:27</li>
+<li>Episode: 80</li>
+</ul>
+<h3 id="e0074"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_50-12-28_081_The_Big_Family.mp3">The
+Big Family</a></h3>
+<ul>
+<li>Date: December 28, 1950</li>
+<li>Duration: 25:43</li>
+<li>Episode: 81</li>
+</ul>
+<h2 id="y1951">1951</h2>
+<h3 id="e0075"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-01-04_082_The_Big_Holdup.mp3">The
+Big Holdup</a></h3>
+<ul>
+<li>Date: January 4, 1951</li>
+<li>Duration: 30:20</li>
+<li>Episode: 82</li>
+</ul>
+<h3 id="e0076"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-01-11_083_The_Big_Jump.mp3">The
+Big Jump</a></h3>
+<ul>
+<li>Date: January 11, 1951</li>
+<li>Duration: 29:46</li>
+<li>Episode: 83</li>
+</ul>
+<h3 id="e0077"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-01-18_084_The_Big_Dance.mp3">The
+Big Dance</a></h3>
+<ul>
+<li>Date: January 18, 1951</li>
+<li>Duration: 29:28</li>
+<li>Episode: 84</li>
+</ul>
+<h3 id="e0078"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-01-25_085_The_Big_Tomato.mp3">The
+Big Tomato</a></h3>
+<ul>
+<li>Date: January 25, 1951</li>
+<li>Duration: 30:22</li>
+<li>Episode: 85</li>
+</ul>
+<h3 id="e0079"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-02-01_086_The_Big_Children.mp3">The
+Big Children</a></h3>
+<ul>
+<li>Date: February 1, 1951</li>
+<li>Duration: 29:10</li>
+<li>Episode: 86</li>
+</ul>
+<h3 id="e0080"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-02-08_087_The_Big_Cast.mp3">The
+Big Cast</a></h3>
+<ul>
+<li>Date: February 8, 1951</li>
+<li>Duration: 29:19</li>
+<li>Episode: 87</li>
+</ul>
+<h3 id="e0081"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-02-15_088_The_Big_Crime.mp3">The
+Big Crime</a></h3>
+<ul>
+<li>Date: February 15, 1951</li>
+<li>Duration: 29:19</li>
+<li>Episode: 88</li>
+</ul>
+<h3 id="e0082"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-02-22_089_The_Big_Couple.mp3">The
+Big Couple</a></h3>
+<ul>
+<li>Date: February 22, 1951</li>
+<li>Duration: 29:33</li>
+<li>Episode: 89</li>
+</ul>
+<h3 id="e0083"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-03-01_090_The_Big_Partner.mp3">The
+Big Partner</a></h3>
+<ul>
+<li>Date: March 1, 1951</li>
+<li>Duration: 26:48</li>
+<li>Episode: 90</li>
+</ul>
+<h3 id="e0084"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-03-08_091_The_Big_New_Years.mp3">The
+Big New Years</a></h3>
+<ul>
+<li>Date: March 8, 1951</li>
+<li>Duration: 26:35</li>
+<li>Episode: 91</li>
+</ul>
+<h3 id="e0085"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-03-15_092_The_Big_Ben.mp3">The
+Big Ben</a></h3>
+<ul>
+<li>Date: March 15, 1951</li>
+<li>Duration: 26:12</li>
+<li>Episode: 92</li>
+</ul>
+<h3 id="e0086"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-04-05_095_The_Big_Friend.mp3">The
+Big Friend</a></h3>
+<ul>
+<li>Date: April 5, 1951</li>
+<li>Duration: 29:18</li>
+<li>Episode: 95</li>
+</ul>
+<h3 id="e0087"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-04-12_096_The_Big_Threat.mp3">The
+Big Threat</a></h3>
+<ul>
+<li>Date: April 12, 1951</li>
+<li>Duration: 29:35</li>
+<li>Episode: 96</li>
+</ul>
+<h3 id="e0088"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-04-19_097_The_Big_Speech.mp3">The
+Big Speech</a></h3>
+<ul>
+<li>Date: April 19, 1951</li>
+<li>Duration: 29:39</li>
+<li>Episode: 97</li>
+</ul>
+<h3 id="e0089"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-04-26_098_The_Big_Saint.mp3">The
+Big Saint</a></h3>
+<ul>
+<li>Date: April 26, 1951</li>
+<li>Duration: 29:35</li>
+<li>Episode: 98</li>
+</ul>
+<h3 id="e0090"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-05-03_099_The_Big_Casing.mp3">The
+Big Casing</a></h3>
+<ul>
+<li>Date: May 3, 1951</li>
+<li>Duration: 29:27</li>
+<li>Episode: 99</li>
+</ul>
+<h3 id="e0091"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-05-10_100_The_Big_Drills.mp3">The
+Big Drills</a></h3>
+<ul>
+<li>Date: May 10, 1951</li>
+<li>Duration: 26:34</li>
+<li>Episode: 100</li>
+</ul>
+<h3 id="e0092"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-05-17_101_The_Big_Blast.mp3">The
+Big Blast</a></h3>
+<ul>
+<li>Date: May 17, 1951</li>
+<li>Duration: 29:31</li>
+<li>Episode: 101</li>
+</ul>
+<h3 id="e0093"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-05-24_102_The_Big_Mailman.mp3">The
+Big Mailman</a></h3>
+<ul>
+<li>Date: May 24, 1951</li>
+<li>Duration: 29:36</li>
+<li>Episode: 102</li>
+</ul>
+<h3 id="e0094"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-05-31_103_The_Big_Bindle.mp3">The
+Big Bindle</a></h3>
+<ul>
+<li>Date: May 31, 1951</li>
+<li>Duration: 29:34</li>
+<li>Episode: 103</li>
+</ul>
+<h3 id="e0095"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-06-07_104_The_Big_Imposter.mp3">The
+Big Imposter</a></h3>
+<ul>
+<li>Date: June 7, 1951</li>
+<li>Duration: 29:29</li>
+<li>Episode: 104</li>
+</ul>
+<h3 id="e0096"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-06-14_105_The_Big_Building.mp3">The
+Big Building</a></h3>
+<ul>
+<li>Date: June 14, 1951</li>
+<li>Duration: 29:30</li>
+<li>Episode: 105</li>
+</ul>
+<h3 id="e0097"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-06-21_106_The_Big_Run.mp3">The
+Big Run</a></h3>
+<ul>
+<li>Date: June 21, 1951</li>
+<li>Duration: 29:31</li>
+<li>Episode: 106</li>
+</ul>
+<h3 id="e0098"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-06-28_107_The_Big_Cliff.mp3">The
+Big Cliff</a></h3>
+<ul>
+<li>Date: June 28, 1951</li>
+<li>Duration: 29:30</li>
+<li>Episode: 107</li>
+</ul>
+<h3 id="e0099"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-07-05_108_The_Big_Love.mp3">The
+Big Love</a></h3>
+<ul>
+<li>Date: July 5, 1951</li>
+<li>Duration: 29:25</li>
+<li>Episode: 108</li>
+</ul>
+<h3 id="e0100"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-07-12_109_The_Big_Set-Up.mp3">The
+Big Set-Up</a></h3>
+<ul>
+<li>Date: July 12, 1951</li>
+<li>Duration: 29:37</li>
+<li>Episode: 109</li>
+</ul>
+<h3 id="e0101"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-07-19_110_The_Big_Sophomore.mp3">The
+Big Sophomore</a></h3>
+<ul>
+<li>Date: July 19, 1951</li>
+<li>Duration: 29:19</li>
+<li>Episode: 110</li>
+</ul>
+<h3 id="e0102"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-07-26_111_The_Big_Late_Script.mp3">The
+Big Late Script</a></h3>
+<ul>
+<li>Date: July 26, 1951</li>
+<li>Duration: 29:33</li>
+<li>Episode: 111</li>
+</ul>
+<h3 id="e0103"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-08-09_113_The_Big_Screen.mp3">The
+Big Screen</a></h3>
+<ul>
+<li>Date: August 9, 1951</li>
+<li>Duration: 29:43</li>
+<li>Episode: 113</li>
+</ul>
+<h3 id="e0104"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-08-16_114_The_Big_Winchester.mp3">The
+Big Winchester</a></h3>
+<ul>
+<li>Date: August 16, 1951</li>
+<li>Duration: 29:18</li>
+<li>Episode: 114</li>
+</ul>
+<h3 id="e0105"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-08-23_115_The_Big_In-Laws.mp3">The
+Big In-Laws</a></h3>
+<ul>
+<li>Date: August 23, 1951</li>
+<li>Duration: 29:30</li>
+<li>Episode: 115</li>
+</ul>
+<h3 id="e0106"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-08-30_116_The_Big_Crazy.mp3">The
+Big Crazy</a></h3>
+<ul>
+<li>Date: August 30, 1951</li>
+<li>Duration: 29:32</li>
+<li>Episode: 116</li>
+</ul>
+<h3 id="e0107"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-09-06_117_The_Big_17.mp3">The
+Big 17</a></h3>
+<ul>
+<li>Date: September 6, 1951</li>
+<li>Duration: 29:34</li>
+<li>Episode: 117</li>
+</ul>
+<h3 id="e0108"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-09-13_118_The_Big_Waiter.mp3">The
+Big Waiter</a></h3>
+<ul>
+<li>Date: September 13, 1951</li>
+<li>Duration: 26:11</li>
+<li>Episode: 118</li>
+</ul>
+<h3 id="e0109"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-09-20_119_The_Big_Sour.mp3">The
+Big Sour</a></h3>
+<ul>
+<li>Date: September 20, 1951</li>
+<li>Duration: 25:21</li>
+<li>Episode: 119</li>
+</ul>
+<h3 id="e0110"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-09-27_120_The_Big_September_Man.mp3">The
+Big September Man</a></h3>
+<ul>
+<li>Date: September 27, 1951</li>
+<li>Duration: 26:28</li>
+<li>Episode: 120</li>
+</ul>
+<h3 id="e0111"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-10-04_121_The_Big_Want_Ad.mp3">The
+Big Want Ad</a></h3>
+<ul>
+<li>Date: October 4, 1951</li>
+<li>Duration: 27:42</li>
+<li>Episode: 121</li>
+</ul>
+<h3 id="e0112"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-10-11_122_The_Big_Shoplift.mp3">The
+Big Shoplift</a></h3>
+<ul>
+<li>Date: October 11, 1951</li>
+<li>Duration: 29:29</li>
+<li>Episode: 122</li>
+</ul>
+<h3 id="e0113"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-10-18_123_The_Big_Story_Man.mp3">The
+Big Story Man</a></h3>
+<ul>
+<li>Date: October 18, 1951</li>
+<li>Duration: 25:56</li>
+<li>Episode: 123</li>
+</ul>
+<h3 id="e0114"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-10-25_124_The_Big_Market.mp3">The
+Big Market</a></h3>
+<ul>
+<li>Date: October 25, 1951</li>
+<li>Duration: 26:26</li>
+<li>Episode: 124</li>
+</ul>
+<h3 id="e0115"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-11-01_125_The_Big_Lease.mp3">The
+Big Lease</a></h3>
+<ul>
+<li>Date: November 1, 1951</li>
+<li>Duration: 29:33</li>
+<li>Episode: 125</li>
+</ul>
+<h3 id="e0116"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-11-08_126_The_Big_Hit_and_Run_Killer.mp3">The
+Big Hit and Run Killer</a></h3>
+<ul>
+<li>Date: November 8, 1951</li>
+<li>Duration: 29:46</li>
+<li>Episode: 126</li>
+</ul>
+<h3 id="e0117"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-11-15_127_The_Big_Bungalow.mp3">The
+Big Bungalow</a></h3>
+<ul>
+<li>Date: November 15, 1951</li>
+<li>Duration: 29:35</li>
+<li>Episode: 127</li>
+</ul>
+<h3 id="e0118"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-11-22_128_The_Big_Hands.mp3">The
+Big Hands</a></h3>
+<ul>
+<li>Date: November 22, 1951</li>
+<li>Duration: 29:19</li>
+<li>Episode: 128</li>
+</ul>
+<h3 id="e0119"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-11-29_129_The_Big_Affair.mp3">The
+Big Affair</a></h3>
+<ul>
+<li>Date: November 29, 1951</li>
+<li>Duration: 30:05</li>
+<li>Episode: 129</li>
+</ul>
+<h3 id="e0120"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-12-06_130_The_Big_Canaries.mp3">The
+Big Canaries</a></h3>
+<ul>
+<li>Date: December 6, 1951</li>
+<li>Duration: 30:05</li>
+<li>Episode: 130</li>
+</ul>
+<h3 id="e0121"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-12-13_131_The_Big_Overtime.mp3">The
+Big Overtime</a></h3>
+<ul>
+<li>Date: December 13, 1951</li>
+<li>Duration: 29:52</li>
+<li>Episode: 131</li>
+</ul>
+<h3 id="e0122"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-12-20_132_22_Rifle_for_Christmas.mp3">22
+Rifle for Christmas</a></h3>
+<ul>
+<li>Date: December 20, 1951</li>
+<li>Duration: 25:30</li>
+<li>Episode: 132</li>
+</ul>
+<h3 id="e0123"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_51-12-27_133_The_Big_Sorrow.mp3">The
+Big Sorrow</a></h3>
+<ul>
+<li>Date: December 27, 1951</li>
+<li>Duration: 29:47</li>
+<li>Episode: 133</li>
+</ul>
+<h2 id="y1952">1952</h2>
+<h3 id="e0124"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-01-03_134_The_Big_Red_Part_1.mp3">The
+Big Red Part 1</a></h3>
+<ul>
+<li>Date: January 3, 1952</li>
+<li>Duration: 29:26</li>
+<li>Episode: 134</li>
+</ul>
+<h3 id="e0125"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-01-10_135_The_Big_Red_Part_2.mp3">The
+Big Red Part 2</a></h3>
+<ul>
+<li>Date: January 10, 1952</li>
+<li>Duration: 29:28</li>
+<li>Episode: 135</li>
+</ul>
+<h3 id="e0126"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-01-17_136_The_Big_Juvenile_Division.mp3">The
+Big Juvenile Division</a></h3>
+<ul>
+<li>Date: January 17, 1952</li>
+<li>Duration: 29:47</li>
+<li>Episode: 136</li>
+</ul>
+<h3 id="e0127"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-01-31_138_The_Big_Almost_No_Show.mp3">The
+Big Almost No Show</a></h3>
+<ul>
+<li>Date: January 31, 1952</li>
+<li>Duration: 29:36</li>
+<li>Episode: 138</li>
+</ul>
+<h3 id="e0128"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-02-07_139_The_Big_Honeymoon.mp3">The
+Big Honeymoon</a></h3>
+<ul>
+<li>Date: February 7, 1952</li>
+<li>Duration: 29:23</li>
+<li>Episode: 139</li>
+</ul>
+<h3 id="e0129"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-02-14_140_The_Big_Phone_Call.mp3">The
+Big Phone Call</a></h3>
+<ul>
+<li>Date: February 14, 1952</li>
+<li>Duration: 29:34</li>
+<li>Episode: 140</li>
+</ul>
+<h3 id="e0130"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-02-21_141_The_Big_Producer.mp3">The
+Big Producer</a></h3>
+<ul>
+<li>Date: February 21, 1952</li>
+<li>Duration: 29:30</li>
+<li>Episode: 141</li>
+</ul>
+<h3 id="e0131"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-02-28_142_The_Big_Plant.mp3">The
+Big Plant</a></h3>
+<ul>
+<li>Date: February 28, 1952</li>
+<li>Duration: 29:24</li>
+<li>Episode: 142</li>
+</ul>
+<h3 id="e0132"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-03-06_143_The_Big_Evans.mp3">The
+Big Evans</a></h3>
+<ul>
+<li>Date: March 6, 1952</li>
+<li>Duration: 29:29</li>
+<li>Episode: 143</li>
+</ul>
+<h3 id="e0133"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-03-13_144_The_Big_Fire.mp3">The
+Big Fire</a></h3>
+<ul>
+<li>Date: March 13, 1952</li>
+<li>Duration: 29:34</li>
+<li>Episode: 144</li>
+</ul>
+<h3 id="e0134"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-03-20_145_The_Big_Border.mp3">The
+Big Border</a></h3>
+<ul>
+<li>Date: March 20, 1952</li>
+<li>Duration: 29:32</li>
+<li>Episode: 145</li>
+</ul>
+<h3 id="e0135"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-03-27_146_The_Big_Rose.mp3">The
+Big Rose</a></h3>
+<ul>
+<li>Date: March 27, 1952</li>
+<li>Duration: 29:32</li>
+<li>Episode: 146</li>
+</ul>
+<h3 id="e0136"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-04-03_147_The_Big_Streetcar.mp3">The
+Big Streetcar</a></h3>
+<ul>
+<li>Date: April 3, 1952</li>
+<li>Duration: 29:29</li>
+<li>Episode: 147</li>
+</ul>
+<h3 id="e0137"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-04-10_148_The_Big_Show.mp3">The
+Big Show</a></h3>
+<ul>
+<li>Date: April 10, 1952</li>
+<li>Duration: 29:28</li>
+<li>Episode: 148</li>
+</ul>
+<h3 id="e0138"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-04-17_149_The_Big_Bunco.mp3">The
+Big Bunco</a></h3>
+<ul>
+<li>Date: April 17, 1952</li>
+<li>Duration: 29:52</li>
+<li>Episode: 149</li>
+</ul>
+<h3 id="e0139"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-04-24_150_The_Big_Elevator.mp3">The
+Big Elevator</a></h3>
+<ul>
+<li>Date: April 24, 1952</li>
+<li>Duration: 29:25</li>
+<li>Episode: 150</li>
+</ul>
+<h3 id="e0140"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-05-01_151_The_Big_Safe.mp3">The
+Big Safe</a></h3>
+<ul>
+<li>Date: May 1, 1952</li>
+<li>Duration: 29:27</li>
+<li>Episode: 151</li>
+</ul>
+<h3 id="e0141"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-05-08_152_The_Big_Gamble.mp3">The
+Big Gamble</a></h3>
+<ul>
+<li>Date: May 8, 1952</li>
+<li>Duration: 29:31</li>
+<li>Episode: 152</li>
+</ul>
+<h3 id="e0142"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-05-15_153_The_Big_Mail.mp3">The
+Big Mail</a></h3>
+<ul>
+<li>Date: May 15, 1952</li>
+<li>Duration: 29:19</li>
+<li>Episode: 153</li>
+</ul>
+<h3 id="e0143"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-05-22_154_The_Big_Shakedown.mp3">The
+Big Shakedown</a></h3>
+<ul>
+<li>Date: May 22, 1952</li>
+<li>Duration: 29:21</li>
+<li>Episode: 154</li>
+</ul>
+<h3 id="e0144"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-05-29_155_The_Big_Fourth.mp3">The
+Big Fourth</a></h3>
+<ul>
+<li>Date: May 29, 1952</li>
+<li>Duration: 29:25</li>
+<li>Episode: 155</li>
+</ul>
+<h3 id="e0145"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-06-05_156_The_Big_Whiff.mp3">The
+Big Whiff</a></h3>
+<ul>
+<li>Date: June 5, 1952</li>
+<li>Duration: 29:22</li>
+<li>Episode: 156</li>
+</ul>
+<h3 id="e0146"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-06-19_158_The_Big_Jules.mp3">The
+Big Jules</a></h3>
+<ul>
+<li>Date: June 19, 1952</li>
+<li>Duration: 27:28</li>
+<li>Episode: 158</li>
+</ul>
+<h3 id="e0147"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-06-26_159_The_Big_Roll.mp3">The
+Big Roll</a></h3>
+<ul>
+<li>Date: June 26, 1952</li>
+<li>Duration: 29:19</li>
+<li>Episode: 159</li>
+</ul>
+<h3 id="e0148"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-07-03_160_The_Big_Trio.mp3">The
+Big Trio</a></h3>
+<ul>
+<li>Date: July 3, 1952</li>
+<li>Duration: 29:34</li>
+<li>Episode: 160</li>
+</ul>
+<h3 id="e0149"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-07-10_161_The_Big_Hate.mp3">The
+Big Hate</a></h3>
+<ul>
+<li>Date: July 10, 1952</li>
+<li>Duration: 29:14</li>
+<li>Episode: 161</li>
+</ul>
+<h3 id="e0150"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-07-31_162_The_Big_Signet.mp3">The
+Big Signet</a></h3>
+<ul>
+<li>Date: July 31, 1952</li>
+<li>Duration: 29:26</li>
+<li>Episode: 162</li>
+</ul>
+<h3 id="e0151"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-08-07_163_The_Big_Impression.mp3">The
+Big Impression</a></h3>
+<ul>
+<li>Date: August 7, 1952</li>
+<li>Duration: 29:31</li>
+<li>Episode: 163</li>
+</ul>
+<h3 id="e0152"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-08-14_164_The_Big_Drive.mp3">The
+Big Drive</a></h3>
+<ul>
+<li>Date: August 14, 1952</li>
+<li>Duration: 29:19</li>
+<li>Episode: 164</li>
+</ul>
+<h3 id="e0153"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-08-21_165_The_Big_Paper.mp3">The
+Big Paper</a></h3>
+<ul>
+<li>Date: August 21, 1952</li>
+<li>Duration: 29:38</li>
+<li>Episode: 165</li>
+</ul>
+<h3 id="e0154"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-08-28_166_The_Big_Test.mp3">The
+Big Test</a></h3>
+<ul>
+<li>Date: August 28, 1952</li>
+<li>Duration: 29:31</li>
+<li>Episode: 166</li>
+</ul>
+<h3 id="e0155"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-09-04_167_The_Big_Ray.mp3">The
+Big Ray</a></h3>
+<ul>
+<li>Date: September 4, 1952</li>
+<li>Duration: 29:34</li>
+<li>Episode: 167</li>
+</ul>
+<h3 id="e0156"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-09-11_168_The_Big_Tear.mp3">The
+Big Tear</a></h3>
+<ul>
+<li>Date: September 11, 1952</li>
+<li>Duration: 27:40</li>
+<li>Episode: 168</li>
+</ul>
+<h3 id="e0157"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-09-14_169_The_Big_Bull.mp3">The
+Big Bull</a></h3>
+<ul>
+<li>Date: September 14, 1952</li>
+<li>Duration: 29:36</li>
+<li>Episode: 169</li>
+</ul>
+<h3 id="e0158"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-09-21_170_The_Big_Shot.mp3">The
+Big Shot</a></h3>
+<ul>
+<li>Date: September 21, 1952</li>
+<li>Duration: 29:27</li>
+<li>Episode: 170</li>
+</ul>
+<h3 id="e0159"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-09-28_171_The_Big_Brain.mp3">The
+Big Brain</a></h3>
+<ul>
+<li>Date: September 28, 1952</li>
+<li>Duration: 25:17</li>
+<li>Episode: 171</li>
+</ul>
+<h3 id="e0160"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-10-05_172_The_Big_Jolt.mp3">The
+Big Jolt</a></h3>
+<ul>
+<li>Date: October 5, 1952</li>
+<li>Duration: 29:17</li>
+<li>Episode: 172</li>
+</ul>
+<h3 id="e0161"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-10-12_173_The_Big_Lie.mp3">The
+Big Lie</a></h3>
+<ul>
+<li>Date: October 12, 1952</li>
+<li>Duration: 29:34</li>
+<li>Episode: 173</li>
+</ul>
+<h3 id="e0162"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-10-19_174_The_Big_Pill.mp3">The
+Big Pill</a></h3>
+<ul>
+<li>Date: October 19, 1952</li>
+<li>Duration: 29:35</li>
+<li>Episode: 174</li>
+</ul>
+<h3 id="e0163"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-10-26_175_The_Big_Number.mp3">The
+Big Number</a></h3>
+<ul>
+<li>Date: October 26, 1952</li>
+<li>Duration: 29:39</li>
+<li>Episode: 175</li>
+</ul>
+<h3 id="e0164"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-11-02_176_The_Big_Light.mp3">The
+Big Light</a></h3>
+<ul>
+<li>Date: November 2, 1952</li>
+<li>Duration: 29:42</li>
+<li>Episode: 176</li>
+</ul>
+<h3 id="e0165"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-11-09_177_The_Big_Dive.mp3">The
+Big Dive</a></h3>
+<ul>
+<li>Date: November 9, 1952</li>
+<li>Duration: 29:27</li>
+<li>Episode: 177</li>
+</ul>
+<h3 id="e0166"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-11-16_178_The_Big_Walk.mp3">The
+Big Walk</a></h3>
+<ul>
+<li>Date: November 16, 1952</li>
+<li>Duration: 29:22</li>
+<li>Episode: 178</li>
+</ul>
+<h3 id="e0167"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-11-23_179_The_Big_Guilt.mp3">The
+Big Guilt</a></h3>
+<ul>
+<li>Date: November 23, 1952</li>
+<li>Duration: 29:25</li>
+<li>Episode: 179</li>
+</ul>
+<h3 id="e0168"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-11-30_180_The_Big_Shirt.mp3">The
+Big Shirt</a></h3>
+<ul>
+<li>Date: November 30, 1952</li>
+<li>Duration: 29:25</li>
+<li>Episode: 180</li>
+</ul>
+<h3 id="e0169"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-12-07_181_The_Big_Mole.mp3">The
+Big Mole</a></h3>
+<ul>
+<li>Date: December 7, 1952</li>
+<li>Duration: 29:29</li>
+<li>Episode: 181</li>
+</ul>
+<h3 id="e0170"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-12-14_182_The_Big_Eavesdrop.mp3">The
+Big Eavesdrop</a></h3>
+<ul>
+<li>Date: December 14, 1952</li>
+<li>Duration: 28:59</li>
+<li>Episode: 182</li>
+</ul>
+<h3 id="e0171"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-12-21_183_22_Rifle_for_Christmas.mp3">22
+Rifle for Christmas</a></h3>
+<ul>
+<li>Date: December 21, 1952</li>
+<li>Duration: 26:48</li>
+<li>Episode: 183</li>
+</ul>
+<h3 id="e0172"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_52-12-28_184_The_Big_Mask_Part_1.mp3">The
+Big Mask Part 1</a></h3>
+<ul>
+<li>Date: December 28, 1952</li>
+<li>Duration: 29:54</li>
+<li>Episode: 184</li>
+</ul>
+<h2 id="y1953">1953</h2>
+<h3 id="e0173"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-01-04_185_The_Big_Mask_Part_2.mp3">The
+Big Mask Part 2</a></h3>
+<ul>
+<li>Date: January 4, 1953</li>
+<li>Duration: 28:22</li>
+<li>Episode: 185</li>
+</ul>
+<h3 id="e0174"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-01-11_186_The_Big_Small.mp3">The
+Big Small</a></h3>
+<ul>
+<li>Date: January 11, 1953</li>
+<li>Duration: 29:28</li>
+<li>Episode: 186</li>
+</ul>
+<h3 id="e0175"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-01-18_187_The_Big_String.mp3">The
+Big String</a></h3>
+<ul>
+<li>Date: January 18, 1953</li>
+<li>Duration: 29:24</li>
+<li>Episode: 187</li>
+</ul>
+<h3 id="e0176"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-01-25_188_The_Big_Lay-Out.mp3">The
+Big Lay-Out</a></h3>
+<ul>
+<li>Date: January 25, 1953</li>
+<li>Duration: 29:43</li>
+<li>Episode: 188</li>
+</ul>
+<h3 id="e0177"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-02-01_189_The_Big_Strip.mp3">The
+Big Strip</a></h3>
+<ul>
+<li>Date: February 1, 1953</li>
+<li>Duration: 29:43</li>
+<li>Episode: 189</li>
+</ul>
+<h3 id="e0178"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-02-08_190_The_Big_Press.mp3">The
+Big Press</a></h3>
+<ul>
+<li>Date: February 8, 1953</li>
+<li>Duration: 29:32</li>
+<li>Episode: 190</li>
+</ul>
+<h3 id="e0179"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-02-15_191_The_Big_Tooth.mp3">The
+Big Tooth</a></h3>
+<ul>
+<li>Date: February 15, 1953</li>
+<li>Duration: 29:32</li>
+<li>Episode: 191</li>
+</ul>
+<h3 id="e0180"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-02-22_192_The_Big_Smoke.mp3">The
+Big Smoke</a></h3>
+<ul>
+<li>Date: February 22, 1953</li>
+<li>Duration: 29:34</li>
+<li>Episode: 192</li>
+</ul>
+<h3 id="e0181"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-03-01_193_The_Big_Want.mp3">The
+Big Want</a></h3>
+<ul>
+<li>Date: March 1, 1953</li>
+<li>Duration: 29:24</li>
+<li>Episode: 193</li>
+</ul>
+<h3 id="e0182"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-03-08_194_The_Big_Laugh.mp3">The
+Big Laugh</a></h3>
+<ul>
+<li>Date: March 8, 1953</li>
+<li>Duration: 29:32</li>
+<li>Episode: 194</li>
+</ul>
+<h3 id="e0183"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-03-08_194_The_Big_Laugh_AFRS.mp3">The
+Big Laugh AFRS</a></h3>
+<ul>
+<li>Date: March 8, 1953</li>
+<li>Duration: 25:15</li>
+<li>Episode: 194</li>
+</ul>
+<h3 id="e0184"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-03-15_195_The_Big_Impossible.mp3">The
+Big Impossible</a></h3>
+<ul>
+<li>Date: March 15, 1953</li>
+<li>Duration: 29:32</li>
+<li>Episode: 195</li>
+</ul>
+<h3 id="e0185"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-03-22_196_The_Big_Informant.mp3">The
+Big Informant</a></h3>
+<ul>
+<li>Date: March 22, 1953</li>
+<li>Duration: 29:43</li>
+<li>Episode: 196</li>
+</ul>
+<h3 id="e0186"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-03-29_197_The_Big_Dream.mp3">The
+Big Dream</a></h3>
+<ul>
+<li>Date: March 29, 1953</li>
+<li>Duration: 29:41</li>
+<li>Episode: 197</li>
+</ul>
+<h3 id="e0187"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-04-05_198_The_Big_Chet.mp3">The
+Big Chet</a></h3>
+<ul>
+<li>Date: April 5, 1953</li>
+<li>Duration: 28:55</li>
+<li>Episode: 198</li>
+</ul>
+<h3 id="e0188"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-04-12_199_The_Big_Compulsion.mp3">The
+Big Compulsion</a></h3>
+<ul>
+<li>Date: April 12, 1953</li>
+<li>Duration: 30:02</li>
+<li>Episode: 199</li>
+</ul>
+<h3 id="e0189"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-04-19_200_The_Big_Rip.mp3">The
+Big Rip</a></h3>
+<ul>
+<li>Date: April 19, 1953</li>
+<li>Duration: 28:55</li>
+<li>Episode: 200</li>
+</ul>
+<h3 id="e0190"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-04-26_201_The_Big_Scrapbook.mp3">The
+Big Scrapbook</a></h3>
+<ul>
+<li>Date: April 26, 1953</li>
+<li>Duration: 29:21</li>
+<li>Episode: 201</li>
+</ul>
+<h3 id="e0191"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-05-03_202_The_Big_Carney.mp3">The
+Big Carney</a></h3>
+<ul>
+<li>Date: May 3, 1953</li>
+<li>Duration: 29:25</li>
+<li>Episode: 202</li>
+</ul>
+<h3 id="e0192"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-05-10_203_The_Big_Joke.mp3">The
+Big Joke</a></h3>
+<ul>
+<li>Date: May 10, 1953</li>
+<li>Duration: 29:25</li>
+<li>Episode: 203</li>
+</ul>
+<h3 id="e0193"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-05-17_204_The_Big_False_Move.mp3">The
+Big False Move</a></h3>
+<ul>
+<li>Date: May 17, 1953</li>
+<li>Duration: 29:45</li>
+<li>Episode: 204</li>
+</ul>
+<h3 id="e0194"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-05-24_205_The_Big_Gun_Part_1.mp3">The
+Big Gun Part 1</a></h3>
+<ul>
+<li>Date: May 24, 1953</li>
+<li>Duration: 31:04</li>
+<li>Episode: 205</li>
+</ul>
+<h3 id="e0195"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-05-31_206_The_Big_Gun_Part_2.mp3">The
+Big Gun Part 2</a></h3>
+<ul>
+<li>Date: May 31, 1953</li>
+<li>Duration: 29:02</li>
+<li>Episode: 206</li>
+</ul>
+<h3 id="e0196"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-06-07_207_The_Big_Will.mp3">The
+Big Will</a></h3>
+<ul>
+<li>Date: June 7, 1953</li>
+<li>Duration: 29:36</li>
+<li>Episode: 207</li>
+</ul>
+<h3 id="e0197"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-06-14_208_The_Big_Lilly.mp3">The
+Big Lilly</a></h3>
+<ul>
+<li>Date: June 14, 1953</li>
+<li>Duration: 29:13</li>
+<li>Episode: 208</li>
+</ul>
+<h3 id="e0198"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-06-21_209_The_Big_Revolt.mp3">The
+Big Revolt</a></h3>
+<ul>
+<li>Date: June 21, 1953</li>
+<li>Duration: 29:29</li>
+<li>Episode: 209</li>
+</ul>
+<h3 id="e0199"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-06-28_210_The_Big_Ham.mp3">The
+Big Ham</a></h3>
+<ul>
+<li>Date: June 28, 1953</li>
+<li>Duration: 29:23</li>
+<li>Episode: 210</li>
+</ul>
+<h3 id="e0200"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-09-01_211_The_Big_Bop.mp3">The
+Big Bop</a></h3>
+<ul>
+<li>Date: September 1, 1953</li>
+<li>Duration: 29:28</li>
+<li>Episode: 211</li>
+</ul>
+<h3 id="e0201"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-09-08_212_The_Big_Lift.mp3">The
+Big Lift</a></h3>
+<ul>
+<li>Date: September 8, 1953</li>
+<li>Duration: 29:34</li>
+<li>Episode: 212</li>
+</ul>
+<h3 id="e0202"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-09-15_213_The_Big_Cab.mp3">The
+Big Cab</a></h3>
+<ul>
+<li>Date: September 15, 1953</li>
+<li>Duration: 29:28</li>
+<li>Episode: 213</li>
+</ul>
+<h3 id="e0203"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-09-22_214_The_Big_Slip.mp3">The
+Big Slip</a></h3>
+<ul>
+<li>Date: September 22, 1953</li>
+<li>Duration: 29:30</li>
+<li>Episode: 214</li>
+</ul>
+<h3 id="e0204"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-09-29_215_The_Big_Try.mp3">The
+Big Try</a></h3>
+<ul>
+<li>Date: September 29, 1953</li>
+<li>Duration: 29:43</li>
+<li>Episode: 215</li>
+</ul>
+<h3 id="e0205"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-10-06_216_The_Big_Little_Mother.mp3">The
+Big Little Mother</a></h3>
+<ul>
+<li>Date: October 6, 1953</li>
+<li>Duration: 29:32</li>
+<li>Episode: 216</li>
+</ul>
+<h3 id="e0206"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-10-13_217_The_Big_Plea.mp3">The
+Big Plea</a></h3>
+<ul>
+<li>Date: October 13, 1953</li>
+<li>Duration: 29:41</li>
+<li>Episode: 217</li>
+</ul>
+<h3 id="e0207"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-10-20_218_The_Big_Paint.mp3">The
+Big Paint</a></h3>
+<ul>
+<li>Date: October 20, 1953</li>
+<li>Duration: 29:41</li>
+<li>Episode: 218</li>
+</ul>
+<h3 id="e0208"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-10-27_219_The_Big_Fraud.mp3">The
+Big Fraud</a></h3>
+<ul>
+<li>Date: October 27, 1953</li>
+<li>Duration: 29:23</li>
+<li>Episode: 219</li>
+</ul>
+<h3 id="e0209"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-11-03_220_The_Big_Rain.mp3">The
+Big Rain</a></h3>
+<ul>
+<li>Date: November 3, 1953</li>
+<li>Duration: 29:16</li>
+<li>Episode: 220</li>
+</ul>
+<h3 id="e0210"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-11-10_221_The_Big_Kid.mp3">The
+Big Kid</a></h3>
+<ul>
+<li>Date: November 10, 1953</li>
+<li>Duration: 29:40</li>
+<li>Episode: 221</li>
+</ul>
+<h3 id="e0211"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-11-10_221_The_Big_Kid_AFRS.mp3">The
+Big Kid AFRS</a></h3>
+<ul>
+<li>Date: November 10, 1953</li>
+<li>Duration: 25:18</li>
+<li>Episode: 221</li>
+</ul>
+<h3 id="e0212"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-11-17_222_The_Big_Flight.mp3">The
+Big Flight</a></h3>
+<ul>
+<li>Date: November 17, 1953</li>
+<li>Duration: 25:43</li>
+<li>Episode: 222</li>
+</ul>
+<h3 id="e0213"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-11-24_223_The_Big_Present.mp3">The
+Big Present</a></h3>
+<ul>
+<li>Date: November 24, 1953</li>
+<li>Duration: 29:30</li>
+<li>Episode: 223</li>
+</ul>
+<h3 id="e0214"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-11-24_223_The_Big_Present_AFRS.mp3">The
+Big Present AFRS</a></h3>
+<ul>
+<li>Date: November 24, 1953</li>
+<li>Duration: 25:37</li>
+<li>Episode: 223</li>
+</ul>
+<h3 id="e0215"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-12-01_224_The_Big_Odd.mp3">The
+Big Odd</a></h3>
+<ul>
+<li>Date: December 1, 1953</li>
+<li>Duration: 29:38</li>
+<li>Episode: 224</li>
+</ul>
+<h3 id="e0216"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-12-01_224_The_Big_Odd_AFRS.mp3">The
+Big Odd AFRS</a></h3>
+<ul>
+<li>Date: December 1, 1953</li>
+<li>Duration: 25:32</li>
+<li>Episode: 224</li>
+</ul>
+<h3 id="e0217"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-12-08_225_The_Big_Pick.mp3">The
+Big Pick</a></h3>
+<ul>
+<li>Date: December 8, 1953</li>
+<li>Duration: 28:34</li>
+<li>Episode: 225</li>
+</ul>
+<h3 id="e0218"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-12-08_225_The_Big_Pick_AFRS.mp3">The
+Big Pick AFRS</a></h3>
+<ul>
+<li>Date: December 8, 1953</li>
+<li>Duration: 25:44</li>
+<li>Episode: 225</li>
+</ul>
+<h3 id="e0219"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-12-15_226_The_Big_Brink.mp3">The
+Big Brink</a></h3>
+<ul>
+<li>Date: December 15, 1953</li>
+<li>Duration: 29:26</li>
+<li>Episode: 226</li>
+</ul>
+<h3 id="e0220"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-12-15_226_The_Big_Brink_AFRS.mp3">The
+Big Brink AFRS</a></h3>
+<ul>
+<li>Date: December 15, 1953</li>
+<li>Duration: 25:04</li>
+<li>Episode: 226</li>
+</ul>
+<h3 id="e0221"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-12-22_227_The_Big_Little_Jesus.mp3">The
+Big Little Jesus</a></h3>
+<ul>
+<li>Date: December 22, 1953</li>
+<li>Duration: 29:19</li>
+<li>Episode: 227</li>
+</ul>
+<h3 id="e0222"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-12-29_228_The_Big_Steal.mp3">The
+Big Steal</a></h3>
+<ul>
+<li>Date: December 29, 1953</li>
+<li>Duration: 29:02</li>
+<li>Episode: 228</li>
+</ul>
+<h3 id="e0223"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_53-12-29_228_The_Big_Steal_AFRS.mp3">The
+Big Steal AFRS</a></h3>
+<ul>
+<li>Date: December 29, 1953</li>
+<li>Duration: 25:34</li>
+<li>Episode: 228</li>
+</ul>
+<h2 id="y1954">1954</h2>
+<h3 id="e0224"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-01-05_229_The_Big_Listen.mp3">The
+Big Listen</a></h3>
+<ul>
+<li>Date: January 5, 1954</li>
+<li>Duration: 29:31</li>
+<li>Episode: 229</li>
+</ul>
+<h3 id="e0225"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-01-05_229_The_Big_Listen_AFRS.mp3">The
+Big Listen AFRS</a></h3>
+<ul>
+<li>Date: January 5, 1954</li>
+<li>Duration: 24:55</li>
+<li>Episode: 229</li>
+</ul>
+<h3 id="e0226"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-01-12_230_The_Big_Switch.mp3">The
+Big Switch</a></h3>
+<ul>
+<li>Date: January 12, 1954</li>
+<li>Duration: 29:02</li>
+<li>Episode: 230</li>
+</ul>
+<h3 id="e0227"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-01-12_230_The_Big_Switch_AFRS.mp3">The
+Big Switch AFRS</a></h3>
+<ul>
+<li>Date: January 12, 1954</li>
+<li>Duration: 25:31</li>
+<li>Episode: 230</li>
+</ul>
+<h3 id="e0228"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-01-19_231_The_Big_Bill.mp3">The
+Big Bill</a></h3>
+<ul>
+<li>Date: January 19, 1954</li>
+<li>Duration: 25:36</li>
+<li>Episode: 231</li>
+</ul>
+<h3 id="e0229"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-01-19_231_The_Big_Bill_AFRS.mp3">The
+Big Bill AFRS</a></h3>
+<ul>
+<li>Date: January 19, 1954</li>
+<li>Duration: 25:01</li>
+<li>Episode: 231</li>
+</ul>
+<h3 id="e0230"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-01-26_232_The_Big_Bid.mp3">The
+Big Bid</a></h3>
+<ul>
+<li>Date: January 26, 1954</li>
+<li>Duration: 29:12</li>
+<li>Episode: 232</li>
+</ul>
+<h3 id="e0231"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-01-26_232_The_Big_Bid_AFRS.mp3">The
+Big Bid AFRS</a></h3>
+<ul>
+<li>Date: January 26, 1954</li>
+<li>Duration: 24:17</li>
+<li>Episode: 232</li>
+</ul>
+<h3 id="e0232"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-02-02_233_The_Big_Filth.mp3">The
+Big Filth</a></h3>
+<ul>
+<li>Date: February 2, 1954</li>
+<li>Duration: 29:17</li>
+<li>Episode: 233</li>
+</ul>
+<h3 id="e0233"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-02-02_233_The_Big_Filth_AFRS.mp3">The
+Big Filth AFRS</a></h3>
+<ul>
+<li>Date: February 2, 1954</li>
+<li>Duration: 25:37</li>
+<li>Episode: 233</li>
+</ul>
+<h3 id="e0234"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-02-09_234_The_Big_Broad.mp3">The
+Big Broad</a></h3>
+<ul>
+<li>Date: February 9, 1954</li>
+<li>Duration: 29:26</li>
+<li>Episode: 234</li>
+</ul>
+<h3 id="e0235"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-02-09_234_The_Big_Broad_AFRS.mp3">The
+Big Broad AFRS</a></h3>
+<ul>
+<li>Date: February 9, 1954</li>
+<li>Duration: 25:00</li>
+<li>Episode: 234</li>
+</ul>
+<h3 id="e0236"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-02-16_235_The_Big_Sucker.mp3">The
+Big Sucker</a></h3>
+<ul>
+<li>Date: February 16, 1954</li>
+<li>Duration: 29:27</li>
+<li>Episode: 235</li>
+</ul>
+<h3 id="e0237"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-02-16_235_The_Big_Sucker_AFRS.mp3">The
+Big Sucker AFRS</a></h3>
+<ul>
+<li>Date: February 16, 1954</li>
+<li>Duration: 26:08</li>
+<li>Episode: 235</li>
+</ul>
+<h3 id="e0238"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-02-23_236_The_Big_Pipe.mp3">The
+Big Pipe</a></h3>
+<ul>
+<li>Date: February 23, 1954</li>
+<li>Duration: 29:54</li>
+<li>Episode: 236</li>
+</ul>
+<h3 id="e0239"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-02-23_236_The_Big_Pipe_AFRS.mp3">The
+Big Pipe AFRS</a></h3>
+<ul>
+<li>Date: February 23, 1954</li>
+<li>Duration: 25:26</li>
+<li>Episode: 236</li>
+</ul>
+<h3 id="e0240"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-03-02_237_The_Big_TV.mp3">The
+Big TV</a></h3>
+<ul>
+<li>Date: March 2, 1954</li>
+<li>Duration: 29:02</li>
+<li>Episode: 237</li>
+</ul>
+<h3 id="e0241"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-03-02_237_The_Big_TV_AFRS.mp3">The
+Big TV AFRS</a></h3>
+<ul>
+<li>Date: March 2, 1954</li>
+<li>Duration: 23:54</li>
+<li>Episode: 237</li>
+</ul>
+<h3 id="e0242"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-03-09_238_The_Big_Cup.mp3">The
+Big Cup</a></h3>
+<ul>
+<li>Date: March 9, 1954</li>
+<li>Duration: 29:17</li>
+<li>Episode: 238</li>
+</ul>
+<h3 id="e0243"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-03-09_238_The_Big_Cup_AFRS.mp3">The
+Big Cup AFRS</a></h3>
+<ul>
+<li>Date: March 9, 1954</li>
+<li>Duration: 25:59</li>
+<li>Episode: 238</li>
+</ul>
+<h3 id="e0244"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-03-16_239_The_Big_Rod.mp3">The
+Big Rod</a></h3>
+<ul>
+<li>Date: March 16, 1954</li>
+<li>Duration: 29:52</li>
+<li>Episode: 239</li>
+</ul>
+<h3 id="e0245"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-03-16_239_The_Big_Rod_AFRS.mp3">The
+Big Rod AFRS</a></h3>
+<ul>
+<li>Date: March 16, 1954</li>
+<li>Duration: 24:06</li>
+<li>Episode: 239</li>
+</ul>
+<h3 id="e0246"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-03-23_240_The_Big_Mustache.mp3">The
+Big Mustache</a></h3>
+<ul>
+<li>Date: March 23, 1954</li>
+<li>Duration: 29:37</li>
+<li>Episode: 240</li>
+</ul>
+<h3 id="e0247"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-03-23_240_The_Big_Mustache_AFRS.mp3">The
+Big Mustache AFRS</a></h3>
+<ul>
+<li>Date: March 23, 1954</li>
+<li>Duration: 25:00</li>
+<li>Episode: 240</li>
+</ul>
+<h3 id="e0248"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-03-30_241_The_Big_Confession.mp3">The
+Big Confession</a></h3>
+<ul>
+<li>Date: March 30, 1954</li>
+<li>Duration: 29:48</li>
+<li>Episode: 241</li>
+</ul>
+<h3 id="e0249"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-03-30_241_The_Big_Confession_AFRS.mp3">The
+Big Confession AFRS</a></h3>
+<ul>
+<li>Date: March 30, 1954</li>
+<li>Duration: 26:03</li>
+<li>Episode: 241</li>
+</ul>
+<h3 id="e0250"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-04-06_242_The_Big_Saw.mp3">The
+Big Saw</a></h3>
+<ul>
+<li>Date: April 6, 1954</li>
+<li>Duration: 29:17</li>
+<li>Episode: 242</li>
+</ul>
+<h3 id="e0251"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-04-06_242_The_Big_Saw_AFRS.mp3">The
+Big Saw AFRS</a></h3>
+<ul>
+<li>Date: April 6, 1954</li>
+<li>Duration: 26:15</li>
+<li>Episode: 242</li>
+</ul>
+<h3 id="e0252"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-04-13_243_The_Big_Note.mp3">The
+Big Note</a></h3>
+<ul>
+<li>Date: April 13, 1954</li>
+<li>Duration: 29:18</li>
+<li>Episode: 243</li>
+</ul>
+<h3 id="e0253"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-04-13_243_The_Big_Note_AFRS.mp3">The
+Big Note AFRS</a></h3>
+<ul>
+<li>Date: April 13, 1954</li>
+<li>Duration: 26:06</li>
+<li>Episode: 243</li>
+</ul>
+<h3 id="e0254"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-04-20_244_The_Big_Net.mp3">The
+Big Net</a></h3>
+<ul>
+<li>Date: April 20, 1954</li>
+<li>Duration: 29:20</li>
+<li>Episode: 244</li>
+</ul>
+<h3 id="e0255"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-04-20_244_The_Big_Net_AFRS.mp3">The
+Big Net AFRS</a></h3>
+<ul>
+<li>Date: April 20, 1954</li>
+<li>Duration: 25:53</li>
+<li>Episode: 244</li>
+</ul>
+<h3 id="e0256"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-04-27_245_The_Big_Lift.mp3">The
+Big Lift</a></h3>
+<ul>
+<li>Date: April 27, 1954</li>
+<li>Duration: 29:10</li>
+<li>Episode: 245</li>
+</ul>
+<h3 id="e0257"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-04-27_245_The_Big_Lift_AFRS.mp3">The
+Big Lift AFRS</a></h3>
+<ul>
+<li>Date: April 27, 1954</li>
+<li>Duration: 25:09</li>
+<li>Episode: 245</li>
+</ul>
+<h3 id="e0258"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-05-04_246_The_Big_Stop.mp3">The
+Big Stop</a></h3>
+<ul>
+<li>Date: May 4, 1954</li>
+<li>Duration: 29:25</li>
+<li>Episode: 246</li>
+</ul>
+<h3 id="e0259"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-05-04_246_The_Big_Stop_AFRS.mp3">The
+Big Stop AFRS</a></h3>
+<ul>
+<li>Date: May 4, 1954</li>
+<li>Duration: 26:08</li>
+<li>Episode: 246</li>
+</ul>
+<h3 id="e0260"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-05-11_247_The_Big_Look.mp3">The
+Big Look</a></h3>
+<ul>
+<li>Date: May 11, 1954</li>
+<li>Duration: 28:54</li>
+<li>Episode: 247</li>
+</ul>
+<h3 id="e0261"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-05-11_247_The_Big_Look_AFRS.mp3">The
+Big Look AFRS</a></h3>
+<ul>
+<li>Date: May 11, 1954</li>
+<li>Duration: 25:39</li>
+<li>Episode: 247</li>
+</ul>
+<h3 id="e0262"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-05-18_248_The_Big_Help.mp3">The
+Big Help</a></h3>
+<ul>
+<li>Date: May 18, 1954</li>
+<li>Duration: 25:18</li>
+<li>Episode: 248</li>
+</ul>
+<h3 id="e0263"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-05-25_249_The_Big_Watch.mp3">The
+Big Watch</a></h3>
+<ul>
+<li>Date: May 25, 1954</li>
+<li>Duration: 26:21</li>
+<li>Episode: 249</li>
+</ul>
+<h3 id="e0264"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-06-01_250_The_Big_Cowboy.mp3">The
+Big Cowboy</a></h3>
+<ul>
+<li>Date: June 1, 1954</li>
+<li>Duration: 24:54</li>
+<li>Episode: 250</li>
+</ul>
+<h3 id="e0265"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-06-08_251_The_Big_Student.mp3">The
+Big Student</a></h3>
+<ul>
+<li>Date: June 8, 1954</li>
+<li>Duration: 25:58</li>
+<li>Episode: 251</li>
+</ul>
+<h3 id="e0266"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-06-15_252_The_Big_Cat.mp3">The
+Big Cat</a></h3>
+<ul>
+<li>Date: June 15, 1954</li>
+<li>Duration: 26:14</li>
+<li>Episode: 252</li>
+</ul>
+<h3 id="e0267"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-06-22_253_The_Big_Customer.mp3">The
+Big Customer</a></h3>
+<ul>
+<li>Date: June 22, 1954</li>
+<li>Duration: 25:57</li>
+<li>Episode: 253</li>
+</ul>
+<h3 id="e0268"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-06-29_254_The_Big_Chick.mp3">The
+Big Chick</a></h3>
+<ul>
+<li>Date: June 29, 1954</li>
+<li>Duration: 26:08</li>
+<li>Episode: 254</li>
+</ul>
+<h3 id="e0269"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-07-06_255_The_Big_Search.mp3">The
+Big Search</a></h3>
+<ul>
+<li>Date: July 6, 1954</li>
+<li>Duration: 25:55</li>
+<li>Episode: 255</li>
+</ul>
+<h3 id="e0270"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-07-13_256_The_Big_Rescue.mp3">The
+Big Rescue</a></h3>
+<ul>
+<li>Date: July 13, 1954</li>
+<li>Duration: 26:08</li>
+<li>Episode: 256</li>
+</ul>
+<h3 id="e0271"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-07-20_257_The_Big_Heel.mp3">The
+Big Heel</a></h3>
+<ul>
+<li>Date: July 20, 1954</li>
+<li>Duration: 25:59</li>
+<li>Episode: 257</li>
+</ul>
+<h3 id="e0272"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-07-27_258_The_Big_Match.mp3">The
+Big Match</a></h3>
+<ul>
+<li>Date: July 27, 1954</li>
+<li>Duration: 26:06</li>
+<li>Episode: 258</li>
+</ul>
+<h3 id="e0273"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-08-03_259_The_Big_Stand.mp3">The
+Big Stand</a></h3>
+<ul>
+<li>Date: August 3, 1954</li>
+<li>Duration: 29:08</li>
+<li>Episode: 259</li>
+</ul>
+<h3 id="e0274"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-08-03_259_The_Big_Stand_AFRS.mp3">The
+Big Stand AFRS</a></h3>
+<ul>
+<li>Date: August 3, 1954</li>
+<li>Duration: 25:48</li>
+<li>Episode: 259</li>
+</ul>
+<h3 id="e0275"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-08-10_260_The_Big_Wish.mp3">The
+Big Wish</a></h3>
+<ul>
+<li>Date: August 10, 1954</li>
+<li>Duration: 26:10</li>
+<li>Episode: 260</li>
+</ul>
+<h3 id="e0276"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-08-17_261_The_Big_Cad.mp3">The
+Big Cad</a></h3>
+<ul>
+<li>Date: August 17, 1954</li>
+<li>Duration: 26:21</li>
+<li>Episode: 261</li>
+</ul>
+<h3 id="e0277"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-08-24_262_The_Big_Shock.mp3">The
+Big Shock</a></h3>
+<ul>
+<li>Date: August 24, 1954</li>
+<li>Duration: 26:00</li>
+<li>Episode: 262</li>
+</ul>
+<h3 id="e0278"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-08-31_263_The_Big_Office.mp3">The
+Big Office</a></h3>
+<ul>
+<li>Date: August 31, 1954</li>
+<li>Duration: 25:44</li>
+<li>Episode: 263</li>
+</ul>
+<h3 id="e0279"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-09-07_264_The_Big_Trunk.mp3">The
+Big Trunk</a></h3>
+<ul>
+<li>Date: September 7, 1954</li>
+<li>Duration: 25:31</li>
+<li>Episode: 264</li>
+</ul>
+<h3 id="e0280"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-09-14_265_The_Big_Cut.mp3">The
+Big Cut</a></h3>
+<ul>
+<li>Date: September 14, 1954</li>
+<li>Duration: 29:24</li>
+<li>Episode: 265</li>
+</ul>
+<h3 id="e0281"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-09-14_265_The_Big_Cut_AFRS.mp3">The
+Big Cut AFRS</a></h3>
+<ul>
+<li>Date: September 14, 1954</li>
+<li>Duration: 25:40</li>
+<li>Episode: 265</li>
+</ul>
+<h3 id="e0282"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-09-21_266_The_Big_Try.mp3">The
+Big Try</a></h3>
+<ul>
+<li>Date: September 21, 1954</li>
+<li>Duration: 26:13</li>
+<li>Episode: 266</li>
+</ul>
+<h3 id="e0283"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-09-28_267_The_Big_Bible.mp3">The
+Big Bible</a></h3>
+<ul>
+<li>Date: September 28, 1954</li>
+<li>Duration: 29:11</li>
+<li>Episode: 267</li>
+</ul>
+<h3 id="e0284"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-09-28_267_The_Big_Bible_AFRS.mp3">The
+Big Bible AFRS</a></h3>
+<ul>
+<li>Date: September 28, 1954</li>
+<li>Duration: 26:11</li>
+<li>Episode: 267</li>
+</ul>
+<h3 id="e0285"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-10-05_268_The_Big_Handsome_Bandit.mp3">The
+Big Handsome Bandit</a></h3>
+<ul>
+<li>Date: October 5, 1954</li>
+<li>Duration: 26:01</li>
+<li>Episode: 268</li>
+</ul>
+<h3 id="e0286"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-10-12_269_The_Big_Tarbaby.mp3">The
+Big Tarbaby</a></h3>
+<ul>
+<li>Date: October 12, 1954</li>
+<li>Duration: 29:39</li>
+<li>Episode: 269</li>
+</ul>
+<h3 id="e0287"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-10-12_269_The_Big_Tarbaby_AFRS.mp3">The
+Big Tarbaby AFRS</a></h3>
+<ul>
+<li>Date: October 12, 1954</li>
+<li>Duration: 26:27</li>
+<li>Episode: 269</li>
+</ul>
+<h3 id="e0288"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-10-19_270_The_Big_Mannikin_AFRS.mp3">The
+Big Mannikin AFRS</a></h3>
+<ul>
+<li>Date: October 19, 1954</li>
+<li>Duration: 26:45</li>
+<li>Episode: 270</li>
+</ul>
+<h3 id="e0289"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-10-19_270The_Big_Mannikin.mp3">270The
+Big Mannikin</a></h3>
+<ul>
+<li>Date: October 19, 1954</li>
+<li>Duration: 29:18</li>
+<li>Episode: 288</li>
+</ul>
+<h3 id="e0290"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-10-26_271_The_Big_Key.mp3">The
+Big Key</a></h3>
+<ul>
+<li>Date: October 26, 1954</li>
+<li>Duration: 26:21</li>
+<li>Episode: 271</li>
+</ul>
+<h3 id="e0291"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-11-02_272_The_Big_Locker.mp3">The
+Big Locker</a></h3>
+<ul>
+<li>Date: November 2, 1954</li>
+<li>Duration: 29:32</li>
+<li>Episode: 272</li>
+</ul>
+<h3 id="e0292"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-11-09_273_The_Big_Coins.mp3">The
+Big Coins</a></h3>
+<ul>
+<li>Date: November 9, 1954</li>
+<li>Duration: 25:02</li>
+<li>Episode: 273</li>
+</ul>
+<h3 id="e0293"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-11-16_274_The_Big_Dog.mp3">The
+Big Dog</a></h3>
+<ul>
+<li>Date: November 16, 1954</li>
+<li>Duration: 24:47</li>
+<li>Episode: 274</li>
+</ul>
+<h3 id="e0294"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-11-23_275_The_Big_Switch.mp3">The
+Big Switch</a></h3>
+<ul>
+<li>Date: November 23, 1954</li>
+<li>Duration: 25:53</li>
+<li>Episode: 275</li>
+</ul>
+<h3 id="e0295"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-11-30_276_The_Big_Gone.mp3">The
+Big Gone</a></h3>
+<ul>
+<li>Date: November 30, 1954</li>
+<li>Duration: 26:06</li>
+<li>Episode: 276</li>
+</ul>
+<h3 id="e0296"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-12-07_277_The_Big_Dig.mp3">The
+Big Dig</a></h3>
+<ul>
+<li>Date: December 7, 1954</li>
+<li>Duration: 25:53</li>
+<li>Episode: 277</li>
+</ul>
+<h3 id="e0297"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-12-14_278_The_Big_Lens.mp3">The
+Big Lens</a></h3>
+<ul>
+<li>Date: December 14, 1954</li>
+<li>Duration: 26:27</li>
+<li>Episode: 278</li>
+</ul>
+<h3 id="e0298"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-12-21_279_The_Big_Little_Jesus.mp3">The
+Big Little Jesus</a></h3>
+<ul>
+<li>Date: December 21, 1954</li>
+<li>Duration: 27:20</li>
+<li>Episode: 279</li>
+</ul>
+<h3 id="e0299"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_54-12-28_280_The_Big_Underground.mp3">The
+Big Underground</a></h3>
+<ul>
+<li>Date: December 28, 1954</li>
+<li>Duration: 25:39</li>
+<li>Episode: 280</li>
+</ul>
+<h2 id="y1955">1955</h2>
+<h3 id="e0300"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-01-04_281_The_Big_Mug.mp3">The
+Big Mug</a></h3>
+<ul>
+<li>Date: January 4, 1955</li>
+<li>Duration: 26:06</li>
+<li>Episode: 281</li>
+</ul>
+<h3 id="e0301"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-01-11_282_The_Big_Complex.mp3">The
+Big Complex</a></h3>
+<ul>
+<li>Date: January 11, 1955</li>
+<li>Duration: 25:32</li>
+<li>Episode: 282</li>
+</ul>
+<h3 id="e0302"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-01-18_283_The_Big_Token.mp3">The
+Big Token</a></h3>
+<ul>
+<li>Date: January 18, 1955</li>
+<li>Duration: 25:32</li>
+<li>Episode: 283</li>
+</ul>
+<h3 id="e0303"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-01-25_284_The_Big_Bounce.mp3">The
+Big Bounce</a></h3>
+<ul>
+<li>Date: January 25, 1955</li>
+<li>Duration: 24:56</li>
+<li>Episode: 284</li>
+</ul>
+<h3 id="e0304"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-02-01_285_The_Big_Bird.mp3">The
+Big Bird</a></h3>
+<ul>
+<li>Date: February 1, 1955</li>
+<li>Duration: 25:56</li>
+<li>Episode: 285</li>
+</ul>
+<h3 id="e0305"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-02-08_286_The_Big_Gap.mp3">The
+Big Gap</a></h3>
+<ul>
+<li>Date: February 8, 1955</li>
+<li>Duration: 25:34</li>
+<li>Episode: 286</li>
+</ul>
+<h3 id="e0306"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-02-15_287_The_Big_Hat.mp3">The
+Big Hat</a></h3>
+<ul>
+<li>Date: February 15, 1955</li>
+<li>Duration: 25:13</li>
+<li>Episode: 287</li>
+</ul>
+<h3 id="e0307"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-02-22_288_The_Big_Slug.mp3">The
+Big Slug</a></h3>
+<ul>
+<li>Date: February 22, 1955</li>
+<li>Duration: 25:45</li>
+<li>Episode: 288</li>
+</ul>
+<h3 id="e0308"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-03-01_289_The_Big_Set-Up.mp3">The
+Big Set-Up</a></h3>
+<ul>
+<li>Date: March 1, 1955</li>
+<li>Duration: 25:51</li>
+<li>Episode: 289</li>
+</ul>
+<h3 id="e0309"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-03-08_290_The_Big_Father.mp3">The
+Big Father</a></h3>
+<ul>
+<li>Date: March 8, 1955</li>
+<li>Duration: 25:31</li>
+<li>Episode: 290</li>
+</ul>
+<h3 id="e0310"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-03-15_291_The_Big_Set.mp3">The
+Big Set</a></h3>
+<ul>
+<li>Date: March 15, 1955</li>
+<li>Duration: 25:12</li>
+<li>Episode: 291</li>
+</ul>
+<h3 id="e0311"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-03-15_291_The_Big_Set_AFRS.mp3">The
+Big Set AFRS</a></h3>
+<ul>
+<li>Date: March 15, 1955</li>
+<li>Duration: 25:40</li>
+<li>Episode: 291</li>
+</ul>
+<h3 id="e0312"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-03-22_292_The_Big_Talk.mp3">The
+Big Talk</a></h3>
+<ul>
+<li>Date: March 22, 1955</li>
+<li>Duration: 24:52</li>
+<li>Episode: 292</li>
+</ul>
+<h3 id="e0313"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-03-22_292_The_Big_Talk_AFRS.mp3">The
+Big Talk AFRS</a></h3>
+<ul>
+<li>Date: March 22, 1955</li>
+<li>Duration: 25:19</li>
+<li>Episode: 292</li>
+</ul>
+<h3 id="e0314"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-03-29_293_The_Big_Death.mp3">The
+Big Death</a></h3>
+<ul>
+<li>Date: March 29, 1955</li>
+<li>Duration: 24:17</li>
+<li>Episode: 293</li>
+</ul>
+<h3 id="e0315"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-04-05_294_The_Big_No_Tooth.mp3">The
+Big No Tooth</a></h3>
+<ul>
+<li>Date: April 5, 1955</li>
+<li>Duration: 24:00</li>
+<li>Episode: 294</li>
+</ul>
+<h3 id="e0316"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-04-12_295_The_Big_Tie.mp3">The
+Big Tie</a></h3>
+<ul>
+<li>Date: April 12, 1955</li>
+<li>Duration: 24:54</li>
+<li>Episode: 295</li>
+</ul>
+<h3 id="e0317"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-04-19_296_The_Big_Deal.mp3">The
+Big Deal</a></h3>
+<ul>
+<li>Date: April 19, 1955</li>
+<li>Duration: 24:34</li>
+<li>Episode: 296</li>
+</ul>
+<h3 id="e0318"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-04-26_297_The_Big_Child.mp3">The
+Big Child</a></h3>
+<ul>
+<li>Date: April 26, 1955</li>
+<li>Duration: 25:29</li>
+<li>Episode: 297</li>
+</ul>
+<h3 id="e0319"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-05-03_298_The_Big_Momma.mp3">The
+Big Momma</a></h3>
+<ul>
+<li>Date: May 3, 1955</li>
+<li>Duration: 25:26</li>
+<li>Episode: 298</li>
+</ul>
+<h3 id="e0320"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-05-10_299_The_Big_Revision.mp3">The
+Big Revision</a></h3>
+<ul>
+<li>Date: May 10, 1955</li>
+<li>Duration: 25:34</li>
+<li>Episode: 299</li>
+</ul>
+<h3 id="e0321"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-05-17_300_The_Big_Squealer.mp3">The
+Big Squealer</a></h3>
+<ul>
+<li>Date: May 17, 1955</li>
+<li>Duration: 25:27</li>
+<li>Episode: 300</li>
+</ul>
+<h3 id="e0322"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-05-24_301_The_Big_Siege.mp3">The
+Big Siege</a></h3>
+<ul>
+<li>Date: May 24, 1955</li>
+<li>Duration: 25:42</li>
+<li>Episode: 301</li>
+</ul>
+<h3 id="e0323"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-05-31_302_The_Big_Sisters.mp3">The
+Big Sisters</a></h3>
+<ul>
+<li>Date: May 31, 1955</li>
+<li>Duration: 29:19</li>
+<li>Episode: 302</li>
+</ul>
+<h3 id="e0324"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-05-31_302_The_Big_Sisters_AFRS.mp3">The
+Big Sisters AFRS</a></h3>
+<ul>
+<li>Date: May 31, 1955</li>
+<li>Duration: 25:23</li>
+<li>Episode: 302</li>
+</ul>
+<h3 id="e0325"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-06-07_303_The_Big_Limp.mp3">The
+Big Limp</a></h3>
+<ul>
+<li>Date: June 7, 1955</li>
+<li>Duration: 24:50</li>
+<li>Episode: 303</li>
+</ul>
+<h3 id="e0326"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-06-14_304_The_Big_Fall_Guy.mp3">The
+Big Fall Guy</a></h3>
+<ul>
+<li>Date: June 14, 1955</li>
+<li>Duration: 29:23</li>
+<li>Episode: 304</li>
+</ul>
+<h3 id="e0327"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-06-21_305_The_Big_Grab.mp3">The
+Big Grab</a></h3>
+<ul>
+<li>Date: June 21, 1955</li>
+<li>Duration: 25:14</li>
+<li>Episode: 305</li>
+</ul>
+<h3 id="e0328"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-06-28_306_The_Big_Convertible.mp3">The
+Big Convertible</a></h3>
+<ul>
+<li>Date: June 28, 1955</li>
+<li>Duration: 25:06</li>
+<li>Episode: 306</li>
+</ul>
+<h3 id="e0329"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-07-05_307_The_Big_Rush.mp3">The
+Big Rush</a></h3>
+<ul>
+<li>Date: July 5, 1955</li>
+<li>Duration: 24:39</li>
+<li>Episode: 307</li>
+</ul>
+<h3 id="e0330"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-07-12_308_The_Big_Genius.mp3">The
+Big Genius</a></h3>
+<ul>
+<li>Date: July 12, 1955</li>
+<li>Duration: 25:00</li>
+<li>Episode: 308</li>
+</ul>
+<h3 id="e0331"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-07-19_309_The_Big_Bobo.mp3">The
+Big Bobo</a></h3>
+<ul>
+<li>Date: July 19, 1955</li>
+<li>Duration: 29:07</li>
+<li>Episode: 309</li>
+</ul>
+<h3 id="e0332"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-07-26_310_The_Big_Housemaid.mp3">The
+Big Housemaid</a></h3>
+<ul>
+<li>Date: July 26, 1955</li>
+<li>Duration: 25:10</li>
+<li>Episode: 310</li>
+</ul>
+<h3 id="e0333"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-08-02_311_The_Big_Sheet.mp3">The
+Big Sheet</a></h3>
+<ul>
+<li>Date: August 2, 1955</li>
+<li>Duration: 24:59</li>
+<li>Episode: 311</li>
+</ul>
+<h3 id="e0334"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-08-09_312_The_Big_Missus.mp3">The
+Big Missus</a></h3>
+<ul>
+<li>Date: August 9, 1955</li>
+<li>Duration: 29:14</li>
+<li>Episode: 312</li>
+</ul>
+<h3 id="e0335"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-08-16_313_The_Big_Beer.mp3">The
+Big Beer</a></h3>
+<ul>
+<li>Date: August 16, 1955</li>
+<li>Duration: 26:26</li>
+<li>Episode: 313</li>
+</ul>
+<h3 id="e0336"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-08-23_314_The_Big_Blonde.mp3">The
+Big Blonde</a></h3>
+<ul>
+<li>Date: August 23, 1955</li>
+<li>Duration: 24:50</li>
+<li>Episode: 314</li>
+</ul>
+<h3 id="e0337"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-08-30_315_The_Big_Fellow.mp3">The
+Big Fellow</a></h3>
+<ul>
+<li>Date: August 30, 1955</li>
+<li>Duration: 24:16</li>
+<li>Episode: 315</li>
+</ul>
+<h3 id="e0338"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-09-06_316_The_Big_Ruling.mp3">The
+Big Ruling</a></h3>
+<ul>
+<li>Date: September 6, 1955</li>
+<li>Duration: 29:12</li>
+<li>Episode: 316</li>
+</ul>
+<h3 id="e0339"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-09-13_317_The_Big_Daughter.mp3">The
+Big Daughter</a></h3>
+<ul>
+<li>Date: September 13, 1955</li>
+<li>Duration: 25:04</li>
+<li>Episode: 317</li>
+</ul>
+<h3 id="e0340"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-09-20_318_The_Big_Close.mp3">The
+Big Close</a></h3>
+<ul>
+<li>Date: September 20, 1955</li>
+<li>Duration: 25:23</li>
+<li>Episode: 318</li>
+</ul>
+<h3 id="e0341"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_55-12-20_331_22_Rifle_for_Christmas.mp3">22
+Rifle for Christmas</a></h3>
+<ul>
+<li>Date: December 20, 1955</li>
+<li>Duration: 25:10</li>
+<li>Episode: 331</li>
+</ul>
+<h2 id="y1956">1956</h2>
+<h3 id="e0342"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_56-04-03_346_The_Big_Dream.mp3">The
+Big Dream</a></h3>
+<ul>
+<li>Date: April 3, 1956</li>
+<li>Duration: 26:23</li>
+<li>Episode: 346</li>
+</ul>
+<h3 id="e0343"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_56-05-01_350_The_Big_Scrapbook.mp3">The
+Big Scrapbook</a></h3>
+<ul>
+<li>Date: May 1, 1956</li>
+<li>Duration: 25:41</li>
+<li>Episode: 350</li>
+</ul>
+<h3 id="e0344"><a
+href="https://archive.org/download/OTRR_Dragnet_Singles/Dragnet_56-10-30_365_The_Big_Present.mp3">The
+Big Present</a></h3>
+<ul>
+<li>Date: October 30, 1956</li>
+<li>Duration: 25:45</li>
+<li>Episode: 365</li>
+</ul>
+<h2 id="byDate">Appendix A: By Date</h2>
+<ul>
+<li><a href="#e0001">1949-06-10: Production 2 aka Homicide aka The
+Nickel Plated Gun</a></li>
+<li><a href="#e0002">1949-06-17: Production 3 aka The Werewolf</a></li>
+<li><a href="#e0003">1949-06-24: Production 4 aka Homicide aka Quick
+Trigger Gun Men</a></li>
+<li><a href="#e0004">1949-07-07: The Helen Corday Murder</a></li>
+<li><a href="#e0005">1949-07-14: Red Light Bandit</a></li>
+<li><a href="#e0006">1949-07-21: Attempted City Hall Bombing</a></li>
+<li><a href="#e0007">1949-07-28: Missing Persons - Juanita
+Lasky</a></li>
+<li><a href="#e0008">1949-08-04: Benny Trounsel - Narcotics</a></li>
+<li><a href="#e0009">1949-08-11: Production 10 aka Homicide aka Maniac
+Murderer aka Mad Killer At Large</a></li>
+<li><a href="#e0010">1949-08-18: Production 11 aka Sixteen Jewel
+Thieves</a></li>
+<li><a href="#e0011">1949-08-25: Police Academy - Mario Koski</a></li>
+<li><a href="#e0012">1949-09-01: Auto Burglaries - Myra the
+Redhead</a></li>
+<li><a href="#e0013">1949-09-03: Eric Kelby - Body Buried In
+Nursery</a></li>
+<li><a href="#e0014">1949-09-10: Sullivan Kidnapping</a></li>
+<li><a href="#e0015">1949-09-17: James Vickers - Cop Killing - Tunnel
+Chase</a></li>
+<li><a href="#e0016">1949-09-24: Brick-Bat Slayer</a></li>
+<li><a href="#e0017">1949-10-01: Truck Hi-jackers - Tom Laval</a></li>
+<li><a href="#e0018">1949-11-24: Mrs. Rinard Albert Barry -
+Mother-In-Law Murder</a></li>
+<li><a href="#e0019">1949-12-01: Spring Street Gang - Juveniles</a></li>
+<li><a href="#e0020">1949-12-08: George Quan - The Jade Thumb
+Rings</a></li>
+<li><a href="#e0021">1949-12-22: 22 Rifle for Christmas</a></li>
+<li><a href="#e0022">1949-12-29: The Roseland Roof Murders</a></li>
+<li><a href="#e0023">1950-01-05: Max Tyler - Escaped Convict</a></li>
+<li><a href="#e0024">1950-01-12: The Big Man Part 1 Narcotics</a></li>
+<li><a href="#e0025">1950-01-19: The Big Man Part 2 Narcotics</a></li>
+<li><a href="#e0026">1950-02-02: Claude Jimmerson Child Killer</a></li>
+<li><a href="#e0027">1950-02-09: The Big Girl</a></li>
+<li><a href="#e0028">1950-02-23: The Big Grifter</a></li>
+<li><a href="#e0029">1950-03-02: The Big Kill</a></li>
+<li><a href="#e0030">1950-03-09: The Big Thank You</a></li>
+<li><a href="#e0031">1950-03-16: The Big Boys</a></li>
+<li><a href="#e0032">1950-03-23: The Big Gangster Part 1</a></li>
+<li><a href="#e0033">1950-03-30: The Big Gangster Part 2</a></li>
+<li><a href="#e0034">1950-04-06: The Big Book</a></li>
+<li><a href="#e0035">1950-04-13: The Big Watch</a></li>
+<li><a href="#e0036">1950-04-20: The Big Trial</a></li>
+<li><a href="#e0037">1950-04-27: The Big Job</a></li>
+<li><a href="#e0038">1950-05-04: The Big Badge</a></li>
+<li><a href="#e0039">1950-05-11: The Big Knife</a></li>
+<li><a href="#e0040">1950-05-18: The Big Pug</a></li>
+<li><a href="#e0041">1950-05-25: The Big Key</a></li>
+<li><a href="#e0042">1950-06-01: The Big Fake</a></li>
+<li><a href="#e0043">1950-06-08: The Big Smart Guy</a></li>
+<li><a href="#e0044">1950-06-08: Big Smart Guy AFRS46</a></li>
+<li><a href="#e0045">1950-06-15: The Big Press</a></li>
+<li><a href="#e0046">1950-06-22: The Big Mink</a></li>
+<li><a href="#e0047">1950-06-22: Big Mink AFRS48</a></li>
+<li><a href="#e0048">1950-06-29: The Big Grab</a></li>
+<li><a href="#e0049">1950-07-06: The Big Frame</a></li>
+<li><a href="#e0050">1950-07-13: The Big Bomb</a></li>
+<li><a href="#e0051">1950-07-20: The Big Gent Part 1</a></li>
+<li><a href="#e0052">1950-07-27: The Big Gent Part 2</a></li>
+<li><a href="#e0053">1950-08-03: The Big Dare</a></li>
+<li><a href="#e0054">1950-08-10: The Big Actor</a></li>
+<li><a href="#e0055">1950-08-17: The Big Youngster</a></li>
+<li><a href="#e0056">1950-08-24: The Big Chance</a></li>
+<li><a href="#e0057">1950-08-31: The Big Check</a></li>
+<li><a href="#e0058">1950-09-07: The Big Poison</a></li>
+<li><a href="#e0059">1950-09-14: The Big Make</a></li>
+<li><a href="#e0060">1950-09-21: The Big Pair</a></li>
+<li><a href="#e0061">1950-09-28: The Big Death</a></li>
+<li><a href="#e0062">1950-10-05: The Big 38</a></li>
+<li><a href="#e0063">1950-10-12: The Big Quack</a></li>
+<li><a href="#e0064">1950-10-19: The Big Grandma</a></li>
+<li><a href="#e0065">1950-10-26: The Big Meet</a></li>
+<li><a href="#e0066">1950-11-02: The Big Church</a></li>
+<li><a href="#e0067">1950-11-09: The Big Mother</a></li>
+<li><a href="#e0068">1950-11-16: The Big Parrot</a></li>
+<li><a href="#e0069">1950-11-23: The Big Betty</a></li>
+<li><a href="#e0070">1950-11-30: The Big Car</a></li>
+<li><a href="#e0071">1950-12-07: The Big Picture</a></li>
+<li><a href="#e0072">1950-12-14: The Big Break</a></li>
+<li><a href="#e0073">1950-12-21: 22 Rifle for Christmas</a></li>
+<li><a href="#e0074">1950-12-28: The Big Family</a></li>
+<li><a href="#e0075">1951-01-04: The Big Holdup</a></li>
+<li><a href="#e0076">1951-01-11: The Big Jump</a></li>
+<li><a href="#e0077">1951-01-18: The Big Dance</a></li>
+<li><a href="#e0078">1951-01-25: The Big Tomato</a></li>
+<li><a href="#e0079">1951-02-01: The Big Children</a></li>
+<li><a href="#e0080">1951-02-08: The Big Cast</a></li>
+<li><a href="#e0081">1951-02-15: The Big Crime</a></li>
+<li><a href="#e0082">1951-02-22: The Big Couple</a></li>
+<li><a href="#e0083">1951-03-01: The Big Partner</a></li>
+<li><a href="#e0084">1951-03-08: The Big New Years</a></li>
+<li><a href="#e0085">1951-03-15: The Big Ben</a></li>
+<li><a href="#e0086">1951-04-05: The Big Friend</a></li>
+<li><a href="#e0087">1951-04-12: The Big Threat</a></li>
+<li><a href="#e0088">1951-04-19: The Big Speech</a></li>
+<li><a href="#e0089">1951-04-26: The Big Saint</a></li>
+<li><a href="#e0090">1951-05-03: The Big Casing</a></li>
+<li><a href="#e0091">1951-05-10: The Big Drills</a></li>
+<li><a href="#e0092">1951-05-17: The Big Blast</a></li>
+<li><a href="#e0093">1951-05-24: The Big Mailman</a></li>
+<li><a href="#e0094">1951-05-31: The Big Bindle</a></li>
+<li><a href="#e0095">1951-06-07: The Big Imposter</a></li>
+<li><a href="#e0096">1951-06-14: The Big Building</a></li>
+<li><a href="#e0097">1951-06-21: The Big Run</a></li>
+<li><a href="#e0098">1951-06-28: The Big Cliff</a></li>
+<li><a href="#e0099">1951-07-05: The Big Love</a></li>
+<li><a href="#e0100">1951-07-12: The Big Set-Up</a></li>
+<li><a href="#e0101">1951-07-19: The Big Sophomore</a></li>
+<li><a href="#e0102">1951-07-26: The Big Late Script</a></li>
+<li><a href="#e0103">1951-08-09: The Big Screen</a></li>
+<li><a href="#e0104">1951-08-16: The Big Winchester</a></li>
+<li><a href="#e0105">1951-08-23: The Big In-Laws</a></li>
+<li><a href="#e0106">1951-08-30: The Big Crazy</a></li>
+<li><a href="#e0107">1951-09-06: The Big 17</a></li>
+<li><a href="#e0108">1951-09-13: The Big Waiter</a></li>
+<li><a href="#e0109">1951-09-20: The Big Sour</a></li>
+<li><a href="#e0110">1951-09-27: The Big September Man</a></li>
+<li><a href="#e0111">1951-10-04: The Big Want Ad</a></li>
+<li><a href="#e0112">1951-10-11: The Big Shoplift</a></li>
+<li><a href="#e0113">1951-10-18: The Big Story Man</a></li>
+<li><a href="#e0114">1951-10-25: The Big Market</a></li>
+<li><a href="#e0115">1951-11-01: The Big Lease</a></li>
+<li><a href="#e0116">1951-11-08: The Big Hit and Run Killer</a></li>
+<li><a href="#e0117">1951-11-15: The Big Bungalow</a></li>
+<li><a href="#e0118">1951-11-22: The Big Hands</a></li>
+<li><a href="#e0119">1951-11-29: The Big Affair</a></li>
+<li><a href="#e0120">1951-12-06: The Big Canaries</a></li>
+<li><a href="#e0121">1951-12-13: The Big Overtime</a></li>
+<li><a href="#e0122">1951-12-20: 22 Rifle for Christmas</a></li>
+<li><a href="#e0123">1951-12-27: The Big Sorrow</a></li>
+<li><a href="#e0124">1952-01-03: The Big Red Part 1</a></li>
+<li><a href="#e0125">1952-01-10: The Big Red Part 2</a></li>
+<li><a href="#e0126">1952-01-17: The Big Juvenile Division</a></li>
+<li><a href="#e0127">1952-01-31: The Big Almost No Show</a></li>
+<li><a href="#e0128">1952-02-07: The Big Honeymoon</a></li>
+<li><a href="#e0129">1952-02-14: The Big Phone Call</a></li>
+<li><a href="#e0130">1952-02-21: The Big Producer</a></li>
+<li><a href="#e0131">1952-02-28: The Big Plant</a></li>
+<li><a href="#e0132">1952-03-06: The Big Evans</a></li>
+<li><a href="#e0133">1952-03-13: The Big Fire</a></li>
+<li><a href="#e0134">1952-03-20: The Big Border</a></li>
+<li><a href="#e0135">1952-03-27: The Big Rose</a></li>
+<li><a href="#e0136">1952-04-03: The Big Streetcar</a></li>
+<li><a href="#e0137">1952-04-10: The Big Show</a></li>
+<li><a href="#e0138">1952-04-17: The Big Bunco</a></li>
+<li><a href="#e0139">1952-04-24: The Big Elevator</a></li>
+<li><a href="#e0140">1952-05-01: The Big Safe</a></li>
+<li><a href="#e0141">1952-05-08: The Big Gamble</a></li>
+<li><a href="#e0142">1952-05-15: The Big Mail</a></li>
+<li><a href="#e0143">1952-05-22: The Big Shakedown</a></li>
+<li><a href="#e0144">1952-05-29: The Big Fourth</a></li>
+<li><a href="#e0145">1952-06-05: The Big Whiff</a></li>
+<li><a href="#e0146">1952-06-19: The Big Jules</a></li>
+<li><a href="#e0147">1952-06-26: The Big Roll</a></li>
+<li><a href="#e0148">1952-07-03: The Big Trio</a></li>
+<li><a href="#e0149">1952-07-10: The Big Hate</a></li>
+<li><a href="#e0150">1952-07-31: The Big Signet</a></li>
+<li><a href="#e0151">1952-08-07: The Big Impression</a></li>
+<li><a href="#e0152">1952-08-14: The Big Drive</a></li>
+<li><a href="#e0153">1952-08-21: The Big Paper</a></li>
+<li><a href="#e0154">1952-08-28: The Big Test</a></li>
+<li><a href="#e0155">1952-09-04: The Big Ray</a></li>
+<li><a href="#e0156">1952-09-11: The Big Tear</a></li>
+<li><a href="#e0157">1952-09-14: The Big Bull</a></li>
+<li><a href="#e0158">1952-09-21: The Big Shot</a></li>
+<li><a href="#e0159">1952-09-28: The Big Brain</a></li>
+<li><a href="#e0160">1952-10-05: The Big Jolt</a></li>
+<li><a href="#e0161">1952-10-12: The Big Lie</a></li>
+<li><a href="#e0162">1952-10-19: The Big Pill</a></li>
+<li><a href="#e0163">1952-10-26: The Big Number</a></li>
+<li><a href="#e0164">1952-11-02: The Big Light</a></li>
+<li><a href="#e0165">1952-11-09: The Big Dive</a></li>
+<li><a href="#e0166">1952-11-16: The Big Walk</a></li>
+<li><a href="#e0167">1952-11-23: The Big Guilt</a></li>
+<li><a href="#e0168">1952-11-30: The Big Shirt</a></li>
+<li><a href="#e0169">1952-12-07: The Big Mole</a></li>
+<li><a href="#e0170">1952-12-14: The Big Eavesdrop</a></li>
+<li><a href="#e0171">1952-12-21: 22 Rifle for Christmas</a></li>
+<li><a href="#e0172">1952-12-28: The Big Mask Part 1</a></li>
+<li><a href="#e0173">1953-01-04: The Big Mask Part 2</a></li>
+<li><a href="#e0174">1953-01-11: The Big Small</a></li>
+<li><a href="#e0175">1953-01-18: The Big String</a></li>
+<li><a href="#e0176">1953-01-25: The Big Lay-Out</a></li>
+<li><a href="#e0177">1953-02-01: The Big Strip</a></li>
+<li><a href="#e0178">1953-02-08: The Big Press</a></li>
+<li><a href="#e0179">1953-02-15: The Big Tooth</a></li>
+<li><a href="#e0180">1953-02-22: The Big Smoke</a></li>
+<li><a href="#e0181">1953-03-01: The Big Want</a></li>
+<li><a href="#e0182">1953-03-08: The Big Laugh</a></li>
+<li><a href="#e0183">1953-03-08: The Big Laugh AFRS</a></li>
+<li><a href="#e0184">1953-03-15: The Big Impossible</a></li>
+<li><a href="#e0185">1953-03-22: The Big Informant</a></li>
+<li><a href="#e0186">1953-03-29: The Big Dream</a></li>
+<li><a href="#e0187">1953-04-05: The Big Chet</a></li>
+<li><a href="#e0188">1953-04-12: The Big Compulsion</a></li>
+<li><a href="#e0189">1953-04-19: The Big Rip</a></li>
+<li><a href="#e0190">1953-04-26: The Big Scrapbook</a></li>
+<li><a href="#e0191">1953-05-03: The Big Carney</a></li>
+<li><a href="#e0192">1953-05-10: The Big Joke</a></li>
+<li><a href="#e0193">1953-05-17: The Big False Move</a></li>
+<li><a href="#e0194">1953-05-24: The Big Gun Part 1</a></li>
+<li><a href="#e0195">1953-05-31: The Big Gun Part 2</a></li>
+<li><a href="#e0196">1953-06-07: The Big Will</a></li>
+<li><a href="#e0197">1953-06-14: The Big Lilly</a></li>
+<li><a href="#e0198">1953-06-21: The Big Revolt</a></li>
+<li><a href="#e0199">1953-06-28: The Big Ham</a></li>
+<li><a href="#e0200">1953-09-01: The Big Bop</a></li>
+<li><a href="#e0201">1953-09-08: The Big Lift</a></li>
+<li><a href="#e0202">1953-09-15: The Big Cab</a></li>
+<li><a href="#e0203">1953-09-22: The Big Slip</a></li>
+<li><a href="#e0204">1953-09-29: The Big Try</a></li>
+<li><a href="#e0205">1953-10-06: The Big Little Mother</a></li>
+<li><a href="#e0206">1953-10-13: The Big Plea</a></li>
+<li><a href="#e0207">1953-10-20: The Big Paint</a></li>
+<li><a href="#e0208">1953-10-27: The Big Fraud</a></li>
+<li><a href="#e0209">1953-11-03: The Big Rain</a></li>
+<li><a href="#e0210">1953-11-10: The Big Kid</a></li>
+<li><a href="#e0211">1953-11-10: The Big Kid AFRS</a></li>
+<li><a href="#e0212">1953-11-17: The Big Flight</a></li>
+<li><a href="#e0213">1953-11-24: The Big Present</a></li>
+<li><a href="#e0214">1953-11-24: The Big Present AFRS</a></li>
+<li><a href="#e0215">1953-12-01: The Big Odd</a></li>
+<li><a href="#e0216">1953-12-01: The Big Odd AFRS</a></li>
+<li><a href="#e0217">1953-12-08: The Big Pick</a></li>
+<li><a href="#e0218">1953-12-08: The Big Pick AFRS</a></li>
+<li><a href="#e0219">1953-12-15: The Big Brink</a></li>
+<li><a href="#e0220">1953-12-15: The Big Brink AFRS</a></li>
+<li><a href="#e0221">1953-12-22: The Big Little Jesus</a></li>
+<li><a href="#e0222">1953-12-29: The Big Steal</a></li>
+<li><a href="#e0223">1953-12-29: The Big Steal AFRS</a></li>
+<li><a href="#e0224">1954-01-05: The Big Listen</a></li>
+<li><a href="#e0225">1954-01-05: The Big Listen AFRS</a></li>
+<li><a href="#e0226">1954-01-12: The Big Switch</a></li>
+<li><a href="#e0227">1954-01-12: The Big Switch AFRS</a></li>
+<li><a href="#e0228">1954-01-19: The Big Bill</a></li>
+<li><a href="#e0229">1954-01-19: The Big Bill AFRS</a></li>
+<li><a href="#e0230">1954-01-26: The Big Bid</a></li>
+<li><a href="#e0231">1954-01-26: The Big Bid AFRS</a></li>
+<li><a href="#e0232">1954-02-02: The Big Filth</a></li>
+<li><a href="#e0233">1954-02-02: The Big Filth AFRS</a></li>
+<li><a href="#e0234">1954-02-09: The Big Broad</a></li>
+<li><a href="#e0235">1954-02-09: The Big Broad AFRS</a></li>
+<li><a href="#e0236">1954-02-16: The Big Sucker</a></li>
+<li><a href="#e0237">1954-02-16: The Big Sucker AFRS</a></li>
+<li><a href="#e0238">1954-02-23: The Big Pipe</a></li>
+<li><a href="#e0239">1954-02-23: The Big Pipe AFRS</a></li>
+<li><a href="#e0240">1954-03-02: The Big TV</a></li>
+<li><a href="#e0241">1954-03-02: The Big TV AFRS</a></li>
+<li><a href="#e0242">1954-03-09: The Big Cup</a></li>
+<li><a href="#e0243">1954-03-09: The Big Cup AFRS</a></li>
+<li><a href="#e0244">1954-03-16: The Big Rod</a></li>
+<li><a href="#e0245">1954-03-16: The Big Rod AFRS</a></li>
+<li><a href="#e0246">1954-03-23: The Big Mustache</a></li>
+<li><a href="#e0247">1954-03-23: The Big Mustache AFRS</a></li>
+<li><a href="#e0248">1954-03-30: The Big Confession</a></li>
+<li><a href="#e0249">1954-03-30: The Big Confession AFRS</a></li>
+<li><a href="#e0250">1954-04-06: The Big Saw</a></li>
+<li><a href="#e0251">1954-04-06: The Big Saw AFRS</a></li>
+<li><a href="#e0252">1954-04-13: The Big Note</a></li>
+<li><a href="#e0253">1954-04-13: The Big Note AFRS</a></li>
+<li><a href="#e0254">1954-04-20: The Big Net</a></li>
+<li><a href="#e0255">1954-04-20: The Big Net AFRS</a></li>
+<li><a href="#e0256">1954-04-27: The Big Lift</a></li>
+<li><a href="#e0257">1954-04-27: The Big Lift AFRS</a></li>
+<li><a href="#e0258">1954-05-04: The Big Stop</a></li>
+<li><a href="#e0259">1954-05-04: The Big Stop AFRS</a></li>
+<li><a href="#e0260">1954-05-11: The Big Look</a></li>
+<li><a href="#e0261">1954-05-11: The Big Look AFRS</a></li>
+<li><a href="#e0262">1954-05-18: The Big Help</a></li>
+<li><a href="#e0263">1954-05-25: The Big Watch</a></li>
+<li><a href="#e0264">1954-06-01: The Big Cowboy</a></li>
+<li><a href="#e0265">1954-06-08: The Big Student</a></li>
+<li><a href="#e0266">1954-06-15: The Big Cat</a></li>
+<li><a href="#e0267">1954-06-22: The Big Customer</a></li>
+<li><a href="#e0268">1954-06-29: The Big Chick</a></li>
+<li><a href="#e0269">1954-07-06: The Big Search</a></li>
+<li><a href="#e0270">1954-07-13: The Big Rescue</a></li>
+<li><a href="#e0271">1954-07-20: The Big Heel</a></li>
+<li><a href="#e0272">1954-07-27: The Big Match</a></li>
+<li><a href="#e0273">1954-08-03: The Big Stand</a></li>
+<li><a href="#e0274">1954-08-03: The Big Stand AFRS</a></li>
+<li><a href="#e0275">1954-08-10: The Big Wish</a></li>
+<li><a href="#e0276">1954-08-17: The Big Cad</a></li>
+<li><a href="#e0277">1954-08-24: The Big Shock</a></li>
+<li><a href="#e0278">1954-08-31: The Big Office</a></li>
+<li><a href="#e0279">1954-09-07: The Big Trunk</a></li>
+<li><a href="#e0280">1954-09-14: The Big Cut</a></li>
+<li><a href="#e0281">1954-09-14: The Big Cut AFRS</a></li>
+<li><a href="#e0282">1954-09-21: The Big Try</a></li>
+<li><a href="#e0283">1954-09-28: The Big Bible</a></li>
+<li><a href="#e0284">1954-09-28: The Big Bible AFRS</a></li>
+<li><a href="#e0285">1954-10-05: The Big Handsome Bandit</a></li>
+<li><a href="#e0286">1954-10-12: The Big Tarbaby</a></li>
+<li><a href="#e0287">1954-10-12: The Big Tarbaby AFRS</a></li>
+<li><a href="#e0288">1954-10-19: The Big Mannikin AFRS</a></li>
+<li><a href="#e0289">1954-10-19: 270The Big Mannikin</a></li>
+<li><a href="#e0290">1954-10-26: The Big Key</a></li>
+<li><a href="#e0291">1954-11-02: The Big Locker</a></li>
+<li><a href="#e0292">1954-11-09: The Big Coins</a></li>
+<li><a href="#e0293">1954-11-16: The Big Dog</a></li>
+<li><a href="#e0294">1954-11-23: The Big Switch</a></li>
+<li><a href="#e0295">1954-11-30: The Big Gone</a></li>
+<li><a href="#e0296">1954-12-07: The Big Dig</a></li>
+<li><a href="#e0297">1954-12-14: The Big Lens</a></li>
+<li><a href="#e0298">1954-12-21: The Big Little Jesus</a></li>
+<li><a href="#e0299">1954-12-28: The Big Underground</a></li>
+<li><a href="#e0300">1955-01-04: The Big Mug</a></li>
+<li><a href="#e0301">1955-01-11: The Big Complex</a></li>
+<li><a href="#e0302">1955-01-18: The Big Token</a></li>
+<li><a href="#e0303">1955-01-25: The Big Bounce</a></li>
+<li><a href="#e0304">1955-02-01: The Big Bird</a></li>
+<li><a href="#e0305">1955-02-08: The Big Gap</a></li>
+<li><a href="#e0306">1955-02-15: The Big Hat</a></li>
+<li><a href="#e0307">1955-02-22: The Big Slug</a></li>
+<li><a href="#e0308">1955-03-01: The Big Set-Up</a></li>
+<li><a href="#e0309">1955-03-08: The Big Father</a></li>
+<li><a href="#e0310">1955-03-15: The Big Set</a></li>
+<li><a href="#e0311">1955-03-15: The Big Set AFRS</a></li>
+<li><a href="#e0312">1955-03-22: The Big Talk</a></li>
+<li><a href="#e0313">1955-03-22: The Big Talk AFRS</a></li>
+<li><a href="#e0314">1955-03-29: The Big Death</a></li>
+<li><a href="#e0315">1955-04-05: The Big No Tooth</a></li>
+<li><a href="#e0316">1955-04-12: The Big Tie</a></li>
+<li><a href="#e0317">1955-04-19: The Big Deal</a></li>
+<li><a href="#e0318">1955-04-26: The Big Child</a></li>
+<li><a href="#e0319">1955-05-03: The Big Momma</a></li>
+<li><a href="#e0320">1955-05-10: The Big Revision</a></li>
+<li><a href="#e0321">1955-05-17: The Big Squealer</a></li>
+<li><a href="#e0322">1955-05-24: The Big Siege</a></li>
+<li><a href="#e0323">1955-05-31: The Big Sisters</a></li>
+<li><a href="#e0324">1955-05-31: The Big Sisters AFRS</a></li>
+<li><a href="#e0325">1955-06-07: The Big Limp</a></li>
+<li><a href="#e0326">1955-06-14: The Big Fall Guy</a></li>
+<li><a href="#e0327">1955-06-21: The Big Grab</a></li>
+<li><a href="#e0328">1955-06-28: The Big Convertible</a></li>
+<li><a href="#e0329">1955-07-05: The Big Rush</a></li>
+<li><a href="#e0330">1955-07-12: The Big Genius</a></li>
+<li><a href="#e0331">1955-07-19: The Big Bobo</a></li>
+<li><a href="#e0332">1955-07-26: The Big Housemaid</a></li>
+<li><a href="#e0333">1955-08-02: The Big Sheet</a></li>
+<li><a href="#e0334">1955-08-09: The Big Missus</a></li>
+<li><a href="#e0335">1955-08-16: The Big Beer</a></li>
+<li><a href="#e0336">1955-08-23: The Big Blonde</a></li>
+<li><a href="#e0337">1955-08-30: The Big Fellow</a></li>
+<li><a href="#e0338">1955-09-06: The Big Ruling</a></li>
+<li><a href="#e0339">1955-09-13: The Big Daughter</a></li>
+<li><a href="#e0340">1955-09-20: The Big Close</a></li>
+<li><a href="#e0341">1955-12-20: 22 Rifle for Christmas</a></li>
+<li><a href="#e0342">1956-04-03: The Big Dream</a></li>
+<li><a href="#e0343">1956-05-01: The Big Scrapbook</a></li>
+<li><a href="#e0344">1956-10-30: The Big Present</a></li>
+</ul>
+<h2 id="byTitle">Appendix B: By Title</h2>
+<ul>
+<li><a href="#e0021">22 Rifle for Christmas (December 22, 1949)</a></li>
+<li><a href="#e0073">22 Rifle for Christmas (December 21, 1950)</a></li>
+<li><a href="#e0122">22 Rifle for Christmas (December 20, 1951)</a></li>
+<li><a href="#e0171">22 Rifle for Christmas (December 21, 1952)</a></li>
+<li><a href="#e0341">22 Rifle for Christmas (December 20, 1955)</a></li>
+<li><a href="#e0289">270The Big Mannikin (October 19, 1954)</a></li>
+<li><a href="#e0006">Attempted City Hall Bombing (July 21,
+1949)</a></li>
+<li><a href="#e0012">Auto Burglaries - Myra the Redhead (September 1,
+1949)</a></li>
+<li><a href="#e0008">Benny Trounsel - Narcotics (August 4,
+1949)</a></li>
+<li><a href="#e0107">The Big 17 (September 6, 1951)</a></li>
+<li><a href="#e0062">The Big 38 (October 5, 1950)</a></li>
+<li><a href="#e0054">The Big Actor (August 10, 1950)</a></li>
+<li><a href="#e0119">The Big Affair (November 29, 1951)</a></li>
+<li><a href="#e0127">The Big Almost No Show (January 31, 1952)</a></li>
+<li><a href="#e0038">The Big Badge (May 4, 1950)</a></li>
+<li><a href="#e0335">The Big Beer (August 16, 1955)</a></li>
+<li><a href="#e0085">The Big Ben (March 15, 1951)</a></li>
+<li><a href="#e0069">The Big Betty (November 23, 1950)</a></li>
+<li><a href="#e0283">The Big Bible (September 28, 1954)</a></li>
+<li><a href="#e0284">The Big Bible AFRS (September 28, 1954)</a></li>
+<li><a href="#e0230">The Big Bid (January 26, 1954)</a></li>
+<li><a href="#e0231">The Big Bid AFRS (January 26, 1954)</a></li>
+<li><a href="#e0228">The Big Bill (January 19, 1954)</a></li>
+<li><a href="#e0229">The Big Bill AFRS (January 19, 1954)</a></li>
+<li><a href="#e0094">The Big Bindle (May 31, 1951)</a></li>
+<li><a href="#e0304">The Big Bird (February 1, 1955)</a></li>
+<li><a href="#e0092">The Big Blast (May 17, 1951)</a></li>
+<li><a href="#e0336">The Big Blonde (August 23, 1955)</a></li>
+<li><a href="#e0331">The Big Bobo (July 19, 1955)</a></li>
+<li><a href="#e0050">The Big Bomb (July 13, 1950)</a></li>
+<li><a href="#e0034">The Big Book (April 6, 1950)</a></li>
+<li><a href="#e0200">The Big Bop (September 1, 1953)</a></li>
+<li><a href="#e0134">The Big Border (March 20, 1952)</a></li>
+<li><a href="#e0303">The Big Bounce (January 25, 1955)</a></li>
+<li><a href="#e0031">The Big Boys (March 16, 1950)</a></li>
+<li><a href="#e0159">The Big Brain (September 28, 1952)</a></li>
+<li><a href="#e0072">The Big Break (December 14, 1950)</a></li>
+<li><a href="#e0219">The Big Brink (December 15, 1953)</a></li>
+<li><a href="#e0220">The Big Brink AFRS (December 15, 1953)</a></li>
+<li><a href="#e0234">The Big Broad (February 9, 1954)</a></li>
+<li><a href="#e0235">The Big Broad AFRS (February 9, 1954)</a></li>
+<li><a href="#e0096">The Big Building (June 14, 1951)</a></li>
+<li><a href="#e0157">The Big Bull (September 14, 1952)</a></li>
+<li><a href="#e0138">The Big Bunco (April 17, 1952)</a></li>
+<li><a href="#e0117">The Big Bungalow (November 15, 1951)</a></li>
+<li><a href="#e0202">The Big Cab (September 15, 1953)</a></li>
+<li><a href="#e0276">The Big Cad (August 17, 1954)</a></li>
+<li><a href="#e0120">The Big Canaries (December 6, 1951)</a></li>
+<li><a href="#e0070">The Big Car (November 30, 1950)</a></li>
+<li><a href="#e0191">The Big Carney (May 3, 1953)</a></li>
+<li><a href="#e0090">The Big Casing (May 3, 1951)</a></li>
+<li><a href="#e0080">The Big Cast (February 8, 1951)</a></li>
+<li><a href="#e0266">The Big Cat (June 15, 1954)</a></li>
+<li><a href="#e0056">The Big Chance (August 24, 1950)</a></li>
+<li><a href="#e0057">The Big Check (August 31, 1950)</a></li>
+<li><a href="#e0187">The Big Chet (April 5, 1953)</a></li>
+<li><a href="#e0268">The Big Chick (June 29, 1954)</a></li>
+<li><a href="#e0318">The Big Child (April 26, 1955)</a></li>
+<li><a href="#e0079">The Big Children (February 1, 1951)</a></li>
+<li><a href="#e0066">The Big Church (November 2, 1950)</a></li>
+<li><a href="#e0098">The Big Cliff (June 28, 1951)</a></li>
+<li><a href="#e0340">The Big Close (September 20, 1955)</a></li>
+<li><a href="#e0292">The Big Coins (November 9, 1954)</a></li>
+<li><a href="#e0301">The Big Complex (January 11, 1955)</a></li>
+<li><a href="#e0188">The Big Compulsion (April 12, 1953)</a></li>
+<li><a href="#e0248">The Big Confession (March 30, 1954)</a></li>
+<li><a href="#e0249">The Big Confession AFRS (March 30, 1954)</a></li>
+<li><a href="#e0328">The Big Convertible (June 28, 1955)</a></li>
+<li><a href="#e0082">The Big Couple (February 22, 1951)</a></li>
+<li><a href="#e0264">The Big Cowboy (June 1, 1954)</a></li>
+<li><a href="#e0106">The Big Crazy (August 30, 1951)</a></li>
+<li><a href="#e0081">The Big Crime (February 15, 1951)</a></li>
+<li><a href="#e0242">The Big Cup (March 9, 1954)</a></li>
+<li><a href="#e0243">The Big Cup AFRS (March 9, 1954)</a></li>
+<li><a href="#e0267">The Big Customer (June 22, 1954)</a></li>
+<li><a href="#e0280">The Big Cut (September 14, 1954)</a></li>
+<li><a href="#e0281">The Big Cut AFRS (September 14, 1954)</a></li>
+<li><a href="#e0077">The Big Dance (January 18, 1951)</a></li>
+<li><a href="#e0053">The Big Dare (August 3, 1950)</a></li>
+<li><a href="#e0339">The Big Daughter (September 13, 1955)</a></li>
+<li><a href="#e0317">The Big Deal (April 19, 1955)</a></li>
+<li><a href="#e0061">The Big Death (September 28, 1950)</a></li>
+<li><a href="#e0314">The Big Death (March 29, 1955)</a></li>
+<li><a href="#e0296">The Big Dig (December 7, 1954)</a></li>
+<li><a href="#e0165">The Big Dive (November 9, 1952)</a></li>
+<li><a href="#e0293">The Big Dog (November 16, 1954)</a></li>
+<li><a href="#e0186">The Big Dream (March 29, 1953)</a></li>
+<li><a href="#e0342">The Big Dream (April 3, 1956)</a></li>
+<li><a href="#e0091">The Big Drills (May 10, 1951)</a></li>
+<li><a href="#e0152">The Big Drive (August 14, 1952)</a></li>
+<li><a href="#e0170">The Big Eavesdrop (December 14, 1952)</a></li>
+<li><a href="#e0139">The Big Elevator (April 24, 1952)</a></li>
+<li><a href="#e0132">The Big Evans (March 6, 1952)</a></li>
+<li><a href="#e0042">The Big Fake (June 1, 1950)</a></li>
+<li><a href="#e0326">The Big Fall Guy (June 14, 1955)</a></li>
+<li><a href="#e0193">The Big False Move (May 17, 1953)</a></li>
+<li><a href="#e0074">The Big Family (December 28, 1950)</a></li>
+<li><a href="#e0309">The Big Father (March 8, 1955)</a></li>
+<li><a href="#e0337">The Big Fellow (August 30, 1955)</a></li>
+<li><a href="#e0232">The Big Filth (February 2, 1954)</a></li>
+<li><a href="#e0233">The Big Filth AFRS (February 2, 1954)</a></li>
+<li><a href="#e0133">The Big Fire (March 13, 1952)</a></li>
+<li><a href="#e0212">The Big Flight (November 17, 1953)</a></li>
+<li><a href="#e0144">The Big Fourth (May 29, 1952)</a></li>
+<li><a href="#e0049">The Big Frame (July 6, 1950)</a></li>
+<li><a href="#e0208">The Big Fraud (October 27, 1953)</a></li>
+<li><a href="#e0086">The Big Friend (April 5, 1951)</a></li>
+<li><a href="#e0141">The Big Gamble (May 8, 1952)</a></li>
+<li><a href="#e0032">The Big Gangster Part 1 (March 23, 1950)</a></li>
+<li><a href="#e0033">The Big Gangster Part 2 (March 30, 1950)</a></li>
+<li><a href="#e0305">The Big Gap (February 8, 1955)</a></li>
+<li><a href="#e0330">The Big Genius (July 12, 1955)</a></li>
+<li><a href="#e0051">The Big Gent Part 1 (July 20, 1950)</a></li>
+<li><a href="#e0052">The Big Gent Part 2 (July 27, 1950)</a></li>
+<li><a href="#e0027">The Big Girl (February 9, 1950)</a></li>
+<li><a href="#e0295">The Big Gone (November 30, 1954)</a></li>
+<li><a href="#e0048">The Big Grab (June 29, 1950)</a></li>
+<li><a href="#e0327">The Big Grab (June 21, 1955)</a></li>
+<li><a href="#e0064">The Big Grandma (October 19, 1950)</a></li>
+<li><a href="#e0028">The Big Grifter (February 23, 1950)</a></li>
+<li><a href="#e0167">The Big Guilt (November 23, 1952)</a></li>
+<li><a href="#e0194">The Big Gun Part 1 (May 24, 1953)</a></li>
+<li><a href="#e0195">The Big Gun Part 2 (May 31, 1953)</a></li>
+<li><a href="#e0199">The Big Ham (June 28, 1953)</a></li>
+<li><a href="#e0118">The Big Hands (November 22, 1951)</a></li>
+<li><a href="#e0285">The Big Handsome Bandit (October 5, 1954)</a></li>
+<li><a href="#e0306">The Big Hat (February 15, 1955)</a></li>
+<li><a href="#e0149">The Big Hate (July 10, 1952)</a></li>
+<li><a href="#e0271">The Big Heel (July 20, 1954)</a></li>
+<li><a href="#e0262">The Big Help (May 18, 1954)</a></li>
+<li><a href="#e0116">The Big Hit and Run Killer (November 8,
+1951)</a></li>
+<li><a href="#e0075">The Big Holdup (January 4, 1951)</a></li>
+<li><a href="#e0128">The Big Honeymoon (February 7, 1952)</a></li>
+<li><a href="#e0332">The Big Housemaid (July 26, 1955)</a></li>
+<li><a href="#e0184">The Big Impossible (March 15, 1953)</a></li>
+<li><a href="#e0095">The Big Imposter (June 7, 1951)</a></li>
+<li><a href="#e0151">The Big Impression (August 7, 1952)</a></li>
+<li><a href="#e0105">The Big In-Laws (August 23, 1951)</a></li>
+<li><a href="#e0185">The Big Informant (March 22, 1953)</a></li>
+<li><a href="#e0037">The Big Job (April 27, 1950)</a></li>
+<li><a href="#e0192">The Big Joke (May 10, 1953)</a></li>
+<li><a href="#e0160">The Big Jolt (October 5, 1952)</a></li>
+<li><a href="#e0146">The Big Jules (June 19, 1952)</a></li>
+<li><a href="#e0076">The Big Jump (January 11, 1951)</a></li>
+<li><a href="#e0126">The Big Juvenile Division (January 17,
+1952)</a></li>
+<li><a href="#e0041">The Big Key (May 25, 1950)</a></li>
+<li><a href="#e0290">The Big Key (October 26, 1954)</a></li>
+<li><a href="#e0210">The Big Kid (November 10, 1953)</a></li>
+<li><a href="#e0211">The Big Kid AFRS (November 10, 1953)</a></li>
+<li><a href="#e0029">The Big Kill (March 2, 1950)</a></li>
+<li><a href="#e0039">The Big Knife (May 11, 1950)</a></li>
+<li><a href="#e0102">The Big Late Script (July 26, 1951)</a></li>
+<li><a href="#e0182">The Big Laugh (March 8, 1953)</a></li>
+<li><a href="#e0183">The Big Laugh AFRS (March 8, 1953)</a></li>
+<li><a href="#e0176">The Big Lay-Out (January 25, 1953)</a></li>
+<li><a href="#e0115">The Big Lease (November 1, 1951)</a></li>
+<li><a href="#e0297">The Big Lens (December 14, 1954)</a></li>
+<li><a href="#e0161">The Big Lie (October 12, 1952)</a></li>
+<li><a href="#e0201">The Big Lift (September 8, 1953)</a></li>
+<li><a href="#e0256">The Big Lift (April 27, 1954)</a></li>
+<li><a href="#e0257">The Big Lift AFRS (April 27, 1954)</a></li>
+<li><a href="#e0164">The Big Light (November 2, 1952)</a></li>
+<li><a href="#e0197">The Big Lilly (June 14, 1953)</a></li>
+<li><a href="#e0325">The Big Limp (June 7, 1955)</a></li>
+<li><a href="#e0224">The Big Listen (January 5, 1954)</a></li>
+<li><a href="#e0225">The Big Listen AFRS (January 5, 1954)</a></li>
+<li><a href="#e0221">The Big Little Jesus (December 22, 1953)</a></li>
+<li><a href="#e0298">The Big Little Jesus (December 21, 1954)</a></li>
+<li><a href="#e0205">The Big Little Mother (October 6, 1953)</a></li>
+<li><a href="#e0291">The Big Locker (November 2, 1954)</a></li>
+<li><a href="#e0260">The Big Look (May 11, 1954)</a></li>
+<li><a href="#e0261">The Big Look AFRS (May 11, 1954)</a></li>
+<li><a href="#e0099">The Big Love (July 5, 1951)</a></li>
+<li><a href="#e0142">The Big Mail (May 15, 1952)</a></li>
+<li><a href="#e0093">The Big Mailman (May 24, 1951)</a></li>
+<li><a href="#e0059">The Big Make (September 14, 1950)</a></li>
+<li><a href="#e0024">The Big Man Part 1 Narcotics (January 12,
+1950)</a></li>
+<li><a href="#e0025">The Big Man Part 2 Narcotics (January 19,
+1950)</a></li>
+<li><a href="#e0288">The Big Mannikin AFRS (October 19, 1954)</a></li>
+<li><a href="#e0114">The Big Market (October 25, 1951)</a></li>
+<li><a href="#e0172">The Big Mask Part 1 (December 28, 1952)</a></li>
+<li><a href="#e0173">The Big Mask Part 2 (January 4, 1953)</a></li>
+<li><a href="#e0272">The Big Match (July 27, 1954)</a></li>
+<li><a href="#e0065">The Big Meet (October 26, 1950)</a></li>
+<li><a href="#e0046">The Big Mink (June 22, 1950)</a></li>
+<li><a href="#e0047">Big Mink AFRS48 (June 22, 1950)</a></li>
+<li><a href="#e0334">The Big Missus (August 9, 1955)</a></li>
+<li><a href="#e0169">The Big Mole (December 7, 1952)</a></li>
+<li><a href="#e0319">The Big Momma (May 3, 1955)</a></li>
+<li><a href="#e0067">The Big Mother (November 9, 1950)</a></li>
+<li><a href="#e0300">The Big Mug (January 4, 1955)</a></li>
+<li><a href="#e0246">The Big Mustache (March 23, 1954)</a></li>
+<li><a href="#e0247">The Big Mustache AFRS (March 23, 1954)</a></li>
+<li><a href="#e0254">The Big Net (April 20, 1954)</a></li>
+<li><a href="#e0255">The Big Net AFRS (April 20, 1954)</a></li>
+<li><a href="#e0084">The Big New Years (March 8, 1951)</a></li>
+<li><a href="#e0315">The Big No Tooth (April 5, 1955)</a></li>
+<li><a href="#e0252">The Big Note (April 13, 1954)</a></li>
+<li><a href="#e0253">The Big Note AFRS (April 13, 1954)</a></li>
+<li><a href="#e0163">The Big Number (October 26, 1952)</a></li>
+<li><a href="#e0215">The Big Odd (December 1, 1953)</a></li>
+<li><a href="#e0216">The Big Odd AFRS (December 1, 1953)</a></li>
+<li><a href="#e0278">The Big Office (August 31, 1954)</a></li>
+<li><a href="#e0121">The Big Overtime (December 13, 1951)</a></li>
+<li><a href="#e0207">The Big Paint (October 20, 1953)</a></li>
+<li><a href="#e0060">The Big Pair (September 21, 1950)</a></li>
+<li><a href="#e0153">The Big Paper (August 21, 1952)</a></li>
+<li><a href="#e0068">The Big Parrot (November 16, 1950)</a></li>
+<li><a href="#e0083">The Big Partner (March 1, 1951)</a></li>
+<li><a href="#e0129">The Big Phone Call (February 14, 1952)</a></li>
+<li><a href="#e0217">The Big Pick (December 8, 1953)</a></li>
+<li><a href="#e0218">The Big Pick AFRS (December 8, 1953)</a></li>
+<li><a href="#e0071">The Big Picture (December 7, 1950)</a></li>
+<li><a href="#e0162">The Big Pill (October 19, 1952)</a></li>
+<li><a href="#e0238">The Big Pipe (February 23, 1954)</a></li>
+<li><a href="#e0239">The Big Pipe AFRS (February 23, 1954)</a></li>
+<li><a href="#e0131">The Big Plant (February 28, 1952)</a></li>
+<li><a href="#e0206">The Big Plea (October 13, 1953)</a></li>
+<li><a href="#e0058">The Big Poison (September 7, 1950)</a></li>
+<li><a href="#e0213">The Big Present (November 24, 1953)</a></li>
+<li><a href="#e0344">The Big Present (October 30, 1956)</a></li>
+<li><a href="#e0214">The Big Present AFRS (November 24, 1953)</a></li>
+<li><a href="#e0045">The Big Press (June 15, 1950)</a></li>
+<li><a href="#e0178">The Big Press (February 8, 1953)</a></li>
+<li><a href="#e0130">The Big Producer (February 21, 1952)</a></li>
+<li><a href="#e0040">The Big Pug (May 18, 1950)</a></li>
+<li><a href="#e0063">The Big Quack (October 12, 1950)</a></li>
+<li><a href="#e0209">The Big Rain (November 3, 1953)</a></li>
+<li><a href="#e0155">The Big Ray (September 4, 1952)</a></li>
+<li><a href="#e0124">The Big Red Part 1 (January 3, 1952)</a></li>
+<li><a href="#e0125">The Big Red Part 2 (January 10, 1952)</a></li>
+<li><a href="#e0270">The Big Rescue (July 13, 1954)</a></li>
+<li><a href="#e0320">The Big Revision (May 10, 1955)</a></li>
+<li><a href="#e0198">The Big Revolt (June 21, 1953)</a></li>
+<li><a href="#e0189">The Big Rip (April 19, 1953)</a></li>
+<li><a href="#e0244">The Big Rod (March 16, 1954)</a></li>
+<li><a href="#e0245">The Big Rod AFRS (March 16, 1954)</a></li>
+<li><a href="#e0147">The Big Roll (June 26, 1952)</a></li>
+<li><a href="#e0135">The Big Rose (March 27, 1952)</a></li>
+<li><a href="#e0338">The Big Ruling (September 6, 1955)</a></li>
+<li><a href="#e0097">The Big Run (June 21, 1951)</a></li>
+<li><a href="#e0329">The Big Rush (July 5, 1955)</a></li>
+<li><a href="#e0140">The Big Safe (May 1, 1952)</a></li>
+<li><a href="#e0089">The Big Saint (April 26, 1951)</a></li>
+<li><a href="#e0250">The Big Saw (April 6, 1954)</a></li>
+<li><a href="#e0251">The Big Saw AFRS (April 6, 1954)</a></li>
+<li><a href="#e0190">The Big Scrapbook (April 26, 1953)</a></li>
+<li><a href="#e0343">The Big Scrapbook (May 1, 1956)</a></li>
+<li><a href="#e0103">The Big Screen (August 9, 1951)</a></li>
+<li><a href="#e0269">The Big Search (July 6, 1954)</a></li>
+<li><a href="#e0110">The Big September Man (September 27, 1951)</a></li>
+<li><a href="#e0310">The Big Set (March 15, 1955)</a></li>
+<li><a href="#e0311">The Big Set AFRS (March 15, 1955)</a></li>
+<li><a href="#e0100">The Big Set-Up (July 12, 1951)</a></li>
+<li><a href="#e0308">The Big Set-Up (March 1, 1955)</a></li>
+<li><a href="#e0143">The Big Shakedown (May 22, 1952)</a></li>
+<li><a href="#e0333">The Big Sheet (August 2, 1955)</a></li>
+<li><a href="#e0168">The Big Shirt (November 30, 1952)</a></li>
+<li><a href="#e0277">The Big Shock (August 24, 1954)</a></li>
+<li><a href="#e0112">The Big Shoplift (October 11, 1951)</a></li>
+<li><a href="#e0158">The Big Shot (September 21, 1952)</a></li>
+<li><a href="#e0137">The Big Show (April 10, 1952)</a></li>
+<li><a href="#e0322">The Big Siege (May 24, 1955)</a></li>
+<li><a href="#e0150">The Big Signet (July 31, 1952)</a></li>
+<li><a href="#e0323">The Big Sisters (May 31, 1955)</a></li>
+<li><a href="#e0324">The Big Sisters AFRS (May 31, 1955)</a></li>
+<li><a href="#e0203">The Big Slip (September 22, 1953)</a></li>
+<li><a href="#e0307">The Big Slug (February 22, 1955)</a></li>
+<li><a href="#e0174">The Big Small (January 11, 1953)</a></li>
+<li><a href="#e0043">The Big Smart Guy (June 8, 1950)</a></li>
+<li><a href="#e0044">Big Smart Guy AFRS46 (June 8, 1950)</a></li>
+<li><a href="#e0180">The Big Smoke (February 22, 1953)</a></li>
+<li><a href="#e0101">The Big Sophomore (July 19, 1951)</a></li>
+<li><a href="#e0123">The Big Sorrow (December 27, 1951)</a></li>
+<li><a href="#e0109">The Big Sour (September 20, 1951)</a></li>
+<li><a href="#e0088">The Big Speech (April 19, 1951)</a></li>
+<li><a href="#e0321">The Big Squealer (May 17, 1955)</a></li>
+<li><a href="#e0273">The Big Stand (August 3, 1954)</a></li>
+<li><a href="#e0274">The Big Stand AFRS (August 3, 1954)</a></li>
+<li><a href="#e0222">The Big Steal (December 29, 1953)</a></li>
+<li><a href="#e0223">The Big Steal AFRS (December 29, 1953)</a></li>
+<li><a href="#e0258">The Big Stop (May 4, 1954)</a></li>
+<li><a href="#e0259">The Big Stop AFRS (May 4, 1954)</a></li>
+<li><a href="#e0113">The Big Story Man (October 18, 1951)</a></li>
+<li><a href="#e0136">The Big Streetcar (April 3, 1952)</a></li>
+<li><a href="#e0175">The Big String (January 18, 1953)</a></li>
+<li><a href="#e0177">The Big Strip (February 1, 1953)</a></li>
+<li><a href="#e0265">The Big Student (June 8, 1954)</a></li>
+<li><a href="#e0236">The Big Sucker (February 16, 1954)</a></li>
+<li><a href="#e0237">The Big Sucker AFRS (February 16, 1954)</a></li>
+<li><a href="#e0226">The Big Switch (January 12, 1954)</a></li>
+<li><a href="#e0294">The Big Switch (November 23, 1954)</a></li>
+<li><a href="#e0227">The Big Switch AFRS (January 12, 1954)</a></li>
+<li><a href="#e0312">The Big Talk (March 22, 1955)</a></li>
+<li><a href="#e0313">The Big Talk AFRS (March 22, 1955)</a></li>
+<li><a href="#e0286">The Big Tarbaby (October 12, 1954)</a></li>
+<li><a href="#e0287">The Big Tarbaby AFRS (October 12, 1954)</a></li>
+<li><a href="#e0156">The Big Tear (September 11, 1952)</a></li>
+<li><a href="#e0154">The Big Test (August 28, 1952)</a></li>
+<li><a href="#e0030">The Big Thank You (March 9, 1950)</a></li>
+<li><a href="#e0087">The Big Threat (April 12, 1951)</a></li>
+<li><a href="#e0316">The Big Tie (April 12, 1955)</a></li>
+<li><a href="#e0302">The Big Token (January 18, 1955)</a></li>
+<li><a href="#e0078">The Big Tomato (January 25, 1951)</a></li>
+<li><a href="#e0179">The Big Tooth (February 15, 1953)</a></li>
+<li><a href="#e0036">The Big Trial (April 20, 1950)</a></li>
+<li><a href="#e0148">The Big Trio (July 3, 1952)</a></li>
+<li><a href="#e0279">The Big Trunk (September 7, 1954)</a></li>
+<li><a href="#e0204">The Big Try (September 29, 1953)</a></li>
+<li><a href="#e0282">The Big Try (September 21, 1954)</a></li>
+<li><a href="#e0240">The Big TV (March 2, 1954)</a></li>
+<li><a href="#e0241">The Big TV AFRS (March 2, 1954)</a></li>
+<li><a href="#e0299">The Big Underground (December 28, 1954)</a></li>
+<li><a href="#e0108">The Big Waiter (September 13, 1951)</a></li>
+<li><a href="#e0166">The Big Walk (November 16, 1952)</a></li>
+<li><a href="#e0181">The Big Want (March 1, 1953)</a></li>
+<li><a href="#e0111">The Big Want Ad (October 4, 1951)</a></li>
+<li><a href="#e0035">The Big Watch (April 13, 1950)</a></li>
+<li><a href="#e0263">The Big Watch (May 25, 1954)</a></li>
+<li><a href="#e0145">The Big Whiff (June 5, 1952)</a></li>
+<li><a href="#e0196">The Big Will (June 7, 1953)</a></li>
+<li><a href="#e0104">The Big Winchester (August 16, 1951)</a></li>
+<li><a href="#e0275">The Big Wish (August 10, 1954)</a></li>
+<li><a href="#e0055">The Big Youngster (August 17, 1950)</a></li>
+<li><a href="#e0016">Brick-Bat Slayer (September 24, 1949)</a></li>
+<li><a href="#e0026">Claude Jimmerson Child Killer (February 2,
+1950)</a></li>
+<li><a href="#e0013">Eric Kelby - Body Buried In Nursery (September 3,
+1949)</a></li>
+<li><a href="#e0020">George Quan - The Jade Thumb Rings (December 8,
+1949)</a></li>
+<li><a href="#e0004">The Helen Corday Murder (July 7, 1949)</a></li>
+<li><a href="#e0015">James Vickers - Cop Killing - Tunnel Chase
+(September 17, 1949)</a></li>
+<li><a href="#e0023">Max Tyler - Escaped Convict (January 5,
+1950)</a></li>
+<li><a href="#e0007">Missing Persons - Juanita Lasky (July 28,
+1949)</a></li>
+<li><a href="#e0018">Mrs. Rinard Albert Barry - Mother-In-Law Murder
+(November 24, 1949)</a></li>
+<li><a href="#e0011">Police Academy - Mario Koski (August 25,
+1949)</a></li>
+<li><a href="#e0009">Production 10 aka Homicide aka Maniac Murderer aka
+Mad Killer At Large (August 11, 1949)</a></li>
+<li><a href="#e0010">Production 11 aka Sixteen Jewel Thieves (August 18,
+1949)</a></li>
+<li><a href="#e0001">Production 2 aka Homicide aka The Nickel Plated Gun
+(June 10, 1949)</a></li>
+<li><a href="#e0002">Production 3 aka The Werewolf (June 17,
+1949)</a></li>
+<li><a href="#e0003">Production 4 aka Homicide aka Quick Trigger Gun Men
+(June 24, 1949)</a></li>
+<li><a href="#e0005">Red Light Bandit (July 14, 1949)</a></li>
+<li><a href="#e0022">The Roseland Roof Murders (December 29,
+1949)</a></li>
+<li><a href="#e0019">Spring Street Gang - Juveniles (December 1,
+1949)</a></li>
+<li><a href="#e0014">Sullivan Kidnapping (September 10, 1949)</a></li>
+<li><a href="#e0017">Truck Hi-jackers - Tom Laval (October 1,
+1949)</a></li>
+</ul>
+</body>
+</html>
