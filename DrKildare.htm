@@ -1,0 +1,888 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.12.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Dr. Kildare</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
+      background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        color-scheme: light only;
+      }
+      html, body, pre, code {
+        background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
+        color: black;
+      }
+      pre, code {
+        padding: 0;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a, a:visited {
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
+      color: #606060;
+      color: light-dark(#606060, #b6b6b6);
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid currentColor;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+    th {
+      border-top: 1px solid currentColor;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#dr.-kildare" id="toc-dr.-kildare">Dr. Kildare</a>
+<ul>
+<li><a href="#contents" id="toc-contents">Contents</a></li>
+<li><a href="#y1950" id="toc-y1950">1950</a></li>
+<li><a href="#y1951" id="toc-y1951">1951</a></li>
+<li><a href="#yUndated" id="toc-yUndated">Undated</a></li>
+<li><a href="#byDate" id="toc-byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle" id="toc-byTitle">Appendix B: By Title</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="dr.-kildare">Dr. Kildare</h1>
+<p>Lew Ayres and Lionel Barrymore play a young doctor and his mentor at
+a big city hospital.</p>
+<ul>
+<li>Episodes: 61</li>
+<li>Network: Syndicated</li>
+<li>Source: <a
+href="https://archive.org/details/OTRR_Dr_Kildare_Singles">Internet
+Archive: OTRR_Dr_Kildare_Singles</a></li>
+<li>Years: 1949 to 1951</li>
+</ul>
+<p>Each episode title is a link that plays its audio. These broadcasts
+can reflect the attitudes of their time. This page is part of <a
+href="OldTimeRadioDramas.htm">Old Time Radio Dramas</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#y1950">1950</a></li>
+<li><a href="#y1951">1951</a></li>
+<li><a href="#yUndated">Undated</a></li>
+<li><a href="#byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle">Appendix B: By Title</a></li>
+</ul>
+<h2 id="y1950">1950</h2>
+<h3 id="e0001"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-02-01__01__Angela_And_Steven_Kester.mp3">Angela
+And Steven Kester</a></h3>
+<ul>
+<li>Date: February 1, 1950</li>
+<li>Duration: 27:57</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0002"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-02-08__02__Marjorie_Northrup.mp3">Marjorie
+Northrup</a></h3>
+<ul>
+<li>Date: February 8, 1950</li>
+<li>Duration: 26:39</li>
+<li>Episode: 2</li>
+</ul>
+<h3 id="e0003"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-02-15__03__Benjamin_Barkley.mp3">Benjamin
+Barkley</a></h3>
+<ul>
+<li>Date: February 15, 1950</li>
+<li>Duration: 53:37</li>
+<li>Episode: 3</li>
+</ul>
+<h3 id="e0004"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-02-22__04__Rico_Marchianos_Dying_Wife.mp3">Rico
+Marchianos Dying Wife</a></h3>
+<ul>
+<li>Date: February 22, 1950</li>
+<li>Duration: 28:00</li>
+<li>Episode: 4</li>
+</ul>
+<h3 id="e0005"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-03-01__05__Vernon_Pendleton_-_Hypochondriac.mp3">Vernon
+Pendleton - Hypochondriac</a></h3>
+<ul>
+<li>Date: March 1, 1950</li>
+<li>Duration: 28:05</li>
+<li>Episode: 5</li>
+</ul>
+<h3 id="e0006"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-03-08__06__Barbara_Lane_Dope_Addict.mp3">Barbara
+Lane Dope Addict</a></h3>
+<ul>
+<li>Date: March 8, 1950</li>
+<li>Duration: 28:02</li>
+<li>Episode: 6</li>
+</ul>
+<h3 id="e0007"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-03-15__07__Caroline_Shelley.mp3">Caroline
+Shelley</a></h3>
+<ul>
+<li>Date: March 15, 1950</li>
+<li>Duration: 27:31</li>
+<li>Episode: 7</li>
+</ul>
+<h3 id="e0008"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-03-22__08__Jane_Dane_New_Cancer_Treatment.mp3">Jane
+Dane New Cancer Treatment</a></h3>
+<ul>
+<li>Date: March 22, 1950</li>
+<li>Duration: 26:35</li>
+<li>Episode: 8</li>
+</ul>
+<h3 id="e0009"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-04-12__11__Warren_Jacksons_Allergy.mp3">11
+Warren Jacksons Allergy</a></h3>
+<ul>
+<li>Date: April 12, 1950</li>
+<li>Duration: 26:20</li>
+</ul>
+<h3 id="e0010"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-04-19__12__Terry_Murphys_Hearing_Problem.mp3">12
+Terry Murphys Hearing Problem</a></h3>
+<ul>
+<li>Date: April 19, 1950</li>
+<li>Duration: 26:40</li>
+</ul>
+<h3 id="e0011"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-04-26__13__Philip_Van_Courts_Amnesia.mp3">13
+Philip Van Courts Amnesia</a></h3>
+<ul>
+<li>Date: April 26, 1950</li>
+<li>Duration: 27:11</li>
+</ul>
+<h3 id="e0012"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-05-03__14__Abandoned_Baby.mp3">14
+Abandoned Baby</a></h3>
+<ul>
+<li>Date: May 3, 1950</li>
+<li>Duration: 27:35</li>
+</ul>
+<h3 id="e0013"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-05-10__15__Kildares_Old_Girlfriend.mp3">15
+Kildares Old Girlfriend</a></h3>
+<ul>
+<li>Date: May 10, 1950</li>
+<li>Duration: 25:57</li>
+</ul>
+<h3 id="e0014"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-05-17__16__Nurse_Parker_Resigns.mp3">16
+Nurse Parker Resigns</a></h3>
+<ul>
+<li>Date: May 17, 1950</li>
+<li>Duration: 27:07</li>
+</ul>
+<h3 id="e0015"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-05-24__17__Dr_Carews_Fat_Wife.mp3">17
+Dr Carews Fat Wife</a></h3>
+<ul>
+<li>Date: May 24, 1950</li>
+<li>Duration: 26:55</li>
+<li>Episode: 17</li>
+</ul>
+<h3 id="e0016"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-05-31__18__DickBrennanSteals_5000_Or_50000.mp3">18
+DickBrennanSteals 5000 Or 50000</a></h3>
+<ul>
+<li>Date: May 31, 1950</li>
+<li>Duration: 26:23</li>
+<li>Episode: 18</li>
+</ul>
+<h3 id="e0017"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-06-01__19__Colonel_Boregards_Paralysis.mp3">19
+Colonel Boregards Paralysis</a></h3>
+<ul>
+<li>Date: June 1, 1950</li>
+<li>Duration: 27:48</li>
+</ul>
+<h3 id="e0018"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-06-08__20__Gordon_Mallorys_Lead_Poisoning.mp3">20
+Gordon Mallorys Lead Poisoning</a></h3>
+<ul>
+<li>Date: June 8, 1950</li>
+<li>Duration: 27:59</li>
+</ul>
+<h3 id="e0019"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-06-15__21__Glaucoma.mp3">21
+Glaucoma</a></h3>
+<ul>
+<li>Date: June 15, 1950</li>
+<li>Duration: 28:33</li>
+</ul>
+<h3 id="e0020"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-06-22__22__Pricillas_Broken_Arm.mp3">22
+Pricillas Broken Arm</a></h3>
+<ul>
+<li>Date: June 22, 1950</li>
+<li>Duration: 28:26</li>
+</ul>
+<h3 id="e0021"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-06-29__23__Dr_Gillespie_Almost_Gets_Engaged.mp3">23
+Dr Gillespie Almost Gets Engaged</a></h3>
+<ul>
+<li>Date: June 29, 1950</li>
+<li>Duration: 27:02</li>
+<li>Episode: 21</li>
+</ul>
+<h3 id="e0022"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-07-06__24__Hunting_Trip.mp3">24
+Hunting Trip</a></h3>
+<ul>
+<li>Date: July 6, 1950</li>
+<li>Duration: 27:02</li>
+<li>Episode: 22</li>
+</ul>
+<h3 id="e0023"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-07-13__25__Dan_Malloys_Peptic_Ulcer.mp3">25
+Dan Malloys Peptic Ulcer</a></h3>
+<ul>
+<li>Date: July 13, 1950</li>
+<li>Duration: 26:39</li>
+<li>Episode: 23</li>
+</ul>
+<h3 id="e0024"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-07-20__26__Mrs_Stanfords_Angina_Pectoris.mp3">26
+Mrs Stanfords Angina Pectoris</a></h3>
+<ul>
+<li>Date: July 20, 1950</li>
+<li>Duration: 26:32</li>
+<li>Episode: 24</li>
+</ul>
+<h3 id="e0025"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-08-10__29__Buffalo_Barnie_McClure.mp3">29
+Buffalo Barnie McClure</a></h3>
+<ul>
+<li>Date: August 10, 1950</li>
+<li>Duration: 26:52</li>
+<li>Episode: 25</li>
+</ul>
+<h3 id="e0026"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-08-17__30__Appendicitis_Operation_At_Sea.mp3">30
+Appendicitis Operation At Sea</a></h3>
+<ul>
+<li>Date: August 17, 1950</li>
+<li>Duration: 27:01</li>
+<li>Episode: 26</li>
+</ul>
+<h3 id="e0027"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-09-07__33__Carew_Gets_Medical_Examiner_Mixed_Up.mp3">33
+Carew Gets Medical Examiner Mixed Up</a></h3>
+<ul>
+<li>Date: September 7, 1950</li>
+<li>Duration: 27:19</li>
+<li>Episode: 27</li>
+</ul>
+<h3 id="e0028"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-09-14__34__Marion_Lewis_Teen_Age_Alcoholic.mp3">34
+Marion Lewis Teen Age Alcoholic</a></h3>
+<ul>
+<li>Date: September 14, 1950</li>
+<li>Duration: 27:29</li>
+<li>Episode: 28</li>
+</ul>
+<h3 id="e0029"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-09-21__35__Sam_Lubinski_Has_Spinal_Paralysis.mp3">35
+Sam Lubinski Has Spinal Paralysis</a></h3>
+<ul>
+<li>Date: September 21, 1950</li>
+<li>Duration: 26:57</li>
+<li>Episode: 29</li>
+</ul>
+<h3 id="e0030"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-09-28__36__Mumpkins_First_Baby.mp3">36
+Mumpkins First Baby</a></h3>
+<ul>
+<li>Date: September 28, 1950</li>
+<li>Duration: 27:58</li>
+<li>Episode: 30</li>
+</ul>
+<h3 id="e0031"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-10-20__39__Eddie_Jenkins_And_The_Arsonist.mp3">39
+Eddie Jenkins And The Arsonist</a></h3>
+<ul>
+<li>Date: October 20, 1950</li>
+<li>Duration: 26:45</li>
+<li>Episode: 31</li>
+</ul>
+<h3 id="e0032"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-10-27__40__Ling_Co_Refuses_Leg_Surgery.mp3">40
+Ling Co Refuses Leg Surgery</a></h3>
+<ul>
+<li>Date: October 27, 1950</li>
+<li>Duration: 27:18</li>
+<li>Episode: 32</li>
+</ul>
+<h3 id="e0033"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-11-17__43__Mr_Bradleys_Heart.mp3">43
+Mr Bradleys Heart</a></h3>
+<ul>
+<li>Date: November 17, 1950</li>
+<li>Duration: 26:38</li>
+<li>Episode: 33</li>
+</ul>
+<h3 id="e0034"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-11-24__44__Mr_Kramer-Parker_Needs_A_Hobby.mp3">44
+Mr Kramer-Parker Needs A Hobby</a></h3>
+<ul>
+<li>Date: November 24, 1950</li>
+<li>Duration: 27:58</li>
+<li>Episode: 34</li>
+</ul>
+<h3 id="e0035"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-12-01__45__Lady_Dunabees_Annual_Visit.mp3">45
+Lady Dunabees Annual Visit</a></h3>
+<ul>
+<li>Date: December 1, 1950</li>
+<li>Duration: 27:13</li>
+<li>Episode: 35</li>
+</ul>
+<h3 id="e0036"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-12-08__46__Arthur_Morgan_Needs_Brain_Surgery.mp3">46
+Arthur Morgan Needs Brain Surgery</a></h3>
+<ul>
+<li>Date: December 8, 1950</li>
+<li>Duration: 27:44</li>
+<li>Episode: 36</li>
+</ul>
+<h3 id="e0037"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_50-12-29__49__David_Norton_Has_Pneumonia.mp3">49
+David Norton Has Pneumonia</a></h3>
+<ul>
+<li>Date: December 29, 1950</li>
+<li>Duration: 27:23</li>
+<li>Episode: 37</li>
+</ul>
+<h2 id="y1951">1951</h2>
+<h3 id="e0038"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-01-05__50__Eddie_Lazetti_Kidnaps_Nurse.mp3">50
+Eddie Lazetti Kidnaps Nurse</a></h3>
+<ul>
+<li>Date: January 5, 1951</li>
+<li>Duration: 27:20</li>
+<li>Episode: 38</li>
+</ul>
+<h3 id="e0039"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-01-12__51__Dr_Gillespies_Testimonial_Dinner.mp3">51
+Dr Gillespies Testimonial Dinner</a></h3>
+<ul>
+<li>Date: January 12, 1951</li>
+<li>Duration: 27:00</li>
+<li>Episode: 39</li>
+</ul>
+<h3 id="e0040"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-01-19__52__Dr_Conlon_Quack.mp3">52
+Dr Conlon Quack</a></h3>
+<ul>
+<li>Date: January 19, 1951</li>
+<li>Duration: 27:25</li>
+<li>Episode: 40</li>
+</ul>
+<h3 id="e0041"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-01-26__53__Joe_Finleys_Ulcer.mp3">53
+Joe Finleys Ulcer</a></h3>
+<ul>
+<li>Date: January 26, 1951</li>
+<li>Duration: 27:13</li>
+<li>Episode: 41</li>
+</ul>
+<h3 id="e0042"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-02-02__54__Oliver_Van_Meters_Allergy.mp3">54
+Oliver Van Meters Allergy</a></h3>
+<ul>
+<li>Date: February 2, 1951</li>
+<li>Duration: 24:44</li>
+<li>Episode: 42</li>
+</ul>
+<h3 id="e0043"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-02-09__55__Anthrax_Infection.mp3">55
+Anthrax Infection</a></h3>
+<ul>
+<li>Date: February 9, 1951</li>
+<li>Duration: 27:09</li>
+<li>Episode: 43</li>
+</ul>
+<h3 id="e0044"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-02-16__56__Pete_Cosloff_Is_Mentally_Ill.mp3">56
+Pete Cosloff Is Mentally Ill</a></h3>
+<ul>
+<li>Date: February 16, 1951</li>
+<li>Duration: 27:14</li>
+<li>Episode: 44</li>
+</ul>
+<h3 id="e0045"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-02-23__57__Buck_Houston_Cowboy_Star.mp3">57
+Buck Houston Cowboy Star</a></h3>
+<ul>
+<li>Date: February 23, 1951</li>
+<li>Duration: 26:27</li>
+<li>Episode: 45</li>
+</ul>
+<h3 id="e0046"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-03-02__58__David_Coopers_Burned_Face.mp3">58
+David Coopers Burned Face</a></h3>
+<ul>
+<li>Date: March 2, 1951</li>
+<li>Duration: 26:47</li>
+<li>Episode: 46</li>
+</ul>
+<h3 id="e0047"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-03-09__59__Edward_Carltons_Dog_Bite.mp3">59
+Edward Carltons Dog Bite</a></h3>
+<ul>
+<li>Date: March 9, 1951</li>
+<li>Duration: 26:54</li>
+<li>Episode: 47</li>
+</ul>
+<h3 id="e0048"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-03-16__60__Amy_Dickens_Breaks_Her_Leg.mp3">60
+Amy Dickens Breaks Her Leg</a></h3>
+<ul>
+<li>Date: March 16, 1951</li>
+<li>Duration: 27:02</li>
+<li>Episode: 48</li>
+</ul>
+<h3 id="e0049"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-03-23__61__Cathy_Mortons_Baby.mp3">61
+Cathy Mortons Baby</a></h3>
+<ul>
+<li>Date: March 23, 1951</li>
+<li>Duration: 26:52</li>
+<li>Episode: 49</li>
+</ul>
+<h3 id="e0050"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-03-30__62__Joan_Quinn.mp3">62
+Joan Quinn</a></h3>
+<ul>
+<li>Date: March 30, 1951</li>
+<li>Duration: 27:16</li>
+<li>Episode: 50</li>
+</ul>
+<h3 id="e0051"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-04-06__63__GillespiesNewSuitForHendersonAward.mp3">63
+GillespiesNewSuitForHendersonAward</a></h3>
+<ul>
+<li>Date: April 6, 1951</li>
+<li>Duration: 27:35</li>
+<li>Episode: 51</li>
+</ul>
+<h3 id="e0052"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-04-13__64__Yukon_Joes_Gold_Mine.mp3">64
+Yukon Joes Gold Mine</a></h3>
+<ul>
+<li>Date: April 13, 1951</li>
+<li>Duration: 27:25</li>
+<li>Episode: 52</li>
+</ul>
+<h3 id="e0053"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-05-18__69__Mysterious_Hemophilia_Patient.mp3">69
+Mysterious Hemophilia Patient</a></h3>
+<ul>
+<li>Date: May 18, 1951</li>
+<li>Duration: 27:17</li>
+<li>Episode: 53</li>
+</ul>
+<h3 id="e0054"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-05-25__70__Dr_Gillespies_New_Office.mp3">70
+Dr Gillespies New Office</a></h3>
+<ul>
+<li>Date: May 25, 1951</li>
+<li>Duration: 27:16</li>
+<li>Episode: 54</li>
+</ul>
+<h3 id="e0055"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-06-15__73__Pedro_Maria_And_Rosie.mp3">73
+Pedro Maria And Rosie</a></h3>
+<ul>
+<li>Date: June 15, 1951</li>
+<li>Duration: 26:56</li>
+<li>Episode: 55</li>
+</ul>
+<h3 id="e0056"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-06-22__74__Paul_Bailey.mp3">74
+Paul Bailey</a></h3>
+<ul>
+<li>Date: June 22, 1951</li>
+<li>Duration: 27:00</li>
+<li>Episode: 56</li>
+</ul>
+<h3 id="e0057"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-07-13__77__Valerie_And_Walter_Benton_-_Murder.mp3">77
+Valerie And Walter Benton - Murder</a></h3>
+<ul>
+<li>Date: July 13, 1951</li>
+<li>Duration: 27:12</li>
+<li>Episode: 57</li>
+</ul>
+<h3 id="e0058"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-07-20__78__Evelyn_Briggs.mp3">78
+Evelyn Briggs</a></h3>
+<ul>
+<li>Date: July 20, 1951</li>
+<li>Duration: 27:07</li>
+<li>Episode: 58</li>
+</ul>
+<h3 id="e0059"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-07-27__79__Robert_Lane_Intern_Shirks_Duties.mp3">79
+Robert Lane Intern Shirks Duties</a></h3>
+<ul>
+<li>Date: July 27, 1951</li>
+<li>Duration: 27:01</li>
+<li>Episode: 59</li>
+</ul>
+<h3 id="e0060"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Dr_Kildare_51-08-03__80__Alice_Bradley_Amnesia_Victim.mp3">80
+Alice Bradley Amnesia Victim</a></h3>
+<ul>
+<li>Date: August 3, 1951</li>
+<li>Duration: 27:17</li>
+<li>Episode: 60</li>
+</ul>
+<h2 id="yUndated">Undated</h2>
+<h3 id="e0061"><a
+href="https://archive.org/download/OTRR_Dr_Kildare_Singles/Cecil%20Parker%20Biography.mp3">Cecil
+Parker Biography</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 1:36</li>
+<li>Episode: 1</li>
+</ul>
+<h2 id="byDate">Appendix A: By Date</h2>
+<ul>
+<li><a href="#e0001">1950-02-01: Angela And Steven Kester</a></li>
+<li><a href="#e0002">1950-02-08: Marjorie Northrup</a></li>
+<li><a href="#e0003">1950-02-15: Benjamin Barkley</a></li>
+<li><a href="#e0004">1950-02-22: Rico Marchianos Dying Wife</a></li>
+<li><a href="#e0005">1950-03-01: Vernon Pendleton -
+Hypochondriac</a></li>
+<li><a href="#e0006">1950-03-08: Barbara Lane Dope Addict</a></li>
+<li><a href="#e0007">1950-03-15: Caroline Shelley</a></li>
+<li><a href="#e0008">1950-03-22: Jane Dane New Cancer Treatment</a></li>
+<li><a href="#e0009">1950-04-12: 11 Warren Jacksons Allergy</a></li>
+<li><a href="#e0010">1950-04-19: 12 Terry Murphys Hearing
+Problem</a></li>
+<li><a href="#e0011">1950-04-26: 13 Philip Van Courts Amnesia</a></li>
+<li><a href="#e0012">1950-05-03: 14 Abandoned Baby</a></li>
+<li><a href="#e0013">1950-05-10: 15 Kildares Old Girlfriend</a></li>
+<li><a href="#e0014">1950-05-17: 16 Nurse Parker Resigns</a></li>
+<li><a href="#e0015">1950-05-24: 17 Dr Carews Fat Wife</a></li>
+<li><a href="#e0016">1950-05-31: 18 DickBrennanSteals 5000 Or
+50000</a></li>
+<li><a href="#e0017">1950-06-01: 19 Colonel Boregards Paralysis</a></li>
+<li><a href="#e0018">1950-06-08: 20 Gordon Mallorys Lead
+Poisoning</a></li>
+<li><a href="#e0019">1950-06-15: 21 Glaucoma</a></li>
+<li><a href="#e0020">1950-06-22: 22 Pricillas Broken Arm</a></li>
+<li><a href="#e0021">1950-06-29: 23 Dr Gillespie Almost Gets
+Engaged</a></li>
+<li><a href="#e0022">1950-07-06: 24 Hunting Trip</a></li>
+<li><a href="#e0023">1950-07-13: 25 Dan Malloys Peptic Ulcer</a></li>
+<li><a href="#e0024">1950-07-20: 26 Mrs Stanfords Angina
+Pectoris</a></li>
+<li><a href="#e0025">1950-08-10: 29 Buffalo Barnie McClure</a></li>
+<li><a href="#e0026">1950-08-17: 30 Appendicitis Operation At
+Sea</a></li>
+<li><a href="#e0027">1950-09-07: 33 Carew Gets Medical Examiner Mixed
+Up</a></li>
+<li><a href="#e0028">1950-09-14: 34 Marion Lewis Teen Age
+Alcoholic</a></li>
+<li><a href="#e0029">1950-09-21: 35 Sam Lubinski Has Spinal
+Paralysis</a></li>
+<li><a href="#e0030">1950-09-28: 36 Mumpkins First Baby</a></li>
+<li><a href="#e0031">1950-10-20: 39 Eddie Jenkins And The
+Arsonist</a></li>
+<li><a href="#e0032">1950-10-27: 40 Ling Co Refuses Leg Surgery</a></li>
+<li><a href="#e0033">1950-11-17: 43 Mr Bradleys Heart</a></li>
+<li><a href="#e0034">1950-11-24: 44 Mr Kramer-Parker Needs A
+Hobby</a></li>
+<li><a href="#e0035">1950-12-01: 45 Lady Dunabees Annual Visit</a></li>
+<li><a href="#e0036">1950-12-08: 46 Arthur Morgan Needs Brain
+Surgery</a></li>
+<li><a href="#e0037">1950-12-29: 49 David Norton Has Pneumonia</a></li>
+<li><a href="#e0038">1951-01-05: 50 Eddie Lazetti Kidnaps Nurse</a></li>
+<li><a href="#e0039">1951-01-12: 51 Dr Gillespies Testimonial
+Dinner</a></li>
+<li><a href="#e0040">1951-01-19: 52 Dr Conlon Quack</a></li>
+<li><a href="#e0041">1951-01-26: 53 Joe Finleys Ulcer</a></li>
+<li><a href="#e0042">1951-02-02: 54 Oliver Van Meters Allergy</a></li>
+<li><a href="#e0043">1951-02-09: 55 Anthrax Infection</a></li>
+<li><a href="#e0044">1951-02-16: 56 Pete Cosloff Is Mentally
+Ill</a></li>
+<li><a href="#e0045">1951-02-23: 57 Buck Houston Cowboy Star</a></li>
+<li><a href="#e0046">1951-03-02: 58 David Coopers Burned Face</a></li>
+<li><a href="#e0047">1951-03-09: 59 Edward Carltons Dog Bite</a></li>
+<li><a href="#e0048">1951-03-16: 60 Amy Dickens Breaks Her Leg</a></li>
+<li><a href="#e0049">1951-03-23: 61 Cathy Mortons Baby</a></li>
+<li><a href="#e0050">1951-03-30: 62 Joan Quinn</a></li>
+<li><a href="#e0051">1951-04-06: 63
+GillespiesNewSuitForHendersonAward</a></li>
+<li><a href="#e0052">1951-04-13: 64 Yukon Joes Gold Mine</a></li>
+<li><a href="#e0053">1951-05-18: 69 Mysterious Hemophilia
+Patient</a></li>
+<li><a href="#e0054">1951-05-25: 70 Dr Gillespies New Office</a></li>
+<li><a href="#e0055">1951-06-15: 73 Pedro Maria And Rosie</a></li>
+<li><a href="#e0056">1951-06-22: 74 Paul Bailey</a></li>
+<li><a href="#e0057">1951-07-13: 77 Valerie And Walter Benton -
+Murder</a></li>
+<li><a href="#e0058">1951-07-20: 78 Evelyn Briggs</a></li>
+<li><a href="#e0059">1951-07-27: 79 Robert Lane Intern Shirks
+Duties</a></li>
+<li><a href="#e0060">1951-08-03: 80 Alice Bradley Amnesia
+Victim</a></li>
+<li><a href="#e0061">Undated: Cecil Parker Biography</a></li>
+</ul>
+<h2 id="byTitle">Appendix B: By Title</h2>
+<ul>
+<li><a href="#e0009">11 Warren Jacksons Allergy (April 12,
+1950)</a></li>
+<li><a href="#e0010">12 Terry Murphys Hearing Problem (April 19,
+1950)</a></li>
+<li><a href="#e0011">13 Philip Van Courts Amnesia (April 26,
+1950)</a></li>
+<li><a href="#e0012">14 Abandoned Baby (May 3, 1950)</a></li>
+<li><a href="#e0013">15 Kildares Old Girlfriend (May 10, 1950)</a></li>
+<li><a href="#e0014">16 Nurse Parker Resigns (May 17, 1950)</a></li>
+<li><a href="#e0015">17 Dr Carews Fat Wife (May 24, 1950)</a></li>
+<li><a href="#e0016">18 DickBrennanSteals 5000 Or 50000 (May 31,
+1950)</a></li>
+<li><a href="#e0017">19 Colonel Boregards Paralysis (June 1,
+1950)</a></li>
+<li><a href="#e0018">20 Gordon Mallorys Lead Poisoning (June 8,
+1950)</a></li>
+<li><a href="#e0019">21 Glaucoma (June 15, 1950)</a></li>
+<li><a href="#e0020">22 Pricillas Broken Arm (June 22, 1950)</a></li>
+<li><a href="#e0021">23 Dr Gillespie Almost Gets Engaged (June 29,
+1950)</a></li>
+<li><a href="#e0022">24 Hunting Trip (July 6, 1950)</a></li>
+<li><a href="#e0023">25 Dan Malloys Peptic Ulcer (July 13,
+1950)</a></li>
+<li><a href="#e0024">26 Mrs Stanfords Angina Pectoris (July 20,
+1950)</a></li>
+<li><a href="#e0025">29 Buffalo Barnie McClure (August 10,
+1950)</a></li>
+<li><a href="#e0026">30 Appendicitis Operation At Sea (August 17,
+1950)</a></li>
+<li><a href="#e0027">33 Carew Gets Medical Examiner Mixed Up (September
+7, 1950)</a></li>
+<li><a href="#e0028">34 Marion Lewis Teen Age Alcoholic (September 14,
+1950)</a></li>
+<li><a href="#e0029">35 Sam Lubinski Has Spinal Paralysis (September 21,
+1950)</a></li>
+<li><a href="#e0030">36 Mumpkins First Baby (September 28,
+1950)</a></li>
+<li><a href="#e0031">39 Eddie Jenkins And The Arsonist (October 20,
+1950)</a></li>
+<li><a href="#e0032">40 Ling Co Refuses Leg Surgery (October 27,
+1950)</a></li>
+<li><a href="#e0033">43 Mr Bradleys Heart (November 17, 1950)</a></li>
+<li><a href="#e0034">44 Mr Kramer-Parker Needs A Hobby (November 24,
+1950)</a></li>
+<li><a href="#e0035">45 Lady Dunabees Annual Visit (December 1,
+1950)</a></li>
+<li><a href="#e0036">46 Arthur Morgan Needs Brain Surgery (December 8,
+1950)</a></li>
+<li><a href="#e0037">49 David Norton Has Pneumonia (December 29,
+1950)</a></li>
+<li><a href="#e0038">50 Eddie Lazetti Kidnaps Nurse (January 5,
+1951)</a></li>
+<li><a href="#e0039">51 Dr Gillespies Testimonial Dinner (January 12,
+1951)</a></li>
+<li><a href="#e0040">52 Dr Conlon Quack (January 19, 1951)</a></li>
+<li><a href="#e0041">53 Joe Finleys Ulcer (January 26, 1951)</a></li>
+<li><a href="#e0042">54 Oliver Van Meters Allergy (February 2,
+1951)</a></li>
+<li><a href="#e0043">55 Anthrax Infection (February 9, 1951)</a></li>
+<li><a href="#e0044">56 Pete Cosloff Is Mentally Ill (February 16,
+1951)</a></li>
+<li><a href="#e0045">57 Buck Houston Cowboy Star (February 23,
+1951)</a></li>
+<li><a href="#e0046">58 David Coopers Burned Face (March 2,
+1951)</a></li>
+<li><a href="#e0047">59 Edward Carltons Dog Bite (March 9,
+1951)</a></li>
+<li><a href="#e0048">60 Amy Dickens Breaks Her Leg (March 16,
+1951)</a></li>
+<li><a href="#e0049">61 Cathy Mortons Baby (March 23, 1951)</a></li>
+<li><a href="#e0050">62 Joan Quinn (March 30, 1951)</a></li>
+<li><a href="#e0051">63 GillespiesNewSuitForHendersonAward (April 6,
+1951)</a></li>
+<li><a href="#e0052">64 Yukon Joes Gold Mine (April 13, 1951)</a></li>
+<li><a href="#e0053">69 Mysterious Hemophilia Patient (May 18,
+1951)</a></li>
+<li><a href="#e0054">70 Dr Gillespies New Office (May 25, 1951)</a></li>
+<li><a href="#e0055">73 Pedro Maria And Rosie (June 15, 1951)</a></li>
+<li><a href="#e0056">74 Paul Bailey (June 22, 1951)</a></li>
+<li><a href="#e0057">77 Valerie And Walter Benton - Murder (July 13,
+1951)</a></li>
+<li><a href="#e0058">78 Evelyn Briggs (July 20, 1951)</a></li>
+<li><a href="#e0059">79 Robert Lane Intern Shirks Duties (July 27,
+1951)</a></li>
+<li><a href="#e0060">80 Alice Bradley Amnesia Victim (August 3,
+1951)</a></li>
+<li><a href="#e0001">Angela And Steven Kester (February 1,
+1950)</a></li>
+<li><a href="#e0006">Barbara Lane Dope Addict (March 8, 1950)</a></li>
+<li><a href="#e0003">Benjamin Barkley (February 15, 1950)</a></li>
+<li><a href="#e0007">Caroline Shelley (March 15, 1950)</a></li>
+<li><a href="#e0061">Cecil Parker Biography (Undated)</a></li>
+<li><a href="#e0008">Jane Dane New Cancer Treatment (March 22,
+1950)</a></li>
+<li><a href="#e0002">Marjorie Northrup (February 8, 1950)</a></li>
+<li><a href="#e0004">Rico Marchianos Dying Wife (February 22,
+1950)</a></li>
+<li><a href="#e0005">Vernon Pendleton - Hypochondriac (March 1,
+1950)</a></li>
+</ul>
+</body>
+</html>

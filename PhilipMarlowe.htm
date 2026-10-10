@@ -1,0 +1,1308 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.12.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>The Adventures of Philip Marlowe</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
+      background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        color-scheme: light only;
+      }
+      html, body, pre, code {
+        background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
+        color: black;
+      }
+      pre, code {
+        padding: 0;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a, a:visited {
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
+      color: #606060;
+      color: light-dark(#606060, #b6b6b6);
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid currentColor;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+    th {
+      border-top: 1px solid currentColor;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#the-adventures-of-philip-marlowe"
+id="toc-the-adventures-of-philip-marlowe">The Adventures of Philip
+Marlowe</a>
+<ul>
+<li><a href="#contents" id="toc-contents">Contents</a></li>
+<li><a href="#y1947" id="toc-y1947">1947</a></li>
+<li><a href="#y1948" id="toc-y1948">1948</a></li>
+<li><a href="#y1949" id="toc-y1949">1949</a></li>
+<li><a href="#y1950" id="toc-y1950">1950</a></li>
+<li><a href="#y1951" id="toc-y1951">1951</a></li>
+<li><a href="#byDate" id="toc-byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle" id="toc-byTitle">Appendix B: By Title</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="the-adventures-of-philip-marlowe">The Adventures of Philip
+Marlowe</h1>
+<p>Raymond Chandler’s private eye works cases in Los Angeles.</p>
+<ul>
+<li>Episodes: 104</li>
+<li>Network: NBC and CBS</li>
+<li>Source: <a
+href="https://archive.org/details/OTRR_Philip_Marlowe_Singles">Internet
+Archive: OTRR_Philip_Marlowe_Singles</a></li>
+<li>Years: 1947 to 1951</li>
+</ul>
+<p>Each episode title is a link that plays its audio. These broadcasts
+can reflect the attitudes of their time. This page is part of <a
+href="OldTimeRadioDramas.htm">Old Time Radio Dramas</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#y1947">1947</a></li>
+<li><a href="#y1948">1948</a></li>
+<li><a href="#y1949">1949</a></li>
+<li><a href="#y1950">1950</a></li>
+<li><a href="#y1951">1951</a></li>
+<li><a href="#byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle">Appendix B: By Title</a></li>
+</ul>
+<h2 id="y1947">1947</h2>
+<h3 id="e0001"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_47-06-12_xxx_Who_Shot_Waldo.mp3">xxx
+Who Shot Waldo</a></h3>
+<ul>
+<li>Date: June 12, 1947</li>
+<li>Duration: 24:05</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0002"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_47-06-17_001_Red_Wind.mp3">Red
+Wind</a></h3>
+<ul>
+<li>Date: June 17, 1947</li>
+<li>Duration: 30:52</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0003"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_47-07-08_004_The_King_in_Yellow.mp3">The
+King in Yellow</a></h3>
+<ul>
+<li>Date: July 8, 1947</li>
+<li>Duration: 29:50</li>
+<li>Episode: 4</li>
+</ul>
+<h3 id="e0004"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_47-08-05_008_Trouble_Is_My_Business.mp3">Trouble
+Is My Business</a></h3>
+<ul>
+<li>Date: August 5, 1947</li>
+<li>Duration: 29:14</li>
+<li>Episode: 8</li>
+</ul>
+<h2 id="y1948">1948</h2>
+<h3 id="e0005"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_48-09-26_001_Red_Wind.mp3">Red
+Wind</a></h3>
+<ul>
+<li>Date: September 26, 1948</li>
+<li>Duration: 29:43</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0006"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_48-10-03_002_The_Persian_Slippers.mp3">The
+Persian Slippers</a></h3>
+<ul>
+<li>Date: October 3, 1948</li>
+<li>Duration: 29:46</li>
+<li>Episode: 2</li>
+</ul>
+<h3 id="e0007"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_48-10-10_003_The_Panama_Hat.mp3">The
+Panama Hat</a></h3>
+<ul>
+<li>Date: October 10, 1948</li>
+<li>Duration: 28:52</li>
+<li>Episode: 3</li>
+</ul>
+<h3 id="e0008"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_48-10-17_004_Where_Theres_a_Will.mp3">Where
+Theres a Will</a></h3>
+<ul>
+<li>Date: October 17, 1948</li>
+<li>Duration: 29:29</li>
+<li>Episode: 4</li>
+</ul>
+<h3 id="e0009"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_48-10-24_005_The_Heart_of_Gold.mp3">The
+Heart of Gold</a></h3>
+<ul>
+<li>Date: October 24, 1948</li>
+<li>Duration: 30:17</li>
+<li>Episode: 5</li>
+</ul>
+<h3 id="e0010"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_48-11-28_010_The_Hard_Way_Out.mp3">The
+Hard Way Out</a></h3>
+<ul>
+<li>Date: November 28, 1948</li>
+<li>Duration: 29:16</li>
+<li>Episode: 10</li>
+</ul>
+<h3 id="e0011"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_48-12-26_014_The_Old_Acquaintance.mp3">The
+Old Acquaintance</a></h3>
+<ul>
+<li>Date: December 26, 1948</li>
+<li>Duration: 29:36</li>
+<li>Episode: 14</li>
+</ul>
+<h2 id="y1949">1949</h2>
+<h3 id="e0012"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-01-08_015_The_Restless_Day.mp3">The
+Restless Day</a></h3>
+<ul>
+<li>Date: January 8, 1949</li>
+<li>Duration: 29:51</li>
+<li>Episode: 15</li>
+</ul>
+<h3 id="e0013"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-01-15_016_The_Black_Halo.mp3">The
+Black Halo</a></h3>
+<ul>
+<li>Date: January 15, 1949</li>
+<li>Duration: 29:36</li>
+<li>Episode: 16</li>
+</ul>
+<h3 id="e0014"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-01-22_017_The_Orange_Dog.mp3">The
+Orange Dog</a></h3>
+<ul>
+<li>Date: January 22, 1949</li>
+<li>Duration: 29:35</li>
+<li>Episode: 17</li>
+</ul>
+<h3 id="e0015"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-01-29_018_The_Easy_Mark.mp3">The
+Easy Mark</a></h3>
+<ul>
+<li>Date: January 29, 1949</li>
+<li>Duration: 29:13</li>
+<li>Episode: 18</li>
+</ul>
+<h3 id="e0016"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-02-05_019_The_Long_Rope.mp3">The
+Long Rope</a></h3>
+<ul>
+<li>Date: February 5, 1949</li>
+<li>Duration: 29:41</li>
+<li>Episode: 19</li>
+</ul>
+<h3 id="e0017"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-02-12_020_The_Lonesome_Reunion.mp3">The
+Lonesome Reunion</a></h3>
+<ul>
+<li>Date: February 12, 1949</li>
+<li>Duration: 28:52</li>
+<li>Episode: 20</li>
+</ul>
+<h3 id="e0018"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-03-05_023_The_Friend_from_Detroit.mp3">The
+Friend from Detroit</a></h3>
+<ul>
+<li>Date: March 5, 1949</li>
+<li>Duration: 29:48</li>
+<li>Episode: 23</li>
+</ul>
+<h3 id="e0019"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-03-12_024_The_Grim_Hunters.mp3">The
+Grim Hunters</a></h3>
+<ul>
+<li>Date: March 12, 1949</li>
+<li>Duration: 29:57</li>
+<li>Episode: 24</li>
+</ul>
+<h3 id="e0020"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-03-19_ep025_The_Dancing_Hands.mp3">ep025
+The Dancing Hands</a></h3>
+<ul>
+<li>Date: March 19, 1949</li>
+<li>Duration: 29:46</li>
+<li>Episode: 25</li>
+</ul>
+<h3 id="e0021"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-03-26_ep026_The_Green_Flame.mp3">ep026
+The Green Flame</a></h3>
+<ul>
+<li>Date: March 26, 1949</li>
+<li>Duration: 29:28</li>
+<li>Episode: 26</li>
+</ul>
+<h3 id="e0022"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-04-02_ep027_The_Last_Laugh.mp3">ep027
+The Last Laugh</a></h3>
+<ul>
+<li>Date: April 2, 1949</li>
+<li>Duration: 29:28</li>
+<li>Episode: 27</li>
+</ul>
+<h3 id="e0023"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-04-09_ep028_The_Name_to_Remember.mp3">ep028
+The Name to Remember</a></h3>
+<ul>
+<li>Date: April 9, 1949</li>
+<li>Duration: 29:25</li>
+<li>Episode: 28</li>
+</ul>
+<h3 id="e0024"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-04-16_ep029_The_Heat_Wave.mp3">ep029
+The Heat Wave</a></h3>
+<ul>
+<li>Date: April 16, 1949</li>
+<li>Duration: 29:50</li>
+<li>Episode: 29</li>
+</ul>
+<h3 id="e0025"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-04-23_ep030_The_Cloak_of_Kamehameha.mp3">ep030
+The Cloak of Kamehameha</a></h3>
+<ul>
+<li>Date: April 23, 1949</li>
+<li>Duration: 29:55</li>
+<li>Episode: 30</li>
+</ul>
+<h3 id="e0026"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-04-30_ep031_The_Lady_in_Mink.mp3">ep031
+The Lady in Mink</a></h3>
+<ul>
+<li>Date: April 30, 1949</li>
+<li>Duration: 29:55</li>
+<li>Episode: 31</li>
+</ul>
+<h3 id="e0027"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-05-07_ep032_The_Feminine_Touch.mp3">ep032
+The Feminine Touch</a></h3>
+<ul>
+<li>Date: May 7, 1949</li>
+<li>Duration: 30:03</li>
+<li>Episode: 32</li>
+</ul>
+<h3 id="e0028"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-05-14_ep033_The_Promise_to_Pay.mp3">ep033
+The Promise to Pay</a></h3>
+<ul>
+<li>Date: May 14, 1949</li>
+<li>Duration: 29:56</li>
+<li>Episode: 33</li>
+</ul>
+<h3 id="e0029"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-05-21_ep034_Night_Tide.mp3">ep034
+Night Tide</a></h3>
+<ul>
+<li>Date: May 21, 1949</li>
+<li>Duration: 30:50</li>
+<li>Episode: 34</li>
+</ul>
+<h3 id="e0030"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-05-28_ep035_The_Ebony_Link.mp3">ep035
+The Ebony Link</a></h3>
+<ul>
+<li>Date: May 28, 1949</li>
+<li>Duration: 29:55</li>
+<li>Episode: 35</li>
+</ul>
+<h3 id="e0031"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-06-04_ep036_The_Unfair_Lady.mp3">ep036
+The Unfair Lady</a></h3>
+<ul>
+<li>Date: June 4, 1949</li>
+<li>Duration: 30:04</li>
+<li>Episode: 36</li>
+</ul>
+<h3 id="e0032"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-06-11_ep037_The_Pigeons_Blood.mp3">ep037
+The Pigeons Blood</a></h3>
+<ul>
+<li>Date: June 11, 1949</li>
+<li>Duration: 29:52</li>
+<li>Episode: 37</li>
+</ul>
+<h3 id="e0033"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-06-18_ep038_The_Busy_Body.mp3">ep038
+The Busy Body</a></h3>
+<ul>
+<li>Date: June 18, 1949</li>
+<li>Duration: 29:59</li>
+<li>Episode: 38</li>
+</ul>
+<h3 id="e0034"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-06-25_ep039_The_Key_Man.mp3">ep039
+The Key Man</a></h3>
+<ul>
+<li>Date: June 25, 1949</li>
+<li>Duration: 30:02</li>
+<li>Episode: 39</li>
+</ul>
+<h3 id="e0035"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-07-02_ep040_The_Dude_from_Manhattan.mp3">ep040
+The Dude from Manhattan</a></h3>
+<ul>
+<li>Date: July 2, 1949</li>
+<li>Duration: 29:18</li>
+<li>Episode: 40</li>
+</ul>
+<h3 id="e0036"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-07-16_ep042_The_Headless_Peacock.mp3">ep042
+The Headless Peacock</a></h3>
+<ul>
+<li>Date: July 16, 1949</li>
+<li>Duration: 29:50</li>
+<li>Episode: 42</li>
+</ul>
+<h3 id="e0037"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-07-30_ep043_Mexican_Boat_Ride.mp3">ep043
+Mexican Boat Ride</a></h3>
+<ul>
+<li>Date: July 30, 1949</li>
+<li>Duration: 29:22</li>
+<li>Episode: 43</li>
+</ul>
+<h3 id="e0038"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-08-06_ep044_The_August_Lion.mp3">ep044
+The August Lion</a></h3>
+<ul>
+<li>Date: August 6, 1949</li>
+<li>Duration: 29:58</li>
+<li>Episode: 44</li>
+</ul>
+<h3 id="e0039"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-08-13_ep045_The_Indian_Giver.mp3">ep045
+The Indian Giver</a></h3>
+<ul>
+<li>Date: August 13, 1949</li>
+<li>Duration: 30:15</li>
+<li>Episode: 45</li>
+</ul>
+<h3 id="e0040"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-08-20_ep046_The_Lady_Killer.mp3">ep046
+The Lady Killer</a></h3>
+<ul>
+<li>Date: August 20, 1949</li>
+<li>Duration: 29:52</li>
+<li>Episode: 46</li>
+</ul>
+<h3 id="e0041"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-08-27_ep047_The_Eager_Witness.mp3">ep047
+The Eager Witness</a></h3>
+<ul>
+<li>Date: August 27, 1949</li>
+<li>Duration: 29:59</li>
+<li>Episode: 47</li>
+</ul>
+<h3 id="e0042"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-09-03_ep048_The_Bums_Rush.mp3">ep048
+The Bums Rush</a></h3>
+<ul>
+<li>Date: September 3, 1949</li>
+<li>Duration: 29:39</li>
+<li>Episode: 48</li>
+</ul>
+<h3 id="e0043"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-09-10_ep049_The_Rustin_Hickory.mp3">ep049
+The Rustin Hickory</a></h3>
+<ul>
+<li>Date: September 10, 1949</li>
+<li>Duration: 29:37</li>
+<li>Episode: 49</li>
+</ul>
+<h3 id="e0044"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-09-17_ep050_The_Baton_Sinister.mp3">ep050
+The Baton Sinister</a></h3>
+<ul>
+<li>Date: September 17, 1949</li>
+<li>Duration: 29:49</li>
+<li>Episode: 50</li>
+</ul>
+<h3 id="e0045"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-09-24_ep051_The_Fatted_Calf.mp3">ep051
+The Fatted Calf</a></h3>
+<ul>
+<li>Date: September 24, 1949</li>
+<li>Duration: 29:51</li>
+<li>Episode: 51</li>
+</ul>
+<h3 id="e0046"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-10-01_ep052_The_Tale_of_the_Mermaid.mp3">ep052
+The Tale of the Mermaid</a></h3>
+<ul>
+<li>Date: October 1, 1949</li>
+<li>Duration: 30:14</li>
+<li>Episode: 52</li>
+</ul>
+<h3 id="e0047"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-10-08_ep053_The_Open_Window.mp3">ep053
+The Open Window</a></h3>
+<ul>
+<li>Date: October 8, 1949</li>
+<li>Duration: 29:49</li>
+<li>Episode: 53</li>
+</ul>
+<h3 id="e0048"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-10-15_ep054_The_Strangle_Hold.mp3">ep054
+The Strangle Hold</a></h3>
+<ul>
+<li>Date: October 15, 1949</li>
+<li>Duration: 30:12</li>
+<li>Episode: 54</li>
+</ul>
+<h3 id="e0049"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-10-22_ep055_The_Smokeout.mp3">ep055
+The Smokeout</a></h3>
+<ul>
+<li>Date: October 22, 1949</li>
+<li>Duration: 28:11</li>
+<li>Episode: 49</li>
+</ul>
+<h3 id="e0050"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-11-05_ep057_The_Fine_Italian_Hand.mp3">ep057
+The Fine Italian Hand</a></h3>
+<ul>
+<li>Date: November 5, 1949</li>
+<li>Duration: 29:36</li>
+<li>Episode: 57</li>
+</ul>
+<h3 id="e0051"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-11-26_ep060_The_Birds_on_the_Wing.mp3">ep060
+The Birds on the Wing</a></h3>
+<ul>
+<li>Date: November 26, 1949</li>
+<li>Duration: 29:22</li>
+<li>Episode: 60</li>
+</ul>
+<h3 id="e0052"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-12-03_ep061_The_Kid_on_the_Corner.mp3">ep061
+The Kid on the Corner</a></h3>
+<ul>
+<li>Date: December 3, 1949</li>
+<li>Duration: 29:20</li>
+<li>Episode: 61</li>
+</ul>
+<h3 id="e0053"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-12-10_ep062_The_Little_Wishbone.mp3">ep062
+The Little Wishbone</a></h3>
+<ul>
+<li>Date: December 10, 1949</li>
+<li>Duration: 30:15</li>
+<li>Episode: 62</li>
+</ul>
+<h3 id="e0054"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_49-12-31_ep065_The_House_That_Jacqueline_Built.mp3">ep065
+The House That Jacqueline Built</a></h3>
+<ul>
+<li>Date: December 31, 1949</li>
+<li>Duration: 28:25</li>
+<li>Episode: 65</li>
+</ul>
+<h2 id="y1950">1950</h2>
+<h3 id="e0055"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-01-07_ep066_The_Torch_Carriers.mp3">ep066
+The Torch Carriers</a></h3>
+<ul>
+<li>Date: January 7, 1950</li>
+<li>Duration: 30:36</li>
+<li>Episode: 66</li>
+</ul>
+<h3 id="e0056"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-01-14_ep067_The_Covered_Bridge.mp3">ep067
+The Covered Bridge</a></h3>
+<ul>
+<li>Date: January 14, 1950</li>
+<li>Duration: 30:37</li>
+<li>Episode: 67</li>
+</ul>
+<h3 id="e0057"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-01-21_ep068_The_Bid_for_Freedom.mp3">ep068
+The Bid for Freedom</a></h3>
+<ul>
+<li>Date: January 21, 1950</li>
+<li>Duration: 30:26</li>
+<li>Episode: 68</li>
+</ul>
+<h3 id="e0058"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-01-28_ep069_The_Hairpin_Turn.mp3">ep069
+The Hairpin Turn</a></h3>
+<ul>
+<li>Date: January 28, 1950</li>
+<li>Duration: 29:51</li>
+<li>Episode: 69</li>
+</ul>
+<h3 id="e0059"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-02-07_ep070_The_Long_Arm.mp3">ep070
+The Long Arm</a></h3>
+<ul>
+<li>Date: February 7, 1950</li>
+<li>Duration: 29:56</li>
+<li>Episode: 70</li>
+</ul>
+<h3 id="e0060"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-02-14_ep071_The_Grim_Echo.mp3">ep071
+The Grim Echo</a></h3>
+<ul>
+<li>Date: February 14, 1950</li>
+<li>Duration: 29:54</li>
+<li>Episode: 71</li>
+</ul>
+<h3 id="e0061"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-02-21_ep072_The_Ladies_Night.mp3">ep072
+The Ladies Night</a></h3>
+<ul>
+<li>Date: February 21, 1950</li>
+<li>Duration: 29:46</li>
+<li>Episode: 72</li>
+</ul>
+<h3 id="e0062"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-02-28_ep073_The_Big_Step.mp3">ep073
+The Big Step</a></h3>
+<ul>
+<li>Date: February 28, 1950</li>
+<li>Duration: 30:08</li>
+<li>Episode: 73</li>
+</ul>
+<h3 id="e0063"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-03-07_ep074_The_Monkeys_Uncle.mp3">ep074
+The Monkeys Uncle</a></h3>
+<ul>
+<li>Date: March 7, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 74</li>
+</ul>
+<h3 id="e0064"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-03-14_ep075_The_Vital_Statistic.mp3">ep075
+The Vital Statistic</a></h3>
+<ul>
+<li>Date: March 14, 1950</li>
+<li>Duration: 29:22</li>
+<li>Episode: 75</li>
+</ul>
+<h3 id="e0065"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-03-21_ep076_The_Deep_Shadow.mp3">ep076
+The Deep Shadow</a></h3>
+<ul>
+<li>Date: March 21, 1950</li>
+<li>Duration: 29:23</li>
+<li>Episode: 76</li>
+</ul>
+<h3 id="e0066"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-03-28_ep077_The_Sword_of_Cebu.mp3">ep077
+The Sword of Cebu</a></h3>
+<ul>
+<li>Date: March 28, 1950</li>
+<li>Duration: 29:20</li>
+<li>Episode: 77</li>
+</ul>
+<h3 id="e0067"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-04-04_ep078_The_Man_on_the_Roof.mp3">ep078
+The Man on the Roof</a></h3>
+<ul>
+<li>Date: April 4, 1950</li>
+<li>Duration: 29:22</li>
+<li>Episode: 78</li>
+</ul>
+<h3 id="e0068"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-04-11_ep079_The_Anniversary_Gift.mp3">ep079
+The Anniversary Gift</a></h3>
+<ul>
+<li>Date: April 11, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 79</li>
+</ul>
+<h3 id="e0069"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-04-18_ep080_The_Angry_Eagle.mp3">ep080
+The Angry Eagle</a></h3>
+<ul>
+<li>Date: April 18, 1950</li>
+<li>Duration: 29:50</li>
+<li>Episode: 80</li>
+</ul>
+<h3 id="e0070"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-04-25_ep081_The_High_Collared_Cape.mp3">ep081
+The High Collared Cape</a></h3>
+<ul>
+<li>Date: April 25, 1950</li>
+<li>Duration: 30:00</li>
+<li>Episode: 81</li>
+</ul>
+<h3 id="e0071"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-05-02_ep082_The_Sea_Horse_Jockey.mp3">ep082
+The Sea Horse Jockey</a></h3>
+<ul>
+<li>Date: May 2, 1950</li>
+<li>Duration: 30:03</li>
+<li>Episode: 82</li>
+</ul>
+<h3 id="e0072"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-05-09_ep083_The_Hiding_Place.mp3">ep083
+The Hiding Place</a></h3>
+<ul>
+<li>Date: May 9, 1950</li>
+<li>Duration: 30:08</li>
+<li>Episode: 83</li>
+</ul>
+<h3 id="e0073"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-05-16_ep084_The_Cloak_of_Kamehameha.mp3">ep084
+The Cloak of Kamehameha</a></h3>
+<ul>
+<li>Date: May 16, 1950</li>
+<li>Duration: 29:43</li>
+<li>Episode: 84</li>
+</ul>
+<h3 id="e0074"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-05-23_ep085_The_Foxs_Tail.mp3">ep085
+The Foxs Tail</a></h3>
+<ul>
+<li>Date: May 23, 1950</li>
+<li>Duration: 29:51</li>
+<li>Episode: 85</li>
+</ul>
+<h3 id="e0075"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-05-30_ep086_The_Bedside_Manners.mp3">ep086
+The Bedside Manners</a></h3>
+<ul>
+<li>Date: May 30, 1950</li>
+<li>Duration: 29:48</li>
+<li>Episode: 86</li>
+</ul>
+<h3 id="e0076"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-06-06_ep087_The_Uneasy_Head.mp3">ep087
+The Uneasy Head</a></h3>
+<ul>
+<li>Date: June 6, 1950</li>
+<li>Duration: 29:30</li>
+<li>Episode: 87</li>
+</ul>
+<h3 id="e0077"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-06-14_ep088_Face_to_Forget.mp3">ep088
+Face to Forget</a></h3>
+<ul>
+<li>Date: June 14, 1950</li>
+<li>Duration: 29:23</li>
+<li>Episode: 88</li>
+</ul>
+<h3 id="e0078"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-06-21_ep089_The_Gold_Cobra.mp3">ep089
+The Gold Cobra</a></h3>
+<ul>
+<li>Date: June 21, 1950</li>
+<li>Duration: 30:00</li>
+<li>Episode: 89</li>
+</ul>
+<h3 id="e0079"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-06-28_ep090_The_Pelicans_Roost.mp3">ep090
+The Pelicans Roost</a></h3>
+<ul>
+<li>Date: June 28, 1950</li>
+<li>Duration: 29:20</li>
+<li>Episode: 90</li>
+</ul>
+<h3 id="e0080"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-07-05_ep091_The_Girl_from_Pitchfork_Corners.mp3">ep091
+The Girl from Pitchfork Corners</a></h3>
+<ul>
+<li>Date: July 5, 1950</li>
+<li>Duration: 29:59</li>
+<li>Episode: 91</li>
+</ul>
+<h3 id="e0081"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-07-12_ep092_The_Iron_Coffin.mp3">ep092
+The Iron Coffin</a></h3>
+<ul>
+<li>Date: July 12, 1950</li>
+<li>Duration: 29:50</li>
+<li>Episode: 92</li>
+</ul>
+<h3 id="e0082"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-07-19_ep093_The_Last_Wish.mp3">ep093
+The Last Wish</a></h3>
+<ul>
+<li>Date: July 19, 1950</li>
+<li>Duration: 29:47</li>
+<li>Episode: 93</li>
+</ul>
+<h3 id="e0083"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-07-28_ep094_The_Glass_Donkey.mp3">ep094
+The Glass Donkey</a></h3>
+<ul>
+<li>Date: July 28, 1950</li>
+<li>Duration: 29:59</li>
+<li>Episode: 94</li>
+</ul>
+<h3 id="e0084"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-08-04_ep095_The_Parrots_Bed.mp3">ep095
+The Parrots Bed</a></h3>
+<ul>
+<li>Date: August 4, 1950</li>
+<li>Duration: 25:18</li>
+<li>Episode: 85</li>
+</ul>
+<h3 id="e0085"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-08-11_ep096_The_Quiet_Magpie.mp3">ep096
+The Quiet Magpie</a></h3>
+<ul>
+<li>Date: August 11, 1950</li>
+<li>Duration: 29:48</li>
+<li>Episode: 96</li>
+</ul>
+<h3 id="e0086"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-08-18_ep097_The_Dark_Tunnel.mp3">ep097
+The Dark Tunnel</a></h3>
+<ul>
+<li>Date: August 18, 1950</li>
+<li>Duration: 29:47</li>
+<li>Episode: 97</li>
+</ul>
+<h3 id="e0087"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-08-25_ep098_The_Collectors_Item.mp3">ep098
+The Collectors Item</a></h3>
+<ul>
+<li>Date: August 25, 1950</li>
+<li>Duration: 29:48</li>
+<li>Episode: 98</li>
+</ul>
+<h3 id="e0088"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-09-01_ep099_The_Soft_Spot.mp3">ep099
+The Soft Spot</a></h3>
+<ul>
+<li>Date: September 1, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 99</li>
+</ul>
+<h3 id="e0089"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-09-08_ep100_The_Fifth_Mask.mp3">ep100
+The Fifth Mask</a></h3>
+<ul>
+<li>Date: September 8, 1950</li>
+<li>Duration: 29:19</li>
+<li>Episode: 100</li>
+</ul>
+<h3 id="e0090"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-09-15_ep101_The_Final_Payment.mp3">ep101
+The Final Payment</a></h3>
+<ul>
+<li>Date: September 15, 1950</li>
+<li>Duration: 29:27</li>
+<li>Episode: 101</li>
+</ul>
+<h3 id="e0091"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-09-22_ep102_The_White_Carnation.mp3">ep102
+The White Carnation</a></h3>
+<ul>
+<li>Date: September 22, 1950</li>
+<li>Duration: 29:24</li>
+<li>Episode: 102</li>
+</ul>
+<h3 id="e0092"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_50-09-29_ep103_The_Big_Book.mp3">ep103
+The Big Book</a></h3>
+<ul>
+<li>Date: September 29, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 103</li>
+</ul>
+<h2 id="y1951">1951</h2>
+<h3 id="e0093"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_51-07-07_ep104_A_Seaside_Sabbatical.mp3">ep104
+A Seaside Sabbatical</a></h3>
+<ul>
+<li>Date: July 7, 1951</li>
+<li>Duration: 29:21</li>
+<li>Episode: 104</li>
+</ul>
+<h3 id="e0094"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_51-07-14_ep105_The_Dear_Dead_Days.mp3">ep105
+The Dear Dead Days</a></h3>
+<ul>
+<li>Date: July 14, 1951</li>
+<li>Duration: 29:16</li>
+<li>Episode: 105</li>
+</ul>
+<h3 id="e0095"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_51-07-21_ep106_Life_Can_Be_Murder.mp3">ep106
+Life Can Be Murder</a></h3>
+<ul>
+<li>Date: July 21, 1951</li>
+<li>Duration: 28:45</li>
+<li>Episode: 106</li>
+</ul>
+<h3 id="e0096"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_51-07-28_ep107_The_Good_Neighbor_Policy.mp3">ep107
+The Good Neighbor Policy</a></h3>
+<ul>
+<li>Date: July 28, 1951</li>
+<li>Duration: 29:38</li>
+<li>Episode: 107</li>
+</ul>
+<h3 id="e0097"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_51-08-04_ep108_The_Long_Way_Home.mp3">ep108
+The Long Way Home</a></h3>
+<ul>
+<li>Date: August 4, 1951</li>
+<li>Duration: 29:46</li>
+<li>Episode: 108</li>
+</ul>
+<h3 id="e0098"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_51-08-18_ep110_The_Young_Mans_Fancy.mp3">ep110
+The Young Mans Fancy</a></h3>
+<ul>
+<li>Date: August 18, 1951</li>
+<li>Duration: 29:50</li>
+<li>Episode: 110</li>
+</ul>
+<h3 id="e0099"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_51-08-23_epxxx_Heir_for_G-String_eprehearsal.mp3">epxxx
+Heir for G-String eprehearsal</a></h3>
+<ul>
+<li>Date: August 23, 1951</li>
+<li>Duration: 25:17</li>
+<li>Episode: 100</li>
+</ul>
+<h3 id="e0100"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_51-08-25_ep111_Heir_for_G-String.mp3">ep111
+Heir for G-String</a></h3>
+<ul>
+<li>Date: August 25, 1951</li>
+<li>Duration: 29:15</li>
+<li>Episode: 111</li>
+</ul>
+<h3 id="e0101"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_51-08-30_epxxx_Nether_Nether_Land_eprehearsal.mp3">epxxx
+Nether Nether Land eprehearsal</a></h3>
+<ul>
+<li>Date: August 30, 1951</li>
+<li>Duration: 27:32</li>
+<li>Episode: 102</li>
+</ul>
+<h3 id="e0102"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_51-09-01_ep112_Nether_Nether_Land.mp3">ep112
+Nether Nether Land</a></h3>
+<ul>
+<li>Date: September 1, 1951</li>
+<li>Duration: 29:23</li>
+<li>Episode: 112</li>
+</ul>
+<h3 id="e0103"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_51-09-08_ep113_The_Medium_Was_Rare.mp3">ep113
+The Medium Was Rare</a></h3>
+<ul>
+<li>Date: September 8, 1951</li>
+<li>Duration: 29:15</li>
+<li>Episode: 113</li>
+</ul>
+<h3 id="e0104"><a
+href="https://archive.org/download/OTRR_Philip_Marlowe_Singles/Philip_Marlowe_51-09-15_ep114_Sound_and_the_Unsound.mp3">ep114
+Sound and the Unsound</a></h3>
+<ul>
+<li>Date: September 15, 1951</li>
+<li>Duration: 29:15</li>
+<li>Episode: 114</li>
+</ul>
+<h2 id="byDate">Appendix A: By Date</h2>
+<ul>
+<li><a href="#e0001">1947-06-12: xxx Who Shot Waldo</a></li>
+<li><a href="#e0002">1947-06-17: Red Wind</a></li>
+<li><a href="#e0003">1947-07-08: The King in Yellow</a></li>
+<li><a href="#e0004">1947-08-05: Trouble Is My Business</a></li>
+<li><a href="#e0005">1948-09-26: Red Wind</a></li>
+<li><a href="#e0006">1948-10-03: The Persian Slippers</a></li>
+<li><a href="#e0007">1948-10-10: The Panama Hat</a></li>
+<li><a href="#e0008">1948-10-17: Where Theres a Will</a></li>
+<li><a href="#e0009">1948-10-24: The Heart of Gold</a></li>
+<li><a href="#e0010">1948-11-28: The Hard Way Out</a></li>
+<li><a href="#e0011">1948-12-26: The Old Acquaintance</a></li>
+<li><a href="#e0012">1949-01-08: The Restless Day</a></li>
+<li><a href="#e0013">1949-01-15: The Black Halo</a></li>
+<li><a href="#e0014">1949-01-22: The Orange Dog</a></li>
+<li><a href="#e0015">1949-01-29: The Easy Mark</a></li>
+<li><a href="#e0016">1949-02-05: The Long Rope</a></li>
+<li><a href="#e0017">1949-02-12: The Lonesome Reunion</a></li>
+<li><a href="#e0018">1949-03-05: The Friend from Detroit</a></li>
+<li><a href="#e0019">1949-03-12: The Grim Hunters</a></li>
+<li><a href="#e0020">1949-03-19: ep025 The Dancing Hands</a></li>
+<li><a href="#e0021">1949-03-26: ep026 The Green Flame</a></li>
+<li><a href="#e0022">1949-04-02: ep027 The Last Laugh</a></li>
+<li><a href="#e0023">1949-04-09: ep028 The Name to Remember</a></li>
+<li><a href="#e0024">1949-04-16: ep029 The Heat Wave</a></li>
+<li><a href="#e0025">1949-04-23: ep030 The Cloak of Kamehameha</a></li>
+<li><a href="#e0026">1949-04-30: ep031 The Lady in Mink</a></li>
+<li><a href="#e0027">1949-05-07: ep032 The Feminine Touch</a></li>
+<li><a href="#e0028">1949-05-14: ep033 The Promise to Pay</a></li>
+<li><a href="#e0029">1949-05-21: ep034 Night Tide</a></li>
+<li><a href="#e0030">1949-05-28: ep035 The Ebony Link</a></li>
+<li><a href="#e0031">1949-06-04: ep036 The Unfair Lady</a></li>
+<li><a href="#e0032">1949-06-11: ep037 The Pigeons Blood</a></li>
+<li><a href="#e0033">1949-06-18: ep038 The Busy Body</a></li>
+<li><a href="#e0034">1949-06-25: ep039 The Key Man</a></li>
+<li><a href="#e0035">1949-07-02: ep040 The Dude from Manhattan</a></li>
+<li><a href="#e0036">1949-07-16: ep042 The Headless Peacock</a></li>
+<li><a href="#e0037">1949-07-30: ep043 Mexican Boat Ride</a></li>
+<li><a href="#e0038">1949-08-06: ep044 The August Lion</a></li>
+<li><a href="#e0039">1949-08-13: ep045 The Indian Giver</a></li>
+<li><a href="#e0040">1949-08-20: ep046 The Lady Killer</a></li>
+<li><a href="#e0041">1949-08-27: ep047 The Eager Witness</a></li>
+<li><a href="#e0042">1949-09-03: ep048 The Bums Rush</a></li>
+<li><a href="#e0043">1949-09-10: ep049 The Rustin Hickory</a></li>
+<li><a href="#e0044">1949-09-17: ep050 The Baton Sinister</a></li>
+<li><a href="#e0045">1949-09-24: ep051 The Fatted Calf</a></li>
+<li><a href="#e0046">1949-10-01: ep052 The Tale of the Mermaid</a></li>
+<li><a href="#e0047">1949-10-08: ep053 The Open Window</a></li>
+<li><a href="#e0048">1949-10-15: ep054 The Strangle Hold</a></li>
+<li><a href="#e0049">1949-10-22: ep055 The Smokeout</a></li>
+<li><a href="#e0050">1949-11-05: ep057 The Fine Italian Hand</a></li>
+<li><a href="#e0051">1949-11-26: ep060 The Birds on the Wing</a></li>
+<li><a href="#e0052">1949-12-03: ep061 The Kid on the Corner</a></li>
+<li><a href="#e0053">1949-12-10: ep062 The Little Wishbone</a></li>
+<li><a href="#e0054">1949-12-31: ep065 The House That Jacqueline
+Built</a></li>
+<li><a href="#e0055">1950-01-07: ep066 The Torch Carriers</a></li>
+<li><a href="#e0056">1950-01-14: ep067 The Covered Bridge</a></li>
+<li><a href="#e0057">1950-01-21: ep068 The Bid for Freedom</a></li>
+<li><a href="#e0058">1950-01-28: ep069 The Hairpin Turn</a></li>
+<li><a href="#e0059">1950-02-07: ep070 The Long Arm</a></li>
+<li><a href="#e0060">1950-02-14: ep071 The Grim Echo</a></li>
+<li><a href="#e0061">1950-02-21: ep072 The Ladies Night</a></li>
+<li><a href="#e0062">1950-02-28: ep073 The Big Step</a></li>
+<li><a href="#e0063">1950-03-07: ep074 The Monkeys Uncle</a></li>
+<li><a href="#e0064">1950-03-14: ep075 The Vital Statistic</a></li>
+<li><a href="#e0065">1950-03-21: ep076 The Deep Shadow</a></li>
+<li><a href="#e0066">1950-03-28: ep077 The Sword of Cebu</a></li>
+<li><a href="#e0067">1950-04-04: ep078 The Man on the Roof</a></li>
+<li><a href="#e0068">1950-04-11: ep079 The Anniversary Gift</a></li>
+<li><a href="#e0069">1950-04-18: ep080 The Angry Eagle</a></li>
+<li><a href="#e0070">1950-04-25: ep081 The High Collared Cape</a></li>
+<li><a href="#e0071">1950-05-02: ep082 The Sea Horse Jockey</a></li>
+<li><a href="#e0072">1950-05-09: ep083 The Hiding Place</a></li>
+<li><a href="#e0073">1950-05-16: ep084 The Cloak of Kamehameha</a></li>
+<li><a href="#e0074">1950-05-23: ep085 The Foxs Tail</a></li>
+<li><a href="#e0075">1950-05-30: ep086 The Bedside Manners</a></li>
+<li><a href="#e0076">1950-06-06: ep087 The Uneasy Head</a></li>
+<li><a href="#e0077">1950-06-14: ep088 Face to Forget</a></li>
+<li><a href="#e0078">1950-06-21: ep089 The Gold Cobra</a></li>
+<li><a href="#e0079">1950-06-28: ep090 The Pelicans Roost</a></li>
+<li><a href="#e0080">1950-07-05: ep091 The Girl from Pitchfork
+Corners</a></li>
+<li><a href="#e0081">1950-07-12: ep092 The Iron Coffin</a></li>
+<li><a href="#e0082">1950-07-19: ep093 The Last Wish</a></li>
+<li><a href="#e0083">1950-07-28: ep094 The Glass Donkey</a></li>
+<li><a href="#e0084">1950-08-04: ep095 The Parrots Bed</a></li>
+<li><a href="#e0085">1950-08-11: ep096 The Quiet Magpie</a></li>
+<li><a href="#e0086">1950-08-18: ep097 The Dark Tunnel</a></li>
+<li><a href="#e0087">1950-08-25: ep098 The Collectors Item</a></li>
+<li><a href="#e0088">1950-09-01: ep099 The Soft Spot</a></li>
+<li><a href="#e0089">1950-09-08: ep100 The Fifth Mask</a></li>
+<li><a href="#e0090">1950-09-15: ep101 The Final Payment</a></li>
+<li><a href="#e0091">1950-09-22: ep102 The White Carnation</a></li>
+<li><a href="#e0092">1950-09-29: ep103 The Big Book</a></li>
+<li><a href="#e0093">1951-07-07: ep104 A Seaside Sabbatical</a></li>
+<li><a href="#e0094">1951-07-14: ep105 The Dear Dead Days</a></li>
+<li><a href="#e0095">1951-07-21: ep106 Life Can Be Murder</a></li>
+<li><a href="#e0096">1951-07-28: ep107 The Good Neighbor Policy</a></li>
+<li><a href="#e0097">1951-08-04: ep108 The Long Way Home</a></li>
+<li><a href="#e0098">1951-08-18: ep110 The Young Mans Fancy</a></li>
+<li><a href="#e0099">1951-08-23: epxxx Heir for G-String
+eprehearsal</a></li>
+<li><a href="#e0100">1951-08-25: ep111 Heir for G-String</a></li>
+<li><a href="#e0101">1951-08-30: epxxx Nether Nether Land
+eprehearsal</a></li>
+<li><a href="#e0102">1951-09-01: ep112 Nether Nether Land</a></li>
+<li><a href="#e0103">1951-09-08: ep113 The Medium Was Rare</a></li>
+<li><a href="#e0104">1951-09-15: ep114 Sound and the Unsound</a></li>
+</ul>
+<h2 id="byTitle">Appendix B: By Title</h2>
+<ul>
+<li><a href="#e0013">The Black Halo (January 15, 1949)</a></li>
+<li><a href="#e0015">The Easy Mark (January 29, 1949)</a></li>
+<li><a href="#e0020">ep025 The Dancing Hands (March 19, 1949)</a></li>
+<li><a href="#e0021">ep026 The Green Flame (March 26, 1949)</a></li>
+<li><a href="#e0022">ep027 The Last Laugh (April 2, 1949)</a></li>
+<li><a href="#e0023">ep028 The Name to Remember (April 9, 1949)</a></li>
+<li><a href="#e0024">ep029 The Heat Wave (April 16, 1949)</a></li>
+<li><a href="#e0025">ep030 The Cloak of Kamehameha (April 23,
+1949)</a></li>
+<li><a href="#e0026">ep031 The Lady in Mink (April 30, 1949)</a></li>
+<li><a href="#e0027">ep032 The Feminine Touch (May 7, 1949)</a></li>
+<li><a href="#e0028">ep033 The Promise to Pay (May 14, 1949)</a></li>
+<li><a href="#e0029">ep034 Night Tide (May 21, 1949)</a></li>
+<li><a href="#e0030">ep035 The Ebony Link (May 28, 1949)</a></li>
+<li><a href="#e0031">ep036 The Unfair Lady (June 4, 1949)</a></li>
+<li><a href="#e0032">ep037 The Pigeons Blood (June 11, 1949)</a></li>
+<li><a href="#e0033">ep038 The Busy Body (June 18, 1949)</a></li>
+<li><a href="#e0034">ep039 The Key Man (June 25, 1949)</a></li>
+<li><a href="#e0035">ep040 The Dude from Manhattan (July 2,
+1949)</a></li>
+<li><a href="#e0036">ep042 The Headless Peacock (July 16, 1949)</a></li>
+<li><a href="#e0037">ep043 Mexican Boat Ride (July 30, 1949)</a></li>
+<li><a href="#e0038">ep044 The August Lion (August 6, 1949)</a></li>
+<li><a href="#e0039">ep045 The Indian Giver (August 13, 1949)</a></li>
+<li><a href="#e0040">ep046 The Lady Killer (August 20, 1949)</a></li>
+<li><a href="#e0041">ep047 The Eager Witness (August 27, 1949)</a></li>
+<li><a href="#e0042">ep048 The Bums Rush (September 3, 1949)</a></li>
+<li><a href="#e0043">ep049 The Rustin Hickory (September 10,
+1949)</a></li>
+<li><a href="#e0044">ep050 The Baton Sinister (September 17,
+1949)</a></li>
+<li><a href="#e0045">ep051 The Fatted Calf (September 24, 1949)</a></li>
+<li><a href="#e0046">ep052 The Tale of the Mermaid (October 1,
+1949)</a></li>
+<li><a href="#e0047">ep053 The Open Window (October 8, 1949)</a></li>
+<li><a href="#e0048">ep054 The Strangle Hold (October 15, 1949)</a></li>
+<li><a href="#e0049">ep055 The Smokeout (October 22, 1949)</a></li>
+<li><a href="#e0050">ep057 The Fine Italian Hand (November 5,
+1949)</a></li>
+<li><a href="#e0051">ep060 The Birds on the Wing (November 26,
+1949)</a></li>
+<li><a href="#e0052">ep061 The Kid on the Corner (December 3,
+1949)</a></li>
+<li><a href="#e0053">ep062 The Little Wishbone (December 10,
+1949)</a></li>
+<li><a href="#e0054">ep065 The House That Jacqueline Built (December 31,
+1949)</a></li>
+<li><a href="#e0055">ep066 The Torch Carriers (January 7, 1950)</a></li>
+<li><a href="#e0056">ep067 The Covered Bridge (January 14,
+1950)</a></li>
+<li><a href="#e0057">ep068 The Bid for Freedom (January 21,
+1950)</a></li>
+<li><a href="#e0058">ep069 The Hairpin Turn (January 28, 1950)</a></li>
+<li><a href="#e0059">ep070 The Long Arm (February 7, 1950)</a></li>
+<li><a href="#e0060">ep071 The Grim Echo (February 14, 1950)</a></li>
+<li><a href="#e0061">ep072 The Ladies Night (February 21, 1950)</a></li>
+<li><a href="#e0062">ep073 The Big Step (February 28, 1950)</a></li>
+<li><a href="#e0063">ep074 The Monkeys Uncle (March 7, 1950)</a></li>
+<li><a href="#e0064">ep075 The Vital Statistic (March 14, 1950)</a></li>
+<li><a href="#e0065">ep076 The Deep Shadow (March 21, 1950)</a></li>
+<li><a href="#e0066">ep077 The Sword of Cebu (March 28, 1950)</a></li>
+<li><a href="#e0067">ep078 The Man on the Roof (April 4, 1950)</a></li>
+<li><a href="#e0068">ep079 The Anniversary Gift (April 11,
+1950)</a></li>
+<li><a href="#e0069">ep080 The Angry Eagle (April 18, 1950)</a></li>
+<li><a href="#e0070">ep081 The High Collared Cape (April 25,
+1950)</a></li>
+<li><a href="#e0071">ep082 The Sea Horse Jockey (May 2, 1950)</a></li>
+<li><a href="#e0072">ep083 The Hiding Place (May 9, 1950)</a></li>
+<li><a href="#e0073">ep084 The Cloak of Kamehameha (May 16,
+1950)</a></li>
+<li><a href="#e0074">ep085 The Foxs Tail (May 23, 1950)</a></li>
+<li><a href="#e0075">ep086 The Bedside Manners (May 30, 1950)</a></li>
+<li><a href="#e0076">ep087 The Uneasy Head (June 6, 1950)</a></li>
+<li><a href="#e0077">ep088 Face to Forget (June 14, 1950)</a></li>
+<li><a href="#e0078">ep089 The Gold Cobra (June 21, 1950)</a></li>
+<li><a href="#e0079">ep090 The Pelicans Roost (June 28, 1950)</a></li>
+<li><a href="#e0080">ep091 The Girl from Pitchfork Corners (July 5,
+1950)</a></li>
+<li><a href="#e0081">ep092 The Iron Coffin (July 12, 1950)</a></li>
+<li><a href="#e0082">ep093 The Last Wish (July 19, 1950)</a></li>
+<li><a href="#e0083">ep094 The Glass Donkey (July 28, 1950)</a></li>
+<li><a href="#e0084">ep095 The Parrots Bed (August 4, 1950)</a></li>
+<li><a href="#e0085">ep096 The Quiet Magpie (August 11, 1950)</a></li>
+<li><a href="#e0086">ep097 The Dark Tunnel (August 18, 1950)</a></li>
+<li><a href="#e0087">ep098 The Collectors Item (August 25,
+1950)</a></li>
+<li><a href="#e0088">ep099 The Soft Spot (September 1, 1950)</a></li>
+<li><a href="#e0089">ep100 The Fifth Mask (September 8, 1950)</a></li>
+<li><a href="#e0090">ep101 The Final Payment (September 15,
+1950)</a></li>
+<li><a href="#e0091">ep102 The White Carnation (September 22,
+1950)</a></li>
+<li><a href="#e0092">ep103 The Big Book (September 29, 1950)</a></li>
+<li><a href="#e0093">ep104 A Seaside Sabbatical (July 7, 1951)</a></li>
+<li><a href="#e0094">ep105 The Dear Dead Days (July 14, 1951)</a></li>
+<li><a href="#e0095">ep106 Life Can Be Murder (July 21, 1951)</a></li>
+<li><a href="#e0096">ep107 The Good Neighbor Policy (July 28,
+1951)</a></li>
+<li><a href="#e0097">ep108 The Long Way Home (August 4, 1951)</a></li>
+<li><a href="#e0098">ep110 The Young Mans Fancy (August 18,
+1951)</a></li>
+<li><a href="#e0100">ep111 Heir for G-String (August 25, 1951)</a></li>
+<li><a href="#e0102">ep112 Nether Nether Land (September 1,
+1951)</a></li>
+<li><a href="#e0103">ep113 The Medium Was Rare (September 8,
+1951)</a></li>
+<li><a href="#e0104">ep114 Sound and the Unsound (September 15,
+1951)</a></li>
+<li><a href="#e0099">epxxx Heir for G-String eprehearsal (August 23,
+1951)</a></li>
+<li><a href="#e0101">epxxx Nether Nether Land eprehearsal (August 30,
+1951)</a></li>
+<li><a href="#e0018">The Friend from Detroit (March 5, 1949)</a></li>
+<li><a href="#e0019">The Grim Hunters (March 12, 1949)</a></li>
+<li><a href="#e0010">The Hard Way Out (November 28, 1948)</a></li>
+<li><a href="#e0009">The Heart of Gold (October 24, 1948)</a></li>
+<li><a href="#e0003">The King in Yellow (July 8, 1947)</a></li>
+<li><a href="#e0017">The Lonesome Reunion (February 12, 1949)</a></li>
+<li><a href="#e0016">The Long Rope (February 5, 1949)</a></li>
+<li><a href="#e0011">The Old Acquaintance (December 26, 1948)</a></li>
+<li><a href="#e0014">The Orange Dog (January 22, 1949)</a></li>
+<li><a href="#e0007">The Panama Hat (October 10, 1948)</a></li>
+<li><a href="#e0006">The Persian Slippers (October 3, 1948)</a></li>
+<li><a href="#e0002">Red Wind (June 17, 1947)</a></li>
+<li><a href="#e0005">Red Wind (September 26, 1948)</a></li>
+<li><a href="#e0012">The Restless Day (January 8, 1949)</a></li>
+<li><a href="#e0004">Trouble Is My Business (August 5, 1947)</a></li>
+<li><a href="#e0008">Where Theres a Will (October 17, 1948)</a></li>
+<li><a href="#e0001">xxx Who Shot Waldo (June 12, 1947)</a></li>
+</ul>
+</body>
+</html>

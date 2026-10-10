@@ -2,14 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Jamal Mazrui" />
   <title>Tooth &amp; Claw Directory</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -34,12 +40,16 @@
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -52,13 +62,14 @@
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -81,8 +92,11 @@
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     div.abstract {
       margin: 2em 2em 2em 2em;
@@ -96,6 +110,7 @@
       margin-bottom: 0.5em;
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -115,8 +130,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -133,11 +148,11 @@
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -159,10 +174,13 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -173,12 +191,10 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Tooth &amp; Claw Directory</h1>
 <p class="subtitle">A Screen-Reader-Friendly Guide to Tooth &amp; Claw:
 True Stories of Animal Attacks</p>
 <p class="author">Jamal Mazrui</p>
@@ -234,8 +250,9 @@ Tiger Attack - SF Zoo Chaos</a></h3>
 <p><strong>Summary:</strong> On Christmas day in 2007, the Amur Tiger
 Tatiana leapt from her enclosure at the San Francisco Zoo and attacked 3
 young friends. Wes talks Jeff and Mike through the chaos, which ended
-very poorly for almost everyone involved. ~~ To advertise on the show,
-contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+very poorly for almost everyone involved. <sub></sub> To advertise on
+the show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE .</p>
 <h3
 id="toothandclaw-black-bear-attacks-allena-hansen-and-old-timey-yellowstone-lady"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8293754438.mp3?updated=1747082868">Black
@@ -248,9 +265,9 @@ Bear Attacks - Allena Hansen and Old-Timey Yellowstone Lady</a></h3>
 black bears pose to the unprepared. Thankfully, he and Jeff are able to
 share their knowledge on how to avoid an attack, or if you do end up
 having an encounter with one, how to fight back. Mike’s ideas are a
-little more unorthodox and are thus discounted out of hand. ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+little more unorthodox and are thus discounted out of hand. <sub></sub>
+To advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3 id="toothandclaw-alligator-attack-alligator-after-dark"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7035444020.mp3?updated=1747083826">Alligator
 Attack - Alligator After Dark</a></h3>
@@ -264,8 +281,9 @@ page</a></p>
 <p><strong>Summary:</strong> We recount the tale of a 2015 alligator
 attack in a Texas Bayou, involving Tommie Woodward, a young man beloved
 in his community, and an 11 foot alligator that took exception to
-Tommie’s late night swim in Bukart’s Marina. ~~ To advertise on the
-show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+Tommie’s late night swim in Bukart’s Marina. <sub></sub> To advertise on
+the show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE .</p>
 <h3
 id="toothandclaw-great-white-shark-attack-the-19-foot-shark-and-rob-rebstock"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3606629798.mp3?updated=1747084420">Great
@@ -280,8 +298,8 @@ page</a></p>
 <p><strong>Summary:</strong> Turns out 1975 was a big year for great
 whites, and not just because of Jaws. Wes does it once again and shares
 not just one but TWO bonus shark attack stories, which gets everyone
-excited. ~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw
-is brought to you by QCODE .</p>
+excited. <sub></sub> To advertise on the show, contact us ! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-mountain-lion-attack-shannon-parker-and-the-desperate-cougar"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2751324968.mp3?updated=1747084524">Mountain
@@ -296,8 +314,9 @@ page</a></p>
 <p><strong>Summary:</strong> A young woman was on an innocent hike, but
 a mountain lion had other plans. Wes, unexpectedly, digs into the
 relationship drama aspect of this story, while Jeff outs himself as a
-prolific mountain lion spotter. ~~ To advertise on the show, contact us
-! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+prolific mountain lion spotter. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3
 id="toothandclaw-chimpanzee-attack-moe-the-chimp-has-a-really-weird-birthday"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2662327623.mp3?updated=1747084846">Chimpanzee
@@ -314,9 +333,9 @@ story about a chimpanzee attack that should probably be made into a
 movie. Saint James rescues a baby chimp whose mother died at the hands
 of poachers, and he takes the little guy back to California to raise as
 his own. But this seemingly sweet, direct-to-TV Lifetime flick quickly
-devolves into more of a Planet of the Apes kind of situation. ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+devolves into more of a Planet of the Apes kind of situation.
+<sub></sub> To advertise on the show, contact us ! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE .</p>
 <h3 id="toothandclaw-polar-bear-attack-a-bad-end-to-polar-bear-camp"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7933335648.mp3?updated=1747085280">Polar
 Bear Attack - A Bad End to Polar Bear Camp</a></h3>
@@ -331,8 +350,8 @@ page</a></p>
 bear, which, alongside literally every other, is his favorite animal. A
 small group of young campers head up to an archipelago off the northern
 coast of Norway, only to end up on the wrong end of the Arctic
-predator/prey dynamic. ~~ To advertise on the show, contact us ! ~~
-Tooth &amp; Claw is brought to you by QCODE .</p>
+predator/prey dynamic. <sub></sub> To advertise on the show, contact us
+! <sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3 id="toothandclaw-hippopotamus-attack-angry-angry-hippos"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4837208863.mp3?updated=1747156226">Hippopotamus
 Attack - Angry Angry Hippos</a></h3>
@@ -346,8 +365,8 @@ page</a></p>
 <p><strong>Summary:</strong> Victoria Falls, Zimbabwe: a story about one
 man’s death-defying showdown with an angry hippopotamus. Jeff and Mike
 are chastised by Wes for even thinking of the best way for surviving a
-hippo attack. ~~ To advertise on the show, contact us ! ~~ Tooth &amp;
-Claw is brought to you by QCODE .</p>
+hippo attack. <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3 id="toothandclaw-wolf-attack-the-wolf-and-the-hound"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4253743259.mp3?updated=1747156424">Wolf
 Attack - The Wolf and the Hound</a></h3>
@@ -361,8 +380,8 @@ page</a></p>
 <p><strong>Summary:</strong> Wes takes us all the way up to a remote
 logging camp in Alaska to share a story about two young boys who tread a
 little too close to a wolf. Jeff takes the rare opportunity to shout out
-a serial killer. ~~ To advertise on the show, contact us ! ~~ Tooth
-&amp; Claw is brought to you by QCODE .</p>
+a serial killer. <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h2 id="2021">2021 (30)</h2>
 <h3 id="toothandclaw-justin-bieber-saves-a-man-s-life-2020-wrap-up"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9586644389.mp3?updated=1747156730">Justin
@@ -378,9 +397,9 @@ page</a></p>
 animal attack stories that involve two of the greatest musical acts ever
 to come out of North America (can’t fight the facts), and also brings to
 discussion the popular “Which animal would you pick to defend you?” meme
-that’s been making the rounds online for a while now. ~~ To advertise on
-the show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE
-.</p>
+that’s been making the rounds online for a while now. <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3 id="toothandclaw-python-attack-a-tale-of-two-pythons"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8024874059.mp3?updated=1747157112">Python
 Attack - A Tale of Two Pythons</a></h3>
@@ -393,9 +412,9 @@ page</a></p>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Wes has some uncomfortable stories to share
 this time, especially for the male listeners. Some of you weirdos might
-like this one a lot though, just like Jeff and Mike did. ~~ To advertise
-on the show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE
-.</p>
+like this one a lot though, just like Jeff and Mike did. <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-a-grizzly-daddy-daughter-date"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1543567879.mp3?updated=1747157199">Grizzly
@@ -412,8 +431,9 @@ talk about another grizzly bear encounter, this time involving a man and
 his recently graduated daughter who decided to take a little trip up to
 Northern Montana together. The bear who attacked them probably didn’t
 realize that this was a celebratory trip, otherwise it may have let
-their trespass into its territory slide. ~~ To advertise on the show,
-contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+their trespass into its territory slide. <sub></sub> To advertise on the
+show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE .</p>
 <h3 id="toothandclaw-crow-attack-crows-never-forget"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9122626432.mp3?updated=1747157523">Crow
 Attack - Crows Never Forget</a></h3>
@@ -429,8 +449,8 @@ Claw mini, and has some incredibly bizarre, Hitchcock-ian stories to
 share about some persistent crows and other birds who have taken issue
 with humankind. (Disclaimer: We experienced some technical issues while
 recording, so please forgive us for some random volume swings you may
-hear.) ~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw is
-brought to you by QCODE .</p>
+hear.) <sub></sub> To advertise on the show, contact us ! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3 id="toothandclaw-killer-whale-attack-tilikum-s-terrifying-tour"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2872933767.mp3?updated=1747158134">Killer
 Whale Attack - Tilikum’s Terrifying Tour</a></h3>
@@ -444,8 +464,8 @@ page</a></p>
 <p><strong>Summary:</strong> Wes gives us all a glimpse into the horrors
 of killer whale captivity, particularly one mistreated orca and the
 unfortunate demise of three different people at his hands. Or fins.
-Teeth, maybe? ~~ To advertise on the show, contact us ! ~~ Tooth &amp;
-Claw is brought to you by QCODE .</p>
+Teeth, maybe? <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-moose-attack-the-moose-a-dog-some-gloves-and-a-bra"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9719433394.mp3?updated=1747158686">Moose
@@ -459,8 +479,8 @@ page</a></p>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Wes takes us to Alaska to tell of a
 malcontent moose messing up a morning mosey. All we can say is, thank
-goodness for bras. ~~ To advertise on the show, contact us ! ~~ Tooth
-&amp; Claw is brought to you by QCODE .</p>
+goodness for bras. <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-monitor-lizard-attack-the-monitor-murder-mystery"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5349387539.mp3?updated=1747158830">Monitor
@@ -476,8 +496,9 @@ page</a></p>
 lizards. Wes takes us through one of the more bizarre and mysterious
 animal attacks the show has discussed thus far. Jeff gets excited
 talking about lizard genitalia, and Mike ponders the possibility of the
-reptilians being responsible. ~~ To advertise on the show, contact us !
-~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+reptilians being responsible. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3
 id="toothandclaw-oceanic-white-tip-shark-attack-a-sharky-shipwreck-story"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2281421062.mp3?updated=1747159243">Oceanic
@@ -491,9 +512,9 @@ page</a></p>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Wes takes us out to the ocean to tell a
 tale of a shipwreck and shark attack. Jeff musters up enough confidence
-to feel that he could survive the situation just fine. ~~ To advertise
-on the show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE
-.</p>
+to feel that he could survive the situation just fine. <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3 id="toothandclaw-lion-attack-the-lions-of-tsavo"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9964055534.mp3?updated=1747424749">Lion
 Attack - The Lions of Tsavo</a></h3>
@@ -507,8 +528,8 @@ page</a></p>
 <p><strong>Summary:</strong> The much-requested, long-awaited story of
 the Tsavo lions. These two lions truly caused about as much havoc as any
 large predators in history, and brought an entire railway operation to a
-complete halt! ~~ To advertise on the show, contact us ! ~~ Tooth &amp;
-Claw is brought to you by QCODE .</p>
+complete halt! <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3 id="toothandclaw-lion-attack-the-lions-of-tsavo-part-2"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2027120062.mp3?updated=1747425078">Lion
 Attack - The Lions of Tsavo Part 2</a></h3>
@@ -521,8 +542,8 @@ page</a></p>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> The wrap up of the story of the Lions of
 Tsavo. But first, we engage in the age old debate of what’s better: ice
-powers or tree powers? ~~ To advertise on the show, contact us ! ~~
-Tooth &amp; Claw is brought to you by QCODE .</p>
+powers or tree powers? <sub></sub> To advertise on the show, contact us
+! <sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-spider-attack-yorick-the-sydney-funnel-web-spider"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6680519788.mp3?updated=1747425592">Spider
@@ -536,9 +557,9 @@ page</a></p>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Wes has an only-slightly creepy, a little
 sad, and surprisingly endearing story about a woman, her family, and a
-spider. Jeff gets inappropriate again, and Mike follows suit. ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+spider. Jeff gets inappropriate again, and Mike follows suit.
+<sub></sub> To advertise on the show, contact us ! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-mountain-lion-and-crocodile-attack-mother-s-day-special"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5616913893.mp3?updated=1747426006">Mountain
@@ -554,9 +575,9 @@ page</a></p>
 Larson, the greatest biological mother Jeff and Wes have ever had. Wes
 prepared two stories of incredible motherly strength and instinct, and
 delves into a little bit of the science behind the “mother bear”
-behavior seen not only from animals, but humans too. ~~ To advertise on
-the show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE
-.</p>
+behavior seen not only from animals, but humans too. <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3
 id="toothandclaw-animal-attacks-monthly-update-bobcat-tossing-and-animals-vs-humans"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9285993022.mp3?updated=1747426253">Animal
@@ -571,8 +592,9 @@ page</a></p>
 <p><strong>Summary:</strong> Wes gathered up a bunch of notable animal
 attacks that hit the news over the past month. Then, the crew talks
 about the Animals vs. Humans poll that’s been making the rounds online
-recently. It goes off the rails pretty quickly. ~~ To advertise on the
-show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+recently. It goes off the rails pretty quickly. <sub></sub> To advertise
+on the show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you
+by QCODE .</p>
 <h3 id="toothandclaw-black-bear-attack-bear-vs-bacon"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5077138632.mp3?updated=1747426737">Black
 Bear Attack: Bear vs. Bacon</a></h3>
@@ -587,8 +609,9 @@ page</a></p>
 her summers working in the wilds of Alaska taking geological samples.
 But on one fateful day in 1977, she was the one that was sampled; by a
 relatively small but still insanely powerful black Bear that had decided
-it wanted to make a meal of her. ~~ To advertise on the show, contact us
-! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+it wanted to make a meal of her. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3 id="toothandclaw-cassowary-attack-kicking-and-screaming"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3839025104.mp3?updated=1747426896">Cassowary
 Attack - Kicking and Screaming</a></h3>
@@ -601,8 +624,8 @@ page</a></p>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> One of the more unique episodes we’ve done
 so far, on an animal that many people haven’t even ever heard of:
-cassowaries. ~~ To advertise on the show, contact us ! ~~ Tooth &amp;
-Claw is brought to you by QCODE .</p>
+cassowaries. <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-rattlesnake-attack-heads-and-tails-the-western-diamondback"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6944756791.mp3?updated=1747427310">Rattlesnake
@@ -618,8 +641,9 @@ page</a></p>
 animal attack we’ve talked about so far. (Disclaimer: We had a small
 hiccup while recording, hopefully none of you are bothered by it. You
 may not even notice it. But if you do, just know that it gets cleared up
-at around the 20 minute mark.) ~~ To advertise on the show, contact us !
-~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+at around the 20 minute mark.) <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3
 id="toothandclaw-animal-attack-news-roundup-whale-gulps-man-girl-pushes-bear-and-more"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2025876782.mp3?updated=1747427884">Animal
@@ -635,8 +659,8 @@ page</a></p>
 <p><strong>Summary:</strong> The man who was swallowed by a whale, the
 California teen who pushed a bear off of her wall to protect her dogs,
 and a handful of other interesting stories Wes felt were important to
-share. ~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw is
-brought to you by QCODE .</p>
+share. <sub></sub> To advertise on the show, contact us ! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-al-the-man-who-punched-a-bear"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9923737344.mp3?updated=1747428300">Grizzly
@@ -651,8 +675,8 @@ page</a></p>
 <p><strong>Summary:</strong> We cover another grizzly bear attack story,
 this one taking place in a campsite. Believe it or not, this actually
 makes what would already be a precarious situation all the more
-unpredictable. ~~ To advertise on the show, contact us ! ~~ Tooth &amp;
-Claw is brought to you by QCODE .</p>
+unpredictable. <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3 id="toothandclaw-horse-attack-love-em-or-hate-em"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5479522409.mp3?updated=1747429038">Horse
 Attack - Love ’em or Hate ’em</a></h3>
@@ -666,8 +690,8 @@ page</a></p>
 <p><strong>Summary:</strong> We have a special guest to talk a little
 bit about Mike’s least favorite animal: horses. Will she be able to
 change his mind at all, or will he continue to be a huge negative nelly?
-~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought
-to you by QCODE .</p>
+<sub></sub> To advertise on the show, contact us ! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-bull-shark-attack-what-s-the-spanish-word-for-shark"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5440466573.mp3?updated=1747429527">Bull
@@ -683,8 +707,9 @@ page</a></p>
 place down in Cancun, Mexico. This is an inspiring tale of a woman who
 was strong enough to survive and go onto share her experience with a
 bull shark with the rest of the world, helping many others find the
-strength to live their best life. ~~ To advertise on the show, contact
-us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+strength to live their best life. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3
 id="toothandclaw-animal-attack-news-roundup-the-scales-tails-alligator-attack-with-lind"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2191305423.mp3?updated=1747429893">Animal
@@ -701,8 +726,8 @@ page</a></p>
 concerning wild animal attacks. We are joined for an interview by
 Lindsay Bull, the trainer at Scales and Tails who was bit and then
 rolled over on by Darth Gator, the alligator she works as a trainer for.
-~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought
-to you by QCODE .</p>
+<sub></sub> To advertise on the show, contact us ! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE .</p>
 <h3 id="toothandclaw-jaguar-attack-beware-the-jaguars-jaws"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4490952724.mp3?updated=1747430165">Jaguar
 Attack - Beware the Jaguars Jaws</a></h3>
@@ -715,8 +740,9 @@ page</a></p>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Wes prepared a few stories to share with us
 all about the rare but no-less-violent jaguar attack, so strap on your
-helmets and join us for the ride. ~~ To advertise on the show, contact
-us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+helmets and join us for the ride. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3 id="toothandclaw-grizzly-bear-attack-grouchy-glacier-grizzly"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2698842233.mp3?updated=1747431472">Grizzly
 Bear Attack - Grouchy Glacier Grizzly</a></h3>
@@ -731,8 +757,8 @@ page</a></p>
 on this one, with a little bit of a mystery twist. Jeff learns that
 bears probably can’t operate cameras, and Mike thinks it’s time for
 “Stop, Drop and Roll” to move over and make room for the next big safety
-saying. ~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw is
-brought to you by QCODE .</p>
+saying. <sub></sub> To advertise on the show, contact us ! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-coyote-attack-the-cape-breton-coyotes-and-the-folk-music-singer"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2538729700.mp3?updated=1747432105">Coyote
@@ -746,9 +772,9 @@ page</a></p>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Hear the tragic attack that took place up
 in Canada involving Taylor Mitchell, the unfortunate victim of a very
-rare, possibly even singular encounter with a pack of coyotes. ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+rare, possibly even singular encounter with a pack of coyotes.
+<sub></sub> To advertise on the show, contact us ! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-animal-attack-news-roundup-leopards-gators-bears-and-the-big-money-ann"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8242248246.mp3?updated=1747432608">Animal
@@ -764,8 +790,8 @@ page</a></p>
 <p><strong>Summary:</strong> It’s time for another roundup of all the
 wildest animal attack headlines of the past month or so. Plus, Wes
 quizzes Mike and Jeff as a way to celebrate the first anniversary of
-Tooth and Claw. ~~ To advertise on the show, contact us ! ~~ Tooth &amp;
-Claw is brought to you by QCODE .</p>
+Tooth and Claw. <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-vampire-bat-attack-the-spook-tacularly-rabid-halloween-special"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2800739108.mp3?updated=1747632460">Vampire
@@ -778,8 +804,9 @@ page</a></p>
 <p><strong>Episode:</strong> 35</p>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> The Vampire Bat, one of the signature
-animals of the Halloween season. ~~ To advertise on the show, contact us
-! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+animals of the Halloween season. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3 id="toothandclaw-bee-attack-not-the-bees"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3477336832.mp3?updated=1747632906">Bee
 Attack - NOT THE BEES!!!</a></h3>
@@ -795,9 +822,9 @@ hills of Hueco Tanks down in Texas, and involves two men getting swarmed
 by bees at a moment of total vulnerability. Of all the animals we’ve
 covered on the show so far, bees might just have the weirdest and
 coolest collection of behavioral and biological facts, and Wes does his
-best to scratch the surface of what makes them so unique. ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+best to scratch the surface of what makes them so unique. <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3 id="toothandclaw-crocodile-attack-the-killer-croc-down-under"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8805096962.mp3?updated=1747680808">Crocodile
 Attack - The Killer Croc Down Under</a></h3>
@@ -811,8 +838,9 @@ page</a></p>
 <p><strong>Summary:</strong> A saltwater crocodile attack that took
 place South of Darwin, Australia. It involves 3 young friends out for a
 day of fun on the banks of a flooding river and, due to an enormous
-crocodile, it unfortunately ends in tragedy. ~~ To advertise on the
-show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+crocodile, it unfortunately ends in tragedy. <sub></sub> To advertise on
+the show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE .</p>
 <h3
 id="toothandclaw-animal-attack-news-roundup-toilet-snakes-a-storm-of-scorpions-and-the"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1709117464.mp3?updated=1747681167">Animal
@@ -827,8 +855,9 @@ page</a></p>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> We cover some of the more noteworthy animal
 attacks that have occurred recently (Jeff breaks this rule. Kind of. But
-what do we expect at this point…) ~~ To advertise on the show, contact
-us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+what do we expect at this point…) <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3 id="toothandclaw-cobra-attack-suraj-strikes-twice"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9794235179.mp3?updated=1747771954">Cobra
 Attack - Suraj Strikes Twice</a></h3>
@@ -842,8 +871,9 @@ page</a></p>
 <p><strong>Summary:</strong> A cobra attack takes place in the South
 Indian state of Kerala just a couple of months ago. There’s a lot of
 intrigue and an unusual amount of evil going on in this episode compared
-to most of our others, so hang on to your seats. ~~ To advertise on the
-show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+to most of our others, so hang on to your seats. <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h2 id="2022">2022 (30)</h2>
 <h3
 id="toothandclaw-grizzly-bear-attack-night-of-the-grizzly-part-1-the-granite-park-chale"><a
@@ -861,8 +891,8 @@ page</a></p>
 story of two grizzly attacks occurring on the same night in Glacier
 National Park. Wes prepared like a madman to get this episode to be as
 accurate and entertaining as possible, so we think you all are going to
-really enjoy it. ~~ To advertise on the show, contact us ! ~~ Tooth
-&amp; Claw is brought to you by QCODE .</p>
+really enjoy it. <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-night-of-the-grizzly-part-2-trout-lake"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3493500527.mp3?updated=1747773010">Grizzly
@@ -878,8 +908,8 @@ page</a></p>
 story of two grizzly attacks occurring on the same night in Glacier
 National Park. Once again, Wes prepared like mad to get this episode to
 be as informative and entertaining as possible, so we think you all are
-going to really like it. ~~ To advertise on the show, contact us ! ~~
-Tooth &amp; Claw is brought to you by QCODE .</p>
+going to really like it. <sub></sub> To advertise on the show, contact
+us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-night-of-the-grizzly-part-3-the-aftermath"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5092814178.mp3?updated=1747773555">Grizzly
@@ -897,8 +927,9 @@ in the history of Glacier National Park, and how it completely altered
 how we look at and deal with grizzly bears, as well as how much needed
 to change in park visitor safety. If you haven’t heard parts 1 and 2
 yet, we strongly recommend you do, as Wes prepared like a man possessed
-to tell the story as accurately as possible. ~~ To advertise on the
-show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+to tell the story as accurately as possible. <sub></sub> To advertise on
+the show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE .</p>
 <h3
 id="toothandclaw-animal-attack-news-roundup-eko-the-tiger-the-serial-squirrel-and-monke"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1120466626.mp3?updated=1747773888">Animal
@@ -914,8 +945,8 @@ page</a></p>
 <p><strong>Summary:</strong> We finally get around to talking about the
 incident down in a Florida zoo involving Eko the tiger, and share our
 thoughts on what the fallout of the unfortunate incident was and should
-be. ~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw is
-brought to you by QCODE .</p>
+be. <sub></sub> To advertise on the show, contact us ! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE .</p>
 <h3 id="toothandclaw-harambe-the-western-lowland-gorilla"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6318210772.mp3?updated=1747774385">HARAMBE
 - The Western Lowland Gorilla</a></h3>
@@ -930,8 +961,8 @@ page</a></p>
 great job of taking us all through the tragic tale of Harambe, the
 western lowland gorilla who was shot and killed in his enclosure at the
 Cincinnati Zoo in 2016. R.I.P., Harambe. You may be gone, but you won’t
-be forgotten. ~~ To advertise on the show, contact us ! ~~ Tooth &amp;
-Claw is brought to you by QCODE .</p>
+be forgotten. <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-great-white-shark-attack-the-surfer-and-the-shark-at-monterey-bay"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9345416670.mp3?updated=1747774492">Great
@@ -946,8 +977,8 @@ page</a></p>
 <p><strong>Summary:</strong> Another shark attack on our hands (fins?)
 and Wes, as always, did a great job researching and preparing to talk
 through the story of one surfer’s unlucky encounter with a great white
-shark. ~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw is
-brought to you by QCODE .</p>
+shark. <sub></sub> To advertise on the show, contact us ! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3 id="toothandclaw-camel-attack-the-tennessee-camel-rampage"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8535722596.mp3?updated=1747774880">Camel
 Attack - The Tennessee Camel Rampage</a></h3>
@@ -962,9 +993,9 @@ page</a></p>
 recent attack that resulted in the tragic death of two people at a
 Tennessee petting zoo, Wes put together a little smorgasbord of camel
 attack stories to explain why a camel might become so aggressive and the
-dangers they can present if we aren’t careful around them. ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+dangers they can present if we aren’t careful around them. <sub></sub>
+To advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3
 id="toothandclaw-animal-attack-news-roundup-hank-the-tank-the-ukraine-zoo-extraction-pr"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7516484384.mp3?updated=1747775309">Animal
@@ -981,8 +1012,8 @@ page</a></p>
 that have popped up over the past month or so that we thought you’d all
 be interested in hearing about. Jeff also helps us to understand the
 hard reality of how the events unfolding in the Ukraine are affecting
-their animals and zoos. ~~ To advertise on the show, contact us ! ~~
-Tooth &amp; Claw is brought to you by QCODE .</p>
+their animals and zoos. <sub></sub> To advertise on the show, contact us
+! <sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3 id="toothandclaw-bonus-episode-unlocked-beavers"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9470233154.mp3?updated=1747775516">Bonus
 Episode Unlocked - Beavers</a></h3>
@@ -993,9 +1024,9 @@ Episode Unlocked - Beavers</a></h3>
 <p><strong>Summary:</strong> We’re releasing two of our bonus episodes
 this week while we’re busy at work on some upcoming exciting stuff. Jeff
 takes the lead on this one about beavers, and it turns out to be a lot
-more informative and interesting than we dared to hope. ~~ To advertise
-on the show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE
-.</p>
+more informative and interesting than we dared to hope. <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3 id="toothandclaw-bonus-episode-unlocked-macaw"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2188051202.mp3?updated=1747775950">Bonus
 Episode Unlocked - Macaw</a></h3>
@@ -1010,8 +1041,8 @@ squeezing every last drop out of a small macaw incident that happened
 down in Florida. Wes and Jeff get into it about what a good pirate is
 versus a bad pirate, and Hillary Hankey, the owner of Avian Behavior
 International, joins the show to provide some much needed expertise on
-the matter. ~~ To advertise on the show, contact us ! ~~ Tooth &amp;
-Claw is brought to you by QCODE .</p>
+the matter. <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3 id="toothandclaw-polar-bear-attack-the-cold-campsite-crasher"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7463462233.mp3?updated=1747776215">Polar
 Bear Attack - The Cold Campsite Crasher</a></h3>
@@ -1022,11 +1053,11 @@ Bear Attack - The Cold Campsite Crasher</a></h3>
 <p><strong>Summary:</strong> What should have been a once in a lifetime
 excursion paddling around the Svalbard archipeligo turns into a bloody
 nightmare for two young friends when the bear crashes their campsite and
-puts its teeth and its claws to work. ~~ This episode of Tooth &amp;
-Claw is brought to you by… Vuori: Vuori.com/CLAW Betterhelp:
+puts its teeth and its claws to work. <sub></sub> This episode of Tooth
+&amp; Claw is brought to you by… Vuori: Vuori.com/CLAW Betterhelp:
 Betterhelp.com/TOOTH HelloFresh: HelloFresh.com/CLAW16 To advertise on
-the show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE
-.</p>
+the show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE .</p>
 <h3 id="toothandclaw-mothers-day-special-animals-that-saved-the-day"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4639641393.mp3?updated=1748905997">Mothers
 Day Special - Animals that Saved the Day</a></h3>
@@ -1037,11 +1068,11 @@ Day Special - Animals that Saved the Day</a></h3>
 <p><strong>Summary:</strong> Wes and Jeff’s mom is back for another
 Mothers Day special to talk about a few stories about the times wherein
 some animals save a human’s life. Then we get into some mom-centric
-categories to wrap things up. ~~ This episode of Tooth &amp; Claw is
-brought to you by… Manscaped: Use code CLAW at Manscaped.com Vuori:
-Vuori.com/CLAW Athletic Greens: AthleticGreens.com/TOOTH Betterhelp:
-Betterhelp.com/TOOTH To advertise on the show, contact us ! ~~ Tooth
-&amp; Claw is brought to you by QCODE .</p>
+categories to wrap things up. <sub></sub> This episode of Tooth &amp;
+Claw is brought to you by… Manscaped: Use code CLAW at Manscaped.com
+Vuori: Vuori.com/CLAW Athletic Greens: AthleticGreens.com/TOOTH
+Betterhelp: Betterhelp.com/TOOTH To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-bison-attack-seeking-love-in-bison-bison-bison-territory"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5076013794.mp3?updated=1748906207">Bison
@@ -1053,10 +1084,11 @@ Attack - Seeking Love in Bison Bison Bison Territory</a></h3>
 <p><strong>Summary:</strong> Two young adults match on a dating app and
 have a fateful date involving some angry bison that defies the odds. We
 also cover the bison’s historical significance and then get into the
-usual categories. ~~ This episode of Tooth &amp; Claw is brought to you
-by… Vuori: Vuori.com/CLAW Athletic Greens: AthleticGreens.com/TOOTH
-Feals: Feals.com/TOOTH To advertise on the show, contact us ! ~~ Tooth
-&amp; Claw is brought to you by QCODE .</p>
+usual categories. <sub></sub> This episode of Tooth &amp; Claw is
+brought to you by… Vuori: Vuori.com/CLAW Athletic Greens:
+AthleticGreens.com/TOOTH Feals: Feals.com/TOOTH To advertise on the
+show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE .</p>
 <h3
 id="toothandclaw-rattlesnake-attack-latest-animal-attack-news-and-clara-jessup-s-run-in"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5444793767.mp3?updated=1748906824">Rattlesnake
@@ -1070,8 +1102,8 @@ Rattlesnake</a></h3>
 the more notable animal attack news stories from the past couple of
 months, and then have a really fascinating interview with Clara Jessup,
 who was bit by a venomous rattlesnake and had a really difficult time
-getting treated properly. ~~ To advertise on the show, contact us ! ~~
-Tooth &amp; Claw is brought to you by QCODE .</p>
+getting treated properly. <sub></sub> To advertise on the show, contact
+us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-the-todd-orr-double-grizzly-bear-attack"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6651424993.mp3?updated=1748907508">Grizzly
@@ -1083,9 +1115,9 @@ Bear Attack - The Todd Orr Double Grizzly Bear Attack</a></h3>
 <p><strong>Summary:</strong> Wes covers an oft-requested story
 concerning Todd Orr and the bear who attacked him two times in a single
 bloody and unfortunate morning. We then do a deep dive into bear safety
-tactics and talk about just how good of a tool bear spray is. ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+tactics and talk about just how good of a tool bear spray is.
+<sub></sub> To advertise on the show, contact us ! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-tiger-shark-attack-the-townsville-tiger-shark-shipwreck"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7010533749.mp3?updated=1748907614">Tiger
@@ -1097,9 +1129,9 @@ Shark Attack - The Townsville Tiger Shark Shipwreck</a></h3>
 <p><strong>Summary:</strong> A fishing expedition quickly turns into a
 nightmare when a group of three friends find themselves shipwrecked off
 the coast of Townsville, Australia. The nightmare becomes that much more
-real when they realize they aren’t alone in the open water. ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+real when they realize they aren’t alone in the open water. <sub></sub>
+To advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3
 id="toothandclaw-mountain-lion-attack-a-mountain-lion-piggyback-ride"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1275204986.mp3?updated=1748907862">Mountain
@@ -1126,8 +1158,9 @@ Attack News Roundup</a></h3>
 bears, while Jeff and Mike share a handful of other notable recent
 animal attack news headlines for the July 2022 Animal Attack News
 Roundup. The guys then talk about animal mimicry and, of course, Lord of
-the Rings, in the categories. ~~ To advertise on the show, contact us !
-~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+the Rings, in the categories. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3 id="toothandclaw-hippo-attack-marius-and-his-pet-hippo-humphrey"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4969083986.mp3?updated=1748908780">Hippo
 Attack - Marius and his Pet Hippo Humphrey</a></h3>
@@ -1140,8 +1173,9 @@ tragic and cautionary tale of Marius, a South African man with a
 penchant for the outdoors and exotic animals, and his pet hippo
 Humphrey. Wes dives deep into how many people are killed by hippos every
 year, and then the guys wrap things up by discussing their favorite drug
-dealers (we promise it makes sense by the end). ~~ To advertise on the
-show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+dealers (we promise it makes sense by the end). <sub></sub> To advertise
+on the show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you
+by QCODE .</p>
 <h3
 id="toothandclaw-dingo-attack-a-dingo-ate-my-baby-with-payne-lindsey-part-1"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4455270434.mp3?updated=1748908979">Dingo
@@ -1154,9 +1188,9 @@ Attack - A Dingo Ate My Baby with Payne Lindsey: Part 1</a></h3>
 Rental fame joins the guys to talk about the shocking origins of the
 phrase “A dingo ate my baby!” Payne brings some very welcome
 investigative know-how to the show as Wes tells the horrifying true tale
-of a dingo attack that shook Australia throughout the 1980s. ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+of a dingo attack that shook Australia throughout the 1980s. <sub></sub>
+To advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3 id="toothandclaw-special-rings-of-power-bonus-episode"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7205392283.mp3?updated=1748909081">Special
 Rings of Power Bonus Episode</a></h3>
@@ -1172,9 +1206,9 @@ with emojis. All of our regularly scheduled episodes are still on the
 way, so don’t worry about this taking their place for the week or
 anything. And if we do make more of these, they will probably be on
 their own feed, so don’t worry about them cluttering up the timeline of
-our regular Tooth and Claw content. Thanks for listening! ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+our regular Tooth and Claw content. Thanks for listening! <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3
 id="toothandclaw-dingo-attack-a-dingo-ate-my-baby-with-payne-lindsey-part-2"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5499212201.mp3?updated=1748909606">Dingo
@@ -1187,9 +1221,9 @@ Attack - A Dingo Ate My Baby with Payne Lindsey: Part 2</a></h3>
 Lindsey to wrap up the true tale of a dingo attack that dominated
 Australian headlines all through the 1980s. Wes breaks down all of the
 twists and turns of the ensuing legal battle, and then wraps things up
-with a batch of categories and listener questions. ~~ To advertise on
-the show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE
-.</p>
+with a batch of categories and listener questions. <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-a-tragic-trip-to-yellowstone"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1199346515.mp3?updated=1748982152">Grizzly
@@ -1202,8 +1236,8 @@ Bear Attack - A Tragic Trip to Yellowstone</a></h3>
 Brigitta Fredenhagen, and her fateful trip to Yellowstone National Park.
 The crew then discusses the myth of the dangers of being out in the wild
 while menstruating, and then get into a tightly contested round of “Were
-Jeff and Mike Listening?” ~~ To advertise on the show, contact us ! ~~
-Tooth &amp; Claw is brought to you by QCODE .</p>
+Jeff and Mike Listening?” <sub></sub> To advertise on the show, contact
+us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-kangaroo-attack-a-rare-roo-attack-the-bull-shark-incident-and-the-dang"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1869989620.mp3?updated=1748982766">Kangaroo
@@ -1227,9 +1261,9 @@ Attack - Trapped in a Bus in a River of Piranha</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Wes takes the gang through a couple of
 stories involving piranhas that made him, and consequently Jeff and
-Mike, reconsider just how dangerous the fish actually is. ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+Mike, reconsider just how dangerous the fish actually is. <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3
 id="toothandclaw-bigfoot-attack-the-tooth-and-claw-halloween-special-featuring-bigfoot"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5873095760.mp3?updated=1748984260">Bigfoot
@@ -1258,8 +1292,8 @@ White Shark Attack - Rodney Fox and the White Pointer</a></h3>
 South Australian man Rodney Fox and his extremely bloody encounter with
 a great white shark. Jeff makes an incredible comeback during the Were
 You Listening quiz, while Mike admits to crying during an unexpected
-movie. ~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw is
-brought to you by QCODE .</p>
+movie. <sub></sub> To advertise on the show, contact us ! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-two-wrestlers-vs-one-grizzly-a-python-eats-a-woman"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6140840140.mp3?updated=1748984913">Grizzly
@@ -1273,9 +1307,9 @@ a Bear in Japan Attacks a Rock Climber</a></h3>
 Roundup, the guys each bring a handful of the most noteworthy animal
 attack stories to hit the news over the past couple of months to share
 with each other, and then rank their 10 favorite wild cats. But before
-all that, Wes shares the story of his most embarrassing moment. ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+all that, Wes shares the story of his most embarrassing moment.
+<sub></sub> To advertise on the show, contact us ! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-kangaroo-attack-the-kangaroo-that-almost-ruined-christmas"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2890222416.mp3?updated=1748985242">Kangaroo
@@ -1288,8 +1322,9 @@ Attack - The Kangaroo That Almost Ruined Christmas</a></h3>
 almost ruins Christmas for a pair of young girls, and kind of actually
 does ruin Christmas for their dad, while Jeff keeps breaking the rules
 while picking his favorite Christmas movie and Mike wishes his snacks
-could crawl into his mouth by themselves. ~~ To advertise on the show,
-contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+could crawl into his mouth by themselves. <sub></sub> To advertise on
+the show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE .</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-bear-s-got-your-nose-and-the-2022-tooth-and-claw-a"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9778425388.mp3?updated=1748985646">Grizzly
@@ -1302,8 +1337,9 @@ Show</a></h3>
 <p><strong>Summary:</strong> Wes closes out the year with one more
 Grizzly Bear attack involving a shocking medical technique unlike
 anything the ghuys have talked about before, and then Jeff hosts the
-2022 Tooth and Claw Awards show. ~~ To advertise on the show, contact us
-! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+2022 Tooth and Claw Awards show. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h2 id="2023">2023 (30)</h2>
 <h3
 id="toothandclaw-komodo-dragon-attack-a-dragon-shows-its-basic-instinct"><a
@@ -1317,8 +1353,9 @@ Dragon Attack - A Dragon Shows its Basic Instinct</a></h3>
 komodo dragon attack stories, one involving Sharon Stone’s at-the-time
 husband and a trip that they took to the zoo that took a nasty turn. The
 guys then talk about their favorite dragons and then finish things off
-with a rousing round of listener questions. ~~ To advertise on the show,
-contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+with a rousing round of listener questions. <sub></sub> To advertise on
+the show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE .</p>
 <h3 id="toothandclaw-tiger-shark-attack-a-mother-s-worst-nightmare"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7088515635.mp3?updated=1748986340">Tiger
 Shark Attack - A Mother’s Worst Nightmare</a></h3>
@@ -1330,8 +1367,8 @@ Shark Attack - A Mother’s Worst Nightmare</a></h3>
 Lindsey, the young woman who had a tragic encounter with a tiger shark
 while snorkeling in the Bahamas. Jeff takes an interesting stance on the
 name Jeffrey, and Mike makes a compelling connection between sharks and
-Shrek. ~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw is
-brought to you by QCODE .</p>
+Shrek. <sub></sub> To advertise on the show, contact us ! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-a-hippo-spat-out-a-2-year-old-news-stories-including-a-tragic-polar-be"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1074999523.mp3?updated=1748987645">A
@@ -1349,12 +1386,12 @@ Mexico, and a rash of crimes involving several monkeys and several zoos.
 They wrap things up with a batch of listener questions, including
 biggest pop culture ouchie and coolest fictional weapon. This episode
 contains adult language and content. Gofundme link for the Summer
-Myomick and Clyde Ongtowasruk III Memorial: ~~ Follow us on Instagram:
-<span class="citation"
+Myomick and Clyde Ongtowasruk III Memorial: <sub></sub> Follow us on
+Instagram: <span class="citation"
 data-cites="CrimeSceneQueens">@CrimeSceneQueens</span> Email us at
 hello@crimescenequeens.com Check out the Crime Scene Queens’ CSI
-Essentials ~~ Crime Scene Queens is brought to you by QCODE . To
-advertise on the show, contact us !</p>
+Essentials <sub></sub> Crime Scene Queens is brought to you by QCODE .
+To advertise on the show, contact us !</p>
 <h3
 id="toothandclaw-box-jellyfish-attack-a-surfer-stung-by-a-mystery-assailant-has-to-thin"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8255352717.mp3?updated=1748990570">Box
@@ -1370,8 +1407,8 @@ of the most venomous creatures on planet earth. We talk about why peeing
 on a jellyfish sting is a bad idea, especially if you hang out with a
 guy named Stanky P, Wes digs into some passive agressive “It Came from
 Quora”, and Jeff simply can’t let a fact from his sloth episode last
-week go unnoticed. ~~ To advertise on the show, contact us ! ~~ Tooth
-&amp; Claw is brought to you by QCODE .</p>
+week go unnoticed. <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-black-widow-bite-the-most-venomous-spider-in-north-america-munches-a-m"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2202767053.mp3?updated=1748990915">Black
@@ -1385,8 +1422,9 @@ Toe</a></h3>
 a little too close for comfort for a black widow, and then gets into a
 super interesting round of animal reproduction info dumps. Jeff
 establishes his Mount Rushmore of serial killers, and Mike has a pro-tip
-for first time cologne wearers. ~~ To advertise on the show, contact us
-! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+for first time cologne wearers. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3
 id="toothandclaw-elephant-and-giraffe-attacks-tyke-crashes-the-circus-a-giraffe-imperso"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8982681965.mp3?updated=1749070322">Elephant
@@ -1401,8 +1439,9 @@ released Tooth and Class bonus episodes, wherein Jeff covers the case of
 Tyke the Circus Elephant, and then Mike tells the tale of a couple of
 unfortunate tourists having a run-in with an extra large giraffe. Wes,
 as usual, brings all kinds of animal behavior and biology knowledge
-about each of the two animals. ~~ To advertise on the show, contact us !
-~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+about each of the two animals. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3
 id="toothandclaw-bears-in-yellowstone-ft-national-park-after-dark"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3799915049.mp3?updated=1749070531">Bears
@@ -1417,8 +1456,8 @@ Tooth and Claw Interview Series to talk a little bit about the history
 of feeding bears in Yellowstone, and then answer a slew of mostly
 ridiculous questions about themselves, including who between them would
 win in a fight and whether cake and ice cream counts as one desert, or
-two. ~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw is
-brought to you by QCODE .</p>
+two. <sub></sub> To advertise on the show, contact us ! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-a-zebra-bit-a-man-s-arm-off-news-stories-including-a-monkey-tearing-of"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5104352557.mp3?updated=1749070945">A
@@ -1434,8 +1473,8 @@ more notable recent animal attack headlines, covering the man whose arm
 was the target of an overly aggressive zebra, a Florida resident who was
 the unwitting host of an alligator on his doorstep, a fugitive owl’s
 escapades in Central Park, and a mountain lion’s assault on a hot tub in
-Colorado. ~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw
-is brought to you by QCODE .</p>
+Colorado. <sub></sub> To advertise on the show, contact us ! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-black-bear-attack-the-worst-black-bear-attack-in-history-part-1"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3338650272.mp3?updated=1749071171">Black
@@ -1447,8 +1486,9 @@ Bear Attack - The Worst Black Bear Attack in History: Part 1</a></h3>
 <p><strong>Summary:</strong> This is part 1 of the horrifying black bear
 attack that took place at the Liard River Hot Springs Provincial Park in
 1999. The guys then talk about their favorite road trips, and Mike gets
-even further in the hole with Jeff. ~~ To advertise on the show, contact
-us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+even further in the hole with Jeff. <sub></sub> To advertise on the
+show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE .</p>
 <h3
 id="toothandclaw-black-bear-attack-the-worst-black-bear-attack-in-history-part-2"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1432109320.mp3?updated=1749072050">Black
@@ -1461,8 +1501,8 @@ Bear Attack - The Worst Black Bear Attack in History: Part 2</a></h3>
 worst black bear attack in history, once again taking place at the Liard
 River Hot Springs. The guys then get into their favorite heroes from pop
 culture, and the old cake and ice cream argument rears its ugly head
-again. ~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw is
-brought to you by QCODE .</p>
+again. <sub></sub> To advertise on the show, contact us ! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-mothers-day-2023-special-one-mom-against-a-swarm-of-yellowjackets"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3980764927.mp3?updated=1749072512">Mothers
@@ -1475,8 +1515,8 @@ Day 2023 Special - One Mom against a Swarm of Yellowjackets</a></h3>
 for the annual Mothers Day special, this time to talk about one mother’s
 epic struggle to save her family from a swarm of yellowjackets. A lot
 more mom-talk ensues as we cover a bunch of mother-related listener
-questions. ~~ To advertise on the show, contact us! ~~ Tooth &amp; Claw
-is brought to you by QCODE.</p>
+questions. <sub></sub> To advertise on the show, contact us! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-amazon-pink-river-dolphin-attack-claire-bye-and-the-river-dolphin-who"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4967151814.mp3?updated=1749072608">Amazon
@@ -1490,9 +1530,9 @@ Her Feet</a></h3>
 Bolivia when she had an encounter with a dolphin that would see her
 vacation cut short. Meanwhile, Jeff has a lot of thoughts on
 Transformers, Wes commandeers Mythology Minute, and Mike has a truly
-esoteric comparison for pink river dolphin ridges. ~~ To advertise on
-the show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE
-.</p>
+esoteric comparison for pink river dolphin ridges. <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3
 id="toothandclaw-nature-is-metal-news-stories-including-orcas-ramming-boats-an-alligato"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6710455845.mp3?updated=1749072857">Nature
@@ -1509,9 +1549,9 @@ talks about which animal he thinks is the most metal, the videos he has
 seen that have stuck with him the most, and how he got started in
 creating one of the most popular nature accounts on Instagram. But
 first, the guys discuss some of the more notable animal attack and
-encounter news stories from the past couple months. ~~ To advertise on
-the show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE
-.</p>
+encounter news stories from the past couple months. <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3 id="toothandclaw-how-animals-perceive-the-world-ft-kendall-long"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4684806391.mp3?updated=1749073025">How
 Animals Perceive the World ft. Kendall Long</a></h3>
@@ -1525,8 +1565,8 @@ the world differently than humans. After that, Kendall is put on the hot
 seat and answers a batch of hard-hitting animal questions, including
 what the biggest animal she thinks she could take in a fight is and
 which of the three T&amp;C hosts she would pick in a Bachelorette
-competition. ~~ To advertise on the show, contact us ! ~~ Tooth &amp;
-Claw is brought to you by QCODE .</p>
+competition. <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-a-black-bear-tiger-shark-and-rattlesnake-bite-the-same-person"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6363819277.mp3?updated=1747081544">A
@@ -1539,8 +1579,9 @@ Black Bear, Tiger Shark and Rattlesnake Bite the Same Person</a></h3>
 a young man who has been attacked by more deadly animals than most. The
 episode is concluded with a discussion of unlucky characters from pop
 culture, some fun encounters with animals the guys have had recently,
-and a small batch of listener questions. ~~ To advertise on the show,
-contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+and a small batch of listener questions. <sub></sub> To advertise on the
+show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE .</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-the-soda-butte-camp-site-grizzly-bear-attack"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9279705623.mp3?updated=1747064340">Grizzly
@@ -1553,8 +1594,9 @@ Bear Attack - The Soda Butte Camp Site Grizzly Bear Attack</a></h3>
 grizzly bear attack, once again taking place in Yellowstone National
 Park. Afterwards, the guys talk about their favorite camping scenes from
 pop culture, and a discussion about recent animal encounters somehow
-turns into more Transformers talk. ~~ To advertise on the show, contact
-us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+turns into more Transformers talk. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3
 id="toothandclaw-snake-island-the-crowded-home-of-the-deadly-golden-lancehead-viper"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4950905382.mp3?updated=1747063883">Snake
@@ -1567,9 +1609,9 @@ Island - The Crowded Home of the Deadly Golden Lancehead Viper</a></h3>
 episode to see whether Ilha da Queimada Grande, aka Snake Island, would
 be a good place for the guys to take a group of listeners on a trip.
 They then discuss what the best and worst movies islands are, and what
-the worst animal to be stuck on an island with would be. ~~ To advertise
-on the show, contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE
-.</p>
+the worst animal to be stuck on an island with would be. <sub></sub> To
+advertise on the show, contact us ! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE .</p>
 <h3
 id="toothandclaw-shark-attack-in-the-red-sea-news-stories-including-a-recent-fatal-bear"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4391840059.mp3?updated=1747063810">Shark
@@ -1583,9 +1625,9 @@ About His Own Alligator Attack</a></h3>
 <p><strong>Summary:</strong> Wes, Jeff, and Mike cover some more recent
 animal attack stories, most notably the tragic fatal shark attack that
 occurred in Egypt, as well as a host of other stories involving
-unusually aggressive black bears, a renegade sea otter, and more. ~~ To
-advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought to
-you by QCODE .</p>
+unusually aggressive black bears, a renegade sea otter, and more.
+<sub></sub> To advertise on the show, contact us ! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-the-attacks-that-inspired-jaws-the-1916-shark-attacks-part-1-terror-on"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7401500859.mp3?updated=1747063494">The
@@ -1599,8 +1641,9 @@ the Jersey Shore</a></h3>
 horrifying story of the shark attacks that occurred off the shores of
 New Jersey that would go on to inspire the movie Jaws. Jeff and Mike beg
 Wes to continue right into part 2, a request which Wes does not hesitate
-for even a millisecond to deny. ~~ To advertise on the show, contact us
-! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+for even a millisecond to deny. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3
 id="toothandclaw-the-attacks-that-inspired-jaws-the-1916-shark-attacks-part-2-blood-in"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9721832805.mp3?updated=1747063283">The
@@ -1613,8 +1656,8 @@ Matawan Creek</a></h3>
 <p><strong>Summary:</strong> Wes continues the story of the shark
 attacks that inspired the movie Jaws, and how the mounting terror
 reached its peak over a two day stretch in the summer of 1916 on the
-Matawan River. ~~ To advertise on the show, contact us ! ~~ Tooth &amp;
-Claw is brought to you by QCODE .</p>
+Matawan River. <sub></sub> To advertise on the show, contact us !
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-the-attacks-that-inspired-jaws-the-1916-shark-attacks-part-3-the-hunt"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7504289406.mp3?updated=1747063218">The
@@ -1629,8 +1672,8 @@ series has Wes covering what is still described as the “largest scale
 animal hunt in history” to try and finally put an end to the nightmare.
 Some bad New Jersey accents are attempted, and Jeff and Mike come up
 with some inventive methods as to how they would have stopped the shark.
-~~ To advertise on the show, contact us ! ~~ Tooth &amp; Claw is brought
-to you by QCODE .</p>
+<sub></sub> To advertise on the show, contact us ! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE .</p>
 <h3
 id="toothandclaw-a-hawk-drops-a-snake-on-a-woman-news-stories-including-a-polar-bear-at"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8893913371.mp3?updated=1747063091">A
@@ -1645,8 +1688,9 @@ Beach</a></h3>
 attack stories, including a nearly unbelievable sequence of events that
 left a Texas woman being rushed to the emergency room after a snake was
 dropped onto her arm by a hawk. Later on, Wes breaks down whether a wolf
-or a cougar would win in a cage fight. ~~ To advertise on the show,
-contact us ! ~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+or a cougar would win in a cage fight. <sub></sub> To advertise on the
+show, contact us ! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE .</p>
 <h3 id="toothandclaw-brazilian-wandering-spider-bite-die-hard"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7912205621.mp3?updated=1747062774">Brazilian
 Wandering Spider Bite - Die Hard</a></h3>
@@ -1657,8 +1701,9 @@ Wandering Spider Bite - Die Hard</a></h3>
 <p><strong>Summary:</strong> Wes prepared something of a horror
 anthology wherein he shares a couple of true tales of spider bite
 victims, some of whom suffer a cruel and unusual side effect caused by a
-peculiarly invigorating venom. ~~ To advertise on the show, contact us !
-~~ Tooth &amp; Claw is brought to you by QCODE .</p>
+peculiarly invigorating venom. <sub></sub> To advertise on the show,
+contact us ! <sub></sub> Tooth &amp; Claw is brought to you by QCODE
+.</p>
 <h3
 id="toothandclaw-toothie-tales-gibbons-guarding-a-bridge-a-scorpion-sting-on-the-face-a"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4804269259.mp3?updated=1747062591">Toothie
@@ -1674,8 +1719,9 @@ encounter stories submitted by listeners and discuss them with each
 other as usual. In a baffling move, Jeff and Mike commit to an
 uncomfortable visual bit while recording what is primarily an audio form
 of content. Kenya trip link: To submit your own animal story with us,
-send it to: toothandclawmailbag@gmail.com ~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+send it to: toothandclawmailbag@gmail.com <sub></sub> To advertise on
+the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-vampires-and-bloodsucking-leeches-with-sammy-smart"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4976217309.mp3?updated=1747062704">Vampires
@@ -1690,8 +1736,8 @@ guys are joined by first-time guest Sammy Smart of the podcast Too
 Scary; Didn’t Watch. If you think you might not have the stomach for the
 worst of it, feel free to skip as much as you want, it’s totally
 understandable. Timestamp for the content warning: skip from 33:18 to
-44:41 ~~ To advertise on the show, contact us! ~~ Tooth &amp; Claw is
-brought to you by QCODE.</p>
+44:41 <sub></sub> To advertise on the show, contact us! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-moto-lions"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9102798526.mp3?updated=1747062571">Moto
 Lions</a></h3>
@@ -1707,8 +1753,9 @@ motorcycle moments, what has made them cry most recently, and answer
 some listener questions. If you enjoy this episode, consider subscribing
 to us on Patreon or the Apple Grizclub, whichever is more convenient!
 They both have the same exclusive content, with over 60 hours of
-subscriber-only episodes just like this. ~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+subscriber-only episodes just like this. <sub></sub> To advertise on the
+show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3 id="toothandclaw-defying-death-with-the-help-of-a-sea-creature"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7821821731.mp3?updated=1747061890">Defying
 Death with the Help of a Sea Creature</a></h3>
@@ -1721,8 +1768,8 @@ close brush with death and the unlikely hero that saved him. Content
 warning, this episode contains talk of sensitive topics, including
 suicide. If you are struggling with these kinds of thoughts, please
 reach out to someone for help, or call the Suicide and Crisis Lifeline
-at 988. We love you all! ~~ To advertise on the show, contact us! ~~
-Tooth &amp; Claw is brought to you by QCODE.</p>
+at 988. We love you all! <sub></sub> To advertise on the show, contact
+us! <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-the-dancing-bear-attack-in-chugach-state-park"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9878242733.mp3?updated=1747062617">The
 Dancing Bear Attack in Chugach State Park</a></h3>
@@ -1733,8 +1780,9 @@ Dancing Bear Attack in Chugach State Park</a></h3>
 <p><strong>Summary:</strong> In 1995, Chugach State Park in Alaska
 turned into the site of a couple of violent bear encounters. Wes details
 two seperate attacks that happened that year, one with a (kind of) happy
-ending, and another that ended in tragedy. ~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+ending, and another that ended in tragedy. <sub></sub> To advertise on
+the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-when-man-bites-back-news-stories-including-a-crocodile-who-gets-an-eye"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7158338026.mp3?updated=1747061559">When
@@ -1750,8 +1798,8 @@ animal attack news headlines, including a man who wandered a little too
 far into a crocodile’s billabong, the first elk fatality in Arizona
 state history, and much more. They then round the episode out by putting
 a bunch of characters from Lord of the Rings and Harry Potter into
-hypothetical cage matches. ~~ To advertise on the show, contact us! ~~
-Tooth &amp; Claw is brought to you by QCODE.</p>
+hypothetical cage matches. <sub></sub> To advertise on the show, contact
+us! <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-the-zanesville-massacre"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8229551583.mp3?updated=1747061255">The
 Zanesville Massacre</a></h3>
@@ -1764,8 +1812,8 @@ place on October 18, 2011 in Zanesville, Ohio wherein a troubled man
 with a rapidly expanding collection of exotic animals takes matters into
 his own hands in a moment of desperation. Trigger Warning for anyone
 dealing with suicidal thoughts. Reach out to someone if you are
-struggling, you are loved. ~~ To advertise on the show, contact us! ~~
-Tooth &amp; Claw is brought to you by QCODE.</p>
+struggling, you are loved. <sub></sub> To advertise on the show, contact
+us! <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h2 id="2024">2024 (39)</h2>
 <h3
 id="toothandclaw-the-1994-vancouver-island-cougar-attack-the-2023-end-of-year-wrap-up"><a
@@ -1793,9 +1841,9 @@ Attack - Blood in the Snow</a></h3>
 <p><strong>Summary:</strong> Wes gives a rundown on an extremely rare
 encounter that one man claims to have had with a wolverine, and details
 why it may or may not have even happened at all. He then invents a new
-word for wolverine, and it goes over pretty well with Jeff and Mike. ~~
-To advertise on the show, contact us! ~~ Tooth &amp; Claw is brought to
-you by QCODE.</p>
+word for wolverine, and it goes over pretty well with Jeff and Mike.
+<sub></sub> To advertise on the show, contact us! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-tiger-shark-attack-the-shark-arm-murder-case"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9039837613.mp3?updated=1747057548">Tiger
 Shark Attack - The Shark Arm Murder Case</a></h3>
@@ -1806,9 +1854,9 @@ Shark Attack - The Shark Arm Murder Case</a></h3>
 <p><strong>Summary:</strong> Wes covers the too-wild-to-be-made up case
 of one James “Jimmy” Smith, the man who found himself a little too deep
 in the organized crime scene of New South Wales, Australia, and at least
-a part of him a lot too deep in the belly of a tiger shark. ~~ To
-advertise on the show, contact us! ~~ Tooth &amp; Claw is brought to you
-by QCODE.</p>
+a part of him a lot too deep in the belly of a tiger shark. <sub></sub>
+To advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-tooth-claw-down-under-news-stories-featuring-some-of-australia-s-most"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9461281918.mp3?updated=1746988498">Tooth
@@ -1823,8 +1871,9 @@ Australia, and so thought it appropriate to cover some of the recent
 animal attack headlines to hit the news in the Land Down Under. It turns
 out it’s been a busy couple of months for the local sharks. Happy
 Valentines Day, you can be our valentine if your other plans fall
-through. We love you enough that it makes sense. ~~ To advertise on the
-show, contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+through. We love you enough that it makes sense. <sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-polar-bear-attack-matt-dyer-and-the-weaponized-flare-gun"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2915873924.mp3?updated=1746988236">Polar
@@ -1835,8 +1884,9 @@ Bear Attack - Matt Dyer and the Weaponized Flare Gun</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> In 2013, Matt Dyer ventured out to northern
 Canada hoping to spot a polar bear. He ended up getting an up-close view
-of one, and it turned into a fight for his life. ~~ To advertise on the
-show, contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+of one, and it turned into a fight for his life. <sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3 id="toothandclaw-the-man-eating-leopard-of-rudraprayag-part-1"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1210101898.mp3?updated=1746988182">The
 Man-Eating Leopard of Rudraprayag: Part 1</a></h3>
@@ -1848,8 +1898,9 @@ Man-Eating Leopard of Rudraprayag: Part 1</a></h3>
 responsible for the deaths of over 100 people in Rudraprayag, India. Wes
 covers several of the more notable stories of its reign of terror, and
 explains why leopards can become uniquely dangerous to the humans who
-live close to them. Watch this episode here: ~~ To advertise on the
-show, contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+live close to them. Watch this episode here: <sub></sub> To advertise on
+the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3 id="toothandclaw-the-man-eating-leopard-of-rudraprayag-part-2"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9030676312.mp3?updated=1746987879">The
 Man-Eating Leopard of Rudraprayag: Part 2</a></h3>
@@ -1859,9 +1910,9 @@ Man-Eating Leopard of Rudraprayag: Part 2</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Wes finishes telling the story of the
 leopard of Rudraprayag, and Jeff gives a small sample of this years
-Animal March Madness bracket. Watch this episode here: ~~ To advertise
-on the show, contact us! ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+Animal March Madness bracket. Watch this episode here: <sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-cougars-and-bears-acting-unpredictably-news-stories-featuring-two-coug"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2897902111.mp3?updated=1746976717">Cougars
@@ -1879,8 +1930,9 @@ Eurasian eagle-owl, and Mike carries the Coyotes Be Wylin’torch for the
 first time. If you have some money to spare and want to put it towards a
 worthy cause, consider helping out the two cougar-encounter victim’s
 funds we spoke about today: Brooks Brothers Support Fund - Keri’s Ride
-to Recovery - Watch this episode here: ~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+to Recovery - Watch this episode here: <sub></sub> To advertise on the
+show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-the-worst-first-camping-trip-a-brand-new-dad-a-baby-and-a-black-bear"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2958853737.mp3?updated=1746976403">The
@@ -1893,8 +1945,9 @@ Bear</a></h3>
 <p><strong>Summary:</strong> Peter Baca’s first camping trip began like
 a dream, but quickly turned into a nightmare when a black bear crashed
 his camp site. Thus began a fight not only for his own life, but for his
-family’s as well. Watch this episode here: ~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+family’s as well. Watch this episode here: <sub></sub> To advertise on
+the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-alligator-attack-diving-for-megalodon-teeth-in-gator-country"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3204980478.mp3?updated=1746976310">Alligator
@@ -1906,9 +1959,9 @@ Attack - Diving for Megalodon Teeth in Gator Country</a></h3>
 <p><strong>Summary:</strong> What began as a routine dive to search for
 megalodon teeth on the bottom of a South Carolina river turned into a
 desperate, oxygen-deprived fight to survive for Will Georgitis. Here’s
-the gofundme link if you are interested in helping Will out! ~~ To
-advertise on the show, contact us! ~~ Tooth &amp; Claw is brought to you
-by QCODE.</p>
+the gofundme link if you are interested in helping Will out! <sub></sub>
+To advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-mako-shark-attack-shark-encounters-in-the-bloody-red-sea"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7788653086.mp3?updated=1746974627">Mako
@@ -1920,8 +1973,8 @@ Shark Attack - Shark Encounters in the Bloody Red Sea</a></h3>
 <p><strong>Summary:</strong> Wes shares three different violent
 encounters that humans have had with mako sharks, and then gets into
 some interesting biological info about the world’s fastest shark. Watch
-this episode here: ~~ To advertise on the show, contact us! ~~ Tooth
-&amp; Claw is brought to you by QCODE.</p>
+this episode here: <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-moms-gone-wrong-the-t-c-mothers-day-2024-special"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9477343018.mp3?updated=1746974065">Moms
@@ -1934,8 +1987,8 @@ Gone Wrong - The T&amp;C Mothers Day 2024 Special</a></h3>
 share a few stories about how mothers, despite their best intentions,
 can lead their children to trouble. Then in a rare moment of expressing
 genuine feelings, the group then talks about their moms and how great
-they are. ~~ To advertise on the show, contact us! ~~ Tooth &amp; Claw
-is brought to you by QCODE.</p>
+they are. <sub></sub> To advertise on the show, contact us! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-white-tailed-deer-attack-feeding-animals-could-cost-you-deer-ly"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6471824636.mp3?updated=1746973823">White-tailed
@@ -1946,9 +1999,9 @@ Deer Attack - Feeding Animals Could Cost You Deer-ly</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Mike leads a subscription episode all about
 two men’s fight to the death with a hormone-supercharged 9-point buck.
-The guys wrap things up with The Big Wild Bucks for Charity quiz. ~~ To
-advertise on the show, contact us! ~~ Tooth &amp; Claw is brought to you
-by QCODE.</p>
+The guys wrap things up with The Big Wild Bucks for Charity quiz.
+<sub></sub> To advertise on the show, contact us! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-a-drunken-monkey-s-big-day-out-news-stories-including-dogs-painted-to"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6579789991.mp3?updated=1746973453">A
@@ -1964,8 +2017,9 @@ to be joined by the inimitable Jessie, Wes’s good fortune made manifest
 as significant other. The group highlights some of the more curious and
 often violent animal attack news stories from the past couple of months,
 and then Jeff asks Jessie a batch of questions ranging from her royal
-tomato family heritage to her 3000+ pets. ~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+tomato family heritage to her 3000+ pets. <sub></sub> To advertise on
+the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-pygmy-elephant-attack-borneo-trip-travelogue-with-jeff"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8849200335.mp3?updated=1746973308">Pygmy
@@ -1978,8 +2032,9 @@ Elephant Attack - Borneo Trip Travelogue with Jeff</a></h3>
 he could remember that happened on our recent trip to Borneo. He
 punctuates his trip notes with a couple of attacks that took place on
 the island, including one that involves a crocodile, and another about a
-pygmie elephant. Watch this episode here: ﻿~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+pygmie elephant. Watch this episode here: ﻿<sub></sub> To advertise on
+the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-in-deadly-pursuit-of-the-perfect-picture"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7249525211.mp3?updated=1746973249">Grizzly
@@ -1991,8 +2046,8 @@ Bear Attack - In Deadly Pursuit of the Perfect Picture</a></h3>
 <p><strong>Summary:</strong> The chance to finally get the shot of a
 grizzly bear he had always dreamed of quickly turned into nightmare for
 outdoor enthusiast and photographer Bill Tesinsky. Watch this episode
-here: ﻿~~ To advertise on the show, contact us! ~~ Tooth &amp; Claw is
-brought to you by QCODE.</p>
+here: ﻿<sub></sub> To advertise on the show, contact us! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-bull-shark-attack-jessie-arbogast-and-the-sensationalized-summer-of-th"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1560547637.mp3?updated=1746902400">Bull
@@ -2007,9 +2062,9 @@ a bull shark in in the shallow ocean waters near Pensacola, Florida in
 2001, the media ran wild with the story and others similar to it,
 proclaiming the summer of 2001 to be “The Summer of the Shark.” But how
 bad was that summer really, and what are the consequences to those most
-effected by these events? Watch this episode here: ﻿~~ To advertise on
-the show, contact us! ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+effected by these events? Watch this episode here: ﻿<sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3 id="toothandclaw-gila-monsters-what-kind-of-monster"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1359968898.mp3?updated=1746901966">Gila
 Monsters - What Kind of Monster</a></h3>
@@ -2020,8 +2075,9 @@ Monsters - What Kind of Monster</a></h3>
 <p><strong>Summary:</strong> Wes prepped an interesting little episode
 all about the gila monster, and what makes them a unique and ultimately
 deadly reptile. Jeff and Mike try really hard to not let him get his
-thoughts out, but Wes prevails in the end. ﻿~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+thoughts out, but Wes prevails in the end. ﻿<sub></sub> To advertise on
+the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-a-bear-bites-a-can-of-bear-spray-news-stories-including-a-spate-of-sha"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2693413561.mp3?updated=1746901886">A
@@ -2039,8 +2095,8 @@ to talk a little bit about their experience of Shayne being attacked by
 a bear and the crazy (and fortunate) way he was able to fend it off.
 Timestamps: (00:00:00) Introduction + Wes Gets Scammed (00:10:34)
 Interview with Shayne and Chloe Burke (00:47:45) Animal Attack News
-Stories ﻿~~ To advertise on the show, contact us! ~~ Tooth &amp; Claw is
-brought to you by QCODE.</p>
+Stories ﻿<sub></sub> To advertise on the show, contact us! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-warthog-attack-with-friends-like-waylon-the-warthog-who-needs-enemies"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8436301488.mp3?updated=1746901175">Warthog
@@ -2054,8 +2110,8 @@ Enemies</a></h3>
 violent story of Austin Riley and his pet Waylon, a warthog who decided
 one day to turn his tusks on his caretaker and friend. Jeff reveals a
 somewhat tragic nickname he had when he was younger, and Mike might have
-made up a word. ﻿~~ To advertise on the show, contact us! ~~ Tooth &amp;
-Claw is brought to you by QCODE.</p>
+made up a word. ﻿<sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-the-official-chimp-crazy-podcast-episode-one"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1920555299.mp3?updated=1725022038">The
 Official Chimp Crazy Podcast: Episode One</a></h3>
@@ -2080,8 +2136,8 @@ Orangutan Escape Artist</a></h3>
 tell us about Ken Allen, an orangutan who made a name for himself by
 repeatedly escaping his San Diego Zoo enclosure. His antics caused the
 zoo staff no shortage of headaches, and even spawned a hate group for
-his arch enemy. ~~ To advertise on the show, contact us! ~~ Tooth &amp;
-Claw is brought to you by QCODE.</p>
+his arch enemy. <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-the-official-chimp-crazy-podcast-episode-two"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7467704667.mp3?updated=1724644271">The
 Official Chimp Crazy Podcast: Episode Two</a></h3>
@@ -2109,9 +2165,9 @@ breakthrough discoveries on how humpback whales vocalize and share their
 songs with each other, and Mike does his best to relay the information
 to Wes and Jeff. The guys then do a mini-March Madness bracket to
 determine what the best hit song with an animal in the title is. Will it
-be by The Beatles? Prince? Baja Men? Listen to find out! ~~ To advertise
-on the show, contact us! ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+be by The Beatles? Prince? Baja Men? Listen to find out! <sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3 id="toothandclaw-the-official-chimp-crazy-podcast-episode-three"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9857596527.mp3?updated=1746900711">The
 Official Chimp Crazy Podcast: Episode Three</a></h3>
@@ -2153,8 +2209,8 @@ Dog Episode - Man’s Best Friend</a></h3>
 <p><strong>Summary:</strong> Wes shares a handful of stories about how
 dogs can be more than just our friends, they can also be our heroes.
 This episode goes out to anyone who has ever loved and lost their sweet,
-loving, and loyal dog. ~~ To advertise on the show, contact us! ~~ Tooth
-&amp; Claw is brought to you by QCODE.</p>
+loving, and loyal dog. <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-moose-attack-balto-togo-and-the-history-of-the-iditarod"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5535350455.mp3?updated=1746900641">Moose
@@ -2169,9 +2225,9 @@ decides to cover the true story behind the legendery sled dog serum run
 of 1925. He then gets into the horrifying account of Bridgett Watkins
 and her encounter with a moose while training for the Iditarod. Wes does
 NOT want diptheria, and Jeff is hard to impress. Sources: You’re Wrong
-About Podcast on Balto - Articles on the moose attack portion: ~~ To
-advertise on the show, contact us! ~~ Tooth &amp; Claw is brought to you
-by QCODE.</p>
+About Podcast on Balto - Articles on the moose attack portion:
+<sub></sub> To advertise on the show, contact us! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-rfk-jr-and-the-curious-case-of-the-central-park-bear-carcass-news-stor"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1271598692.mp3?updated=1746884592">RFK
@@ -2186,8 +2242,8 @@ Hunting Expedition Gone Wrong, and More</a></h3>
 encounters that have hit the headlines recently, complete with a
 suprisingly good RFK Jr. impression from Jeff, some good reminders on
 bear saftey from Wes, and an unlikely animal attack subject from Mike.
-~~ To advertise on the show, contact us! ~~ Tooth &amp; Claw is brought
-to you by QCODE.</p>
+<sub></sub> To advertise on the show, contact us! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-black-and-brown-bear-attacks-bearanoia-in-alaska"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1105244088.mp3?updated=1746884011">Black
@@ -2202,8 +2258,8 @@ sheds a a light on how things went wrong, and then goes over the best
 things to do should anyone find themselves in a similar situation. Three
 things to remember in the event of a bear encounter: 1. Group up (safety
 in numbers!) 2. Get your bear spray out and have it ready to use 3.
-Slowly back away ~~ To advertise on the show, contact us! ~~ Tooth &amp;
-Claw is brought to you by QCODE.</p>
+Slowly back away <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-black-mamba-attack-almost-certain-death"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1599484337.mp3?updated=1746883894">Black
 Mamba Attack - Almost Certain Death</a></h3>
@@ -2217,8 +2273,8 @@ avoid major ouchies, we would advise that you do NOT get bitten by one
 of these snakes. If you can help it. If you are struggling with
 depression or thoughts of self-harm, reach out to someone who cares or
 to organizations who are there to help you. We love all. Dial 988 for
-help, or visit: ~~ To advertise on the show, contact us! ~~ Tooth &amp;
-Claw is brought to you by QCODE.</p>
+help, or visit: <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-wolves-werewolves-the-beast-within-with-sammy-smart"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6069095146.mp3?updated=1746883551">Wolves
@@ -2231,9 +2287,9 @@ href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/art
 episode for guest host Sammy Smart’s second appearance on Tooth &amp;
 Claw. He details just how bloody things can get when humans channel
 their inner wolf, whether it’s real or not. Check out Sammy’s show Too
-Scary; Didn’t Watch to get your fill of horror movie content! ~~ To
-advertise on the show, contact us! ~~ Tooth &amp; Claw is brought to you
-by QCODE.</p>
+Scary; Didn’t Watch to get your fill of horror movie content!
+<sub></sub> To advertise on the show, contact us! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-bear-399-wes-s-wildest-night-with-399-s-cubs"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3175692055.mp3?updated=1746883643">Bear
 399 - Wes’s Wildest Night with 399’s Cubs</a></h3>
@@ -2243,8 +2299,8 @@ href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/art
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> In memory of Bear 399, Wes shares some of
 experiences working with her and her cubs, including one of the most
-intense nights of his life. ~~ To advertise on the show, contact us! ~~
-Tooth &amp; Claw is brought to you by QCODE.</p>
+intense nights of his life. <sub></sub> To advertise on the show,
+contact us! <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-fire-ant-attack-joan-goes-skydiving"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6096804872.mp3?updated=1732448397">Fire
 Ant Attack - Joan Goes Skydiving</a></h3>
@@ -2261,9 +2317,9 @@ liberal usage of time travel, and Mike is worried about everyone else’s
 marsh mellows. If you want over 100 hours of subscriber exclusive
 content with more released every other week, consider joining our
 Patreon or the Griz Club today! You can also gift a loved (or liked) one
-a Patreon subscription now To subscribe: To gift a sub: ~~ To advertise
-on the show, contact us! ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+a Patreon subscription now To subscribe: To gift a sub: <sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-bears-being-framed-two-stories-of-bears-being-blamed-for-crimes-they-o"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9799815532.mp3?updated=1746883150">Bears
@@ -2278,8 +2334,9 @@ More</a></h3>
 involving dumb and bad men trying to blame their crimes on bears, while
 Mike digs into a story that he has somehow completely missed out on
 until now as he has been out of the country for the duration of it, and
-Jeff shares a story about a tragic lion mauling. ﻿~~ To advertise on the
-show, contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+Jeff shares a story about a tragic lion mauling. ﻿<sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-african-buffalo-attack-john-digby-bristow-the-tragic-price-of-poaching"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4646154964.mp3?updated=1746882851">African
@@ -2293,8 +2350,9 @@ Poaching</a></h3>
 first animal that comes to mind when thinking about the most dangerous
 animals of Africa, but they are not one to be taken lightly. Jeff gives
 us the rundown on what makes them potentially so deadly, and Wes details
-the biology that makes them special. ~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+the biology that makes them special. <sub></sub> To advertise on the
+show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-the-grizzly-deaths-of-timothy-treadwell-and-amie-huguenard-part-1-timo"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5501367570.mp3?updated=1746837291">The
@@ -2318,9 +2376,9 @@ genuine. Finally, before ending episode one, Wes takes us to another
 location on the Alaska coast, where in the year 2000, a man is killed by
 a coastal brown bear and many people in the bear world feel as though
 Timothy might be racing toward a similar end. Watch here: The Grizzly
-Deaths of Timothy Treadwell and Amie Huguenard - Part 1 ~~ To advertise
-on the show, contact us! ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+Deaths of Timothy Treadwell and Amie Huguenard - Part 1 <sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-the-grizzly-deaths-of-timothy-treadwell-and-amie-huguenard-part-2-trag"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9524509309.mp3?updated=1746837441">The
@@ -2342,8 +2400,9 @@ genesis and growth of the love that Timothy and Amie had for each other,
 as well as the somewhat rocky relationship that Timothy had with the
 National Park Service that extended to the scientific community at
 large. It’s an absolutely crazy closing chapter to our most requested
-story ever, and we hope you like it! Watch here: ~~ To advertise on the
-show, contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+story ever, and we hope you like it! Watch here: <sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3 id="toothandclaw-tooth-claw-year-end-wrap-up-2024-edition"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5374607474.mp3?updated=1746821152">Tooth
 &amp; Claw Year-End Wrap Up: 2024 Edition</a></h3>
@@ -2355,8 +2414,8 @@ href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/art
 talk about some of the more memorable moments of Tooth &amp; Claw in
 2024. They talk about the “Biggest Ouchy” of the year, some animal news
 that wasn’t covered by the show, and then venture out into some more
-general pop-culture interests. ~~ To advertise on the show, contact us!
-~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+general pop-culture interests. <sub></sub> To advertise on the show,
+contact us! <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h2 id="2025">2025 (47)</h2>
 <h3 id="toothandclaw-tiger-shark-vs-roddy-the-surfer-of-steel"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5910166680.mp3?updated=1746808205">Tiger
@@ -2370,8 +2429,8 @@ the perfect wave to surf off the coast of Maui but found much more than
 he bargained for below the surface of the water. The guys then wrap up
 with some talks about the start of a new year, which sees Jeff coming up
 with a novel but ultimately benevolent new year’s resolution. Watch this
-episode here: ~~ To advertise on the show, contact us! ~~ Tooth &amp;
-Claw is brought to you by QCODE.</p>
+episode here: <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-the-three-day-supermarket-standoff-with-a-bear-news-stories-including"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6975767617.mp3?updated=1746805789">The
@@ -2385,8 +2444,8 @@ Sinister Plot Against a Show Goat</a></h3>
 <p><strong>Summary:</strong> The Tooth &amp; Claw guys wrangle up a
 batch of recent animal attack headlines for discussion. Afterwards, Jeff
 presents one of the trickier collection of categories ever featured on
-the show. Watch here: ~~ To advertise on the show, contact us! ~~ Tooth
-&amp; Claw is brought to you by QCODE.</p>
+the show. Watch here: <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-alligator-attack-2-brothers-1-gator"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8252702922.mp3?updated=1746805509">Alligator
 Attack - 2 Brothers 1 Gator</a></h3>
@@ -2398,8 +2457,8 @@ Attack - 2 Brothers 1 Gator</a></h3>
 on crab pots in Jacksonville, Florida when an alligator took exception
 to him being in its waters. (10:06) - timestamp if you want to skip
 Jeff’s story about getting catfished! Watch here: Alligator Attack - 2
-Brothers 1 Gator ~~ To advertise on the show, contact us! ~~ Tooth &amp;
-Claw is brought to you by QCODE.</p>
+Brothers 1 Gator <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-the-revenant-the-man-and-the-bear-who-inspired-the-movie"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1145314907.mp3?updated=1746805271">The
@@ -2413,8 +2472,8 @@ incredibly full life and times of Hugh Glass into one episode. From
 piracy, to mountaineering, and of course one of the most horrific and
 famous bear attacks, Hugh was never left wanting for adventure or
 danger. Watch here: The Revenant: The Man and the Bear Who Inspired the
-Movie ~~ To advertise on the show, contact us! ~~ Tooth &amp; Claw is
-brought to you by QCODE.</p>
+Movie <sub></sub> To advertise on the show, contact us! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-the-revenant-a-t-c-movie-review"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3808609907.mp3?updated=1746804627">The
 Revenant: A T&amp;C Movie Review</a></h3>
@@ -2427,8 +2486,8 @@ featured in the 2015 movie The Revenant, so we thought it would be a fun
 idea to discuss what the movie got right and what it got wrong about how
 that scenario would actually play out. And since we were already there
 talking about it, we thought we’d talk about the rest of the movie too!
-Watch here: ~~ To advertise on the show, contact us! ~~ Tooth &amp; Claw
-is brought to you by QCODE.</p>
+Watch here: <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-leopard-seal-attack-sharp-teeth-down-south"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4428766920.mp3?updated=1746804256">Leopard
 Seal Attack - Sharp Teeth Down South</a></h3>
@@ -2439,8 +2498,9 @@ Seal Attack - Sharp Teeth Down South</a></h3>
 <p><strong>Summary:</strong> It turns out that it’s not just the cold
 that can be deadly down in the south pole. Wes shares a couple of
 stories to prove it, and then introduces an instant new favorite
-category called Seal of Approval. Watch here: ~~ To advertise on the
-show, contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+category called Seal of Approval. Watch here: <sub></sub> To advertise
+on the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you
+by QCODE.</p>
 <h3 id="toothandclaw-juliane-of-the-jungle"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8722595829.mp3?updated=1746804258">Juliane
 of the Jungle</a></h3>
@@ -2451,9 +2511,9 @@ of the Jungle</a></h3>
 <p><strong>Summary:</strong> in 1971, 17-year-old Juliane Koepcke was
 sucked out of an airplane after it was struck by lightning. Wes tells
 the story of what the next 10 days trudging her way through the Amazon
-looked like after miraculously surviving the fall. Watch here: ~~ To
-advertise on the show, contact us! ~~ Tooth &amp; Claw is brought to you
-by QCODE.</p>
+looked like after miraculously surviving the fall. Watch here:
+<sub></sub> To advertise on the show, contact us! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-mountain-lion-attack-the-california-cougar-kidnapper"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3419941240.mp3?updated=1746804195">Mountain
@@ -2464,8 +2524,8 @@ Lion Attack - The California Cougar Kidnapper</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Two incredibly unlikely encounters with a
 mountain lion in California cause a major legal battle, heartbreaking
-injury, and a crisis of faith. ~~ To advertise on the show, contact us!
-~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+injury, and a crisis of faith. <sub></sub> To advertise on the show,
+contact us! <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-avian-air-force-pigeons-at-war"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2146581761.mp3?updated=1746804492">Avian
 Air Force: Pigeons at War</a></h3>
@@ -2478,8 +2538,8 @@ subscriber episode we’re releasing to the public! Not because of its
 high quality, but Mike needed to feel included again. Speaking of Mike,
 in this episode he is here to talk about pigeon war hero, so he does.
 Jeff is here to talk about Star Wars, and he does. Wes is here to do a
-Disturbed impression. He does one. ~~ To advertise on the show, contact
-us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+Disturbed impression. He does one. <sub></sub> To advertise on the show,
+contact us! <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-bentho-the-heroic-dog-news-stories-including-injecting-butterflies-a-f"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4454849425.mp3?updated=1770691305">Bentho
@@ -2492,8 +2552,9 @@ vs. a Mermaid, a Whale Swallowing a Man Whole, and More</a></h3>
 <p><strong>Summary:</strong> It’s been a wild and unusual month for
 animal news stories, so the guys did their best to talk their way
 through a few and explain what we can learn from them. They then end
-things on a quick recap of their trip to India. ~~ To advertise on the
-show, contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+things on a quick recap of their trip to India. <sub></sub> To advertise
+on the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you
+by QCODE.</p>
 <h3 id="toothandclaw-jack-and-the-killer-jellyfish"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1124195837.mp3?updated=1770691300">Jack
 and the Killer Jellyfish</a></h3>
@@ -2503,9 +2564,9 @@ and the Killer Jellyfish</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> In 1961, toxinologist Jack Barnes thought
 up a novel way to test just how bad the sting of the Irukandji jellyfish
-is. And the award for worst father goes to…. Watch here: ~~ To advertise
-on the show, contact us! ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+is. And the award for worst father goes to…. Watch here: <sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-brown-bear-attack-death-and-the-guilt-of-the-one-left-behind"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1618353500.mp3?updated=1770691326">Brown
@@ -2518,8 +2579,8 @@ Bear Attack - Death and the Guilt of the One Left Behind</a></h3>
 Evans’violent encounter with a brown bear in the Carpathian Mountains
 and just how heavy the guilt can be for those who live on. For more
 information on the attack, read Young Widower: A Memoir by John W.
-Evans. Watch here: ~~ To advertise on the show, contact us! ~~ Tooth
-&amp; Claw is brought to you by QCODE.</p>
+Evans. Watch here: <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-guess-the-predator-the-deaths-of-noah-and-connor-barthe"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2610680397.mp3?updated=1756320502">Guess
@@ -2530,8 +2591,9 @@ the Predator - The Deaths of Noah and Connor Barthe</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Wes concocts a little whodunit for this
 episode wherein he challenges us all to guess what got into the room
-where two young brothers lie sleeping. ~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+where two young brothers lie sleeping. <sub></sub> To advertise on the
+show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-who-is-the-real-king-of-the-jungle-lions-vs-tigers"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7710977690.mp3?updated=1756324110">Who
@@ -2559,8 +2621,8 @@ White Shark Attack - Andrew Carter and the Shark Who Bit Him</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Wes takes the guys through a violent
 encounter that two surfers had with a great white shark. One got lucky,
-and one didn’t. ~~ To advertise on the show, contact us! ~~ Tooth &amp;
-Claw is brought to you by QCODE.</p>
+and one didn’t. <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-the-dire-wolf-de-extinction-situation-news-stories-including-dire-wolv"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4046956856.mp3?updated=1756334844">The
@@ -2573,8 +2635,8 @@ Face, and More</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> The guys talk about some of the more
 notable animal news stories to hit the mainstream during the past month
-or so. Watch here: ~~ To advertise on the show, contact us! ~~ Tooth
-&amp; Claw is brought to you by QCODE.</p>
+or so. Watch here: <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-rattlesnake-bite-the-dangerous-games-cults-play"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2175513851.mp3?updated=1756328208">Rattlesnake
 Bite - The Dangerous Games Cults Play</a></h3>
@@ -2584,8 +2646,9 @@ Bite - The Dangerous Games Cults Play</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> In 1977, attorney and journalist Paul
 Morantz investigated a drug rehabilitation institution and found himself
-on the receiving end of the wrath of a cult. ~~ To advertise on the
-show, contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+on the receiving end of the wrath of a cult. <sub></sub> To advertise on
+the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-a-venomous-conversation-with-dr-spencer-greene-a-toxic-tooth-claw-inte"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3060437990.mp3?updated=1756335401">A
@@ -2598,8 +2661,9 @@ Interview</a></h3>
 <p><strong>Summary:</strong> Wes and Mike are joined by a leading member
 of the toxicology community; one Dr. Spencer Greene. Jeff hops in on the
 back end of the episode to help round things out with some fun
-venom-related categories. Watch here: ~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+venom-related categories. Watch here: <sub></sub> To advertise on the
+show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-amazing-mothers-of-the-animal-kingdom-mother-s-day-special-2025"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6171398949.mp3?updated=1756336043">Amazing
@@ -2613,8 +2677,8 @@ family matriarch, to once again impart all of the wisdom the guys would
 allow her to as Wes covers some of the more dedicated animal moms out
 there in the wild. Thanks for listening, especially all you moms! Thanks
 for all that you have done, are doing, and will continue to do for us
-all. ~~ To advertise on the show, contact us! ~~ Tooth &amp; Claw is
-brought to you by QCODE.</p>
+all. <sub></sub> To advertise on the show, contact us! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-history-s-deadliest-sloth-bear-the-sloth-bear-of-mysore"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5914089890.mp3?updated=1756336688">History’s
@@ -2627,8 +2691,8 @@ Deadliest Sloth Bear: The Sloth Bear of Mysore</a></h3>
 unusually aggressive sloth bear is thought to have caused the death of
 at least 12 people and the mauling of several others. Jeff wonders about
 how often sloth bears bonk their heads. Mike gets angry about The Jungle
-Book. Watch here: ~~ To advertise on the show, contact us! ~~ Tooth
-&amp; Claw is brought to you by QCODE.</p>
+Book. Watch here: <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-grizzly-bear-attack-the-bear-vs-the-bffs"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5786361627.mp3?updated=1756335376">Grizzly
 Bear Attack - The Bear vs. the BFFs</a></h3>
@@ -2640,8 +2704,8 @@ Bear Attack - The Bear vs. the BFFs</a></h3>
 were hiking in Glacier National Park when they experienced an unusual
 but still violent encounter with a momma bear and her two cubs. Wes
 talks about what we can learn from their experience, especially as it
-comes to bear spray. Watch here: ~~ To advertise on the show, contact
-us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+comes to bear spray. Watch here: <sub></sub> To advertise on the show,
+contact us! <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-the-first-fatal-florida-bear-attack-a-roundup-of-recent-animal-attack"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5278061295.mp3?updated=1756333755">The
@@ -2655,8 +2719,8 @@ More</a></h3>
 <p><strong>Summary:</strong> The guys discuss some of the most notable
 animal attack news that have happened over the past few weeks. Here’s
 the link for James (coyote attack): Link for little Cara (rattlesnake
-bite): Watch here: ~~ To advertise on the show, contact us! ~~ Tooth
-&amp; Claw is brought to you by QCODE.</p>
+bite): Watch here: <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-jeffisode-about-penis-injuries-the-pacu-fish-the-candiru-fish-and-lore"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8241391277.mp3?updated=1756330815">Jeffisode
@@ -2669,9 +2733,9 @@ Bobbitt</a></h3>
 <p><strong>Summary:</strong> In 1993, Lorena Bobbitt severed her
 husband’s penis with a kitchen knife while he was asleep in bed. But
 before getting to that story, Jeff covers a couple of fish that may or
-may not have a habit of going after male genitalia. Watch here: ~~ To
-advertise on the show, contact us! ~~ Tooth &amp; Claw is brought to you
-by QCODE.</p>
+may not have a habit of going after male genitalia. Watch here:
+<sub></sub> To advertise on the show, contact us! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-scorpion-attack-a-paralyzing-sting-in-the-grand-canyon"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9911603519.mp3?updated=1756329320">Scorpion
@@ -2683,8 +2747,9 @@ Attack - A Paralyzing Sting in the Grand Canyon</a></h3>
 <p><strong>Summary:</strong> Abigail Barronian assumed her life probably
 wasn’t in any danger when she was stung by a scorpion while on a rafting
 trip down the Grand Canyon. But then she lost her ability to see and
-speak, and a very long and painful night began. ~~ To advertise on the
-show, contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+speak, and a very long and painful night began. <sub></sub> To advertise
+on the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you
+by QCODE.</p>
 <h3 id="toothandclaw-manatees-mermaids"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9079698887.mp3?updated=1750643490">Manatees
 &amp; Mermaids</a></h3>
@@ -2700,8 +2765,8 @@ they know we sent you! Get a free 8-count Sample Pack with any purchase
 at Upgrade your sleep with Miracle Made! Go to and use the code TOOTH to
 claim your FREE 3 PIECE TOWEL SET and SAVE over 40%OFF! Take the online
 quiz and introduce Ollie to your pet. Visit today for 60% off your first
-box of meals! ~~ To advertise on the show, contact us! ~~ Tooth &amp;
-Claw is brought to you by QCODE.</p>
+box of meals! <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-brown-bear-attack-olga-igor-and-the-kamchatka-brown-bear"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6956540634.mp3?updated=1751869130">Brown
@@ -2719,9 +2784,9 @@ Pack with any purchase at Ollie: Take the online quiz and introduce
 Ollie to your pet. Visit for 60% off your first box of meals!
 #ToKnowThemIsToLoveThem Cornbread Hemp: Get 30% off at and use code
 TOOTH Wild Alaskan: Get $35 off your first box of wild-caught,
-sustainable seafood—delivered right to your door. Go to: ~~ To advertise
-on the show, contact us! ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+sustainable seafood—delivered right to your door. Go to: <sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-the-bear-and-the-biker-a-roundup-of-recent-animal-attack-news-includin"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3400675091.mp3?updated=1752463009">The
@@ -2740,8 +2805,9 @@ unwanted subscriptions and reach your financial goals faster with Rocket
 Money. Go to www.rocketmoney.com/claw today. Miracle Made: Upgrade your
 sleep with Miracle Made! Go to Try Miracle.com/TOOTH and use the code
 TOOTH to claim your FREE 3 PIECE TOWEL SET and SAVE over 40% OFF. Goodr:
-Go to and use code TOOTH for free shipping. ~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+Go to and use code TOOTH for free shipping. <sub></sub> To advertise on
+the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-the-worst-shark-attack-in-history-the-uss-indianapolis-disaster-part-1"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2664054026.mp3?updated=1756169447">The
@@ -2764,9 +2830,9 @@ online quiz and introduce Ollie to your pet. Visit today for 60% off
 your first box of meals! #ToKnowThemIsToLoveThem Mint Mobile: Get this
 new customer offer and your 3-month Unlimited wireless plan for just $15
 a month at Quince: Go to for free shipping on your order and 365 day
-returns. LMNT: Get a free 8-count Sample Pack with any purchase at ~~ To
-advertise on the show, contact us! ~~ Tooth &amp; Claw is brought to you
-by QCODE.</p>
+returns. LMNT: Get a free 8-count Sample Pack with any purchase at
+<sub></sub> To advertise on the show, contact us! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-the-worst-shark-attack-in-history-the-uss-indianapolis-disaster-part-2"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1720714680.mp3?updated=1756169463">The
@@ -2786,8 +2852,8 @@ Olive Oil: Add Graza Olive Oil to your summertime patio party arsenal.
 Visit and use promo code TOOTH today for 10% off of the TRIO! Miracle
 Brand: ABOVE THE FOLD: “Upgrade your sleep with Miracle Made! Go to and
 use the code TOOTH to claim your FREE 3 PIECE TOWEL SET and SAVE over
-40% OFF ~~ To advertise on the show, contact us! ~~ Tooth &amp; Claw is
-brought to you by QCODE.</p>
+40% OFF <sub></sub> To advertise on the show, contact us! <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-the-worst-shark-attack-in-history-the-uss-indianapolis-disaster-part-3"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5306913996.mp3?updated=1756169470">The
@@ -2804,9 +2870,9 @@ that many of the men faced long after the ordeal was over. Watch here:
 Cornbread Hemp: Get 30% off at and use code TOOTH LMNT: Get a free
 8-count Sample Pack with any purchase at Rocket Money: Cancel your
 unwanted subscriptions and reach your financial goals faster with Rocket
-Money. Go to today Hims: Start your free online visit today at ~~ To
-advertise on the show, contact us! ~~ Tooth &amp; Claw is brought to you
-by QCODE.</p>
+Money. Go to today Hims: Start your free online visit today at
+<sub></sub> To advertise on the show, contact us! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-toothie-tales-a-bat-to-the-mouth-a-snake-at-the-gates-and-many-more"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8351389899.mp3?updated=1746547409">Toothie
@@ -2820,14 +2886,15 @@ and dangerous encounters with some animals, it turns out! These are a
 few stories you all sent in for us to read through and discuss. Thank
 you to everyone who submitted their stories! We’ll hold on to all the
 ones that weren’t used for another episode somewhere down the line,
-hopefully. ~~ Miracle Made: Upgrade your sleep with Miracle Made! Go to
-and use the code TOOTH to claim your FREE 3 PIECE TOWEL SET and SAVE
-over 40% OFF. Goodr: Go to and use code TOOTH for free shipping. Ollie
-Pet Food: Take the online quiz and introduce Ollie to your pet. Visit
-today for 60% off your first box of meals! #ToKnowThemIsToLoveThem Wild
-Alaskan: Get $35 off your first box of wild-caught, sustainable
-seafood—delivered right to your door. Go to: ~~ To advertise on the
-show, contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+hopefully. <sub></sub> Miracle Made: Upgrade your sleep with Miracle
+Made! Go to and use the code TOOTH to claim your FREE 3 PIECE TOWEL SET
+and SAVE over 40% OFF. Goodr: Go to and use code TOOTH for free
+shipping. Ollie Pet Food: Take the online quiz and introduce Ollie to
+your pet. Visit today for 60% off your first box of meals!
+#ToKnowThemIsToLoveThem Wild Alaskan: Get $35 off your first box of
+wild-caught, sustainable seafood—delivered right to your door. Go to:
+<sub></sub> To advertise on the show, contact us! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-jaguar-attack-a-rare-and-deadly-encounter"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2033828642.mp3?updated=1746547409">Jaguar
 Attack - A Rare and Deadly Encounter</a></h3>
@@ -2837,14 +2904,15 @@ Attack - A Rare and Deadly Encounter</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Jaguars are an incredibly powerful cat who
 usually keep to themselves as far as humans are concerned. But not
-always. ~~ Graza Olive Oil: Add Graza Olive Oil to your summertime patio
-party arsenal. Visit and use promo code TOOTH today for 10% off of the
-TRIO! Mint Mobile: Get this new customer offer and your 3-month
-Unlimited wireless plan for just $15 a month at LMNT: Get a free 8-count
-Sample Pack with any purchase at Quince: Go to for free shipping on your
-order and 365 day returns. Smalls: Get 60% off your first Smalls order
-PLUS free shipping when you head to ~~ To advertise on the show, contact
-us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+always. <sub></sub> Graza Olive Oil: Add Graza Olive Oil to your
+summertime patio party arsenal. Visit and use promo code TOOTH today for
+10% off of the TRIO! Mint Mobile: Get this new customer offer and your
+3-month Unlimited wireless plan for just $15 a month at LMNT: Get a free
+8-count Sample Pack with any purchase at Quince: Go to for free shipping
+on your order and 365 day returns. Smalls: Get 60% off your first Smalls
+order PLUS free shipping when you head to <sub></sub> To advertise on
+the show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3
 id="toothandclaw-the-dangers-of-hunting-cape-buffalo-a-roundup-of-recent-animal-encount"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5722864854.mp3?updated=1756169239">The
@@ -2858,15 +2926,15 @@ Safety Drill, and More</a></h3>
 <p><strong>Summary:</strong> The guys talk about a bunch of recent
 animal-related headlines they thought would be educational,
 entertaining, or otherwise worth discussing. Stay safe out there! Watch
-here: ~~ Hims: To get simple, online access to personalized, affordable
-care for ED, Hair Loss, Weight Loss, and more, visit Miracle Made:
-Upgrade your sleep with Miracle Made! Go to and use the code TOOTH to
-claim your FREE 3 PIECE TOWEL SET and SAVE over 40% OFF Ollie Pet Food:
-Take the online quiz and introduce Ollie to your pet. Visit for 60% off
-your first box of meals! #ToKnowThemIsToLoveThem Rocket Money: Cancel
-your unwanted subscriptions and reach your financial goals faster with
-Rocket Money. Go to today. ~~ To advertise on the show, contact us! ~~
-Tooth &amp; Claw is brought to you by QCODE.</p>
+here: <sub></sub> Hims: To get simple, online access to personalized,
+affordable care for ED, Hair Loss, Weight Loss, and more, visit Miracle
+Made: Upgrade your sleep with Miracle Made! Go to and use the code TOOTH
+to claim your FREE 3 PIECE TOWEL SET and SAVE over 40% OFF Ollie Pet
+Food: Take the online quiz and introduce Ollie to your pet. Visit for
+60% off your first box of meals! #ToKnowThemIsToLoveThem Rocket Money:
+Cancel your unwanted subscriptions and reach your financial goals faster
+with Rocket Money. Go to today. <sub></sub> To advertise on the show,
+contact us! <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-the-legend-of-history-s-deadliest-whale-porphyrios-the-purple"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2973064757.mp3?updated=1756686831">The
@@ -2880,12 +2948,12 @@ episode. If you enjoy it, consider subscribing to either our Patreon or
 Apple Grizclub! In this one, Mike talks about a handful of animal
 attacks that happened long ago including a deadly case of baldness,
 dying of laughter, the ineffective bones of Saint Conleth, and more!
-Watch here: ~~ Wild Alaskan: Get $35 off your first box of wild-caught,
-sustainable seafood—delivered right to your door. Go to: Mint Mobile:
-Get this new customer offer and your 3-month Unlimited wireless plan for
-just $15 a month at Cornbread Hemp: Get 30% off at and use code TOOTH ~~
-To advertise on the show, contact us! ~~ Tooth &amp; Claw is brought to
-you by QCODE.</p>
+Watch here: <sub></sub> Wild Alaskan: Get $35 off your first box of
+wild-caught, sustainable seafood—delivered right to your door. Go to:
+Mint Mobile: Get this new customer offer and your 3-month Unlimited
+wireless plan for just $15 a month at Cornbread Hemp: Get 30% off at and
+use code TOOTH <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-crocodile-attack-todd-his-dog-dig-dig-and-the-saltwater-crocodile"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9291258132.mp3?updated=1769615434">Crocodile
@@ -2898,16 +2966,16 @@ Attack - Todd, His Dog Dig Dig, and the Saltwater Crocodile</a></h3>
 eleven foot saltwater crocodile bit his legs and began tearing them
 apart with its signature death roll. In a moment of extreme desperation,
 he resorted to using an unconventional, albeit sad, weapon. Watch here:
-~~ LMNT: Get a free 8-count Sample Pack with any purchase at Smalls: For
-a limited time only, get 60% off your first order PLUS free shipping
-when you head to Hims: To get simple, online access to personalized,
-affordable care for ED, Hair Loss, Weight Loss, and more, visit Miracle
-Brand: Upgrade your sleep with Miracle Made! Go to and use the code
-TOOTH to claim your FREE 3 PIECE TOWEL SET and SAVE over 40% OFF. Ollie
-Pet Food: Take the online quiz and introduce Ollie to your pet. Visit
-for 60% off your first box of meals! #ToKnowThemIsToLoveThem ~~ To
-advertise on the show, contact us! ~~ Tooth &amp; Claw is brought to you
-by QCODE.</p>
+<sub></sub> LMNT: Get a free 8-count Sample Pack with any purchase at
+Smalls: For a limited time only, get 60% off your first order PLUS free
+shipping when you head to Hims: To get simple, online access to
+personalized, affordable care for ED, Hair Loss, Weight Loss, and more,
+visit Miracle Brand: Upgrade your sleep with Miracle Made! Go to and use
+the code TOOTH to claim your FREE 3 PIECE TOWEL SET and SAVE over 40%
+OFF. Ollie Pet Food: Take the online quiz and introduce Ollie to your
+pet. Visit for 60% off your first box of meals! #ToKnowThemIsToLoveThem
+<sub></sub> To advertise on the show, contact us! <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-the-hunters-become-the-hunted"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2697793367.mp3?updated=1766032829">Grizzly
@@ -2920,13 +2988,14 @@ Bear Attack - The Hunters Become the Hunted</a></h3>
 what they were expecting to be a routine elk hunt, but ran into
 something much, much more dangerous. Wes then takes the opportunity to
 explore why bear spray is your best chance at deterring, avoiding, and
-surviving violent encounters with bears. Watch here: ~~ LMNT: Get a free
-8-count Sample Pack with any purchase at Miracle Brand: Upgrade your
-sleep with Miracle Made! Go to ⁠ and use the code TOOTH to claim your
-FREE 3 PIECE TOWEL SET and SAVE over 40% OFF. Ollie Pet Food: Take the
-online quiz and introduce Ollie to your pet. Visit ⁠ for 60% off your
-first box of meals! #ToKnowThemIsToLoveThem ~~ To advertise on the show,
-contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+surviving violent encounters with bears. Watch here: <sub></sub> LMNT:
+Get a free 8-count Sample Pack with any purchase at Miracle Brand:
+Upgrade your sleep with Miracle Made! Go to ⁠ and use the code TOOTH to
+claim your FREE 3 PIECE TOWEL SET and SAVE over 40% OFF. Ollie Pet Food:
+Take the online quiz and introduce Ollie to your pet. Visit ⁠ for 60% off
+your first box of meals! #ToKnowThemIsToLoveThem <sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-a-grizzly-encounter-in-yellowstone-a-roundup-of-recent-animal-encounte"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD5713136428.mp3?updated=1766032109">A
@@ -2940,14 +3009,15 @@ Pants-ing a Tourist, Big Cats in Thailand, and More</a></h3>
 <p><strong>Summary:</strong> The guys each bring a handful of recent
 animal attack stories to the table to discuss with each other, and then
 get into the rarest bird Wes has ever een, Jeff’s escape room escapades,
-and how much they like September. Ariean’s GoFundMe: ~~ Rocket Money:
-Cancel your unwanted subscriptions and reach your financial goals faster
-with Rocket Money. Go to today. Goodr: Go to and use code TOOTH for free
-shipping. Cornbread Hemp: Get 30% off at and use code TOOTH Graza Olive
-Oil: Take your food to the next level with Graza Olive Oil. Visit and
-use promo code TOOTH today for 10% off your first order! LMNT: Get a
-free 8-count Sample Pack with any purchase at ⁠ ~~ To advertise on the
-show, contact us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+and how much they like September. Ariean’s GoFundMe: <sub></sub> Rocket
+Money: Cancel your unwanted subscriptions and reach your financial goals
+faster with Rocket Money. Go to today. Goodr: Go to and use code TOOTH
+for free shipping. Cornbread Hemp: Get 30% off at and use code TOOTH
+Graza Olive Oil: Take your food to the next level with Graza Olive Oil.
+Visit and use promo code TOOTH today for 10% off your first order! LMNT:
+Get a free 8-count Sample Pack with any purchase at ⁠ <sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3 id="toothandclaw-the-humboldt-squid-a-dance-with-el-diablo-rojo"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4629094396.mp3?updated=1766031597">The
 Humboldt Squid - A Dance with El Diablo Rojo</a></h3>
@@ -2957,15 +3027,15 @@ Humboldt Squid - A Dance with El Diablo Rojo</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> To kick off the scariest month of the year,
 Wes thought it appropriate to bring some tentacles into the equation.
-This intrigued Jeff. ~~ Smalls: For a limited time, get 60% off your
-first order, plus free shipping, when you head to Hims: To get simple,
-online access to personalized, affordable care for ED, Hair Loss, Weight
-Loss, and more, visit Cornbread Hemp: Get 30% off at ⁠ and use code TOOTH
-LMNT: Get a free 8-count Sample Pack with any purchase at ⁠⁠⁠ Graza Olive
-Oil: Take your food to the next level with Graza Olive Oil. Visit ⁠ and
-stock up during our sitewide sale, running October 1st through October
-21st! ~~ To advertise on the show, contact us! ~~ Tooth &amp; Claw is
-brought to you by QCODE.</p>
+This intrigued Jeff. <sub></sub> Smalls: For a limited time, get 60% off
+your first order, plus free shipping, when you head to Hims: To get
+simple, online access to personalized, affordable care for ED, Hair
+Loss, Weight Loss, and more, visit Cornbread Hemp: Get 30% off at ⁠ and
+use code TOOTH LMNT: Get a free 8-count Sample Pack with any purchase at
+⁠⁠⁠Graza Olive Oil: Take your food to the next level with Graza Olive Oil.
+Visit ⁠ and stock up during our sitewide sale, running October 1st
+through October 21st! <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-polar-bear-attack-a-violent-post-party-polar-bear-encounter"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6672402251.mp3?updated=1766031272">Polar
@@ -2975,16 +3045,16 @@ Bear Attack - A Violent Post-Party Polar Bear Encounter</a></h3>
 <p><strong>Episode:</strong> 170</p>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> In 2013, Erin Greene was on her way home
-from a Halloween party when she crossed paths with a polar bear. ~~
-Miracle Brand: Upgrade your sleep with Miracle Made! Go to and use the
-code TOOTH to claim your FREE 3 PIECE TOWEL SET and SAVE over 40% OFF.
-Goodr: Go to and use code TOOTH for free shipping. Rocket Money: Cancel
-your unwanted subscriptions and reach your financial goals faster with
-Rocket Money. Go to today. Ollie Pet Food: Take the guesswork out of
-your dog’s well-being. Go to ollie.com/tooth and use code tooth to get
-60% off your first box! Mint: Ready to say yes to saying no? Make the
-switch at ~~ To advertise on the show, contact us! ~~ Tooth &amp; Claw
-is brought to you by QCODE.</p>
+from a Halloween party when she crossed paths with a polar bear.
+<sub></sub> Miracle Brand: Upgrade your sleep with Miracle Made! Go to
+and use the code TOOTH to claim your FREE 3 PIECE TOWEL SET and SAVE
+over 40% OFF. Goodr: Go to and use code TOOTH for free shipping. Rocket
+Money: Cancel your unwanted subscriptions and reach your financial goals
+faster with Rocket Money. Go to today. Ollie Pet Food: Take the
+guesswork out of your dog’s well-being. Go to ollie.com/tooth and use
+code tooth to get 60% off your first box! Mint: Ready to say yes to
+saying no? Make the switch at <sub></sub> To advertise on the show,
+contact us! <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-the-mummy-s-curse-other-horrific-deaths-by-animal-with-sammy-smart"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3900427783.mp3?updated=1769560577">The
@@ -3018,13 +3088,14 @@ Sierra foothills, mangled and left for dead on the trail where she had
 been out on a jog. Over time, pieces of evidence began to paint a
 picture of what exactly had transpired, forever changing the way the
 local community saw what was thought a peaceful and safe slice of
-nature. ~~ LMNT: Get a free 8-count Sample Pack with any purchase at
-Cornbread Hemp: Get 30% off at and use code TOOTH Smalls: For a limited
-time, get 60% off your first order, plus free shipping, when you head to
-Mint Mobile: Make the switch at Miracle Brand: Upgrade your sleep with
-Miracle Made! Go to ⁠⁠ and use the code TOOTH to claim your FREE 3 PIECE
-TOWEL SET and SAVE over 40% OFF. ~~ To advertise on the show, contact
-us! ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+nature. <sub></sub> LMNT: Get a free 8-count Sample Pack with any
+purchase at Cornbread Hemp: Get 30% off at and use code TOOTH Smalls:
+For a limited time, get 60% off your first order, plus free shipping,
+when you head to Mint Mobile: Make the switch at Miracle Brand: Upgrade
+your sleep with Miracle Made! Go to ⁠⁠ and use the code TOOTH to claim
+your FREE 3 PIECE TOWEL SET and SAVE over 40% OFF. <sub></sub> To
+advertise on the show, contact us! <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-two-bear-attacks-in-arkansas-the-t-c-november-animal-attack-news-round"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7201091668.mp3?updated=1769561378">Two
@@ -3038,17 +3109,18 @@ Roundup</a></h3>
 more notable animal attack, encounter, and otherwise noteworthy
 headlines from the past month or so, including a couple of bear attacks
 in Arkansas, an especially angry California squirrel, and a coyote
-intruding on a game of hide and seek. Watch here: ~~ Hollow Socks: For a
-limited time Hollow Socks is having a Buy 3, Get 3 Free Sale. Head to
-today to check it out. #HollowSockspod Graza Olive Oil: Take your food
-to the next level with Graza Olive Oil. Visit and use promo code TOOTH
-today for 10% off your first order! Miracle Brand: Upgrade your sleep
-with Miracle Made! Go to ⁠ and use the code TOOTH to claim your FREE 3
-PIECE TOWEL SET and SAVE over 40% OFF.” Ollie Pet Food: Take the
-guesswork out of your dog’s well-being. Go to and use code tooth to get
-60% off your first box! ⁠ LMNT: Show Notes: Get a free 8-count Sample
-Pack with any purchase at ~~ To advertise on the show, contact us! ~~
-Tooth &amp; Claw is brought to you by QCODE.</p>
+intruding on a game of hide and seek. Watch here: <sub></sub> Hollow
+Socks: For a limited time Hollow Socks is having a Buy 3, Get 3 Free
+Sale. Head to today to check it out. #HollowSockspod Graza Olive Oil:
+Take your food to the next level with Graza Olive Oil. Visit and use
+promo code TOOTH today for 10% off your first order! Miracle Brand:
+Upgrade your sleep with Miracle Made! Go to ⁠ and use the code TOOTH to
+claim your FREE 3 PIECE TOWEL SET and SAVE over 40% OFF.” Ollie Pet
+Food: Take the guesswork out of your dog’s well-being. Go to and use
+code tooth to get 60% off your first box! ⁠ LMNT: Show Notes: Get a free
+8-count Sample Pack with any purchase at <sub></sub> To advertise on the
+show, contact us! <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3 id="toothandclaw-the-ghost-grizzlies-of-colorado-part-1"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4071056367.mp3?updated=1769615027">The
 Ghost Grizzlies of Colorado: Part 1</a></h3>
@@ -3059,14 +3131,14 @@ Ghost Grizzlies of Colorado: Part 1</a></h3>
 <p><strong>Summary:</strong> The history of grizzly bears in Colorado is
 steeped in tradition and tragedy. In this episode, Wes tells the story
 of how intruding on sacred land led to dire consequences for bears and
-humans alike. Watch here: ~~ Cornbread Hemp: Get 30% off at and use code
-TOOTH Aura Frames: Exclusive $45-off Carver Mat at . Promo Code TOOTH
-Ollie Pet Food: Take the guesswork out of your dog’s well-being. Go to
-and use code tooth to get 60% off your first box! Rocket Money: Cancel
-your unwanted subscriptions and reach your financial goals faster with
-Rocket Money. Go to Quince: Go to for free shipping on your order and
-365-day returns. ~~ To advertise on the show, contact us! ~~ Tooth &amp;
-Claw is brought to you by QCODE.</p>
+humans alike. Watch here: <sub></sub> Cornbread Hemp: Get 30% off at and
+use code TOOTH Aura Frames: Exclusive $45-off Carver Mat at . Promo Code
+TOOTH Ollie Pet Food: Take the guesswork out of your dog’s well-being.
+Go to and use code tooth to get 60% off your first box! Rocket Money:
+Cancel your unwanted subscriptions and reach your financial goals faster
+with Rocket Money. Go to Quince: Go to for free shipping on your order
+and 365-day returns. <sub></sub> To advertise on the show, contact us!
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-how-the-goonch-stole-christmas"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD6744922186.mp3?updated=1764606453">How
 the Goonch Stole Christmas</a></h3>
@@ -3083,9 +3155,9 @@ turns out to be a real animal. He covers a couple of horrifying accounts
 of attacks by what is essentially a monster catfish, and we all learn
 something new and terrifying about the world. Meanwhile, Jeff gives out
 his lowest overall animal ranking ever, and Mike has a bit of a mental
-breakdown hearing about Wes’s old eating habits. ~~ To advertise on the
-show, contact us! Patreon - ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+breakdown hearing about Wes’s old eating habits. <sub></sub> To
+advertise on the show, contact us! Patreon - <sub></sub> Tooth &amp;
+Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-the-ghost-grizzlies-of-colorado-part-2"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4004190255.mp3?updated=1771538013">The
 Ghost Grizzlies of Colorado: Part 2</a></h3>
@@ -3095,17 +3167,17 @@ Ghost Grizzlies of Colorado: Part 2</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Wes tells the tale of a man who had one
 final grizzly bear attack before they disappeared from Colorado
-altogether. Watch here: ~~ Aura Frames: Exclusive $35 off Carver Mat at
-Promo Code TOOTH Miracle Brand: Upgrade your sleep with Miracle Made! Go
-to and use the code TOOTH to claim your FREE 3 PIECE TOWEL SET and SAVE
-over 40% OFF. ButcherBox: As an exclusive offer, our listeners can get
-free steak in every box for a year PLUS $20 off your first box when you
-go to Rocket Money: Cancel your unwanted subscriptions and reach your
-financial goals faster with Rocket Money. Go to today. Ollie Pet Food:
-Take the guesswork out of your dog’s well-being. Go to and use code
-tooth to get 60% off your first box! ~~ To advertise on the show,
-contact us! Patreon - ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+altogether. Watch here: <sub></sub> Aura Frames: Exclusive $35 off
+Carver Mat at Promo Code TOOTH Miracle Brand: Upgrade your sleep with
+Miracle Made! Go to and use the code TOOTH to claim your FREE 3 PIECE
+TOWEL SET and SAVE over 40% OFF. ButcherBox: As an exclusive offer, our
+listeners can get free steak in every box for a year PLUS $20 off your
+first box when you go to Rocket Money: Cancel your unwanted
+subscriptions and reach your financial goals faster with Rocket Money.
+Go to today. Ollie Pet Food: Take the guesswork out of your dog’s
+well-being. Go to and use code tooth to get 60% off your first box!
+<sub></sub> To advertise on the show, contact us! Patreon - <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-what-the-f-k-is-going-on-with-japan-s-bears"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9143346438.mp3?updated=1771538457">What
 the F**k is Going On With Japan’s Bears?</a></h3>
@@ -3115,15 +3187,15 @@ the F**k is Going On With Japan’s Bears?</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Japan has been seeing a higher-than-usual
 rate of violent encounters with bears. Wes explains why that might be
-and what should be done about it. Watch here: ~~ Smalls: For a limited
-time, get 60% off your first order, plus free shipping, when you head to
-Aura Frames: Exclusive $35 off Carver Mat at Promo Code TOOTH Hollow
-Socks: For a limited time, Hollow Socks is having a Buy 2, Get 2 Free
-Sale—head to for up to 50% off your order. #HollowSockspod Quince: Go to
-for free shipping on your order and 365-day returns. LMNT: Get a free
-8-count Sample Pack with any purchase at ~~ To advertise on the show,
-contact us! Patreon - ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+and what should be done about it. Watch here: <sub></sub> Smalls: For a
+limited time, get 60% off your first order, plus free shipping, when you
+head to Aura Frames: Exclusive $35 off Carver Mat at Promo Code TOOTH
+Hollow Socks: For a limited time, Hollow Socks is having a Buy 2, Get 2
+Free Sale—head to for up to 50% off your order. #HollowSockspod Quince:
+Go to for free shipping on your order and 365-day returns. LMNT: Get a
+free 8-count Sample Pack with any purchase at <sub></sub> To advertise
+on the show, contact us! Patreon - <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-the-bullet-ant-episode-is-wes-the-new-king-of-sting-ft-jack-s-world-of"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8843616305.mp3?updated=1775248243">The
@@ -3137,16 +3209,17 @@ Wildlife</a></h3>
 experiencing the extreme pain of the bullet ant’s sting, and then gets
 into his own brush with one down in Costa Rica. Jack from Jack’s World
 of Wildlife then comes on for an interview with the guys. Yowch! Watch
-here: ~~ Graza Olive Oil: Take your food to the next level with Graza
-Olive Oil. Visit and use promo code TOOTH today for 10% off your first
-order! LMNT: Get a free 8-count Sample Pack with any purchase at Miracle
-Brand: Upgrade your sleep with Miracle Made! Go to and use the code
-TOOTH to claim your FREE 3 PIECE TOWEL SET and SAVE over 40% OFF. Ollie
-Pet Food: Take the guesswork out of your dog’s well-being. Go to and use
-code tooth to get 60% off your first box! Rocket Money: Cancel your
-unwanted subscriptions and reach your financial goals faster with Rocket
-Money. Go to today. ~~ To advertise on the show, contact us! Patreon -
-~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+here: <sub></sub> Graza Olive Oil: Take your food to the next level with
+Graza Olive Oil. Visit and use promo code TOOTH today for 10% off your
+first order! LMNT: Get a free 8-count Sample Pack with any purchase at
+Miracle Brand: Upgrade your sleep with Miracle Made! Go to and use the
+code TOOTH to claim your FREE 3 PIECE TOWEL SET and SAVE over 40% OFF.
+Ollie Pet Food: Take the guesswork out of your dog’s well-being. Go to
+and use code tooth to get 60% off your first box! Rocket Money: Cancel
+your unwanted subscriptions and reach your financial goals faster with
+Rocket Money. Go to today. <sub></sub> To advertise on the show, contact
+us! Patreon - <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h2 id="2026">2026 (27)</h2>
 <h3
 id="toothandclaw-the-tragic-tale-of-a-would-be-lion-tamer-and-other-animal-attack-news"><a
@@ -3159,15 +3232,15 @@ Tooth &amp; Claw 2025 End of the Year Wrap-up</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> The guys talk about a few notable animal
 encounter headlines from the past few weeks and then get into some of
-the highs and lows of 2025. Watch here: ~~ NordVPN: EXCLUSIVE NordVPN
-Deal – Try it risk-free now with a 30-day money-back guarantee Quince:
-Refresh your winter wardrobe with Quince—get free shipping and 365-day
-returns at , now available in Canada Nutrafol: Get $10 off your first
-month’s subscription and free shipping at with promo code TOOTH Hims:
-Get simple, online access to personalized, affordable care for ED, Hair
-Loss, Weight Loss, and more at with a free online visit ~~ To advertise
-on the show, contact us! Patreon - ~~ Tooth &amp; Claw is brought to you
-by QCODE.</p>
+the highs and lows of 2025. Watch here: <sub></sub> NordVPN: EXCLUSIVE
+NordVPN Deal – Try it risk-free now with a 30-day money-back guarantee
+Quince: Refresh your winter wardrobe with Quince—get free shipping and
+365-day returns at , now available in Canada Nutrafol: Get $10 off your
+first month’s subscription and free shipping at with promo code TOOTH
+Hims: Get simple, online access to personalized, affordable care for ED,
+Hair Loss, Weight Loss, and more at with a free online visit <sub></sub>
+To advertise on the show, contact us! Patreon - <sub></sub> Tooth &amp;
+Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-the-twisted-tale-of-travis-the-chimpanzee"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8009729829.mp3?updated=1776797762">The
 Twisted Tale of Travis the Chimpanzee</a></h3>
@@ -3176,16 +3249,16 @@ Twisted Tale of Travis the Chimpanzee</a></h3>
 <p><strong>Episode:</strong> 180</p>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Wes tells the horrifying and tragic story
-of Charla Nash, Sandra Herold, and Travis the chimpanzee. ~~
+of Charla Nash, Sandra Herold, and Travis the chimpanzee. <sub></sub>
 MasterClass: Get 15% off any annual membership at MasterClass by
 visiting and using promo code TOOTH Ollie Pet Food: Cozy up with your
 pup this season—go to and use code tooth to get 60% off your first box!
 Remi: Get 50% off your custom night guard at with code TOOTH at
 checkout. Rocket Money: Let Rockey Money help you reach your financial
 goals faster—join at with promo code CLAW. Smalls: For a limited time,
-get 60% off your first order plus free shipping at ~~ To advertise on
-the show, contact us! Patreon - ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+get 60% off your first order plus free shipping at <sub></sub> To
+advertise on the show, contact us! Patreon - <sub></sub> Tooth &amp;
+Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-neurotoxins-they-hurt-a-batch-of-listener-stories-including-a-snowmobi"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4803804382.mp3?updated=1776797543">Neurotoxins:
@@ -3198,16 +3271,17 @@ Flip, Multiplying Bears, and More</a></h3>
 <p><strong>Summary:</strong> In this episode, the guys read through and
 react to a few more incredibly entertaining, funny, and informative
 stories from listeners concerning their various wild run-ins with
-animals. ~~ Nutrafol: Get $10 off your first month’s subscription and
-free shipping at with promo code TOOTH. Rocket Money: Let Rocket Money
-help you reach your financial goals faster—join at with promo code CLAW.
-Mint Mobile: Quit overspending on wireless—get 50% off Unlimited premium
-wireless plans starting at $15/month at Graza Olive Oil: Take your food
-to the next level with Graza Olive Oil—visit and use promo code TOOTH
-for 10% off your first order Hims: Get simple, online access to
-personalized, affordable care for ED, Hair Loss, Weight Loss, and more
-at for your free online visit. ~~ To advertise on the show, contact us!
-Patreon - ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+animals. <sub></sub> Nutrafol: Get $10 off your first month’s
+subscription and free shipping at with promo code TOOTH. Rocket Money:
+Let Rocket Money help you reach your financial goals faster—join at with
+promo code CLAW. Mint Mobile: Quit overspending on wireless—get 50% off
+Unlimited premium wireless plans starting at $15/month at Graza Olive
+Oil: Take your food to the next level with Graza Olive Oil—visit and use
+promo code TOOTH for 10% off your first order Hims: Get simple, online
+access to personalized, affordable care for ED, Hair Loss, Weight Loss,
+and more at for your free online visit. <sub></sub> To advertise on the
+show, contact us! Patreon - <sub></sub> Tooth &amp; Claw is brought to
+you by QCODE.</p>
 <h3
 id="toothandclaw-bull-shark-attack-triathlon-chuck-and-the-big-bull-shark"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1072716822.mp3?updated=1776797295">Bull
@@ -3219,14 +3293,15 @@ Shark Attack - Triathlon Chuck and the Big Bull Shark</a></h3>
 <p><strong>Summary:</strong> When Chuck decided it was time to make some
 life changes, he didn’t figure how prominently a bull shark would be
 featured in them. One early morning workout in the waters off the coast
-of Alabama was all it took to alter the course of his life forever. ~~
-LMNT: Get a free 8-count Sample Pack with any purchase at Hollow Socks:
-For a limited time, get up to 50% off your order with Hollow Socks’Buy
-3, Get 3 Free Sale at #ad Quince: Refresh your wardrobe with Quince—go
-to for free shipping and 365-day returns. Miracle Brand: Upgrade your
-sleep with Miracle Made—go to and use code TOOTH to save over 40% and
-get a free 3-piece towel set. ~~ To advertise on the show, contact us!
-Patreon - ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+of Alabama was all it took to alter the course of his life forever.
+<sub></sub> LMNT: Get a free 8-count Sample Pack with any purchase at
+Hollow Socks: For a limited time, get up to 50% off your order with
+Hollow Socks’Buy 3, Get 3 Free Sale at #ad Quince: Refresh your wardrobe
+with Quince—go to for free shipping and 365-day returns. Miracle Brand:
+Upgrade your sleep with Miracle Made—go to and use code TOOTH to save
+over 40% and get a free 3-piece towel set. <sub></sub> To advertise on
+the show, contact us! Patreon - <sub></sub> Tooth &amp; Claw is brought
+to you by QCODE.</p>
 <h3 id="toothandclaw-snow-leopard-attack-the-ghost-of-the-mountains"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8986068106.mp3?updated=1776797172">Snow
 Leopard Attack - The Ghost of the Mountains</a></h3>
@@ -3236,16 +3311,17 @@ Leopard Attack - The Ghost of the Mountains</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> The guys are joined by big cat biologist
 Imogene Cancellare to discuss the recent case of a skier’s violent
-encounter with a snow leopard in Xinjiang, China. Watch here: ~~ Coast:
-Right now, Coast Pay is offering our listeners up to $2,000 credit when
-you get started at ⁠ Smalls: Get 60% off your first order plus free
-shipping at ⁠ ButcherBox: Get your choice of organic ground beef, chicken
-breast, or ground turkey in every box for a year, plus $20 off your
-first box and free shipping when you go to ⁠ and use code tooth. Remi: Go
-to ⁠ and use code TOOTH at checkout for 50% off LMNT: Get a free 8-count
-Sample Pack of LMNT’s most popular drink mix flavors with any purchase
-at ⁠drinklmnt.com/tooth⁠ ~~ To advertise on the show, contact us! Patreon
-- ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+encounter with a snow leopard in Xinjiang, China. Watch here:
+<sub></sub> Coast: Right now, Coast Pay is offering our listeners up to
+$2,000 credit when you get started at ⁠ Smalls: Get 60% off your first
+order plus free shipping at ⁠ ButcherBox: Get your choice of organic
+ground beef, chicken breast, or ground turkey in every box for a year,
+plus $20 off your first box and free shipping when you go to ⁠ and use
+code tooth. Remi: Go to ⁠ and use code TOOTH at checkout for 50% off
+LMNT: Get a free 8-count Sample Pack of LMNT’s most popular drink mix
+flavors with any purchase at ⁠drinklmnt.com/tooth⁠ <sub></sub> To
+advertise on the show, contact us! Patreon - <sub></sub> Tooth &amp;
+Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-short-king-colin-and-the-bear-on-mt-doogie-dowler"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1037220774.mp3?updated=1776797038">Grizzly
@@ -3259,17 +3335,17 @@ Dowler</a></h3>
 mission to summit the mountain that was named after his grandfather, but
 a grizzly bear had other ideas. With only a small knife and presumably a
 normal-sized bike at his disposal, Colin’s fight to survive began. Watch
-here: ~~ Rocket Money: Let Rocket Money help you reach your financial
-goals faster—join at Graza Olive Oil: Take your food to the next level
-with Graza Olive Oil—visit ⁠ and use promo code TOOTH for 10% off your
-first order! Nutrafol: Visit ⁠ and enter promo code TOOTH for $10 off
-your first month’s subscription and free shipping. Mint Mobile: New
-customers can make the switch today and for a limited time, get
+here: <sub></sub> Rocket Money: Let Rocket Money help you reach your
+financial goals faster—join at Graza Olive Oil: Take your food to the
+next level with Graza Olive Oil—visit ⁠ and use promo code TOOTH for 10%
+off your first order! Nutrafol: Visit ⁠ and enter promo code TOOTH for
+$10 off your first month’s subscription and free shipping. Mint Mobile:
+New customers can make the switch today and for a limited time, get
 unlimited premium wireless for just $15 permonth. Switch now at ⁠ Hims:
 To get simple, online access to personalized, affordable care for ED,
 Hair Loss, Weight Loss, and more, visit ⁠hims.com/TOOTH⁠ for your free
-online visit ~~ To advertise on the show, contact us! Patreon - ~~ Tooth
-&amp; Claw is brought to you by QCODE.</p>
+online visit <sub></sub> To advertise on the show, contact us! Patreon -
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-punch-the-lonely-monkey-and-other-recent-animal-encounter-news-stories"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1114394701.mp3?updated=1772255133">Punch
@@ -3284,17 +3360,17 @@ notable recent animal attack and encounter stories, including the first
 mountain lion fatality in Colorado since at least 1999, a macaque in a
 Japanese zoo whose story will pull on your heartstrings, an odd case of
 the poison from a frog being used in an assassination, and more. Thanks
-for listening! Watch here: ~~ ButcherBox: Get your choice of organic
-ground beef, chicken breast, or ground turkey in every box for a year
-plus $20 off your first box at with free shipping—use our link so they
-know we sent you. Ollie Pet Food: Ollie. Feed the Obsession. Go to and
-use code tooth to get 60% off your first box! LMNT: Get a free 8-count
-Sample Pack with any purchase at Quince: Go to for free shipping and
-365-day returns on premium wardrobe essentials from Quince, now
+for listening! Watch here: <sub></sub> ButcherBox: Get your choice of
+organic ground beef, chicken breast, or ground turkey in every box for a
+year plus $20 off your first box at with free shipping—use our link so
+they know we sent you. Ollie Pet Food: Ollie. Feed the Obsession. Go to
+and use code tooth to get 60% off your first box! LMNT: Get a free
+8-count Sample Pack with any purchase at Quince: Go to for free shipping
+and 365-day returns on premium wardrobe essentials from Quince, now
 available in Canada. Miracle Brand: Upgrade your sleep with Miracle
 Made! Go to and use the code TOOTH to claim your FREE 3 PIECE TOWEL SET
-and SAVE over 40% OFF. ~~ To advertise on the show, contact us! Patreon
-- ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+and SAVE over 40% OFF. <sub></sub> To advertise on the show, contact us!
+Patreon - <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-in-the-heart-of-the-sea-the-tragedy-of-the-whaleship-essex-part-1"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1092677308.mp3?updated=1772384236">In
@@ -3307,16 +3383,16 @@ the Heart of the Sea: The Tragedy of the Whaleship Essex – Part
 <p><strong>Summary:</strong> Whaling, it turns out, is not an easy
 endeavor. One ship found out the very hard way just how deadly the
 practice can be, covered here by Wes in part 1 of this new series by
-Tooth &amp; Claw. Watch here: ~~ Remi: Go to and use code TOOTH at
-checkout for 50% off your new night guard. Coast: Get up to $2,000
+Tooth &amp; Claw. Watch here: <sub></sub> Remi: Go to and use code TOOTH
+at checkout for 50% off your new night guard. Coast: Get up to $2,000
 credit for your business when you get started at . Terms apply Smalls:
 For a limited time, get 60% off your first order, plus free shipping,
 when you head to Hims: To get simple, online access to personalized,
 affordable care for ED, Hair Loss, Weight Loss, and more, visit Fabric:
 Join the thousands of parents who trust Fabric to help protect their
-family—apply today in just minutes at ~~ To advertise on the show,
-contact us! Patreon - ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+family—apply today in just minutes at <sub></sub> To advertise on the
+show, contact us! Patreon - <sub></sub> Tooth &amp; Claw is brought to
+you by QCODE.</p>
 <h3
 id="toothandclaw-in-the-heart-of-the-sea-the-tragedy-of-the-whaleship-essex-part-2"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9819190739.mp3?updated=1773623756">In
@@ -3330,15 +3406,15 @@ the Heart of the Sea: The Tragedy of the Whaleship Essex – Part
 encounter with a sperm whale, the crew of the whale ship Essex are now
 left to brave the open ocean with nothing but a few small boats to carry
 them. Drastic and tragic measures were taken in their fight to survive.
-Watch here: ~~ Mint Mobile: Get Mint Mobile’s 3-month 5GB plan for $45
-upfront ($15/mo.) as a new customer at ; taxes and fees extra. Ollie Pet
-Food: Go to and use code tooth to get 60% off your first box! Rocket
-Money: Let Rocket Money help you reach your financial goals faster. Join
-at Graza Olive Oil: Take your food to the next level with Graza. Visit
-and use promo code TOOTH today for 10% off your first order of olive
-oil! 3 Day Blinds: For their buy 1 get 1 50% off deal, head to ~~ To
-advertise on the show, contact us! Patreon - ~~ Tooth &amp; Claw is
-brought to you by QCODE.</p>
+Watch here: <sub></sub> Mint Mobile: Get Mint Mobile’s 3-month 5GB plan
+for $45 upfront ($15/mo.) as a new customer at ; taxes and fees extra.
+Ollie Pet Food: Go to and use code tooth to get 60% off your first box!
+Rocket Money: Let Rocket Money help you reach your financial goals
+faster. Join at Graza Olive Oil: Take your food to the next level with
+Graza. Visit and use promo code TOOTH today for 10% off your first order
+of olive oil! 3 Day Blinds: For their buy 1 get 1 50% off deal, head to
+<sub></sub> To advertise on the show, contact us! Patreon - <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-tooth-claw-ranks-the-wildlife-of-all-7-continents"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9177197259.mp3?updated=1774835617">Tooth
@@ -3351,16 +3427,16 @@ href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/art
 continents, the guys feel ready to rank them according to the wildlife
 they each have on offer. Which continent has the best? The worst? Find
 out here when they give a final vote by the end of the show! Watch here:
-~~ Fabric: Join the thousands of parents who trust Fabric to help
-protect their family—apply today in just minutes at ButcherBox: Get your
-choice of chicken breast or top sirloin for a year OR ground beef for
-life, plus $20 off your first box and free shipping when you go to
+<sub></sub> Fabric: Join the thousands of parents who trust Fabric to
+help protect their family—apply today in just minutes at ButcherBox: Get
+your choice of chicken breast or top sirloin for a year OR ground beef
+for life, plus $20 off your first box and free shipping when you go to
 Coast: Get up to $2,000 credit for your business when you get started at
 . Terms apply. LMNT: Receive a free LMNT Sample Pack with any order when
 you go to Hims: To get simple, online access to personalized, affordable
 care for ED, Hair Loss, Weight Loss, and more, visit for your free
-online visit. ~~ To advertise on the show, contact us! Patreon - ~~
-Tooth &amp; Claw is brought to you by QCODE.</p>
+online visit. <sub></sub> To advertise on the show, contact us! Patreon
+- <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-kay-the-bear-lady-north-carolina-s-answer-to-timothy-treadwell"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD3201908080.mp3?updated=1777414491">Kay,
@@ -3373,14 +3449,14 @@ the Bear Lady: North Carolina’s Answer to Timothy Treadwell</a></h3>
 reference to a Star Wars meme, which I am using to communicate the idea
 that Wes introduces us to a woman whom he likens to Timothy Treadwell,
 in that she grew a little too comfortable around bears for her own
-good)!? Watch here: ~~ Quince: Refresh your wardrobe with Quince at for
-free shipping and 365-day returns, now available in Canada. Smalls: For
-a limited time, get 60% off your first order, plus free shipping and
-free treats for life, when you head to . LMNT: Receive a free LMNT
-Sample Pack with any order when you go to Ollie Pet Food: Go to and use
-code TOOTH to get 60% off your first box! ~~ To advertise on the show,
-contact us! Patreon - ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+good)!? Watch here: <sub></sub> Quince: Refresh your wardrobe with
+Quince at for free shipping and 365-day returns, now available in
+Canada. Smalls: For a limited time, get 60% off your first order, plus
+free shipping and free treats for life, when you head to . LMNT: Receive
+a free LMNT Sample Pack with any order when you go to Ollie Pet Food: Go
+to and use code TOOTH to get 60% off your first box! <sub></sub> To
+advertise on the show, contact us! Patreon - <sub></sub> Tooth &amp;
+Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-clavicular-shoots-an-alligator-and-other-recent-animal-news-stories"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2664643150.mp3?updated=1777413294">Clavicular
@@ -3393,15 +3469,16 @@ Shoots an Alligator and Other Recent Animal News Stories</a></h3>
 more notable animal news stories to hit the headlines over the past
 month or two, including a wolf in Hamburg, a California community
 grieving the death of a mama bear, and a certain looksmaxxing influencer
-getting in some serious trouble. Watch here: ~~ Veracity: For up to 65%
-off your order, head to and use code TOOTH. Miracle Brand: Upgrade your
-sleep with Miracle Made! Go to and use code TOOTH to claim your free
-3-piece towel set and save over 40% off. Fabric: Go to and apply today,
-risk-free. LMNT: Receive a free LMNT Sample Pack with any order when you
-go to Rocket Money: Let Rocket Money help you reach your financial goals
-faster—find and cancel unwanted subscriptions, monitor your spending,
-and lower your bills at ~~ To advertise on the show, contact us! Patreon
-- ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+getting in some serious trouble. Watch here: <sub></sub> Veracity: For
+up to 65% off your order, head to and use code TOOTH. Miracle Brand:
+Upgrade your sleep with Miracle Made! Go to and use code TOOTH to claim
+your free 3-piece towel set and save over 40% off. Fabric: Go to and
+apply today, risk-free. LMNT: Receive a free LMNT Sample Pack with any
+order when you go to Rocket Money: Let Rocket Money help you reach your
+financial goals faster—find and cancel unwanted subscriptions, monitor
+your spending, and lower your bills at <sub></sub> To advertise on the
+show, contact us! Patreon - <sub></sub> Tooth &amp; Claw is brought to
+you by QCODE.</p>
 <h3
 id="toothandclaw-the-great-white-shark-bite-heard-round-the-world"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD2024036470.mp3?updated=1777413026">The
@@ -3450,13 +3527,14 @@ Heroes - The Tooth &amp; Claw Mothers Day Special: 2026 Edition</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Wes shares a handful of stories of
 different kinds of mothers being different kinds of heroes. What can we
-say, we love moms around here! ~~ Hims - To get simple, online access to
-personalized, affordable care for ED, Hair Loss, Weight Loss, and more,
-visit for your free online visit. Hollow Socks - For a limited time,
-Hollow Socks is having a Buy 2, Get 2 Free Sale—visit to check it out.
-Remi - Go to and use code TOOTH at checkout for 50% off with Remi Club
-Subscribe &amp; Save. ~~ To advertise on the show, contact us! Patreon -
-~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+say, we love moms around here! <sub></sub> Hims - To get simple, online
+access to personalized, affordable care for ED, Hair Loss, Weight Loss,
+and more, visit for your free online visit. Hollow Socks - For a limited
+time, Hollow Socks is having a Buy 2, Get 2 Free Sale—visit to check it
+out. Remi - Go to and use code TOOTH at checkout for 50% off with Remi
+Club Subscribe &amp; Save. <sub></sub> To advertise on the show, contact
+us! Patreon - <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3 id="toothandclaw-grizzly-bear-attack-bram-and-the-brown-bear"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7149120036.mp3">Grizzly
 Bear Attack - Bram and the Brown Bear</a></h3>
@@ -3467,8 +3545,8 @@ Bear Attack - Bram and the Brown Bear</a></h3>
 <p><strong>Summary:</strong> After Bram Schaffer had an unlucky run-in
 with a brown bear, his chances of surviving the night were looking slim.
 A torrential storm wasn’t going to make things any easier. Would his
-extraordinary bravery be enough to win the day? Watch here: ~~ Rocket
-Money - Let Rocket Money help you find and cancel unwanted
+extraordinary bravery be enough to win the day? Watch here: <sub></sub>
+Rocket Money - Let Rocket Money help you find and cancel unwanted
 subscriptions, monitor your spending, and lower your bills—join at LMNT
 - Get a free 8-count Sample Pack of LMNT’s most popular drink mix
 flavors with any purchase at your vanity URL—LMNT Lemonade Iced Tea uses
@@ -3477,9 +3555,9 @@ crash. Mint Mobile - Get Mint Mobile’s 3-month 5GB plan for $45 upfront
 ($15/mo.) as a new customer at ; taxes and fees extra. Miracle Made -
 Upgrade your sleep with Miracle Made! Go to and use code TOOTH to claim
 your free 3-piece towel set and save over 40% off. Veracity - For up to
-65% off your order, head to and use code TOOTH. ~~ To advertise on the
-show, contact us! Patreon - ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+65% off your order, head to and use code TOOTH. <sub></sub> To advertise
+on the show, contact us! Patreon - <sub></sub> Tooth &amp; Claw is
+brought to you by QCODE.</p>
 <h3
 id="toothandclaw-the-two-brothers-and-the-biscuit-basin-brown-bear-attack-other-animal"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9107015061.mp3">The
@@ -3498,9 +3576,9 @@ order, plus free shipping and free treats for life, when you head to
 Quince - Elevate your summer wardrobe—go to for free shipping on your
 order and 365-day returns, now available in Canada. Hims - To get
 simple, online access to personalized, affordable care for ED, Hair
-Loss, Weight Loss, and more, visit for your free online visit. ~~ To
-advertise on the show, contact us! Patreon - ~~ Tooth &amp; Claw is
-brought to you by QCODE.</p>
+Loss, Weight Loss, and more, visit for your free online visit.
+<sub></sub> To advertise on the show, contact us! Patreon - <sub></sub>
+Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-grizzly-bear-attack-the-old-timey-montana-grizzly-attack"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD1198767355.mp3">Grizzly
@@ -3537,7 +3615,7 @@ for just $15 a month at . $45 upfront payment required for new customers
 on the first 3-month plan. Miracle Brand - Upgrade your sleep with
 Miracle Made! Go to and use the code TOOTH to claim your FREE 3 PIECE
 TOWEL SET and SAVE over 40% OFF. ~ To advertise on the show, contact us!
-Patreon - ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+Patreon - <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-rattlesnake-attack-a-real-bad-bite-in-yosemite-national-park"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7808261575.mp3">Rattlesnake
@@ -3552,8 +3630,8 @@ part of Yosemite National Park. After a lot pain, vomit, and diarrhea,
 Kyle had another nearly unbelievable animal encounter that worsened his
 chances of survival. What a lucky(?) guy! Watch here: ~ LMNT: Get a free
 8-count Sample Pack of LMNT’s most popular drink mix flavors with any
-purchase at ~ To advertise on the show, contact us! Patreon - ~~ Tooth
-&amp; Claw is brought to you by QCODE.</p>
+purchase at ~ To advertise on the show, contact us! Patreon -
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3 id="toothandclaw-the-legend-of-gustave-the-killer-crocodile"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8948860049.mp3">The
 Legend of Gustave, The Killer Crocodile</a></h3>
@@ -3574,7 +3652,7 @@ Make your summer wardrobe easier—go to for free shipping on your order
 and 365-day returns, now available in Canada. Smalls - For a limited
 time, get 60% off your first order, plus free shipping and free treats
 for life, when you head to . ~ To advertise on the show, contact us!
-Patreon - ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+Patreon - <sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-braveheart-and-the-bat-more-the-july-2026-animal-news-round-up"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7716183862.mp3">Braveheart
@@ -3594,8 +3672,8 @@ simple, online access to personalized, affordable care for ED, Hair
 Loss, and more, visit Forkful - Head to for 50% off your first order
 today! Miracle Brand - Upgrade your sleep with Miracle Made! Go to and
 use the code TOOTH to claim your REE 3 PIECE TOWEL SET and SAVE over 40%
-OFF. ~ To advertise on the show, contact us! Patreon - ~~ Tooth &amp;
-Claw is brought to you by QCODE.</p>
+OFF. ~ To advertise on the show, contact us! Patreon - <sub></sub> Tooth
+&amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-glenn-bohn-and-the-brown-bear-a-grizzly-face-off-in-alaska"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD8270686434.mp3">Glenn
@@ -3616,7 +3694,8 @@ Money: Let Rocket Money help you find and cancel unwanted subscriptions,
 monitor your spending, and lower your bills—join at . Smalls: For a
 limited time, get 60% off your first order, plus free shipping and free
 treats for life, when you head to . ~ To advertise on the show, contact
-us! Patreon - ~~ Tooth &amp; Claw is brought to you by QCODE.</p>
+us! Patreon - <sub></sub> Tooth &amp; Claw is brought to you by
+QCODE.</p>
 <h3 id="toothandclaw-great-white-shark-attack-kenny-quits-his-job"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4522800427.mp3">Great
 White Shark Attack - Kenny Quits His Job</a></h3>
@@ -3636,8 +3715,8 @@ ED, Hair Loss, and more, visit Ollie Pet Food - Ollie. Feed the
 Obsession. Go to and use code tooth to get 70% off your first box! Dose
 - Ready to give your liver the support it deserves? Head to or enter
 TOOTH to get 35% off your first subscription. ~ To advertise on the
-show, contact us! Patreon - ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+show, contact us! Patreon - <sub></sub> Tooth &amp; Claw is brought to
+you by QCODE.</p>
 <h3 id="toothandclaw-that-s-a-moray-eels-and-the-damage-they-can-do"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD9960254184.mp3">That’s
 a Moray - Eels and the Damage They Can Do</a></h3>
@@ -3647,8 +3726,8 @@ a Moray - Eels and the Damage They Can Do</a></h3>
 <p><strong>Season:</strong> 1</p>
 <p><strong>Summary:</strong> Turns out its not just sharks that have a
 set of chompers that can d-eel some serious damage underwater. Watch us
-on YouTube here: ~ ~ To advertise on the show, contact us! Patreon - ~~
-Tooth &amp; Claw is brought to you by QCODE.</p>
+on YouTube here: ~ ~ To advertise on the show, contact us! Patreon -
+<sub></sub> Tooth &amp; Claw is brought to you by QCODE.</p>
 <h3
 id="toothandclaw-monsters-of-god-an-interview-with-eric-goode-and-jeremy-mcbride-about"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD4779834972.mp3">Monsters
@@ -3671,8 +3750,8 @@ or Elite membership to onX Backcountry Dose - Ready to give your liver
 the support it deserves? Head to or enter TOOTH to get 35% off your
 first subscription. Hims - To get simple, online access to personalized,
 affordable care for ED, Hair Loss, and more, visit . ~ To advertise on
-the show, contact us! Patreon - ~~ Tooth &amp; Claw is brought to you by
-QCODE.</p>
+the show, contact us! Patreon - <sub></sub> Tooth &amp; Claw is brought
+to you by QCODE.</p>
 <h3
 id="toothandclaw-the-champawat-tiger-part-1-the-origins-of-the-single-deadliest-animal"><a
 href="https://pdst.fm/e/pscrb.fm/rss/p/mgln.ai/e/433/claritaspod.com/measure/arttrk.com/p/QCDM1/traffic.megaphone.fm/QCD7100945315.mp3">The
@@ -3695,7 +3774,7 @@ Trustpilot rating as of 8/1/2026. onX Backcountry - Click here and use
 promo code TOOTH to get 30% off a premium or Elite membership to onX
 Backcountry LMNT - Get a free 8-count Sample Pack of LMNT’s most popular
 drink mix flavors with any purchase at . ~ To advertise on the show,
-contact us! Patreon - ~~ Tooth &amp; Claw is brought to you by
+contact us! Patreon - <sub></sub> Tooth &amp; Claw is brought to you by
 QCODE.</p>
 <h2 id="appendix-a-episodes-by-date">Appendix A: Episodes by Date</h2>
 <p>Every episode in publication order, newest first, grouped by

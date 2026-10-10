@@ -1,0 +1,800 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.12.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>The Adventures of Horatio Hornblower</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
+      background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        color-scheme: light only;
+      }
+      html, body, pre, code {
+        background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
+        color: black;
+      }
+      pre, code {
+        padding: 0;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a, a:visited {
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
+      color: #606060;
+      color: light-dark(#606060, #b6b6b6);
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid currentColor;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+    th {
+      border-top: 1px solid currentColor;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#the-adventures-of-horatio-hornblower"
+id="toc-the-adventures-of-horatio-hornblower">The Adventures of Horatio
+Hornblower</a>
+<ul>
+<li><a href="#contents" id="toc-contents">Contents</a></li>
+<li><a href="#y1952" id="toc-y1952">1952</a></li>
+<li><a href="#y1953" id="toc-y1953">1953</a></li>
+<li><a href="#yUndated" id="toc-yUndated">Undated</a></li>
+<li><a href="#byDate" id="toc-byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle" id="toc-byTitle">Appendix B: By Title</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="the-adventures-of-horatio-hornblower">The Adventures of Horatio
+Hornblower</h1>
+<p>Michael Redgrave plays C. S. Forester’s British naval officer in the
+Napoleonic Wars.</p>
+<ul>
+<li>Episodes: 54</li>
+<li>Network: Syndicated</li>
+<li>Source: <a
+href="https://archive.org/details/OTRR_Horatio_Hornblower_Singles">Internet
+Archive: OTRR_Horatio_Hornblower_Singles</a></li>
+<li>Years: 1952</li>
+</ul>
+<p>Each episode title is a link that plays its audio. These broadcasts
+can reflect the attitudes of their time. This page is part of <a
+href="OldTimeRadioDramas.htm">Old Time Radio Dramas</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#y1952">1952</a></li>
+<li><a href="#y1953">1953</a></li>
+<li><a href="#yUndated">Undated</a></li>
+<li><a href="#byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle">Appendix B: By Title</a></li>
+</ul>
+<h2 id="y1952">1952</h2>
+<h3 id="e0001"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-07-07%20%2801%29%20Horatio%20Deals%20with%20a%20Mad%20King.mp3">Horatio
+Deals with a Mad King</a></h3>
+<ul>
+<li>Date: July 7, 1952</li>
+<li>Duration: 31:28</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0002"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-07-14%20%2802%29%20Horatio%20Captures%20the%20Natividad.mp3">Horatio
+Captures the Natividad</a></h3>
+<ul>
+<li>Date: July 14, 1952</li>
+<li>Duration: 22:00</li>
+<li>Episode: 2</li>
+</ul>
+<h3 id="e0003"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-07-21%20%2803%29%20Shaky%20Alliance%20with%20El%20Supremo.mp3">Shaky
+Alliance with El Supremo</a></h3>
+<ul>
+<li>Date: July 21, 1952</li>
+<li>Duration: 21:42</li>
+<li>Episode: 3</li>
+</ul>
+<h3 id="e0004"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-07-28%20%2804%29%20Battle%20Against%20El%20Supremo.mp3">Battle
+Against El Supremo</a></h3>
+<ul>
+<li>Date: July 28, 1952</li>
+<li>Duration: 22:11</li>
+<li>Episode: 4</li>
+</ul>
+<h3 id="e0005"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-08-04%20%2805%29%20Lydia%20Sinks%20the%20Natividad.mp3">Lydia
+Sinks the Natividad</a></h3>
+<ul>
+<li>Date: August 4, 1952</li>
+<li>Duration: 21:45</li>
+<li>Episode: 5</li>
+</ul>
+<h3 id="e0006"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-08-11%20%2806%29%20Damaged%20Lydia%20Heads%20for%20Panama.mp3">Damaged
+Lydia Heads for Panama</a></h3>
+<ul>
+<li>Date: August 11, 1952</li>
+<li>Duration: 21:35</li>
+<li>Episode: 6</li>
+</ul>
+<h3 id="e0007"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-08-18%20%2807%29%20Return%20to%20the%20Fleet.mp3">Return
+to the Fleet</a></h3>
+<ul>
+<li>Date: August 18, 1952</li>
+<li>Duration: 27:39</li>
+<li>Episode: 7</li>
+</ul>
+<h3 id="e0008"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-08-25%20%2808%29%20Return%20to%20the%20Sea.mp3">Return
+to the Sea</a></h3>
+<ul>
+<li>Date: August 25, 1952</li>
+<li>Duration: 21:48</li>
+<li>Episode: 8</li>
+</ul>
+<h3 id="e0009"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-09-01%20%2809%29%20Protecting%20the%20Convoy.mp3">Protecting
+the Convoy</a></h3>
+<ul>
+<li>Date: September 1, 1952</li>
+<li>Duration: 21:34</li>
+<li>Episode: 9</li>
+</ul>
+<h3 id="e0010"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-09-08%20%2810%29%20Disguised%20as%20a%20French%20Ship.mp3">Disguised
+as a French Ship</a></h3>
+<ul>
+<li>Date: September 8, 1952</li>
+<li>Duration: 21:48</li>
+<li>Episode: 10</li>
+</ul>
+<h3 id="e0011"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-10-03%20%2811%29%20Guerrilla%20Action.mp3">Guerrilla
+Action</a></h3>
+<ul>
+<li>Date: October 3, 1952</li>
+<li>Duration: 21:52</li>
+<li>Episode: 11</li>
+</ul>
+<h3 id="e0012"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-10-10%20%2812%29%20Spanish%20Fail%20to%20Attack.mp3">Spanish
+Fail to Attack</a></h3>
+<ul>
+<li>Date: October 10, 1952</li>
+<li>Duration: 22:23</li>
+<li>Episode: 12</li>
+</ul>
+<h3 id="e0013"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-10-17%20%2813%29%20Takes%20on%20the%20French%20Fleet.mp3">Takes
+on the French Fleet</a></h3>
+<ul>
+<li>Date: October 17, 1952</li>
+<li>Duration: 22:32</li>
+<li>Episode: 13</li>
+</ul>
+<h3 id="e0014"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-10-24%20%2814%29%20Mutiny%20on%20the%20Flame.mp3">Mutiny
+on the Flame</a></h3>
+<ul>
+<li>Date: October 24, 1952</li>
+<li>Duration: 22:18</li>
+<li>Episode: 14</li>
+</ul>
+<h3 id="e0015"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-10-31%20%2815%29%20Disguised%20as%20the%20Flame.mp3">Disguised
+as the Flame</a></h3>
+<ul>
+<li>Date: October 31, 1952</li>
+<li>Duration: 21:48</li>
+<li>Episode: 15</li>
+</ul>
+<h3 id="e0016"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-11-07%20%2816%29%20The%20Court%20Martial%20of%20Berry%20McCool.mp3">The
+Court Martial of Berry McCool</a></h3>
+<ul>
+<li>Date: November 7, 1952</li>
+<li>Duration: 21:50</li>
+<li>Episode: 16</li>
+</ul>
+<h3 id="e0017"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-11-14%20%2817%29%20The%20Capture%20of%20Le%20Havre.mp3">The
+Capture of Le Havre</a></h3>
+<ul>
+<li>Date: November 14, 1952</li>
+<li>Duration: 22:25</li>
+<li>Episode: 17</li>
+</ul>
+<h3 id="e0018"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-11-21%20%2818%29%20Acting%20Governor%20of%20Le%20Havre.mp3">Acting
+Governor of Le Havre</a></h3>
+<ul>
+<li>Date: November 21, 1952</li>
+<li>Duration: 21:44</li>
+<li>Episode: 18</li>
+</ul>
+<h3 id="e0019"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-11-28%20%2819%29%20Barbara%20Joins%20Horatio.mp3">Barbara
+Joins Horatio</a></h3>
+<ul>
+<li>Date: November 28, 1952</li>
+<li>Duration: 21:04</li>
+<li>Episode: 19</li>
+</ul>
+<h3 id="e0020"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-12-05%20%2820%29%20Napoleon%20Returns.mp3">Napoleon
+Returns</a></h3>
+<ul>
+<li>Date: December 5, 1952</li>
+<li>Duration: 21:52</li>
+<li>Episode: 20</li>
+</ul>
+<h3 id="e0021"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-12-12%20%2821%29%20Napoleon%20Is%20Defeated.mp3">Napoleon
+Is Defeated</a></h3>
+<ul>
+<li>Date: December 12, 1952</li>
+<li>Duration: 19:30</li>
+<li>Episode: 21</li>
+</ul>
+<h3 id="e0022"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-12-19%20%2822%29%20A%20Prisoner%20in%201811.mp3">A
+Prisoner in 1811</a></h3>
+<ul>
+<li>Date: December 19, 1952</li>
+<li>Duration: 21:24</li>
+<li>Episode: 22</li>
+</ul>
+<h3 id="e0023"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2052-12-26%20%2823%29%20Horatio%20Meets%20Marie%20and%20Escapes.mp3">Horatio
+Meets Marie and Escapes</a></h3>
+<ul>
+<li>Date: December 26, 1952</li>
+<li>Duration: 21:14</li>
+<li>Episode: 23</li>
+</ul>
+<h2 id="y1953">1953</h2>
+<h3 id="e0024"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-01-02%20%2824%29%20Horatio%20Captures%20a%20Ship.mp3">Horatio
+Captures a Ship</a></h3>
+<ul>
+<li>Date: January 2, 1953</li>
+<li>Duration: 21:18</li>
+<li>Episode: 24</li>
+</ul>
+<h3 id="e0025"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-01-09%20%2825%29%20Rejoining%20the%20Fleet.mp3">Rejoining
+the Fleet</a></h3>
+<ul>
+<li>Date: January 9, 1953</li>
+<li>Duration: 19:16</li>
+<li>Episode: 25</li>
+</ul>
+<h3 id="e0026"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-01-16%20%2826%29%20Horatio%20Is%20Court%20Martialed.mp3">Horatio
+Is Court Martialed</a></h3>
+<ul>
+<li>Date: January 16, 1953</li>
+<li>Duration: 18:50</li>
+<li>Episode: 26</li>
+</ul>
+<h3 id="e0027"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-01-23%20%2827%29%20Into%20the%20Baltic.mp3">Into
+the Baltic</a></h3>
+<ul>
+<li>Date: January 23, 1953</li>
+<li>Duration: 27:45</li>
+<li>Episode: 27</li>
+</ul>
+<h3 id="e0028"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-01-30%20%2828%29%20Chasing%20the%20Blanche%20Fleur.mp3">Chasing
+the Blanche Fleur</a></h3>
+<ul>
+<li>Date: January 30, 1953</li>
+<li>Duration: 27:46</li>
+<li>Episode: 28</li>
+</ul>
+<h3 id="e0029"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-02-06%20%2829%29%20Alliance%20with%20Russia.mp3">Alliance
+with Russia</a></h3>
+<ul>
+<li>Date: February 6, 1953</li>
+<li>Duration: 21:22</li>
+<li>Episode: 29</li>
+</ul>
+<h3 id="e0030"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-02-13%20%2830%29%20Reception%20with%20the%20Czar.mp3">Reception
+with the Czar</a></h3>
+<ul>
+<li>Date: February 13, 1953</li>
+<li>Duration: 20:58</li>
+<li>Episode: 30</li>
+</ul>
+<h3 id="e0031"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-02-20%20%2831%29%20Attack%20on%20Fort%20at%20Fisher%27s%20Half.mp3">Attack
+on Fort at Fisher’s Half</a></h3>
+<ul>
+<li>Date: February 20, 1953</li>
+<li>Duration: 21:19</li>
+<li>Episode: 31</li>
+</ul>
+<h3 id="e0032"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-02-27%20%2832%29%20Port%20of%20Riga.mp3">Port
+of Riga</a></h3>
+<ul>
+<li>Date: February 27, 1953</li>
+<li>Duration: 21:25</li>
+<li>Episode: 32</li>
+</ul>
+<h3 id="e0033"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-03-06%20%2833%29%20Delaying%20the%20French.mp3">Delaying
+the French</a></h3>
+<ul>
+<li>Date: March 6, 1953</li>
+<li>Duration: 20:34</li>
+<li>Episode: 33</li>
+</ul>
+<h3 id="e0034"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-03-13%20%2834%29%20The%20French%20Are%20Stopped.mp3">The
+French Are Stopped</a></h3>
+<ul>
+<li>Date: March 13, 1953</li>
+<li>Duration: 19:02</li>
+<li>Episode: 34</li>
+</ul>
+<h3 id="e0035"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-03-20%20%2835%29%20The%20Duel.mp3">The
+Duel</a></h3>
+<ul>
+<li>Date: March 20, 1953</li>
+<li>Duration: 21:17</li>
+<li>Episode: 35</li>
+</ul>
+<h3 id="e0036"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-03-27%20%2836%29%20The%20Spanish%20Leave%20Napoleon.mp3">The
+Spanish Leave Napoleon</a></h3>
+<ul>
+<li>Date: March 27, 1953</li>
+<li>Duration: 20:47</li>
+<li>Episode: 36</li>
+</ul>
+<h3 id="e0037"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-04-03%20%2837%29%20Hornblower%27s%20First%20Command.mp3">Hornblower’s
+First Command</a></h3>
+<ul>
+<li>Date: April 3, 1953</li>
+<li>Duration: 19:49</li>
+<li>Episode: 37</li>
+</ul>
+<h3 id="e0038"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-04-10%20%2838%29%20Prisoner%20of%20the%20French%20on%20the%20%27Peek%27.mp3">Prisoner
+of the French on the ‘Peek’</a></h3>
+<ul>
+<li>Date: April 10, 1953</li>
+<li>Duration: 19:56</li>
+<li>Episode: 38</li>
+</ul>
+<h3 id="e0039"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-04-17%20%2839%29%20With%20the%2043rd%20Marines.mp3">With
+the 43rd Marines</a></h3>
+<ul>
+<li>Date: April 17, 1953</li>
+<li>Duration: 21:26</li>
+<li>Episode: 39</li>
+</ul>
+<h3 id="e0040"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-04-24%20%2840%29%20Spain%20Becomes%20Neutral.mp3">Spain
+Becomes Neutral</a></h3>
+<ul>
+<li>Date: April 24, 1953</li>
+<li>Duration: 21:08</li>
+<li>Episode: 40</li>
+</ul>
+<h3 id="e0041"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-05-01%20%2841%29%20Exam%20for%20Lieutenant.mp3">Exam
+for Lieutenant</a></h3>
+<ul>
+<li>Date: May 1, 1953</li>
+<li>Duration: 29:27</li>
+<li>Episode: 41</li>
+</ul>
+<h3 id="e0042"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-05-08%20%2842%29%20Quarantined%20for%20the%20Plague.mp3">Quarantined
+for the Plague</a></h3>
+<ul>
+<li>Date: May 8, 1953</li>
+<li>Duration: 21:08</li>
+<li>Episode: 42</li>
+</ul>
+<h3 id="e0043"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-05-15%20%2843%29%20Chasing%20the%20Papillion.mp3">Chasing
+the Papillion</a></h3>
+<ul>
+<li>Date: May 15, 1953</li>
+<li>Duration: 21:05</li>
+<li>Episode: 43</li>
+</ul>
+<h3 id="e0044"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-05-22%20%2844%29%20Command%20of%20the%20La%20Mouche.mp3">Command
+of the La Mouche</a></h3>
+<ul>
+<li>Date: May 22, 1953</li>
+<li>Duration: 20:52</li>
+<li>Episode: 44</li>
+</ul>
+<h3 id="e0045"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-05-29%20%2845%29%20Prisoner%20and%20Rescue%20of%20Spanish.mp3">Prisoner
+and Rescue of Spanish</a></h3>
+<ul>
+<li>Date: May 29, 1953</li>
+<li>Duration: 21:28</li>
+<li>Episode: 45</li>
+</ul>
+<h3 id="e0046"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-06-05%20%2846%29%20First%20Meeting%20with%20Bush.mp3">First
+Meeting with Bush</a></h3>
+<ul>
+<li>Date: June 5, 1953</li>
+<li>Duration: 20:19</li>
+<li>Episode: 46</li>
+</ul>
+<h3 id="e0047"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-06-12%20%2847%29%20Planning%20Mutiny%20on%20the%20Renown.mp3">Planning
+Mutiny on the Renown</a></h3>
+<ul>
+<li>Date: June 12, 1953</li>
+<li>Duration: 20:58</li>
+<li>Episode: 47</li>
+</ul>
+<h3 id="e0048"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-06-19%20%2848%29%20First%20Attact%20on%20Haiti%20Fails.mp3">First
+Attact on Haiti Fails</a></h3>
+<ul>
+<li>Date: June 19, 1953</li>
+<li>Duration: 20:57</li>
+<li>Episode: 48</li>
+</ul>
+<h3 id="e0049"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-06-26%20%2849%29%20Attack%20on%20Haitian%20Fort.mp3">Attack
+on Haitian Fort</a></h3>
+<ul>
+<li>Date: June 26, 1953</li>
+<li>Duration: 21:16</li>
+<li>Episode: 49</li>
+</ul>
+<h3 id="e0050"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-07-03%20%2850%29%20Yellow%20Fever.mp3">Yellow
+Fever</a></h3>
+<ul>
+<li>Date: July 3, 1953</li>
+<li>Duration: 21:26</li>
+<li>Episode: 50</li>
+</ul>
+<h3 id="e0051"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-07-10%20%2851%29%20Fighting%20the%20Spanish%20on%20the%20Renown.mp3">Fighting
+the Spanish on the Renown</a></h3>
+<ul>
+<li>Date: July 10, 1953</li>
+<li>Duration: 21:00</li>
+<li>Episode: 51</li>
+</ul>
+<h3 id="e0052"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/Horatio%20Hornblower%2053-07-17%20%2852%29%20Promoted%20to%20Captain%20of%20the%20Retribution.mp3">Promoted
+to Captain of the Retribution</a></h3>
+<ul>
+<li>Date: July 17, 1953</li>
+<li>Duration: 30:25</li>
+<li>Episode: 52</li>
+</ul>
+<h2 id="yUndated">Undated</h2>
+<h3 id="e0053"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/01%20Horatio%20Hornblower%20Synopsis.mp3">Horatio
+Hornblower Synopsis</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 1:20</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0054"><a
+href="https://archive.org/download/OTRR_Horatio_Hornblower_Singles/02%20Michael%20Redgrave.mp3">Michael
+Redgrave Biography</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 4:01</li>
+<li>Episode: 2</li>
+</ul>
+<h2 id="byDate">Appendix A: By Date</h2>
+<ul>
+<li><a href="#e0001">1952-07-07: Horatio Deals with a Mad King</a></li>
+<li><a href="#e0002">1952-07-14: Horatio Captures the Natividad</a></li>
+<li><a href="#e0003">1952-07-21: Shaky Alliance with El Supremo</a></li>
+<li><a href="#e0004">1952-07-28: Battle Against El Supremo</a></li>
+<li><a href="#e0005">1952-08-04: Lydia Sinks the Natividad</a></li>
+<li><a href="#e0006">1952-08-11: Damaged Lydia Heads for Panama</a></li>
+<li><a href="#e0007">1952-08-18: Return to the Fleet</a></li>
+<li><a href="#e0008">1952-08-25: Return to the Sea</a></li>
+<li><a href="#e0009">1952-09-01: Protecting the Convoy</a></li>
+<li><a href="#e0010">1952-09-08: Disguised as a French Ship</a></li>
+<li><a href="#e0011">1952-10-03: Guerrilla Action</a></li>
+<li><a href="#e0012">1952-10-10: Spanish Fail to Attack</a></li>
+<li><a href="#e0013">1952-10-17: Takes on the French Fleet</a></li>
+<li><a href="#e0014">1952-10-24: Mutiny on the Flame</a></li>
+<li><a href="#e0015">1952-10-31: Disguised as the Flame</a></li>
+<li><a href="#e0016">1952-11-07: The Court Martial of Berry
+McCool</a></li>
+<li><a href="#e0017">1952-11-14: The Capture of Le Havre</a></li>
+<li><a href="#e0018">1952-11-21: Acting Governor of Le Havre</a></li>
+<li><a href="#e0019">1952-11-28: Barbara Joins Horatio</a></li>
+<li><a href="#e0020">1952-12-05: Napoleon Returns</a></li>
+<li><a href="#e0021">1952-12-12: Napoleon Is Defeated</a></li>
+<li><a href="#e0022">1952-12-19: A Prisoner in 1811</a></li>
+<li><a href="#e0023">1952-12-26: Horatio Meets Marie and
+Escapes</a></li>
+<li><a href="#e0024">1953-01-02: Horatio Captures a Ship</a></li>
+<li><a href="#e0025">1953-01-09: Rejoining the Fleet</a></li>
+<li><a href="#e0026">1953-01-16: Horatio Is Court Martialed</a></li>
+<li><a href="#e0027">1953-01-23: Into the Baltic</a></li>
+<li><a href="#e0028">1953-01-30: Chasing the Blanche Fleur</a></li>
+<li><a href="#e0029">1953-02-06: Alliance with Russia</a></li>
+<li><a href="#e0030">1953-02-13: Reception with the Czar</a></li>
+<li><a href="#e0031">1953-02-20: Attack on Fort at Fisher’s
+Half</a></li>
+<li><a href="#e0032">1953-02-27: Port of Riga</a></li>
+<li><a href="#e0033">1953-03-06: Delaying the French</a></li>
+<li><a href="#e0034">1953-03-13: The French Are Stopped</a></li>
+<li><a href="#e0035">1953-03-20: The Duel</a></li>
+<li><a href="#e0036">1953-03-27: The Spanish Leave Napoleon</a></li>
+<li><a href="#e0037">1953-04-03: Hornblower’s First Command</a></li>
+<li><a href="#e0038">1953-04-10: Prisoner of the French on the
+‘Peek’</a></li>
+<li><a href="#e0039">1953-04-17: With the 43rd Marines</a></li>
+<li><a href="#e0040">1953-04-24: Spain Becomes Neutral</a></li>
+<li><a href="#e0041">1953-05-01: Exam for Lieutenant</a></li>
+<li><a href="#e0042">1953-05-08: Quarantined for the Plague</a></li>
+<li><a href="#e0043">1953-05-15: Chasing the Papillion</a></li>
+<li><a href="#e0044">1953-05-22: Command of the La Mouche</a></li>
+<li><a href="#e0045">1953-05-29: Prisoner and Rescue of Spanish</a></li>
+<li><a href="#e0046">1953-06-05: First Meeting with Bush</a></li>
+<li><a href="#e0047">1953-06-12: Planning Mutiny on the Renown</a></li>
+<li><a href="#e0048">1953-06-19: First Attact on Haiti Fails</a></li>
+<li><a href="#e0049">1953-06-26: Attack on Haitian Fort</a></li>
+<li><a href="#e0050">1953-07-03: Yellow Fever</a></li>
+<li><a href="#e0051">1953-07-10: Fighting the Spanish on the
+Renown</a></li>
+<li><a href="#e0052">1953-07-17: Promoted to Captain of the
+Retribution</a></li>
+<li><a href="#e0053">Undated: Horatio Hornblower Synopsis</a></li>
+<li><a href="#e0054">Undated: Michael Redgrave Biography</a></li>
+</ul>
+<h2 id="byTitle">Appendix B: By Title</h2>
+<ul>
+<li><a href="#e0018">Acting Governor of Le Havre (November 21,
+1952)</a></li>
+<li><a href="#e0029">Alliance with Russia (February 6, 1953)</a></li>
+<li><a href="#e0031">Attack on Fort at Fisher’s Half (February 20,
+1953)</a></li>
+<li><a href="#e0049">Attack on Haitian Fort (June 26, 1953)</a></li>
+<li><a href="#e0019">Barbara Joins Horatio (November 28, 1952)</a></li>
+<li><a href="#e0004">Battle Against El Supremo (July 28, 1952)</a></li>
+<li><a href="#e0017">The Capture of Le Havre (November 14,
+1952)</a></li>
+<li><a href="#e0028">Chasing the Blanche Fleur (January 30,
+1953)</a></li>
+<li><a href="#e0043">Chasing the Papillion (May 15, 1953)</a></li>
+<li><a href="#e0044">Command of the La Mouche (May 22, 1953)</a></li>
+<li><a href="#e0016">The Court Martial of Berry McCool (November 7,
+1952)</a></li>
+<li><a href="#e0006">Damaged Lydia Heads for Panama (August 11,
+1952)</a></li>
+<li><a href="#e0033">Delaying the French (March 6, 1953)</a></li>
+<li><a href="#e0010">Disguised as a French Ship (September 8,
+1952)</a></li>
+<li><a href="#e0015">Disguised as the Flame (October 31, 1952)</a></li>
+<li><a href="#e0035">The Duel (March 20, 1953)</a></li>
+<li><a href="#e0041">Exam for Lieutenant (May 1, 1953)</a></li>
+<li><a href="#e0051">Fighting the Spanish on the Renown (July 10,
+1953)</a></li>
+<li><a href="#e0048">First Attact on Haiti Fails (June 19,
+1953)</a></li>
+<li><a href="#e0046">First Meeting with Bush (June 5, 1953)</a></li>
+<li><a href="#e0034">The French Are Stopped (March 13, 1953)</a></li>
+<li><a href="#e0011">Guerrilla Action (October 3, 1952)</a></li>
+<li><a href="#e0024">Horatio Captures a Ship (January 2, 1953)</a></li>
+<li><a href="#e0002">Horatio Captures the Natividad (July 14,
+1952)</a></li>
+<li><a href="#e0001">Horatio Deals with a Mad King (July 7,
+1952)</a></li>
+<li><a href="#e0053">Horatio Hornblower Synopsis (Undated)</a></li>
+<li><a href="#e0026">Horatio Is Court Martialed (January 16,
+1953)</a></li>
+<li><a href="#e0023">Horatio Meets Marie and Escapes (December 26,
+1952)</a></li>
+<li><a href="#e0037">Hornblower’s First Command (April 3, 1953)</a></li>
+<li><a href="#e0027">Into the Baltic (January 23, 1953)</a></li>
+<li><a href="#e0005">Lydia Sinks the Natividad (August 4, 1952)</a></li>
+<li><a href="#e0054">Michael Redgrave Biography (Undated)</a></li>
+<li><a href="#e0014">Mutiny on the Flame (October 24, 1952)</a></li>
+<li><a href="#e0021">Napoleon Is Defeated (December 12, 1952)</a></li>
+<li><a href="#e0020">Napoleon Returns (December 5, 1952)</a></li>
+<li><a href="#e0047">Planning Mutiny on the Renown (June 12,
+1953)</a></li>
+<li><a href="#e0032">Port of Riga (February 27, 1953)</a></li>
+<li><a href="#e0045">Prisoner and Rescue of Spanish (May 29,
+1953)</a></li>
+<li><a href="#e0022">A Prisoner in 1811 (December 19, 1952)</a></li>
+<li><a href="#e0038">Prisoner of the French on the ‘Peek’ (April 10,
+1953)</a></li>
+<li><a href="#e0052">Promoted to Captain of the Retribution (July 17,
+1953)</a></li>
+<li><a href="#e0009">Protecting the Convoy (September 1, 1952)</a></li>
+<li><a href="#e0042">Quarantined for the Plague (May 8, 1953)</a></li>
+<li><a href="#e0030">Reception with the Czar (February 13,
+1953)</a></li>
+<li><a href="#e0025">Rejoining the Fleet (January 9, 1953)</a></li>
+<li><a href="#e0007">Return to the Fleet (August 18, 1952)</a></li>
+<li><a href="#e0008">Return to the Sea (August 25, 1952)</a></li>
+<li><a href="#e0003">Shaky Alliance with El Supremo (July 21,
+1952)</a></li>
+<li><a href="#e0040">Spain Becomes Neutral (April 24, 1953)</a></li>
+<li><a href="#e0012">Spanish Fail to Attack (October 10, 1952)</a></li>
+<li><a href="#e0036">The Spanish Leave Napoleon (March 27,
+1953)</a></li>
+<li><a href="#e0013">Takes on the French Fleet (October 17,
+1952)</a></li>
+<li><a href="#e0039">With the 43rd Marines (April 17, 1953)</a></li>
+<li><a href="#e0050">Yellow Fever (July 3, 1953)</a></li>
+</ul>
+</body>
+</html>

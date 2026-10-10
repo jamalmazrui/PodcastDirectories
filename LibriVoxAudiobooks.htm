@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Compiled from LibriVox" />
   <meta name="dcterms.date" content="2026-01-01" />
@@ -10,9 +10,15 @@
 domain, free, English" />
   <title>LibriVox Free Audiobooks</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -37,12 +43,16 @@ domain, free, English" />
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -55,13 +65,14 @@ domain, free, English" />
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -84,8 +95,11 @@ domain, free, English" />
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     div.abstract {
       margin: 2em 2em 2em 2em;
@@ -99,6 +113,7 @@ domain, free, English" />
       margin-bottom: 0.5em;
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -118,8 +133,8 @@ domain, free, English" />
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -136,11 +151,11 @@ domain, free, English" />
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -162,10 +177,13 @@ domain, free, English" />
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -176,12 +194,10 @@ domain, free, English" />
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">LibriVox Free Audiobooks</h1>
 <p class="subtitle">A Screen-Reader-Friendly Directory of English
 Public-Domain Audiobooks</p>
 <p class="author">Compiled from LibriVox</p>
@@ -23686,7 +23702,7 @@ page</a></p>
 <p><strong>Author:</strong> John Ford</p>
 <p><strong>Chapters:</strong> 5</p>
 <p><strong>Duration:</strong> 02:39:46</p>
-<p><strong>Summary:</strong> The Broken Heart stands next to ’Tis Pity
+<p><strong>Summary:</strong> The Broken Heart stands next to ‘Tis Pity
 She’s a Whore as Ford’s most popular drama.</p>
 <h3 id="lv-broken-hearts-14745"><a
 href="https://www.archive.org/download/brokenhearts_2004_librivox/brokenhearts_1_gilbert_64kb.mp3">Broken
@@ -115295,12 +115311,12 @@ Forces of Civilization</a></h3>
 <p><a
 href="https://librivox.org/the-mysterious-forces-of-civilization-by-abdul-baha-abbas/">Book
 page</a></p>
-<p><strong>Author:</strong> Abdu’l-Bahá ’Abbás</p>
+<p><strong>Author:</strong> Abdu’l-Bahá ‘Abbás</p>
 <p><strong>Chapters:</strong> 8</p>
 <p><strong>Duration:</strong> 4:05:45</p>
 <p><strong>Summary:</strong> The Mysterious Forces of Civilization
-(Persian: Risálih-i-Madaníyyih) is a work written before 1875 by ’Abbás
-Effendí, known as ’Abdu’l-Bahá (the Servant of Bahá) (1844-1921).</p>
+(Persian: Risálih-i-Madaníyyih) is a work written before 1875 by ‘Abbás
+Effendí, known as ‘Abdu’l-Bahá (the Servant of Bahá) (1844-1921).</p>
 <h3 id="lv-mysterious-island-783"><a
 href="https://www.archive.org/download/mysterious_island_ms_librivox/mysterious_island_1_01_verne_64kb.mp3">Mysterious
 Island</a></h3>
@@ -127620,7 +127636,7 @@ page</a></p>
 <p><strong>Duration:</strong> 01:55:54</p>
 <p><strong>Summary:</strong> ‘The Path to Prosperity’ (sometimes
 rendered as The Path of Prosperity) is part one of James Allen’s first
-published work titled ‘From Poverty to Power’ alternatively titled ’The
+published work titled ‘From Poverty to Power’ alternatively titled ‘The
 Realization of Prospe</p>
 <h3 id="lv-pathfinder-the-inland-sea-2488"><a
 href="https://www.archive.org/download/pathfinder_0810_librivox/thepathfinder_01_cooper_64kb.mp3">Pathfinder
@@ -137165,7 +137181,7 @@ of Universal Peace: Vol. I</a></h3>
 <p><a
 href="https://librivox.org/the-promulgation-of-universal-peace-vol-i-by-abdul-baha-abbas/">Book
 page</a></p>
-<p><strong>Author:</strong> Abdu’l-Bahá ’Abbás</p>
+<p><strong>Author:</strong> Abdu’l-Bahá ‘Abbás</p>
 <p><strong>Chapters:</strong> 56</p>
 <p><strong>Duration:</strong> 14:04:26</p>
 <p><strong>Summary:</strong> “Two years before the crash of world war
@@ -157176,7 +157192,7 @@ Answered Questions</a></h3>
 <p><a
 href="https://librivox.org/some-answered-questions-by-abdul-baha-abbas/">Book
 page</a></p>
-<p><strong>Author:</strong> Abdu’l-Bahá ’Abbás</p>
+<p><strong>Author:</strong> Abdu’l-Bahá ‘Abbás</p>
 <p><strong>Chapters:</strong> 35</p>
 <p><strong>Duration:</strong> 10:53:06</p>
 <p><strong>Summary:</strong> Some Answered Questions was first published
@@ -168169,7 +168185,7 @@ by Abdul Baha Given in Paris</a></h3>
 <p><a
 href="https://librivox.org/talks-by-abdul-baha-given-in-paris-by-abdul-baha-abbas/">Book
 page</a></p>
-<p><strong>Author:</strong> Abdu’l-Bahá ’Abbás</p>
+<p><strong>Author:</strong> Abdu’l-Bahá ‘Abbás</p>
 <p><strong>Chapters:</strong> 39</p>
 <p><strong>Duration:</strong> 6:26:34</p>
 <p><strong>Summary:</strong> “Much has already been written of the visit
@@ -175430,7 +175446,7 @@ Narrative Written to Illustrate the Episode of the Báb</a></h3>
 <p><a
 href="https://librivox.org/a-travellers-narrative-written-to-illustrate-the-episode-of-the-bab-by-abdul-baha-abbas/">Book
 page</a></p>
-<p><strong>Author:</strong> Abdu’l-Bahá ’Abbás</p>
+<p><strong>Author:</strong> Abdu’l-Bahá ‘Abbás</p>
 <p><strong>Chapters:</strong> 24</p>
 <p><strong>Duration:</strong> 5:01:12</p>
 <p><strong>Summary:</strong> “This book is the history of a proscribed
@@ -177999,7 +178015,7 @@ page</a></p>
 <p><strong>Author:</strong> Maud Jean Franc</p>
 <p><strong>Chapters:</strong> 20</p>
 <p><strong>Duration:</strong> 4:50:19</p>
-<p><strong>Summary:</strong> ‘Two Sides to Every Question’: From a South
+<p><strong>Summary:</strong> ’Two Sides to Every Question’: From a South
 Australian Standpoint is a meditation on poverty, wealth, and social
 aspiration set in the free settlement of Adelaide in pre-Federation
 Australia.</p>
@@ -243028,7 +243044,7 @@ God, Volume 4</a></li>
 <li><a href="#lv-r-u-r-rossum-s-universal-robots-8910">R.U.R. (Rossum’s
 Universal Robots)</a></li>
 </ul></li>
-<li><strong>Abdu’l-Bahá ’Abbás</strong>
+<li><strong>Abdu’l-Bahá ‘Abbás</strong>
 <ul>
 <li><a href="#lv-mysterious-forces-of-civilization-4687">Mysterious
 Forces of Civilization</a></li>

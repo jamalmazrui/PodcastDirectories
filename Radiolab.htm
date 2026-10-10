@@ -2,14 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Jamal Mazrui" />
   <title>Radiolab Directory</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -34,12 +40,16 @@
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -52,13 +62,14 @@
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -81,8 +92,11 @@
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     div.abstract {
       margin: 2em 2em 2em 2em;
@@ -96,6 +110,7 @@
       margin-bottom: 0.5em;
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -115,8 +130,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -133,11 +148,11 @@
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -159,10 +174,13 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -173,12 +191,10 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Radiolab Directory</h1>
 <p class="subtitle">A Screen-Reader-Friendly Guide to the Radiolab
 Podcast</p>
 <p class="author">Jamal Mazrui</p>
@@ -3028,9 +3044,9 @@ a little taste of what she learned and shares a couple stories of the
 struggle to get ahead, or even just get by. Go check out the full
 series, it’s well worth it. You can hear all 5 episodes of Busted here
 or subscribe to On the Media in iTunes (or wherever you get your
-podcasts) to listen to this series or all their other great work.
-“Busted: America’s Poverty Myths” was produced by Meara Sharma and Eve
-Claxton and edited by Katya Rogers. They produced the series in
+podcasts) to listen to this series or all their other great
+work.”Busted: America’s Poverty Myths” was produced by Meara Sharma and
+Eve Claxton and edited by Katya Rogers. They produced the series in
 collaboration with WNET’s Chasing the Dream; poverty and opportunity in
 America. Support Radiolab by becoming a member today at
 Radiolab.org/donate</p>
@@ -4012,7 +4028,7 @@ time, as countries around the world consider bans on surrogacy, this
 episode looks at a relationship that manages to feel deeply affecting,
 and deeply uncomfortable, all at the same time. Birthstory is a
 collaboration with the brilliant radio show and podcast Israel Story,
-created to tell stories for, and about, Israel. Go check ’em out! Israel
+created to tell stories for, and about, Israel. Go check ‘em out! Israel
 Story’s five English-language seasons were produced in partnership with
 Tablet Magazine and we highly recommend you listen to all of their work
 at This episode was produced and reported by Molly Webster. Special
@@ -4115,11 +4131,11 @@ story of Dana Zzyym, Navy veteran and activist, which starts long before
 they scribble the word “intersex” on their passport application. Along
 the way, we see what happens when our inner biological realities bump
 into the outside world, and the power of words to shape us. This episode
-is a companion piece to Gonads, Episode 4, Dutee . “Dana” was reported
-by Molly Webster, and co-produced with Jad Abumrad. It had production
-help from Rachael Cusick, and editing by Pat Walters. Wordplay
-categories were written, performed, and produced by Majel Connery and
-Alex Overington. Special thanks to Paula Stone Williams, Gerry Callahan,
+is a companion piece to Gonads, Episode 4, Dutee .”Dana” was reported by
+Molly Webster, and co-produced with Jad Abumrad. It had production help
+from Rachael Cusick, and editing by Pat Walters. Wordplay categories
+were written, performed, and produced by Majel Connery and Alex
+Overington. Special thanks to Paula Stone Williams, Gerry Callahan,
 Lambda Legal, Kathy Tu, Matt Collette, Arianne Wack, Carter Hodge, and
 Liza Yeager. Radiolab is supported in part by Science Sandbox, a Simons
 Foundation initiative dedicated to engaging everyone with the process of
@@ -5583,7 +5599,7 @@ and Dominique</a></h3>
 <p><strong>Summary:</strong> David Gebel and Dominique Crisden have a
 couple of things in common: they both live in New York, they’re both
 gay, and they’re both HIV-positive. But David is in his 60s, and has
-been living with the disease since moving to New York in the ’80s.
+been living with the disease since moving to New York in the ‘80s.
 Dominique, on the other hand, is only in his early 30s. From our friends
 at WNYC’s “Nancy”, this episode features a very special conversation
 between David and Dominique about the similarities and differences in
@@ -6096,8 +6112,8 @@ Party</a></h3>
 <p><strong>Duration:</strong> 00:50:44</p>
 <p><strong>Episode:</strong> 380</p>
 <p><strong>Summary:</strong> In the 1996 election, Bill Clinton had a
-problem. The women who came out in droves for him in ’92, split their
-vote in the ’94 midterms, handing over control of the House and the
+problem. The women who came out in droves for him in ‘92, split their
+vote in the ‘94 midterms, handing over control of the House and the
 Senate to the Republican Party. As his team stared ahead at his
 re-election bid, they knew they had to win those women back. So, after a
 major polling effort to determine who exactly their undecided ladies
@@ -7234,7 +7250,7 @@ get to the sound of grief from a millennium and a half ago. The horrors
 of 536 make us wonder about the parallels and perpendiculars with our
 own time: does it make you feel any better knowing that your suffering
 is part of a global crisis? Or does it just make things worse?” Thanks
-to reporter Ann Gibbons whose Science article ” Eruption made 536 ’the
+to reporter Ann Gibbons whose Science article ” Eruption made 536 ‘the
 worst year to be alive ” got us interested in the first place. In case
 you want to learn more about 536, here are some other sources: Timothy
 P. Newfield, “The Climate Downturn of 536-50” in the Palgrave Handbook
@@ -8877,7 +8893,7 @@ considered bans on surrogacy, this episode looked at a relationship that
 manages to feel deeply affecting and deeply uncomfortable at the same
 time. “Birthstory” is a collaboration with the brilliant radio show and
 podcast Israel Story , created to tell stories for, and about, Israel.
-Go check ’em out! ( ) Israel Story ’s five English-language seasons were
+Go check ‘em out! ( ) Israel Story ’s five English-language seasons were
 produced in partnership with Tablet Magazine ( ) and we highly recommend
 you listen to all of their work at ( ) This episode was produced and
 reported by Molly Webster. Special thanks go to: Israel Story , and
@@ -11897,7 +11913,7 @@ Photos and Maps - To trace building locations or names of home owners as
 well as photos of every square inch of Pompeii: From Steven Tuck: “If
 someone has an otherwise unbeatable case of insomnia, my preliminary
 publication of findings is in Reflections: Harbour City Deathscapes in
-Roman Italy and Beyond” ( ) Brief description of the casts and casting
+Roman Italy and Beyond ” ( ) Brief description of the casts and casting
 process of the remains found at Pompeii: Maps of the Ancient Roman world
 that you can use to trace some of the land and sea routes discussed in
 the episode: Signup for our newsletter! It includes short essays,
@@ -12307,17 +12323,17 @@ later pathologized as “Stockholm Syndrome,” would soon spread across the
 globe, becoming an easy, often flippant explanation for why
 people—especially women—in crisis behave in ways outsiders can’t
 understand. But what if we got the origin story wrong? Today on
-Radiolab, we reexamine that week in 1973 and the earworm heard ’round
+Radiolab, we reexamine that week in 1973 and the earworm heard ‘round
 the world. Is “Stockholm Syndrome” just pop psychology built on a pile
 of lies? Or does it hold some kernel of truth that could help all of us
 better understand inexplicable trauma? Special thanks to David Mandel,
 Ruth Reymundo Mandel, Frank Ochberg, Terence Mickey, Cara Pellegrini,
 Kathy Yuen, Mimi Wilcox and Jani Pellikka. “We have some exciting news!
-In the “ Zoozve” episode, Radiolab named its first-ever quasi-moon, and
+In the “ Zoozve ” episode, Radiolab named its first-ever quasi-moon, and
 now it’s your turn! Radiolab teamed up with The International
 Astronomical Union to launch a global naming contest for one of Earth’s
 quasi-moons. Now is you chance to make your mark on the heavens. You can
-now vote on your favorites, here: ” EPISODE CREDITS: Reported by - Sarah
+now vote on your favorites, here:” EPISODE CREDITS: Reported by - Sarah
 Qari with help from - Alice Edwards (also contributed research and
 translation) Produced by - Sarah Qari with help from - Rebecca Laks
 Original music and sound design contributed by - Jeremy Bloom Additional
@@ -12416,7 +12432,7 @@ universes of beautiful, vexing complexity and deeper, stranger bits of
 wisdom than we ever imagined. Special thanks to Pamela D’Arc, ​​Daniela
 Murcillo, Amanda Breen, Akmal Tajihan, Patrick Keene, Stephanie Leschek
 and Alexandria Iona from the Upright Citizens Brigade, We Run Uptown,
-Coaches Reph and Patty from Circa ’95, Julia Lucas and Coffey from the
+Coaches Reph and Patty from Circa ‘95, Julia Lucas and Coffey from the
 Noname marathon training program. We have some exciting news! In the “
 Zoozve ” episode, Radiolab named its first-ever quasi-moon, and now it’s
 your turn! Radiolab has teamed up with The International Astronomical

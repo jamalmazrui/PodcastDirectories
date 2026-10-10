@@ -2,16 +2,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Jamal Mazrui" />
   <meta name="keywords" content="RISK!, Kevin
 Allison, storytelling, true stories, podcast, spoken word" />
   <title>RISK! Podcast Directory</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -36,12 +42,16 @@ Allison, storytelling, true stories, podcast, spoken word" />
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -54,13 +64,14 @@ Allison, storytelling, true stories, podcast, spoken word" />
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -83,8 +94,11 @@ Allison, storytelling, true stories, podcast, spoken word" />
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     div.abstract {
       margin: 2em 2em 2em 2em;
@@ -98,6 +112,7 @@ Allison, storytelling, true stories, podcast, spoken word" />
       margin-bottom: 0.5em;
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -117,8 +132,8 @@ Allison, storytelling, true stories, podcast, spoken word" />
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -135,11 +150,11 @@ Allison, storytelling, true stories, podcast, spoken word" />
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -161,10 +176,13 @@ Allison, storytelling, true stories, podcast, spoken word" />
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -175,12 +193,10 @@ Allison, storytelling, true stories, podcast, spoken word" />
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">RISK! Podcast Directory</h1>
 <p class="subtitle">A Screen-Reader-Friendly Guide to the Archived
 Storytelling Show</p>
 <p class="author">Jamal Mazrui</p>
@@ -1682,7 +1698,7 @@ href="https://www.risk-show.com/podcast/living-big/">Living Big</a></h3>
 Sondericker; Smokey Hormel; Wormburner</p>
 <p><strong>Songs:</strong> Banaketwe; RISK! Theme; Shove It Up Your Ass;
 War is Peace</p>
-<p><strong>Stories:</strong> Bears, Booze ’n Bawlz; Life is a Gift; War
+<p><strong>Stories:</strong> Bears, Booze ‘n Bawlz; Life is a Gift; War
 and Peace</p>
 <p><strong>Storytellers:</strong> Marc Gabriel Amigone; Justin Hall;
 Meagan</p>
@@ -2005,7 +2021,7 @@ Sondericker; The Bombay Royale; Wormburner</p>
 <p><strong>Songs:</strong> RISK! Theme; Sote Sote Adhi Raat; The
 Sunshine of Your Youth; What’s That Smell?</p>
 <p><strong>Stories:</strong> In Case of Emergency; I’mCool.doc; Kibbles
-’n Bits</p>
+‘n Bits</p>
 <p><strong>Storytellers:</strong> Sarah Jones; Angel Yau</p>
 <h3 id="risk-scarred"><a
 href="https://www.risk-show.com/podcast/scarred/">Scarred</a></h3>
@@ -2950,7 +2966,7 @@ href="https://www.risk-show.com/podcast/disruption/">Disruption</a></h3>
 Sondericker; The Who; Wormburner</p>
 <p><strong>Songs:</strong> Better Way; Left Hand Free; Orby Roo; The Ox;
 RISK! Theme</p>
-<p><strong>Stories:</strong> Full Circle K; Laurie; ’Roo Shooter</p>
+<p><strong>Stories:</strong> Full Circle K; Laurie; ‘Roo Shooter</p>
 <p><strong>Storytellers:</strong> Julie Brister; Anwar Newton; Jeff
 Simmermon</p>
 <h3 id="risk-out-of-the-blue"><a
@@ -4956,7 +4972,7 @@ href="https://www.risk-show.com/podcast/realizations/">Realizations</a></h3>
 Hill by Audrey Avera; John Sondericker; Keith Jarrett; Oingo Boingo;
 Wormburner</p>
 <p><strong>Songs:</strong> Dead Man’s Party; The Juvenile Jungle of Lust
-and Lawlessness; ’Long As You Know You’re Living Yours; RISK! Theme</p>
+and Lawlessness; ‘Long As You Know You’re Living Yours; RISK! Theme</p>
 <p><strong>Stories:</strong> Bullets on; Rawk Starr</p>
 <p><strong>Storytellers:</strong> Erin Barker</p>
 <h3 id="risk-miscalculations"><a
@@ -5242,7 +5258,7 @@ href="https://www.risk-show.com/podcast/breathtaking/">Breathtaking</a></h3>
 John Sondericker; Snarky Puppy Livestream/; Wormburner</p>
 <p><strong>Songs:</strong> Everybody’s Crazy in New York; Forever Young;
 Immemorial; RISK! Theme; Tarova</p>
-<p><strong>Stories:</strong> The 30 Year Fire; Kink ’n Ink; No
+<p><strong>Stories:</strong> The 30 Year Fire; Kink ‘n Ink; No
 Favors</p>
 <p><strong>Storytellers:</strong> Tina Horn; Jenice Matias; Gabriel
 Pages</p>
@@ -5318,7 +5334,7 @@ href="https://www.risk-show.com/podcast/thunderbolts/">Thunderbolts</a></h3>
 Anecdote: Mom’s Send Off by Marc Abbott; John Sondericker; Pretenders;
 Wormburner</p>
 <p><strong>Songs:</strong> I’m a Mother; Jay-Z Instrumental Style; KWICK
-’n WAITS (Ft. Bruce Lee); RISK! Theme</p>
+‘n WAITS (Ft. Bruce Lee); RISK! Theme</p>
 <p><strong>Stories:</strong> Shit Happens; Something Adults Do</p>
 <p><strong>Storytellers:</strong> Sandi Marx; Drew Prochaska</p>
 <h3 id="risk-the-first-time-again"><a
@@ -5848,7 +5864,7 @@ Life</a></h3>
 Sondericker; Johnny Rivers; Matthew Whitaker; Wormburner</p>
 <p><strong>Songs:</strong> Limitless; Matt’s Blues; RISK! Theme; Top
 Stish; Willie and the Hand Jive</p>
-<p><strong>Stories:</strong> All In; Bro’s ’n Mo’s; Open Secret by</p>
+<p><strong>Stories:</strong> All In; Bro’s ‘n Mo’s; Open Secret by</p>
 <p><strong>Storytellers:</strong> Stella Harris; Jonathan Bradley
 Welch</p>
 <h3 id="risk-recovery"><a
@@ -6051,7 +6067,7 @@ Episode</a></h3>
 <p><strong>Date:</strong> June 1, 2022</p>
 <p><strong>Musicians:</strong> Bas; Bob James; FKJ; Jeff Barr; Jozem;
 Taj Easton; the RISK! Theme Team; xRGB</p>
-<p><strong>Songs:</strong> Nancy ’n Bouncer; New Wax; The Risk; Risk
+<p><strong>Songs:</strong> Nancy ‘n Bouncer; New Wax; The Risk; Risk
 (Galimatias Version); RISK! Theme Mixup; Westchester Lady</p>
 <p><strong>Stories:</strong> Pandemic Breakdown; Scuttlebutt</p>
 <p><strong>Storytellers:</strong> Sean Patton; Tracey</p>
@@ -7599,7 +7615,7 @@ Beholder</p>
 href="https://www.risk-show.com/podcast/rebel-rebel/">Rebel
 Rebel</a></h3>
 <p><strong>Date:</strong> February 18, 2025</p>
-<p><strong>Musicians:</strong> David Bowie; The Osmonds; ’Til
+<p><strong>Musicians:</strong> David Bowie; The Osmonds; ‘Til
 Tuesday</p>
 <p><strong>Songs:</strong> Crazy Horses; Rebel Rebel; Voices Carry</p>
 <p><strong>Stories:</strong> Voice Box; Wild Girl</p>
@@ -7932,7 +7948,7 @@ Here?</a></h3>
 <p><strong>Musicians:</strong> Aves; Joel Adam Russell; Roger Rivas</p>
 <p><strong>Songs:</strong> Chemical Reaction; Last Goodbye; Take Me
 Somewhere</p>
-<p><strong>Stories:</strong> Fake It ’Til You Make It; Permission to Be
+<p><strong>Stories:</strong> Fake It ‘Til You Make It; Permission to Be
 Myself</p>
 <p><strong>Storytellers:</strong> Sandi Marx; Jen Nails</p>
 <h3 id="risk-not-in-hiding-anymore"><a
@@ -8674,7 +8690,7 @@ From Chapel Hill 2!</a></h3>
 <p><strong>Musicians:</strong> Dion; John Sondericker; Wormburner</p>
 <p><strong>Series:</strong> Classic RISK! (live-show archive)</p>
 <p><strong>Songs:</strong> RISK! Theme; Willigo</p>
-<p><strong>Stories:</strong> Child’s Play; Dads ’n Lads; Strange
+<p><strong>Stories:</strong> Child’s Play; Dads ‘n Lads; Strange
 Engagement; Unlike Barbie</p>
 <p><strong>Storytellers:</strong> Amy Allen; Kevin Allison; Bianca
 Casusol; Ray Christian</p>
@@ -8984,7 +9000,7 @@ St. Louis 2!</a></h3>
 A.S.M.O.); John Sondericker; M; Minigroove Orchestra; Wormburner</p>
 <p><strong>Series:</strong> Classic RISK! (live-show archive)</p>
 <p><strong>Songs:</strong> Chinese Translation; Monostéréologie; RISK!
-Theme; Sit Next to Me; Speak ’N Hell</p>
+Theme; Sit Next to Me; Speak ‘N Hell</p>
 <p><strong>Stories:</strong> The A-Team; Out of Control; Sundays with
 Zola</p>
 <p><strong>Storytellers:</strong> Amy Brooks; Rafe Williams; David
@@ -10125,7 +10141,7 @@ Caveat 4!</a></h3>
 <p><strong>Musicians:</strong> Kid Spatula; Paul Simon; The Incredible
 Bongo Band</p>
 <p><strong>Series:</strong> Classic RISK! (live-show archive)</p>
-<p><strong>Songs:</strong> Come On Board; Raunchy ’73; Slip Sliding
+<p><strong>Songs:</strong> Come On Board; Raunchy ‘73; Slip Sliding
 Away</p>
 <p><strong>Stories:</strong> The Gunk; A Lesson in Perspective; The
 Vampire-wizard</p>
@@ -11416,7 +11432,7 @@ Stories #9</a></h3>
 Jeff Barr (Ft. Al Kelly; Junior85; Louis Armstrong; Wormburner</p>
 <p><strong>Series:</strong> Holiday Stories</p>
 <p><strong>Songs:</strong> It’s Christmas Christmas Time; Not Silent
-Enough; RISK! Theme; ’Zat You Santa Claus</p>
+Enough; RISK! Theme; ‘Zat You Santa Claus</p>
 <p><strong>Stories:</strong> Bronx Cheer; Friends and Family; Myths</p>
 <p><strong>Storytellers:</strong> David Hu; Tracey Segarra</p>
 <h3 id="risk-scary-stories-9-muahaha"><a
@@ -12343,7 +12359,7 @@ Best of Adventure Stories #2</a></h3>
 <p><strong>Musicians:</strong> Neil Young</p>
 <p><strong>Series:</strong> Adventure Stories</p>
 <p><strong>Songs:</strong> The Hitchhiker</p>
-<p><strong>Stories:</strong> Hitchin’ It!; Kibbles ’n Bits</p>
+<p><strong>Stories:</strong> Hitchin’ It!; Kibbles ‘n Bits</p>
 <p><strong>Storytellers:</strong> Myka Fox; Sarah Jones</p>
 <h3 id="risk-the-best-of-self-help-stories-3"><a
 href="https://www.risk-show.com/podcast/the-best-of-self-help-stories-3/">The

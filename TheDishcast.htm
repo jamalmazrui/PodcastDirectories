@@ -2,14 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Jamal Mazrui" />
   <title>The Dishcast Directory</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -34,12 +40,16 @@
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -52,13 +62,14 @@
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -81,8 +92,11 @@
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     div.abstract {
       margin: 2em 2em 2em 2em;
@@ -96,6 +110,7 @@
       margin-bottom: 0.5em;
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -115,8 +130,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -133,11 +148,11 @@
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -159,10 +174,13 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -173,12 +191,10 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">The Dishcast Directory</h1>
 <p class="subtitle">A Screen-Reader-Friendly Guide to Andrew Sullivan’s
 Podcast</p>
 <p class="author">Jamal Mazrui</p>
@@ -2415,7 +2431,7 @@ over.” So the men work under the table if they can. Many of them have
 criminal records for minor crimes (drug offenses), which also makes
 getting employment more difficult. The good factory jobs with union
 wages for unskilled middle-class men that were plentiful during the
-’50s, ’60s, and ’70s began to go away in the ’80s, and Cleveland became
+‘50s, ‘60s, and ‘70s began to go away in the ‘80s, and Cleveland became
 part of the Rust Belt. Now, as the Trump base knows well, “all the jobs
 went to China.” So now Biden’s Recovery Act is going to give families
 $350 or $250 a month per child with no strings attached. (For a year,
@@ -2800,7 +2816,7 @@ for me because I cannot imagine myself not being a parent. I cannot
 imagine needing to make a choice between transition and having children,
 when in my mid twenties and even later. But then I am an older
 transitioner and an early Boomer, so there was nothing available in the
-airwaves or in popular print media in the ’60s about gender identity or
+airwaves or in popular print media in the ‘60s about gender identity or
 transitioning. This next reader also touches on the topic of fertility
 and makes several other interesting points: Many people ignore a huge
 elephant in the room as to why some trans people are unable to pass. It
@@ -2917,7 +2933,7 @@ purporting to BE a gay man, well, isn’t objectification the whole bloody
 point?! All my 40-50-60ish cis-male gay pals are ALL about the
 friendly/brotherly gropey-fun objectification. It makes us all feel seen
 and appreciated in a low key kind of way. Needless to say, I’ve had
-little luck with the FTM community, at least the young ’uns. But it’s
+little luck with the FTM community, at least the young ‘uns. But it’s
 the antithesis of truth to say that’s because I’m Transphobic. On the
 other hand, I do get it: That kind of gropey-fun attitude for either
 straight/cis women or, apparently, for anyone whose youngest formative
@@ -3881,7 +3897,7 @@ Trump and the NYT; and on the best ways to reform Twitter — head over to
 our YouTube page . Meanwhile, many readers are responding to my
 conversation with Charles Murray last week . One quick take: Great to
 hear Charles Murray! I’m sure Twitter subsequently lost its mind — good.
-Screw ’em. Has anyone been more unfairly maligned than this man? Twitter
+Screw ‘em. Has anyone been more unfairly maligned than this man? Twitter
 was oddly quiet. Another reader enjoyed the long conversation as well:
 Oh jeez, Andrew — I can imagine the fun mail you’ll be getting for this
 one, but it’s the episode I’ve been really looking forward to! I found
@@ -4929,8 +4945,8 @@ to say Thank You. At the 1:15:00 mark of the podcast, you say “my
 generation went through an incredible trauma and fought through a …
 critical period of civil rights. Two generations below us have no idea
 we did anything at all except that we’re old transphobes. We did all of
-it so people could live gay lives which are not political …” Well today,
-that’s exactly what I’m doing. I’m getting ready to drive up to
+it so people could live gay lives which are not political … ” Well
+today, that’s exactly what I’m doing. I’m getting ready to drive up to
 Portland, Oregon for what I hope will be an exciting summer romance with
 a wonderful guy. Nothing political about it. No shame about the fact
 that we’re two men — just my latest adventure. And I can’t imagine
@@ -5232,7 +5248,7 @@ fail to complete high school, end up in jail, become addicted to
 whatever, and do not own homes or have savings is all true, but putting
 an Enlightenment lens on it is inadequate and incomplete. Racism is
 baked into many of our systems, and it has been since the beginning.
-Much improvement has occurred since the ’60s due to the Civil Rights
+Much improvement has occurred since the ‘60s due to the Civil Rights
 movement, but it’s not yet gone. I suppose my study of history has also
 led me to believe there are no straight lines, but often there are
 pendulum swings. In the past the pendulum favored WASPs over all others.
@@ -6420,7 +6436,7 @@ grew up in the gay community. When I was younger all my friends were gay
 men, and I really do credit them for helping me become the woman I am.
 I’m very proud of that. I love them so much, and I don’t feel there’s
 enough of a discussion about the AIDS crisis and what happened in the
-’80s and ’90s. I feel like there needs to be more education about it,
+‘80s and ‘90s. I feel like there needs to be more education about it,
 and I admire how open you’ve been about what you’ve been through. And I
 get so many questions from my audience, because I have a lot of young
 gay men in my audience, and they ask me about dating and sex, just like
@@ -6433,7 +6449,7 @@ they live in parts of the world where it’s not acceptable to be gay,
 unfortunately, or they come from families where their families don’t
 accept them. What was it like for you when you were coming out? And
 also, what advice would you have for them? Andrew: Well, I came out in
-the ’80s, and I was a gay boy entirely surrounded by straight people —
+the ‘80s, and I was a gay boy entirely surrounded by straight people —
 the complete inverse of you. And I love them all. I never heard the word
 “homosexual” ever. I never heard any discussion of it. I never heard
 anything on the radio. It was never discussed in our house. All I knew:
@@ -6444,7 +6460,7 @@ understand that this was the atmosphere I grew up in. And it was not
 that long ago. I’m not that old. And so coming out was terrifying. I
 didn’t come out until I was in my early twenties and I had left England
 and arrived in America. I was able to sort of catch some of the
-extraordinary shifts in gay culture in the ’80s, in Boston, and then in
+extraordinary shifts in gay culture in the ‘80s, in Boston, and then in
 Washington, DC, and came out like that. I had never really said I was
 straight, ever, but I was asked outright when I was at Oxford, because I
 was president of the Oxford Union — the newspaper asked me, in 1981,
@@ -6463,7 +6479,7 @@ He was such a stereotypical male, and my brother and sister were like,
 terrified of his reaction. Apparently they had attempted to raise the
 possibility once, and my father had said at the time, “If he ever tells
 that to me, he’ll never be in this house again.” So I was terrified. But
-at that point, I was sort of part of the ’80s revival of being proudly
+at that point, I was sort of part of the ‘80s revival of being proudly
 gay, even as we were surrounded by the beginnings of this horrible
 epidemic. And so I was like, I’m going to do it anyway. So I asked both
 my parents down to sit together in the living room and I was going to
@@ -6630,11 +6646,11 @@ Debra : Why is it that some gay men were saying that the bath houses
 shouldn’t be closed? Is it this sense that the virus wasn’t that serious
 of a thing to be afraid of? Andrew : It was more that the extraordinary
 trajectory of the gay rights movement. There was the beginning in the
-1950s and ’60s, the real pioneers, people like Frank Kameny, arguing for
+1950s and ‘60s, the real pioneers, people like Frank Kameny, arguing for
 civil rights for homosexuals, walking in front of the White House in the
 1950s, the first person who was fired in a security clearance for being
 gay and sued the federal government in the 1950s to say, “reinstate me,
-a real hero.” But then there was this merger with the ’60s
+a real hero.” But then there was this merger with the ‘60s
 counterculture, and then it exploded with Stonewall. There really was
 this culture of sexual free expression, which became a symbol of
 liberation. And people just didn’t want to be told that their liberation
@@ -6695,7 +6711,7 @@ queer, even though a hefty proportion hate that word. That, you know,
 we’re all obviously lefty and that we’re on board with the new alphabet
 movement, which is less a gay rights movement than it is at this point a
 trans movement allied with a racial justice movement, which is utterly
-unrecognizable as the gay rights movement was in the ’80s, ’90s, and
+unrecognizable as the gay rights movement was in the ‘80s, ‘90s, and
 even the first decade of the 21st Century. Gay men are no longer really
 regarded as part of this movement. Debra : Well, you guys are — gay men
 or just white men now, even if you’re not — Andrew : Well we’re the
@@ -8660,8 +8676,8 @@ suspended for supposedly embracing CRT, I suggest you do. Cancel culture
 has been a feature of conservative America from the beginning.
 Right-wing cancel culture is the social force that chases millions of
 young people out of flyover country into the big coastal cities. I
-fought cancel culture when I was a teenager in Tulsa in the late ’60s
-and early ’70s. It was made clear to me then that someone with my views
+fought cancel culture when I was a teenager in Tulsa in the late ‘60s
+and early ‘70s. It was made clear to me then that someone with my views
 — atheist, left of center — would be happier somewhere else. And I’m a
 white guy from the middle class. Bellyaching by conservatives in Trump
 country about being condescended to by coastal elites is a hilarious
@@ -9070,7 +9086,7 @@ own neighborhoods. While my experience is from the 1950s and after, I
 know that the earlier clustering was even more prominent. My experience
 of Chinatown exemplifies the long period of assimilation, probably
 driven both by choice and also by prejudice. Walking through Chinatown
-in the ’50s and ’60s was like entering a different country. On the
+in the ‘50s and ‘60s was like entering a different country. On the
 streets the language spoken was Chinese, signs on the stores were also
 in that language, many, if not most, restaurants only had menus in
 Chinese. On the fringes of Chinatown were establishments that catered to
@@ -9254,7 +9270,7 @@ of hyperventilation. One example: “But notice how the narrative —
 embedded in a deeper one that the Blake shooting was just as clear-cut
 as the Floyd murder, that thousands of black men were being gunned down
 by cops every year, and that ‘white supremacy’ was rampant in every
-cranny of America …” Give me one example in the mainstream media where
+cranny of America … ” Give me one example in the mainstream media where
 anyone ever hinted, much less said, thousands were being gunned down
 every year? Please try. It’s a ridiculous exaggeration, not really
 worthy of argument. Also, let’s look at a comparison: Lynching was a
@@ -9773,7 +9789,7 @@ irreversible? You can point to any number of two-term presidents in
 recent memory and find a moment in time where, if the election were held
 on a given day, the president would badly lose re-election. I wasn’t
 around for Reagan’s presidency, but didn’t things look pretty terrible
-for him in early 1983? A Harris poll taken in early January of ’83 had
+for him in early 1983? A Harris poll taken in early January of ‘83 had
 Mondale trouncing Reagan. FiveThirtyEight has Reagan hitting the mid-30s
 around that time, quite a bit lower than where Biden is now. Before
 that, by mid-1982, he was where Biden is now, polling-wise. You could
@@ -9878,7 +9894,7 @@ the rest of those domestic political issues we consider settled. A few
 months ago, for example, the Texas solicitor general submitted an amicus
 brief suggesting that the Court leave Lawrence and Obergefell “ hanging
 by a thread ,” adding that those two rulings , “while far less hazardous
-to human life, are as lawless as Roe.” Furthermore, the pro-life
+to human life, are as lawless as Roe. ” Furthermore, the pro-life
 movement openly espouses that certain forms of popular contraception
 (namely the birth control pill and IUDs) constitute abortifacients and
 should be banned . When the Court overturns Roe , red-state legislatures
@@ -10037,7 +10053,7 @@ their case on hostility to premarital sex. But they are very much
 outside of the mainstream. If Roe falls, I predict that the political
 fallout will be bad for anti-abortion politicians. They are better off
 seen as unsuccessfully flailing against the courts than seen as taking
-us back to the infanticide of “Ode to Billie Joe.” Another reader
+us back to the infanticide of “Ode to Billie Joe. ” Another reader
 challenges the “choice” rhetoric of those supporting abortion: One
 aspect of the “pro-life” vs “pro-choice” debate I never really see
 considered is what “choice” exactly are we talking about as being
@@ -13225,7 +13241,7 @@ mentioned on the main Dish, because the main column was so long this
 week, packed with so many links, we ran out of space on that page —
 otherwise the emailed version of the Dish would be cut short in readers’
 in-trays. So our weekly recommended reading “In the Stacks” and the next
-window contest is seen below. In The ’Stacks * Is Putin, in fact,
+window contest is seen below. In The ‘Stacks * Is Putin, in fact,
 winning ? Biden’s mouth has become a minefield . * For Dems in the New
 York Assembly, it’s pay equity for thee and not for me, and it’s
 probably a broader trend. * When it comes to “the race game,” Michael DC
@@ -14245,7 +14261,7 @@ America will increase if a ban on abortion takes place. Most of the
 states which want to ban abortion also have small child-welfare programs
 . That will result in more children being born into poor economic
 circumstances. Another thing that will probably happen is an increase in
-crime. The crime rate in the US has been falling since the early ’90s,
+crime. The crime rate in the US has been falling since the early ‘90s,
 when kids born after Roe first started reaching adulthood. There is a
 clear link between kids being neglected and unwanted and then turning to
 crime. This was documented in the book Freakonomics. I believe the
@@ -14276,10 +14292,10 @@ Fire Island in the summer of 1980. “Well, if I were a dyke and a pair of
 Podhoretzes came waddling toward me on the beach, copies of Leviticus
 and Freud in hand, I’d get in touch with the nearest Alsatian dealer
 pronto,” - Gore Vidal , responding to Midge. I had known about Decter’s
-“The Boys on the Beach” essay for decades, maybe since the late ’80s,
+“The Boys on the Beach” essay for decades, maybe since the late ‘80s,
 but I had never read it — until a few months ago. I am 66 years old, was
 practically always out, loved to read all the gay literature, and I have
-to say, that essay got the pulse of ’70s gay life and society better
+to say, that essay got the pulse of ‘70s gay life and society better
 than Edmund White (his “States of Desire” was published in 1980 and I
 still have my copy) or any other commentator I know of, with the
 exception of Randy Shilts’s “And the Band Played On.” Decter had gay
@@ -14971,7 +14987,7 @@ themselves in a world of confusion, brought on by adults, not their
 playmates. Speaking of confused kids, another listener: I’ve heard you
 express frustration and/or disbelief at the rate of depression among gay
 youth today, despite how much easier things are for them compared to the
-’70s and ’80s. I just wanted to point out that many young people seem to
+‘70s and ‘80s. I just wanted to point out that many young people seem to
 believe that gay means same-gender attraction, not same-sex. This seems
 to be part of the Queer umbrella where heterosexual people can identify
 as another gender and so claim a gay identity. This makes no sense to me
@@ -16482,7 +16498,7 @@ for yourself, here’s a clip of that heated exchange: From a listener in
 San Francisco: I had never heard of Peter Staley before (I’m a
 49-year-old gay man in SF). ACT-UP and Queer Nation had already fallen
 apart when I landed there in 1993 as a young punk rock guy. So I was
-interested in hearing his retelling of that period in the late ’80s. But
+interested in hearing his retelling of that period in the late ‘80s. But
 then the convo moved to gay activism today — and wow. I thought, “Well
 this is it. This is the denial that so many gay men have about the
 gender ideology cult.” They are f*****g terrified of speaking out
@@ -16983,7 +16999,7 @@ analogously indict you on the same topic — not for anything you’ve
 specifically said or written, but that, say, “I heard Andrew Sullivan
 did a friendly podcast with Ann Coulter where he largely agreed with her
 about our current immigration issues… In a recent article she wrote
-‘(insert egregiously inflammatory sentence stripped of any context)’…
+‘(insert egregiously inflammatory sentence stripped of any context) ’…
 Coulter also endorsed articles that were published on the website of an
 SPLC-certified hate group… Ergo Andrew Sullivan endorses white
 nationalism.” On his blog , Rod clearly and repeatedly says he disagrees
@@ -18015,7 +18031,7 @@ YouTube page . Other topics: Bob’s working-class upbringing; his global
 travel as a young reporter; his complex views of humanity after visiting
 Soviet Europe and the Balkans; Reagan’s talent and good fortune; H.W.’s
 record of averting disaster; the optimism and hubris of the US after the
-Cold War; the series of US victories in the ’90s — ending in Iraq and
+Cold War; the series of US victories in the ‘90s — ending in Iraq and
 Afghanistan; the evil of Saddam; Obama’s love of Niebuhr and his
 overcompensation on Russia and China; Biden’s deft balancing act in
 Ukraine; how the Afghan exit actually benefitted the US against Russia;
@@ -19826,7 +19842,7 @@ Bayard Rustin; war hero Leonard Matlovich; how DADT drummed out more
 gays from the military than ever before; Clinton’s betrayal with DOMA;
 the peerless legal work of Evan Wolfson and reaching across the
 ideological aisle; how quickly the public shifted on marriage; the Log
-Cabin Republicans in the early ’00s; Dubya’s marriage amendment; his
+Cabin Republicans in the early ‘00s; Dubya’s marriage amendment; his
 striking down of the HIV travel ban; PEPFAR; Ken Mehlman; Tim Gill;
 Kennedy’s opinion in Obergefell ; Gorsuch’s opinion in Bostock ;
 Buttigeig’s historic run; the RNC’s outreach to gays in 2019; Jamie
@@ -19989,7 +20005,7 @@ magazines, and the birth of the great and powerful performance artist
 Dina Martina — pop over to our YouTube page . Other topics: his
 upbringing on Long Island; fantasizing about NYC through the
 cosmopolitanism of magazines; being a “magazine junky extremely early”;
-the literary journalism of the ’60s; Gay Talese; Joan Didion; Tom Wolfe;
+the literary journalism of the ‘60s; Gay Talese; Joan Didion; Tom Wolfe;
 Adam’s early start at The Village Voice ; 18-hour workdays; joining
 Rolling Stone then Esquire ; commissioning Frank Rich’s groundbreaking
 piece on gay culture; the visual strength of mags; 7 Days “doomed from
@@ -20935,7 +20951,7 @@ Anderson losing his brother to suicide, how he coped by seeking out
 warzones, and coming out of the closet on the Dish — head over to our
 YouTube page . Other topics: the two of us meeting at the downtown DC
 YMCA three decades ago; Anderson reading passages from my 1990 piece
-“Gay Life, Gay Death”‘; my best friend Patrick who died of AIDS; my HIV
+“Gay Life, Gay Death”’; my best friend Patrick who died of AIDS; my HIV
 diagnosis in 1993 that derailed my Green Card; my constant fear of
 deportation; the medieval tortures of AIDS; my photographer friend going
 blind; the program that paired gay men with patients; the men outed to
@@ -20988,7 +21004,7 @@ role of TNR and the Dish for a young Reihan; the role of reader dissent
 in blogging; epistemic humility; Burke; Oakeshott; how outsiders often
 observe subcultures more accurately; the self-confidence of
 assimilation; Arthur Schlesinger’s The Disuniting of America ;
-meritocracy; the PC movement of the early ’90s; marriage equality; gay
+meritocracy; the PC movement of the early ‘90s; marriage equality; gay
 assimilation; victimhood culture and its self-harm; the love of one’s
 homeland; Orwell; Thatcher’s mature view of trade-offs and “vigorous
 virtues”; Bill Clinton; Obama’s view of red states and blue states; the
@@ -21038,7 +21054,7 @@ support gay rights; his bond with Bayard Rustin; staying vigilant on
 voting rights in the 1990s; their evolving nature in the 21st Century;
 his campaign for the African-American History Museum; skepticism toward
 the Congressional Black Caucus; the flawed documentary Good Trouble ;
-AOC and Ayanna Pressley; Lewis the Big Tent Democrat; switching his ’08
+AOC and Ayanna Pressley; Lewis the Big Tent Democrat; switching his ‘08
 support from Hillary to Barack; his viral moments of dancing and
 crowd-surfing; and keeping his integrity over a long career in politics.
 Browse the Dishcast archive for an episode you might enjoy (the first
@@ -21103,7 +21119,7 @@ to our YouTube page . Other topics: how Aaron’s career was influenced by
 the Ottoman Empire; the Arab Congress; Syria’s independence from France
 after WWII; the subsequent coups; the Sunni majority in Syria; the rise
 of the Alawites; the Druze and Christians; the Kurds; the optimism in
-the ’60s/’70s for Arab liberalization; pan Arabism and Nasser; the
+the ‘60s/‘70s for Arab liberalization; pan Arabism and Nasser; the
 Muslim Brotherhood; Hafez al-Assad coming to power in 1971; his son
 Bashar educated in the UK; how a former Nazi for real helped shape the
 regime; al-Qaeda and bin Laden; the Islamic State; “Baby It’s Cold
@@ -21559,7 +21575,7 @@ monarchy; Trump’s tax cuts; impending inflation; “Blame Canada”; Rubio
 and the Khalil case; my own green card; Vance in Germany; vilifying
 Zelensky; the brilliance of Thatcher; Ross Perot’s run; the Clinton/Gore
 downsizing; Newsom’s tack to the center; the promise of Polis and
-Fetterman; and stories from TNR in the ’90s. Browse the Dishcast archive
+Fetterman; and stories from TNR in the ‘90s. Browse the Dishcast archive
 for an episode you might enjoy (the first 102 are free in their entirety
 —</p>
 <h3 id="thedishcast-mike-white-on-transcending-identity"><a
@@ -22084,7 +22100,7 @@ all in on the war against Iran and always had been. I apologize for that
 — and for getting a bit too amped up. I should try not to do that when
 I’m a host and I hope Batya will forgive me. But a vast amount of the
 chat was nonetheless delightful — and this is a stressful time. Coming
-up on the Dishcast: Paul Elie on crypto-religion in ’80s pop culture,
+up on the Dishcast: Paul Elie on crypto-religion in ‘80s pop culture,
 Walter Isaacson on Ben Franklin, Tara Zahra on the revolt against
 globalization after WWI, Thomas Mallon on the AIDS crisis, and Johann
 Hari turning the tables to interview me. (NS Lyons has indefinitely
@@ -22370,9 +22386,9 @@ upcoming book is about the tunnels below Las Vegas. Four years ago we
 aired a 2012 interview that Johann did with me — in two parts, here and
 here . In this new episode we cover: my first time doing shrooms — in
 Amsterdam with Matt and Trey; the perversion of many Germans; my first
-MDMA trip in the early ’90s; fleeing rave parties to contemplate God; a
+MDMA trip in the early ‘90s; fleeing rave parties to contemplate God; a
 disastrous trip I experienced when Johann was present — which he calls
-“a dystopian version of Fawlty Towers”; ego death; Michael Pollan’s How
+“a dystopian version of Fawlty Towers ”; ego death; Michael Pollan’s How
 to Change Your Mind ; Roland Griffiths; Johann’s psychedelic theory
 about A Passage to India ; how religious peeps integrate bad trips
 better than non-believers; how early HIV drugs affected a psychedelic
@@ -22493,7 +22509,7 @@ Joe Klein (“ Night Owls ”) and the other with Richard Haas (“ Alternate
 Shots ”). For two clips of our convo — on the nail-biting Bush-Gore race
 that John was involved in, and Trump’s mental decline — head to our
 YouTube page . Other topics: born and raised in Concord; his political
-awakening at 15 watching the whole ‘68 Dem convention with a fever in
+awakening at 15 watching the whole ’68 Dem convention with a fever in
 bed; his fascination with Nixon; the Southern Strategy; Garry Wills’
 book Nixon Agonistes ; Kevin Phillips and populism; Nixon parallels with
 Trump — except shame; Roger Ailes starting Fox News; Matt Drudge; John’s
@@ -22724,7 +22740,7 @@ movie. For two clips of our convo — on the extrajudicial killings in the
 Caribbean, and calling out the Biden coverup — head to our YouTube page
 . Other topics: his dad a WWII vet who became Secretary of the Navy;
 leaving Harvard to live in Haight Ashbury; covering steel workers for
-the WSJ; covering the Mideast in the early ’80s; witnessing the bombing
+the WSJ; covering the Mideast in the early ‘80s; witnessing the bombing
 in Beirut; espionage; his first novel turned down by every US publisher;
 Graham Greene a mentor as writer; his long friendship with Tom Friedman;
 the US as a unipolar power; the Clinton decade of coasting; the trauma
@@ -22962,7 +22978,7 @@ leading to anarchy in Iraq, and whether Trump’s amorality is stabilizing
 the Middle East — head to our YouTube page . Other topics: Shadi raised
 with a mixed identity (American/Muslim/Arab); both parents from Egypt
 where he spent summers; the reinvention of immigrants; the peace and
-prosperity of the ’90s; our innocence shattered on 9/11; external and
+prosperity of the ‘90s; our innocence shattered on 9/11; external and
 internal jihad; religion in public life; the Koran; blasphemy laws in
 the UK; Charles Taylor and the loss of enchantment; political cults like
 MAGA and SJW; Deneen and other post-liberals; Obama’s realism in the
@@ -23201,7 +23217,7 @@ page . Other topics: growing up in Lubbock with working-class, adoptive
 parents; playing football for the worst 5A team in Texas and joking with
 Dubya about it; starting journalism as a teenager; Bill Buckley a big
 influence; working for newspapers in India; how neoliberalism lifted
-untold millions out of poverty; the prosperity of the ’90s; Karl Rove
+untold millions out of poverty; the prosperity of the ‘90s; Karl Rove
 and “deficits don’t matter”; quitting the GOP over Arlen Specter;
 joining NR in 2008; TARP and bailouts; covering the Tea Party rallies;
 the Constitution checking human nature; Pat Buchanan; Ross Perot; Rick
@@ -23479,7 +23495,7 @@ half-jokingly, I often say 1994 in DC. Something about, for example,
 Christopher Hitchens on CSPAN in a dreary suit jacket discussing such
 <em>trivial</em> aspects of politics in a serious way. How perfect! When
 I listened to your episode with Zaid Jilani about how the left can win,
-it seemed dated to about this period in the early ’90s. Ah yes, the
+it seemed dated to about this period in the early ‘90s. Ah yes, the
 Nineties. They were heady times and I think we all kinda realized it at
 the time. The economy was booming, crime was plummeting, Annie Leibovitz
 took my picture , and we had the luxury of an impeachment over a
@@ -24309,7 +24325,7 @@ sanctimony”; lessons from Othello; surrender vs submission; Esther
 Perel’s Mating in Captivity ; seeking traits in a partner that mirror a
 dysfunctional parent; how sex is different for men and women; gay
 promiscuity; male-male marriages lasting the longest; HIV and the threat
-of deportation; dating with HIV in the ’90s; and how to be a better
+of deportation; dating with HIV in the ‘90s; and how to be a better
 listener. Browse the Dishcast archive for an episode you might enjoy.
 Coming up: David Thomson on cinema in US history and culture, John
 O’Sullivan on conservatism, Robby George on natural law, and Megan
@@ -24445,12 +24461,12 @@ whether the DSA is truly dangerous, and the US elites’ obsession with
 Israel — head to our YouTube page . Other topics: growing up Jewish in
 diverse Bay Ridge, BK; parents both federal workers; his dad working at
 the WTC on 9/11; Ross’ cynicism over Obama’s rise; coming of age in the
-Great Recession; the DNC screwing over Bernie in ’16; Ross running for
+Great Recession; the DNC screwing over Bernie in ‘16; Ross running for
 the state senate with Mamdani as his manager; identifying as
 “left-populist, woke-skeptical”; engaging and persuading ideological
 rivals; universal health care; questioning Covid policies; US aid to
 Israel; the horrors of Oct 7; the war in Gaza and the civilian toll; no
-pro-Palestine speakers at the ’24 Dem convention; the decentralized DSA;
+pro-Palestine speakers at the ‘24 Dem convention; the decentralized DSA;
 calls to abolish prisons and the Senate; Jon Chait; AOC’s move to the
 center; border security; Trump’s norm-busting; Buckley and the Birchers;
 trans athletes; the + in LGBTQ+; corporations ditching DEI; the Arday
@@ -24481,7 +24497,7 @@ falling birth rates and immigration, and comparing Thatcher and Reagan —
 head to our YouTube page . Other topics: growing up Catholic in
 Liverpool; his working-class parents; his dad on a hospital ship for
 D-Day; stories of John working closely with Thatcher; both of us British
-editors of US magazines in the early ’90s; covering The Bell Curve ; the
+editors of US magazines in the early ‘90s; covering The Bell Curve ; the
 Cold War and defeating the Soviets; muscular liberalism; Tony Blair and
 his tensions with Bush; what it means to be a conservative liberal;
 cosmopolitanism; the meaning of Englishness; oikophobia;

@@ -2,14 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Jamal Mazrui" />
   <title>The Glenn Show Directory</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -34,12 +40,16 @@
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -52,13 +62,14 @@
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -81,8 +92,11 @@
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     div.abstract {
       margin: 2em 2em 2em 2em;
@@ -96,6 +110,7 @@
       margin-bottom: 0.5em;
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -115,8 +130,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -133,11 +148,11 @@
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -159,10 +174,13 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -173,12 +191,10 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">The Glenn Show Directory</h1>
 <p class="subtitle">A Screen-Reader-Friendly Guide to Glenn Loury’s
 Podcast</p>
 <p class="author">Jamal Mazrui</p>
@@ -2410,7 +2426,7 @@ distinguished historian Thomas Sugrue . This leads us to discuss the
 problems of authority and perception that attend writing from the
 Olympian heights of the paper of record. From there, I give a progress
 report on my memoir , delving into my life, my break from conservatism
-in the ’90s, and the difficulty of living in good faith. The temptation
+in the ‘90s, and the difficulty of living in good faith. The temptation
 to “play to the crowd,” to seek affirmation by repeating the common
 sense of your tribe, is very powerful, and it can work on you in subtle
 ways. Heterodox thinkers like John and I have to check ourselves
@@ -2971,7 +2987,7 @@ it without you. So from the bottom of my heart, thank you! I’m sure I
 left out things that regular viewers think were worthy of inclusion.
 What were some of the segments that resonated with you over the last
 year? What caused you to think, changed your mind, or made you laugh?
-Post ’em in the comments! This post is free and available to the public.
+Post ‘em in the comments! This post is free and available to the public.
 To receive early access to TGS episodes, an ad-free podcast feed,
 Q&amp;As, and other exclusive content and benefits, click below. 0:00 A
 special “thank you” from Glenn 6:23 Race and classics (June 18) 18:20
@@ -2995,7 +3011,7 @@ page</a></p>
 <p><strong>Duration:</strong> 1:08:45</p>
 <p><strong>Summary:</strong> This week I’m honored to have the
 distinguished Robert Woodson on the show. Since joining the civil rights
-movement as an activist and organizer in the ’60s, Bob has dedicated
+movement as an activist and organizer in the ‘60s, Bob has dedicated
 himself to finding solutions to the problems of poverty and dysfunction
 in America. Through the Woodson Center, Bob helps fund and advise
 programs that are on the ground and working to solve some of the
@@ -3053,7 +3069,7 @@ John puts forward the fascinating theory that Poitier’s Caribbean
 origins and mannerisms made him acceptable to white American audiences
 who were unaccustomed to seeing black men in dramatic leading roles. We
 also recently lost the legal scholar Lani Guinier , who was involved in
-a political controversy in the ’90s when Bill Clinton nominated her for
+a political controversy in the ‘90s when Bill Clinton nominated her for
 Assistant Attorney General for Civil Rights and then pulled the
 nomination after receiving political pressure from the right. Though
 Lani and I were on different ends of the political spectrum, she was an
@@ -3384,7 +3400,7 @@ title was Changing My Mind , an allusion both to my intellectual
 development and to my shifting political orientations. In the course of
 thinking through my past, I’ve wondered how much the new, more
 conservative Glenn would have to say to the more liberal Glenn of the
-’90s and ’00s. So I decided to stage a little “debate” between us. Mark
+‘90s and ‘00s. So I decided to stage a little “debate” between us. Mark
 Sussman, my editor here at the newsletter, went through a lecture I
 delivered at Baruch College in 2000 where I laid out the argument that
 would become The Anatomy of Racial Inequality . He picked a few clips
@@ -4984,7 +5000,7 @@ Justice Department investigation in Ferguson? Links and Readings John
 Kenneth Galbraith’s book, The Great Crash 1929 Rajiv’s Substack,
 Imperfect Information Rajiv’s post about The Anatomy of Racial
 Inequality Sendhil Mullainathan’s NYT piece, “Police Killings of Blacks:
-Here Is What the Data Say” Rajiv’s post about Mullainathan’s claims
+Here Is What the Data Say ” Rajiv’s post about Mullainathan’s claims
 Rajiv and Brendan O’Flaherty’s book, Shadows of Doubt: Stereotypes,
 Crime, and the Pursuit of Justice Rajiv’s conversation about guns with
 Bari Weiss and David French Glenn and Hanming Fang’s paper,
@@ -5867,7 +5883,7 @@ page</a></p>
 <p><strong>Duration:</strong> 1:23:29</p>
 <p><strong>Summary:</strong> My guest this week, filmmaker Rob Montz, is
 an unlikely figure: a libertarian-leaning Brown University graduate who
-loves ’90s rap and produces politically inflected documentaries that
+loves ‘90s rap and produces politically inflected documentaries that
 push back against the orthodoxies of the mainstream media. Rob has
 featured me in several of his works, and so I thought it was time to
 return the favor and have him on TGS. I begin by asking Rob how someone
@@ -5899,7 +5915,7 @@ Kyle Rittenhouse 36:29 The response to Rob’s Roland Fryer doc 41:41 Why
 Rob and Glenn aren’t seeking the mainstream spotlight 47:20 Is there a
 “next Glenn Loury”? 55:10 Glenn’s course on race and policing be
 required? 1:02:19 Rob’s position on Trump 1:09:11 DeSantis vs. Trump
-1:15:22 Rob’s love of ’90s rap Links and Readings Good Kid Productions
+1:15:22 Rob’s love of ‘90s rap Links and Readings Good Kid Productions
 on YouTube Rob’s interview with Roy Beck Ray Kelly getting heckled at
 Brown in 2013 Rob’s interview with Jay Bhattacharya Rob’s mini-doc about
 Roland Fryer Roland Fryer’s education company, Reconstruction Roland
@@ -6381,7 +6397,7 @@ like me can barely understand—he’s a deep, deep guy. He’s also got some
 thoughts on race and diversity in the sciences that give us an
 opportunity for some friendly debate. Jim begins by introducing
 supersymmetry , a subfield in physics he helped to define back in the
-’70s. It’s extremely complex stuff, but he breaks it down. We spend the
+‘70s. It’s extremely complex stuff, but he breaks it down. We spend the
 bulk of our time, though, talking about race in the sciences . Jim
 stresses the value that diversity plays in an under-recognized aspect of
 scientific innovation : imagination. In Jim’s view, while tests are
@@ -7861,12 +7877,12 @@ impartiality? 1:03:30 Closing remarks Recorded January 17, 2024 Links
 and Readings Glenn’s City Journal essay, “Clarence Thomas and Me”
 Glenn’s book, One by One from the Inside Out : Essays and Reviews on
 Race and Responsibility in America Michael McConnell’s article, “The
-Originalist Case for Brown v. Board of Education” Randy Barnett and Evan
-Bernick’s book, The Original Meaning of the Fourteenth Amendment: Its
-Letter and Spirit Lon Fuller’s book, The Morality of Law The documentary
-on Clarence Thomas, Created Equal This is a public episode. If you’d
-like to discuss this with other subscribers or get access to bonus
-episodes, visit glennloury.substack.com/subscribe</p>
+Originalist Case for Brown v. Board of Education ” Randy Barnett and
+Evan Bernick’s book, The Original Meaning of the Fourteenth Amendment:
+Its Letter and Spirit Lon Fuller’s book, The Morality of Law The
+documentary on Clarence Thomas, Created Equal This is a public episode.
+If you’d like to discuss this with other subscribers or get access to
+bonus episodes, visit glennloury.substack.com/subscribe</p>
 <h3 id="theglennshow-david-kaiser-states-of-the-union"><a
 href="https://api.substack.com/feed/podcast/140876610/577ed003193915e9b375f1f3d695d74f.mp3">David
 Kaiser – States of the Union</a></h3>
@@ -8173,8 +8189,8 @@ America, 1960-2010 Thorstein Veblen’s book, The Theory of the Leisure
 Class Pierre Bourdieu’s book, Distinction: A Social Critique of the
 Judgment of Taste Michael Knox Beran’s book, Wasps: The Splendors and
 Miseries of an American Aristocracy Rob’s NYT op-ed, “Why Being a Foster
-Child Made Me a Conservative” This is a public episode. If you’d like to
-discuss this with other subscribers or get access to bonus episodes,
+Child Made Me a Conservative ” This is a public episode. If you’d like
+to discuss this with other subscribers or get access to bonus episodes,
 visit glennloury.substack.com/subscribe</p>
 <h3
 id="theglennshow-matthew-martens-a-christian-case-for-criminal-justice-reform"><a
@@ -9893,7 +9909,7 @@ from the Brink: Inside the NYPD and New York City’s Extraordinary 1990s
 Crime Drop 5:27 Why policing went off the rails over the last decade
 11:03 Peter: I’m done with police abolitionists 19:22 Why don’t we hear
 about unarmed black men getting shot anymore? 22:00 Remembering the
-lessons of ’90s New York 28:07 Dealing with the racial disparity problem
+lessons of ‘90s New York 28:07 Dealing with the racial disparity problem
 35:46 Is there a suicide problem among cops? 39:31 The Ferguson Effect
 43:12 The utility of pretextual stops 48:29 The pride felt by the 1990s
 NYPD 50:30 What cops think of Darren Wilson and Derek Chauvin Recorded
@@ -11481,7 +11497,7 @@ Clifton’s previous conversation on The Glenn Show Clifton’s Substack,
 Becoming Thomas Sowell Thomas Sowell’s book, A Conflict of Visions:
 Ideological Origins of Political Struggles Sowell’s book, Knowledge and
 Decisions Thurgood on Amazon Prime Sowell’s book, Black Education: Myths
-and Tragedies Donald Downs’s book, Cornell ’69: Liberalism and the
+and Tragedies Donald Downs’s book, Cornell ‘69: Liberalism and the
 Crisis of the American University Sowell’s book, On Classical Economics
 Mark Whitaker’s book, Saying It Loud: 1966—the Year Black Power
 Challenged the Civil Rights Movement Sowell’s book, Civil Rights:
@@ -12550,8 +12566,8 @@ Bethlehem 28:34 Chloé critique of Ta-Nehisi Coates’s analysis of
 Israel-Palestine 31:56 Does race have a future? Recorded February 13,
 2026 Links and Readings Theory of Enchantment Chloé’s Substack post,
 “The First CRT President” Derrick Bell’s essay, “The Unintended Lessons
-in Brown v. Board of Education” Derrick Bell’s book, Faces at the Bottom
-of the Well: The Permanence of Racism Chloé’s Substack post, “The
+in Brown v. Board of Education ” Derrick Bell’s book, Faces at the
+Bottom of the Well: The Permanence of Racism Chloé’s Substack post, “The
 G-Word” James Baldwin’s book, The Fire Next Time Ta-Nehisi Coates’s
 book, The Message Coleman Hughes’s book, The End of Race Politics:
 Arguments for a Colorblind America Thomas Chatterton Williams’s book,
@@ -13246,7 +13262,7 @@ asks what Glenn and John think of Steven A. Smith’s political commentary
 . Russell Harvey wants to know what the role of debate is in our society
 , and whether a debate has ever changed Glenn’s or John’s mind on any
 substantial issues. Stan asks why college-educated white women support
-“wokeness” at such high rates. Jason asks whether Glenn and John ever
+“wokeness ” at such high rates. Jason asks whether Glenn and John ever
 had intellectual discussions with AI tools . Michael asks John for his
 opinion of Zohran Mamdani’s first six months as New York City mayor.
 Robert Redd asks how much damage Trump has done to conservatives’ image

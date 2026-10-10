@@ -1,0 +1,702 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.12.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>The Six Shooter</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
+      background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        color-scheme: light only;
+      }
+      html, body, pre, code {
+        background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
+        color: black;
+      }
+      pre, code {
+        padding: 0;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a, a:visited {
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
+      color: #606060;
+      color: light-dark(#606060, #b6b6b6);
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid currentColor;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+    th {
+      border-top: 1px solid currentColor;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#the-six-shooter" id="toc-the-six-shooter">The Six
+Shooter</a>
+<ul>
+<li><a href="#contents" id="toc-contents">Contents</a></li>
+<li><a href="#y1953" id="toc-y1953">1953</a></li>
+<li><a href="#y1954" id="toc-y1954">1954</a></li>
+<li><a href="#yUndated" id="toc-yUndated">Undated</a></li>
+<li><a href="#byDate" id="toc-byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle" id="toc-byTitle">Appendix B: By Title</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="the-six-shooter">The Six Shooter</h1>
+<p>James Stewart plays a quiet drifter in the Old West.</p>
+<ul>
+<li>Episodes: 45</li>
+<li>Network: NBC</li>
+<li>Source: <a
+href="https://archive.org/details/OTRR_The_Six_Shooter_Singles">Internet
+Archive: OTRR_The_Six_Shooter_Singles</a></li>
+<li>Years: 1953 to 1954</li>
+</ul>
+<p>Each episode title is a link that plays its audio. These broadcasts
+can reflect the attitudes of their time. This page is part of <a
+href="OldTimeRadioDramas.htm">Old Time Radio Dramas</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#y1953">1953</a></li>
+<li><a href="#y1954">1954</a></li>
+<li><a href="#yUndated">Undated</a></li>
+<li><a href="#byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle">Appendix B: By Title</a></li>
+</ul>
+<h2 id="y1953">1953</h2>
+<h3 id="e0001"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-07-15%20Ep%2000%20Audition%20Show.mp3">Ep
+00 Audition Show</a></h3>
+<ul>
+<li>Date: July 15, 1953</li>
+<li>Duration: 23:28</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0002"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-09-20%20Ep%2001%20Jenny.mp3">Ep
+01 Jenny</a></h3>
+<ul>
+<li>Date: September 20, 1953</li>
+<li>Duration: 28:24</li>
+<li>Episode: 2</li>
+</ul>
+<h3 id="e0003"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-09-27%20Ep%2002%20The%20Coward.mp3">Ep
+02 The Coward</a></h3>
+<ul>
+<li>Date: September 27, 1953</li>
+<li>Duration: 29:31</li>
+<li>Episode: 3</li>
+</ul>
+<h3 id="e0004"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-10-04%20Ep%2003%20The%20Stampede.mp3">Ep
+03 The Stampede</a></h3>
+<ul>
+<li>Date: October 4, 1953</li>
+<li>Duration: 28:28</li>
+<li>Episode: 4</li>
+</ul>
+<h3 id="e0005"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-10-11%20Ep%2004%20Silver%20Annie.mp3">Ep
+04 Silver Annie</a></h3>
+<ul>
+<li>Date: October 11, 1953</li>
+<li>Duration: 28:38</li>
+<li>Episode: 5</li>
+</ul>
+<h3 id="e0006"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-10-18%20Ep%2005%20Rink%20Larkin.mp3">Ep
+05 Rink Larkin</a></h3>
+<ul>
+<li>Date: October 18, 1953</li>
+<li>Duration: 28:53</li>
+<li>Episode: 6</li>
+</ul>
+<h3 id="e0007"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-10-25%20Ep%2006%20Red%20Lawson%27s%20Revenge.mp3">Ep
+06 Red Lawson’s Revenge</a></h3>
+<ul>
+<li>Date: October 25, 1953</li>
+<li>Duration: 28:43</li>
+<li>Episode: 7</li>
+</ul>
+<h3 id="e0008"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-11-01%20Ep%2007%20Ben%20Scofield.mp3">Ep
+07 Ben Scofield</a></h3>
+<ul>
+<li>Date: November 1, 1953</li>
+<li>Duration: 29:31</li>
+<li>Episode: 8</li>
+</ul>
+<h3 id="e0009"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-11-08%20Ep%2008%20The%20Capture%20Of%20Stacy%20Gault.mp3">Ep
+08 The Capture Of Stacy Gault</a></h3>
+<ul>
+<li>Date: November 8, 1953</li>
+<li>Duration: 28:43</li>
+<li>Episode: 9</li>
+</ul>
+<h3 id="e0010"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-11-15%20Ep%2009%20Escape%20From%20Smoke%20Falls.mp3">Ep
+09 Escape From Smoke Falls</a></h3>
+<ul>
+<li>Date: November 15, 1953</li>
+<li>Duration: 29:00</li>
+<li>Episode: 10</li>
+</ul>
+<h3 id="e0011"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-11-22%20Ep%2010%20Gabriel%20Starbuck.mp3">Ep
+10 Gabriel Starbuck</a></h3>
+<ul>
+<li>Date: November 22, 1953</li>
+<li>Duration: 29:19</li>
+<li>Episode: 11</li>
+</ul>
+<h3 id="e0012"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-11-29%20Ep%2011%20Sheriff%20Billy.mp3">Ep
+11 Sheriff Billy</a></h3>
+<ul>
+<li>Date: November 29, 1953</li>
+<li>Duration: 28:49</li>
+<li>Episode: 12</li>
+</ul>
+<h3 id="e0013"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-12-06%20Ep%2012%20A%20Pressing%20Engagement.mp3">Ep
+12 A Pressing Engagement</a></h3>
+<ul>
+<li>Date: December 6, 1953</li>
+<li>Duration: 28:06</li>
+<li>Episode: 13</li>
+</ul>
+<h3 id="e0014"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-12-13%20Ep%2013%20More%20Than%20Kin.mp3">Ep
+13 More Than Kin</a></h3>
+<ul>
+<li>Date: December 13, 1953</li>
+<li>Duration: 28:17</li>
+<li>Episode: 14</li>
+</ul>
+<h3 id="e0015"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-12-20%20Ep%2014%20Britt%20Ponsett%27s%20Christmas%20Carol.mp3">Ep
+14 Britt Ponsett’s Christmas Carol</a></h3>
+<ul>
+<li>Date: December 20, 1953</li>
+<li>Duration: 28:58</li>
+<li>Episode: 15</li>
+</ul>
+<h3 id="e0016"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1953-12-27%20Ep%2015%20Cora%20Plummer%20Quincy.mp3">Ep
+15 Cora Plummer Quincy</a></h3>
+<ul>
+<li>Date: December 27, 1953</li>
+<li>Duration: 28:38</li>
+<li>Episode: 16</li>
+</ul>
+<h2 id="y1954">1954</h2>
+<h3 id="e0017"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-01-03%20Ep%2016%20A%20Friend%20In%20Need.mp3">Ep
+16 A Friend In Need</a></h3>
+<ul>
+<li>Date: January 3, 1954</li>
+<li>Duration: 28:21</li>
+<li>Episode: 17</li>
+</ul>
+<h3 id="e0018"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-01-10%20Ep%2017%20Hiram%27s%20Gold%20Strike.mp3">Ep
+17 Hiram’s Gold Strike</a></h3>
+<ul>
+<li>Date: January 10, 1954</li>
+<li>Duration: 29:42</li>
+<li>Episode: 18</li>
+</ul>
+<h3 id="e0019"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-01-17%20Ep%2018%20The%20Silver%20Buckle.mp3">Ep
+18 The Silver Buckle</a></h3>
+<ul>
+<li>Date: January 17, 1954</li>
+<li>Duration: 28:45</li>
+<li>Episode: 19</li>
+</ul>
+<h3 id="e0020"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-01-24%20Ep%2019%20Helen%20Bricker.mp3">Ep
+19 Helen Bricker</a></h3>
+<ul>
+<li>Date: January 24, 1954</li>
+<li>Duration: 28:14</li>
+<li>Episode: 20</li>
+</ul>
+<h3 id="e0021"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-01-31%20Ep%2020%20Trail%20To%20Sunset.mp3">Ep
+20 Trail To Sunset</a></h3>
+<ul>
+<li>Date: January 31, 1954</li>
+<li>Duration: 28:31</li>
+<li>Episode: 21</li>
+</ul>
+<h3 id="e0022"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-02-07%20Ep%2021%20Apron%20Faced%20Sorrel.mp3">Ep
+21 Apron Faced Sorrel</a></h3>
+<ul>
+<li>Date: February 7, 1954</li>
+<li>Duration: 28:32</li>
+<li>Episode: 22</li>
+</ul>
+<h3 id="e0023"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-02-14%20Ep%2022%20Quiet%20City.mp3">Ep
+22 Quiet City</a></h3>
+<ul>
+<li>Date: February 14, 1954</li>
+<li>Duration: 28:35</li>
+<li>Episode: 23</li>
+</ul>
+<h3 id="e0024"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-02-21%20Ep%2023%20Battle%20At%20Tower%20Rock.mp3">Ep
+23 Battle At Tower Rock</a></h3>
+<ul>
+<li>Date: February 21, 1954</li>
+<li>Duration: 26:37</li>
+<li>Episode: 24</li>
+</ul>
+<h3 id="e0025"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-03-07%20Ep%2024%20Cheyenne%20Express.mp3">Ep
+24 Cheyenne Express</a></h3>
+<ul>
+<li>Date: March 7, 1954</li>
+<li>Duration: 28:56</li>
+<li>Episode: 25</li>
+</ul>
+<h3 id="e0026"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-03-14%20Ep%2025%20Thicker%20Than%20Water.mp3">Ep
+25 Thicker Than Water</a></h3>
+<ul>
+<li>Date: March 14, 1954</li>
+<li>Duration: 29:48</li>
+<li>Episode: 26</li>
+</ul>
+<h3 id="e0027"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-03-21%20Ep%2026%20Duel%20At%20Lockwood.mp3">Ep
+26 Duel At Lockwood</a></h3>
+<ul>
+<li>Date: March 21, 1954</li>
+<li>Duration: 29:53</li>
+<li>Episode: 27</li>
+</ul>
+<h3 id="e0028"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-04-01%20Ep%2027%20Aunt%20Emma.mp3">Ep
+27 Aunt Emma</a></h3>
+<ul>
+<li>Date: April 1, 1954</li>
+<li>Duration: 29:18</li>
+<li>Episode: 28</li>
+</ul>
+<h3 id="e0029"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-04-08%20Ep%2028%20General%20Guilford%27s%20Widow.mp3">Ep
+28 General Guilford’s Widow</a></h3>
+<ul>
+<li>Date: April 8, 1954</li>
+<li>Duration: 29:41</li>
+<li>Episode: 29</li>
+</ul>
+<h3 id="e0030"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-04-15%20Ep%2029%20Crisis%20At%20Easter%20Creek.mp3">Ep
+29 Crisis At Easter Creek</a></h3>
+<ul>
+<li>Date: April 15, 1954</li>
+<li>Duration: 29:50</li>
+<li>Episode: 30</li>
+</ul>
+<h3 id="e0031"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-04-22%20Ep%2030%20Johnny%20Springer.mp3">Ep
+30 Johnny Springer</a></h3>
+<ul>
+<li>Date: April 22, 1954</li>
+<li>Duration: 29:48</li>
+<li>Episode: 31</li>
+</ul>
+<h3 id="e0032"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-04-22%20Ep%2030%20Johnny%20Stringer.mp3">Ep
+30 Johnny Stringer</a></h3>
+<ul>
+<li>Date: April 22, 1954</li>
+<li>Duration: 29:48</li>
+<li>Episode: 36</li>
+</ul>
+<h3 id="e0033"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-04-29%20Ep%2031%20Revenge%20At%20Harness%20Creek.mp3">Ep
+31 Revenge At Harness Creek</a></h3>
+<ul>
+<li>Date: April 29, 1954</li>
+<li>Duration: 30:11</li>
+<li>Episode: 32</li>
+</ul>
+<h3 id="e0034"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-05-06%20Ep%2032%20Anna%20Norquist.mp3">Ep
+32 Anna Norquist</a></h3>
+<ul>
+<li>Date: May 6, 1954</li>
+<li>Duration: 29:44</li>
+<li>Episode: 33</li>
+</ul>
+<h3 id="e0035"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-05-13%20Ep%2033%20The%20Double%20Seven.mp3">Ep
+33 The Double Seven</a></h3>
+<ul>
+<li>Date: May 13, 1954</li>
+<li>Duration: 29:57</li>
+<li>Episode: 34</li>
+</ul>
+<h3 id="e0036"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-05-20%20Ep%2034%20The%20Shooting%20Of%20Wyatt%20King.mp3">Ep
+34 The Shooting Of Wyatt King</a></h3>
+<ul>
+<li>Date: May 20, 1954</li>
+<li>Duration: 29:47</li>
+<li>Episode: 35</li>
+</ul>
+<h3 id="e0037"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-05-27%20Ep%2035%20Blood%20Relations.mp3">Ep
+35 Blood Relations</a></h3>
+<ul>
+<li>Date: May 27, 1954</li>
+<li>Duration: 29:32</li>
+<li>Episode: 36</li>
+</ul>
+<h3 id="e0038"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-06-03%20Ep%2036%20Silver%20Threads.mp3">Ep
+36 Silver Threads</a></h3>
+<ul>
+<li>Date: June 3, 1954</li>
+<li>Duration: 29:33</li>
+<li>Episode: 37</li>
+</ul>
+<h3 id="e0039"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-06-10%20Ep%2037%20The%20New%20Sheriff.mp3">Ep
+37 The New Sheriff</a></h3>
+<ul>
+<li>Date: June 10, 1954</li>
+<li>Duration: 28:57</li>
+<li>Episode: 38</li>
+</ul>
+<h3 id="e0040"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-06-17%20Ep%2038%20When%20The%20Shoe%20Doesn%27t%20Fit.mp3">Ep
+38 When The Shoe Doesn’t Fit</a></h3>
+<ul>
+<li>Date: June 17, 1954</li>
+<li>Duration: 28:59</li>
+<li>Episode: 39</li>
+</ul>
+<h3 id="e0041"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/1954-06-24%20Ep%2039%20Myra%20Barker.mp3">Ep
+39 Myra Barker</a></h3>
+<ul>
+<li>Date: June 24, 1954</li>
+<li>Duration: 28:57</li>
+<li>Episode: 40</li>
+</ul>
+<h2 id="yUndated">Undated</h2>
+<h3 id="e0042"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/00%20OTRR%20Introduction.mp3">Old
+Time Radio Researchers Introduction</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 3:02</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0043"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/01%20The%20Six%20Shooter%20Intro.mp3">01
+The Six Shooter Intro</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 2:08</li>
+<li>Episode: 2</li>
+</ul>
+<h3 id="e0044"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/02%20Jimmy%20Stewart%20Biography.mp3">02
+Jimmy Stewart Biography</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 4:37</li>
+<li>Episode: 3</li>
+</ul>
+<h3 id="e0045"><a
+href="https://archive.org/download/OTRR_The_Six_Shooter_Singles/03%20The%20Six%20Shooter%20on%20Hollywood%20Star%20Playhouse.mp3">03
+The Six Shooter on Hollywood Star Playhouse</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 2:07</li>
+<li>Episode: 4</li>
+</ul>
+<h2 id="byDate">Appendix A: By Date</h2>
+<ul>
+<li><a href="#e0001">1953-07-15: Ep 00 Audition Show</a></li>
+<li><a href="#e0002">1953-09-20: Ep 01 Jenny</a></li>
+<li><a href="#e0003">1953-09-27: Ep 02 The Coward</a></li>
+<li><a href="#e0004">1953-10-04: Ep 03 The Stampede</a></li>
+<li><a href="#e0005">1953-10-11: Ep 04 Silver Annie</a></li>
+<li><a href="#e0006">1953-10-18: Ep 05 Rink Larkin</a></li>
+<li><a href="#e0007">1953-10-25: Ep 06 Red Lawson’s Revenge</a></li>
+<li><a href="#e0008">1953-11-01: Ep 07 Ben Scofield</a></li>
+<li><a href="#e0009">1953-11-08: Ep 08 The Capture Of Stacy
+Gault</a></li>
+<li><a href="#e0010">1953-11-15: Ep 09 Escape From Smoke Falls</a></li>
+<li><a href="#e0011">1953-11-22: Ep 10 Gabriel Starbuck</a></li>
+<li><a href="#e0012">1953-11-29: Ep 11 Sheriff Billy</a></li>
+<li><a href="#e0013">1953-12-06: Ep 12 A Pressing Engagement</a></li>
+<li><a href="#e0014">1953-12-13: Ep 13 More Than Kin</a></li>
+<li><a href="#e0015">1953-12-20: Ep 14 Britt Ponsett’s Christmas
+Carol</a></li>
+<li><a href="#e0016">1953-12-27: Ep 15 Cora Plummer Quincy</a></li>
+<li><a href="#e0017">1954-01-03: Ep 16 A Friend In Need</a></li>
+<li><a href="#e0018">1954-01-10: Ep 17 Hiram’s Gold Strike</a></li>
+<li><a href="#e0019">1954-01-17: Ep 18 The Silver Buckle</a></li>
+<li><a href="#e0020">1954-01-24: Ep 19 Helen Bricker</a></li>
+<li><a href="#e0021">1954-01-31: Ep 20 Trail To Sunset</a></li>
+<li><a href="#e0022">1954-02-07: Ep 21 Apron Faced Sorrel</a></li>
+<li><a href="#e0023">1954-02-14: Ep 22 Quiet City</a></li>
+<li><a href="#e0024">1954-02-21: Ep 23 Battle At Tower Rock</a></li>
+<li><a href="#e0025">1954-03-07: Ep 24 Cheyenne Express</a></li>
+<li><a href="#e0026">1954-03-14: Ep 25 Thicker Than Water</a></li>
+<li><a href="#e0027">1954-03-21: Ep 26 Duel At Lockwood</a></li>
+<li><a href="#e0028">1954-04-01: Ep 27 Aunt Emma</a></li>
+<li><a href="#e0029">1954-04-08: Ep 28 General Guilford’s Widow</a></li>
+<li><a href="#e0030">1954-04-15: Ep 29 Crisis At Easter Creek</a></li>
+<li><a href="#e0031">1954-04-22: Ep 30 Johnny Springer</a></li>
+<li><a href="#e0032">1954-04-22: Ep 30 Johnny Stringer</a></li>
+<li><a href="#e0033">1954-04-29: Ep 31 Revenge At Harness Creek</a></li>
+<li><a href="#e0034">1954-05-06: Ep 32 Anna Norquist</a></li>
+<li><a href="#e0035">1954-05-13: Ep 33 The Double Seven</a></li>
+<li><a href="#e0036">1954-05-20: Ep 34 The Shooting Of Wyatt
+King</a></li>
+<li><a href="#e0037">1954-05-27: Ep 35 Blood Relations</a></li>
+<li><a href="#e0038">1954-06-03: Ep 36 Silver Threads</a></li>
+<li><a href="#e0039">1954-06-10: Ep 37 The New Sheriff</a></li>
+<li><a href="#e0040">1954-06-17: Ep 38 When The Shoe Doesn’t
+Fit</a></li>
+<li><a href="#e0041">1954-06-24: Ep 39 Myra Barker</a></li>
+<li><a href="#e0042">Undated: Old Time Radio Researchers
+Introduction</a></li>
+<li><a href="#e0043">Undated: 01 The Six Shooter Intro</a></li>
+<li><a href="#e0044">Undated: 02 Jimmy Stewart Biography</a></li>
+<li><a href="#e0045">Undated: 03 The Six Shooter on Hollywood Star
+Playhouse</a></li>
+</ul>
+<h2 id="byTitle">Appendix B: By Title</h2>
+<ul>
+<li><a href="#e0043">01 The Six Shooter Intro (Undated)</a></li>
+<li><a href="#e0044">02 Jimmy Stewart Biography (Undated)</a></li>
+<li><a href="#e0045">03 The Six Shooter on Hollywood Star Playhouse
+(Undated)</a></li>
+<li><a href="#e0001">Ep 00 Audition Show (July 15, 1953)</a></li>
+<li><a href="#e0002">Ep 01 Jenny (September 20, 1953)</a></li>
+<li><a href="#e0003">Ep 02 The Coward (September 27, 1953)</a></li>
+<li><a href="#e0004">Ep 03 The Stampede (October 4, 1953)</a></li>
+<li><a href="#e0005">Ep 04 Silver Annie (October 11, 1953)</a></li>
+<li><a href="#e0006">Ep 05 Rink Larkin (October 18, 1953)</a></li>
+<li><a href="#e0007">Ep 06 Red Lawson’s Revenge (October 25,
+1953)</a></li>
+<li><a href="#e0008">Ep 07 Ben Scofield (November 1, 1953)</a></li>
+<li><a href="#e0009">Ep 08 The Capture Of Stacy Gault (November 8,
+1953)</a></li>
+<li><a href="#e0010">Ep 09 Escape From Smoke Falls (November 15,
+1953)</a></li>
+<li><a href="#e0011">Ep 10 Gabriel Starbuck (November 22, 1953)</a></li>
+<li><a href="#e0012">Ep 11 Sheriff Billy (November 29, 1953)</a></li>
+<li><a href="#e0013">Ep 12 A Pressing Engagement (December 6,
+1953)</a></li>
+<li><a href="#e0014">Ep 13 More Than Kin (December 13, 1953)</a></li>
+<li><a href="#e0015">Ep 14 Britt Ponsett’s Christmas Carol (December 20,
+1953)</a></li>
+<li><a href="#e0016">Ep 15 Cora Plummer Quincy (December 27,
+1953)</a></li>
+<li><a href="#e0017">Ep 16 A Friend In Need (January 3, 1954)</a></li>
+<li><a href="#e0018">Ep 17 Hiram’s Gold Strike (January 10,
+1954)</a></li>
+<li><a href="#e0019">Ep 18 The Silver Buckle (January 17, 1954)</a></li>
+<li><a href="#e0020">Ep 19 Helen Bricker (January 24, 1954)</a></li>
+<li><a href="#e0021">Ep 20 Trail To Sunset (January 31, 1954)</a></li>
+<li><a href="#e0022">Ep 21 Apron Faced Sorrel (February 7,
+1954)</a></li>
+<li><a href="#e0023">Ep 22 Quiet City (February 14, 1954)</a></li>
+<li><a href="#e0024">Ep 23 Battle At Tower Rock (February 21,
+1954)</a></li>
+<li><a href="#e0025">Ep 24 Cheyenne Express (March 7, 1954)</a></li>
+<li><a href="#e0026">Ep 25 Thicker Than Water (March 14, 1954)</a></li>
+<li><a href="#e0027">Ep 26 Duel At Lockwood (March 21, 1954)</a></li>
+<li><a href="#e0028">Ep 27 Aunt Emma (April 1, 1954)</a></li>
+<li><a href="#e0029">Ep 28 General Guilford’s Widow (April 8,
+1954)</a></li>
+<li><a href="#e0030">Ep 29 Crisis At Easter Creek (April 15,
+1954)</a></li>
+<li><a href="#e0031">Ep 30 Johnny Springer (April 22, 1954)</a></li>
+<li><a href="#e0032">Ep 30 Johnny Stringer (April 22, 1954)</a></li>
+<li><a href="#e0033">Ep 31 Revenge At Harness Creek (April 29,
+1954)</a></li>
+<li><a href="#e0034">Ep 32 Anna Norquist (May 6, 1954)</a></li>
+<li><a href="#e0035">Ep 33 The Double Seven (May 13, 1954)</a></li>
+<li><a href="#e0036">Ep 34 The Shooting Of Wyatt King (May 20,
+1954)</a></li>
+<li><a href="#e0037">Ep 35 Blood Relations (May 27, 1954)</a></li>
+<li><a href="#e0038">Ep 36 Silver Threads (June 3, 1954)</a></li>
+<li><a href="#e0039">Ep 37 The New Sheriff (June 10, 1954)</a></li>
+<li><a href="#e0040">Ep 38 When The Shoe Doesn’t Fit (June 17,
+1954)</a></li>
+<li><a href="#e0041">Ep 39 Myra Barker (June 24, 1954)</a></li>
+<li><a href="#e0042">Old Time Radio Researchers Introduction
+(Undated)</a></li>
+</ul>
+</body>
+</html>

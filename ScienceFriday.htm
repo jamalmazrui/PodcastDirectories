@@ -2,14 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Jamal Mazrui" />
   <title>Science Friday Directory</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -34,12 +40,16 @@
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -52,13 +62,14 @@
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -81,8 +92,11 @@
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     div.abstract {
       margin: 2em 2em 2em 2em;
@@ -96,6 +110,7 @@
       margin-bottom: 0.5em;
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -115,8 +130,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -133,11 +148,11 @@
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -159,10 +174,13 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -173,12 +191,10 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Science Friday Directory</h1>
 <p class="subtitle">A Screen-Reader-Friendly Guide to the Science Friday
 Podcast</p>
 <p class="author">Jamal Mazrui</p>
@@ -5453,7 +5469,7 @@ Anniversary And Bird Book Club. July 19, 2019, Part 1</a></h3>
 <p><strong>Date:</strong> July 19, 2019</p>
 <p><strong>Duration:</strong> 45:06</p>
 <p><strong>Episode:</strong> 163</p>
-<p><strong>Summary:</strong> Celebrating Apollo’s ‘Giant Leap’July 20,
+<p><strong>Summary:</strong> Celebrating Apollo’s ’Giant Leap’July 20,
 1969 was a day that changed us forever—the first time humans left
 footprints on another world. In this segment, Ira Flatow and space
 historian Andy Chaikin celebrate that history and examine the legacy of
@@ -6933,7 +6949,7 @@ eastern bluebird babies aren’t always related to the parents raising
 them. True “genetic monogamy,” where bird couples only have sex with
 each other, appears to be the exception, not the rule in passerines.
 Polyandry—where females have sex with multiple males—has been found most
-of the species studied! In the late ’70s and early ’80s, a psychology
+of the species studied! In the late ‘70s and early ‘80s, a psychology
 study at Florida State University found that most men, and no women
 would accept a sex invitation from a stranger. In this more recent
 Germany study , 97% of the women expressed interest in sex with at least
@@ -13689,7 +13705,7 @@ In 2013, introverts staged their comeback. For decades, they’d been told
 to get out of their shells and <em>smile</em>, while those showy,
 gregarious extroverts were held up as the American ideal. But when one
 author published a kind of introvert’s manifesto, she sparked an
-introvert pride movement. Since then, the war of the ’verts has only
+introvert pride movement. Since then, the war of the ‘verts has only
 escalated, with self-identified introverts accusing extroverts of being
 shallow and incessantly chatty party monsters, and extroverts declaring
 introverts self-absorbed shut-ins who are just jealous because
@@ -19435,8 +19451,8 @@ several pairs of wrens recorded by Dr. Nigel Mann and separated the
 parts of the two birds. By separating the vocalizations of each bird,
 you can hear how perfectly the two parts fit together . At the end of
 the piece you hear a bird whose mating call never gets answered. It’s a
-Kaua‘i ’ō ’ō bird that was recorded in 1984 by James Jacobi. It was one
-of the last recordings made of an ō ’ō bird. The species is now
+Kaua‘i ‘ō ‘ō bird that was recorded in 1984 by James Jacobi. It was one
+of the last recordings made of an ō ‘ō bird. The species is now
 extinct.</p>
 <h3
 id="sciencefriday-mask-mandates-drop-international-salmon-survey-long-covid-answers-and"><a
@@ -29366,7 +29382,7 @@ Loren Grush centers those women’s stories. The Six: The Untold Story of
 America’s First Women Astronauts goes deep into the histories, triumphs,
 and tragedies of Sally Ride, Judy Resnik, Rhea Saddon, Kathy Sullivan,
 Shannon Lucid, and Anna Fisher. The National Aeronautics and Space
-Administration excluded women from its astronauts in the 1960s and ’70s.
+Administration excluded women from its astronauts in the 1960s and ‘70s.
 The agency changed course in 1978, when it selected these six women from
 a candidate pool of 8,000. Ira sits down with Loren Grush, space
 reporter for Bloomberg News, to talk about why NASA delayed their
@@ -30131,7 +30147,7 @@ why the early universe was so fascinating. The Science Behind Your
 Unraveling Sweaters It’s sweater season once again, but you may have
 noticed that some of your newer s weaters aren’t standing the test of
 time . Perhaps they are pilling, unraveling, or losing their shape. But
-if you look at sweaters from the ’80s or ’90s, they may still look brand
+if you look at sweaters from the ‘80s or ‘90s, they may still look brand
 new. Last month, an article by Amanda Mull in the Atlantic about
 declining sweater quality made the rounds online, and we wanted to know
 more. What, scientifically, went wrong in sweaters? And why are sweaters
@@ -32417,7 +32433,7 @@ plant in Greenville, wood chips are flowing from hoppers into long tubes
 about three feet in diameter. Pat Jones is the president of Clean Maine
 Carbon, which burns wood in high-temperature, low-oxygen conditions
 known as pyrolysis. “It starts out as wood” he said. “And as you can see
-when we come over here what comes out the other end is biochar.” In the
+when we come over here what comes out the other end is biochar. ” In the
 quest for climate solutions , Jones is among the Maine entrepreneurs
 banking on this charcoal-like substance. They say it can bind up carbon
 for decades, and improve agricultural soils at the same time. The end
@@ -32467,7 +32483,7 @@ Are Evolutionary Superstars | Whale Song Is All In The Larynx</a></h3>
 the dirt: Snakes evolve faster than their lizard relatives, allowing
 them to occupy diverse niches. Also, researchers are working to
 understand just how baleen whales are able to produce their haunting
-songs. Snakes Are Evolutionary Superstars Love ’em or hate ’em, new
+songs. Snakes Are Evolutionary Superstars Love ‘em or hate ‘em, new
 research shows that snakes deserve our recognition as evolutionary
 superstars. The study, published last week in the journal Science, found
 that snakes evolve faster than other reptiles, allowing them to thrive
@@ -34978,7 +34994,7 @@ vote. And the clock is ticking, because RECA expired on June 10. So what
 happens now? SciFri’s John Dankosky speaks with Tina Cordova, downwinder
 and co-founder of the Tularosa Basin Downwinders Consortium in
 Albuquerque; Loretta Anderson, co-founder of the Southwest Uranium
-Miners’ Coalition Post ’71, from the Pueblo of Laguna in New Mexico; and
+Miners’ Coalition Post ‘71, from the Pueblo of Laguna in New Mexico; and
 Lilly Adams, senior outreach coordinator at the Union of Concerned
 Scientists. Transcripts for each segment will be available after the
 show airs on sciencefriday.com.</p>
@@ -37568,7 +37584,7 @@ conservation projects. Do Fossil Prints Show Dinosaur Flight Evolved
 More Than Once? Researchers studying tracks fossilized in Cretaceous-era
 lakeshore mud in what is now South Korea argue this week in Proceedings
 of the National Academy of Sciences that the dinosaur footprints are
-“indirect evidence of pre-avian aerial behavior” in a tiny microraptor.
+“indirect evidence of pre-avian aerial behavior ” in a tiny microraptor.
 The tracks, which belong to a sparrow-sized theropod related to
 Tyrannosaurus rex , are spaced far enough apart to indicate that the
 tiny dino was moving across the mud very quickly. That speed, the
@@ -41688,7 +41704,7 @@ A Pioneer Of Modern Weather Prediction</a></h3>
 in a small village in rural India, where people starved if the monsoon
 season didn’t bring rain. To help his village, he set out to become a
 scientist and discover a way to predict the seasons—an unthinkable idea
-at the time, in the 1960s and ’70s. Shukla became a pioneer in modern
+at the time, in the 1960s and ‘70s. Shukla became a pioneer in modern
 weather forecasting , and he tells his unlikely story in his new memoir,
 A Billion Butterflies: A Life in Climate and Chaos Theory. He talks with
 Host Flora Lichtman about his journey to becoming a leading climate
@@ -45140,7 +45156,7 @@ Ultramarathoners Just Built Different?</a></h3>
 <p><strong>Date:</strong> January 2, 2026</p>
 <p><strong>Duration:</strong> 17:31</p>
 <p><strong>Episode:</strong> 1202</p>
-<p><strong>Summary:</strong> ’Tis the season for exercise resolutions.
+<p><strong>Summary:</strong> ‘Tis the season for exercise resolutions.
 For a select few, an ultramarathon—a race of 50, 100, or even more
 miles—may be on the table for 2026. But is there a limit to what our
 bodies can endure? And what makes ultramarathoners capable of these
@@ -47065,9 +47081,9 @@ thriller combines aliens, robots, and Cherokee culture</a></h3>
 <p><strong>Summary:</strong> Breaking news out of eastern Oklahoma! A
 hole in the sky has opened. Through it, an unidentified turtle-shaped
 craft has descended. Alerts say that this is first contact. So it goes
-in the sci-fi thriller “Hole in the Sky .” In the book, author Daniel H.
-Wilson imagines this moment where we meet alien life for the first time.
-It’s set in the heart of Cherokee Nation and follows characters
+in the sci-fi thriller “Hole in the Sky . ” In the book, author Daniel
+H. Wilson imagines this moment where we meet alien life for the first
+time. It’s set in the heart of Cherokee Nation and follows characters
 including a military man, a NASA scientist, and a Cherokee father named
 Jim who is just trying to survive the alien entity. Wilson joins Flora
 for a conversation about the book and how he integrated elements of

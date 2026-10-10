@@ -2,14 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Jamal Mazrui" />
   <title>Planetary Radio Directory</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -34,12 +40,16 @@
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -52,13 +62,14 @@
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -81,8 +92,11 @@
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     div.abstract {
       margin: 2em 2em 2em 2em;
@@ -96,6 +110,7 @@
       margin-bottom: 0.5em;
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -115,8 +130,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -133,11 +148,11 @@
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -159,10 +174,13 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -173,12 +191,10 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Planetary Radio Directory</h1>
 <p class="subtitle">A Screen-Reader-Friendly Guide to The Planetary
 Society’s Planetary Radio Podcast</p>
 <p class="author">Jamal Mazrui</p>
@@ -9188,7 +9204,7 @@ students. Also, the coming budget showdown and possible consequences for
 NASA projects</p>
 <h3 id="planetaryradio-a-visitor-from-the-stars-oumuamua"><a
 href="https://traffic.omny.fm/d/clips/d95da206-8ee8-4ba5-ba8d-ad1200b4e5a4/cf13d5f5-6040-458d-ab5a-ad200189747d/33904b66-b8f6-4427-968a-ad21000ec0af/audio.mp3?utm_source=Podcast&amp;in_playlist=b75c9f7f-4a63-438e-b506-ad2001897499">A
-Visitor From the Stars: ’Oumuamua</a></h3>
+Visitor From the Stars: ‘Oumuamua</a></h3>
 <p><a
 href="https://omny.fm/shows/planetary-radio-space-exploration-astronomy-and-sc/a-visitor-from-the-stars-oumuamua">Episode
 page</a></p>
@@ -9196,7 +9212,7 @@ page</a></p>
 <p><strong>Duration:</strong> 2844</p>
 <p><strong>Summary:</strong> The first confirmed interstellar visitor to
 our solar system is a needle-shaped asteroid given the Hawaiian name
-’Oumuamua. Karen Meech leads the team that is learning as much about it
+‘Oumuamua. Karen Meech leads the team that is learning as much about it
 as possible before it leaves our neighborhood, never to return</p>
 <h3 id="planetaryradio-president-trump-sets-course-for-the-moon"><a
 href="https://traffic.omny.fm/d/clips/d95da206-8ee8-4ba5-ba8d-ad1200b4e5a4/cf13d5f5-6040-458d-ab5a-ad200189747d/c5e45b93-3a03-4642-8c02-ad21000eadac/audio.mp3?utm_source=Podcast&amp;in_playlist=b75c9f7f-4a63-438e-b506-ad2001897499">President
@@ -12807,7 +12823,7 @@ discover at See omnystudio.com/listener for privacy information. See
 omnystudio.com/listener for privacy information</p>
 <h3
 id="planetaryradio-oumuamua-avi-loeb-says-it-may-have-been-artificial"><a
-href="https://traffic.omny.fm/d/clips/d95da206-8ee8-4ba5-ba8d-ad1200b4e5a4/cf13d5f5-6040-458d-ab5a-ad200189747d/f78156ca-f8df-404b-ae41-ad20018ab5c5/audio.mp3?utm_source=Podcast&amp;in_playlist=b75c9f7f-4a63-438e-b506-ad2001897499">’Oumuamua:
+href="https://traffic.omny.fm/d/clips/d95da206-8ee8-4ba5-ba8d-ad1200b4e5a4/cf13d5f5-6040-458d-ab5a-ad200189747d/f78156ca-f8df-404b-ae41-ad20018ab5c5/audio.mp3?utm_source=Podcast&amp;in_playlist=b75c9f7f-4a63-438e-b506-ad2001897499">‘Oumuamua:
 Avi Loeb says it may have been artificial</a></h3>
 <p><a
 href="https://omny.fm/shows/planetary-radio-space-exploration-astronomy-and-sc/oumuamua-avi-loeb-says-it-may-have-been-artificial">Episode
@@ -12818,7 +12834,7 @@ page</a></p>
 originated outside our solar system be a light sail built by an alien
 civilization? That’s the very controversial hypothesis put forward by
 distinguished Harvard astrophysicist Avi Loeb in his new book
-Extraterrestrial . The book is about much more than ’Oumuamua, and so is
+Extraterrestrial . The book is about much more than ‘Oumuamua, and so is
 Avi’s conversation with Mat Kaplan. Bill Nye pays tribute to a fallen
 member of The Planetary Society’s space family, and the biggest
 coincidence in the history of Planetary Radio surfaces during What’s
@@ -13086,7 +13102,7 @@ See omnystudio.com/listener for privacy information</p>
 <h3
 id="planetaryradio-is-oumuamua-a-piece-of-a-pluto-like-planet-and-ingenuity-s-first-fligh"><a
 href="https://traffic.omny.fm/d/clips/d95da206-8ee8-4ba5-ba8d-ad1200b4e5a4/cf13d5f5-6040-458d-ab5a-ad200189747d/a4bc442f-d620-4fb4-ad20-ad200189a0e7/audio.mp3?utm_source=Podcast&amp;in_playlist=b75c9f7f-4a63-438e-b506-ad2001897499">Is
-’Oumuamua a Piece of a Pluto-Like Planet? And Ingenuity’s First Flight
+‘Oumuamua a Piece of a Pluto-Like Planet? And Ingenuity’s First Flight
 on Mars</a></h3>
 <p><a
 href="https://omny.fm/shows/planetary-radio-space-exploration-astronomy-and-sc/is-oumuamua-a-piece-of-a-pluto-like-planet-and-ing">Episode
@@ -13098,7 +13114,7 @@ successful first flight of NASA’s Ingenuity helicopter on Mars. Then we
 meet two researchers who have come up with a fascinating explanation for
 the first interstellar object discovered as it passed through our solar
 system. Rock out with Planetary Society chief scientist Bruce Betts as
-we discover the ’80s band that made a hit out of the first Space Shuttle
+we discover the ‘80s band that made a hit out of the first Space Shuttle
 flight. Discover more at See omnystudio.com/listener for privacy
 information. See omnystudio.com/listener for privacy information</p>
 <h3
@@ -21709,7 +21725,7 @@ href="#planetaryradio-a-conversation-with-kyoto-prize-recipient-james-gunn">A
 Conversation with Kyoto Prize Recipient James Gunn</a> — April 28</li>
 <li><a
 href="#planetaryradio-is-oumuamua-a-piece-of-a-pluto-like-planet-and-ingenuity-s-first-fligh">Is
-’Oumuamua a Piece of a Pluto-Like Planet? And Ingenuity’s First Flight
+‘Oumuamua a Piece of a Pluto-Like Planet? And Ingenuity’s First Flight
 on Mars</a> — April 21</li>
 <li><a
 href="#planetaryradio-the-high-frontier-a-new-documentary-about-gerard-k-o-neill">The
@@ -21762,7 +21778,7 @@ href="#planetaryradio-a-cosmic-odyssey-decades-of-discovery-at-the-palomar-obser
 Cosmic Odyssey: Decades of Discovery at the Palomar Observatory</a> —
 February 3</li>
 <li><a
-href="#planetaryradio-oumuamua-avi-loeb-says-it-may-have-been-artificial">’Oumuamua:
+href="#planetaryradio-oumuamua-avi-loeb-says-it-may-have-been-artificial">‘Oumuamua:
 Avi Loeb says it may have been artificial</a> — January 27</li>
 <li><a
 href="#planetaryradio-7-more-minutes-of-terror-perseverance-arrives-at-mars">7
@@ -22410,7 +22426,7 @@ December 20</li>
 href="#planetaryradio-president-trump-sets-course-for-the-moon">President
 Trump Sets Course for the Moon</a> — December 13</li>
 <li><a href="#planetaryradio-a-visitor-from-the-stars-oumuamua">A
-Visitor From the Stars: ’Oumuamua</a> — December 6</li>
+Visitor From the Stars: ‘Oumuamua</a> — December 6</li>
 <li><a
 href="#planetaryradio-space-policy-edition-19-when-did-the-private-space-age-begin-much-earl">Space
 Policy Edition #19: When did the private space age begin? Much earlier
@@ -26284,7 +26300,7 @@ Anybody Home? Assessing A Planet’s Habitability</a></li>
 How to Land People on Mars?</a></li>
 <li><a
 href="#planetaryradio-is-oumuamua-a-piece-of-a-pluto-like-planet-and-ingenuity-s-first-fligh">Is
-’Oumuamua a Piece of a Pluto-Like Planet? And Ingenuity’s First Flight
+‘Oumuamua a Piece of a Pluto-Like Planet? And Ingenuity’s First Flight
 on Mars</a></li>
 <li><a
 href="#planetaryradio-an-israeli-lander-launches-toward-the-moon">An
@@ -28479,7 +28495,7 @@ Vesta Fiesta, With Pablo Gutierrez-Marques of the Dawn Mission</a></li>
 href="#planetaryradio-visiting-worlds-fantastic-with-bonnie-buratti">Visiting
 Worlds Fantastic with Bonnie Buratti</a></li>
 <li><a href="#planetaryradio-a-visitor-from-the-stars-oumuamua">A
-Visitor From the Stars: ’Oumuamua</a></li>
+Visitor From the Stars: ‘Oumuamua</a></li>
 <li><a
 href="#planetaryradio-volcanic-venus-new-insights-from-vintage-data">Volcanic
 Venus? New insights from vintage data</a></li>
@@ -28653,7 +28669,7 @@ Turtle and a Mission to the Ice Giants</a></li>
 <li><a href="#planetaryradio-zooming-in-on-mars-with-mastcam-z">Zooming
 In On Mars With Mastcam-Z</a></li>
 <li><a
-href="#planetaryradio-oumuamua-avi-loeb-says-it-may-have-been-artificial">’Oumuamua:
+href="#planetaryradio-oumuamua-avi-loeb-says-it-may-have-been-artificial">‘Oumuamua:
 Avi Loeb says it may have been artificial</a></li>
 <li><a href="#planetaryradio-a-star-trek-future-your-place-in-space">A
 “Star Trek” future: Your place in space</a></li>

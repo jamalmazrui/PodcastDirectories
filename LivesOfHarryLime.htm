@@ -1,0 +1,757 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.12.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>The Lives of Harry Lime</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
+      background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        color-scheme: light only;
+      }
+      html, body, pre, code {
+        background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
+        color: black;
+      }
+      pre, code {
+        padding: 0;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a, a:visited {
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
+      color: #606060;
+      color: light-dark(#606060, #b6b6b6);
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid currentColor;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+    th {
+      border-top: 1px solid currentColor;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#the-lives-of-harry-lime"
+id="toc-the-lives-of-harry-lime">The Lives of Harry Lime</a>
+<ul>
+<li><a href="#contents" id="toc-contents">Contents</a></li>
+<li><a href="#y1951" id="toc-y1951">1951</a></li>
+<li><a href="#y1952" id="toc-y1952">1952</a></li>
+<li><a href="#yUndated" id="toc-yUndated">Undated</a></li>
+<li><a href="#byDate" id="toc-byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle" id="toc-byTitle">Appendix B: By Title</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="the-lives-of-harry-lime">The Lives of Harry Lime</h1>
+<p>Orson Welles plays the con man from the film The Third Man, in
+schemes across Europe.</p>
+<ul>
+<li>Episodes: 52</li>
+<li>Network: Syndicated</li>
+<li>Source: <a
+href="https://archive.org/details/OTRR_Harey_Lime_Singles">Internet
+Archive: OTRR_Harey_Lime_Singles</a></li>
+<li>Years: 1951 to 1952</li>
+</ul>
+<p>Each episode title is a link that plays its audio. These broadcasts
+can reflect the attitudes of their time. This page is part of <a
+href="OldTimeRadioDramas.htm">Old Time Radio Dramas</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#y1951">1951</a></li>
+<li><a href="#y1952">1952</a></li>
+<li><a href="#yUndated">Undated</a></li>
+<li><a href="#byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle">Appendix B: By Title</a></li>
+</ul>
+<h2 id="y1951">1951</h2>
+<h3 id="e0001"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-08-03%20%2801%29%20Too%20Many%20Crooks.mp3">Too
+Many Crooks</a></h3>
+<ul>
+<li>Date: August 3, 1951</li>
+<li>Duration: 28:44</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0002"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-08-10%20%2802%29%20See%20Naples%20and%20Live.mp3">See
+Naples and Live</a></h3>
+<ul>
+<li>Date: August 10, 1951</li>
+<li>Duration: 29:00</li>
+<li>Episode: 2</li>
+</ul>
+<h3 id="e0003"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-08-17%20%2803%29%20Clay%20Pigeon.mp3">Clay
+Pigeon</a></h3>
+<ul>
+<li>Date: August 17, 1951</li>
+<li>Duration: 28:48</li>
+<li>Episode: 3</li>
+</ul>
+<h3 id="e0004"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-08-24%20%2804%29%20Ticket%20to%20Tangier.mp3">Ticket
+to Tangier</a></h3>
+<ul>
+<li>Date: August 24, 1951</li>
+<li>Duration: 28:10</li>
+<li>Episode: 4</li>
+</ul>
+<h3 id="e0005"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-09-07%20%2806%29%20Bohemian%20Star.mp3">Bohemian
+Star</a></h3>
+<ul>
+<li>Date: September 7, 1951</li>
+<li>Duration: 28:45</li>
+<li>Episode: 6</li>
+</ul>
+<h3 id="e0006"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-09-14%20%2807%29%20Love%20Affair.mp3">Love
+Affair</a></h3>
+<ul>
+<li>Date: September 14, 1951</li>
+<li>Duration: 29:06</li>
+<li>Episode: 7</li>
+</ul>
+<h3 id="e0007"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-09-21%20%2808%29%20Rogue%27s%20Holiday.mp3">Rogue’s
+Holiday</a></h3>
+<ul>
+<li>Date: September 21, 1951</li>
+<li>Duration: 28:31</li>
+<li>Episode: 8</li>
+</ul>
+<h3 id="e0008"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-09-28%20%2809%29%20Work%20of%20Art.mp3">Work
+of Art</a></h3>
+<ul>
+<li>Date: September 28, 1951</li>
+<li>Duration: 28:05</li>
+<li>Episode: 9</li>
+</ul>
+<h3 id="e0009"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-10-05%20%2810%29%20Operation%20Music%20Box.mp3">Operation
+Music Box</a></h3>
+<ul>
+<li>Date: October 5, 1951</li>
+<li>Duration: 28:25</li>
+<li>Episode: 10</li>
+</ul>
+<h3 id="e0010"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-10-12%20%2811%29%20Golden%20Fleece.mp3">Golden
+Fleece</a></h3>
+<ul>
+<li>Date: October 12, 1951</li>
+<li>Duration: 27:50</li>
+<li>Episode: 11</li>
+</ul>
+<h3 id="e0011"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-10-19%20%2812%29%20Blue%20Bride.mp3">Blue
+Bride</a></h3>
+<ul>
+<li>Date: October 19, 1951</li>
+<li>Duration: 28:13</li>
+<li>Episode: 12</li>
+</ul>
+<h3 id="e0012"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-10-26%20%2813%29%20Every%20Frame%20Has%20a%20Silver%20Lining.mp3">Every
+Frame Has a Silver Lining</a></h3>
+<ul>
+<li>Date: October 26, 1951</li>
+<li>Duration: 27:54</li>
+<li>Episode: 13</li>
+</ul>
+<h3 id="e0013"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-11-02%20%2814%29%20Mexican%20Hat%20Trick.mp3">Mexican
+Hat Trick</a></h3>
+<ul>
+<li>Date: November 2, 1951</li>
+<li>Duration: 28:50</li>
+<li>Episode: 14</li>
+</ul>
+<h3 id="e0014"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-11-09%20%2815%29%20Art%20Is%20Long%20and%20Lime%20Is%20Fleeting.mp3">Art
+Is Long and Lime Is Fleeting</a></h3>
+<ul>
+<li>Date: November 9, 1951</li>
+<li>Duration: 27:38</li>
+<li>Episode: 15</li>
+</ul>
+<h3 id="e0015"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-11-23%20%2817%29%20Horse%20Play.mp3">Horse
+Play</a></h3>
+<ul>
+<li>Date: November 23, 1951</li>
+<li>Duration: 28:35</li>
+<li>Episode: 17</li>
+</ul>
+<h3 id="e0016"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-11-30%20%2818%29%203%20Farthings%20for%20Your%20Thoughts.mp3">3
+Farthings for Your Thoughts</a></h3>
+<ul>
+<li>Date: November 30, 1951</li>
+<li>Duration: 28:53</li>
+<li>Episode: 18</li>
+</ul>
+<h3 id="e0017"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-12-07%20%2819%29%20The%20Third%20Woman.mp3">The
+Third Woman</a></h3>
+<ul>
+<li>Date: December 7, 1951</li>
+<li>Duration: 29:28</li>
+<li>Episode: 19</li>
+</ul>
+<h3 id="e0018"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-12-14%20%2820%29%20An%20Old%20Moorish%20Custom.mp3">An
+Old Moorish Custom</a></h3>
+<ul>
+<li>Date: December 14, 1951</li>
+<li>Duration: 28:20</li>
+<li>Episode: 20</li>
+</ul>
+<h3 id="e0019"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-12-21%20%2821%29%20It%27s%20a%20Knockout.mp3">It’s
+a Knockout</a></h3>
+<ul>
+<li>Date: December 21, 1951</li>
+<li>Duration: 28:11</li>
+<li>Episode: 21</li>
+</ul>
+<h3 id="e0020"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2051-12-28%20%2822%29%20Two%20Is%20Company.mp3">Two
+Is Company</a></h3>
+<ul>
+<li>Date: December 28, 1951</li>
+<li>Duration: 28:51</li>
+<li>Episode: 22</li>
+</ul>
+<h2 id="y1952">1952</h2>
+<h3 id="e0021"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-01-04%20%2823%29%20Cherchez%20La%20Gem.mp3">Cherchez
+La Gem</a></h3>
+<ul>
+<li>Date: January 4, 1952</li>
+<li>Duration: 28:20</li>
+<li>Episode: 23</li>
+</ul>
+<h3 id="e0022"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-01-11%20%2824%29%20Hand%20of%20Glory.mp3">Hand
+of Glory</a></h3>
+<ul>
+<li>Date: January 11, 1952</li>
+<li>Duration: 28:22</li>
+<li>Episode: 24</li>
+</ul>
+<h3 id="e0023"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-01-18%20%2825%29%20Double%20Double%20Cross.mp3">Double
+Double Cross</a></h3>
+<ul>
+<li>Date: January 18, 1952</li>
+<li>Duration: 28:45</li>
+<li>Episode: 25</li>
+</ul>
+<h3 id="e0024"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-01-25%20%2826%29%205000%20Pengoes%20and%20a%20Kiss.mp3">5000
+Pengoes and a Kiss</a></h3>
+<ul>
+<li>Date: January 25, 1952</li>
+<li>Duration: 28:42</li>
+<li>Episode: 26</li>
+</ul>
+<h3 id="e0025"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-02-01%20%2827%29%20Dark%20Enchantress.mp3">Dark
+Enchantress</a></h3>
+<ul>
+<li>Date: February 1, 1952</li>
+<li>Duration: 26:02</li>
+<li>Episode: 27</li>
+</ul>
+<h3 id="e0026"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-02-08%20%2828%29%20Earl%20on%20Troubled%20Waters.mp3">Earl
+on Troubled Waters</a></h3>
+<ul>
+<li>Date: February 8, 1952</li>
+<li>Duration: 28:13</li>
+<li>Episode: 28</li>
+</ul>
+<h3 id="e0027"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-02-15%20%2829%29%20Dead%20Candidate.mp3">Dead
+Candidate</a></h3>
+<ul>
+<li>Date: February 15, 1952</li>
+<li>Duration: 28:12</li>
+<li>Episode: 29</li>
+</ul>
+<h3 id="e0028"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-02-22%20%2830%29%20It%27s%20in%20the%20Bag.mp3">It’s
+in the Bag</a></h3>
+<ul>
+<li>Date: February 22, 1952</li>
+<li>Duration: 28:37</li>
+<li>Episode: 30</li>
+</ul>
+<h3 id="e0029"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-02-29%20%2831%29%20Hyacinth%20Patrol.mp3">Hyacinth
+Patrol</a></h3>
+<ul>
+<li>Date: February 29, 1952</li>
+<li>Duration: 29:05</li>
+<li>Episode: 31</li>
+</ul>
+<h3 id="e0030"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-03-07%20%2832%29%20Turnabout%20Is%20Foul%20Play.mp3">Turnabout
+Is Foul Play</a></h3>
+<ul>
+<li>Date: March 7, 1952</li>
+<li>Duration: 28:42</li>
+<li>Episode: 32</li>
+</ul>
+<h3 id="e0031"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-03-14%20%2833%29%20Violets%2C%20Sweet%20Violets.mp3">Violets,
+Sweet Violets</a></h3>
+<ul>
+<li>Date: March 14, 1952</li>
+<li>Duration: 27:29</li>
+<li>Episode: 33</li>
+</ul>
+<h3 id="e0032"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-03-21%20%2834%29%20Faith%2C%20Lime%2C%20and%20Charity.mp3">Faith,
+Lime, and Charity</a></h3>
+<ul>
+<li>Date: March 21, 1952</li>
+<li>Duration: 28:42</li>
+<li>Episode: 34</li>
+</ul>
+<h3 id="e0033"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-03-28%20%2835%29%20Pleasure%20Before%20Business.mp3">Pleasure
+Before Business</a></h3>
+<ul>
+<li>Date: March 28, 1952</li>
+<li>Duration: 27:55</li>
+<li>Episode: 35</li>
+</ul>
+<h3 id="e0034"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-04-04%20%2836%29%20Fool%27s%20Gold.mp3">Fool’s
+Gold</a></h3>
+<ul>
+<li>Date: April 4, 1952</li>
+<li>Duration: 29:07</li>
+<li>Episode: 36</li>
+</ul>
+<h3 id="e0035"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-04-11%20%2837%29%20Man%20of%20Mystery.mp3">Man
+of Mystery</a></h3>
+<ul>
+<li>Date: April 11, 1952</li>
+<li>Duration: 30:04</li>
+<li>Episode: 37</li>
+</ul>
+<h3 id="e0036"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-04-18%20%2838%29%20The%20Painted%20Smile.mp3">The
+Painted Smile</a></h3>
+<ul>
+<li>Date: April 18, 1952</li>
+<li>Duration: 28:29</li>
+<li>Episode: 38</li>
+</ul>
+<h3 id="e0037"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-04-25%20%2839%29%20Harry%20Joins%20the%20Circus.mp3">Harry
+Joins the Circus</a></h3>
+<ul>
+<li>Date: April 25, 1952</li>
+<li>Duration: 29:56</li>
+<li>Episode: 39</li>
+</ul>
+<h3 id="e0038"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-05-02%20%2840%29%20Suzie%27s%20Cue.mp3">Suzie’s
+Cue</a></h3>
+<ul>
+<li>Date: May 2, 1952</li>
+<li>Duration: 29:11</li>
+<li>Episode: 40</li>
+</ul>
+<h3 id="e0039"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-05-09%20%2841%29%20Vive%20Le%20Chance.mp3">Vive
+Le Chance</a></h3>
+<ul>
+<li>Date: May 9, 1952</li>
+<li>Duration: 28:04</li>
+<li>Episode: 41</li>
+</ul>
+<h3 id="e0040"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-05-16%20%2842%29%20Elusive%20Vermeer.mp3">Elusive
+Vermeer</a></h3>
+<ul>
+<li>Date: May 16, 1952</li>
+<li>Duration: 29:33</li>
+<li>Episode: 42</li>
+</ul>
+<h3 id="e0041"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-05-23%20%2843%29%20Murder%20on%20the%20Riviera.mp3">Murder
+on the Riviera</a></h3>
+<ul>
+<li>Date: May 23, 1952</li>
+<li>Duration: 28:27</li>
+<li>Episode: 43</li>
+</ul>
+<h3 id="e0042"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-05-30%20%2844%29%20Pearls%20of%20Bohemia.mp3">Pearls
+of Bohemia</a></h3>
+<ul>
+<li>Date: May 30, 1952</li>
+<li>Duration: 28:10</li>
+<li>Episode: 44</li>
+</ul>
+<h3 id="e0043"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-06-06%20%2845%29%20A%20Night%20in%20a%20Harem.mp3">A
+Night in a Harem</a></h3>
+<ul>
+<li>Date: June 6, 1952</li>
+<li>Duration: 28:37</li>
+<li>Episode: 45</li>
+</ul>
+<h3 id="e0044"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-06-13%20%2846%29%20Blackmail%20Is%20a%20Nasty%20Word.mp3">Blackmail
+Is a Nasty Word</a></h3>
+<ul>
+<li>Date: June 13, 1952</li>
+<li>Duration: 28:52</li>
+<li>Episode: 46</li>
+</ul>
+<h3 id="e0045"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-06-20%20%2847%29%20The%20Professor%20Regrets.mp3">The
+Professor Regrets</a></h3>
+<ul>
+<li>Date: June 20, 1952</li>
+<li>Duration: 29:43</li>
+<li>Episode: 47</li>
+</ul>
+<h3 id="e0046"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-06-27%20%2848%29%20The%20Hard%20Way.mp3">The
+Hard Way</a></h3>
+<ul>
+<li>Date: June 27, 1952</li>
+<li>Duration: 29:38</li>
+<li>Episode: 48</li>
+</ul>
+<h3 id="e0047"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-07-04%20%2849%29%20Paris%20Is%20Not%20the%20Same.mp3">Paris
+Is Not the Same</a></h3>
+<ul>
+<li>Date: July 4, 1952</li>
+<li>Duration: 29:50</li>
+<li>Episode: 49</li>
+</ul>
+<h3 id="e0048"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-07-11%20%2850%29%20Honeymoon.mp3">Honeymoon</a></h3>
+<ul>
+<li>Date: July 11, 1952</li>
+<li>Duration: 29:30</li>
+<li>Episode: 50</li>
+</ul>
+<h3 id="e0049"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-07-18%20%2851%29%20The%20Blue%20Caribou.mp3">The
+Blue Caribou</a></h3>
+<ul>
+<li>Date: July 18, 1952</li>
+<li>Duration: 27:56</li>
+<li>Episode: 51</li>
+</ul>
+<h3 id="e0050"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/The%20Lives%20of%20Harry%20Lime%2052-07-25%20%2852%29%20Greek%20Meets%20Greek.mp3">Greek
+Meets Greek</a></h3>
+<ul>
+<li>Date: July 25, 1952</li>
+<li>Duration: 25:31</li>
+<li>Episode: 52</li>
+</ul>
+<h2 id="yUndated">Undated</h2>
+<h3 id="e0051"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/01%20The%20Lives%20of%20Harry%20Lime%20Audio%20Synopsis.mp3">OTR
+Series Synopsis The Lives of Harry Lime</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 1:24</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0052"><a
+href="https://archive.org/download/OTRR_Harey_Lime_Singles/02%20Orson%20Welles%20Audio%20Brief.mp3">02
+Orson Welles Audio Brief</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 7:25</li>
+<li>Episode: 2</li>
+</ul>
+<h2 id="byDate">Appendix A: By Date</h2>
+<ul>
+<li><a href="#e0001">1951-08-03: Too Many Crooks</a></li>
+<li><a href="#e0002">1951-08-10: See Naples and Live</a></li>
+<li><a href="#e0003">1951-08-17: Clay Pigeon</a></li>
+<li><a href="#e0004">1951-08-24: Ticket to Tangier</a></li>
+<li><a href="#e0005">1951-09-07: Bohemian Star</a></li>
+<li><a href="#e0006">1951-09-14: Love Affair</a></li>
+<li><a href="#e0007">1951-09-21: Rogue’s Holiday</a></li>
+<li><a href="#e0008">1951-09-28: Work of Art</a></li>
+<li><a href="#e0009">1951-10-05: Operation Music Box</a></li>
+<li><a href="#e0010">1951-10-12: Golden Fleece</a></li>
+<li><a href="#e0011">1951-10-19: Blue Bride</a></li>
+<li><a href="#e0012">1951-10-26: Every Frame Has a Silver
+Lining</a></li>
+<li><a href="#e0013">1951-11-02: Mexican Hat Trick</a></li>
+<li><a href="#e0014">1951-11-09: Art Is Long and Lime Is
+Fleeting</a></li>
+<li><a href="#e0015">1951-11-23: Horse Play</a></li>
+<li><a href="#e0016">1951-11-30: 3 Farthings for Your Thoughts</a></li>
+<li><a href="#e0017">1951-12-07: The Third Woman</a></li>
+<li><a href="#e0018">1951-12-14: An Old Moorish Custom</a></li>
+<li><a href="#e0019">1951-12-21: It’s a Knockout</a></li>
+<li><a href="#e0020">1951-12-28: Two Is Company</a></li>
+<li><a href="#e0021">1952-01-04: Cherchez La Gem</a></li>
+<li><a href="#e0022">1952-01-11: Hand of Glory</a></li>
+<li><a href="#e0023">1952-01-18: Double Double Cross</a></li>
+<li><a href="#e0024">1952-01-25: 5000 Pengoes and a Kiss</a></li>
+<li><a href="#e0025">1952-02-01: Dark Enchantress</a></li>
+<li><a href="#e0026">1952-02-08: Earl on Troubled Waters</a></li>
+<li><a href="#e0027">1952-02-15: Dead Candidate</a></li>
+<li><a href="#e0028">1952-02-22: It’s in the Bag</a></li>
+<li><a href="#e0029">1952-02-29: Hyacinth Patrol</a></li>
+<li><a href="#e0030">1952-03-07: Turnabout Is Foul Play</a></li>
+<li><a href="#e0031">1952-03-14: Violets, Sweet Violets</a></li>
+<li><a href="#e0032">1952-03-21: Faith, Lime, and Charity</a></li>
+<li><a href="#e0033">1952-03-28: Pleasure Before Business</a></li>
+<li><a href="#e0034">1952-04-04: Fool’s Gold</a></li>
+<li><a href="#e0035">1952-04-11: Man of Mystery</a></li>
+<li><a href="#e0036">1952-04-18: The Painted Smile</a></li>
+<li><a href="#e0037">1952-04-25: Harry Joins the Circus</a></li>
+<li><a href="#e0038">1952-05-02: Suzie’s Cue</a></li>
+<li><a href="#e0039">1952-05-09: Vive Le Chance</a></li>
+<li><a href="#e0040">1952-05-16: Elusive Vermeer</a></li>
+<li><a href="#e0041">1952-05-23: Murder on the Riviera</a></li>
+<li><a href="#e0042">1952-05-30: Pearls of Bohemia</a></li>
+<li><a href="#e0043">1952-06-06: A Night in a Harem</a></li>
+<li><a href="#e0044">1952-06-13: Blackmail Is a Nasty Word</a></li>
+<li><a href="#e0045">1952-06-20: The Professor Regrets</a></li>
+<li><a href="#e0046">1952-06-27: The Hard Way</a></li>
+<li><a href="#e0047">1952-07-04: Paris Is Not the Same</a></li>
+<li><a href="#e0048">1952-07-11: Honeymoon</a></li>
+<li><a href="#e0049">1952-07-18: The Blue Caribou</a></li>
+<li><a href="#e0050">1952-07-25: Greek Meets Greek</a></li>
+<li><a href="#e0051">Undated: OTR Series Synopsis The Lives of Harry
+Lime</a></li>
+<li><a href="#e0052">Undated: 02 Orson Welles Audio Brief</a></li>
+</ul>
+<h2 id="byTitle">Appendix B: By Title</h2>
+<ul>
+<li><a href="#e0052">02 Orson Welles Audio Brief (Undated)</a></li>
+<li><a href="#e0016">3 Farthings for Your Thoughts (November 30,
+1951)</a></li>
+<li><a href="#e0024">5000 Pengoes and a Kiss (January 25, 1952)</a></li>
+<li><a href="#e0014">Art Is Long and Lime Is Fleeting (November 9,
+1951)</a></li>
+<li><a href="#e0044">Blackmail Is a Nasty Word (June 13, 1952)</a></li>
+<li><a href="#e0011">Blue Bride (October 19, 1951)</a></li>
+<li><a href="#e0049">The Blue Caribou (July 18, 1952)</a></li>
+<li><a href="#e0005">Bohemian Star (September 7, 1951)</a></li>
+<li><a href="#e0021">Cherchez La Gem (January 4, 1952)</a></li>
+<li><a href="#e0003">Clay Pigeon (August 17, 1951)</a></li>
+<li><a href="#e0025">Dark Enchantress (February 1, 1952)</a></li>
+<li><a href="#e0027">Dead Candidate (February 15, 1952)</a></li>
+<li><a href="#e0023">Double Double Cross (January 18, 1952)</a></li>
+<li><a href="#e0026">Earl on Troubled Waters (February 8, 1952)</a></li>
+<li><a href="#e0040">Elusive Vermeer (May 16, 1952)</a></li>
+<li><a href="#e0012">Every Frame Has a Silver Lining (October 26,
+1951)</a></li>
+<li><a href="#e0032">Faith, Lime, and Charity (March 21, 1952)</a></li>
+<li><a href="#e0034">Fool’s Gold (April 4, 1952)</a></li>
+<li><a href="#e0010">Golden Fleece (October 12, 1951)</a></li>
+<li><a href="#e0050">Greek Meets Greek (July 25, 1952)</a></li>
+<li><a href="#e0022">Hand of Glory (January 11, 1952)</a></li>
+<li><a href="#e0046">The Hard Way (June 27, 1952)</a></li>
+<li><a href="#e0037">Harry Joins the Circus (April 25, 1952)</a></li>
+<li><a href="#e0048">Honeymoon (July 11, 1952)</a></li>
+<li><a href="#e0015">Horse Play (November 23, 1951)</a></li>
+<li><a href="#e0029">Hyacinth Patrol (February 29, 1952)</a></li>
+<li><a href="#e0019">It’s a Knockout (December 21, 1951)</a></li>
+<li><a href="#e0028">It’s in the Bag (February 22, 1952)</a></li>
+<li><a href="#e0006">Love Affair (September 14, 1951)</a></li>
+<li><a href="#e0035">Man of Mystery (April 11, 1952)</a></li>
+<li><a href="#e0013">Mexican Hat Trick (November 2, 1951)</a></li>
+<li><a href="#e0041">Murder on the Riviera (May 23, 1952)</a></li>
+<li><a href="#e0043">A Night in a Harem (June 6, 1952)</a></li>
+<li><a href="#e0018">An Old Moorish Custom (December 14, 1951)</a></li>
+<li><a href="#e0009">Operation Music Box (October 5, 1951)</a></li>
+<li><a href="#e0051">OTR Series Synopsis The Lives of Harry Lime
+(Undated)</a></li>
+<li><a href="#e0036">The Painted Smile (April 18, 1952)</a></li>
+<li><a href="#e0047">Paris Is Not the Same (July 4, 1952)</a></li>
+<li><a href="#e0042">Pearls of Bohemia (May 30, 1952)</a></li>
+<li><a href="#e0033">Pleasure Before Business (March 28, 1952)</a></li>
+<li><a href="#e0045">The Professor Regrets (June 20, 1952)</a></li>
+<li><a href="#e0007">Rogue’s Holiday (September 21, 1951)</a></li>
+<li><a href="#e0002">See Naples and Live (August 10, 1951)</a></li>
+<li><a href="#e0038">Suzie’s Cue (May 2, 1952)</a></li>
+<li><a href="#e0017">The Third Woman (December 7, 1951)</a></li>
+<li><a href="#e0004">Ticket to Tangier (August 24, 1951)</a></li>
+<li><a href="#e0001">Too Many Crooks (August 3, 1951)</a></li>
+<li><a href="#e0030">Turnabout Is Foul Play (March 7, 1952)</a></li>
+<li><a href="#e0020">Two Is Company (December 28, 1951)</a></li>
+<li><a href="#e0031">Violets, Sweet Violets (March 14, 1952)</a></li>
+<li><a href="#e0039">Vive Le Chance (May 9, 1952)</a></li>
+<li><a href="#e0008">Work of Art (September 28, 1951)</a></li>
+</ul>
+</body>
+</html>

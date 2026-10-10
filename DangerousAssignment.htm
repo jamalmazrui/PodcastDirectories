@@ -1,0 +1,2347 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.12.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Dangerous Assignment</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
+      background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        color-scheme: light only;
+      }
+      html, body, pre, code {
+        background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
+        color: black;
+      }
+      pre, code {
+        padding: 0;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a, a:visited {
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
+      color: #606060;
+      color: light-dark(#606060, #b6b6b6);
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid currentColor;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+    th {
+      border-top: 1px solid currentColor;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#dangerous-assignment"
+id="toc-dangerous-assignment">Dangerous Assignment</a>
+<ul>
+<li><a href="#contents" id="toc-contents">Contents</a></li>
+<li><a href="#y1949" id="toc-y1949">1949</a></li>
+<li><a href="#y1950" id="toc-y1950">1950</a></li>
+<li><a href="#y1951" id="toc-y1951">1951</a></li>
+<li><a href="#y1952" id="toc-y1952">1952</a></li>
+<li><a href="#y1953" id="toc-y1953">1953</a></li>
+<li><a href="#yUndated" id="toc-yUndated">Undated</a></li>
+<li><a href="#byDate" id="toc-byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle" id="toc-byTitle">Appendix B: By Title</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="dangerous-assignment">Dangerous Assignment</h1>
+<p>Brian Donlevy plays a government agent sent on secret missions
+abroad.</p>
+<ul>
+<li>Episodes: 196</li>
+<li>Network: NBC</li>
+<li>Source: <a
+href="https://archive.org/details/Otrr_Dangerous_Assignment_Singles">Internet
+Archive: Otrr_Dangerous_Assignment_Singles</a></li>
+<li>Years: 1949 to 1953</li>
+</ul>
+<p>Each episode title is a link that plays its audio. These broadcasts
+can reflect the attitudes of their time. This page is part of <a
+href="OldTimeRadioDramas.htm">Old Time Radio Dramas</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#y1949">1949</a></li>
+<li><a href="#y1950">1950</a></li>
+<li><a href="#y1951">1951</a></li>
+<li><a href="#y1952">1952</a></li>
+<li><a href="#y1953">1953</a></li>
+<li><a href="#yUndated">Undated</a></li>
+<li><a href="#byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle">Appendix B: By Title</a></li>
+</ul>
+<h2 id="y1949">1949</h2>
+<h3 id="e0001"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_49-07-09_001_Relief_Supplies.mp3">Relief
+Supplies</a></h3>
+<ul>
+<li>Date: July 9, 1949</li>
+<li>Duration: 29:23</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0002"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2049-07-09%20%28001%29%20Thropp%20FoundationRelief%20Supplies%20%28Sicily%29.mp3">Thropp
+FoundationRelief Supplies (Sicily)</a></h3>
+<ul>
+<li>Date: July 9, 1949</li>
+<li>Duration: 29:28</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0003"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2049-07-16%20%28002%29%20Malayan%20Star%20Line%20Sabotage%20%28Saigon%29.mp3">Malayan
+Star Line Sabotage (Saigon)</a></h3>
+<ul>
+<li>Date: July 16, 1949</li>
+<li>Duration: 29:16</li>
+<li>Episode: 2</li>
+</ul>
+<h3 id="e0004"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_49-07-16_002_Sunken_Ships.mp3">Sunken
+Ships</a></h3>
+<ul>
+<li>Date: July 16, 1949</li>
+<li>Duration: 29:12</li>
+<li>Episode: 2</li>
+</ul>
+<h3 id="e0005"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_49-07-23_003_Nigerian_Safari.mp3">Nigerian
+Safari</a></h3>
+<ul>
+<li>Date: July 23, 1949</li>
+<li>Duration: 30:16</li>
+<li>Episode: 3</li>
+</ul>
+<h3 id="e0006"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2049-07-23%20%28003%29%20On%20Safari%20for%20Nigerian%20Manganese.mp3">On
+Safari for Nigerian Manganese</a></h3>
+<ul>
+<li>Date: July 23, 1949</li>
+<li>Duration: 29:27</li>
+<li>Episode: 3</li>
+</ul>
+<h3 id="e0007"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2049-08-06%20%28005%29%20Millionaire%20Murder%20Conspiracy%20%28Paris%29.mp3">Millionaire
+Murder Conspiracy (Paris)</a></h3>
+<ul>
+<li>Date: August 6, 1949</li>
+<li>Duration: 29:28</li>
+<li>Episode: 5</li>
+</ul>
+<h3 id="e0008"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_49-08-06_005_Millionaire_Murders.mp3">Millionaire
+Murders</a></h3>
+<ul>
+<li>Date: August 6, 1949</li>
+<li>Duration: 29:23</li>
+<li>Episode: 5</li>
+</ul>
+<h3 id="e0009"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_49-08-13_006_Alien_Smuggling_Ring.mp3">Alien
+Smuggling Ring</a></h3>
+<ul>
+<li>Date: August 13, 1949</li>
+<li>Duration: 29:13</li>
+<li>Episode: 6</li>
+</ul>
+<h3 id="e0010"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2049-08-13%20%28006%29%20Smash%20Alien%20Smuggling%20Ring%20%28Portugal%29.mp3">Smash
+Alien Smuggling Ring (Portugal)</a></h3>
+<ul>
+<li>Date: August 13, 1949</li>
+<li>Duration: 29:18</li>
+<li>Episode: 6</li>
+</ul>
+<h3 id="e0011"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_49-08-20_007_File_307.mp3">File
+307</a></h3>
+<ul>
+<li>Date: August 20, 1949</li>
+<li>Duration: 29:29</li>
+<li>Episode: 7</li>
+</ul>
+<h3 id="e0012"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2049-08-20%20%28007%29%20File%20no.%20307%20%28Zurich%29.mp3">File
+no. 307 (Zurich)</a></h3>
+<ul>
+<li>Date: August 20, 1949</li>
+<li>Duration: 29:34</li>
+<li>Episode: 7</li>
+</ul>
+<h2 id="y1950">1950</h2>
+<h3 id="e0013"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-02-06%20%28008%29%20Find%20Missing%20Japanese%20Weapons%20%28Panama%29.mp3">Find
+Missing Japanese Weapons (Panama)</a></h3>
+<ul>
+<li>Date: February 6, 1950</li>
+<li>Duration: 29:20</li>
+<li>Episode: 8</li>
+</ul>
+<h3 id="e0014"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-02-06_008_Missing_Japanese_Weapons.mp3">Missing
+Japanese Weapons</a></h3>
+<ul>
+<li>Date: February 6, 1950</li>
+<li>Duration: 29:12</li>
+<li>Episode: 8</li>
+</ul>
+<h3 id="e0015"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-02-13_009_Captain_Rock.mp3">Captain
+Rock</a></h3>
+<ul>
+<li>Date: February 13, 1950</li>
+<li>Duration: 29:20</li>
+<li>Episode: 9</li>
+</ul>
+<h3 id="e0016"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-02-13%20%28009%29%20Who%20Killed%20Captain%20Rocq.mp3">Who
+Killed Captain Rocq</a></h3>
+<ul>
+<li>Date: February 13, 1950</li>
+<li>Duration: 29:25</li>
+<li>Episode: 9</li>
+</ul>
+<h3 id="e0017"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-02-20_010_The_Greek_Connection.mp3">The
+Greek Connection</a></h3>
+<ul>
+<li>Date: February 20, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 10</li>
+</ul>
+<h3 id="e0018"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-02-20%20%28010%29%20Recover%20Stolen%20Radar%20Plans%20%28Athens%29.mp3">Recover
+Stolen Radar Plans (Athens)</a></h3>
+<ul>
+<li>Date: February 20, 1950</li>
+<li>Duration: 29:23</li>
+<li>Episode: 10</li>
+</ul>
+<h3 id="e0019"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-02-27%20%28011%29%20White%20Jade%20Cafe%20%28Macao%29.mp3">White
+Jade Cafe (Macao)</a></h3>
+<ul>
+<li>Date: February 27, 1950</li>
+<li>Duration: 29:11</li>
+<li>Episode: 11</li>
+</ul>
+<h3 id="e0020"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-03-06%20%28012%29%20Recover%20Wire%20Recorder%20Spool%20%28San%20Diego%29.mp3">Recover
+Wire Recorder Spool (San Diego)</a></h3>
+<ul>
+<li>Date: March 6, 1950</li>
+<li>Duration: 29:23</li>
+<li>Episode: 12</li>
+</ul>
+<h3 id="e0021"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-03-06_012_Wire_Spool.mp3">Wire
+Spool</a></h3>
+<ul>
+<li>Date: March 6, 1950</li>
+<li>Duration: 29:14</li>
+<li>Episode: 12</li>
+</ul>
+<h3 id="e0022"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-03-20_013_International_Blackmail.mp3">International
+Blackmail</a></h3>
+<ul>
+<li>Date: March 20, 1950</li>
+<li>Duration: 29:12</li>
+<li>Episode: 13</li>
+</ul>
+<h3 id="e0023"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-03-20%20%28013%29%20International%20Blackmail%20%28Switzerland%29.mp3">International
+Blackmail (Switzerland)</a></h3>
+<ul>
+<li>Date: March 20, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 13</li>
+</ul>
+<h3 id="e0024"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-03-27%20%28014%29%20Renew%20Sheik%20Haroun%27s%20Uranium%20Deal%20%28Cairo%29.mp3">Renew
+Sheik Haroun’s Uranium Deal (Cairo)</a></h3>
+<ul>
+<li>Date: March 27, 1950</li>
+<li>Duration: 29:07</li>
+<li>Episode: 14</li>
+</ul>
+<h3 id="e0025"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-03-27_014_The_Sheiks_Secret.mp3">The
+Sheiks Secret</a></h3>
+<ul>
+<li>Date: March 27, 1950</li>
+<li>Duration: 29:28</li>
+<li>Episode: 14</li>
+</ul>
+<h3 id="e0026"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-04-10_015_Pirate_Loot.mp3">Pirate
+Loot</a></h3>
+<ul>
+<li>Date: April 10, 1950</li>
+<li>Duration: 29:22</li>
+<li>Episode: 15</li>
+</ul>
+<h3 id="e0027"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-04-10%20%28015%29%20Recover%20Underwater%20Demolition%20Secrets%20%28Trinidad%29.mp3">Recover
+Underwater Demolition Secrets (Trinidad)</a></h3>
+<ul>
+<li>Date: April 10, 1950</li>
+<li>Duration: 29:27</li>
+<li>Episode: 15</li>
+</ul>
+<h3 id="e0028"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-04-17%20%28016%29%20Investigate%20Flying%20Saucers%20%28Ecuador%29.mp3">Investigate
+Flying Saucers (Ecuador)</a></h3>
+<ul>
+<li>Date: April 17, 1950</li>
+<li>Duration: 29:26</li>
+<li>Episode: 16</li>
+</ul>
+<h3 id="e0029"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-04-17_016_UFOs_In_Ecuador.mp3">UFOs
+In Ecuador</a></h3>
+<ul>
+<li>Date: April 17, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 16</li>
+</ul>
+<h3 id="e0030"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-04-24%20%28017%29%20The%20Nazi%20and%20the%20Physicist.mp3">The
+Nazi and the Physicist</a></h3>
+<ul>
+<li>Date: April 24, 1950</li>
+<li>Duration: 29:28</li>
+<li>Episode: 17</li>
+</ul>
+<h3 id="e0031"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-05-03%20%28018%29%20Find%20Szabo%20and%20the%20Briefcase%20%28Paris%29.mp3">Find
+Szabo and the Briefcase (Paris)</a></h3>
+<ul>
+<li>Date: May 3, 1950</li>
+<li>Duration: 29:27</li>
+<li>Episode: 18</li>
+</ul>
+<h3 id="e0032"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-05-03_018_Sabotage_in_Paris.mp3">Sabotage
+in Paris</a></h3>
+<ul>
+<li>Date: May 3, 1950</li>
+<li>Duration: 29:19</li>
+<li>Episode: 18</li>
+</ul>
+<h3 id="e0033"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-05-10_019_Lecturing_Professors.mp3">Lecturing
+Professors</a></h3>
+<ul>
+<li>Date: May 10, 1950</li>
+<li>Duration: 29:16</li>
+<li>Episode: 19</li>
+</ul>
+<h3 id="e0034"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-05-10%20%28019%29%20Smash%20Lecture%20Circuit%20Spy%20Ring%20%28Stockholm%29.mp3">Smash
+Lecture Circuit Spy Ring (Stockholm)</a></h3>
+<ul>
+<li>Date: May 10, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 19</li>
+</ul>
+<h3 id="e0035"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-05-17_020_The_Lost_City.mp3">The
+Lost City</a></h3>
+<ul>
+<li>Date: May 17, 1950</li>
+<li>Duration: 29:08</li>
+<li>Episode: 20</li>
+</ul>
+<h3 id="e0036"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-05-24_021_Burmese_Witnesses.mp3">Burmese
+Witnesses</a></h3>
+<ul>
+<li>Date: May 24, 1950</li>
+<li>Duration: 29:15</li>
+<li>Episode: 21</li>
+</ul>
+<h3 id="e0037"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-05-24%20%28021%29%20Solve%20Kent%20Jackon%27s%20Murder%20%28Burma%29.mp3">Solve
+Kent Jackon’s Murder (Burma)</a></h3>
+<ul>
+<li>Date: May 24, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 21</li>
+</ul>
+<h3 id="e0038"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-05-31%20%28022%29%20Administer%20Little%20White%20Pill%20Antidote%20%28Balkans%29.mp3">Administer
+Little White Pill Antidote (Balkans)</a></h3>
+<ul>
+<li>Date: May 31, 1950</li>
+<li>Duration: 28:53</li>
+<li>Episode: 22</li>
+</ul>
+<h3 id="e0039"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-05-31_022_Little_White_Pill.mp3">Little
+White Pill</a></h3>
+<ul>
+<li>Date: May 31, 1950</li>
+<li>Duration: 29:32</li>
+<li>Episode: 22</li>
+</ul>
+<h3 id="e0040"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-06-07_023_Deadly_Bacteria.mp3">Deadly
+Bacteria</a></h3>
+<ul>
+<li>Date: June 7, 1950</li>
+<li>Duration: 29:13</li>
+<li>Episode: 23</li>
+</ul>
+<h3 id="e0041"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-06-07%20%28023%29%20Find%20Champlin%20and%20his%20Reel%20of%20Tape%20%28Turkey%29.mp3">Find
+Champlin and his Reel of Tape (Turkey)</a></h3>
+<ul>
+<li>Date: June 7, 1950</li>
+<li>Duration: 29:13</li>
+<li>Episode: 23</li>
+</ul>
+<h3 id="e0042"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-07-26_025_Five_Gardenias.mp3">Five
+Gardenias</a></h3>
+<ul>
+<li>Date: July 26, 1950</li>
+<li>Duration: 29:25</li>
+<li>Episode: 25</li>
+</ul>
+<h3 id="e0043"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-08-02%20%28026%29%20Recover%20Lost%20Troop%20Movement%20Document%20%28Vienna%29.mp3">Recover
+Lost Troop Movement Document (Vienna)</a></h3>
+<ul>
+<li>Date: August 2, 1950</li>
+<li>Duration: 29:19</li>
+<li>Episode: 26</li>
+</ul>
+<h3 id="e0044"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-08-02_026_Vienna_Mystery.mp3">Vienna
+Mystery</a></h3>
+<ul>
+<li>Date: August 2, 1950</li>
+<li>Duration: 29:23</li>
+<li>Episode: 26</li>
+</ul>
+<h3 id="e0045"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-08-09_027_Death_Drums.mp3">Death
+Drums</a></h3>
+<ul>
+<li>Date: August 9, 1950</li>
+<li>Duration: 29:16</li>
+<li>Episode: 27</li>
+</ul>
+<h3 id="e0046"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-08-09%20%28027%29%20Defeat%20African%20Hate%20Campaign%20%28Secundi%2C%20Africa%29.mp3">Defeat
+African Hate Campaign (Secundi, Africa)</a></h3>
+<ul>
+<li>Date: August 9, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 27</li>
+</ul>
+<h3 id="e0047"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-08-16%20%28028%29%20Find%20Hired%20Killer%20Lupac%20%28Paris%29.mp3">Find
+Hired Killer Lupac (Paris)</a></h3>
+<ul>
+<li>Date: August 16, 1950</li>
+<li>Duration: 29:24</li>
+<li>Episode: 28</li>
+</ul>
+<h3 id="e0048"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-08-16_028_Hired_Killer.mp3">Hired
+Killer</a></h3>
+<ul>
+<li>Date: August 16, 1950</li>
+<li>Duration: 29:23</li>
+<li>Episode: 28</li>
+</ul>
+<h3 id="e0049"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-08-23_029_Bombay_Gun_Runners.mp3">Bombay
+Gun Runners</a></h3>
+<ul>
+<li>Date: August 23, 1950</li>
+<li>Duration: 29:19</li>
+<li>Episode: 29</li>
+</ul>
+<h3 id="e0050"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-08-23%20%28029%29%20Get%20Gouda%20Before%20the%20Gun%20Runners%20%28Bombay%29.mp3">Get
+Gouda Before the Gun Runners (Bombay)</a></h3>
+<ul>
+<li>Date: August 23, 1950</li>
+<li>Duration: 29:20</li>
+<li>Episode: 29</li>
+</ul>
+<h3 id="e0051"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-08-30_030_Guided_Missile_Plans.mp3">Guided
+Missile Plans</a></h3>
+<ul>
+<li>Date: August 30, 1950</li>
+<li>Duration: 29:20</li>
+<li>Episode: 30</li>
+</ul>
+<h3 id="e0052"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-08-30%20%28030%29%20Recover%20Stolen%20Missle%20Plan%20Microfilm%20%28London%29.mp3">Recover
+Stolen Missle Plan Microfilm (London)</a></h3>
+<ul>
+<li>Date: August 30, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 30</li>
+</ul>
+<h3 id="e0053"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-09-06_031_Assignment_Mine_Disaster.mp3">Assignment
+Mine Disaster</a></h3>
+<ul>
+<li>Date: September 6, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 31</li>
+</ul>
+<h3 id="e0054"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-09-06%20%28031%29%20Chromite%20Mine%20Disaster%20%28Balkans%29.mp3">Chromite
+Mine Disaster (Balkans)</a></h3>
+<ul>
+<li>Date: September 6, 1950</li>
+<li>Duration: 29:20</li>
+<li>Episode: 31</li>
+</ul>
+<h3 id="e0055"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-09-20%20%28032%29%20Contact%20Lefty%20the%20Trained%20Seal%20%28Turkey%29.mp3">Contact
+Lefty the Trained Seal (Turkey)</a></h3>
+<ul>
+<li>Date: September 20, 1950</li>
+<li>Duration: 29:17</li>
+<li>Episode: 32</li>
+</ul>
+<h3 id="e0056"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-09-20_032_Trained_Seal.mp3">Trained
+Seal</a></h3>
+<ul>
+<li>Date: September 20, 1950</li>
+<li>Duration: 29:18</li>
+<li>Episode: 32</li>
+</ul>
+<h3 id="e0057"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-09-27_033_Latin_America.mp3">Latin
+America</a></h3>
+<ul>
+<li>Date: September 27, 1950</li>
+<li>Duration: 29:32</li>
+<li>Episode: 33</li>
+</ul>
+<h3 id="e0058"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-09-27%20%28033%29%20Retrieve%20Slarga%20from%20Latin%20America.mp3">Retrieve
+Slarga from Latin America</a></h3>
+<ul>
+<li>Date: September 27, 1950</li>
+<li>Duration: 28:50</li>
+<li>Episode: 33</li>
+</ul>
+<h3 id="e0059"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-09-29%20%28034%29%20Forged%20Identification%20Papers%20Ring%20%28Trinidad%29.mp3">Forged
+Identification Papers Ring (Trinidad)</a></h3>
+<ul>
+<li>Date: September 29, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 34</li>
+</ul>
+<h3 id="e0060"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-09-29_034_Forged_Papers.mp3">Forged
+Papers</a></h3>
+<ul>
+<li>Date: September 29, 1950</li>
+<li>Duration: 29:20</li>
+<li>Episode: 34</li>
+</ul>
+<h3 id="e0061"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-10-06_035_Tokyo.mp3">Tokyo</a></h3>
+<ul>
+<li>Date: October 6, 1950</li>
+<li>Duration: 29:22</li>
+<li>Episode: 35</li>
+</ul>
+<h3 id="e0062"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-11-18_036_Memory_Chain.mp3">Memory
+Chain</a></h3>
+<ul>
+<li>Date: November 18, 1950</li>
+<li>Duration: 29:51</li>
+<li>Episode: 36</li>
+</ul>
+<h3 id="e0063"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-11-18%20%28036%29%20Memory%20Chain%20Equation%20%28Munich%29.mp3">Memory
+Chain Equation (Munich)</a></h3>
+<ul>
+<li>Date: November 18, 1950</li>
+<li>Duration: 29:14</li>
+<li>Episode: 36</li>
+</ul>
+<h3 id="e0064"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-11-25_037_The_Football_Play.mp3">The
+Football Play</a></h3>
+<ul>
+<li>Date: November 25, 1950</li>
+<li>Duration: 28:32</li>
+<li>Episode: 37</li>
+</ul>
+<h3 id="e0065"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-11-25%20%28037%29%20The%20Football%20Play%20%28Indo-China%29.mp3">The
+Football Play (Indo-China)</a></h3>
+<ul>
+<li>Date: November 25, 1950</li>
+<li>Duration: 29:30</li>
+<li>Episode: 37</li>
+</ul>
+<h3 id="e0066"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-12-02_038_The_Empty_Matchbook.mp3">The
+Empty Matchbook</a></h3>
+<ul>
+<li>Date: December 2, 1950</li>
+<li>Duration: 29:15</li>
+<li>Episode: 38</li>
+</ul>
+<h3 id="e0067"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-12-02%20%28038%29%20The%20Empty%20Matchbook%20%20%28Sonoma%2C%20South%20America%29.mp3">The
+Empty Matchbook (Sonoma, South America)</a></h3>
+<ul>
+<li>Date: December 2, 1950</li>
+<li>Duration: 28:47</li>
+<li>Episode: 38</li>
+</ul>
+<h3 id="e0068"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-12-09_039_Berlin_Kidnapping.mp3">Berlin
+Kidnapping</a></h3>
+<ul>
+<li>Date: December 9, 1950</li>
+<li>Duration: 29:21</li>
+<li>Episode: 39</li>
+</ul>
+<h3 id="e0069"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-12-09%20%28039%29%20Berlin%20Kidnapping%20Ring.mp3">Berlin
+Kidnapping Ring</a></h3>
+<ul>
+<li>Date: December 9, 1950</li>
+<li>Duration: 29:23</li>
+<li>Episode: 39</li>
+</ul>
+<h3 id="e0070"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-12-16_040_Assignment_Richmond.mp3">Assignment
+Richmond</a></h3>
+<ul>
+<li>Date: December 16, 1950</li>
+<li>Duration: 28:31</li>
+<li>Episode: 40</li>
+</ul>
+<h3 id="e0071"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-12-16%20%28040%29%20Missing%20Civil%20War%20Map%20%28Virginia%29.mp3">Missing
+Civil War Map (Virginia)</a></h3>
+<ul>
+<li>Date: December 16, 1950</li>
+<li>Duration: 29:17</li>
+<li>Episode: 40</li>
+</ul>
+<h3 id="e0072"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_50-12-30_042_Assignment_Eastern_Europe.mp3">Assignment
+Eastern Europe</a></h3>
+<ul>
+<li>Date: December 30, 1950</li>
+<li>Duration: 29:24</li>
+<li>Episode: 42</li>
+</ul>
+<h3 id="e0073"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2050-12-30%20%28042%29%20Intercept%20Dr.%20Korvel%20%28Eastern%20Europe%29.mp3">Intercept
+Dr. Korvel (Eastern Europe)</a></h3>
+<ul>
+<li>Date: December 30, 1950</li>
+<li>Duration: 29:25</li>
+<li>Episode: 42</li>
+</ul>
+<h2 id="y1951">1951</h2>
+<h3 id="e0074"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-01-06_043_Anti-Sub_Plans.mp3">Anti-Sub
+Plans</a></h3>
+<ul>
+<li>Date: January 6, 1951</li>
+<li>Duration: 29:24</li>
+<li>Episode: 43</li>
+</ul>
+<h3 id="e0075"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-01-06%20%28043%29%20Operation%20Fish%20Hook%20%28Haiti%29.mp3">Operation
+Fish Hook (Haiti)</a></h3>
+<ul>
+<li>Date: January 6, 1951</li>
+<li>Duration: 29:24</li>
+<li>Episode: 43</li>
+</ul>
+<h3 id="e0076"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-01-13%20%28044%29%20Find%20Missing%20Scientist%20Dr.%20Wieczek%20%28Madrid%29.mp3">Find
+Missing Scientist Dr. Wieczek (Madrid)</a></h3>
+<ul>
+<li>Date: January 13, 1951</li>
+<li>Duration: 29:11</li>
+<li>Episode: 44</li>
+</ul>
+<h3 id="e0077"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-01-13_044_Missing_Scientist.mp3">Missing
+Scientist</a></h3>
+<ul>
+<li>Date: January 13, 1951</li>
+<li>Duration: 29:10</li>
+<li>Episode: 44</li>
+</ul>
+<h3 id="e0078"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-01-20_045_Mighty_Powder_Puff.mp3">Mighty
+Powder Puff</a></h3>
+<ul>
+<li>Date: January 20, 1951</li>
+<li>Duration: 29:18</li>
+<li>Episode: 45</li>
+</ul>
+<h3 id="e0079"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-01-20%20%28045%29%20Missing%20Arctic%20Warfare%20Report%20%28Quebec%29.mp3">Missing
+Arctic Warfare Report (Quebec)</a></h3>
+<ul>
+<li>Date: January 20, 1951</li>
+<li>Duration: 29:18</li>
+<li>Episode: 45</li>
+</ul>
+<h3 id="e0080"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-01-27_046_A_Box_of_Busted_Bells.mp3">A
+Box of Busted Bells</a></h3>
+<ul>
+<li>Date: January 27, 1951</li>
+<li>Duration: 29:26</li>
+<li>Episode: 46</li>
+</ul>
+<h3 id="e0081"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-01-27%20%28046%29%20A%20Box%20of%20Busted%20Bells%20%28Cairo%29.mp3">A
+Box of Busted Bells (Cairo)</a></h3>
+<ul>
+<li>Date: January 27, 1951</li>
+<li>Duration: 29:27</li>
+<li>Episode: 46</li>
+</ul>
+<h3 id="e0082"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-02-03_047_Nazi_Fugitive.mp3">Nazi
+Fugitive</a></h3>
+<ul>
+<li>Date: February 3, 1951</li>
+<li>Duration: 29:18</li>
+<li>Episode: 47</li>
+</ul>
+<h3 id="e0083"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-02-03%20%28047%29%20Nazi%20Fugitive%20%28Malaya%29.mp3">Nazi
+Fugitive (Malaya)</a></h3>
+<ul>
+<li>Date: February 3, 1951</li>
+<li>Duration: 29:19</li>
+<li>Episode: 47</li>
+</ul>
+<h3 id="e0084"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-02-10_048_Kroner_Cutlass.mp3">Kroner
+Cutlass</a></h3>
+<ul>
+<li>Date: February 10, 1951</li>
+<li>Duration: 29:19</li>
+<li>Episode: 48</li>
+</ul>
+<h3 id="e0085"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-02-10%20%28048%29%20Kroner%20Cutlass%20%28Eastern%20Europe%29.mp3">Kroner
+Cutlass (Eastern Europe)</a></h3>
+<ul>
+<li>Date: February 10, 1951</li>
+<li>Duration: 29:20</li>
+<li>Episode: 48</li>
+</ul>
+<h3 id="e0086"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-02-24_050_The_Bronx_-_The_Nazi_Buzz_Bomb.mp3">The
+Bronx - The Nazi Buzz Bomb</a></h3>
+<ul>
+<li>Date: February 24, 1951</li>
+<li>Duration: 29:24</li>
+<li>Episode: 50</li>
+</ul>
+<h3 id="e0087"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-02-24%20%28050%29%20The%20Nazi%20Buzz%20Bomb%20%28NY%2C%20London%2C%20Denmark%2C%20Holland%29.mp3">The
+Nazi Buzz Bomb (NY, London, Denmark, Holland)</a></h3>
+<ul>
+<li>Date: February 24, 1951</li>
+<li>Duration: 29:25</li>
+<li>Episode: 50</li>
+</ul>
+<h3 id="e0088"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-03-03_051_London_-_The_Secret_Code.mp3">London
+- The Secret Code</a></h3>
+<ul>
+<li>Date: March 3, 1951</li>
+<li>Duration: 29:21</li>
+<li>Episode: 51</li>
+</ul>
+<h3 id="e0089"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-03-03%20%28051%29%20Prevent%20Disclosure%20of%20Compromised%20Codes%20%28London%29.mp3">Prevent
+Disclosure of Compromised Codes (London)</a></h3>
+<ul>
+<li>Date: March 3, 1951</li>
+<li>Duration: 29:23</li>
+<li>Episode: 51</li>
+</ul>
+<h3 id="e0090"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-03-10_052_Roquel_-_Steves_Murder.mp3">Roquel
+- Steves Murder</a></h3>
+<ul>
+<li>Date: March 10, 1951</li>
+<li>Duration: 29:14</li>
+<li>Episode: 52</li>
+</ul>
+<h3 id="e0091"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-03-10%20%28052%29%20Solve%20Your%20Own%20Murder%20%28Roquel%2C%20South%20America%29.mp3">Solve
+Your Own Murder (Roquel, South America)</a></h3>
+<ul>
+<li>Date: March 10, 1951</li>
+<li>Duration: 29:30</li>
+<li>Episode: 52</li>
+</ul>
+<h3 id="e0092"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-03-17_053_Macau.mp3">Macau</a></h3>
+<ul>
+<li>Date: March 17, 1951</li>
+<li>Duration: 29:20</li>
+<li>Episode: 53</li>
+</ul>
+<h3 id="e0093"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-03-17%20%28053%29%20Recover%20a%20Hospital%20Chart%20%28Macau%29.mp3">Recover
+a Hospital Chart (Macau)</a></h3>
+<ul>
+<li>Date: March 17, 1951</li>
+<li>Duration: 29:19</li>
+<li>Episode: 53</li>
+</ul>
+<h3 id="e0094"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-03-24_054_The_Canal_Zone_-_A_Piece_of_String.mp3">The
+Canal Zone - A Piece of String</a></h3>
+<ul>
+<li>Date: March 24, 1951</li>
+<li>Duration: 29:16</li>
+<li>Episode: 54</li>
+</ul>
+<h3 id="e0095"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-03-24%20%28054%29%20Recover%20Stolen%20Dynamite%20%28Panama%29.mp3">Recover
+Stolen Dynamite (Panama)</a></h3>
+<ul>
+<li>Date: March 24, 1951</li>
+<li>Duration: 29:16</li>
+<li>Episode: 54</li>
+</ul>
+<h3 id="e0096"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-03-31%20%28055%29%20Atomic%20Fission%20Formula%20%28Java%29.mp3">Atomic
+Fission Formula (Java)</a></h3>
+<ul>
+<li>Date: March 31, 1951</li>
+<li>Duration: 29:16</li>
+<li>Episode: 55</li>
+</ul>
+<h3 id="e0097"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-xx-xx_xxx_Java_possibly_51-03-31.mp3">Java</a></h3>
+<ul>
+<li>Date: March 31, 1951</li>
+<li>Duration: 29:32</li>
+<li>Episode: 62</li>
+</ul>
+<h3 id="e0098"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-04-07_056_The_Balkans_-_File_72.mp3">The
+Balkans - File 72</a></h3>
+<ul>
+<li>Date: April 7, 1951</li>
+<li>Duration: 29:32</li>
+<li>Episode: 56</li>
+</ul>
+<h3 id="e0099"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-04-07%20%28056%29%20File%2072%20%28The%20Balkans%29.mp3">File
+72 (The Balkans)</a></h3>
+<ul>
+<li>Date: April 7, 1951</li>
+<li>Duration: 29:17</li>
+<li>Episode: 56</li>
+</ul>
+<h3 id="e0100"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-04-14_057_Middle_East_-_A_Tray_Of_Dirty_Dishes.mp3">Middle
+East - A Tray Of Dirty Dishes</a></h3>
+<ul>
+<li>Date: April 14, 1951</li>
+<li>Duration: 29:32</li>
+<li>Episode: 57</li>
+</ul>
+<h3 id="e0101"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-04-14%20%28057%29%20Stolen%20UN%20Documents%20%28Middle%20East%29.mp3">Stolen
+UN Documents (Middle East)</a></h3>
+<ul>
+<li>Date: April 14, 1951</li>
+<li>Duration: 29:21</li>
+<li>Episode: 57</li>
+</ul>
+<h3 id="e0102"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-04-21_058_Pen_Mightier_Than_The_Sword.mp3">Pen
+Mightier Than The Sword</a></h3>
+<ul>
+<li>Date: April 21, 1951</li>
+<li>Duration: 29:32</li>
+<li>Episode: 58</li>
+</ul>
+<h3 id="e0103"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-04-21%20%28058%29%20Retrieve%20Gouczek%20%28French%20Riviera%29.mp3">Retrieve
+Gouczek (French Riviera)</a></h3>
+<ul>
+<li>Date: April 21, 1951</li>
+<li>Duration: 29:18</li>
+<li>Episode: 58</li>
+</ul>
+<h3 id="e0104"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-04-28_059_Assignment_The_Balkans.mp3">Assignment
+The Balkans</a></h3>
+<ul>
+<li>Date: April 28, 1951</li>
+<li>Duration: 28:46</li>
+<li>Episode: 59</li>
+</ul>
+<h3 id="e0105"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-04-28%20%28059%29%20Outlaw%20Radio%20Station%20%28The%20Balkans%29.mp3">Outlaw
+Radio Station (The Balkans)</a></h3>
+<ul>
+<li>Date: April 28, 1951</li>
+<li>Duration: 29:25</li>
+<li>Episode: 59</li>
+</ul>
+<h3 id="e0106"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-05-04_060_Find_Rudolf_Karpel.mp3">Find
+Rudolf Karpel</a></h3>
+<ul>
+<li>Date: May 4, 1951</li>
+<li>Duration: 29:24</li>
+<li>Episode: 60</li>
+</ul>
+<h3 id="e0107"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-05-04%20%28060%29%20Find%20Rudolf%20Karpel%20%28Rotterdam%29.mp3">Find
+Rudolf Karpel (Rotterdam)</a></h3>
+<ul>
+<li>Date: May 4, 1951</li>
+<li>Duration: 29:25</li>
+<li>Episode: 60</li>
+</ul>
+<h3 id="e0108"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-05-11%20%28061%29%20Epidemic%20-%20Needle%20in%20a%20Haystack%20%28Landsburg%29.mp3">Epidemic
+- Needle in a Haystack (Landsburg)</a></h3>
+<ul>
+<li>Date: May 11, 1951</li>
+<li>Duration: 29:12</li>
+<li>Episode: 61</li>
+</ul>
+<h3 id="e0109"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-05-11_061_Needle_In_a_Haystack.mp3">Needle
+In a Haystack</a></h3>
+<ul>
+<li>Date: May 11, 1951</li>
+<li>Duration: 29:32</li>
+<li>Episode: 61</li>
+</ul>
+<h3 id="e0110"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-05-18_062_Operation_Hot_Foot.mp3">Operation
+Hot Foot</a></h3>
+<ul>
+<li>Date: May 18, 1951</li>
+<li>Duration: 29:32</li>
+<li>Episode: 62</li>
+</ul>
+<h3 id="e0111"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-05-18%20%28062%29%20Operation%20Hot%20Foot%20%28Trinidad%29.mp3">Operation
+Hot Foot (Trinidad)</a></h3>
+<ul>
+<li>Date: May 18, 1951</li>
+<li>Duration: 28:59</li>
+<li>Episode: 62</li>
+</ul>
+<h3 id="e0112"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-06-19_063_Assignment_Japan.mp3">Assignment
+Japan</a></h3>
+<ul>
+<li>Date: June 19, 1951</li>
+<li>Duration: 29:32</li>
+<li>Episode: 63</li>
+</ul>
+<h3 id="e0113"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-06-19%20%28063%29%20Suspicous%20Explosions%20%28Japan%29.mp3">Suspicous
+Explosions (Japan)</a></h3>
+<ul>
+<li>Date: June 19, 1951</li>
+<li>Duration: 29:07</li>
+<li>Episode: 63</li>
+</ul>
+<h3 id="e0114"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-06-26%20%28064%29%20The%20Suspect%20Cylinder%20%28Italy%29.mp3">The
+Suspect Cylinder (Italy)</a></h3>
+<ul>
+<li>Date: June 26, 1951</li>
+<li>Duration: 29:23</li>
+<li>Episode: 64</li>
+</ul>
+<h3 id="e0115"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-06-26_064_The_Suspicious_Cylinder.mp3">The
+Suspicious Cylinder</a></h3>
+<ul>
+<li>Date: June 26, 1951</li>
+<li>Duration: 29:32</li>
+<li>Episode: 64</li>
+</ul>
+<h3 id="e0116"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-07-03%20%28065%29%20A%20Country%27s%20Democracy%20Threatened%20%28South%20America%29.mp3">A
+Country’s Democracy Threatened (South America)</a></h3>
+<ul>
+<li>Date: July 3, 1951</li>
+<li>Duration: 28:53</li>
+<li>Episode: 65</li>
+</ul>
+<h3 id="e0117"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-07-03_065_South_America_-_A_Countrys_Democracy_Threatened.mp3">South
+America - A Countrys Democracy Threatened</a></h3>
+<ul>
+<li>Date: July 3, 1951</li>
+<li>Duration: 29:32</li>
+<li>Episode: 65</li>
+</ul>
+<h3 id="e0118"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-07-10_066_Assignment_China_Sea.mp3">Assignment
+China Sea</a></h3>
+<ul>
+<li>Date: July 10, 1951</li>
+<li>Duration: 29:32</li>
+<li>Episode: 66</li>
+</ul>
+<h3 id="e0119"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2051-07-10%20%28066%29%20China%20Sea%20Smuggling%20%28Luzon%29.mp3">China
+Sea Smuggling (Luzon)</a></h3>
+<ul>
+<li>Date: July 10, 1951</li>
+<li>Duration: 28:47</li>
+<li>Episode: 66</li>
+</ul>
+<h3 id="e0120"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_51-11-03_082_Nazi_Fugitive_-_Captain_Shiller.mp3">Nazi
+Fugitive - Captain Shiller</a></h3>
+<ul>
+<li>Date: November 3, 1951</li>
+<li>Duration: 29:18</li>
+<li>Episode: 82</li>
+</ul>
+<h2 id="y1952">1952</h2>
+<h3 id="e0121"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-03-10_100_Eli_Bryant_Traitor.mp3">Eli
+Bryant Traitor</a></h3>
+<ul>
+<li>Date: March 10, 1952</li>
+<li>Duration: 24:21</li>
+<li>Episode: 100</li>
+</ul>
+<h3 id="e0122"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-08-25%20%28122%29%20A%20Stolen%20Treaty%20%28Port%20Said%29.mp3">A
+Stolen Treaty (Port Said)</a></h3>
+<ul>
+<li>Date: August 25, 1952</li>
+<li>Duration: 24:35</li>
+<li>Episode: 122</li>
+</ul>
+<h3 id="e0123"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-10-08_128_Underground_Press.mp3">Underground
+Press</a></h3>
+<ul>
+<li>Date: October 8, 1952</li>
+<li>Duration: 24:32</li>
+<li>Episode: 128</li>
+</ul>
+<h3 id="e0124"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-10-08%20%28129%29%20The%20Underground%20Press%20%28Austria%29.mp3">The
+Underground Press (Austria)</a></h3>
+<ul>
+<li>Date: October 8, 1952</li>
+<li>Duration: 23:19</li>
+<li>Episode: 129</li>
+</ul>
+<h3 id="e0125"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-10-15_129_To_Ask_A_Guy_To_Shoot_You.mp3">To
+Ask A Guy To Shoot You</a></h3>
+<ul>
+<li>Date: October 15, 1952</li>
+<li>Duration: 24:27</li>
+<li>Episode: 129</li>
+</ul>
+<h3 id="e0126"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-10-15%20%28130%29%20To%20Ask%20a%20Guy%20to%20Shoot%20You%20%28Indonesia%29.mp3">To
+Ask a Guy to Shoot You (Indonesia)</a></h3>
+<ul>
+<li>Date: October 15, 1952</li>
+<li>Duration: 24:28</li>
+<li>Episode: 130</li>
+</ul>
+<h3 id="e0127"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-10-22_130_Butterfly_Chasers.mp3">Butterfly
+Chasers</a></h3>
+<ul>
+<li>Date: October 22, 1952</li>
+<li>Duration: 24:32</li>
+<li>Episode: 130</li>
+</ul>
+<h3 id="e0128"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-10-22%20%28131%29%20Butterfly%20Chasers%20%28Brazil%29.mp3">Butterfly
+Chasers (Brazil)</a></h3>
+<ul>
+<li>Date: October 22, 1952</li>
+<li>Duration: 23:06</li>
+<li>Episode: 131</li>
+</ul>
+<h3 id="e0129"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-10-29_131_Havana.mp3">Havana</a></h3>
+<ul>
+<li>Date: October 29, 1952</li>
+<li>Duration: 24:21</li>
+<li>Episode: 131</li>
+</ul>
+<h3 id="e0130"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-11-05_132_The_Smuggling_Racket.mp3">The
+Smuggling Racket</a></h3>
+<ul>
+<li>Date: November 5, 1952</li>
+<li>Duration: 23:44</li>
+<li>Episode: 132</li>
+</ul>
+<h3 id="e0131"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-11-05%20%28132%29%20The%20Smuggling%20Racket%20%28Havana%29.mp3">The
+Smuggling Racket (Havana)</a></h3>
+<ul>
+<li>Date: November 5, 1952</li>
+<li>Duration: 24:24</li>
+<li>Episode: 132</li>
+</ul>
+<h3 id="e0132"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-11-12_133_Assignment_Turkey.mp3">Assignment
+Turkey</a></h3>
+<ul>
+<li>Date: November 12, 1952</li>
+<li>Duration: 28:48</li>
+<li>Episode: 133</li>
+</ul>
+<h3 id="e0133"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-11-12%20%28133%29%20Mr.%20Alexander%27s%20File%20%28Turkey%29.mp3">Mr. Alexander’s
+File (Turkey)</a></h3>
+<ul>
+<li>Date: November 12, 1952</li>
+<li>Duration: 24:23</li>
+<li>Episode: 133</li>
+</ul>
+<h3 id="e0134"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-11-19_134_The_Private_Sanatorium.mp3">The
+Private Sanatorium</a></h3>
+<ul>
+<li>Date: November 19, 1952</li>
+<li>Duration: 28:31</li>
+<li>Episode: 134</li>
+</ul>
+<h3 id="e0135"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-11-19%20%28134%29%20The%20Private%20Sanatorium%20%28Munich%29.mp3">The
+Private Sanatorium (Munich)</a></h3>
+<ul>
+<li>Date: November 19, 1952</li>
+<li>Duration: 24:43</li>
+<li>Episode: 134</li>
+</ul>
+<h3 id="e0136"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-11-26_135_A_Nursery_Rhyme.mp3">A
+Nursery Rhyme</a></h3>
+<ul>
+<li>Date: November 26, 1952</li>
+<li>Duration: 28:41</li>
+<li>Episode: 135</li>
+</ul>
+<h3 id="e0137"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-11-26%20%28135%29%20A%20Nursery%20Rhyme%20%28Stockholm%29.mp3">A
+Nursery Rhyme (Stockholm)</a></h3>
+<ul>
+<li>Date: November 26, 1952</li>
+<li>Duration: 24:25</li>
+<li>Episode: 135</li>
+</ul>
+<h3 id="e0138"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-12-03%20%28136%29%20Italian%20Actress%20%28Nice%29.mp3">Italian
+Actress (Nice)</a></h3>
+<ul>
+<li>Date: December 3, 1952</li>
+<li>Duration: 24:46</li>
+<li>Episode: 136</li>
+</ul>
+<h3 id="e0139"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-12-03_136_Nice_-_Italian_Actress.mp3">Nice
+- Italian Actress</a></h3>
+<ul>
+<li>Date: December 3, 1952</li>
+<li>Duration: 28:16</li>
+<li>Episode: 136</li>
+</ul>
+<h3 id="e0140"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-12-10_137_Attacking_Guards.mp3">Attacking
+Guards</a></h3>
+<ul>
+<li>Date: December 10, 1952</li>
+<li>Duration: 24:43</li>
+<li>Episode: 137</li>
+</ul>
+<h3 id="e0141"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-12-10%20%28137%29%20Riot%20%28Vienna%29.mp3">Riot
+(Vienna)</a></h3>
+<ul>
+<li>Date: December 10, 1952</li>
+<li>Duration: 24:46</li>
+<li>Episode: 137</li>
+</ul>
+<h3 id="e0142"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-12-17_138_Assignment_Turkey.mp3">Assignment
+Turkey</a></h3>
+<ul>
+<li>Date: December 17, 1952</li>
+<li>Duration: 29:13</li>
+<li>Episode: 138</li>
+</ul>
+<h3 id="e0143"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-12-17%20%28138%29%20Road%20Sabotage%20%28Turkey%29.mp3">Road
+Sabotage (Turkey)</a></h3>
+<ul>
+<li>Date: December 17, 1952</li>
+<li>Duration: 24:29</li>
+<li>Episode: 138</li>
+</ul>
+<h3 id="e0144"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-12-24_139_Lecturing_Professors.mp3">Lecturing
+Professors</a></h3>
+<ul>
+<li>Date: December 24, 1952</li>
+<li>Duration: 23:25</li>
+<li>Episode: 139</li>
+</ul>
+<h3 id="e0145"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-12-24%20%28139%29%20Lecturing%20Professors%20%28Sweden%29.mp3">Lecturing
+Professors (Sweden)</a></h3>
+<ul>
+<li>Date: December 24, 1952</li>
+<li>Duration: 23:57</li>
+<li>Episode: 139</li>
+</ul>
+<h3 id="e0146"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_52-12-31_140_Street_Car_17.mp3">Street
+Car 17</a></h3>
+<ul>
+<li>Date: December 31, 1952</li>
+<li>Duration: 23:42</li>
+<li>Episode: 140</li>
+</ul>
+<h3 id="e0147"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2052-12-31%20%28140%29%20Street%20Car%2017%20%28Trieste%29.mp3">Street
+Car 17 (Trieste)</a></h3>
+<ul>
+<li>Date: December 31, 1952</li>
+<li>Duration: 23:48</li>
+<li>Episode: 140</li>
+</ul>
+<h2 id="y1953">1953</h2>
+<h3 id="e0148"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-01-07_141_Assignment_Ellis_Chandler.mp3">Assignment
+Ellis Chandler</a></h3>
+<ul>
+<li>Date: January 7, 1953</li>
+<li>Duration: 24:24</li>
+<li>Episode: 141</li>
+</ul>
+<h3 id="e0149"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-01-07%20%28141%29%20Colonel%20Chan%20%28New%20Guinea%29.mp3">Colonel
+Chan (New Guinea)</a></h3>
+<ul>
+<li>Date: January 7, 1953</li>
+<li>Duration: 24:28</li>
+<li>Episode: 141</li>
+</ul>
+<h3 id="e0150"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-01-14_142_The_Blue_Lion.mp3">The
+Blue Lion</a></h3>
+<ul>
+<li>Date: January 14, 1953</li>
+<li>Duration: 23:57</li>
+<li>Episode: 142</li>
+</ul>
+<h3 id="e0151"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-01-14%20%28142%29%20The%20Blue%20Lion%20%28London%29.mp3">The
+Blue Lion (London)</a></h3>
+<ul>
+<li>Date: January 14, 1953</li>
+<li>Duration: 24:15</li>
+<li>Episode: 142</li>
+</ul>
+<h3 id="e0152"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-01-21%20%28143%29%20Leak%20of%20Strategic%20Materials%20%28Burma%29.mp3">Leak
+of Strategic Materials (Burma)</a></h3>
+<ul>
+<li>Date: January 21, 1953</li>
+<li>Duration: 24:40</li>
+<li>Episode: 143</li>
+</ul>
+<h3 id="e0153"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-01-28_144_Assignment_Mexico.mp3">Assignment
+Mexico</a></h3>
+<ul>
+<li>Date: January 28, 1953</li>
+<li>Duration: 24:59</li>
+<li>Episode: 144</li>
+</ul>
+<h3 id="e0154"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-01-28%20%28144%29%20The%20Hunt%20for%20Charon%20%28Mexico%29.mp3">The
+Hunt for Charon (Mexico)</a></h3>
+<ul>
+<li>Date: January 28, 1953</li>
+<li>Duration: 24:15</li>
+<li>Episode: 144</li>
+</ul>
+<h3 id="e0155"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-02-04%20%28145%29%20Arnold%20Freed%20Kidnapped%20%28Greece%29.mp3">Arnold
+Freed Kidnapped (Greece)</a></h3>
+<ul>
+<li>Date: February 4, 1953</li>
+<li>Duration: 24:19</li>
+<li>Episode: 145</li>
+</ul>
+<h3 id="e0156"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-02-04_145_Assignment_Greece.mp3">Assignment
+Greece</a></h3>
+<ul>
+<li>Date: February 4, 1953</li>
+<li>Duration: 24:07</li>
+<li>Episode: 145</li>
+</ul>
+<h3 id="e0157"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-02-11_146_Family_Squabble.mp3">Family
+Squabble</a></h3>
+<ul>
+<li>Date: February 11, 1953</li>
+<li>Duration: 25:03</li>
+<li>Episode: 146</li>
+</ul>
+<h3 id="e0158"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-02-11%20%28146%29%20Family%20Squabble%20%28Belgian%20Congo%29.mp3">Family
+Squabble (Belgian Congo)</a></h3>
+<ul>
+<li>Date: February 11, 1953</li>
+<li>Duration: 24:08</li>
+<li>Episode: 146</li>
+</ul>
+<h3 id="e0159"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-02-18_147_Doctor_MacDougal.mp3">Doctor
+MacDougal</a></h3>
+<ul>
+<li>Date: February 18, 1953</li>
+<li>Duration: 25:12</li>
+<li>Episode: 147</li>
+</ul>
+<h3 id="e0160"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-02-18%20%28147%29%20Doctor%20Mitsuko%20Kidnapping%20%28Japan%29.mp3">Doctor
+Mitsuko Kidnapping (Japan)</a></h3>
+<ul>
+<li>Date: February 18, 1953</li>
+<li>Duration: 24:25</li>
+<li>Episode: 147</li>
+</ul>
+<h3 id="e0161"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-02-25_148_Black_Market_In_Jewels.mp3">Black
+Market In Jewels</a></h3>
+<ul>
+<li>Date: February 25, 1953</li>
+<li>Duration: 26:10</li>
+<li>Episode: 148</li>
+</ul>
+<h3 id="e0162"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-02-25%20%28148%29%20Black%20Market%20in%20Jewels%20%28France%29.mp3">Black
+Market in Jewels (France)</a></h3>
+<ul>
+<li>Date: February 25, 1953</li>
+<li>Duration: 24:28</li>
+<li>Episode: 148</li>
+</ul>
+<h3 id="e0163"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-03-04%20%28149%29%20Henrich%20Schwandorff%20%28Germany%29.mp3">Henrich
+Schwandorff (Germany)</a></h3>
+<ul>
+<li>Date: March 4, 1953</li>
+<li>Duration: 24:18</li>
+<li>Episode: 149</li>
+</ul>
+<h3 id="e0164"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-03-04_149_Henrich_Swindorff.mp3">Henrich
+Swindorff</a></h3>
+<ul>
+<li>Date: March 4, 1953</li>
+<li>Duration: 25:19</li>
+<li>Episode: 149</li>
+</ul>
+<h3 id="e0165"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-03-18_151_Stolen_Information.mp3">Stolen
+Information</a></h3>
+<ul>
+<li>Date: March 18, 1953</li>
+<li>Duration: 24:45</li>
+<li>Episode: 151</li>
+</ul>
+<h3 id="e0166"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-03-18%20%28151%29%20Stolen%20Information%20Group%20%28Norway%29.mp3">Stolen
+Information Group (Norway)</a></h3>
+<ul>
+<li>Date: March 18, 1953</li>
+<li>Duration: 24:48</li>
+<li>Episode: 151</li>
+</ul>
+<h3 id="e0167"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-03-25_152_Assignment_in_Portugal.mp3">Assignment
+in Portugal</a></h3>
+<ul>
+<li>Date: March 25, 1953</li>
+<li>Duration: 24:22</li>
+<li>Episode: 152</li>
+</ul>
+<h3 id="e0168"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-03-25%20%28152%29%20Find%20Antonina%20%28Portugal%29.mp3">Find
+Antonina (Portugal)</a></h3>
+<ul>
+<li>Date: March 25, 1953</li>
+<li>Duration: 24:26</li>
+<li>Episode: 152</li>
+</ul>
+<h3 id="e0169"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-04-01_153_Assignment_Caribbean.mp3">Assignment
+Caribbean</a></h3>
+<ul>
+<li>Date: April 1, 1953</li>
+<li>Duration: 24:16</li>
+<li>Episode: 153</li>
+</ul>
+<h3 id="e0170"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-04-01%20%28153%29%20Rescue%20Rick%20Perez%20%28Venezuela%29.mp3">Rescue
+Rick Perez (Venezuela)</a></h3>
+<ul>
+<li>Date: April 1, 1953</li>
+<li>Duration: 24:23</li>
+<li>Episode: 153</li>
+</ul>
+<h3 id="e0171"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-04-08_154_Assignment_Paris.mp3">Assignment
+Paris</a></h3>
+<ul>
+<li>Date: April 8, 1953</li>
+<li>Duration: 24:14</li>
+<li>Episode: 154</li>
+</ul>
+<h3 id="e0172"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-04-08%20%28154%29%20Boy%20Used%20as%20Courier%20%28Paris%29.mp3">Boy
+Used as Courier (Paris)</a></h3>
+<ul>
+<li>Date: April 8, 1953</li>
+<li>Duration: 24:24</li>
+<li>Episode: 154</li>
+</ul>
+<h3 id="e0173"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-04-15%20%28155%29%20Find%20Lenny%20Fenway%20%28Tibet%29.mp3">Find
+Lenny Fenway (Tibet)</a></h3>
+<ul>
+<li>Date: April 15, 1953</li>
+<li>Duration: 24:25</li>
+<li>Episode: 155</li>
+</ul>
+<h3 id="e0174"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-04-15_155_Lenny_Fenway.mp3">Lenny
+Fenway</a></h3>
+<ul>
+<li>Date: April 15, 1953</li>
+<li>Duration: 19:24</li>
+<li>Episode: 155</li>
+</ul>
+<h3 id="e0175"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-04-22_156_London_-_Nikoli_Debarov.mp3">London
+- Nikoli Debarov</a></h3>
+<ul>
+<li>Date: April 22, 1953</li>
+<li>Duration: 23:42</li>
+<li>Episode: 156</li>
+</ul>
+<h3 id="e0176"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-04-22%20%28156%29%20A%20Trap%20in%20Freedom%20House%20%28London%29.mp3">A
+Trap in Freedom House (London)</a></h3>
+<ul>
+<li>Date: April 22, 1953</li>
+<li>Duration: 24:26</li>
+<li>Episode: 156</li>
+</ul>
+<h3 id="e0177"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-04-29_157_The_Anti-Submarine_Project.mp3">The
+Anti-Submarine Project</a></h3>
+<ul>
+<li>Date: April 29, 1953</li>
+<li>Duration: 25:10</li>
+<li>Episode: 157</li>
+</ul>
+<h3 id="e0178"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-04-29%20%28157%29%20Strategic%20Base%20Sabotaged%20%28New%20Guinea%29.mp3">Strategic
+Base Sabotaged (New Guinea)</a></h3>
+<ul>
+<li>Date: April 29, 1953</li>
+<li>Duration: 24:25</li>
+<li>Episode: 157</li>
+</ul>
+<h3 id="e0179"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-05-06_158_Assignment_Trieste.mp3">Assignment
+Trieste</a></h3>
+<ul>
+<li>Date: May 6, 1953</li>
+<li>Duration: 21:12</li>
+<li>Episode: 158</li>
+</ul>
+<h3 id="e0180"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-05-06%20%28158%29%20Smuggling%20to%20Iron%20Curtain%20Nations%20%28Italy%29.mp3">Smuggling
+to Iron Curtain Nations (Italy)</a></h3>
+<ul>
+<li>Date: May 6, 1953</li>
+<li>Duration: 23:20</li>
+<li>Episode: 158</li>
+</ul>
+<h3 id="e0181"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-05-13%20%28159%29%20The%20Jade%20Dagger%20%28Cairo%29.mp3">The
+Jade Dagger (Cairo)</a></h3>
+<ul>
+<li>Date: May 13, 1953</li>
+<li>Duration: 24:28</li>
+<li>Episode: 159</li>
+</ul>
+<h3 id="e0182"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-05-13_159_The_Jade_Knife.mp3">The
+Jade Knife</a></h3>
+<ul>
+<li>Date: May 13, 1953</li>
+<li>Duration: 24:52</li>
+<li>Episode: 159</li>
+</ul>
+<h3 id="e0183"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-05-20_160_Oslo_-_The_Stolen_Blueprints.mp3">Oslo
+- The Stolen Blueprints</a></h3>
+<ul>
+<li>Date: May 20, 1953</li>
+<li>Duration: 24:30</li>
+<li>Episode: 160</li>
+</ul>
+<h3 id="e0184"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-05-20%20%28160%29%20Stolen%20Computer%20Blueprints%20%28Oslo%2C%20Norway%29.mp3">Stolen
+Computer Blueprints (Oslo, Norway)</a></h3>
+<ul>
+<li>Date: May 20, 1953</li>
+<li>Duration: 24:44</li>
+<li>Episode: 160</li>
+</ul>
+<h3 id="e0185"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-05-27_161_A_Hired_Assassin.mp3">A
+Hired Assassin</a></h3>
+<ul>
+<li>Date: May 27, 1953</li>
+<li>Duration: 22:56</li>
+<li>Episode: 161</li>
+</ul>
+<h3 id="e0186"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-05-27%20%28161%29%20The%20Hired%20Assassin%20%28Havana%29.mp3">The
+Hired Assassin (Havana)</a></h3>
+<ul>
+<li>Date: May 27, 1953</li>
+<li>Duration: 24:27</li>
+<li>Episode: 161</li>
+</ul>
+<h3 id="e0187"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-06-24%20%28164%29%20Capture%20James%20C.%20Stoller%20%28Damascus%29.mp3">Capture
+James C. Stoller (Damascus)</a></h3>
+<ul>
+<li>Date: June 24, 1953</li>
+<li>Duration: 24:26</li>
+<li>Episode: 164</li>
+</ul>
+<h3 id="e0188"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-06-24_164_James_Stroller.mp3">James
+Stroller</a></h3>
+<ul>
+<li>Date: June 24, 1953</li>
+<li>Duration: 23:58</li>
+<li>Episode: 164</li>
+</ul>
+<h3 id="e0189"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-07-01_165_Anthony_Tagul.mp3">Anthony
+Tagul</a></h3>
+<ul>
+<li>Date: July 1, 1953</li>
+<li>Duration: 24:18</li>
+<li>Episode: 165</li>
+</ul>
+<h3 id="e0190"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-07-01%20%28165%29%20Find%20Anthony%20Targu%20%28Montreal%29.mp3">Find
+Anthony Targu (Montreal)</a></h3>
+<ul>
+<li>Date: July 1, 1953</li>
+<li>Duration: 24:30</li>
+<li>Episode: 165</li>
+</ul>
+<h3 id="e0191"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous_Assignment_53-07-08_166_Picking_Up_A_Bomb.mp3">Picking
+Up A Bomb</a></h3>
+<ul>
+<li>Date: July 8, 1953</li>
+<li>Duration: 24:36</li>
+<li>Episode: 166</li>
+</ul>
+<h3 id="e0192"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/Dangerous%20Assignment%2053-07-08%20%28166%29%20Picking%20Up%20a%20Bomb%20%28Saigon%29.mp3">Picking
+Up a Bomb (Saigon)</a></h3>
+<ul>
+<li>Date: July 8, 1953</li>
+<li>Duration: 24:39</li>
+<li>Episode: 166</li>
+</ul>
+<h2 id="yUndated">Undated</h2>
+<h3 id="e0193"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/DA22E6~1.MP3">DA22E6~1</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 29:39</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0194"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/DA4079~1.MP3">DA4079~1</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 29:20</li>
+<li>Episode: 2</li>
+</ul>
+<h3 id="e0195"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/DA9363~1.MP3">DA9363~1</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 29:22</li>
+<li>Episode: 3</li>
+</ul>
+<h3 id="e0196"><a
+href="https://archive.org/download/Otrr_Dangerous_Assignment_Singles/DAB6CC~1.MP3">DAB6CC~1</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 29:14</li>
+<li>Episode: 4</li>
+</ul>
+<h2 id="byDate">Appendix A: By Date</h2>
+<ul>
+<li><a href="#e0001">1949-07-09: Relief Supplies</a></li>
+<li><a href="#e0002">1949-07-09: Thropp FoundationRelief Supplies
+(Sicily)</a></li>
+<li><a href="#e0003">1949-07-16: Malayan Star Line Sabotage
+(Saigon)</a></li>
+<li><a href="#e0004">1949-07-16: Sunken Ships</a></li>
+<li><a href="#e0005">1949-07-23: Nigerian Safari</a></li>
+<li><a href="#e0006">1949-07-23: On Safari for Nigerian
+Manganese</a></li>
+<li><a href="#e0007">1949-08-06: Millionaire Murder Conspiracy
+(Paris)</a></li>
+<li><a href="#e0008">1949-08-06: Millionaire Murders</a></li>
+<li><a href="#e0009">1949-08-13: Alien Smuggling Ring</a></li>
+<li><a href="#e0010">1949-08-13: Smash Alien Smuggling Ring
+(Portugal)</a></li>
+<li><a href="#e0011">1949-08-20: File 307</a></li>
+<li><a href="#e0012">1949-08-20: File no. 307 (Zurich)</a></li>
+<li><a href="#e0013">1950-02-06: Find Missing Japanese Weapons
+(Panama)</a></li>
+<li><a href="#e0014">1950-02-06: Missing Japanese Weapons</a></li>
+<li><a href="#e0015">1950-02-13: Captain Rock</a></li>
+<li><a href="#e0016">1950-02-13: Who Killed Captain Rocq</a></li>
+<li><a href="#e0017">1950-02-20: The Greek Connection</a></li>
+<li><a href="#e0018">1950-02-20: Recover Stolen Radar Plans
+(Athens)</a></li>
+<li><a href="#e0019">1950-02-27: White Jade Cafe (Macao)</a></li>
+<li><a href="#e0020">1950-03-06: Recover Wire Recorder Spool (San
+Diego)</a></li>
+<li><a href="#e0021">1950-03-06: Wire Spool</a></li>
+<li><a href="#e0022">1950-03-20: International Blackmail</a></li>
+<li><a href="#e0023">1950-03-20: International Blackmail
+(Switzerland)</a></li>
+<li><a href="#e0024">1950-03-27: Renew Sheik Haroun’s Uranium Deal
+(Cairo)</a></li>
+<li><a href="#e0025">1950-03-27: The Sheiks Secret</a></li>
+<li><a href="#e0026">1950-04-10: Pirate Loot</a></li>
+<li><a href="#e0027">1950-04-10: Recover Underwater Demolition Secrets
+(Trinidad)</a></li>
+<li><a href="#e0028">1950-04-17: Investigate Flying Saucers
+(Ecuador)</a></li>
+<li><a href="#e0029">1950-04-17: UFOs In Ecuador</a></li>
+<li><a href="#e0030">1950-04-24: The Nazi and the Physicist</a></li>
+<li><a href="#e0031">1950-05-03: Find Szabo and the Briefcase
+(Paris)</a></li>
+<li><a href="#e0032">1950-05-03: Sabotage in Paris</a></li>
+<li><a href="#e0033">1950-05-10: Lecturing Professors</a></li>
+<li><a href="#e0034">1950-05-10: Smash Lecture Circuit Spy Ring
+(Stockholm)</a></li>
+<li><a href="#e0035">1950-05-17: The Lost City</a></li>
+<li><a href="#e0036">1950-05-24: Burmese Witnesses</a></li>
+<li><a href="#e0037">1950-05-24: Solve Kent Jackon’s Murder
+(Burma)</a></li>
+<li><a href="#e0038">1950-05-31: Administer Little White Pill Antidote
+(Balkans)</a></li>
+<li><a href="#e0039">1950-05-31: Little White Pill</a></li>
+<li><a href="#e0040">1950-06-07: Deadly Bacteria</a></li>
+<li><a href="#e0041">1950-06-07: Find Champlin and his Reel of Tape
+(Turkey)</a></li>
+<li><a href="#e0042">1950-07-26: Five Gardenias</a></li>
+<li><a href="#e0043">1950-08-02: Recover Lost Troop Movement Document
+(Vienna)</a></li>
+<li><a href="#e0044">1950-08-02: Vienna Mystery</a></li>
+<li><a href="#e0045">1950-08-09: Death Drums</a></li>
+<li><a href="#e0046">1950-08-09: Defeat African Hate Campaign (Secundi,
+Africa)</a></li>
+<li><a href="#e0047">1950-08-16: Find Hired Killer Lupac
+(Paris)</a></li>
+<li><a href="#e0048">1950-08-16: Hired Killer</a></li>
+<li><a href="#e0049">1950-08-23: Bombay Gun Runners</a></li>
+<li><a href="#e0050">1950-08-23: Get Gouda Before the Gun Runners
+(Bombay)</a></li>
+<li><a href="#e0051">1950-08-30: Guided Missile Plans</a></li>
+<li><a href="#e0052">1950-08-30: Recover Stolen Missle Plan Microfilm
+(London)</a></li>
+<li><a href="#e0053">1950-09-06: Assignment Mine Disaster</a></li>
+<li><a href="#e0054">1950-09-06: Chromite Mine Disaster
+(Balkans)</a></li>
+<li><a href="#e0055">1950-09-20: Contact Lefty the Trained Seal
+(Turkey)</a></li>
+<li><a href="#e0056">1950-09-20: Trained Seal</a></li>
+<li><a href="#e0057">1950-09-27: Latin America</a></li>
+<li><a href="#e0058">1950-09-27: Retrieve Slarga from Latin
+America</a></li>
+<li><a href="#e0059">1950-09-29: Forged Identification Papers Ring
+(Trinidad)</a></li>
+<li><a href="#e0060">1950-09-29: Forged Papers</a></li>
+<li><a href="#e0061">1950-10-06: Tokyo</a></li>
+<li><a href="#e0062">1950-11-18: Memory Chain</a></li>
+<li><a href="#e0063">1950-11-18: Memory Chain Equation (Munich)</a></li>
+<li><a href="#e0064">1950-11-25: The Football Play</a></li>
+<li><a href="#e0065">1950-11-25: The Football Play (Indo-China)</a></li>
+<li><a href="#e0066">1950-12-02: The Empty Matchbook</a></li>
+<li><a href="#e0067">1950-12-02: The Empty Matchbook (Sonoma, South
+America)</a></li>
+<li><a href="#e0068">1950-12-09: Berlin Kidnapping</a></li>
+<li><a href="#e0069">1950-12-09: Berlin Kidnapping Ring</a></li>
+<li><a href="#e0070">1950-12-16: Assignment Richmond</a></li>
+<li><a href="#e0071">1950-12-16: Missing Civil War Map
+(Virginia)</a></li>
+<li><a href="#e0072">1950-12-30: Assignment Eastern Europe</a></li>
+<li><a href="#e0073">1950-12-30: Intercept Dr. Korvel (Eastern
+Europe)</a></li>
+<li><a href="#e0074">1951-01-06: Anti-Sub Plans</a></li>
+<li><a href="#e0075">1951-01-06: Operation Fish Hook (Haiti)</a></li>
+<li><a href="#e0076">1951-01-13: Find Missing Scientist Dr. Wieczek
+(Madrid)</a></li>
+<li><a href="#e0077">1951-01-13: Missing Scientist</a></li>
+<li><a href="#e0078">1951-01-20: Mighty Powder Puff</a></li>
+<li><a href="#e0079">1951-01-20: Missing Arctic Warfare Report
+(Quebec)</a></li>
+<li><a href="#e0080">1951-01-27: A Box of Busted Bells</a></li>
+<li><a href="#e0081">1951-01-27: A Box of Busted Bells (Cairo)</a></li>
+<li><a href="#e0082">1951-02-03: Nazi Fugitive</a></li>
+<li><a href="#e0083">1951-02-03: Nazi Fugitive (Malaya)</a></li>
+<li><a href="#e0084">1951-02-10: Kroner Cutlass</a></li>
+<li><a href="#e0085">1951-02-10: Kroner Cutlass (Eastern
+Europe)</a></li>
+<li><a href="#e0086">1951-02-24: The Bronx - The Nazi Buzz Bomb</a></li>
+<li><a href="#e0087">1951-02-24: The Nazi Buzz Bomb (NY, London,
+Denmark, Holland)</a></li>
+<li><a href="#e0088">1951-03-03: London - The Secret Code</a></li>
+<li><a href="#e0089">1951-03-03: Prevent Disclosure of Compromised Codes
+(London)</a></li>
+<li><a href="#e0090">1951-03-10: Roquel - Steves Murder</a></li>
+<li><a href="#e0091">1951-03-10: Solve Your Own Murder (Roquel, South
+America)</a></li>
+<li><a href="#e0092">1951-03-17: Macau</a></li>
+<li><a href="#e0093">1951-03-17: Recover a Hospital Chart
+(Macau)</a></li>
+<li><a href="#e0094">1951-03-24: The Canal Zone - A Piece of
+String</a></li>
+<li><a href="#e0095">1951-03-24: Recover Stolen Dynamite
+(Panama)</a></li>
+<li><a href="#e0096">1951-03-31: Atomic Fission Formula (Java)</a></li>
+<li><a href="#e0097">1951-03-31: Java</a></li>
+<li><a href="#e0098">1951-04-07: The Balkans - File 72</a></li>
+<li><a href="#e0099">1951-04-07: File 72 (The Balkans)</a></li>
+<li><a href="#e0100">1951-04-14: Middle East - A Tray Of Dirty
+Dishes</a></li>
+<li><a href="#e0101">1951-04-14: Stolen UN Documents (Middle
+East)</a></li>
+<li><a href="#e0102">1951-04-21: Pen Mightier Than The Sword</a></li>
+<li><a href="#e0103">1951-04-21: Retrieve Gouczek (French
+Riviera)</a></li>
+<li><a href="#e0104">1951-04-28: Assignment The Balkans</a></li>
+<li><a href="#e0105">1951-04-28: Outlaw Radio Station (The
+Balkans)</a></li>
+<li><a href="#e0106">1951-05-04: Find Rudolf Karpel</a></li>
+<li><a href="#e0107">1951-05-04: Find Rudolf Karpel (Rotterdam)</a></li>
+<li><a href="#e0108">1951-05-11: Epidemic - Needle in a Haystack
+(Landsburg)</a></li>
+<li><a href="#e0109">1951-05-11: Needle In a Haystack</a></li>
+<li><a href="#e0110">1951-05-18: Operation Hot Foot</a></li>
+<li><a href="#e0111">1951-05-18: Operation Hot Foot (Trinidad)</a></li>
+<li><a href="#e0112">1951-06-19: Assignment Japan</a></li>
+<li><a href="#e0113">1951-06-19: Suspicous Explosions (Japan)</a></li>
+<li><a href="#e0114">1951-06-26: The Suspect Cylinder (Italy)</a></li>
+<li><a href="#e0115">1951-06-26: The Suspicious Cylinder</a></li>
+<li><a href="#e0116">1951-07-03: A Country’s Democracy Threatened (South
+America)</a></li>
+<li><a href="#e0117">1951-07-03: South America - A Countrys Democracy
+Threatened</a></li>
+<li><a href="#e0118">1951-07-10: Assignment China Sea</a></li>
+<li><a href="#e0119">1951-07-10: China Sea Smuggling (Luzon)</a></li>
+<li><a href="#e0120">1951-11-03: Nazi Fugitive - Captain
+Shiller</a></li>
+<li><a href="#e0121">1952-03-10: Eli Bryant Traitor</a></li>
+<li><a href="#e0122">1952-08-25: A Stolen Treaty (Port Said)</a></li>
+<li><a href="#e0123">1952-10-08: Underground Press</a></li>
+<li><a href="#e0124">1952-10-08: The Underground Press
+(Austria)</a></li>
+<li><a href="#e0125">1952-10-15: To Ask A Guy To Shoot You</a></li>
+<li><a href="#e0126">1952-10-15: To Ask a Guy to Shoot You
+(Indonesia)</a></li>
+<li><a href="#e0127">1952-10-22: Butterfly Chasers</a></li>
+<li><a href="#e0128">1952-10-22: Butterfly Chasers (Brazil)</a></li>
+<li><a href="#e0129">1952-10-29: Havana</a></li>
+<li><a href="#e0130">1952-11-05: The Smuggling Racket</a></li>
+<li><a href="#e0131">1952-11-05: The Smuggling Racket (Havana)</a></li>
+<li><a href="#e0132">1952-11-12: Assignment Turkey</a></li>
+<li><a href="#e0133">1952-11-12: Mr. Alexander’s File (Turkey)</a></li>
+<li><a href="#e0134">1952-11-19: The Private Sanatorium</a></li>
+<li><a href="#e0135">1952-11-19: The Private Sanatorium
+(Munich)</a></li>
+<li><a href="#e0136">1952-11-26: A Nursery Rhyme</a></li>
+<li><a href="#e0137">1952-11-26: A Nursery Rhyme (Stockholm)</a></li>
+<li><a href="#e0138">1952-12-03: Italian Actress (Nice)</a></li>
+<li><a href="#e0139">1952-12-03: Nice - Italian Actress</a></li>
+<li><a href="#e0140">1952-12-10: Attacking Guards</a></li>
+<li><a href="#e0141">1952-12-10: Riot (Vienna)</a></li>
+<li><a href="#e0142">1952-12-17: Assignment Turkey</a></li>
+<li><a href="#e0143">1952-12-17: Road Sabotage (Turkey)</a></li>
+<li><a href="#e0144">1952-12-24: Lecturing Professors</a></li>
+<li><a href="#e0145">1952-12-24: Lecturing Professors (Sweden)</a></li>
+<li><a href="#e0146">1952-12-31: Street Car 17</a></li>
+<li><a href="#e0147">1952-12-31: Street Car 17 (Trieste)</a></li>
+<li><a href="#e0148">1953-01-07: Assignment Ellis Chandler</a></li>
+<li><a href="#e0149">1953-01-07: Colonel Chan (New Guinea)</a></li>
+<li><a href="#e0150">1953-01-14: The Blue Lion</a></li>
+<li><a href="#e0151">1953-01-14: The Blue Lion (London)</a></li>
+<li><a href="#e0152">1953-01-21: Leak of Strategic Materials
+(Burma)</a></li>
+<li><a href="#e0153">1953-01-28: Assignment Mexico</a></li>
+<li><a href="#e0154">1953-01-28: The Hunt for Charon (Mexico)</a></li>
+<li><a href="#e0155">1953-02-04: Arnold Freed Kidnapped
+(Greece)</a></li>
+<li><a href="#e0156">1953-02-04: Assignment Greece</a></li>
+<li><a href="#e0157">1953-02-11: Family Squabble</a></li>
+<li><a href="#e0158">1953-02-11: Family Squabble (Belgian
+Congo)</a></li>
+<li><a href="#e0159">1953-02-18: Doctor MacDougal</a></li>
+<li><a href="#e0160">1953-02-18: Doctor Mitsuko Kidnapping
+(Japan)</a></li>
+<li><a href="#e0161">1953-02-25: Black Market In Jewels</a></li>
+<li><a href="#e0162">1953-02-25: Black Market in Jewels
+(France)</a></li>
+<li><a href="#e0163">1953-03-04: Henrich Schwandorff (Germany)</a></li>
+<li><a href="#e0164">1953-03-04: Henrich Swindorff</a></li>
+<li><a href="#e0165">1953-03-18: Stolen Information</a></li>
+<li><a href="#e0166">1953-03-18: Stolen Information Group
+(Norway)</a></li>
+<li><a href="#e0167">1953-03-25: Assignment in Portugal</a></li>
+<li><a href="#e0168">1953-03-25: Find Antonina (Portugal)</a></li>
+<li><a href="#e0169">1953-04-01: Assignment Caribbean</a></li>
+<li><a href="#e0170">1953-04-01: Rescue Rick Perez (Venezuela)</a></li>
+<li><a href="#e0171">1953-04-08: Assignment Paris</a></li>
+<li><a href="#e0172">1953-04-08: Boy Used as Courier (Paris)</a></li>
+<li><a href="#e0173">1953-04-15: Find Lenny Fenway (Tibet)</a></li>
+<li><a href="#e0174">1953-04-15: Lenny Fenway</a></li>
+<li><a href="#e0175">1953-04-22: London - Nikoli Debarov</a></li>
+<li><a href="#e0176">1953-04-22: A Trap in Freedom House
+(London)</a></li>
+<li><a href="#e0177">1953-04-29: The Anti-Submarine Project</a></li>
+<li><a href="#e0178">1953-04-29: Strategic Base Sabotaged (New
+Guinea)</a></li>
+<li><a href="#e0179">1953-05-06: Assignment Trieste</a></li>
+<li><a href="#e0180">1953-05-06: Smuggling to Iron Curtain Nations
+(Italy)</a></li>
+<li><a href="#e0181">1953-05-13: The Jade Dagger (Cairo)</a></li>
+<li><a href="#e0182">1953-05-13: The Jade Knife</a></li>
+<li><a href="#e0183">1953-05-20: Oslo - The Stolen Blueprints</a></li>
+<li><a href="#e0184">1953-05-20: Stolen Computer Blueprints (Oslo,
+Norway)</a></li>
+<li><a href="#e0185">1953-05-27: A Hired Assassin</a></li>
+<li><a href="#e0186">1953-05-27: The Hired Assassin (Havana)</a></li>
+<li><a href="#e0187">1953-06-24: Capture James C. Stoller
+(Damascus)</a></li>
+<li><a href="#e0188">1953-06-24: James Stroller</a></li>
+<li><a href="#e0189">1953-07-01: Anthony Tagul</a></li>
+<li><a href="#e0190">1953-07-01: Find Anthony Targu (Montreal)</a></li>
+<li><a href="#e0191">1953-07-08: Picking Up A Bomb</a></li>
+<li><a href="#e0192">1953-07-08: Picking Up a Bomb (Saigon)</a></li>
+<li><a href="#e0193">Undated: DA22E6~1</a></li>
+<li><a href="#e0194">Undated: DA4079~1</a></li>
+<li><a href="#e0195">Undated: DA9363~1</a></li>
+<li><a href="#e0196">Undated: DAB6CC~1</a></li>
+</ul>
+<h2 id="byTitle">Appendix B: By Title</h2>
+<ul>
+<li><a href="#e0038">Administer Little White Pill Antidote (Balkans)
+(May 31, 1950)</a></li>
+<li><a href="#e0009">Alien Smuggling Ring (August 13, 1949)</a></li>
+<li><a href="#e0189">Anthony Tagul (July 1, 1953)</a></li>
+<li><a href="#e0074">Anti-Sub Plans (January 6, 1951)</a></li>
+<li><a href="#e0177">The Anti-Submarine Project (April 29,
+1953)</a></li>
+<li><a href="#e0155">Arnold Freed Kidnapped (Greece) (February 4,
+1953)</a></li>
+<li><a href="#e0169">Assignment Caribbean (April 1, 1953)</a></li>
+<li><a href="#e0118">Assignment China Sea (July 10, 1951)</a></li>
+<li><a href="#e0072">Assignment Eastern Europe (December 30,
+1950)</a></li>
+<li><a href="#e0148">Assignment Ellis Chandler (January 7,
+1953)</a></li>
+<li><a href="#e0156">Assignment Greece (February 4, 1953)</a></li>
+<li><a href="#e0167">Assignment in Portugal (March 25, 1953)</a></li>
+<li><a href="#e0112">Assignment Japan (June 19, 1951)</a></li>
+<li><a href="#e0153">Assignment Mexico (January 28, 1953)</a></li>
+<li><a href="#e0053">Assignment Mine Disaster (September 6,
+1950)</a></li>
+<li><a href="#e0171">Assignment Paris (April 8, 1953)</a></li>
+<li><a href="#e0070">Assignment Richmond (December 16, 1950)</a></li>
+<li><a href="#e0104">Assignment The Balkans (April 28, 1951)</a></li>
+<li><a href="#e0179">Assignment Trieste (May 6, 1953)</a></li>
+<li><a href="#e0132">Assignment Turkey (November 12, 1952)</a></li>
+<li><a href="#e0142">Assignment Turkey (December 17, 1952)</a></li>
+<li><a href="#e0096">Atomic Fission Formula (Java) (March 31,
+1951)</a></li>
+<li><a href="#e0140">Attacking Guards (December 10, 1952)</a></li>
+<li><a href="#e0098">The Balkans - File 72 (April 7, 1951)</a></li>
+<li><a href="#e0068">Berlin Kidnapping (December 9, 1950)</a></li>
+<li><a href="#e0069">Berlin Kidnapping Ring (December 9, 1950)</a></li>
+<li><a href="#e0161">Black Market In Jewels (February 25, 1953)</a></li>
+<li><a href="#e0162">Black Market in Jewels (France) (February 25,
+1953)</a></li>
+<li><a href="#e0150">The Blue Lion (January 14, 1953)</a></li>
+<li><a href="#e0151">The Blue Lion (London) (January 14, 1953)</a></li>
+<li><a href="#e0049">Bombay Gun Runners (August 23, 1950)</a></li>
+<li><a href="#e0080">A Box of Busted Bells (January 27, 1951)</a></li>
+<li><a href="#e0081">A Box of Busted Bells (Cairo) (January 27,
+1951)</a></li>
+<li><a href="#e0172">Boy Used as Courier (Paris) (April 8,
+1953)</a></li>
+<li><a href="#e0086">The Bronx - The Nazi Buzz Bomb (February 24,
+1951)</a></li>
+<li><a href="#e0036">Burmese Witnesses (May 24, 1950)</a></li>
+<li><a href="#e0127">Butterfly Chasers (October 22, 1952)</a></li>
+<li><a href="#e0128">Butterfly Chasers (Brazil) (October 22,
+1952)</a></li>
+<li><a href="#e0094">The Canal Zone - A Piece of String (March 24,
+1951)</a></li>
+<li><a href="#e0015">Captain Rock (February 13, 1950)</a></li>
+<li><a href="#e0187">Capture James C. Stoller (Damascus) (June 24,
+1953)</a></li>
+<li><a href="#e0119">China Sea Smuggling (Luzon) (July 10,
+1951)</a></li>
+<li><a href="#e0054">Chromite Mine Disaster (Balkans) (September 6,
+1950)</a></li>
+<li><a href="#e0149">Colonel Chan (New Guinea) (January 7,
+1953)</a></li>
+<li><a href="#e0055">Contact Lefty the Trained Seal (Turkey) (September
+20, 1950)</a></li>
+<li><a href="#e0116">A Country’s Democracy Threatened (South America)
+(July 3, 1951)</a></li>
+<li><a href="#e0193">DA22E6~1 (Undated)</a></li>
+<li><a href="#e0194">DA4079~1 (Undated)</a></li>
+<li><a href="#e0195">DA9363~1 (Undated)</a></li>
+<li><a href="#e0196">DAB6CC~1 (Undated)</a></li>
+<li><a href="#e0040">Deadly Bacteria (June 7, 1950)</a></li>
+<li><a href="#e0045">Death Drums (August 9, 1950)</a></li>
+<li><a href="#e0046">Defeat African Hate Campaign (Secundi, Africa)
+(August 9, 1950)</a></li>
+<li><a href="#e0159">Doctor MacDougal (February 18, 1953)</a></li>
+<li><a href="#e0160">Doctor Mitsuko Kidnapping (Japan) (February 18,
+1953)</a></li>
+<li><a href="#e0121">Eli Bryant Traitor (March 10, 1952)</a></li>
+<li><a href="#e0066">The Empty Matchbook (December 2, 1950)</a></li>
+<li><a href="#e0067">The Empty Matchbook (Sonoma, South America)
+(December 2, 1950)</a></li>
+<li><a href="#e0108">Epidemic - Needle in a Haystack (Landsburg) (May
+11, 1951)</a></li>
+<li><a href="#e0157">Family Squabble (February 11, 1953)</a></li>
+<li><a href="#e0158">Family Squabble (Belgian Congo) (February 11,
+1953)</a></li>
+<li><a href="#e0011">File 307 (August 20, 1949)</a></li>
+<li><a href="#e0099">File 72 (The Balkans) (April 7, 1951)</a></li>
+<li><a href="#e0012">File no. 307 (Zurich) (August 20, 1949)</a></li>
+<li><a href="#e0190">Find Anthony Targu (Montreal) (July 1,
+1953)</a></li>
+<li><a href="#e0168">Find Antonina (Portugal) (March 25, 1953)</a></li>
+<li><a href="#e0041">Find Champlin and his Reel of Tape (Turkey) (June
+7, 1950)</a></li>
+<li><a href="#e0047">Find Hired Killer Lupac (Paris) (August 16,
+1950)</a></li>
+<li><a href="#e0173">Find Lenny Fenway (Tibet) (April 15, 1953)</a></li>
+<li><a href="#e0013">Find Missing Japanese Weapons (Panama) (February 6,
+1950)</a></li>
+<li><a href="#e0076">Find Missing Scientist Dr. Wieczek (Madrid)
+(January 13, 1951)</a></li>
+<li><a href="#e0106">Find Rudolf Karpel (May 4, 1951)</a></li>
+<li><a href="#e0107">Find Rudolf Karpel (Rotterdam) (May 4,
+1951)</a></li>
+<li><a href="#e0031">Find Szabo and the Briefcase (Paris) (May 3,
+1950)</a></li>
+<li><a href="#e0042">Five Gardenias (July 26, 1950)</a></li>
+<li><a href="#e0064">The Football Play (November 25, 1950)</a></li>
+<li><a href="#e0065">The Football Play (Indo-China) (November 25,
+1950)</a></li>
+<li><a href="#e0059">Forged Identification Papers Ring (Trinidad)
+(September 29, 1950)</a></li>
+<li><a href="#e0060">Forged Papers (September 29, 1950)</a></li>
+<li><a href="#e0050">Get Gouda Before the Gun Runners (Bombay) (August
+23, 1950)</a></li>
+<li><a href="#e0017">The Greek Connection (February 20, 1950)</a></li>
+<li><a href="#e0051">Guided Missile Plans (August 30, 1950)</a></li>
+<li><a href="#e0129">Havana (October 29, 1952)</a></li>
+<li><a href="#e0163">Henrich Schwandorff (Germany) (March 4,
+1953)</a></li>
+<li><a href="#e0164">Henrich Swindorff (March 4, 1953)</a></li>
+<li><a href="#e0185">A Hired Assassin (May 27, 1953)</a></li>
+<li><a href="#e0186">The Hired Assassin (Havana) (May 27, 1953)</a></li>
+<li><a href="#e0048">Hired Killer (August 16, 1950)</a></li>
+<li><a href="#e0154">The Hunt for Charon (Mexico) (January 28,
+1953)</a></li>
+<li><a href="#e0073">Intercept Dr. Korvel (Eastern Europe) (December 30,
+1950)</a></li>
+<li><a href="#e0022">International Blackmail (March 20, 1950)</a></li>
+<li><a href="#e0023">International Blackmail (Switzerland) (March 20,
+1950)</a></li>
+<li><a href="#e0028">Investigate Flying Saucers (Ecuador) (April 17,
+1950)</a></li>
+<li><a href="#e0138">Italian Actress (Nice) (December 3, 1952)</a></li>
+<li><a href="#e0181">The Jade Dagger (Cairo) (May 13, 1953)</a></li>
+<li><a href="#e0182">The Jade Knife (May 13, 1953)</a></li>
+<li><a href="#e0188">James Stroller (June 24, 1953)</a></li>
+<li><a href="#e0097">Java (March 31, 1951)</a></li>
+<li><a href="#e0084">Kroner Cutlass (February 10, 1951)</a></li>
+<li><a href="#e0085">Kroner Cutlass (Eastern Europe) (February 10,
+1951)</a></li>
+<li><a href="#e0057">Latin America (September 27, 1950)</a></li>
+<li><a href="#e0152">Leak of Strategic Materials (Burma) (January 21,
+1953)</a></li>
+<li><a href="#e0033">Lecturing Professors (May 10, 1950)</a></li>
+<li><a href="#e0144">Lecturing Professors (December 24, 1952)</a></li>
+<li><a href="#e0145">Lecturing Professors (Sweden) (December 24,
+1952)</a></li>
+<li><a href="#e0174">Lenny Fenway (April 15, 1953)</a></li>
+<li><a href="#e0039">Little White Pill (May 31, 1950)</a></li>
+<li><a href="#e0175">London - Nikoli Debarov (April 22, 1953)</a></li>
+<li><a href="#e0088">London - The Secret Code (March 3, 1951)</a></li>
+<li><a href="#e0035">The Lost City (May 17, 1950)</a></li>
+<li><a href="#e0092">Macau (March 17, 1951)</a></li>
+<li><a href="#e0003">Malayan Star Line Sabotage (Saigon) (July 16,
+1949)</a></li>
+<li><a href="#e0062">Memory Chain (November 18, 1950)</a></li>
+<li><a href="#e0063">Memory Chain Equation (Munich) (November 18,
+1950)</a></li>
+<li><a href="#e0100">Middle East - A Tray Of Dirty Dishes (April 14,
+1951)</a></li>
+<li><a href="#e0078">Mighty Powder Puff (January 20, 1951)</a></li>
+<li><a href="#e0007">Millionaire Murder Conspiracy (Paris) (August 6,
+1949)</a></li>
+<li><a href="#e0008">Millionaire Murders (August 6, 1949)</a></li>
+<li><a href="#e0079">Missing Arctic Warfare Report (Quebec) (January 20,
+1951)</a></li>
+<li><a href="#e0071">Missing Civil War Map (Virginia) (December 16,
+1950)</a></li>
+<li><a href="#e0014">Missing Japanese Weapons (February 6,
+1950)</a></li>
+<li><a href="#e0077">Missing Scientist (January 13, 1951)</a></li>
+<li><a href="#e0133">Mr. Alexander’s File (Turkey) (November 12,
+1952)</a></li>
+<li><a href="#e0030">The Nazi and the Physicist (April 24,
+1950)</a></li>
+<li><a href="#e0087">The Nazi Buzz Bomb (NY, London, Denmark, Holland)
+(February 24, 1951)</a></li>
+<li><a href="#e0082">Nazi Fugitive (February 3, 1951)</a></li>
+<li><a href="#e0083">Nazi Fugitive (Malaya) (February 3, 1951)</a></li>
+<li><a href="#e0120">Nazi Fugitive - Captain Shiller (November 3,
+1951)</a></li>
+<li><a href="#e0109">Needle In a Haystack (May 11, 1951)</a></li>
+<li><a href="#e0139">Nice - Italian Actress (December 3, 1952)</a></li>
+<li><a href="#e0005">Nigerian Safari (July 23, 1949)</a></li>
+<li><a href="#e0136">A Nursery Rhyme (November 26, 1952)</a></li>
+<li><a href="#e0137">A Nursery Rhyme (Stockholm) (November 26,
+1952)</a></li>
+<li><a href="#e0006">On Safari for Nigerian Manganese (July 23,
+1949)</a></li>
+<li><a href="#e0075">Operation Fish Hook (Haiti) (January 6,
+1951)</a></li>
+<li><a href="#e0110">Operation Hot Foot (May 18, 1951)</a></li>
+<li><a href="#e0111">Operation Hot Foot (Trinidad) (May 18,
+1951)</a></li>
+<li><a href="#e0183">Oslo - The Stolen Blueprints (May 20,
+1953)</a></li>
+<li><a href="#e0105">Outlaw Radio Station (The Balkans) (April 28,
+1951)</a></li>
+<li><a href="#e0102">Pen Mightier Than The Sword (April 21,
+1951)</a></li>
+<li><a href="#e0191">Picking Up A Bomb (July 8, 1953)</a></li>
+<li><a href="#e0192">Picking Up a Bomb (Saigon) (July 8, 1953)</a></li>
+<li><a href="#e0026">Pirate Loot (April 10, 1950)</a></li>
+<li><a href="#e0089">Prevent Disclosure of Compromised Codes (London)
+(March 3, 1951)</a></li>
+<li><a href="#e0134">The Private Sanatorium (November 19, 1952)</a></li>
+<li><a href="#e0135">The Private Sanatorium (Munich) (November 19,
+1952)</a></li>
+<li><a href="#e0093">Recover a Hospital Chart (Macau) (March 17,
+1951)</a></li>
+<li><a href="#e0043">Recover Lost Troop Movement Document (Vienna)
+(August 2, 1950)</a></li>
+<li><a href="#e0095">Recover Stolen Dynamite (Panama) (March 24,
+1951)</a></li>
+<li><a href="#e0052">Recover Stolen Missle Plan Microfilm (London)
+(August 30, 1950)</a></li>
+<li><a href="#e0018">Recover Stolen Radar Plans (Athens) (February 20,
+1950)</a></li>
+<li><a href="#e0027">Recover Underwater Demolition Secrets (Trinidad)
+(April 10, 1950)</a></li>
+<li><a href="#e0020">Recover Wire Recorder Spool (San Diego) (March 6,
+1950)</a></li>
+<li><a href="#e0001">Relief Supplies (July 9, 1949)</a></li>
+<li><a href="#e0024">Renew Sheik Haroun’s Uranium Deal (Cairo) (March
+27, 1950)</a></li>
+<li><a href="#e0170">Rescue Rick Perez (Venezuela) (April 1,
+1953)</a></li>
+<li><a href="#e0103">Retrieve Gouczek (French Riviera) (April 21,
+1951)</a></li>
+<li><a href="#e0058">Retrieve Slarga from Latin America (September 27,
+1950)</a></li>
+<li><a href="#e0141">Riot (Vienna) (December 10, 1952)</a></li>
+<li><a href="#e0143">Road Sabotage (Turkey) (December 17, 1952)</a></li>
+<li><a href="#e0090">Roquel - Steves Murder (March 10, 1951)</a></li>
+<li><a href="#e0032">Sabotage in Paris (May 3, 1950)</a></li>
+<li><a href="#e0025">The Sheiks Secret (March 27, 1950)</a></li>
+<li><a href="#e0010">Smash Alien Smuggling Ring (Portugal) (August 13,
+1949)</a></li>
+<li><a href="#e0034">Smash Lecture Circuit Spy Ring (Stockholm) (May 10,
+1950)</a></li>
+<li><a href="#e0130">The Smuggling Racket (November 5, 1952)</a></li>
+<li><a href="#e0131">The Smuggling Racket (Havana) (November 5,
+1952)</a></li>
+<li><a href="#e0180">Smuggling to Iron Curtain Nations (Italy) (May 6,
+1953)</a></li>
+<li><a href="#e0037">Solve Kent Jackon’s Murder (Burma) (May 24,
+1950)</a></li>
+<li><a href="#e0091">Solve Your Own Murder (Roquel, South America)
+(March 10, 1951)</a></li>
+<li><a href="#e0117">South America - A Countrys Democracy Threatened
+(July 3, 1951)</a></li>
+<li><a href="#e0184">Stolen Computer Blueprints (Oslo, Norway) (May 20,
+1953)</a></li>
+<li><a href="#e0165">Stolen Information (March 18, 1953)</a></li>
+<li><a href="#e0166">Stolen Information Group (Norway) (March 18,
+1953)</a></li>
+<li><a href="#e0122">A Stolen Treaty (Port Said) (August 25,
+1952)</a></li>
+<li><a href="#e0101">Stolen UN Documents (Middle East) (April 14,
+1951)</a></li>
+<li><a href="#e0178">Strategic Base Sabotaged (New Guinea) (April 29,
+1953)</a></li>
+<li><a href="#e0146">Street Car 17 (December 31, 1952)</a></li>
+<li><a href="#e0147">Street Car 17 (Trieste) (December 31,
+1952)</a></li>
+<li><a href="#e0004">Sunken Ships (July 16, 1949)</a></li>
+<li><a href="#e0114">The Suspect Cylinder (Italy) (June 26,
+1951)</a></li>
+<li><a href="#e0115">The Suspicious Cylinder (June 26, 1951)</a></li>
+<li><a href="#e0113">Suspicous Explosions (Japan) (June 19,
+1951)</a></li>
+<li><a href="#e0002">Thropp FoundationRelief Supplies (Sicily) (July 9,
+1949)</a></li>
+<li><a href="#e0125">To Ask A Guy To Shoot You (October 15,
+1952)</a></li>
+<li><a href="#e0126">To Ask a Guy to Shoot You (Indonesia) (October 15,
+1952)</a></li>
+<li><a href="#e0061">Tokyo (October 6, 1950)</a></li>
+<li><a href="#e0056">Trained Seal (September 20, 1950)</a></li>
+<li><a href="#e0176">A Trap in Freedom House (London) (April 22,
+1953)</a></li>
+<li><a href="#e0029">UFOs In Ecuador (April 17, 1950)</a></li>
+<li><a href="#e0123">Underground Press (October 8, 1952)</a></li>
+<li><a href="#e0124">The Underground Press (Austria) (October 8,
+1952)</a></li>
+<li><a href="#e0044">Vienna Mystery (August 2, 1950)</a></li>
+<li><a href="#e0019">White Jade Cafe (Macao) (February 27,
+1950)</a></li>
+<li><a href="#e0016">Who Killed Captain Rocq (February 13,
+1950)</a></li>
+<li><a href="#e0021">Wire Spool (March 6, 1950)</a></li>
+</ul>
+</body>
+</html>

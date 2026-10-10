@@ -2,14 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Jamal Mazrui" />
   <title>The Coffee Klatch Directory</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -34,12 +40,16 @@
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -52,13 +62,14 @@
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -81,8 +92,11 @@
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     div.abstract {
       margin: 2em 2em 2em 2em;
@@ -96,6 +110,7 @@
       margin-bottom: 0.5em;
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -115,8 +130,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -133,11 +148,11 @@
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -159,10 +174,13 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -173,12 +191,10 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">The Coffee Klatch Directory</h1>
 <p class="subtitle">A Screen-Reader-Friendly Guide to The Coffee Klatch
 with Robert Reich</p>
 <p class="author">Jamal Mazrui</p>
@@ -2151,7 +2167,7 @@ href="https://robertreich.substack.com/p/how-to-overcome-the-tyranny-of-stuff">E
 page</a></p>
 <p><strong>Date:</strong> December 27, 2021</p>
 <p><strong>Duration:</strong> 418</p>
-<p><strong>Summary:</strong> ’Tis the time to cash in gift certificates,
+<p><strong>Summary:</strong> ‘Tis the time to cash in gift certificates,
 shop for post-Christmas bargains, and fill shelves and closets with more
 stuff. I for one don’t want anything more, thank you. My shelves are
 already overflowing with books. My attic is full of old chairs and
@@ -5135,9 +5151,9 @@ home. And if the players would agree to some sort of ceiling on their
 individual contracts, that would get us the other half. S-o-o-o …” Gore
 seemed to be talking to five-year-olds. “The real question here is how
 far both sides are willing to come in order to strike a fair balance. Am
-I correct?” No answer. One of the young pitchers cleared his throat.
+I correct? ” No answer. One of the young pitchers cleared his throat.
 “Mr. President, Mr. Vice President, I love baseball. We all love
-baseball. This isn’t really a dispute over money.” He looked intently
+baseball. This isn’t really a dispute over money. ” He looked intently
 around the table. “ Hell, I’d be willing to play the game for $3 million
 a year if I get some respect.” I couldn’t repress a cough. After two
 hours, we were still nowhere. “Let’s take a break,” Bill said quietly.
@@ -5849,7 +5865,7 @@ invaders. Contrast this with the toadies at the Republican National
 Committee who in February censured Republican Representatives Liz Cheney
 of Wyoming and Adam Kinzinger of Illinois for participating in
 Congress’s select committee investigating the events of January 6, and
-who called the January 6 attack on the Capitol “legitimate political
+who called the January 6 attack on the Capitol”legitimate political
 discourse​.” Also contrast Zelensky’s courage with most elected
 Republicans who still refuse to stand up to Trump. Just yesterday on
 national television, Senator Tom Cotton refused four times to condemn
@@ -7437,17 +7453,17 @@ wage gains are contributing to inflation. As the New York Time solemnly
 reported yesterday, the wage gains “could heat up price increases at a
 time when the Federal Reserve is trying to cool them down.” This is pure
 rubbish. Unfortunately, Fed chair Jerome Powell believes it. He worries
-that “the labor market is extremely tight,” and to “an unhealthy level.”
-As a result, the Fed is on the way to raising interest rates repeatedly
-in order to slow the economy and reduce the bargaining leverage of
-American workers. Pause here to consider this: The Commerce Department
-reported Wednesday that corporate profits are at a 70-year high . You
-read that right. Not since 1952 have corporations done as well as they
-are now doing. Across the board, American corporations are flush with
-cash. Although they’re paying higher costs (including higher wages),
-they’ve still managed to increase their profits. You see, they have
-enough pricing power to pass on those higher costs to consumers, and
-even add some more for themselves. So when American corporations are
+that “the labor market is extremely tight,” and to “an unhealthy level.
+” As a result, the Fed is on the way to raising interest rates
+repeatedly in order to slow the economy and reduce the bargaining
+leverage of American workers. Pause here to consider this: The Commerce
+Department reported Wednesday that corporate profits are at a 70-year
+high . You read that right. Not since 1952 have corporations done as
+well as they are now doing. Across the board, American corporations are
+flush with cash. Although they’re paying higher costs (including higher
+wages), they’ve still managed to increase their profits. You see, they
+have enough pricing power to pass on those higher costs to consumers,
+and even add some more for themselves. So when American corporations are
 overflowing with money like this, why should anyone believe that wage
 gains will necessarily “heat up price increases,” as the Times blindly
 reports? In a healthy economy, corporations would not be passing on
@@ -11370,7 +11386,7 @@ its supply chain does not use any labor or source goods or services from
 the Xinjiang region” — as required by the United States (which has
 accused China of widespread human rights abuses in Xinjiang, home to the
 country’s predominantly Muslim Uyghurs). Intel then deleted the
-reference to Xinjiang and apologized for the “trouble” it had caused,
+reference to Xinjiang and apologized for the”trouble” it had caused,
 explaining that its commitment to avoid supply chains from Xinjiang was
 an expression of compliance with U.S. law rather than a statement of its
 position on the issue. (The apology caused Senator Marco Rubio to
@@ -12148,7 +12164,7 @@ best time to enter public service!” They looked puzzled. I continued:
 “You wouldn’t want to enter public service when there were no major
 public problems. You’re desperately needed now. Think of all the good
 you can do! You’re young and energetic and idealistic. You have most of
-your lives in front of you. The challenges are huge. It’s your time!”
+your lives in front of you. The challenges are huge. It’s your time! ”
 They laughed. Some applauded. But I wondered how many of them understood
 what I was trying to say. I’m getting to be an old man. I’ve spent most
 of my life working on public problems, much of the time in public
@@ -13377,7 +13393,7 @@ instituting a newly drawn congressional district map, holding that the
 map violated the state constitutional ban on partisan gerrymandering.
 The Republican Speaker of the North Carolina House appealed the decision
 to the U.S. Supreme Court , advancing what’s called the “independent
-state legislature” theory. It’s a theory that’s been circulating for
+state legislature ” theory. It’s a theory that’s been circulating for
 years in right-wing circles. It holds that the U.S. Constitution gives
 state legislatures alone the power to regulate federal elections in
 their states. We’ve already had a preview of what this theory could
@@ -15445,7 +15461,7 @@ guests. What’s motivating Licht? Follow the money. CNN’s new corporate
 overseer is Warner Bros. Discovery, Inc., which now owns what used to be
 Time Warner, including CNN. The CEO of Warner Bros. Discovery is David
 Zaslav. Zaslav has been prodding Licht to reposition CNN to have more “
-straight news reporting ” and fewer “opinionated” views from hosts.
+straight news reporting ” and fewer “opinionated ” views from hosts.
 Zaslav says he wants CNN to be for “ everybody … Republicans, Democrats.
 ” But CNN is never going to be a network preferred by Republicans. Fox
 News has that sewn up. As Republicans move further rightward into the
@@ -17090,7 +17106,7 @@ beckoning me. “Just what we’ve been waiting for!” “Sorry, sir?” I aske
 as I reached his desk, hoping I’d misheard. My heart raced. Was he
 joking? “You’re perfect!” he said, smiling and standing up as if to give
 me a bear hug. “A tunnel rat!” “A … what?” “We need shorties like you to
-go into tunnels under the rice paddies! Smoke out the ’Cong with
+go into tunnels under the rice paddies! Smoke out the ‘Cong with
 grenades!” I saw my life pass in front of me. “Let’s just measure you.”
 He asked me to strip down to my underwear and socks, and then ushered me
 to the measuring stand about ten feet away. He turned me so I was
@@ -18227,52 +18243,52 @@ shifted six House seats, four favoring Democrats. ” Democratic optimism
 grows in battle for House ,” read The Hill’s Mike Lillis’ headline
 Tuesday morning. Lillis goes on to say: “With a month remaining before
 the midterm elections, House Democrats are in a position where few
-expected them to be even just a few months ago: competitive.” Meanwhile,
-the forecasters at FiveThirtyEight, tallying up the available evidence,
-put the chances that Democrats hold the Senate at seventy-one per cent.
-But wait. There’s reason to doubt these optimistic numbers. The debacle
-of 2016 election polls showing Hillary Clinton with a healthy lead, and
-the 2020 election polls overstating Biden’s lead over Trump, reveal a
-dirty little secret: Election polls overstate Democratic strength and
-understate Republican. There are three reasons for this bias: 1.
-Republicans are less likely to respond to election polls. The pandemic
-understated Republican strength in 2020 because safety-conscious
-liberals were more likely to be home during lockdowns (and answer
-telephone calls) while conservatives went out and lived their lives.
-With lockdowns over, this bias may be over too. But Trump Republicans
-are less likely to participate in election polls in the first place.
-Nate Cohn, The Times’s chief political analyst, found that in 2020,
-white Democrats were 20 percent likelier to respond to Times/Siena polls
-than white Republicans. Trump voters tend to be less educated, more
-anti-establishment, and therefore less likely to respond to polls. (In
-the poll Cohn is undertaking right now, only 0.4 percent of dials have
-yielded a completed interview.) 2. Election polls over-estimate the
-number of people who will be voting, and non-voters are much more likely
-to be or lean Democrat than are regular voters. People who rarely or
-never vote don’t like to admit this to pollsters (they don’t want to be
-thought of, and don’t want to think of themselves, as non-voters). But
-because non-voters are far more likely to lean Democrat and tell
-pollsters they favor a Democratic candidate, poll results exaggerate
-Democratic strength at the ballot box. 3. People who respond to election
-pollsters don’t want to admit their preferences for Trump. The vast
-majority of Trump voters lack a college degree. They believe that
-pollsters (as educated professionals) will disapprove of their support
-for Trump, so they don’t admit it. This happened in 2016 and again in
-2020. Trump isn’t on the midterm ballot, of course, but many Republican
-candidates who support him and his Big Lie are on the ballot (in fact, a
-majority of Republican candidates are election-deniers), so the effect
-is likely to be the same: understating Republican strength at the ballot
-box. (According to the Cato Institute’s own polling, 62 percent of
-Americans say they have political views they’re afraid to share. Many of
-them, presumably, support Trump and Trump election-deniers.) I don’t
-mean to discourage you. Quite the opposite. With 27 days to go, many
-races could go either way. My point is you shouldn’t pay attention to
-the polls, and not become so confident that you stop phone banking,
-canvassing, contributing, and doing whatever else you can. Turnout is
-the critical variable. We must do everything humanly possible to get out
-the vote. This is a public episode. If you’d like to discuss this with
-other subscribers or get access to bonus episodes, visit
-robertreich.substack.com/subscribe</p>
+expected them to be even just a few months ago: competitive. ”
+Meanwhile, the forecasters at FiveThirtyEight, tallying up the available
+evidence, put the chances that Democrats hold the Senate at seventy-one
+per cent. But wait. There’s reason to doubt these optimistic numbers.
+The debacle of 2016 election polls showing Hillary Clinton with a
+healthy lead, and the 2020 election polls overstating Biden’s lead over
+Trump, reveal a dirty little secret: Election polls overstate Democratic
+strength and understate Republican. There are three reasons for this
+bias: 1. Republicans are less likely to respond to election polls. The
+pandemic understated Republican strength in 2020 because
+safety-conscious liberals were more likely to be home during lockdowns
+(and answer telephone calls) while conservatives went out and lived
+their lives. With lockdowns over, this bias may be over too. But Trump
+Republicans are less likely to participate in election polls in the
+first place. Nate Cohn, The Times’s chief political analyst, found that
+in 2020, white Democrats were 20 percent likelier to respond to
+Times/Siena polls than white Republicans. Trump voters tend to be less
+educated, more anti-establishment, and therefore less likely to respond
+to polls. (In the poll Cohn is undertaking right now, only 0.4 percent
+of dials have yielded a completed interview.) 2. Election polls
+over-estimate the number of people who will be voting, and non-voters
+are much more likely to be or lean Democrat than are regular voters.
+People who rarely or never vote don’t like to admit this to pollsters
+(they don’t want to be thought of, and don’t want to think of
+themselves, as non-voters). But because non-voters are far more likely
+to lean Democrat and tell pollsters they favor a Democratic candidate,
+poll results exaggerate Democratic strength at the ballot box. 3. People
+who respond to election pollsters don’t want to admit their preferences
+for Trump. The vast majority of Trump voters lack a college degree. They
+believe that pollsters (as educated professionals) will disapprove of
+their support for Trump, so they don’t admit it. This happened in 2016
+and again in 2020. Trump isn’t on the midterm ballot, of course, but
+many Republican candidates who support him and his Big Lie are on the
+ballot (in fact, a majority of Republican candidates are
+election-deniers), so the effect is likely to be the same: understating
+Republican strength at the ballot box. (According to the Cato
+Institute’s own polling, 62 percent of Americans say they have political
+views they’re afraid to share. Many of them, presumably, support Trump
+and Trump election-deniers.) I don’t mean to discourage you. Quite the
+opposite. With 27 days to go, many races could go either way. My point
+is you shouldn’t pay attention to the polls, and not become so confident
+that you stop phone banking, canvassing, contributing, and doing
+whatever else you can. Turnout is the critical variable. We must do
+everything humanly possible to get out the vote. This is a public
+episode. If you’d like to discuss this with other subscribers or get
+access to bonus episodes, visit robertreich.substack.com/subscribe</p>
 <h3 id="coffeeklatch-what-grade-would-you-give-this-week"><a
 href="https://api.substack.com/feed/podcast/78462083/d177aa23ef56865e26b018a5886e0df7.mp3">What
 grade would you give this week?</a></h3>
@@ -20507,7 +20523,7 @@ Warsaw came just hours after Putin gave his own address in Moscow. Putin
 characterized the war in Ukraine as an existential struggle against the
 West, which he claimed started the war. In response, Biden charged that
 “Putin chose this war,” and that “every day the war continues is his
-choice.” By traveling to Kyiv, the oldest president in American history
+choice. ” By traveling to Kyiv, the oldest president in American history
 also demonstrated the stamina and grit of someone decades younger. Biden
 departed Andrews Air Force Base outside Washington D.C. early Sunday
 morning, landed in Poland, took a 10-hour train ride from the Polish
@@ -20959,7 +20975,7 @@ be retiring from teaching at the end of this semester, people have been
 asking me what I’ll be doing next? I try to respond politely, but the
 question annoys the hell out of me. I’m reminded of singer-songwriter
 Willie Nelson’s response to a fan who asked him when he’ll be retiring:
-“Retiring from what?” Most people who “retire” usually stop what they
+“Retiring from what? ” Most people who “retire” usually stop what they
 call “working” and begin what they call “playing.” But what if your work
 is also your play? What if it’s your calling? What if it’s deeply
 meaningful to you? What if you don’t want to do less of it? I’m one of
@@ -21235,7 +21251,7 @@ revealed that Justice Clarence Thomas had failed to disclose, as
 required by law, luxury gifts from a Republican megadonor — including
 expensive vacations, a rent-free house for Thomas’s mother, and tuition
 payments for a child Thomas was “raising like a son” — what did McCarthy
-do? Nothing. He said he had no concerns, “not at all” about Thomas.
+do? Nothing. He said he had no concerns, “not at all ” about Thomas.
 House Republicans have made no move to push the Supreme Court toward a
 code of ethics. What of the former guy’s innumerable transgressions?
 After Manhattan DA Alvin Bragg brought charges against Trump, McCarthy

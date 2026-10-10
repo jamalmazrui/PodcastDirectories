@@ -1,0 +1,1193 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.12.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Mr. District Attorney</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
+      background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        color-scheme: light only;
+      }
+      html, body, pre, code {
+        background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
+        color: black;
+      }
+      pre, code {
+        padding: 0;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a, a:visited {
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
+      color: #606060;
+      color: light-dark(#606060, #b6b6b6);
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid currentColor;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+    th {
+      border-top: 1px solid currentColor;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#mr.-district-attorney"
+id="toc-mr.-district-attorney">Mr. District Attorney</a>
+<ul>
+<li><a href="#contents" id="toc-contents">Contents</a></li>
+<li><a href="#y1939" id="toc-y1939">1939</a></li>
+<li><a href="#y1941" id="toc-y1941">1941</a></li>
+<li><a href="#y1942" id="toc-y1942">1942</a></li>
+<li><a href="#y1943" id="toc-y1943">1943</a></li>
+<li><a href="#y1944" id="toc-y1944">1944</a></li>
+<li><a href="#y1945" id="toc-y1945">1945</a></li>
+<li><a href="#y1946" id="toc-y1946">1946</a></li>
+<li><a href="#y1947" id="toc-y1947">1947</a></li>
+<li><a href="#y1948" id="toc-y1948">1948</a></li>
+<li><a href="#y1949" id="toc-y1949">1949</a></li>
+<li><a href="#y1950" id="toc-y1950">1950</a></li>
+<li><a href="#y1951" id="toc-y1951">1951</a></li>
+<li><a href="#y1952" id="toc-y1952">1952</a></li>
+<li><a href="#y1953" id="toc-y1953">1953</a></li>
+<li><a href="#yUndated" id="toc-yUndated">Undated</a></li>
+<li><a href="#byDate" id="toc-byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle" id="toc-byTitle">Appendix B: By Title</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="mr.-district-attorney">Mr. District Attorney</h1>
+<p>A crusading district attorney fights crime in a big city.</p>
+<ul>
+<li>Episodes: 84</li>
+<li>Network: NBC and ABC</li>
+<li>Source: <a
+href="https://archive.org/details/OTRR_Mr_District_Attorney_Singles">Internet
+Archive: OTRR_Mr_District_Attorney_Singles</a></li>
+<li>Years: 1939 to 1952</li>
+</ul>
+<p>Each episode title is a link that plays its audio. These broadcasts
+can reflect the attitudes of their time. This page is part of <a
+href="OldTimeRadioDramas.htm">Old Time Radio Dramas</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#y1939">1939</a></li>
+<li><a href="#y1941">1941</a></li>
+<li><a href="#y1942">1942</a></li>
+<li><a href="#y1943">1943</a></li>
+<li><a href="#y1944">1944</a></li>
+<li><a href="#y1945">1945</a></li>
+<li><a href="#y1946">1946</a></li>
+<li><a href="#y1947">1947</a></li>
+<li><a href="#y1948">1948</a></li>
+<li><a href="#y1949">1949</a></li>
+<li><a href="#y1950">1950</a></li>
+<li><a href="#y1951">1951</a></li>
+<li><a href="#y1952">1952</a></li>
+<li><a href="#y1953">1953</a></li>
+<li><a href="#yUndated">Undated</a></li>
+<li><a href="#byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle">Appendix B: By Title</a></li>
+</ul>
+<h2 id="y1939">1939</h2>
+<h3 id="e0001"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_39-04-03_001_The_Milano_Brothers.mp3">The
+Milano Brothers</a></h3>
+<ul>
+<li>Date: April 3, 1939</li>
+<li>Duration: 14:22</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0002"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_39-06-09_050_The_Ohio_Kid.mp3">The
+Ohio Kid</a></h3>
+<ul>
+<li>Date: June 9, 1939</li>
+<li>Duration: 14:34</li>
+<li>Episode: 50</li>
+</ul>
+<h3 id="e0003"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_39-06-13_052_The_100000_Dollar_Check.mp3">The
+100000 Dollar Check</a></h3>
+<ul>
+<li>Date: June 13, 1939</li>
+<li>Duration: 14:11</li>
+<li>Episode: 52</li>
+</ul>
+<h3 id="e0004"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_39-06-16_055_The_Last_Mile.mp3">The
+Last Mile</a></h3>
+<ul>
+<li>Date: June 16, 1939</li>
+<li>Duration: 15:19</li>
+<li>Episode: 55</li>
+</ul>
+<h2 id="y1941">1941</h2>
+<h3 id="e0005"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_41-02-12_141_The_Man_From_Alcatraz.mp3">The
+Man From Alcatraz</a></h3>
+<ul>
+<li>Date: February 12, 1941</li>
+<li>Duration: 24:36</li>
+<li>Episode: 141</li>
+</ul>
+<h3 id="e0006"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_41-12-10_184_Case_of_the_Priceless_Miniature_aka_The_Museum_Mystery.mp3">Case
+of the Priceless Miniature aka The Museum Mystery</a></h3>
+<ul>
+<li>Date: December 10, 1941</li>
+<li>Duration: 28:06</li>
+<li>Episode: 184</li>
+</ul>
+<h2 id="y1942">1942</h2>
+<h3 id="e0007"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_42-08-19_219_Case_Of_The_Hijacked_Worker.mp3">Case
+Of The Hijacked Worker</a></h3>
+<ul>
+<li>Date: August 19, 1942</li>
+<li>Duration: 29:43</li>
+<li>Episode: 219</li>
+</ul>
+<h2 id="y1943">1943</h2>
+<h3 id="e0008"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_43-02-03_243_Case_of_the_Backstage_Murder.mp3">Case
+of the Backstage Murder</a></h3>
+<ul>
+<li>Date: February 3, 1943</li>
+<li>Duration: 24:56</li>
+<li>Episode: 243</li>
+</ul>
+<h3 id="e0009"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_43-03-17_249_Case_of_the_Barnyard_Bandit.mp3">Case
+of the Barnyard Bandit</a></h3>
+<ul>
+<li>Date: March 17, 1943</li>
+<li>Duration: 28:43</li>
+<li>Episode: 249</li>
+</ul>
+<h2 id="y1944">1944</h2>
+<h3 id="e0010"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_44-08-02_319_The_Case_Of_The_Curious_Undertaker.mp3">The
+Case Of The Curious Undertaker</a></h3>
+<ul>
+<li>Date: August 2, 1944</li>
+<li>Duration: 30:40</li>
+<li>Episode: 319</li>
+</ul>
+<h3 id="e0011"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_44-08-23_322_The_Case_Of_The_Intimidated_Jury.mp3">The
+Case Of The Intimidated Jury</a></h3>
+<ul>
+<li>Date: August 23, 1944</li>
+<li>Duration: 23:36</li>
+<li>Episode: 322</li>
+</ul>
+<h2 id="y1945">1945</h2>
+<h3 id="e0012"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_45-02-07_344_The_Case_Of_The_Hospital_Homicide.mp3">The
+Case Of The Hospital Homicide</a></h3>
+<ul>
+<li>Date: February 7, 1945</li>
+<li>Duration: 25:55</li>
+<li>Episode: 344</li>
+</ul>
+<h3 id="e0013"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_45-02-14_345_Case_Of_The_Stolen_Slot_Machines.mp3">Case
+Of The Stolen Slot Machines</a></h3>
+<ul>
+<li>Date: February 14, 1945</li>
+<li>Duration: 29:37</li>
+<li>Episode: 345</li>
+</ul>
+<h2 id="y1946">1946</h2>
+<h3 id="e0014"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_46-03-13_401_The_Case_of_the_Deadly_Train.mp3">The
+Case of the Deadly Train</a></h3>
+<ul>
+<li>Date: March 13, 1946</li>
+<li>Duration: 29:42</li>
+<li>Episode: 401</li>
+</ul>
+<h3 id="e0015"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_46-06-05_412_The_Case_of_Baby_Cradle_and_All.mp3">The
+Case of Baby Cradle and All</a></h3>
+<ul>
+<li>Date: June 5, 1946</li>
+<li>Duration: 31:58</li>
+<li>Episode: 412</li>
+</ul>
+<h2 id="y1947">1947</h2>
+<h3 id="e0016"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_47-05-07_460_The_Case_of_One_Slip_Meant_Death.mp3">The
+Case of One Slip Meant Death</a></h3>
+<ul>
+<li>Date: May 7, 1947</li>
+<li>Duration: 29:24</li>
+<li>Episode: 460</li>
+</ul>
+<h2 id="y1948">1948</h2>
+<h3 id="e0017"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_48-03-17_505_The_Case_of_Murder_in_Rhythm_and_Rhyme.mp3">The
+Case of Murder in Rhythm and Rhyme</a></h3>
+<ul>
+<li>Date: March 17, 1948</li>
+<li>Duration: 29:22</li>
+<li>Episode: 505</li>
+</ul>
+<h3 id="e0018"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_48-05-05_512_The_Case_of_the_Sinister_Cinema.mp3">The
+Case of the Sinister Cinema</a></h3>
+<ul>
+<li>Date: May 5, 1948</li>
+<li>Duration: 29:43</li>
+<li>Episode: 512</li>
+</ul>
+<h3 id="e0019"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_48-05-19_514_The_Case_of_Spring_Fever.mp3">The
+Case of Spring Fever</a></h3>
+<ul>
+<li>Date: May 19, 1948</li>
+<li>Duration: 29:18</li>
+<li>Episode: 514</li>
+</ul>
+<h3 id="e0020"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_48-05-26_515_The_Case_of_the_Deadly_Snowflake.mp3">The
+Case of the Deadly Snowflake</a></h3>
+<ul>
+<li>Date: May 26, 1948</li>
+<li>Duration: 29:48</li>
+<li>Episode: 515</li>
+</ul>
+<h3 id="e0021"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_48-08-25_527_The_Case_of_the_Unknown_Source.mp3">The
+Case of the Unknown Source</a></h3>
+<ul>
+<li>Date: August 25, 1948</li>
+<li>Duration: 29:19</li>
+<li>Episode: 527</li>
+</ul>
+<h2 id="y1949">1949</h2>
+<h3 id="e0022"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_49-03-09_554_The_Case_of_Murder_a_la_Carte.mp3">The
+Case of Murder a la Carte</a></h3>
+<ul>
+<li>Date: March 9, 1949</li>
+<li>Duration: 30:12</li>
+<li>Episode: 554</li>
+</ul>
+<h3 id="e0023"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_49-10-12_585_The_Case_of_Charity_Never_Began.mp3">The
+Case of Charity Never Began</a></h3>
+<ul>
+<li>Date: October 12, 1949</li>
+<li>Duration: 24:49</li>
+<li>Episode: 585</li>
+</ul>
+<h3 id="e0024"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_49-11-23_591_The_Case_of_Free_Play.mp3">The
+Case of Free Play</a></h3>
+<ul>
+<li>Date: November 23, 1949</li>
+<li>Duration: 25:33</li>
+<li>Episode: 591</li>
+</ul>
+<h2 id="y1950">1950</h2>
+<h3 id="e0025"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_50-05-17_616_The_Case_of_Deadly_Devotion.mp3">The
+Case of Deadly Devotion</a></h3>
+<ul>
+<li>Date: May 17, 1950</li>
+<li>Duration: 25:30</li>
+<li>Episode: 616</li>
+</ul>
+<h3 id="e0026"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_50-05-17_616_The_Case_of_Deadly_Devotion_AFRS.mp3">The
+Case of Deadly Devotion AFRS</a></h3>
+<ul>
+<li>Date: May 17, 1950</li>
+<li>Duration: 26:15</li>
+<li>Episode: 616</li>
+</ul>
+<h2 id="y1951">1951</h2>
+<h3 id="e0027"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_51-04-11_663_Case_of_the_Money_Machine.mp3">Case
+of the Money Machine</a></h3>
+<ul>
+<li>Date: April 11, 1951</li>
+<li>Duration: 30:00</li>
+<li>Episode: 663</li>
+</ul>
+<h2 id="y1952">1952</h2>
+<h3 id="e0028"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-08-10_001_Case_of_the_Hijack_Killer.mp3">Case
+of the Hijack Killer</a></h3>
+<ul>
+<li>Date: August 10, 1952</li>
+<li>Duration: 26:42</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0029"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-08-17_002_Case_of_the_Supermarket_Killer.mp3">Case
+of the Supermarket Killer</a></h3>
+<ul>
+<li>Date: August 17, 1952</li>
+<li>Duration: 26:06</li>
+<li>Episode: 2</li>
+</ul>
+<h3 id="e0030"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-08-24_003_Case_of_the_Man_on_the_Ledge.mp3">Case
+of the Man on the Ledge</a></h3>
+<ul>
+<li>Date: August 24, 1952</li>
+<li>Duration: 25:54</li>
+<li>Episode: 3</li>
+</ul>
+<h3 id="e0031"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-08-31_004_Case_of_the_15_Year_Old_Trail.mp3">Case
+of the 15 Year Old Trail</a></h3>
+<ul>
+<li>Date: August 31, 1952</li>
+<li>Duration: 28:16</li>
+<li>Episode: 4</li>
+</ul>
+<h3 id="e0032"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-09-07_005_Case_of_the_Joy_Ride_Murder.mp3">Case
+of the Joy Ride Murder</a></h3>
+<ul>
+<li>Date: September 7, 1952</li>
+<li>Duration: 28:37</li>
+<li>Episode: 5</li>
+</ul>
+<h3 id="e0033"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-09-14_006_Case_of_the_Murderous_Hitchhiker.mp3">Case
+of the Murderous Hitchhiker</a></h3>
+<ul>
+<li>Date: September 14, 1952</li>
+<li>Duration: 28:21</li>
+<li>Episode: 6</li>
+</ul>
+<h3 id="e0034"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-10-19_011_Case_of_the_Staircase_Killer.mp3">Case
+of the Staircase Killer</a></h3>
+<ul>
+<li>Date: October 19, 1952</li>
+<li>Duration: 28:01</li>
+<li>Episode: 11</li>
+</ul>
+<h3 id="e0035"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-10-26_012_Case_of_the_Charity_Killer.mp3">Case
+of the Charity Killer</a></h3>
+<ul>
+<li>Date: October 26, 1952</li>
+<li>Duration: 27:31</li>
+<li>Episode: 12</li>
+</ul>
+<h3 id="e0036"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-11-02_013_Case_of_the_Hit_and_Run_Killer.mp3">Case
+of the Hit and Run Killer</a></h3>
+<ul>
+<li>Date: November 2, 1952</li>
+<li>Duration: 27:19</li>
+<li>Episode: 13</li>
+</ul>
+<h3 id="e0037"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-11-09_014_Case_of_the_Desert_Killer.mp3">Case
+of the Desert Killer</a></h3>
+<ul>
+<li>Date: November 9, 1952</li>
+<li>Duration: 26:34</li>
+<li>Episode: 14</li>
+</ul>
+<h3 id="e0038"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-11-16_015_Case_of_the_Missing_Corpse.mp3">Case
+of the Missing Corpse</a></h3>
+<ul>
+<li>Date: November 16, 1952</li>
+<li>Duration: 27:30</li>
+<li>Episode: 15</li>
+</ul>
+<h3 id="e0039"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-11-23_016_Case_of_the_Bank_Killer.mp3">Case
+of the Bank Killer</a></h3>
+<ul>
+<li>Date: November 23, 1952</li>
+<li>Duration: 27:13</li>
+<li>Episode: 16</li>
+</ul>
+<h3 id="e0040"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-11-30_017_Case_of_the_Knifing_in_the_Park.mp3">Case
+of the Knifing in the Park</a></h3>
+<ul>
+<li>Date: November 30, 1952</li>
+<li>Duration: 26:50</li>
+<li>Episode: 17</li>
+</ul>
+<h3 id="e0041"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-12-07_018_Case_of_the_Hungry_Hobo.mp3">Case
+of the Hungry Hobo</a></h3>
+<ul>
+<li>Date: December 7, 1952</li>
+<li>Duration: 26:48</li>
+<li>Episode: 18</li>
+</ul>
+<h3 id="e0042"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-12-14_019_The_Man_Who_Confessed.mp3">The
+Man Who Confessed</a></h3>
+<ul>
+<li>Date: December 14, 1952</li>
+<li>Duration: 27:07</li>
+<li>Episode: 19</li>
+</ul>
+<h3 id="e0043"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-12-21_020_The_Hot_Rod_Killer.mp3">The
+Hot Rod Killer</a></h3>
+<ul>
+<li>Date: December 21, 1952</li>
+<li>Duration: 26:12</li>
+<li>Episode: 20</li>
+</ul>
+<h3 id="e0044"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-12-28_021_The_Vanishing_Runner.mp3">The
+Vanishing Runner</a></h3>
+<ul>
+<li>Date: December 28, 1952</li>
+<li>Duration: 27:08</li>
+<li>Episode: 21</li>
+</ul>
+<h2 id="y1953">1953</h2>
+<h3 id="e0045"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-01-04_022_The_Murder_Syndicate.mp3">The
+Murder Syndicate</a></h3>
+<ul>
+<li>Date: January 4, 1953</li>
+<li>Duration: 26:51</li>
+<li>Episode: 22</li>
+</ul>
+<h3 id="e0046"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-01-11_023_Case_of_the_Lady_Gamblers.mp3">Case
+of the Lady Gamblers</a></h3>
+<ul>
+<li>Date: January 11, 1953</li>
+<li>Duration: 26:47</li>
+<li>Episode: 23</li>
+</ul>
+<h3 id="e0047"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-01-18_024_Case_of_the_Blood_Harvest.mp3">Case
+of the Blood Harvest</a></h3>
+<ul>
+<li>Date: January 18, 1953</li>
+<li>Duration: 27:03</li>
+<li>Episode: 24</li>
+</ul>
+<h3 id="e0048"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-01-25_025_Case_of_the_Motorcycle_Club_Killer.mp3">Case
+of the Motorcycle Club Killer</a></h3>
+<ul>
+<li>Date: January 25, 1953</li>
+<li>Duration: 26:40</li>
+<li>Episode: 25</li>
+</ul>
+<h3 id="e0049"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-02-01_026_Case_of_the_Man_with_the_Gold_Teeth.mp3">Case
+of the Man with the Gold Teeth</a></h3>
+<ul>
+<li>Date: February 1, 1953</li>
+<li>Duration: 26:45</li>
+<li>Episode: 26</li>
+</ul>
+<h3 id="e0050"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-02-08_027_Case_of_Death_by_Adoption.mp3">Case
+of Death by Adoption</a></h3>
+<ul>
+<li>Date: February 8, 1953</li>
+<li>Duration: 26:47</li>
+<li>Episode: 27</li>
+</ul>
+<h3 id="e0051"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-02-15_028_Case_of_the_Cop_Killer.mp3">Case
+of the Cop Killer</a></h3>
+<ul>
+<li>Date: February 15, 1953</li>
+<li>Duration: 28:44</li>
+<li>Episode: 28</li>
+</ul>
+<h3 id="e0052"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-02-22_029_Case_of_the_Blackmail_Murder.mp3">Case
+of the Blackmail Murder</a></h3>
+<ul>
+<li>Date: February 22, 1953</li>
+<li>Duration: 27:46</li>
+<li>Episode: 29</li>
+</ul>
+<h3 id="e0053"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-03-01_030_Case_of_the_Frying_Pan_Murder.mp3">Case
+of the Frying Pan Murder</a></h3>
+<ul>
+<li>Date: March 1, 1953</li>
+<li>Duration: 26:48</li>
+<li>Episode: 30</li>
+</ul>
+<h3 id="e0054"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-03-08_031_Case_of_the_Murderous_Junkman.mp3">Case
+of the Murderous Junkman</a></h3>
+<ul>
+<li>Date: March 8, 1953</li>
+<li>Duration: 26:49</li>
+<li>Episode: 31</li>
+</ul>
+<h3 id="e0055"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-03-15_032_Case_of_the_Lovers_Lane_Killing.mp3">Case
+of the Lovers Lane Killing</a></h3>
+<ul>
+<li>Date: March 15, 1953</li>
+<li>Duration: 26:53</li>
+<li>Episode: 32</li>
+</ul>
+<h3 id="e0056"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-04-05_035_Case_of_the_Dead_Reporter.mp3">Case
+of the Dead Reporter</a></h3>
+<ul>
+<li>Date: April 5, 1953</li>
+<li>Duration: 27:23</li>
+<li>Episode: 35</li>
+</ul>
+<h3 id="e0057"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-04-12_036_Case_of_the_Wounded_Killer.mp3">Case
+of the Wounded Killer</a></h3>
+<ul>
+<li>Date: April 12, 1953</li>
+<li>Duration: 24:19</li>
+<li>Episode: 36</li>
+</ul>
+<h3 id="e0058"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-04-19_037_Case_of_the_Murderous_Good_Samaritans.mp3">Case
+of the Murderous Good Samaritans</a></h3>
+<ul>
+<li>Date: April 19, 1953</li>
+<li>Duration: 27:30</li>
+<li>Episode: 37</li>
+</ul>
+<h3 id="e0059"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-04-26_038_Case_of_the_Silent_Killer.mp3">Case
+of the Silent Killer</a></h3>
+<ul>
+<li>Date: April 26, 1953</li>
+<li>Duration: 27:26</li>
+<li>Episode: 38</li>
+</ul>
+<h3 id="e0060"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-04-26_038_Case_of_the_Silent_Killer_AFRTS.mp3">Case
+of the Silent Killer AFRTS</a></h3>
+<ul>
+<li>Date: April 26, 1953</li>
+<li>Duration: 23:00</li>
+<li>Episode: 38</li>
+</ul>
+<h3 id="e0061"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-05-03_039_Case_of_the_Murder_by_Amateurs.mp3">Case
+of the Murder by Amateurs</a></h3>
+<ul>
+<li>Date: May 3, 1953</li>
+<li>Duration: 27:30</li>
+<li>Episode: 39</li>
+</ul>
+<h3 id="e0062"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-05-03_039_Case_of_the_Murder_by_Amateurs_AFRTS.mp3">Case
+of the Murder by Amateurs AFRTS</a></h3>
+<ul>
+<li>Date: May 3, 1953</li>
+<li>Duration: 24:18</li>
+<li>Episode: 39</li>
+</ul>
+<h3 id="e0063"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-05-10_040_Case_of_the_Assassin_in_the_Dark_AFRTS.mp3">Case
+of the Assassin in the Dark AFRTS</a></h3>
+<ul>
+<li>Date: May 10, 1953</li>
+<li>Duration: 23:15</li>
+<li>Episode: 40</li>
+</ul>
+<h3 id="e0064"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-05-17_041_Case_of_the_Park_Murders.mp3">Case
+of the Park Murders</a></h3>
+<ul>
+<li>Date: May 17, 1953</li>
+<li>Duration: 23:45</li>
+<li>Episode: 41</li>
+</ul>
+<h3 id="e0065"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-05-24_042_Case_of_the_Moving_Van_Murders.mp3">Case
+of the Moving Van Murders</a></h3>
+<ul>
+<li>Date: May 24, 1953</li>
+<li>Duration: 23:13</li>
+<li>Episode: 42</li>
+</ul>
+<h3 id="e0066"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-05-31_043_Case_of_the_Bridal_Path_Murders.mp3">Case
+of the Bridal Path Murders</a></h3>
+<ul>
+<li>Date: May 31, 1953</li>
+<li>Duration: 27:27</li>
+<li>Episode: 43</li>
+</ul>
+<h3 id="e0067"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-06-07_044_Case_of_the_Canned_Death.mp3">Case
+of the Canned Death</a></h3>
+<ul>
+<li>Date: June 7, 1953</li>
+<li>Duration: 28:21</li>
+<li>Episode: 44</li>
+</ul>
+<h3 id="e0068"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-06-14_045_Case_of_the_Preview_Murder.mp3">Case
+of the Preview Murder</a></h3>
+<ul>
+<li>Date: June 14, 1953</li>
+<li>Duration: 27:20</li>
+<li>Episode: 45</li>
+</ul>
+<h3 id="e0069"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-06-21_046_Case_of_the_Country_Club_Murder.mp3">Case
+of the Country Club Murder</a></h3>
+<ul>
+<li>Date: June 21, 1953</li>
+<li>Duration: 27:10</li>
+<li>Episode: 46</li>
+</ul>
+<h3 id="e0070"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-06-28_047_Case_of_the_Perfect_Alibi.mp3">Case
+of the Perfect Alibi</a></h3>
+<ul>
+<li>Date: June 28, 1953</li>
+<li>Duration: 23:35</li>
+<li>Episode: 47</li>
+</ul>
+<h3 id="e0071"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-07-05_048_Case_of_the_Hungry_Killer.mp3">Case
+of the Hungry Killer</a></h3>
+<ul>
+<li>Date: July 5, 1953</li>
+<li>Duration: 27:26</li>
+<li>Episode: 48</li>
+</ul>
+<h3 id="e0072"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-07-12_049_Case_of_the_Body_on_the_Freight_Train.mp3">Case
+of the Body on the Freight Train</a></h3>
+<ul>
+<li>Date: July 12, 1953</li>
+<li>Duration: 26:38</li>
+<li>Episode: 49</li>
+</ul>
+<h3 id="e0073"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-07-19_050_Case_of_the_Land_Swindle_Murder.mp3">Case
+of the Land Swindle Murder</a></h3>
+<ul>
+<li>Date: July 19, 1953</li>
+<li>Duration: 26:52</li>
+<li>Episode: 50</li>
+</ul>
+<h3 id="e0074"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-07-26_051_Case_of_the_Living_Dead_Man.mp3">Case
+of the Living Dead Man</a></h3>
+<ul>
+<li>Date: July 26, 1953</li>
+<li>Duration: 28:00</li>
+<li>Episode: 51</li>
+</ul>
+<h3 id="e0075"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-08-04_052_Case_of_the_Pyromaniac_Murder.mp3">Case
+of the Pyromaniac Murder</a></h3>
+<ul>
+<li>Date: August 4, 1953</li>
+<li>Duration: 28:03</li>
+<li>Episode: 52</li>
+</ul>
+<h3 id="e0076"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-10-11_xxx_Set-Up_For_Re-Entry.mp3">xxx
+Set-Up For Re-Entry</a></h3>
+<ul>
+<li>Date: October 11, 1953</li>
+<li>Duration: 29:52</li>
+<li>Episode: 78</li>
+</ul>
+<h3 id="e0077"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-10-18_xxx_Case_of_the_Jury_Killer.mp3">xxx
+Case of the Jury Killer</a></h3>
+<ul>
+<li>Date: October 18, 1953</li>
+<li>Duration: 29:27</li>
+<li>Episode: 79</li>
+</ul>
+<h3 id="e0078"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-11-01_xxx_Case_of_the_Forgery_Proof_Note.mp3">xxx
+Case of the Forgery Proof Note</a></h3>
+<ul>
+<li>Date: November 1, 1953</li>
+<li>Duration: 30:28</li>
+<li>Episode: 80</li>
+</ul>
+<h3 id="e0079"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-11-22_xxx_Case_of_the_Living_Corpse.mp3">xxx
+Case of the Living Corpse</a></h3>
+<ul>
+<li>Date: November 22, 1953</li>
+<li>Duration: 28:00</li>
+<li>Episode: 81</li>
+</ul>
+<h3 id="e0080"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-12-20_xxx_Case_of_the_Mothers_Helper.mp3">xxx
+Case of the Mothers Helper</a></h3>
+<ul>
+<li>Date: December 20, 1953</li>
+<li>Duration: 30:37</li>
+<li>Episode: 82</li>
+</ul>
+<h2 id="yUndated">Undated</h2>
+<h3 id="e0081"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-xx-xx_xxx_Case_of_the_Church_Social_Stabbing.mp3">xxx
+Case of the Church Social Stabbing</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 26:00</li>
+<li>Episode: 45</li>
+</ul>
+<h3 id="e0082"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_52-xx-xx_xxx_Case_of_the_Hidden_Money_Killer.mp3">xxx
+Case of the Hidden Money Killer</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 25:56</li>
+<li>Episode: 46</li>
+</ul>
+<h3 id="e0083"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-xx-xx_xxx_I_Hate_Killers.mp3">xxx
+I Hate Killers</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 26:54</li>
+<li>Episode: 83</li>
+</ul>
+<h3 id="e0084"><a
+href="https://archive.org/download/OTRR_Mr_District_Attorney_Singles/Mr_District_Attorney_53-xx-xx_xxx_Missing_Doctor.mp3">xxx
+Missing Doctor</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 27:16</li>
+<li>Episode: 84</li>
+</ul>
+<h2 id="byDate">Appendix A: By Date</h2>
+<ul>
+<li><a href="#e0001">1939-04-03: The Milano Brothers</a></li>
+<li><a href="#e0002">1939-06-09: The Ohio Kid</a></li>
+<li><a href="#e0003">1939-06-13: The 100000 Dollar Check</a></li>
+<li><a href="#e0004">1939-06-16: The Last Mile</a></li>
+<li><a href="#e0005">1941-02-12: The Man From Alcatraz</a></li>
+<li><a href="#e0006">1941-12-10: Case of the Priceless Miniature aka The
+Museum Mystery</a></li>
+<li><a href="#e0007">1942-08-19: Case Of The Hijacked Worker</a></li>
+<li><a href="#e0008">1943-02-03: Case of the Backstage Murder</a></li>
+<li><a href="#e0009">1943-03-17: Case of the Barnyard Bandit</a></li>
+<li><a href="#e0010">1944-08-02: The Case Of The Curious
+Undertaker</a></li>
+<li><a href="#e0011">1944-08-23: The Case Of The Intimidated
+Jury</a></li>
+<li><a href="#e0012">1945-02-07: The Case Of The Hospital
+Homicide</a></li>
+<li><a href="#e0013">1945-02-14: Case Of The Stolen Slot
+Machines</a></li>
+<li><a href="#e0014">1946-03-13: The Case of the Deadly Train</a></li>
+<li><a href="#e0015">1946-06-05: The Case of Baby Cradle and
+All</a></li>
+<li><a href="#e0016">1947-05-07: The Case of One Slip Meant
+Death</a></li>
+<li><a href="#e0017">1948-03-17: The Case of Murder in Rhythm and
+Rhyme</a></li>
+<li><a href="#e0018">1948-05-05: The Case of the Sinister
+Cinema</a></li>
+<li><a href="#e0019">1948-05-19: The Case of Spring Fever</a></li>
+<li><a href="#e0020">1948-05-26: The Case of the Deadly
+Snowflake</a></li>
+<li><a href="#e0021">1948-08-25: The Case of the Unknown Source</a></li>
+<li><a href="#e0022">1949-03-09: The Case of Murder a la Carte</a></li>
+<li><a href="#e0023">1949-10-12: The Case of Charity Never
+Began</a></li>
+<li><a href="#e0024">1949-11-23: The Case of Free Play</a></li>
+<li><a href="#e0025">1950-05-17: The Case of Deadly Devotion</a></li>
+<li><a href="#e0026">1950-05-17: The Case of Deadly Devotion
+AFRS</a></li>
+<li><a href="#e0027">1951-04-11: Case of the Money Machine</a></li>
+<li><a href="#e0028">1952-08-10: Case of the Hijack Killer</a></li>
+<li><a href="#e0029">1952-08-17: Case of the Supermarket Killer</a></li>
+<li><a href="#e0030">1952-08-24: Case of the Man on the Ledge</a></li>
+<li><a href="#e0031">1952-08-31: Case of the 15 Year Old Trail</a></li>
+<li><a href="#e0032">1952-09-07: Case of the Joy Ride Murder</a></li>
+<li><a href="#e0033">1952-09-14: Case of the Murderous
+Hitchhiker</a></li>
+<li><a href="#e0034">1952-10-19: Case of the Staircase Killer</a></li>
+<li><a href="#e0035">1952-10-26: Case of the Charity Killer</a></li>
+<li><a href="#e0036">1952-11-02: Case of the Hit and Run Killer</a></li>
+<li><a href="#e0037">1952-11-09: Case of the Desert Killer</a></li>
+<li><a href="#e0038">1952-11-16: Case of the Missing Corpse</a></li>
+<li><a href="#e0039">1952-11-23: Case of the Bank Killer</a></li>
+<li><a href="#e0040">1952-11-30: Case of the Knifing in the
+Park</a></li>
+<li><a href="#e0041">1952-12-07: Case of the Hungry Hobo</a></li>
+<li><a href="#e0042">1952-12-14: The Man Who Confessed</a></li>
+<li><a href="#e0043">1952-12-21: The Hot Rod Killer</a></li>
+<li><a href="#e0044">1952-12-28: The Vanishing Runner</a></li>
+<li><a href="#e0045">1953-01-04: The Murder Syndicate</a></li>
+<li><a href="#e0046">1953-01-11: Case of the Lady Gamblers</a></li>
+<li><a href="#e0047">1953-01-18: Case of the Blood Harvest</a></li>
+<li><a href="#e0048">1953-01-25: Case of the Motorcycle Club
+Killer</a></li>
+<li><a href="#e0049">1953-02-01: Case of the Man with the Gold
+Teeth</a></li>
+<li><a href="#e0050">1953-02-08: Case of Death by Adoption</a></li>
+<li><a href="#e0051">1953-02-15: Case of the Cop Killer</a></li>
+<li><a href="#e0052">1953-02-22: Case of the Blackmail Murder</a></li>
+<li><a href="#e0053">1953-03-01: Case of the Frying Pan Murder</a></li>
+<li><a href="#e0054">1953-03-08: Case of the Murderous Junkman</a></li>
+<li><a href="#e0055">1953-03-15: Case of the Lovers Lane
+Killing</a></li>
+<li><a href="#e0056">1953-04-05: Case of the Dead Reporter</a></li>
+<li><a href="#e0057">1953-04-12: Case of the Wounded Killer</a></li>
+<li><a href="#e0058">1953-04-19: Case of the Murderous Good
+Samaritans</a></li>
+<li><a href="#e0059">1953-04-26: Case of the Silent Killer</a></li>
+<li><a href="#e0060">1953-04-26: Case of the Silent Killer
+AFRTS</a></li>
+<li><a href="#e0061">1953-05-03: Case of the Murder by Amateurs</a></li>
+<li><a href="#e0062">1953-05-03: Case of the Murder by Amateurs
+AFRTS</a></li>
+<li><a href="#e0063">1953-05-10: Case of the Assassin in the Dark
+AFRTS</a></li>
+<li><a href="#e0064">1953-05-17: Case of the Park Murders</a></li>
+<li><a href="#e0065">1953-05-24: Case of the Moving Van Murders</a></li>
+<li><a href="#e0066">1953-05-31: Case of the Bridal Path
+Murders</a></li>
+<li><a href="#e0067">1953-06-07: Case of the Canned Death</a></li>
+<li><a href="#e0068">1953-06-14: Case of the Preview Murder</a></li>
+<li><a href="#e0069">1953-06-21: Case of the Country Club
+Murder</a></li>
+<li><a href="#e0070">1953-06-28: Case of the Perfect Alibi</a></li>
+<li><a href="#e0071">1953-07-05: Case of the Hungry Killer</a></li>
+<li><a href="#e0072">1953-07-12: Case of the Body on the Freight
+Train</a></li>
+<li><a href="#e0073">1953-07-19: Case of the Land Swindle
+Murder</a></li>
+<li><a href="#e0074">1953-07-26: Case of the Living Dead Man</a></li>
+<li><a href="#e0075">1953-08-04: Case of the Pyromaniac Murder</a></li>
+<li><a href="#e0076">1953-10-11: xxx Set-Up For Re-Entry</a></li>
+<li><a href="#e0077">1953-10-18: xxx Case of the Jury Killer</a></li>
+<li><a href="#e0078">1953-11-01: xxx Case of the Forgery Proof
+Note</a></li>
+<li><a href="#e0079">1953-11-22: xxx Case of the Living Corpse</a></li>
+<li><a href="#e0080">1953-12-20: xxx Case of the Mothers Helper</a></li>
+<li><a href="#e0081">Undated: xxx Case of the Church Social
+Stabbing</a></li>
+<li><a href="#e0082">Undated: xxx Case of the Hidden Money
+Killer</a></li>
+<li><a href="#e0083">Undated: xxx I Hate Killers</a></li>
+<li><a href="#e0084">Undated: xxx Missing Doctor</a></li>
+</ul>
+<h2 id="byTitle">Appendix B: By Title</h2>
+<ul>
+<li><a href="#e0003">The 100000 Dollar Check (June 13, 1939)</a></li>
+<li><a href="#e0015">The Case of Baby Cradle and All (June 5,
+1946)</a></li>
+<li><a href="#e0023">The Case of Charity Never Began (October 12,
+1949)</a></li>
+<li><a href="#e0025">The Case of Deadly Devotion (May 17, 1950)</a></li>
+<li><a href="#e0026">The Case of Deadly Devotion AFRS (May 17,
+1950)</a></li>
+<li><a href="#e0050">Case of Death by Adoption (February 8,
+1953)</a></li>
+<li><a href="#e0024">The Case of Free Play (November 23, 1949)</a></li>
+<li><a href="#e0022">The Case of Murder a la Carte (March 9,
+1949)</a></li>
+<li><a href="#e0017">The Case of Murder in Rhythm and Rhyme (March 17,
+1948)</a></li>
+<li><a href="#e0016">The Case of One Slip Meant Death (May 7,
+1947)</a></li>
+<li><a href="#e0019">The Case of Spring Fever (May 19, 1948)</a></li>
+<li><a href="#e0031">Case of the 15 Year Old Trail (August 31,
+1952)</a></li>
+<li><a href="#e0063">Case of the Assassin in the Dark AFRTS (May 10,
+1953)</a></li>
+<li><a href="#e0008">Case of the Backstage Murder (February 3,
+1943)</a></li>
+<li><a href="#e0039">Case of the Bank Killer (November 23,
+1952)</a></li>
+<li><a href="#e0009">Case of the Barnyard Bandit (March 17,
+1943)</a></li>
+<li><a href="#e0052">Case of the Blackmail Murder (February 22,
+1953)</a></li>
+<li><a href="#e0047">Case of the Blood Harvest (January 18,
+1953)</a></li>
+<li><a href="#e0072">Case of the Body on the Freight Train (July 12,
+1953)</a></li>
+<li><a href="#e0066">Case of the Bridal Path Murders (May 31,
+1953)</a></li>
+<li><a href="#e0067">Case of the Canned Death (June 7, 1953)</a></li>
+<li><a href="#e0035">Case of the Charity Killer (October 26,
+1952)</a></li>
+<li><a href="#e0051">Case of the Cop Killer (February 15, 1953)</a></li>
+<li><a href="#e0069">Case of the Country Club Murder (June 21,
+1953)</a></li>
+<li><a href="#e0010">The Case Of The Curious Undertaker (August 2,
+1944)</a></li>
+<li><a href="#e0056">Case of the Dead Reporter (April 5, 1953)</a></li>
+<li><a href="#e0020">The Case of the Deadly Snowflake (May 26,
+1948)</a></li>
+<li><a href="#e0014">The Case of the Deadly Train (March 13,
+1946)</a></li>
+<li><a href="#e0037">Case of the Desert Killer (November 9,
+1952)</a></li>
+<li><a href="#e0053">Case of the Frying Pan Murder (March 1,
+1953)</a></li>
+<li><a href="#e0028">Case of the Hijack Killer (August 10,
+1952)</a></li>
+<li><a href="#e0007">Case Of The Hijacked Worker (August 19,
+1942)</a></li>
+<li><a href="#e0036">Case of the Hit and Run Killer (November 2,
+1952)</a></li>
+<li><a href="#e0012">The Case Of The Hospital Homicide (February 7,
+1945)</a></li>
+<li><a href="#e0041">Case of the Hungry Hobo (December 7, 1952)</a></li>
+<li><a href="#e0071">Case of the Hungry Killer (July 5, 1953)</a></li>
+<li><a href="#e0011">The Case Of The Intimidated Jury (August 23,
+1944)</a></li>
+<li><a href="#e0032">Case of the Joy Ride Murder (September 7,
+1952)</a></li>
+<li><a href="#e0040">Case of the Knifing in the Park (November 30,
+1952)</a></li>
+<li><a href="#e0046">Case of the Lady Gamblers (January 11,
+1953)</a></li>
+<li><a href="#e0073">Case of the Land Swindle Murder (July 19,
+1953)</a></li>
+<li><a href="#e0074">Case of the Living Dead Man (July 26,
+1953)</a></li>
+<li><a href="#e0055">Case of the Lovers Lane Killing (March 15,
+1953)</a></li>
+<li><a href="#e0030">Case of the Man on the Ledge (August 24,
+1952)</a></li>
+<li><a href="#e0049">Case of the Man with the Gold Teeth (February 1,
+1953)</a></li>
+<li><a href="#e0038">Case of the Missing Corpse (November 16,
+1952)</a></li>
+<li><a href="#e0027">Case of the Money Machine (April 11, 1951)</a></li>
+<li><a href="#e0048">Case of the Motorcycle Club Killer (January 25,
+1953)</a></li>
+<li><a href="#e0065">Case of the Moving Van Murders (May 24,
+1953)</a></li>
+<li><a href="#e0061">Case of the Murder by Amateurs (May 3,
+1953)</a></li>
+<li><a href="#e0062">Case of the Murder by Amateurs AFRTS (May 3,
+1953)</a></li>
+<li><a href="#e0058">Case of the Murderous Good Samaritans (April 19,
+1953)</a></li>
+<li><a href="#e0033">Case of the Murderous Hitchhiker (September 14,
+1952)</a></li>
+<li><a href="#e0054">Case of the Murderous Junkman (March 8,
+1953)</a></li>
+<li><a href="#e0064">Case of the Park Murders (May 17, 1953)</a></li>
+<li><a href="#e0070">Case of the Perfect Alibi (June 28, 1953)</a></li>
+<li><a href="#e0068">Case of the Preview Murder (June 14, 1953)</a></li>
+<li><a href="#e0006">Case of the Priceless Miniature aka The Museum
+Mystery (December 10, 1941)</a></li>
+<li><a href="#e0075">Case of the Pyromaniac Murder (August 4,
+1953)</a></li>
+<li><a href="#e0059">Case of the Silent Killer (April 26, 1953)</a></li>
+<li><a href="#e0060">Case of the Silent Killer AFRTS (April 26,
+1953)</a></li>
+<li><a href="#e0018">The Case of the Sinister Cinema (May 5,
+1948)</a></li>
+<li><a href="#e0034">Case of the Staircase Killer (October 19,
+1952)</a></li>
+<li><a href="#e0013">Case Of The Stolen Slot Machines (February 14,
+1945)</a></li>
+<li><a href="#e0029">Case of the Supermarket Killer (August 17,
+1952)</a></li>
+<li><a href="#e0021">The Case of the Unknown Source (August 25,
+1948)</a></li>
+<li><a href="#e0057">Case of the Wounded Killer (April 12,
+1953)</a></li>
+<li><a href="#e0043">The Hot Rod Killer (December 21, 1952)</a></li>
+<li><a href="#e0004">The Last Mile (June 16, 1939)</a></li>
+<li><a href="#e0005">The Man From Alcatraz (February 12, 1941)</a></li>
+<li><a href="#e0042">The Man Who Confessed (December 14, 1952)</a></li>
+<li><a href="#e0001">The Milano Brothers (April 3, 1939)</a></li>
+<li><a href="#e0045">The Murder Syndicate (January 4, 1953)</a></li>
+<li><a href="#e0002">The Ohio Kid (June 9, 1939)</a></li>
+<li><a href="#e0044">The Vanishing Runner (December 28, 1952)</a></li>
+<li><a href="#e0081">xxx Case of the Church Social Stabbing
+(Undated)</a></li>
+<li><a href="#e0078">xxx Case of the Forgery Proof Note (November 1,
+1953)</a></li>
+<li><a href="#e0082">xxx Case of the Hidden Money Killer
+(Undated)</a></li>
+<li><a href="#e0077">xxx Case of the Jury Killer (October 18,
+1953)</a></li>
+<li><a href="#e0079">xxx Case of the Living Corpse (November 22,
+1953)</a></li>
+<li><a href="#e0080">xxx Case of the Mothers Helper (December 20,
+1953)</a></li>
+<li><a href="#e0083">xxx I Hate Killers (Undated)</a></li>
+<li><a href="#e0084">xxx Missing Doctor (Undated)</a></li>
+<li><a href="#e0076">xxx Set-Up For Re-Entry (October 11, 1953)</a></li>
+</ul>
+</body>
+</html>

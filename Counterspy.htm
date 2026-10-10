@@ -1,0 +1,1057 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.12.1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Counterspy</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
+      background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        color-scheme: light only;
+      }
+      html, body, pre, code {
+        background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
+        color: black;
+      }
+      pre, code {
+        padding: 0;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a, a:visited {
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
+      color: #606060;
+      color: light-dark(#606060, #b6b6b6);
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid currentColor;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+    th {
+      border-top: 1px solid currentColor;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#counterspy" id="toc-counterspy">Counterspy</a>
+<ul>
+<li><a href="#contents" id="toc-contents">Contents</a></li>
+<li><a href="#y1942" id="toc-y1942">1942</a></li>
+<li><a href="#y1943" id="toc-y1943">1943</a></li>
+<li><a href="#y1944" id="toc-y1944">1944</a></li>
+<li><a href="#y1945" id="toc-y1945">1945</a></li>
+<li><a href="#y1946" id="toc-y1946">1946</a></li>
+<li><a href="#y1947" id="toc-y1947">1947</a></li>
+<li><a href="#y1948" id="toc-y1948">1948</a></li>
+<li><a href="#y1949" id="toc-y1949">1949</a></li>
+<li><a href="#y1950" id="toc-y1950">1950</a></li>
+<li><a href="#y1951" id="toc-y1951">1951</a></li>
+<li><a href="#y1952" id="toc-y1952">1952</a></li>
+<li><a href="#y1953" id="toc-y1953">1953</a></li>
+<li><a href="#yUndated" id="toc-yUndated">Undated</a></li>
+<li><a href="#byDate" id="toc-byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle" id="toc-byTitle">Appendix B: By Title</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="counterspy">Counterspy</h1>
+<p>Agents of a counterspy agency track down foreign spies, saboteurs and
+smugglers.</p>
+<ul>
+<li>Episodes: 71</li>
+<li>Network: ABC, NBC and Mutual</li>
+<li>Source: <a
+href="https://archive.org/details/OTRR_Counterspy_Singles">Internet
+Archive: OTRR_Counterspy_Singles</a></li>
+<li>Years: 1942 to 1957</li>
+</ul>
+<p>Each episode title is a link that plays its audio. These broadcasts
+can reflect the attitudes of their time. This page is part of <a
+href="OldTimeRadioDramas.htm">Old Time Radio Dramas</a>.</p>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#y1942">1942</a></li>
+<li><a href="#y1943">1943</a></li>
+<li><a href="#y1944">1944</a></li>
+<li><a href="#y1945">1945</a></li>
+<li><a href="#y1946">1946</a></li>
+<li><a href="#y1947">1947</a></li>
+<li><a href="#y1948">1948</a></li>
+<li><a href="#y1949">1949</a></li>
+<li><a href="#y1950">1950</a></li>
+<li><a href="#y1951">1951</a></li>
+<li><a href="#y1952">1952</a></li>
+<li><a href="#y1953">1953</a></li>
+<li><a href="#yUndated">Undated</a></li>
+<li><a href="#byDate">Appendix A: By Date</a></li>
+<li><a href="#byTitle">Appendix B: By Title</a></li>
+</ul>
+<h2 id="y1942">1942</h2>
+<h3 id="e0001"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2042-06-08%20%28004%29%20Washington%20Woman%20Spy%20aka%20Cherchez%20la%20Femme.mp3">Washington
+Woman Spy aka Cherchez la Femme</a></h3>
+<ul>
+<li>Date: June 8, 1942</li>
+<li>Duration: 29:40</li>
+<li>Episode: 4</li>
+</ul>
+<h3 id="e0002"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2042-06-22%20%28006%29%20TCOT%20Border%20Invaders%20aka%20Nazis%20From%20Mexico.mp3">TCOT
+Border Invaders aka Nazis From Mexico</a></h3>
+<ul>
+<li>Date: June 22, 1942</li>
+<li>Duration: 29:07</li>
+<li>Episode: 6</li>
+</ul>
+<h3 id="e0003"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2042-09-14%20%28012%29%20TCOT%20Loganberry%20Point%20Spy.mp3">TCOT
+Loganberry Point Spy</a></h3>
+<ul>
+<li>Date: September 14, 1942</li>
+<li>Duration: 29:30</li>
+<li>Episode: 12</li>
+</ul>
+<h3 id="e0004"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2042-11-02%20%28019%29%20TCOT%20Gasoline%20Barge%20%28Counterfeit%20Gas%20Coupons%29.mp3">TCOT
+Gasoline Barge (Counterfeit Gas Coupons)</a></h3>
+<ul>
+<li>Date: November 2, 1942</li>
+<li>Duration: 26:00</li>
+<li>Episode: 19</li>
+</ul>
+<h3 id="e0005"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2042-12-14%20%28025%29%20TCOT%20Industrial%20Spy%20Ring.mp3">TCOT
+Industrial Spy Ring</a></h3>
+<ul>
+<li>Date: December 14, 1942</li>
+<li>Duration: 29:48</li>
+<li>Episode: 25</li>
+</ul>
+<h2 id="y1943">1943</h2>
+<h3 id="e0006"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2043-05-17%20%28047%29%20TCOT%20Confidential%20Messenger.mp3">TCOT
+Confidential Messenger</a></h3>
+<ul>
+<li>Date: May 17, 1943</li>
+<li>Duration: 30:05</li>
+<li>Episode: 47</li>
+</ul>
+<h2 id="y1944">1944</h2>
+<h3 id="e0007"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2044-09-25%20%28118%29%20TCOT%20Kidnapped%20War%20Worker%20%285%20minute%20excerpt%29.mp3">TCOT
+Kidnapped War Worker (5 minute excerpt)</a></h3>
+<ul>
+<li>Date: September 25, 1944</li>
+<li>Duration: 5:31</li>
+<li>Episode: 118</li>
+</ul>
+<h2 id="y1945">1945</h2>
+<h3 id="e0008"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2045-06-13%20%28155%29%20Washington%20Woman%20Spy%20aka%20Cherchez%20la%20Femme.mp3">Washington
+Woman Spy aka Cherchez la Femme</a></h3>
+<ul>
+<li>Date: June 13, 1945</li>
+<li>Duration: 29:51</li>
+<li>Episode: 155</li>
+</ul>
+<h3 id="e0009"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2045-07-25%20%28161%29%20Explosive%20Dog%20aka%20The%20Case%20Of%20The%20Dog%20Of%20Dynamite.mp3">Explosive
+Dog aka The Case Of The Dog Of Dynamite</a></h3>
+<ul>
+<li>Date: July 25, 1945</li>
+<li>Duration: 29:51</li>
+<li>Episode: 161</li>
+</ul>
+<h2 id="y1946">1946</h2>
+<h3 id="e0010"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2046-07-27%20%28xxx%29%20Stolen%20Car%20Racket%20%28Rehearsal%29.mp3">(xxx)
+Stolen Car Racket (Rehearsal)</a></h3>
+<ul>
+<li>Date: July 27, 1946</li>
+<li>Duration: 33:17</li>
+<li>Episode: 11</li>
+</ul>
+<h2 id="y1947">1947</h2>
+<h3 id="e0011"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2047-09-28%20%28269%29%20Continental%20Chase%20%28Rehearsal%20-second%20half%20only%20-%20first%20of%20a%202%20part%20story%29.mp3">Continental
+Chase (Rehearsal -second half only - first of a 2 part story)</a></h3>
+<ul>
+<li>Date: September 28, 1947</li>
+<li>Duration: 9:25</li>
+<li>Episode: 269</li>
+</ul>
+<h3 id="e0012"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2047-10-26%20%28273%29%20No%20Title%20Given%20%28Rehearsal%20-%20second%20half%20only%29.mp3">No
+Title Given (Rehearsal - second half only)</a></h3>
+<ul>
+<li>Date: October 26, 1947</li>
+<li>Duration: 13:12</li>
+<li>Episode: 273</li>
+</ul>
+<h2 id="y1948">1948</h2>
+<h3 id="e0013"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2048-05-23%20%28xxx%29%20The%20Housing%20Racket%20aka%20Bunko%20Builders.mp3">(xxx)
+The Housing Racket aka Bunko Builders</a></h3>
+<ul>
+<li>Date: May 23, 1948</li>
+<li>Duration: 28:15</li>
+<li>Episode: 14</li>
+</ul>
+<h3 id="e0014"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2048-05-30%20%28304%29%20Camera%20Happy%20Crook%20aka%20Photogenic%20Crook.mp3">Camera
+Happy Crook aka Photogenic Crook</a></h3>
+<ul>
+<li>Date: May 30, 1948</li>
+<li>Duration: 28:45</li>
+<li>Episode: 304</li>
+</ul>
+<h3 id="e0015"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2048-06-06%20%28305%29%20The%20Recruited%20Nurse.mp3">The
+Recruited Nurse</a></h3>
+<ul>
+<li>Date: June 6, 1948</li>
+<li>Duration: 29:14</li>
+<li>Episode: 305</li>
+</ul>
+<h2 id="y1949">1949</h2>
+<h3 id="e0016"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-02-22%20%28344%29%20TCOT%20Mexican%20Rancho.mp3">TCOT
+Mexican Rancho</a></h3>
+<ul>
+<li>Date: February 22, 1949</li>
+<li>Duration: 8:40</li>
+<li>Episode: 344</li>
+</ul>
+<h3 id="e0017"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-02-24%20%28345%29%20TCOT%20Poison%20Peddler.mp3">TCOT
+Poison Peddler</a></h3>
+<ul>
+<li>Date: February 24, 1949</li>
+<li>Duration: 29:20</li>
+<li>Episode: 345</li>
+</ul>
+<h3 id="e0018"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-08-09%20%28385%29%20TCOT%20Blackmailed%20Hijacker.mp3">TCOT
+Blackmailed Hijacker</a></h3>
+<ul>
+<li>Date: August 9, 1949</li>
+<li>Duration: 29:19</li>
+<li>Episode: 385</li>
+</ul>
+<h3 id="e0019"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-08-11%20%28386%29%20TCOT%20Murmured%20Millions.mp3">TCOT
+Murmured Millions</a></h3>
+<ul>
+<li>Date: August 11, 1949</li>
+<li>Duration: 29:23</li>
+<li>Episode: 386</li>
+</ul>
+<h3 id="e0020"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-08-16%20%28387%29%20Statue%20of%20Death.mp3">Statue
+of Death</a></h3>
+<ul>
+<li>Date: August 16, 1949</li>
+<li>Duration: 29:09</li>
+<li>Episode: 387</li>
+</ul>
+<h3 id="e0021"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-08-18%20%28388%29%20Desert%20Explosion.mp3">Desert
+Explosion</a></h3>
+<ul>
+<li>Date: August 18, 1949</li>
+<li>Duration: 29:21</li>
+<li>Episode: 388</li>
+</ul>
+<h3 id="e0022"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-08-23%20%28389%29%20Bouncing%20Bank%20Robber.mp3">Bouncing
+Bank Robber</a></h3>
+<ul>
+<li>Date: August 23, 1949</li>
+<li>Duration: 29:15</li>
+<li>Episode: 389</li>
+</ul>
+<h3 id="e0023"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-08-25%20%28390%29%20Murdering%20Messenger.mp3">Murdering
+Messenger</a></h3>
+<ul>
+<li>Date: August 25, 1949</li>
+<li>Duration: 29:14</li>
+<li>Episode: 390</li>
+</ul>
+<h3 id="e0024"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-08-30%20%28391%29%20Cold%20Blooded%20Professor%20Pt1.mp3">Cold
+Blooded Professor Pt1</a></h3>
+<ul>
+<li>Date: August 30, 1949</li>
+<li>Duration: 29:37</li>
+<li>Episode: 391</li>
+</ul>
+<h3 id="e0025"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-09-01%20%28392%29%20Cold%20Blooded%20Professor%20Pt2.mp3">Cold
+Blooded Professor Pt2</a></h3>
+<ul>
+<li>Date: September 1, 1949</li>
+<li>Duration: 29:32</li>
+<li>Episode: 392</li>
+</ul>
+<h3 id="e0026"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-09-06%20%28393%29%20Arrogant%20Arsonist.mp3">Arrogant
+Arsonist</a></h3>
+<ul>
+<li>Date: September 6, 1949</li>
+<li>Duration: 29:41</li>
+<li>Episode: 393</li>
+</ul>
+<h3 id="e0027"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-09-08%20%28394%29%20Courageous%20Come-on.mp3">Courageous
+Come-on</a></h3>
+<ul>
+<li>Date: September 8, 1949</li>
+<li>Duration: 29:43</li>
+<li>Episode: 394</li>
+</ul>
+<h3 id="e0028"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-09-13%20%28395%29%20Flatbush%20Fagin.mp3">Flatbush
+Fagin</a></h3>
+<ul>
+<li>Date: September 13, 1949</li>
+<li>Duration: 29:37</li>
+<li>Episode: 395</li>
+</ul>
+<h3 id="e0029"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-09-15%20%28396%29%20Hot%20Car%20Killer.mp3">Hot
+Car Killer</a></h3>
+<ul>
+<li>Date: September 15, 1949</li>
+<li>Duration: 29:38</li>
+<li>Episode: 396</li>
+</ul>
+<h3 id="e0030"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-09-20%20%28397%29%20Postal%20Pirates%20Pt1.mp3">Postal
+Pirates Pt1</a></h3>
+<ul>
+<li>Date: September 20, 1949</li>
+<li>Duration: 29:35</li>
+<li>Episode: 397</li>
+</ul>
+<h3 id="e0031"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-09-22%20%28398%29%20Postal%20Pirates%20Pt2.mp3">Postal
+Pirates Pt2</a></h3>
+<ul>
+<li>Date: September 22, 1949</li>
+<li>Duration: 29:33</li>
+<li>Episode: 398</li>
+</ul>
+<h3 id="e0032"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-09-27%20%28399%29%20Visiting%20Vultures.mp3">Visiting
+Vultures</a></h3>
+<ul>
+<li>Date: September 27, 1949</li>
+<li>Duration: 29:45</li>
+<li>Episode: 399</li>
+</ul>
+<h3 id="e0033"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-09-29%20%28400%29%20Vicious%20Visitor.mp3">Vicious
+Visitor</a></h3>
+<ul>
+<li>Date: September 29, 1949</li>
+<li>Duration: 29:27</li>
+<li>Episode: 400</li>
+</ul>
+<h3 id="e0034"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-10-04%20%28401%29%20Sweepstakes%20Murder.mp3">Sweepstakes
+Murder</a></h3>
+<ul>
+<li>Date: October 4, 1949</li>
+<li>Duration: 29:41</li>
+<li>Episode: 401</li>
+</ul>
+<h3 id="e0035"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-10-06%20%28402%29%20The%20Case%20of%20the%20Genuine%20Counterfeit.mp3">The
+Case of the Genuine Counterfeit</a></h3>
+<ul>
+<li>Date: October 6, 1949</li>
+<li>Duration: 29:20</li>
+<li>Episode: 402</li>
+</ul>
+<h3 id="e0036"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-10-11%20%28403%29%20Case%20of%20the%20Society%20Swindler.mp3">Case
+of the Society Swindler</a></h3>
+<ul>
+<li>Date: October 11, 1949</li>
+<li>Duration: 29:38</li>
+<li>Episode: 403</li>
+</ul>
+<h3 id="e0037"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-10-13%20%28404%29%20Case%20of%20the%20High%20Class%20Hijacker.mp3">Case
+of the High Class Hijacker</a></h3>
+<ul>
+<li>Date: October 13, 1949</li>
+<li>Duration: 29:35</li>
+<li>Episode: 404</li>
+</ul>
+<h3 id="e0038"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-10-18%20%28405%29%20The%20Case%20of%20the%20Photograph%20Furrier.mp3">The
+Case of the Photograph Furrier</a></h3>
+<ul>
+<li>Date: October 18, 1949</li>
+<li>Duration: 29:22</li>
+<li>Episode: 405</li>
+</ul>
+<h3 id="e0039"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2049-10-20%20%28406%29%20The%20Case%20of%20the%20International%20Intrigue.mp3">The
+Case of the International Intrigue</a></h3>
+<ul>
+<li>Date: October 20, 1949</li>
+<li>Duration: 29:37</li>
+<li>Episode: 406</li>
+</ul>
+<h2 id="y1950">1950</h2>
+<h3 id="e0040"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-02-21%20%28xxx%29%20The%20Case%20Of%20The%20Counterfeit%20Traveler%27s%20Checks.mp3">(xxx)
+The Case Of The Counterfeit Traveler’s Checks</a></h3>
+<ul>
+<li>Date: February 21, 1950</li>
+<li>Duration: 25:50</li>
+<li>Episode: 41</li>
+</ul>
+<h3 id="e0041"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-04-04%20%28xxx%29%20The%20Case%20of%20the%20Magic%20Murder.mp3">(xxx)
+The Case of the Magic Murder</a></h3>
+<ul>
+<li>Date: April 4, 1950</li>
+<li>Duration: 29:04</li>
+<li>Episode: 42</li>
+</ul>
+<h3 id="e0042"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-04-11%20%28xxx%29%20Case%20of%20the%20Mile%20High%20Murders.mp3">(xxx)
+Case of the Mile High Murders</a></h3>
+<ul>
+<li>Date: April 11, 1950</li>
+<li>Duration: 28:43</li>
+<li>Episode: 43</li>
+</ul>
+<h3 id="e0043"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-04-13%20%28xxx%29%20The%20Case%20of%20the%20Hoodlum%27s%20Hero.mp3">(xxx)
+The Case of the Hoodlum’s Hero</a></h3>
+<ul>
+<li>Date: April 13, 1950</li>
+<li>Duration: 26:39</li>
+<li>Episode: 44</li>
+</ul>
+<h3 id="e0044"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-04-18%20%28xxx%29%20Fabulous%20Formula%20Pt1.mp3">(xxx)
+Fabulous Formula Pt1</a></h3>
+<ul>
+<li>Date: April 18, 1950</li>
+<li>Duration: 29:08</li>
+<li>Episode: 45</li>
+</ul>
+<h3 id="e0045"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-04-20%20%28xxx%29%20Fabulous%20Formula%20Pt2.mp3">(xxx)
+Fabulous Formula Pt2</a></h3>
+<ul>
+<li>Date: April 20, 1950</li>
+<li>Duration: 30:19</li>
+<li>Episode: 46</li>
+</ul>
+<h3 id="e0046"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-04-25%20%28xxx%29%20Case%20of%20the%20Hijacked%20Country.mp3">(xxx)
+Case of the Hijacked Country</a></h3>
+<ul>
+<li>Date: April 25, 1950</li>
+<li>Duration: 24:01</li>
+<li>Episode: 47</li>
+</ul>
+<h3 id="e0047"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-04-27%20%28xxx%29%20Murdered%20Confessor.mp3">(xxx)
+Murdered Confessor</a></h3>
+<ul>
+<li>Date: April 27, 1950</li>
+<li>Duration: 27:40</li>
+<li>Episode: 48</li>
+</ul>
+<h3 id="e0048"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-05-02%20%28415%29%20Soaring%20Saucer.mp3">Soaring
+Saucer</a></h3>
+<ul>
+<li>Date: May 2, 1950</li>
+<li>Duration: 30:33</li>
+<li>Episode: 415</li>
+</ul>
+<h3 id="e0049"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-05-04%20%28416%29%20Crystalline%20Double%20Cross.mp3">Crystalline
+Double Cross</a></h3>
+<ul>
+<li>Date: May 4, 1950</li>
+<li>Duration: 28:10</li>
+<li>Episode: 416</li>
+</ul>
+<h3 id="e0050"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-06-13%20%28xxx%29%20Tattooed%20Eye.mp3">(xxx)
+Tattooed Eye</a></h3>
+<ul>
+<li>Date: June 13, 1950</li>
+<li>Duration: 24:03</li>
+<li>Episode: 51</li>
+</ul>
+<h3 id="e0051"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-08-15%20%28xxx%29%20The%20Case%20of%20the%20Foolish%20Father.mp3">(xxx)
+The Case of the Foolish Father</a></h3>
+<ul>
+<li>Date: August 15, 1950</li>
+<li>Duration: 30:21</li>
+<li>Episode: 52</li>
+</ul>
+<h3 id="e0052"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-10-13%20%28xxx%29%20Case%20of%20the%20Foreign%20Fires%20%28different%20encode%29.mp3">(xxx)
+Case of the Foreign Fires (different encode)</a></h3>
+<ul>
+<li>Date: October 13, 1950</li>
+<li>Duration: 28:04</li>
+<li>Episode: 53</li>
+</ul>
+<h3 id="e0053"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-10-13%20%28xxx%29%20Case%20of%20the%20Foreign%20Fires.mp3">(xxx)
+Case of the Foreign Fires</a></h3>
+<ul>
+<li>Date: October 13, 1950</li>
+<li>Duration: 28:02</li>
+<li>Episode: 54</li>
+</ul>
+<h3 id="e0054"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-10-20%20%28xxx%29%20The%20Case%20of%20the%20Curious%20Conspiracy.mp3">(xxx)
+The Case of the Curious Conspiracy</a></h3>
+<ul>
+<li>Date: October 20, 1950</li>
+<li>Duration: 29:16</li>
+<li>Episode: 55</li>
+</ul>
+<h3 id="e0055"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-10-27%20%28xxx%29%20The%20Case%20of%20the%20Insidious%20Impersonation.mp3">(xxx)
+The Case of the Insidious Impersonation</a></h3>
+<ul>
+<li>Date: October 27, 1950</li>
+<li>Duration: 28:41</li>
+<li>Episode: 56</li>
+</ul>
+<h3 id="e0056"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-11-03%20%28xxx%29%20Case%20of%20the%20Carbon%20Consul.mp3">(xxx)
+Case of the Carbon Consul</a></h3>
+<ul>
+<li>Date: November 3, 1950</li>
+<li>Duration: 28:42</li>
+<li>Episode: 57</li>
+</ul>
+<h3 id="e0057"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-11-12%20%28xxx%29%20The%20Case%20of%20the%20Stolen%20Secret.mp3">(xxx)
+The Case of the Stolen Secret</a></h3>
+<ul>
+<li>Date: November 12, 1950</li>
+<li>Duration: 28:35</li>
+<li>Episode: 58</li>
+</ul>
+<h3 id="e0058"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-11-19%20%28xxx%29%20The%20Case%20of%20the%20Pseudo%20Spuds.mp3">(xxx)
+The Case of the Pseudo Spuds</a></h3>
+<ul>
+<li>Date: November 19, 1950</li>
+<li>Duration: 28:10</li>
+<li>Episode: 59</li>
+</ul>
+<h3 id="e0059"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-11-26%20%28xxx%29%20The%20Case%20of%20the%20Hideous%20Hijacker.mp3">(xxx)
+The Case of the Hideous Hijacker</a></h3>
+<ul>
+<li>Date: November 26, 1950</li>
+<li>Duration: 29:37</li>
+<li>Episode: 60</li>
+</ul>
+<h3 id="e0060"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-12-03%20%28xxx%29%20The%20Case%20of%20the%20Spectrograph.mp3">(xxx)
+The Case of the Spectrograph</a></h3>
+<ul>
+<li>Date: December 3, 1950</li>
+<li>Duration: 30:49</li>
+<li>Episode: 61</li>
+</ul>
+<h3 id="e0061"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-12-10%20%28xxx%29%20The%20Case%20of%20the%20Infiltrating%20Agent.mp3">(xxx)
+The Case of the Infiltrating Agent</a></h3>
+<ul>
+<li>Date: December 10, 1950</li>
+<li>Duration: 27:57</li>
+<li>Episode: 62</li>
+</ul>
+<h3 id="e0062"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-12-17%20%28xxx%29%20The%20Case%20of%20the%20Invisible%20Insurrectionist.mp3">(xxx)
+The Case of the Invisible Insurrectionist</a></h3>
+<ul>
+<li>Date: December 17, 1950</li>
+<li>Duration: 28:38</li>
+<li>Episode: 63</li>
+</ul>
+<h3 id="e0063"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2050-12-24%20%28xxx%29%20The%20Case%20of%20the%20Pretty%20Plant.mp3">(xxx)
+The Case of the Pretty Plant</a></h3>
+<ul>
+<li>Date: December 24, 1950</li>
+<li>Duration: 28:32</li>
+<li>Episode: 64</li>
+</ul>
+<h2 id="y1951">1951</h2>
+<h3 id="e0064"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2051-01-07%20%28xxx%29%20The%20Case%20of%20the%20Kleptomaniac%20Clues.mp3">(xxx)
+The Case of the Kleptomaniac Clues</a></h3>
+<ul>
+<li>Date: January 7, 1951</li>
+<li>Duration: 28:06</li>
+<li>Episode: 65</li>
+</ul>
+<h3 id="e0065"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2051-01-14%20%28xxx%29%20The%20Case%20of%20the%20Captured%20Contact.mp3">(xxx)
+The Case of the Captured Contact</a></h3>
+<ul>
+<li>Date: January 14, 1951</li>
+<li>Duration: 24:06</li>
+<li>Episode: 66</li>
+</ul>
+<h3 id="e0066"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2051-01-21%20%28xxx%29%20Case%20of%20the%20Double%20Crossing%20Defender.mp3">(xxx)
+Case of the Double Crossing Defender</a></h3>
+<ul>
+<li>Date: January 21, 1951</li>
+<li>Duration: 28:45</li>
+<li>Episode: 67</li>
+</ul>
+<h2 id="y1952">1952</h2>
+<h3 id="e0067"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2052-02-14%20%28xxx%29%20The%20Fight%20Against%20Narcotics.mp3">(xxx)
+The Fight Against Narcotics</a></h3>
+<ul>
+<li>Date: February 14, 1952</li>
+<li>Duration: 29:55</li>
+<li>Episode: 68</li>
+</ul>
+<h3 id="e0068"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2052-11-23%20%28xxx%29%20The%20Case%20of%20the%20Corrupt%20Counselor.mp3">(xxx)
+The Case of the Corrupt Counselor</a></h3>
+<ul>
+<li>Date: November 23, 1952</li>
+<li>Duration: 29:16</li>
+<li>Episode: 69</li>
+</ul>
+<h2 id="y1953">1953</h2>
+<h3 id="e0069"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%2053-12-21%20%28xxx%29%20The%20Case%20of%20the%20Diamond%20Thieves.mp3">(xxx)
+The Case of the Diamond Thieves</a></h3>
+<ul>
+<li>Date: December 21, 1953</li>
+<li>Duration: 29:37</li>
+<li>Episode: 70</li>
+</ul>
+<h2 id="yUndated">Undated</h2>
+<h3 id="e0070"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%205x-xx-xx%20%28xxx%29%20Maisie%20the%20Barfly.mp3">(xxx)
+Maisie the Barfly</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 23:03</li>
+<li>Episode: 1</li>
+</ul>
+<h3 id="e0071"><a
+href="https://archive.org/download/OTRR_Counterspy_Singles/Counterspy%20xx-xx-xx%20%28xxx%29%20Flanagan%20Sisters%20Corn%20Syrup%20Company%20Coverup.mp3">(xxx)
+Flanagan Sisters Corn Syrup Company Coverup</a></h3>
+<ul>
+<li>Date: Undated</li>
+<li>Duration: 23:15</li>
+<li>Episode: 71</li>
+</ul>
+<h2 id="byDate">Appendix A: By Date</h2>
+<ul>
+<li><a href="#e0001">1942-06-08: Washington Woman Spy aka Cherchez la
+Femme</a></li>
+<li><a href="#e0002">1942-06-22: TCOT Border Invaders aka Nazis From
+Mexico</a></li>
+<li><a href="#e0003">1942-09-14: TCOT Loganberry Point Spy</a></li>
+<li><a href="#e0004">1942-11-02: TCOT Gasoline Barge (Counterfeit Gas
+Coupons)</a></li>
+<li><a href="#e0005">1942-12-14: TCOT Industrial Spy Ring</a></li>
+<li><a href="#e0006">1943-05-17: TCOT Confidential Messenger</a></li>
+<li><a href="#e0007">1944-09-25: TCOT Kidnapped War Worker (5 minute
+excerpt)</a></li>
+<li><a href="#e0008">1945-06-13: Washington Woman Spy aka Cherchez la
+Femme</a></li>
+<li><a href="#e0009">1945-07-25: Explosive Dog aka The Case Of The Dog
+Of Dynamite</a></li>
+<li><a href="#e0010">1946-07-27: (xxx) Stolen Car Racket
+(Rehearsal)</a></li>
+<li><a href="#e0011">1947-09-28: Continental Chase (Rehearsal -second
+half only - first of a 2 part story)</a></li>
+<li><a href="#e0012">1947-10-26: No Title Given (Rehearsal - second half
+only)</a></li>
+<li><a href="#e0013">1948-05-23: (xxx) The Housing Racket aka Bunko
+Builders</a></li>
+<li><a href="#e0014">1948-05-30: Camera Happy Crook aka Photogenic
+Crook</a></li>
+<li><a href="#e0015">1948-06-06: The Recruited Nurse</a></li>
+<li><a href="#e0016">1949-02-22: TCOT Mexican Rancho</a></li>
+<li><a href="#e0017">1949-02-24: TCOT Poison Peddler</a></li>
+<li><a href="#e0018">1949-08-09: TCOT Blackmailed Hijacker</a></li>
+<li><a href="#e0019">1949-08-11: TCOT Murmured Millions</a></li>
+<li><a href="#e0020">1949-08-16: Statue of Death</a></li>
+<li><a href="#e0021">1949-08-18: Desert Explosion</a></li>
+<li><a href="#e0022">1949-08-23: Bouncing Bank Robber</a></li>
+<li><a href="#e0023">1949-08-25: Murdering Messenger</a></li>
+<li><a href="#e0024">1949-08-30: Cold Blooded Professor Pt1</a></li>
+<li><a href="#e0025">1949-09-01: Cold Blooded Professor Pt2</a></li>
+<li><a href="#e0026">1949-09-06: Arrogant Arsonist</a></li>
+<li><a href="#e0027">1949-09-08: Courageous Come-on</a></li>
+<li><a href="#e0028">1949-09-13: Flatbush Fagin</a></li>
+<li><a href="#e0029">1949-09-15: Hot Car Killer</a></li>
+<li><a href="#e0030">1949-09-20: Postal Pirates Pt1</a></li>
+<li><a href="#e0031">1949-09-22: Postal Pirates Pt2</a></li>
+<li><a href="#e0032">1949-09-27: Visiting Vultures</a></li>
+<li><a href="#e0033">1949-09-29: Vicious Visitor</a></li>
+<li><a href="#e0034">1949-10-04: Sweepstakes Murder</a></li>
+<li><a href="#e0035">1949-10-06: The Case of the Genuine
+Counterfeit</a></li>
+<li><a href="#e0036">1949-10-11: Case of the Society Swindler</a></li>
+<li><a href="#e0037">1949-10-13: Case of the High Class
+Hijacker</a></li>
+<li><a href="#e0038">1949-10-18: The Case of the Photograph
+Furrier</a></li>
+<li><a href="#e0039">1949-10-20: The Case of the International
+Intrigue</a></li>
+<li><a href="#e0040">1950-02-21: (xxx) The Case Of The Counterfeit
+Traveler’s Checks</a></li>
+<li><a href="#e0041">1950-04-04: (xxx) The Case of the Magic
+Murder</a></li>
+<li><a href="#e0042">1950-04-11: (xxx) Case of the Mile High
+Murders</a></li>
+<li><a href="#e0043">1950-04-13: (xxx) The Case of the Hoodlum’s
+Hero</a></li>
+<li><a href="#e0044">1950-04-18: (xxx) Fabulous Formula Pt1</a></li>
+<li><a href="#e0045">1950-04-20: (xxx) Fabulous Formula Pt2</a></li>
+<li><a href="#e0046">1950-04-25: (xxx) Case of the Hijacked
+Country</a></li>
+<li><a href="#e0047">1950-04-27: (xxx) Murdered Confessor</a></li>
+<li><a href="#e0048">1950-05-02: Soaring Saucer</a></li>
+<li><a href="#e0049">1950-05-04: Crystalline Double Cross</a></li>
+<li><a href="#e0050">1950-06-13: (xxx) Tattooed Eye</a></li>
+<li><a href="#e0051">1950-08-15: (xxx) The Case of the Foolish
+Father</a></li>
+<li><a href="#e0052">1950-10-13: (xxx) Case of the Foreign Fires
+(different encode)</a></li>
+<li><a href="#e0053">1950-10-13: (xxx) Case of the Foreign
+Fires</a></li>
+<li><a href="#e0054">1950-10-20: (xxx) The Case of the Curious
+Conspiracy</a></li>
+<li><a href="#e0055">1950-10-27: (xxx) The Case of the Insidious
+Impersonation</a></li>
+<li><a href="#e0056">1950-11-03: (xxx) Case of the Carbon
+Consul</a></li>
+<li><a href="#e0057">1950-11-12: (xxx) The Case of the Stolen
+Secret</a></li>
+<li><a href="#e0058">1950-11-19: (xxx) The Case of the Pseudo
+Spuds</a></li>
+<li><a href="#e0059">1950-11-26: (xxx) The Case of the Hideous
+Hijacker</a></li>
+<li><a href="#e0060">1950-12-03: (xxx) The Case of the
+Spectrograph</a></li>
+<li><a href="#e0061">1950-12-10: (xxx) The Case of the Infiltrating
+Agent</a></li>
+<li><a href="#e0062">1950-12-17: (xxx) The Case of the Invisible
+Insurrectionist</a></li>
+<li><a href="#e0063">1950-12-24: (xxx) The Case of the Pretty
+Plant</a></li>
+<li><a href="#e0064">1951-01-07: (xxx) The Case of the Kleptomaniac
+Clues</a></li>
+<li><a href="#e0065">1951-01-14: (xxx) The Case of the Captured
+Contact</a></li>
+<li><a href="#e0066">1951-01-21: (xxx) Case of the Double Crossing
+Defender</a></li>
+<li><a href="#e0067">1952-02-14: (xxx) The Fight Against
+Narcotics</a></li>
+<li><a href="#e0068">1952-11-23: (xxx) The Case of the Corrupt
+Counselor</a></li>
+<li><a href="#e0069">1953-12-21: (xxx) The Case of the Diamond
+Thieves</a></li>
+<li><a href="#e0070">Undated: (xxx) Maisie the Barfly</a></li>
+<li><a href="#e0071">Undated: (xxx) Flanagan Sisters Corn Syrup Company
+Coverup</a></li>
+</ul>
+<h2 id="byTitle">Appendix B: By Title</h2>
+<ul>
+<li><a href="#e0056">(xxx) Case of the Carbon Consul (November 3,
+1950)</a></li>
+<li><a href="#e0066">(xxx) Case of the Double Crossing Defender (January
+21, 1951)</a></li>
+<li><a href="#e0053">(xxx) Case of the Foreign Fires (October 13,
+1950)</a></li>
+<li><a href="#e0052">(xxx) Case of the Foreign Fires (different encode)
+(October 13, 1950)</a></li>
+<li><a href="#e0046">(xxx) Case of the Hijacked Country (April 25,
+1950)</a></li>
+<li><a href="#e0042">(xxx) Case of the Mile High Murders (April 11,
+1950)</a></li>
+<li><a href="#e0044">(xxx) Fabulous Formula Pt1 (April 18,
+1950)</a></li>
+<li><a href="#e0045">(xxx) Fabulous Formula Pt2 (April 20,
+1950)</a></li>
+<li><a href="#e0071">(xxx) Flanagan Sisters Corn Syrup Company Coverup
+(Undated)</a></li>
+<li><a href="#e0070">(xxx) Maisie the Barfly (Undated)</a></li>
+<li><a href="#e0047">(xxx) Murdered Confessor (April 27, 1950)</a></li>
+<li><a href="#e0010">(xxx) Stolen Car Racket (Rehearsal) (July 27,
+1946)</a></li>
+<li><a href="#e0050">(xxx) Tattooed Eye (June 13, 1950)</a></li>
+<li><a href="#e0065">(xxx) The Case of the Captured Contact (January 14,
+1951)</a></li>
+<li><a href="#e0068">(xxx) The Case of the Corrupt Counselor (November
+23, 1952)</a></li>
+<li><a href="#e0040">(xxx) The Case Of The Counterfeit Traveler’s Checks
+(February 21, 1950)</a></li>
+<li><a href="#e0054">(xxx) The Case of the Curious Conspiracy (October
+20, 1950)</a></li>
+<li><a href="#e0069">(xxx) The Case of the Diamond Thieves (December 21,
+1953)</a></li>
+<li><a href="#e0051">(xxx) The Case of the Foolish Father (August 15,
+1950)</a></li>
+<li><a href="#e0059">(xxx) The Case of the Hideous Hijacker (November
+26, 1950)</a></li>
+<li><a href="#e0043">(xxx) The Case of the Hoodlum’s Hero (April 13,
+1950)</a></li>
+<li><a href="#e0061">(xxx) The Case of the Infiltrating Agent (December
+10, 1950)</a></li>
+<li><a href="#e0055">(xxx) The Case of the Insidious Impersonation
+(October 27, 1950)</a></li>
+<li><a href="#e0062">(xxx) The Case of the Invisible Insurrectionist
+(December 17, 1950)</a></li>
+<li><a href="#e0064">(xxx) The Case of the Kleptomaniac Clues (January
+7, 1951)</a></li>
+<li><a href="#e0041">(xxx) The Case of the Magic Murder (April 4,
+1950)</a></li>
+<li><a href="#e0063">(xxx) The Case of the Pretty Plant (December 24,
+1950)</a></li>
+<li><a href="#e0058">(xxx) The Case of the Pseudo Spuds (November 19,
+1950)</a></li>
+<li><a href="#e0060">(xxx) The Case of the Spectrograph (December 3,
+1950)</a></li>
+<li><a href="#e0057">(xxx) The Case of the Stolen Secret (November 12,
+1950)</a></li>
+<li><a href="#e0067">(xxx) The Fight Against Narcotics (February 14,
+1952)</a></li>
+<li><a href="#e0013">(xxx) The Housing Racket aka Bunko Builders (May
+23, 1948)</a></li>
+<li><a href="#e0026">Arrogant Arsonist (September 6, 1949)</a></li>
+<li><a href="#e0022">Bouncing Bank Robber (August 23, 1949)</a></li>
+<li><a href="#e0014">Camera Happy Crook aka Photogenic Crook (May 30,
+1948)</a></li>
+<li><a href="#e0035">The Case of the Genuine Counterfeit (October 6,
+1949)</a></li>
+<li><a href="#e0037">Case of the High Class Hijacker (October 13,
+1949)</a></li>
+<li><a href="#e0039">The Case of the International Intrigue (October 20,
+1949)</a></li>
+<li><a href="#e0038">The Case of the Photograph Furrier (October 18,
+1949)</a></li>
+<li><a href="#e0036">Case of the Society Swindler (October 11,
+1949)</a></li>
+<li><a href="#e0024">Cold Blooded Professor Pt1 (August 30,
+1949)</a></li>
+<li><a href="#e0025">Cold Blooded Professor Pt2 (September 1,
+1949)</a></li>
+<li><a href="#e0011">Continental Chase (Rehearsal -second half only -
+first of a 2 part story) (September 28, 1947)</a></li>
+<li><a href="#e0027">Courageous Come-on (September 8, 1949)</a></li>
+<li><a href="#e0049">Crystalline Double Cross (May 4, 1950)</a></li>
+<li><a href="#e0021">Desert Explosion (August 18, 1949)</a></li>
+<li><a href="#e0009">Explosive Dog aka The Case Of The Dog Of Dynamite
+(July 25, 1945)</a></li>
+<li><a href="#e0028">Flatbush Fagin (September 13, 1949)</a></li>
+<li><a href="#e0029">Hot Car Killer (September 15, 1949)</a></li>
+<li><a href="#e0023">Murdering Messenger (August 25, 1949)</a></li>
+<li><a href="#e0012">No Title Given (Rehearsal - second half only)
+(October 26, 1947)</a></li>
+<li><a href="#e0030">Postal Pirates Pt1 (September 20, 1949)</a></li>
+<li><a href="#e0031">Postal Pirates Pt2 (September 22, 1949)</a></li>
+<li><a href="#e0015">The Recruited Nurse (June 6, 1948)</a></li>
+<li><a href="#e0048">Soaring Saucer (May 2, 1950)</a></li>
+<li><a href="#e0020">Statue of Death (August 16, 1949)</a></li>
+<li><a href="#e0034">Sweepstakes Murder (October 4, 1949)</a></li>
+<li><a href="#e0018">TCOT Blackmailed Hijacker (August 9, 1949)</a></li>
+<li><a href="#e0002">TCOT Border Invaders aka Nazis From Mexico (June
+22, 1942)</a></li>
+<li><a href="#e0006">TCOT Confidential Messenger (May 17, 1943)</a></li>
+<li><a href="#e0004">TCOT Gasoline Barge (Counterfeit Gas Coupons)
+(November 2, 1942)</a></li>
+<li><a href="#e0005">TCOT Industrial Spy Ring (December 14,
+1942)</a></li>
+<li><a href="#e0007">TCOT Kidnapped War Worker (5 minute excerpt)
+(September 25, 1944)</a></li>
+<li><a href="#e0003">TCOT Loganberry Point Spy (September 14,
+1942)</a></li>
+<li><a href="#e0016">TCOT Mexican Rancho (February 22, 1949)</a></li>
+<li><a href="#e0019">TCOT Murmured Millions (August 11, 1949)</a></li>
+<li><a href="#e0017">TCOT Poison Peddler (February 24, 1949)</a></li>
+<li><a href="#e0033">Vicious Visitor (September 29, 1949)</a></li>
+<li><a href="#e0032">Visiting Vultures (September 27, 1949)</a></li>
+<li><a href="#e0001">Washington Woman Spy aka Cherchez la Femme (June 8,
+1942)</a></li>
+<li><a href="#e0008">Washington Woman Spy aka Cherchez la Femme (June
+13, 1945)</a></li>
+</ul>
+</body>
+</html>

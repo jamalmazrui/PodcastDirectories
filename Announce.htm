@@ -1,14 +1,20 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Announcing Podcast Directories</title>
+  <title>Help guide</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -33,12 +39,16 @@
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -51,13 +61,14 @@
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -80,10 +91,14 @@
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -103,8 +118,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -121,11 +136,11 @@
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -147,10 +162,13 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -161,11 +179,11 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
-<p>Announcing Podcast Directories Single-Page Guides to 139 Podcasts,
+<h1>Help guide</h1>
+<p>Announcing Podcast Directories Single-Page Guides to 154 Podcasts,
 Radio Dramas and Audio Collections, Built for Screen Readers</p>
 <p>https://github.com/JamalMazrui/PodcastDirectories/archive/main.zip</p>
 <p>I am pleased to share Podcast Directories, a free set of web pages,
@@ -180,14 +198,15 @@ episode with a link that plays it directly. No sign-in is needed.</p>
 <p>Each page opens with a table of contents, groups episodes by season
 or year in date order, and also lists every episode by date, by title,
 and by guest or speaker.</p>
-<p>This release has 139 directories: 114 podcasts and other audio
-collections with more than 35,000 episodes, 24 old time radio dramas
-with 4,909 episodes, and a catalog of more than 16,000 free
+<p>This release has 154 directories: 114 podcasts and other audio
+collections with more than 35,000 episodes, 39 old time radio dramas
+with 5,991 episodes, and a catalog of more than 16,000 free
 audiobooks.</p>
 <p>New in this release are classic radio dramas from the 1930s to the
-1960s, chosen for true stories or realistic people and places, with no
-comedies and no science fiction, fantasy or supernatural tales. An Old
-Time Radio Dramas page groups them by kind.</p>
+1960s, chosen for true stories or fiction that is realistic about its
+time, with no comedies, variety shows, science fiction, fantasy or
+supernatural tales. An Old Time Radio Dramas page groups them by
+kind.</p>
 <p>True crime: 20/20, 48 Hours, American Scandal, Bad Batch, Bear Brook,
 Betrayal Weekly, The Binge Cases, The Binge Crimes, Burden of Proof,
 Burden of Proof Daily, Casefile True Crime, Cold Case Files,
@@ -224,13 +243,18 @@ Freedom Scientific Training, Living Blindfully, National Federation of
 the Blind Banquet Addresses, National Federation of the Blind
 Presidential Reports</p>
 <p>Audiobooks: LibriVox Free Audiobooks</p>
-<p>Old time radio dramas: 21st Precinct, The Big Story, The Black
-Museum, Calling All Cars, Cavalcade of America, Crime Classics,
-Destination Freedom, Dragnet, Fire Fighters, Fort Laramie, Gang Busters,
-Gunsmoke, Hello Americans, The Line Up, The Pacific Story, The Secrets
-of Scotland Yard, Soldiers of the Press, This Is Your FBI, We Came This
-Way, The Whistler, Whitehall 1212, Words at War, You Are There, Yours
-Truly, Johnny Dollar</p>
+<p>Old time radio dramas: 21st Precinct, The Adventures of Horatio
+Hornblower, The Adventures of Philip Marlowe, The Big Story, The Black
+Museum, Bold Venture, Box 13, Broadway Is My Beat, Calling All Cars,
+Casey, Crime Photographer, Cavalcade of America, Counterspy, Crime
+Classics, Dangerous Assignment, Destination Freedom, Dr. Kildare,
+Dragnet, Fire Fighters, Fort Laramie, Gang Busters, The Grantland Rice
+Story, Gunsmoke, Hello Americans, The Line Up, The Lives of Harry Lime,
+Luke Slaughter of Tombstone, Mr. District Attorney, The Pacific Story,
+The Secrets of Scotland Yard, The Six Shooter, Soldiers of the Press,
+This Is Your FBI, We Came This Way, The Whistler, Whitehall 1212, Words
+at War, You Are There, You Can’t Do Business with Hitler, Yours Truly,
+Johnny Dollar</p>
 <p>https://github.com/JamalMazrui/PodcastDirectories/archive/main.zip</p>
 </body>
 </html>

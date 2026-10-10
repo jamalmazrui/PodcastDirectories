@@ -2,14 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Jamal Mazrui" />
   <title>Morbid Directory</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -34,12 +40,16 @@
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -52,13 +62,14 @@
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -81,8 +92,11 @@
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     div.abstract {
       margin: 2em 2em 2em 2em;
@@ -96,6 +110,7 @@
       margin-bottom: 0.5em;
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -115,8 +130,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -133,11 +148,11 @@
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -159,10 +174,13 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -173,12 +191,10 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Morbid Directory</h1>
 <p class="subtitle">A Screen-Reader-Friendly Guide to the Morbid
 Podcast</p>
 <p class="author">Jamal Mazrui</p>
@@ -8115,21 +8131,21 @@ brutal manner that it left Wenatchee stunned. Mackenzie’s body was found
 stabbed, strangled, and mutilated. The case takes so many twists and
 turns with drug informants, potential cases of mistaken identity and
 eventually a conviction that left some wondering if the right person was
-behind bars. Gabby Petito GoFundMe &lt;~~This will aid in search efforts
-to find her! Washington Post article Ash mentioned in the episode As
-always, thank you to our sponsors: Stamps.com : with promo code, MORBID,
-you get a special offer that includes a 4-week trial PLUS free postage
-and a digital scale. DailyHarvest: Go to DAILYHARVEST.com/morbid to get
-up to forty dollars off your first box! Upstart: Find out how Upstart
-can lower your monthly payments today when you go to UPSTART.com/MORBID
-BetterHelp: Special offer for Morbid listeners: get 10% off your first
-month at betterhelp.com/Morbid CareOf: For 50% off your first Care/of
-order, go to TakeCareOf.com and enter code morbid50 Cowritten by Alaina
-Urquhart, Ash Kelley &amp; Dave White (Since 10/2022) Produced &amp;
-Edited by Mikie Sirois (Since 2023) Research by Dave White (Since
-10/2022), Alaina Urquhart &amp; Ash Kelley Listener Correspondence &amp;
-Collaboration by Debra Lally Listener Tale Video Edited by Aidan McElman
-(Since 6/2025)</p>
+behind bars. Gabby Petito GoFundMe &lt;<sub></sub>This will aid in
+search efforts to find her! Washington Post article Ash mentioned in the
+episode As always, thank you to our sponsors: Stamps.com : with promo
+code, MORBID, you get a special offer that includes a 4-week trial PLUS
+free postage and a digital scale. DailyHarvest: Go to
+DAILYHARVEST.com/morbid to get up to forty dollars off your first box!
+Upstart: Find out how Upstart can lower your monthly payments today when
+you go to UPSTART.com/MORBID BetterHelp: Special offer for Morbid
+listeners: get 10% off your first month at betterhelp.com/Morbid CareOf:
+For 50% off your first Care/of order, go to TakeCareOf.com and enter
+code morbid50 Cowritten by Alaina Urquhart, Ash Kelley &amp; Dave White
+(Since 10/2022) Produced &amp; Edited by Mikie Sirois (Since 2023)
+Research by Dave White (Since 10/2022), Alaina Urquhart &amp; Ash Kelley
+Listener Correspondence &amp; Collaboration by Debra Lally Listener Tale
+Video Edited by Aidan McElman (Since 6/2025)</p>
 <h3 id="morbid-the-new-england-vampire-panic"><a
 href="https://dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/d4d5c1a0-121c-450d-8aed-1ebd2f4dddf0/episodes/907842b5-8c3b-4bec-8560-89509d1370c4/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=d4d5c1a0-121c-450d-8aed-1ebd2f4dddf0&amp;awEpisodeId=907842b5-8c3b-4bec-8560-89509d1370c4&amp;feed=ohmVlJZQ">The
 New England Vampire Panic</a></h3>
@@ -8454,19 +8470,19 @@ to a potential serial killer in the area. And of course to finish things
 off we’ll get into the haunting of the home which includes a pretty
 recent life threatening event. The Man From The Train by Bill James A
 Nightmare in Villisca by Richard Estep Villisca by Roy Marshall The
-1910s Axe Murders by Beth H. Klingensmith &lt;~~Great Thesis on case!
-Getting the Axe blog The 1912 Villisca Axe Murders blog As always, thank
-you to our sponsors: Scribd: Right now, Scribd is offering our listeners
-a FREE 60-day trial! Go to try.scribd.MORBID for your free trial!
-GoodRX: For simple, smart savings on your prescriptions, check GoodRx.
-Go to GoodRX.com/morbid Upstart: Find out how Upstart can lower your
-monthly payments today when you go to UPSTAR.com/MORBID MVMT: Join the
-MVMT and get 15% off today — with FREE SHIPPING and FREE RETURNS — by
-going to MVMT.com/MORBID Cowritten by Alaina Urquhart, Ash Kelley &amp;
-Dave White (Since 10/2022) Produced &amp; Edited by Mikie Sirois (Since
-2023) Research by Dave White (Since 10/2022), Alaina Urquhart &amp; Ash
-Kelley Listener Correspondence &amp; Collaboration by Debra Lally
-Listener Tale Video Edited by Aidan McElman (Since 6/2025)</p>
+1910s Axe Murders by Beth H. Klingensmith &lt;<sub></sub>Great Thesis on
+case! Getting the Axe blog The 1912 Villisca Axe Murders blog As always,
+thank you to our sponsors: Scribd: Right now, Scribd is offering our
+listeners a FREE 60-day trial! Go to try.scribd.MORBID for your free
+trial! GoodRX: For simple, smart savings on your prescriptions, check
+GoodRx. Go to GoodRX.com/morbid Upstart: Find out how Upstart can lower
+your monthly payments today when you go to UPSTAR.com/MORBID MVMT: Join
+the MVMT and get 15% off today — with FREE SHIPPING and FREE RETURNS —
+by going to MVMT.com/MORBID Cowritten by Alaina Urquhart, Ash Kelley
+&amp; Dave White (Since 10/2022) Produced &amp; Edited by Mikie Sirois
+(Since 2023) Research by Dave White (Since 10/2022), Alaina Urquhart
+&amp; Ash Kelley Listener Correspondence &amp; Collaboration by Debra
+Lally Listener Tale Video Edited by Aidan McElman (Since 6/2025)</p>
 <h3
 id="morbid-morbid-network-presents-a-chat-with-spencer-henry-madison-reyes-from-o"><a
 href="https://dts.podtrac.com/redirect.mp3/stitcher.simplecastaudio.com/d4d5c1a0-121c-450d-8aed-1ebd2f4dddf0/episodes/2ee5a3da-0e76-4be9-b6ba-5212c69312c1/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=d4d5c1a0-121c-450d-8aed-1ebd2f4dddf0&amp;awEpisodeId=2ee5a3da-0e76-4be9-b6ba-5212c69312c1&amp;feed=ohmVlJZQ">Morbid
@@ -9836,8 +9852,8 @@ code morbid16 at HELLOFRESH.com/morbid16 Honey: Get Honey for FREE at
 Join Honey.com/MORBID Athena Club: Sign up today and you’ll get 20% off
 your first order! Just go to Athena Club.com and use promo code MTC
 Scribd: Go to try.scribd.com/MATCP to get your first two months for less
-than <span
-class="math inline">1<em>G</em><em>o</em><em>o</em><em>d</em><em>R</em><em>X</em> : <em>G</em><em>o</em><em>t</em><em>o</em><em>G</em><em>o</em><em>o</em><em>d</em><em>R</em><em>X</em>.<em>c</em><em>o</em><em>m</em>/<em>m</em><em>o</em><em>r</em><em>b</em><em>i</em><em>d</em><em>f</em><em>o</em><em>r</em><em>s</em><em>i</em><em>m</em><em>p</em><em>l</em><em>e</em>, <em>s</em><em>m</em><em>a</em><em>r</em><em>t</em><em>s</em><em>a</em><em>v</em><em>i</em><em>n</em><em>g</em><em>s</em><em>o</em><em>n</em><em>y</em><em>o</em><em>u</em><em>r</em><em>p</em><em>r</em><em>e</em><em>s</em><em>c</em><em>r</em><em>i</em><em>p</em><em>t</em><em>i</em><em>o</em><em>n</em><em>s</em>!<em>A</em><em>r</em><em>t</em><em>i</em><em>c</em><em>l</em><em>e</em> : <em>A</em><em>r</em><em>t</em><em>i</em><em>c</em><em>l</em><em>e</em><em>i</em><em>s</em><em>o</em><em>f</em><em>f</em><em>e</em><em>r</em><em>i</em><em>n</em><em>g</em><em>o</em><em>u</em><em>r</em><em>l</em><em>i</em><em>s</em><em>t</em><em>e</em><em>n</em><em>e</em><em>r</em><em>s</em>50</span>
+than
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>G</mi><mi>o</mi><mi>o</mi><mi>d</mi><mi>R</mi><mi>X</mi><mo>:</mo><mi>G</mi><mi>o</mi><mi>t</mi><mi>o</mi><mi>G</mi><mi>o</mi><mi>o</mi><mi>d</mi><mi>R</mi><mi>X</mi><mi>.</mi><mi>c</mi><mi>o</mi><mi>m</mi><mi>/</mi><mi>m</mi><mi>o</mi><mi>r</mi><mi>b</mi><mi>i</mi><mi>d</mi><mi>f</mi><mi>o</mi><mi>r</mi><mi>s</mi><mi>i</mi><mi>m</mi><mi>p</mi><mi>l</mi><mi>e</mi><mo>,</mo><mi>s</mi><mi>m</mi><mi>a</mi><mi>r</mi><mi>t</mi><mi>s</mi><mi>a</mi><mi>v</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>s</mi><mi>o</mi><mi>n</mi><mi>y</mi><mi>o</mi><mi>u</mi><mi>r</mi><mi>p</mi><mi>r</mi><mi>e</mi><mi>s</mi><mi>c</mi><mi>r</mi><mi>i</mi><mi>p</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mi>s</mi><mi>!</mi><mi>A</mi><mi>r</mi><mi>t</mi><mi>i</mi><mi>c</mi><mi>l</mi><mi>e</mi><mo>:</mo><mi>A</mi><mi>r</mi><mi>t</mi><mi>i</mi><mi>c</mi><mi>l</mi><mi>e</mi><mi>i</mi><mi>s</mi><mi>o</mi><mi>f</mi><mi>f</mi><mi>e</mi><mi>r</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>o</mi><mi>u</mi><mi>r</mi><mi>l</mi><mi>i</mi><mi>s</mi><mi>t</mi><mi>e</mi><mi>n</mi><mi>e</mi><mi>r</mi><mi>s</mi><mn>50</mn></mrow><annotation encoding="application/x-tex">1 Good RX: Go to GoodRX.com/morbid for simple, smart savings on your prescriptions! Article: Article is offering our listeners 50</annotation></semantics></math>
 off their first purchase of $100 or more. Visit Artice.com/morbid and
 the discount will be automatically applied at checkout! Cowritten by
 Alaina Urquhart, Ash Kelley &amp; Dave White (Since 10/2022) Produced
@@ -13080,10 +13096,10 @@ Facebook…. and even the CIA. Thank you to the astounding David White for
 research assistance References Diaz, Joseph, and Alexa Valiente. 2015.
 “How a Social Media Feud Led to the Murder of a Young Tennessee Couple.”
 ABC News, October 9. Ghianni, Tim. 2012. “Handguns Found at Home of
-‘Facebook’Murder Suspect.” Fort McMurray Today, February 15. Lee, Murry,
+’Facebook’Murder Suspect.” Fort McMurray Today, February 15. Lee, Murry,
 Ashley Sharp, and Slater Teague. 2021. Daughter, mother convicted in
 ‘Facebook murders’ case asking for new trials. July 12. Accessed
-December 23, 2022. . Schoals, Gayle. 2016.”Tricked Into Murder:
+December 23, 2022. . Schoals, Gayle. 2016. “Tricked Into Murder:
 Obsession, CIA Conspiracies and Shocking Killings.” The Sun, September
 4. Sharp, Ashley. 2021. Attorneys respond to ‘guilty’ plea, reduced
 sentence of Barbara Potter in 2012 ‘Facebook Murders’. November 11.
@@ -13892,7 +13908,7 @@ Caleb for joining Ash on today’s episode! Go check out Scream! and
 Horrorsoup anywhere you listen to podcasts. Thank you to the incredible
 David White for research assistance! References Court TV. 2022. OR v.
 Crampton-Brophy: Romance Novelist Murder Trial. June 15. Accessed March
-8, 2023. . Flynn, Meagan. 2018. “Novelist who wrote about ‘How to Murder
+8, 2023. . Flynn, Meagan. 2018. “Novelist who wrote about ’How to Murder
 Your Husband’charged with murdering her husband.” Washington Post ,
 September 12. Green, Aimee. 2019. Details of murder case against romance
 writer should become public in 2 weeks, judge rules. April 5. Accessed
@@ -13907,7 +13923,7 @@ with murdering husband, judge rules. April 10. Accessed March 12, 2023.
 . NBC News. 2022. Dateline. Television, New York, NY: NBC News.
 O’Rourke, Ciara. 2019. A Beloved Culinary Instructor Was Murdered. What
 Happened Next Was Stranger Than Fiction. May 31. Accessed March 10,
-2023. . Paul, Maria Luisa. 2022.”’How to Murder Your Husband’writer
+2023. . Paul, Maria Luisa. 2022. “’How to Murder Your Husband’writer
 sentenced to life for.” Washington Post , June 14. Sparling, Zane. 2022.
 Love vs. money: Lawyers make final arguments in Oregon romance writer’s
 murder trial. May 22. Accessed March 12, 2023. . —. 2022. Oregon romance
@@ -23796,7 +23812,7 @@ claims seven slayings.” Times-Herald (Vallejo, CA), November 12: 1. —.
 1969. “Teenagers’s;ayer still at large.” Times-Herald (Vallejo, CA),
 March 30: 1. Flaherty, Francis G. 1968. “Investigators lacking clues in
 2 slayings.” Times-Herald (Vallejo, CA), December 22: 1. Glover,
-Malcolm. 1969. “Hundreds of ‘Zodiac’tips flood Bay police.” San
+Malcolm. 1969. “Hundreds of ’Zodiac’tips flood Bay police.” San
 Francisco Examiner, October 18: 1. Lowe, Lindsay. 2024. Who was Arthur
 Leigh Allen? October 29. Accessed February 14, 2025. . McClatchy
 Newspapers Service. 1969. “Vallejo Police seek gunman who killed woman,
@@ -23804,7 +23820,7 @@ shot man.” Sacramento Bee, July 5: 1. Michelman, Jordan. 2020. “What If
 You Solved the Zodiac Killer Mystery and No One Believed You? .”
 Portland Monthly, December 16. O’Connell, Oliver. 2021. Gary Poste: Who
 was the alleged Zodiac killer identified by ‘Case Breakers’? October 7.
-Accessed February 14, 2025. . Peterson, Dave. 1969.”2 survivors tell
+Accessed February 14, 2025. . Peterson, Dave. 1969. “2 survivors tell
 what they can on ‘Code Killer’.” Times-Herald, October 1: 1. Sacramento
 Bee. 1969. “Officers check leads in Berryessa killing.” Sacramento Bee,
 October 3: 27. San Francisco Examiner. 1969. “’Cipher Killer’s’new
@@ -23855,7 +23871,7 @@ slayings.” Times-Herald (Vallejo, CA), November 12: 1. —. 1969.
 “Teenagers’s;ayer still at large.” Times-Herald (Vallejo, CA), March 30:
 1. Flaherty, Francis G. 1968. “Investigators lacking clues in 2
 slayings.” Times-Herald (Vallejo, CA), December 22: 1. Glover, Malcolm.
-1969. “Hundreds of ‘Zodiac’tips flood Bay police.” San Francisco
+1969. “Hundreds of ’Zodiac’tips flood Bay police.” San Francisco
 Examiner, October 18: 1. Lowe, Lindsay. 2024. Who was Arthur Leigh
 Allen? October 29. Accessed February 14, 2025. McClatchy Newspapers
 Service. 1969. “Vallejo Police seek gunman who killed woman, shot man.”
@@ -23863,7 +23879,7 @@ Sacramento Bee, July 5: 1. Michelman, Jordan. 2020. “What If You Solved
 the Zodiac Killer Mystery and No One Believed You? .” Portland Monthly,
 December 16. O’Connell, Oliver. 2021. Gary Poste: Who was the alleged
 Zodiac killer identified by ‘Case Breakers’? October 7. Accessed
-February 14, 2025. Peterson, Dave. 1969.”2 survivors tell what they can
+February 14, 2025. Peterson, Dave. 1969. “2 survivors tell what they can
 on ‘Code Killer’.” Times-Herald, October 1: 1. Sacramento Bee. 1969.
 “Officers check leads in Berryessa killing.” Sacramento Bee, October 3:
 27. San Francisco Examiner. 1969. “’Cipher Killer’s’new letter.” San

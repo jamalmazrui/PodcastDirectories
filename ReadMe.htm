@@ -1,14 +1,20 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Podcast Directories</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -33,12 +39,16 @@
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -51,13 +61,14 @@
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -80,10 +91,14 @@
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -103,8 +118,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -121,11 +136,11 @@
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -147,10 +162,13 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -161,18 +179,36 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#podcast-directories" id="toc-podcast-directories">Podcast
+Directories</a>
+<ul>
+<li><a href="#how-to-get-the-pages" id="toc-how-to-get-the-pages">How to
+get the pages</a></li>
+<li><a href="#why-a-single-page-helps"
+id="toc-why-a-single-page-helps">Why a single page helps</a></li>
+<li><a href="#how-each-page-is-built"
+id="toc-how-each-page-is-built">How each page is built</a></li>
+<li><a href="#how-it-was-made" id="toc-how-it-was-made">How it was
+made</a></li>
+<li><a href="#the-podcasts-included" id="toc-the-podcasts-included">The
+podcasts included</a></li>
+<li><a href="#notes" id="toc-notes">Notes</a></li>
+</ul></li>
+</ul>
+</nav>
 <h1 id="podcast-directories">Podcast Directories</h1>
 <p>Podcast Directories is a set of web pages, one for each podcast, that
 list every public episode of a show along with its key details. Each
 page is a single HTML file, built to be easy to read and search with a
 screen reader.</p>
-<p>The collection currently covers <strong>139 directories</strong>: 114
-podcasts and other audio collections with more than 35,000 episodes, 24
-old time radio dramas with 4,909 episodes, and a catalog of more than
+<p>The collection currently covers <strong>154 directories</strong>: 114
+podcasts and other audio collections with more than 35,000 episodes, 39
+old time radio dramas with 5,991 episodes, and a catalog of more than
 16,000 free audiobooks.</p>
 <h2 id="how-to-get-the-pages">How to get the pages</h2>
 <p>Download the whole set as one zip file from this address:</p>
@@ -385,31 +421,65 @@ Blind Presidential Reports</a></li>
 <li><a href="LibriVoxAudiobooks.htm">LibriVox Free Audiobooks</a></li>
 </ul>
 <h3 id="old-time-radio-dramas">Old time radio dramas</h3>
-<p>These are classic radio dramas from the 1930s to the 1960s, chosen
-for true stories or realistic people and places. There are no comedies,
-and no science fiction, fantasy or supernatural tales. The <a
-href="OldTimeRadioDramas.htm">Old Time Radio Dramas</a> page groups them
-by kind: history, true crime, realistic crime fiction, realistic
-westerns, and survival and rescue. Their audio comes from the Internet
-Archive.</p>
+<p>These are classic radio dramas from the 1930s to the 1960s. A show is
+included only if it meets all of these rules:</p>
+<ul>
+<li><strong>Drama:</strong> plays and dramatized stories, not comedies,
+variety shows or music programs.</li>
+<li><strong>Free source:</strong> complete episodes that play free from
+a public archive, mostly the Internet Archive.</li>
+<li><strong>No paranormal:</strong> no ghosts, curses, the occult or
+other supernatural events.</li>
+<li><strong>No science fiction or fantasy:</strong> no imagined
+technology, space travel or magical worlds.</li>
+<li><strong>Real or realistic:</strong> true stories retold as drama, or
+fiction that portrays its time and place realistically.</li>
+</ul>
+<p>Anthologies that mix in supernatural episodes, such as Suspense and
+Escape, are left out, as are science fiction series such as Dimension X
+and X Minus One. As a safeguard, fiction episodes whose titles suggest
+the supernatural are skipped.</p>
+<p>The <a href="OldTimeRadioDramas.htm">Old Time Radio Dramas</a> page
+groups the shows by kind: history, realistic crime fiction, realistic
+drama and adventure, realistic westerns, survival and rescue, and true
+crime.</p>
+<!-- otrList -->
 <ul>
 <li><a href="TwentyFirstPrecinct.htm">21st Precinct</a></li>
+<li><a href="HoratioHornblower.htm">The Adventures of Horatio
+Hornblower</a></li>
+<li><a href="PhilipMarlowe.htm">The Adventures of Philip
+Marlowe</a></li>
 <li><a href="BigStory.htm">The Big Story</a></li>
 <li><a href="BlackMuseum.htm">The Black Museum</a></li>
+<li><a href="BoldVenture.htm">Bold Venture</a></li>
+<li><a href="Box13.htm">Box 13</a></li>
+<li><a href="BroadwayIsMyBeat.htm">Broadway Is My Beat</a></li>
 <li><a href="CallingAllCars.htm">Calling All Cars</a></li>
+<li><a href="CaseyCrimePhotographer.htm">Casey, Crime
+Photographer</a></li>
 <li><a href="CavalcadeOfAmerica.htm">Cavalcade of America</a></li>
+<li><a href="Counterspy.htm">Counterspy</a></li>
 <li><a href="CrimeClassics.htm">Crime Classics</a></li>
+<li><a href="DangerousAssignment.htm">Dangerous Assignment</a></li>
 <li><a href="DestinationFreedom.htm">Destination Freedom</a></li>
+<li><a href="DrKildare.htm">Dr. Kildare</a></li>
 <li><a href="Dragnet.htm">Dragnet</a></li>
 <li><a href="FireFighters.htm">Fire Fighters</a></li>
 <li><a href="FortLaramie.htm">Fort Laramie</a></li>
 <li><a href="GangBusters.htm">Gang Busters</a></li>
+<li><a href="GrantlandRiceStory.htm">The Grantland Rice Story</a></li>
 <li><a href="Gunsmoke.htm">Gunsmoke</a></li>
 <li><a href="HelloAmericans.htm">Hello Americans</a></li>
 <li><a href="LineUp.htm">The Line Up</a></li>
+<li><a href="LivesOfHarryLime.htm">The Lives of Harry Lime</a></li>
+<li><a href="LukeSlaughterOfTombstone.htm">Luke Slaughter of
+Tombstone</a></li>
+<li><a href="MrDistrictAttorney.htm">Mr. District Attorney</a></li>
 <li><a href="PacificStory.htm">The Pacific Story</a></li>
 <li><a href="SecretsOfScotlandYard.htm">The Secrets of Scotland
 Yard</a></li>
+<li><a href="SixShooter.htm">The Six Shooter</a></li>
 <li><a href="SoldiersOfThePress.htm">Soldiers of the Press</a></li>
 <li><a href="ThisIsYourFBI.htm">This Is Your FBI</a></li>
 <li><a href="WeCameThisWay.htm">We Came This Way</a></li>
@@ -417,8 +487,10 @@ Yard</a></li>
 <li><a href="Whitehall1212.htm">Whitehall 1212</a></li>
 <li><a href="WordsAtWar.htm">Words at War</a></li>
 <li><a href="YouAreThere.htm">You Are There</a></li>
-<li><a href="YoursTrulyJohnnyDollar.htm">Yours Truly, Johnny
-Dollar</a></li>
+<li><a href="YouCantDoBusinessWithHitler.htm">You Can’t Do Business with
+Hitler</a></li>
+<li><a href="YoursTrulyJohnnyDollar.htm">Yours Truly, Johnny Dollar</a>
+<!-- /otrList --></li>
 </ul>
 <h2 id="notes">Notes</h2>
 <ul>

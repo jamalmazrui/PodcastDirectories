@@ -2,14 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
 <head>
   <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc 3.12.1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Jamal Mazrui" />
   <title>Business Wars Directory</title>
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     html {
       color: #1a1a1a;
+      color: light-dark(#1a1a1a, #fdfdfd);
       background-color: #fdfdfd;
+      background-color: light-dark(#fdfdfd, #1a1a1a);
+      color-scheme: light dark;
     }
     body {
       margin: 0 auto;
@@ -34,12 +40,16 @@
     }
     @media print {
       html {
-        background-color: white;
+        color-scheme: light only;
       }
-      body {
+      html, body, pre, code {
         background-color: transparent;
+      }
+      body, a, a:visited, blockquote {
         color: black;
-        font-size: 12pt;
+      }
+      pre, code {
+        padding: 0;
       }
       p, h2, h3 {
         orphans: 3;
@@ -52,13 +62,14 @@
     p {
       margin: 1em 0;
     }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
+    a, a:visited {
+      color: inherit;
     }
     img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
       max-width: 100%;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -81,8 +92,11 @@
     blockquote {
       margin: 1em 0 1em 1.7em;
       padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
+      border-left: 2px solid;
+      border-color: #e6e6e6;
+      border-color: light-dark(#e6e6e6, #4c4c4c);
       color: #606060;
+      color: light-dark(#606060, #b6b6b6);
     }
     div.abstract {
       margin: 2em 2em 2em 2em;
@@ -96,6 +110,7 @@
       margin-bottom: 0.5em;
     }
     code {
+      white-space: pre-wrap;
       font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
@@ -115,8 +130,8 @@
      overflow: visible;
     }
     hr {
-      background-color: #1a1a1a;
       border: none;
+      border-top: 1px solid currentColor;
       height: 1px;
       margin: 1em 0;
     }
@@ -133,11 +148,11 @@
     }
     tbody {
       margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
     }
     th {
-      border-top: 1px solid #1a1a1a;
+      border-top: 1px solid currentColor;
       padding: 0.25em 0.5em 0.25em 0.5em;
     }
     td {
@@ -159,10 +174,13 @@
     #TOC a:not(:hover) {
       text-decoration: none;
     }
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     /* The extra [class] is a hack that increases specificity enough to
        override a similar rule in reveal.js */
@@ -173,12 +191,10 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Business Wars Directory</h1>
 <p class="subtitle">A Screen-Reader-Friendly Guide to the Business Wars
 Podcast</p>
 <p class="author">Jamal Mazrui</p>
@@ -1241,7 +1257,7 @@ vs The Record Labels - Silicon Valley or Bust | 2</a></h3>
 <p><strong>Summary:</strong> Naysayers tell Shawn Fanning that only an
 experienced Silicon Valley software engineer solve all the technological
 challenges to get Napster working. But Shawn thinks he’s got the answers
-and asks himself, ’’why not me?” And he gets to work, turning to an
+and asks himself, ‘’why not me?” And he gets to work, turning to an
 online chat group of hackers who are eager to help so they can take the
 fight right to the doorstep of the record labels. Support us by
 supporting our sponsors! Blinkist - Go to Blinkist.com/BW to start your
@@ -2525,7 +2541,7 @@ bankruptcy as the Japanese redefine the industry. Whether Harley can
 change with the changing times remains to be seen. On the literary
 front, writer Hunter Thompson canonizes the Hells Angels with his
 bestselling book dissecting the outlaw biker crew, highlighting their
-passion for Harleys. As Honda’s sunshiney ’60s ad jingle says, you meet
+passion for Harleys. As Honda’s sunshiney ‘60s ad jingle says, you meet
 the nicest people on a Honda. It begs the question, who do you meet on a
 Harley? Support us by supporting our sponsors! See Privacy Policy at and
 California Privacy Notice at</p>
@@ -2559,7 +2575,7 @@ and the Biker Wars - Live to Ride | 6</a></h3>
 <p><strong>Summary:</strong> By the early 1980s, Harley-Davidson is
 fighting to survive. Japan has glutted the American market with bikes,
 creating a war Harley can’t fight alone. The company turns to the U.S.
-government. It’s something they tried in the ’50s with no success, but
+government. It’s something they tried in the ‘50s with no success, but
 now there’s a man in the White House who loves the all-American
 Milwaukee brand. In the years ahead Harley stands tall, surviving all
 manner of battles. But there’s one foe that never stops: time. The
@@ -4395,7 +4411,7 @@ Hut vs Domino’s | Delivering the Goods | 3</a></h3>
 <p><strong>Duration:</strong> 00:22:48</p>
 <p><strong>Episode:</strong> 3</p>
 <p><strong>Season:</strong> 41</p>
-<p><strong>Summary:</strong> It’s the ’80s and Domino’s is gunning for
+<p><strong>Summary:</strong> It’s the ‘80s and Domino’s is gunning for
 Pizza Hut. Domino’s has kickstarted the speediest expansion program in
 fast-food history and it’s not planning on stopping until it’s planted
 its flag in every corner of the USA. But while Domino’s goes on the
@@ -6373,7 +6389,7 @@ Birth of Vegas | Sharks In the Lobby | 5</a></h3>
 <p><strong>Summary:</strong> The mob’s longtime stranglehold on Las
 Vegas is weakening as the feds press down harder than ever. Just a few
 years ago, no one built anything on the Strip without gangster
-involvement. Now, as the late ’80s unfold into the ’90s, rising Vegas
+involvement. Now, as the late ‘80s unfold into the ‘90s, rising Vegas
 mega-developer Steve Wynn begins his rise to battle Kirk Kerkorian as
 the new kings of the Strip, and they don’t need mob money or influence
 to do it. Wynn opens what will become the most financially successful
@@ -6509,7 +6525,7 @@ Notice at</p>
 <h3
 id="businesswars-death-row-records-vs-bad-boy-records-hit-em-up-4"><a
 href="https://rss.art19.com/episodes/38f22116-5d32-4285-a99f-cfffec722cf7.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">Death
-Row Records vs Bad Boy Records | Hit ’Em Up | 4</a></h3>
+Row Records vs Bad Boy Records | Hit ‘Em Up | 4</a></h3>
 <p><strong>Date:</strong> September 20, 2021</p>
 <p><strong>Duration:</strong> 00:21:16</p>
 <p><strong>Episode:</strong> 4</p>
@@ -6527,7 +6543,7 @@ Privacy Policy at and California Privacy Notice at</p>
 <h3
 id="businesswars-death-row-records-vs-bad-boy-records-you-re-nobody-til-somebody-kills"><a
 href="https://rss.art19.com/episodes/25fc5194-d1bc-4e09-9b21-9bf674b15cb4.mp3?rss_browser=BAhJIgxNb3ppbGxhBjoGRVQ%3D--4f04cd103bfdd3e94cbbb356ead53321a4d63e94">Death
-Row Records vs Bad Boy Records | You’re Nobody ’til Somebody Kills You |
+Row Records vs Bad Boy Records | You’re Nobody ‘til Somebody Kills You |
 5</a></h3>
 <p><strong>Date:</strong> September 22, 2021</p>
 <p><strong>Duration:</strong> 00:21:58</p>
@@ -9372,7 +9388,7 @@ R US vs KB Toys | The Comeback Kid, Plus Hot Wheels! | 5</a></h3>
 <p><strong>Duration:</strong> 00:40:41</p>
 <p><strong>Episode:</strong> 5</p>
 <p><strong>Season:</strong> 89</p>
-<p><strong>Summary:</strong> ’Tis the season for toys! First, we’re
+<p><strong>Summary:</strong> ‘Tis the season for toys! First, we’re
 getting an update on where toy retailers stand today with Forbes Senior
 Contributor Joan Verdon . She’s covered Toys R Us since the late 90s,
 and has the inside scoop on whether this chain is actually making the
@@ -14086,11 +14102,11 @@ Row Records vs Bad Boy Records | Life After Wartime | 6</a> — September
 27</li>
 <li><a
 href="#businesswars-death-row-records-vs-bad-boy-records-you-re-nobody-til-somebody-kills">Death
-Row Records vs Bad Boy Records | You’re Nobody ’til Somebody Kills You |
+Row Records vs Bad Boy Records | You’re Nobody ‘til Somebody Kills You |
 5</a> — September 22</li>
 <li><a
 href="#businesswars-death-row-records-vs-bad-boy-records-hit-em-up-4">Death
-Row Records vs Bad Boy Records | Hit ’Em Up | 4</a> — September 20</li>
+Row Records vs Bad Boy Records | Hit ‘Em Up | 4</a> — September 20</li>
 <li><a
 href="#businesswars-death-row-records-vs-bad-boy-records-ready-to-die-3">Death
 Row Records vs Bad Boy Records | Ready to Die | 3</a> — September
@@ -15533,7 +15549,7 @@ href="#businesswars-dating-app-wars-the-revolution-will-be-swiped-3">Dating
 App Wars | The Revolution Will Be Swiped | 3</a></li>
 <li><a
 href="#businesswars-death-row-records-vs-bad-boy-records-hit-em-up-4">Death
-Row Records vs Bad Boy Records | Hit ’Em Up | 4</a></li>
+Row Records vs Bad Boy Records | Hit ‘Em Up | 4</a></li>
 <li><a
 href="#businesswars-death-row-records-vs-bad-boy-records-interns-intimidation-2">Death
 Row Records vs Bad Boy Records | Interns &amp; Intimidation | 2</a></li>
@@ -15548,7 +15564,7 @@ href="#businesswars-death-row-records-vs-bad-boy-records-ready-to-die-3">Death
 Row Records vs Bad Boy Records | Ready to Die | 3</a></li>
 <li><a
 href="#businesswars-death-row-records-vs-bad-boy-records-you-re-nobody-til-somebody-kills">Death
-Row Records vs Bad Boy Records | You’re Nobody ’til Somebody Kills You |
+Row Records vs Bad Boy Records | You’re Nobody ‘til Somebody Kills You |
 5</a></li>
 <li><a
 href="#businesswars-denim-wars-are-your-jeans-blue-or-red-7">Denim Wars
