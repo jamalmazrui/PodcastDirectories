@@ -1,0 +1,1232 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Described Tours</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<nav id="TOC" role="doc-toc" aria-label="Contents">
+<ul>
+<li><a href="#described-tours" id="toc-described-tours">Described
+Tours</a>
+<ul>
+<li><a href="#contents" id="toc-contents">Contents</a></li>
+<li><a href="#acb" id="toc-acb">ACB convention tours</a></li>
+<li><a href="#apps" id="toc-apps">Apps that hold many tours</a></li>
+<li><a href="#art" id="toc-art">Art museums</a></li>
+<li><a href="#australia" id="toc-australia">Australia</a></li>
+<li><a href="#government" id="toc-government">Government buildings and
+landmarks</a></li>
+<li><a href="#history" id="toc-history">Historic homes and history
+museums</a></li>
+<li><a href="#parks" id="toc-parks">National parks and outdoor
+sites</a></li>
+<li><a href="#science" id="toc-science">Natural history and
+science</a></li>
+<li><a href="#uk" id="toc-uk">United Kingdom</a></li>
+<li><a href="#more" id="toc-more">Where to find more</a></li>
+<li><a href="#leads" id="toc-leads">Leads not yet checked</a></li>
+<li><a href="#notes" id="toc-notes">Notes</a></li>
+</ul></li>
+</ul>
+</nav>
+<main>
+<h1 id="described-tours">Described Tours</h1>
+<p>This directory gathers free audio-described tours of museums, parks,
+landmarks and historic homes: 96 tours and collections in all, mostly
+from government agencies and nonprofits. Audio description tells you
+what is there, such as the size, shape, color and setting of a painting,
+a room or a landscape. An ordinary audio tour mostly tells you who made
+something and why it matters. Every tour here does the first job, and
+most can be heard at home, before a visit or instead of one.</p>
+<p>The list grew from the Museums, Parks, and Tours page of the American
+Council of the Blind’s Audio Description Project (ADP), and from ACB’s
+podcast of 41 tours presented at its conventions. Two AIs, Claude and
+ChatGPT, then searched for more and checked each other’s links, in
+November 2026. A link marked “checked by ChatGPT only” goes to a site
+that blocks automated checking, so only one of the two could open it.
+Each title links to the tour’s own page.</p>
+<p>Below each title, the details appear in separate, alphabetically
+sorted fields:</p>
+<ul>
+<li><strong>Format</strong> — how you reach it: an app, a download, a
+page to listen to in your browser, a described video, or a device you
+borrow on site.</li>
+<li><strong>Length</strong> — how long it runs, when the publisher
+says.</li>
+<li><strong>Place</strong> — where the site is.</li>
+<li><strong>Producer</strong> — for the ACB convention tours, the
+company that described the tour; those entries also give a
+<strong>Date</strong>, the day the episode was posted.</li>
+<li><strong>Publisher</strong> — who made the recordings or runs the
+site.</li>
+</ul>
+<h2 id="contents">Contents</h2>
+<ul>
+<li><a href="#acb">ACB convention tours</a></li>
+<li><a href="#apps">Apps that hold many tours</a></li>
+<li><a href="#art">Art museums</a></li>
+<li><a href="#australia">Australia</a></li>
+<li><a href="#government">Government buildings and landmarks</a></li>
+<li><a href="#history">Historic homes and history museums</a></li>
+<li><a href="#parks">National parks and outdoor sites</a></li>
+<li><a href="#science">Natural history and science</a></li>
+<li><a href="#uk">United Kingdom</a></li>
+<li><a href="#more">Where to find more</a></li>
+<li><a href="#leads">Leads not yet checked</a></li>
+<li><a href="#notes">Notes</a></li>
+</ul>
+<h2 id="acb">ACB convention tours</h2>
+<p>The American Council of the Blind gathered these described tours for
+its virtual conventions of 2021 to 2024 and keeps them as a podcast, <a
+href="https://podcasts.apple.com/us/podcast/acb-convention-audio-described-tours/id1575096594">ACB
+Convention: Audio Described Tours</a>, with 55 episodes. Each link below
+opens the episode’s page on ACB Media, where it plays in the browser.
+The 2022 numbered tours repeat and replace most of the 2021 ones, so
+only the numbered versions are listed. Tour 18 is not in the feed.</p>
+<h3 id="benjamin-franklin-museum"><a
+href="https://acbmedia.org/2021/06/27/benjamin-franklin-museum-audio-described-tour/">Benjamin
+Franklin Museum</a></h3>
+<p>The museum under Franklin Court, at Independence National Historical
+Park in Philadelphia.</p>
+<ul>
+<li>Date: June 27, 2021</li>
+</ul>
+<h3 id="tour-1-the-salvador-dali-museum"><a
+href="https://acbmedia.org/2022/11/22/tour-01-the-salvador-dali-museum/">Tour
+1: The Salvador Dali Museum</a></h3>
+<p>The Dali collection in St. Petersburg, Florida.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-2-presidential-portraits"><a
+href="https://acbmedia.org/2022/11/22/tour-02-presidential-portraits/">Tour
+2: Presidential Portraits</a></h3>
+<p>Portraits of the presidents.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-3-the-peoples-house"><a
+href="https://acbmedia.org/2022/11/22/tour-03-the-peoples-house/">Tour
+3: The People’s House</a></h3>
+<p>The White House.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-4-the-peoples-house-revised"><a
+href="https://acbmedia.org/2022/11/22/tour-04-the-peoples-house-revised/">Tour
+4: The People’s House, revised</a></h3>
+<p>A revised version of the White House tour.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-5-dry-tortugas-national-park-fort-jefferson"><a
+href="https://acbmedia.org/2022/11/22/tour-05-dry-tortugas-national-park-fort-jefferson/">Tour
+5: Dry Tortugas National Park, Fort Jefferson</a></h3>
+<p>The island fort west of Key West, Florida.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-6-united-states-holocaust-memorial-museum"><a
+href="https://acbmedia.org/2022/11/22/tour-06-the-united-states-holocaust-memorial-and-museum/">Tour
+6: United States Holocaust Memorial Museum</a></h3>
+<p>The museum in Washington, DC.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-7-and-a-star-to-steer-her-by"><a
+href="https://acbmedia.org/2022/11/22/tour-07-and-a-star-to-steer-her-by-the-smithsonian-institute/">Tour
+7: And a Star to Steer Her By</a></h3>
+<p>A Smithsonian exhibit.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-8-the-star-spangled-banner"><a
+href="https://acbmedia.org/2022/11/22/tour-08-the-star-spangled-banner-the-smithsonian-institute/">Tour
+8: The Star-Spangled Banner</a></h3>
+<p>The flag that inspired the national anthem, at the Smithsonian.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-9-elephant-diorama"><a
+href="https://acbmedia.org/2022/11/22/tour-09-elephant-diorama-the-smithsonian-museum/">Tour
+9: Elephant Diorama</a></h3>
+<p>The elephant in the rotunda of the Smithsonian’s natural history
+museum.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-10-chicago-botanic-garden"><a
+href="https://acbmedia.org/2022/11/22/tour-10-chicago-botanical-garden/">Tour
+10: Chicago Botanic Garden</a></h3>
+<p>The garden north of Chicago.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-11-channel-islands-national-park"><a
+href="https://acbmedia.org/2022/11/22/tour-11-channel-islands-national-park/">Tour
+11: Channel Islands National Park</a></h3>
+<p>The islands off the coast of Southern California.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-12-flight-93-national-memorial-visitor-center"><a
+href="https://acbmedia.org/2022/11/22/tour-12-flight-93-national-memorial-visitors-center/">Tour
+12: Flight 93 National Memorial Visitor Center</a></h3>
+<p>The memorial near Shanksville, Pennsylvania.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-13-audubon-experience"><a
+href="https://acbmedia.org/2022/11/22/tour-13-audubon-experience/">Tour
+13: Audubon Experience</a></h3>
+<p>An Audubon nature experience.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-14-the-getty-museum"><a
+href="https://acbmedia.org/2022/11/22/tour-14-the-getty-museum/">Tour
+14: The Getty Museum</a></h3>
+<p>The art museum in Los Angeles.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-15-the-insect-zoo"><a
+href="https://acbmedia.org/2022/11/22/tour-15-the-insect-zoo/">Tour 15:
+The Insect Zoo</a></h3>
+<p>The live insect exhibit at the Smithsonian’s natural history
+museum.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-16-the-minds-eye-guggenheim"><a
+href="https://acbmedia.org/2022/11/22/tour-16-the-minds-eye-guggenheim/">Tour
+16: The Mind’s Eye, Guggenheim</a></h3>
+<p>The Guggenheim Museum’s building in New York.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-17-u.s.-olympic-and-paralympic-museum"><a
+href="https://acbmedia.org/2022/11/22/tour-17-us-olympics-and-paralympic-museum-excerpts/">Tour
+17: U.S. Olympic and Paralympic Museum</a></h3>
+<p>Excerpts from the museum in Colorado Springs.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-19-franklin-delano-roosevelt-library"><a
+href="https://acbmedia.org/2022/11/22/tour-19-01-franklin-delano-roosevelt-library-parts-1-4/">Tour
+19: Franklin Delano Roosevelt Library</a></h3>
+<p>The presidential library in Hyde Park, New York, in four episodes.
+This link is parts 1 to 4; the others are <a
+href="https://acbmedia.org/2022/11/22/tour-19-02-franklin-delano-roosevelt-library-parts-5-6-a-new-deal/">parts
+5 and 6, A New Deal</a>, <a
+href="https://acbmedia.org/2022/11/22/tour-19-03-franklin-delano-roosevelt-library-part-7-war/">part
+7, War</a>, and <a
+href="https://acbmedia.org/2022/11/22/tour-19-04-franklin-delano-roosevelt-library-parts-8-11/">parts
+8 to 11</a>.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Audio Description Associates</li>
+</ul>
+<h3 id="tour-20-african-burial-ground"><a
+href="https://acbmedia.org/2022/11/22/tour-20-african-burial-grounds/">Tour
+20: African Burial Ground</a></h3>
+<p>The national monument in Lower Manhattan.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-21-haleakala-national-park"><a
+href="https://acbmedia.org/2022/11/22/tour-21-haleakala-national-park/">Tour
+21: Haleakala National Park</a></h3>
+<p>The volcano park on Maui, Hawaii.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-22-harry-s-truman-national-historic-site"><a
+href="https://acbmedia.org/2022/11/22/tour-22-harry-s-truman-national-historic-site/">Tour
+22: Harry S Truman National Historic Site</a></h3>
+<p>Truman’s home in Independence, Missouri.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-23-old-city-hall-and-congress-hall"><a
+href="https://acbmedia.org/2022/11/22/tour-23-independence-old-city-hall-and-congress-hall/">Tour
+23: Old City Hall and Congress Hall</a></h3>
+<p>Two buildings at Independence National Historical Park in
+Philadelphia.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-24-james-a.-garfield-national-historic-site"><a
+href="https://acbmedia.org/2022/11/22/tour-24-james-a-garfield-national-historic-site/">Tour
+24: James A. Garfield National Historic Site</a></h3>
+<p>Garfield’s home in Mentor, Ohio.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-25-lyndon-b.-johnson-national-historical-park"><a
+href="https://acbmedia.org/2022/11/22/tour-25-lyndon-b-johnson-national-historical-park/">Tour
+25: Lyndon B. Johnson National Historical Park</a></h3>
+<p>Johnson’s birthplace and ranch in Texas.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-26-mount-rainier-paradise-visitor-center"><a
+href="https://acbmedia.org/2022/11/22/tour-26-mount-rainer-paradise-visitor-center/">Tour
+26: Mount Rainier, Paradise Visitor Center</a></h3>
+<p>The visitor center high on the mountain in Washington.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-27-natchez-trace-parkway"><a
+href="https://acbmedia.org/2022/11/22/tour-27-natchez-trace-parkway-nps/">Tour
+27: Natchez Trace Parkway</a></h3>
+<p>The historic road through Mississippi, Alabama and Tennessee.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-28-sitka-national-historical-park"><a
+href="https://acbmedia.org/2022/11/22/tour-28-sitka-national-park/">Tour
+28: Sitka National Historical Park</a></h3>
+<p>The park in Sitka, Alaska.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-29-100-years-of-americas-national-park-service"><a
+href="https://acbmedia.org/2022/11/22/tour-29-smithsonian-temporary-exhibit-100-years-of-americas-national-park-service/">Tour
+29: 100 Years of America’s National Park Service</a></h3>
+<p>A temporary Smithsonian exhibit.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-30-kingsley-plantation"><a
+href="https://acbmedia.org/2022/11/22/tour-30-timu-kingsley-plantation/">Tour
+30: Kingsley Plantation</a></h3>
+<p>The plantation at Timucuan Preserve in Jacksonville, Florida.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-31-u.s.-marine-corps-war-memorial"><a
+href="https://acbmedia.org/2022/11/22/tour-31-us-marine-corps-war-memorial/">Tour
+31: U.S. Marine Corps War Memorial</a></h3>
+<p>The Iwo Jima memorial in Arlington, Virginia.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-32-war-in-the-pacific-national-historical-park"><a
+href="https://acbmedia.org/2022/11/22/tour-32-war-in-the-pacific-national-historical-park/">Tour
+32: War in the Pacific National Historical Park</a></h3>
+<p>The World War II park on Guam.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-33-white-house-visitor-center-exhibits"><a
+href="https://acbmedia.org/2022/11/22/tour-33-white-house-visitor-center-exhibits/">Tour
+33: White House Visitor Center Exhibits</a></h3>
+<p>The exhibits at the visitor center in Washington, DC.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Hartley</li>
+</ul>
+<h3 id="tour-34-castle-williams"><a
+href="https://acbmedia.org/2022/11/22/tour-34-castle-williams-national-park-service/">Tour
+34: Castle Williams</a></h3>
+<p>The fort on Governors Island in New York Harbor.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Q Media</li>
+</ul>
+<h3 id="tour-35-horseshoe-bend-national-military-park"><a
+href="https://acbmedia.org/2022/11/22/tour-35-horseshoe-bend-national-battlefield-park-national-park-service-audio-described-tour-produced-by-q-media/">Tour
+35: Horseshoe Bend National Military Park</a></h3>
+<p>The battlefield in Alabama.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Q Media</li>
+</ul>
+<h3 id="tour-36-klondike-gold-rush-museum"><a
+href="https://acbmedia.org/2022/11/22/tour-36-klondike-gold-rush-museum-national-park-service/">Tour
+36: Klondike Gold Rush Museum</a></h3>
+<p>The gold rush park museum.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Q Media</li>
+</ul>
+<h3 id="tour-37-oconaluftee-visitor-center"><a
+href="https://acbmedia.org/2022/11/22/tour-37-oconaluftee-visitor-center-great-smoky-mountains-national-park/">Tour
+37: Oconaluftee Visitor Center</a></h3>
+<p>At Great Smoky Mountains National Park, North Carolina.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Q Media</li>
+</ul>
+<h3 id="tour-38-riverlands-migratory-bird-sanctuary"><a
+href="https://acbmedia.org/2022/11/22/tour-38-riverlands-migratory-bird-sanctuary-us-army-corp-of-engineers/">Tour
+38: Riverlands Migratory Bird Sanctuary</a></h3>
+<p>The U.S. Army Corps of Engineers sanctuary near St. Louis.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Q Media</li>
+</ul>
+<h3 id="tour-39-wright-brothers-national-memorial-visitor-center"><a
+href="https://acbmedia.org/2022/11/22/tour-39-wright-brothers-national-memorial-visitor-center-national-park-service/">Tour
+39: Wright Brothers National Memorial Visitor Center</a></h3>
+<p>Where the first powered flights took place, in Kill Devil Hills,
+North Carolina.</p>
+<ul>
+<li>Date: November 22, 2022</li>
+<li>Producer: Q Media</li>
+</ul>
+<h3 id="wild-river-state-park"><a
+href="https://acbmedia.org/2024/08/01/wild-river-state-park-minnesota-state-parks-audio-described-tour/">Wild
+River State Park</a></h3>
+<p>A Minnesota state park, from the 2024 convention.</p>
+<ul>
+<li>Date: August 1, 2024</li>
+<li>Length: 1 hour 41 minutes</li>
+<li>Producer: Q Media</li>
+</ul>
+<h3 id="marais-des-cygnes-national-wildlife-refuge"><a
+href="https://acbmedia.org/2024/08/01/marais-des-cygnes-national-wildlife-reserve-kansas-audio-described-tour/">Marais
+des Cygnes National Wildlife Refuge</a></h3>
+<p>A wildlife refuge in Kansas, from the 2024 convention.</p>
+<ul>
+<li>Date: August 1, 2024</li>
+<li>Length: 45 minutes</li>
+<li>Producer: Q Media</li>
+</ul>
+<h2 id="apps">Apps that hold many tours</h2>
+<h3 id="national-park-service-app"><a
+href="https://www.nps.gov/subjects/digital/nps-apps.htm">National Park
+Service App</a></h3>
+<p>The official app for more than 400 national parks, where many parks
+put audio descriptions of exhibits, waysides and trails.</p>
+<ul>
+<li>Format: free app for iPhone and Android</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="nps-audio-description-tours"><a
+href="https://apps.apple.com/us/app/id1501870349">NPS Audio Description
+Tours</a></h3>
+<p>Described exhibit spaces at a set of parks. At some, Bluetooth
+beacons tell the app what is near you as you walk.</p>
+<ul>
+<li>Format: free app, iPhone only</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="unidescription"><a
+href="https://apps.apple.com/app/id1288434078">UniDescription</a></h3>
+<p>Audio-described national park brochures for more than 140 park sites.
+Open a park while online to keep its brochure for offline use.</p>
+<ul>
+<li>Format: free app for iPhone and Android</li>
+<li>Publisher: University of Hawaii UniDescription Project, with the
+National Park Service</li>
+</ul>
+<h2 id="art">Art museums</h2>
+<h3 id="art-institute-of-chicago-verbal-description-tours"><a
+href="https://www.artic.edu/visit/accessibility/visitors-who-are-blind-or-have-low-vision">Art
+Institute of Chicago: Verbal Description Tours</a></h3>
+<p>“Verbal Description Tour: The Essentials” describes highlights of the
+collection, and some exhibitions have described tours of their own.</p>
+<ul>
+<li>Format: free app for iPhone and Android</li>
+<li>Place: Chicago, Illinois</li>
+<li>Publisher: Art Institute of Chicago</li>
+</ul>
+<h3
+id="crystal-bridges-museum-of-american-art-verbal-description-tour"><a
+href="https://crystalbridges.org/audio-tours/">Crystal Bridges Museum of
+American Art: Verbal Description Tour</a></h3>
+<p>Described works from the collection, made for visitors with all
+levels of sight. A <a
+href="https://crystal-bridges-assets.s3.amazonaws.com/uploads/2021/08/VerbalDescription_English_Large.pdf">large-print
+script</a> is posted too.</p>
+<ul>
+<li>Format: listen in your browser, or the Bloomberg Connects app</li>
+<li>Place: Bentonville, Arkansas</li>
+<li>Publisher: Crystal Bridges Museum of American Art</li>
+</ul>
+<h3 id="guggenheim-museum-minds-eye"><a
+href="https://www.guggenheim-venice.it/en/learn/programs-for-accessibility-and-inclusion/minds-eye/">Guggenheim
+Museum: Mind’s Eye</a></h3>
+<p>Ten tracks on the sound, light, touch and scale of Frank Lloyd
+Wright’s building, voiced by New Yorkers including legally blind actor
+Marilee Talkington. The linked page describes the project across the
+Guggenheim’s museums.</p>
+<ul>
+<li>Format: Bloomberg Connects app, SoundCloud and podcast apps</li>
+<li>Place: New York, New York</li>
+<li>Publisher: Solomon R. Guggenheim Museum</li>
+</ul>
+<h3 id="minneapolis-institute-of-art-verbal-descriptions"><a
+href="https://new.artsmia.org/verbal-descriptions/">Minneapolis
+Institute of Art: Verbal Descriptions</a></h3>
+<p>Recorded descriptions of artworks, for blind and low-vision
+visitors.</p>
+<ul>
+<li>Format: listen in your browser</li>
+<li>Place: Minneapolis, Minnesota</li>
+<li>Publisher: Minneapolis Institute of Art</li>
+</ul>
+<h3 id="museum-of-modern-art-audio-descriptions"><a
+href="https://www.moma.org/audio/playlist/3">Museum of Modern Art: Audio
+Descriptions</a></h3>
+<p>Detailed descriptions of 25 works, 15 on the fifth floor and 10 on
+the fourth.</p>
+<ul>
+<li>Format: listen in your browser</li>
+<li>Place: New York, New York</li>
+<li>Publisher: Museum of Modern Art</li>
+</ul>
+<h3 id="national-gallery-of-art-west-building-verbal-descriptions"><a
+href="https://www.nga.gov/visit/tours-guides/audio-tours/west-building-tour-verbal-descriptions">National
+Gallery of Art: West Building Verbal Descriptions</a></h3>
+<p>A verbal description track for each work on the West Building tour.
+The gallery also has a <a
+href="https://NGA.gov/visit/tours-and-guides/verbal-description-tour-east-building.html">Verbal
+Description Tour of the East Building</a> and <a
+href="https://www.nga.gov/visit/accessibility/collection-image-descriptions">text
+descriptions of collection images</a>.</p>
+<ul>
+<li>Format: listen in your browser</li>
+<li>Place: Washington, DC</li>
+<li>Publisher: National Gallery of Art</li>
+</ul>
+<h3 id="seattle-art-museum-verbal-description-tours"><a
+href="https://www1.seattleartmuseum.org/tours/tour/69">Seattle Art
+Museum: Verbal Description Tours</a></h3>
+<p>Stop-by-stop descriptions for the exhibition of Dawoud Bey and Carrie
+Mae Weems. The museum also has described tours of <a
+href="https://www1.seattleartmuseum.org/tours/media/1356">Ikat: A World
+of Compelling Cloth</a> and <a
+href="https://www1.seattleartmuseum.org/tours/media/1548">Poke in the
+Eye: Art of the West Coast Counterculture</a>, the last two checked by
+ChatGPT only.</p>
+<ul>
+<li>Format: listen in your browser</li>
+<li>Place: Seattle, Washington</li>
+<li>Publisher: Seattle Art Museum</li>
+</ul>
+<h3 id="smithsonian-american-art-museum-visual-descriptions"><a
+href="https://americanart.si.edu/node/68997">Smithsonian American Art
+Museum: Visual Descriptions</a></h3>
+<p>Visual descriptions with transcripts, such as the one for Grandma
+Moses: A Good Day’s Work.</p>
+<ul>
+<li>Format: listen in your browser</li>
+<li>Place: Washington, DC</li>
+<li>Publisher: Smithsonian American Art Museum</li>
+</ul>
+<h3 id="whitney-museum-of-american-art-whitney-descriptions"><a
+href="https://whitney.org/education/access/whitney-descriptions">Whitney
+Museum of American Art: Whitney Descriptions</a></h3>
+<p>Audio guides with descriptions, and online verbal description tours
+of current shows. Its <a
+href="https://whitney.org/audio/archive?q%255Bs%255D=&amp;search=&amp;tags=verbal_descriptions">audio
+archive of verbal descriptions</a>, checked by ChatGPT only, holds
+recordings in English and Spanish.</p>
+<ul>
+<li>Format: listen in your browser, or the museum’s app</li>
+<li>Place: New York, New York</li>
+<li>Publisher: Whitney Museum of American Art</li>
+</ul>
+<h2 id="australia">Australia</h2>
+<h3 id="australian-museum-dinosaurs"><a
+href="https://australian.museum/visit/audio-tours/dinosaurs-audio-description/">Australian
+Museum: Dinosaurs</a></h3>
+<p>Ten described stops among prehistoric animals. The museum has two
+more described tours, <a
+href="https://australian.museum/visit/audio-tours/200-treasures-audio-description/">200
+Treasures</a> and <a
+href="https://australian.museum/visit/audio-tours/wild-planet-audio-description/">Wild
+Planet</a>, checked by ChatGPT only.</p>
+<ul>
+<li>Format: listen in your browser</li>
+<li>Place: Sydney</li>
+<li>Publisher: Vision Australia Audio Description Service, for the
+Australian Museum</li>
+</ul>
+<h3
+id="national-portrait-gallery-of-australia-audio-described-portraits"><a
+href="https://portrait.gov.au/content/audio-description/">National
+Portrait Gallery of Australia: Audio Described Portraits</a></h3>
+<p>Recordings and transcripts for each portrait marked with an AD
+icon.</p>
+<ul>
+<li>Format: listen in your browser</li>
+<li>Place: Canberra</li>
+<li>Publisher: National Portrait Gallery, with Access2Arts</li>
+</ul>
+<h2 id="government">Government buildings and landmarks</h2>
+<h3
+id="u.s.-capitol-visitor-center-audio-described-tour-of-exhibition-hall"><a
+href="https://visitthecapitol.gov/visit/accessibility-services/audio-described-tour">U.S.
+Capitol Visitor Center: Audio Described Tour of Exhibition Hall</a></h3>
+<p>The full tour or its separate stops, with directions for finding your
+way. ChatGPT found a direct link to the <a
+href="https://www.visitthecapitol.gov/sites/default/files/asl-videos/USCapitolVisitorCenter_ADTour_FullTour.mp3">full
+tour as one MP3</a>.</p>
+<ul>
+<li>Format: listen in your browser, or download</li>
+<li>Length: 95 minutes</li>
+<li>Place: Washington, DC</li>
+<li>Publisher: U.S. Capitol Visitor Center</li>
+</ul>
+<h3 id="white-house-and-presidents-park-described-park-brochure"><a
+href="https://home.nps.gov/whho/planyourvisit/sightimpaired.htm">White
+House and President’s Park: Described Park Brochure</a></h3>
+<p>The park brochure in audio, plus audio description devices and
+described touch screens at the White House Visitor Center. For the tour
+itself, the White House’s <a
+href="https://www.whitehouse.gov/visit/faqs">tour questions page</a>
+points blind and Deaf visitors to its White House Experience App. A
+described <a
+href="https://obamawhitehouse.archives.gov/featured-videos/video/2016/08/04/west-wing-tour-sign-language-and-audio-description">West
+Wing tour video</a> from 2016 is on the archived Obama White House
+site.</p>
+<ul>
+<li>Format: download, an 85.2 MB ZIP; devices on site</li>
+<li>Place: Washington, DC</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h2 id="history">Historic homes and history museums</h2>
+<h3 id="clinton-birthplace-home-audio-described-video-walkthrough"><a
+href="https://www.nps.gov/wicl/learn/photosmultimedia/virtualtour.htm">Clinton
+Birthplace Home: Audio Described Video Walkthrough</a></h3>
+<p>A walk through President Bill Clinton’s first home. Under the heading
+“Audio Described Video Walkthrough,” choose video 2.</p>
+<ul>
+<li>Format: described video</li>
+<li>Length: about 15 minutes</li>
+<li>Place: Hope, Arkansas</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="home-of-franklin-d.-roosevelt-described-brochure"><a
+href="https://www.nps.gov/hofr/planyourvisit/brochure-audio.htm">Home of
+Franklin D. Roosevelt: Described Brochure</a></h3>
+<p>The park brochure in short clips, each with a transcript.</p>
+<ul>
+<li>Format: listen in your browser, or download a ZIP with audio and
+transcript</li>
+<li>Place: Hyde Park, New York</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3
+id="john-f.-kennedy-national-historic-site-the-shaping-of-a-president"><a
+href="https://www.nps.gov/jofi/jfk-nhs-site-film.htm">John F. Kennedy
+National Historic Site: The Shaping of a President</a></h3>
+<p>The site film on Kennedy’s family and early life in his first home.
+The <a
+href="https://www.nps.gov/thingstodo/watch-jfk-site-film.htm">film’s
+accessibility notes</a> confirm it is audio-described.</p>
+<ul>
+<li>Format: described video</li>
+<li>Length: 12 minutes 39 seconds</li>
+<li>Place: Brookline, Massachusetts</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="museum-of-the-american-revolution-audio-descriptive-tour"><a
+href="https://www.amrevmuseum.org/audio-descriptive-tour-core-galleries">Museum
+of the American Revolution: Audio Descriptive Tour</a></h3>
+<p>The core galleries, with descriptions of objects and spaces and
+directions between them. It was made with blind visitors, describer
+Nicole Sardella and Philly Touch Tours.</p>
+<ul>
+<li>Format: listen in your browser, with a transcript; devices on
+site</li>
+<li>Place: Philadelphia, Pennsylvania</li>
+<li>Publisher: Museum of the American Revolution</li>
+</ul>
+<h3 id="national-portrait-gallery-audio-portrait-descriptions"><a
+href="https://npg.si.edu/learn/access-programs/audio-portrait-descriptions">National
+Portrait Gallery: Audio Portrait Descriptions</a></h3>
+<p>Descriptions of selected portraits from America’s Presidents.</p>
+<ul>
+<li>Format: listen in your browser</li>
+<li>Place: Washington, DC</li>
+<li>Publisher: Smithsonian National Portrait Gallery</li>
+</ul>
+<h3 id="national-september-11-memorial-museum"><a
+href="https://911memorial.org/accessibility">National September 11
+Memorial &amp; Museum</a></h3>
+<p>The museum’s audio guide works with VoiceOver and has a described
+tour. A free audio guide to the outdoor Memorial is on Bloomberg
+Connects.</p>
+<ul>
+<li>Format: on site, and the Bloomberg Connects app</li>
+<li>Place: New York, New York</li>
+<li>Publisher: National September 11 Memorial &amp; Museum</li>
+</ul>
+<h3 id="neilson-house-virtual-tour"><a
+href="https://www.nps.gov/media/video/view.htm?id=9E8AB234-D7F5-417E-BC58-1DE3ADA63B0B">Neilson
+House Virtual Tour</a></h3>
+<p>A guide takes you through a house on the Revolutionary War
+battlefield.</p>
+<ul>
+<li>Format: described video</li>
+<li>Length: 2 minutes 18 seconds</li>
+<li>Place: Saratoga National Historical Park, New York</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3
+id="united-states-holocaust-memorial-museum-hall-of-witness-and-hall-of-remembrance"><a
+href="https://www.ushmm.org/information/visit-the-museum/museum-accessibility/audio-tour-of-the-museums-hall-of-witness-and-hall-of-remembrance">United
+States Holocaust Memorial Museum: Hall of Witness and Hall of
+Remembrance</a></h3>
+<p>Both halls and their architecture described, with directions between
+them. At home, start with track 4 for the Hall of Witness and track 7
+for the Hall of Remembrance.</p>
+<ul>
+<li>Format: download, MP3 tracks</li>
+<li>Length: about 25 minutes</li>
+<li>Place: Washington, DC</li>
+<li>Publisher: ADP, for the United States Holocaust Memorial Museum</li>
+</ul>
+<h2 id="parks">National parks and outdoor sites</h2>
+<h3 id="acadia-national-park"><a
+href="https://nps.gov/acad/planyourvisit/sightimpaired.htm">Acadia
+National Park</a></h3>
+<p>The described brochure, and a described tour of the waysides and
+orientation panels grouped by area. The <a
+href="https://www.nps.gov/acad/planyourvisit/axs_waysides.htm">Acadia
+Waysides tour</a> and the <a
+href="https://www.nps.gov/articles/000/axs_air-galleries.htm">described
+artist-in-residence works</a> were checked by ChatGPT only.</p>
+<ul>
+<li>Format: listen in your browser, download, the NPS App, or
+UniDescription</li>
+<li>Place: Maine</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="alcatraz-island"><a
+href="https://www.nps.gov/goga/planyourvisit/audio-description.htm">Alcatraz
+Island</a></h3>
+<p>Described interpretive panels across the island in the NPS App, and a
+described Cell House tour for visitors, with tactile markers.</p>
+<ul>
+<li>Format: the NPS App; devices on site</li>
+<li>Place: San Francisco, California</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="delaware-water-gap-wayside-audio"><a
+href="https://www.nps.gov/dewa/planyourvisit/wayside-audio.htm">Delaware
+Water Gap: Wayside Audio</a></h3>
+<p>Described roadside exhibits, to play as you travel.</p>
+<ul>
+<li>Format: download</li>
+<li>Place: Pennsylvania and New Jersey</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="golden-gate-national-recreation-area-audio-gallery"><a
+href="https://www.nps.gov/goga/learn/photosmultimedia/audio.htm">Golden
+Gate National Recreation Area: Audio Gallery</a></h3>
+<p>Six described brochures: Golden Gate National Recreation Area, Muir
+Woods, Fort Point, Under Three Flags, The Natural Presidio, and
+Volunteers-In-Parks.</p>
+<ul>
+<li>Format: download, one ZIP each</li>
+<li>Place: San Francisco, California</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="independence-national-historical-park"><a
+href="https://www.nps.gov/inde/planyourvisit/visual.htm">Independence
+National Historical Park</a></h3>
+<p>Every park film is described, and so are the Benjamin Franklin
+Museum’s exhibits. A described tour covers Independence Hall, Congress
+Hall and Old City Hall, and most of the park is described in the NPS
+App.</p>
+<ul>
+<li>Format: the NPS App; devices on site</li>
+<li>Place: Philadelphia, Pennsylvania</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="indiana-dunes-national-park"><a
+href="https://www.nps.gov/indu/learn/news/audio-version-of-national-park-brochure.htm">Indiana
+Dunes National Park</a></h3>
+<p>The described park brochure, made with help from a blind
+volunteer.</p>
+<ul>
+<li>Format: listen in your browser, or UniDescription</li>
+<li>Place: Indiana</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="mount-rainier-national-park"><a
+href="https://www.nps.gov/mora/planyourvisit/park-brochure.htm">Mount
+Rainier National Park</a></h3>
+<p>The described brochure, covering the park’s natural and cultural
+history, photos and maps.</p>
+<ul>
+<li>Format: download, a ZIP of MP3s</li>
+<li>Length: about 46 minutes, in 46 sections</li>
+<li>Place: Washington</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="new-river-gorge-national-park-and-preserve"><a
+href="https://www.nps.gov/neri/planyourvisit/audio-described-park-brochure.htm">New
+River Gorge National Park and Preserve</a></h3>
+<p>The described brochure, with a transcript.</p>
+<ul>
+<li>Format: download, or UniDescription</li>
+<li>Place: West Virginia</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="nike-missile-site-videos"><a
+href="https://www.nps.gov/goga/planyourvisit/educational-videos.htm">Nike
+Missile Site Videos</a></h3>
+<p>Videos of the restored Cold War missile site, audio-described and
+captioned, in English, Spanish and Chinese.</p>
+<ul>
+<li>Format: described video</li>
+<li>Place: Marin Headlands, California</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="olympic-national-park"><a
+href="https://www.nps.gov/olym/planyourvisit/park-brochure.htm">Olympic
+National Park</a></h3>
+<p>The described brochure in 21 sections, covering coast, forest and
+mountains, with the written descriptions on the same page.</p>
+<ul>
+<li>Format: download, a ZIP</li>
+<li>Place: Washington</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="statue-of-liberty-and-ellis-island"><a
+href="https://www.nps.gov/elis/planyourvisit/park-brochure.htm">Statue
+of Liberty and Ellis Island</a></h3>
+<p>The described brochure as MP3 files: page one covers Liberty Island
+and page two Ellis Island. On the island, a <a
+href="https://www.nps.gov/stli/planyourvisit/blind-low_vision.htm">described
+audio tour</a> for blind visitors comes with the ferry ticket.</p>
+<ul>
+<li>Format: download, or UniDescription; devices on site</li>
+<li>Place: New York Harbor</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="white-sands-national-park"><a
+href="https://www.nps.gov/whsa/planyourvisit/blind-low-vision.htm">White
+Sands National Park</a></h3>
+<p>Visitor center exhibits and the orientation film are described in
+English and Spanish, and the NPS App has audio tours.</p>
+<ul>
+<li>Format: devices on site, and the NPS App</li>
+<li>Place: New Mexico</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h3 id="yosemite-national-park-described-brochure"><a
+href="https://www.nps.gov/yose/planyourvisit/brochures.htm">Yosemite
+National Park: Described Brochure</a></h3>
+<p>The park’s history and highlights, with its photos, illustrations and
+map described. Checked by ChatGPT only.</p>
+<ul>
+<li>Format: text in your browser; audio in UniDescription</li>
+<li>Place: California</li>
+<li>Publisher: National Park Service</li>
+</ul>
+<h2 id="science">Natural history and science</h2>
+<h3
+id="smithsonian-national-museum-of-natural-history-audio-and-visual-description"><a
+href="https://naturalhistory.si.edu/node/13082">Smithsonian National
+Museum of Natural History: Audio and Visual Description</a></h3>
+<p>Described tours of several exhibits. The <a
+href="https://naturalhistory.si.edu/visit/accessibility/audio-and-visual-description/insect-zoo-audio-description-tour">Insect
+Zoo tour</a>, made by ADP, has players, MP3s, a ZIP and a script; it was
+checked by ChatGPT only, but the same tour is also <a
+href="https://acbmedia.org/2022/11/22/tour-15-the-insect-zoo/">Tour 15
+in ACB’s convention podcast</a>. Other exhibits, among them the Earth
+Information Center and Sant Ocean Hall, have written descriptions to
+hear with a screen reader.</p>
+<ul>
+<li>Format: listen in your browser, or download</li>
+<li>Place: Washington, DC</li>
+<li>Publisher: Smithsonian National Museum of Natural History</li>
+</ul>
+<h3 id="deep-time-audio-description"><a
+href="https://apps.apple.com/app/id1465972882">Deep Time Audio
+Description</a></h3>
+<p>A screen-reader-friendly self-guided tour of the Smithsonian’s fossil
+hall.</p>
+<ul>
+<li>Format: free app, iPhone only</li>
+<li>Place: Washington, DC</li>
+<li>Publisher: Smithsonian National Museum of Natural History</li>
+</ul>
+<h2 id="uk">United Kingdom</h2>
+<h3 id="charles-dickens-museum-audio-described-tours"><a
+href="https://dickensmuseum.com/blogs/explore/audio-described-tours">Charles
+Dickens Museum: Audio Described Tours</a></h3>
+<p>Dickens’s London townhouse, as a ten-minute introduction and a tour
+in separate tracks with directions, or as one recording.</p>
+<ul>
+<li>Format: listen in your browser</li>
+<li>Place: London</li>
+<li>Publisher: Charles Dickens Museum, with VocalEyes</li>
+</ul>
+<h3 id="hampton-court-palace-tudor-world"><a
+href="https://www.hrp.org.uk/hampton-court-palace/whats-on/self-led-audio-described-tour/audio-described-tour-of-the-tudor-world/">Hampton
+Court Palace: Tudor World</a></h3>
+<p>The Wolsey rooms, some of the oldest in the palace, with a download
+for each stop and a full transcript.</p>
+<ul>
+<li>Format: listen in your browser, or download</li>
+<li>Place: near London</li>
+<li>Publisher: Historic Royal Palaces</li>
+</ul>
+<h3 id="national-gallery-audio-descriptions"><a
+href="https://nationalgallery.org.uk/audio/audio-descriptions">National
+Gallery: Audio Descriptions</a></h3>
+<p>Famous paintings described, among them Van Gogh’s Sunflowers,
+Constable’s The Hay Wain and Turner’s The Fighting Temeraire.</p>
+<ul>
+<li>Format: listen in your browser</li>
+<li>Place: London</li>
+<li>Publisher: National Gallery</li>
+</ul>
+<h3 id="national-galleries-scotland-audio-described-tours"><a
+href="https://www.nationalgalleries.org/art-and-artists/features/audio-described-tour-national">National
+Galleries Scotland: Audio Described Tours</a></h3>
+<p>Three tours: <a
+href="https://www.nationalgalleries.org/art-and-artists/features/audio-described-tour-national">The
+National</a>, with 20 artworks and a gallery layout track; the <a
+href="https://www.nationalgalleries.org/art-and-artists/features/audio-described-tour-portrait">Portrait
+gallery</a>; and the <a
+href="https://www.nationalgalleries.org/art-and-artists/features/audio-described-tour-sculpture-park">Sculpture
+Park</a>, checked by ChatGPT only.</p>
+<ul>
+<li>Format: SoundCloud, or the Bloomberg Connects app</li>
+<li>Place: Edinburgh</li>
+<li>Publisher: National Galleries Scotland</li>
+</ul>
+<h3 id="tower-of-london-audio-described-tour"><a
+href="https://www.hrp.org.uk/tower-of-london/whats-on/self-led-audio-described-tour/audio-described-tour/">Tower
+of London: Audio Described Tour</a></h3>
+<p>Thirty-two stops, made for listening at home or at the Tower, with a
+download for each and a full transcript.</p>
+<ul>
+<li>Format: listen in your browser, or download</li>
+<li>Place: London</li>
+<li>Publisher: Historic Royal Palaces</li>
+</ul>
+<h3 id="va-east-storehouse-audio-described-guide"><a
+href="https://www.vam.ac.uk/articles/audio-described-guide-va-east-storehouse">V&amp;A
+East Storehouse: Audio Described Guide</a></h3>
+<p>A guide to the storehouse of 250,000 objects, in full or by chapter,
+made by the arts collective SoundScribe.</p>
+<ul>
+<li>Format: listen in your browser</li>
+<li>Length: about 20 minutes</li>
+<li>Place: London</li>
+<li>Publisher: Victoria and Albert Museum</li>
+</ul>
+<h3 id="vocaleyes-audio-archive">VocalEyes Audio Archive</h3>
+<p>The UK nonprofit VocalEyes keeps recordings from its museum work on
+its old website, which blocks automated checking. ChatGPT checked these,
+so each is checked by ChatGPT only:</p>
+<ul>
+<li><a
+href="https://oldsite.vocaleyes.co.uk/audio-clip/apsley-house-audio-descriptions/">Apsley
+House</a>, the Duke of Wellington’s London home.</li>
+<li><a
+href="https://oldsite.vocaleyes.co.uk/audio-clip/art-uk-sculpture/">Art
+UK Sculpture</a>, 25 described sculptures from public collections. One
+of them, <a
+href="https://museum.maidstone.gov.uk/lady-godiva-audio-description">Lady
+Godiva at Maidstone Museum</a>, can be heard on the museum’s own
+page.</li>
+<li><a
+href="https://oldsite.vocaleyes.co.uk/audio-clip/being-human-at-wellcome-collection-all-exhibits/">Being
+Human at Wellcome Collection</a>, exhibits on the body, identity and
+health.</li>
+<li><a
+href="https://oldsite.vocaleyes.co.uk/audio-clip/calke-abbey-audio-described-guide/">Calke
+Abbey</a>, a National Trust house and estate in Derbyshire.</li>
+<li><a
+href="https://oldsite.vocaleyes.co.uk/audio-clip/eltham-palace-audio-descriptions/">Eltham
+Palace</a>, London.</li>
+<li><a
+href="https://oldsite.vocaleyes.co.uk/audio-clip/grant-museum-of-zoology-audio-described-guide/">Grant
+Museum of Zoology</a>, University College London’s specimens and
+skeletons.</li>
+<li><a
+href="https://oldsite.vocaleyes.co.uk/audio-clip/handel-hendrix-in-london-audio-described-guide/">Handel
+&amp; Hendrix in London</a>, two former homes on Brook Street.</li>
+<li><a
+href="https://oldsite.vocaleyes.co.uk/audio-clip/illuminated-river/">Illuminated
+River</a>, light installations on the Thames bridges.</li>
+<li><a
+href="https://oldsite.vocaleyes.co.uk/audio-clip/audio-described-tour-london-mithraeum-bloomberg-space/">London
+Mithraeum</a>, the remains of a Roman temple.</li>
+<li><a
+href="https://oldsite.vocaleyes.co.uk/audio-clip/walmer-castle-audio-descriptions/">Walmer
+Castle</a>, Kent.</li>
+</ul>
+<h2 id="more">Where to find more</h2>
+<h3 id="adp-museums-parks-and-tours"><a
+href="https://adp.acb.org/node/28056">ADP: Museums, Parks, and
+Tours</a></h3>
+<p>The Audio Description Project’s list, by state, of places with a
+history of audio description. Most entries are live or on-site services,
+so check with a place before you go.</p>
+<ul>
+<li>Publisher: American Council of the Blind</li>
+</ul>
+<h3 id="crisaccess"><a
+href="https://www.connecticutmuseum.org/visit/plan-your-visit/accessibility/">CRISAccess</a></h3>
+<p>Connecticut’s radio reading service records museum signs and
+descriptions, played by scanning a QR code. The linked page is the
+Connecticut Museum of Culture and History’s, which has 14 stops; CRIS
+also covers a Revolutionary War trail of a dozen sites.</p>
+<ul>
+<li>Format: phone audio on site</li>
+<li>Place: Connecticut</li>
+<li>Publisher: Connecticut Radio Information System</li>
+</ul>
+<h3 id="described-and-captioned-media-program"><a
+href="https://www.dcmp.org/learn/tags/blindness">Described and Captioned
+Media Program</a></h3>
+<p>Thousands of described educational videos, many of them virtual field
+trips. Membership is free for students with disabilities, their families
+and their teachers, and some videos play without signing up.</p>
+<ul>
+<li>Format: described video</li>
+<li>Publisher: Described and Captioned Media Program, funded by the U.S.
+Department of Education</li>
+</ul>
+<h2 id="leads">Leads not yet checked</h2>
+<p>These came from ADP’s lists. Each sounds like a free described
+recording, but neither AI confirmed it on the organization’s own site,
+so they appear without links:</p>
+<ul>
+<li><strong>Art Beyond Sight</strong>: a podcast of verbal description
+samples, listed by ADP on Apple Podcasts.</li>
+<li><strong>Bell Museum</strong>, St. Paul: an audio tour.</li>
+<li><strong>Cary and Raleigh, North Carolina</strong>: described outdoor
+sculpture tours, including a Raleigh sculptures MP3 on ibiblio, and
+Durham’s Audio Described Art project.</li>
+<li><strong>Golden Gate visitor centers</strong>: recorded described
+tours at Muir Woods, the Presidio and Lands End.</li>
+<li><strong>Indiana State Museum</strong>, Indianapolis: an app for
+visitors who are blind.</li>
+<li><strong>Lehigh University Art Galleries</strong>: described works on
+Spotify.</li>
+<li><strong>Mount Vernon</strong>: a GPS-driven described tour,
+described in an ACB member’s account of a visit.</li>
+<li><strong>National Museum of American History</strong>: a list of
+visual descriptions.</li>
+<li><strong>National Museum of the American Latino</strong>: a sample
+online description.</li>
+<li><strong>Pearl Harbor National Memorial</strong>: four described
+brochures in UniDescription, covering Pearl Harbor and the USS Arizona,
+Oklahoma and Utah memorials.</li>
+</ul>
+<h2 id="notes">Notes</h2>
+<ul>
+<li><strong>Free, mostly.</strong> Every entry is free to use, except
+that a few on-site items need a ticket to the place, such as the 9/11
+Museum and the Statue of Liberty ferry.</li>
+<li><strong>What isn’t here.</strong> A plain audio guide is left out
+unless it has a described track, and so is a live tour you must book.
+For example, the Library of Congress audio guide has no described track,
+and the International Spy Museum’s described tour is live, led by
+staff.</li>
+<li><strong>On Windows.</strong> Save MP3 links through the browser if
+they open in a player. For a ZIP, use Extract All in File Explorer, then
+open the numbered tracks. With JAWS in Edge, press H to move by heading
+and Insert+F7 to list links.</li>
+<li><strong>Things change.</strong> Recordings move and devices stop
+being offered. When a link fails, the organization’s accessibility page
+is the best place to look next.</li>
+</ul>
+</main>
+</body>
+</html>
