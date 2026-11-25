@@ -1,0 +1,853 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Jamal Mazrui" />
+  <title>McCartney: A Life in Lyrics Directory</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<p class="subtitle">A Screen-Reader-Friendly Guide to McCartney: A Life
+in Lyrics</p>
+<p class="author">Jamal Mazrui</p>
+<p class="date">November 2026</p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>A screen-reader-friendly directory of the podcast McCartney: A Life
+in Lyrics, covering 26 public episodes from 2023 to 2024. Each episode
+links to its audio and lists its metadata in separate, alphabetically
+sorted fields.</p>
+</div>
+</header>
+<main>
+<h1 id="mccartney-a-life-in-lyrics-directory">McCartney: A Life in
+Lyrics Directory</h1>
+<p>Paul McCartney and the poet Paul Muldoon talk through the people,
+places and experiences behind his songs, from the Beatles and Wings to
+his solo work, in conversations recorded for their book The Lyrics.</p>
+<p>Episode titles, summaries and audio belong to the show’s publisher.
+This directory’s own text and arrangement are available under <a
+href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA
+4.0</a>.</p>
+<p>This directory covers <strong>26 public episodes</strong>, 2023 to
+2024. Each episode’s title link plays its audio; an <strong>Episode
+page</strong> link follows the title when the show offers a separate
+page; and the metadata on record appears one kind per field, in
+alphabetical order: <strong>Date</strong>, <strong>Duration</strong>,
+<strong>Episode</strong>, <strong>Season</strong>, and
+<strong>Summary</strong>, each shown only when available. Titles ignore
+a leading “A”, “An”, or “The”; people are sorted by surname; all sorting
+ignores case.</p>
+<p>Episodes are grouped by year, earliest first, and within each group
+they are in date order, oldest first. Appendixes reorder them by date
+(newest first) and by title.</p>
+<p>This directory was compiled by Jamal Mazrui from the show’s public
+feed.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><p><a href="#2023">2023 (13)</a></p></li>
+<li><p><a href="#2024">2024 (12)</a></p></li>
+<li><p><a href="#trailers-and-cross-promotions">Trailers and
+Cross-Promotions (1)</a></p></li>
+<li><p><a href="#appendix-a-episodes-by-date">Appendix A: Episodes by
+Date</a></p></li>
+<li><p><a href="#appendix-b-episodes-by-title">Appendix B: Episodes by
+Title</a></p></li>
+</ul>
+<h2 id="2023">2023 (13)</h2>
+<h3 id="mccartneylifeinlyrics-welcome-to-mccartney-a-life-in-lyrics"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/e6ce5606-f278-4e41-a5b7-b042011b45af/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Welcome
+to McCartney: A Life in Lyrics</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/welcome-to-mccartney-a-life-in-lyrics">Episode
+page</a></p>
+<p><strong>Date:</strong> July 18, 2023</p>
+<p><strong>Duration:</strong> 496</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Welcome to “McCartney: A Life in Lyrics” .
+This podcast will take you into the mind of one of the greatest
+songwriters of all time: Paul McCartney. The result is a combination
+master class, memoir, and improvised journey with one of the most
+beloved figures in popular music. Each episode focuses on one song from
+McCartney’s iconic catalog – spanning early Beatles through his more
+recent solo work. McCartney, together with his friend, the poet Paul
+Muldoon, dissects the people, experiences, and art that inspired his
+songwriting. Season One drops weekly starting October 4th, and features
+the sto…</p>
+<h3 id="mccartneylifeinlyrics-back-in-the-u-s-s-r"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/12a71f99-fb4d-4f68-895e-b08f015d520f/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Back
+In the U.S.S.R.</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/back-in-the-u-s-s-r">Episode
+page</a></p>
+<p><strong>Date:</strong> October 4, 2023</p>
+<p><strong>Duration:</strong> 1057</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> What’s Paul McCartney, a Liverpudlian,
+doing writing about the Soviet Union in 1968? Turns out McCartney was
+doing a little Chuck Berry, a bit of The Beach Boys, some pastiche and a
+lot of subversion. Opening “The White Album”, “Back in the U.S.S.R.”
+raised some eyebrows. And because of The Beatles’ evolving position
+within the former Eastern Bloc the song has over the years taken on a
+life of its own, following the trajectory of the West’s often fraught
+relationship with the region. “McCartney: A Life in Lyrics” is a
+co-production between iHeart Media, MPL and Pushkin Industries. The
+series w…</p>
+<h3 id="mccartneylifeinlyrics-eleanor-rigby"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/fedc53bb-8049-47a6-971e-b08f014e586d/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Eleanor
+Rigby</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/eleanor-rigby">Episode
+page</a></p>
+<p><strong>Date:</strong> October 4, 2023</p>
+<p><strong>Duration:</strong> 1141</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Face cream, a Bristol liquor business, and
+a lifelong reverence for the elderly are just a few of the rather
+ordinary and disparate inspirations Paul McCartney brought together in
+the creation of a masterpiece: “Eleanor Rigby.” In this episode,
+McCartney and Paul Muldoon tease out the song’s lyrical inspirations and
+discuss the influence a Bernard Herrmann score for a Hitchcock film had
+on the lead single from 1966’s “Revolver.” “McCartney: A Life in Lyrics”
+is a co-production between iHeart Media, MPL and Pushkin Industries. The
+series was produced by Pejk Malinovski and Sara McCrea; written …</p>
+<h3 id="mccartneylifeinlyrics-let-it-be"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/c077de0a-8b9f-4392-b615-b09200f8f810/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Let
+It Be</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/let-it-be">Episode
+page</a></p>
+<p><strong>Date:</strong> October 11, 2023</p>
+<p><strong>Duration:</strong> 1248</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Paul McCartney’s mother Mary passed away in
+1956, when Paul was only 14 years old. Over a decade later, she appeared
+to him in a dream, lending a few immortal words of wisdom: “Let it be.”
+These words arrived in time to help see Paul through the difficult days
+after The Beatles’ gave up touring to enter the studio full time. And,
+of course, they went on to become the basis of the song that’s now a
+popular standard and the title of The Beatles’ final studio release,
+“Let It Be.” “McCartney: A Life in Lyrics” is a co-production between
+iHeart Media, MPL and Pushkin Industries. The series was pro…</p>
+<h3 id="mccartneylifeinlyrics-when-winter-comes-mull-of-kintyre"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/82723354-9956-48a2-b10e-b09200ff27b6/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">When
+Winter Comes / Mull of Kintyre</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/when-winter-comes-mull-of-kintyre">Episode
+page</a></p>
+<p><strong>Date:</strong> October 18, 2023</p>
+<p><strong>Duration:</strong> 1500</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> At the dawn of the Beatles’ dissolution,
+Paul McCartney and his wife, Linda, started to spend an increasing
+amount of time in the Scottish countryside. Sequestered at their farm
+near the Mull of Kintyre, McCartney found refuge in his family, his
+animals, and in fixing up their homestead. The ease and charm of country
+living was documented in “When Winter Comes” from 2020’s McCartney III.
+And in 1977 his ode to life on the family farm, “Mull of Kintyre,”
+became a massive hit for Wings despite the hold disco and soft rock had
+on the charts and the ascendance of punk and new wave. “McCartney: A
+L…</p>
+<h3 id="mccartneylifeinlyrics-penny-lane"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/9944a1b0-bc9d-4cc9-b7e2-b092010caf31/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Penny
+Lane</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/penny-lane">Episode
+page</a></p>
+<p><strong>Date:</strong> October 25, 2023</p>
+<p><strong>Duration:</strong> 1349</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> As a young boy, Paul McCartney soaked up
+the radio plays his mother listened to while cleaning around their
+house. They gave McCartney an expansive understanding of
+characterization, something he’s been able to do astonishingly well in
+his own work throughout his writing career. The song “Penny Lane” may
+sound like much of the psychedelic musings that was common by the late
+60s, but the song is actually a beautifully abstract description of a
+Liverpool suburb well-known to both McCartney and John Lennon.
+“McCartney: A Life in Lyrics” is a co-production between iHeart Media,
+MPL and Pushkin Ind…</p>
+<h3 id="mccartneylifeinlyrics-uncle-albert-admiral-halsey"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/79339998-956c-4c09-98ba-b0920112e6a2/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Uncle
+Albert/Admiral Halsey</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/uncle-albert-admiral-halsey">Episode
+page</a></p>
+<p><strong>Date:</strong> November 1, 2023</p>
+<p><strong>Duration:</strong> 1181</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> As Paul McCartney’s life moved further away
+from the centering force of Liverpool, the distance, both physical and
+cultural, started becoming increasingly apparent. It’s a distance
+described by Paul as inevitable, if regrettable. “Uncle Albert / Admiral
+Halsey” is Paul’s expression of the dual longing for home one can
+experience while also longing to create a new life full of adventure.
+Released on Paul and Linda’s “RAM” album in 1971, the song is layered
+with meaning and references to his contradictory feelings. “McCartney: A
+Life in Lyrics” is a co-production between iHeart Media, MPL and Pu…</p>
+<h3 id="mccartneylifeinlyrics-here-today"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/dbb8c51e-d9c3-4dc2-81a7-b092011a46c8/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Here
+Today</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/here-today">Episode
+page</a></p>
+<p><strong>Date:</strong> November 8, 2023</p>
+<p><strong>Duration:</strong> 1358</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Warning: This episode begins with a
+description of the assassination of John Lennon. John Lennon’s
+assassination has reverberated across decades, country and culture. On
+the 8th of December, 1980 the world lost one of its greatest creative
+forces and advocates for peace. And Paul McCartney lost even more: a
+collaborator, a bandmate, and a dear friend. As McCartney sat in the
+upstairs room of his Sussex home, mourning his loss, he picked up a
+guitar, found a comforting set of chords and began memorializing his
+friendship with Lennon in song. “McCartney: A Life in Lyrics” is a
+co-production betw…</p>
+<h3 id="mccartneylifeinlyrics-live-and-let-die"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/bd34fa9b-1b49-4869-ba5e-b0920122156f/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Live
+and Let Die</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/live-and-let-die">Episode
+page</a></p>
+<p><strong>Date:</strong> November 15, 2023</p>
+<p><strong>Duration:</strong> 1098</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> James Bond themes were handled by soulful
+or sultry vocalists in the decade since 1963’s “From Russia With Love.”
+Shirley Bassey, Tom Jones and even Louis Armstrong had taken turns
+singing themes and secondary themes for the films. The Broccoli family
+who produces the James Bond franchise expected nothing less when they
+asked Paul McCartney to write the theme for “Live and Let Die.” What
+they didn’t expect was for him to perform it too. And for the
+song—1973’s “Live and Let Die”—to become the most popular theme of the
+series thus far. “McCartney: A Life in Lyrics” is a co-production
+between iH…</p>
+<h3 id="mccartneylifeinlyrics-magical-mystery-tour"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/0f40c183-9d7f-44dc-8a7e-b09201328fdb/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Magical
+Mystery Tour</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/magical-mystery-tour">Episode
+page</a></p>
+<p><strong>Date:</strong> November 22, 2023</p>
+<p><strong>Duration:</strong> 1373</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> “Magical Mystery Tour” was inspired by a
+holiday bus from Liverpool to a mystery destination—often ending up in
+the carnivalesque seaside town of Blackpool. It’s one of the best
+examples of The Beatles further dipping into the era’s psychedelic
+subculture. The production of the song delivers a dense and lively
+atmosphere, from the opening brass fanfare to the flanging piano in the
+coda. “McCartney: A Life in Lyrics” is a co-production between iHeart
+Media, MPL and Pushkin Industries. The series was produced by Pejk
+Malinovski and Sara McCrea; written by Sara McCrea; edited by Dan
+O’Donnell and…</p>
+<h3 id="mccartneylifeinlyrics-jenny-wren-blackbird"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/af63300f-e5ba-4bba-bf13-b09201483c81/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Jenny
+Wren / Blackbird</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/jenny-wren-blackbird">Episode
+page</a></p>
+<p><strong>Date:</strong> November 29, 2023</p>
+<p><strong>Duration:</strong> 1420</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> “Long Tailed Winter Bird,” “Bluebird,” and
+“Single Pigeon” are just a few of the many bird-oriented songs Paul
+McCartney has written over the years. His love of ornithology extends
+back before his songwriting days to his early childhood. “Blackbird”,
+one of the most universally cherished songs in his canon, was born of
+that love and worked well with the civil rights allusions that were the
+song’s subtext. The latter day companion of “Blackbird”, “Jenny Wren,”
+was also born of that love. Released 40 years apart, those two songs
+explore McCartney as an ornithologist as well as the ways in which …</p>
+<h3 id="mccartneylifeinlyrics-too-many-people"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/65bc0185-9dd5-42cc-9606-b0920151554d/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Too
+Many People</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/too-many-people">Episode
+page</a></p>
+<p><strong>Date:</strong> December 6, 2023</p>
+<p><strong>Duration:</strong> 1532</p>
+<p><strong>Episode:</strong> 11</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Many observers have tried to pinpoint the
+specific events that lead to Lennon-McCartney, the formidable
+songwriting partnership, transitioning to Lennon v. McCartney. But the
+fact is there is no single truth regarding why the beloved duo split. So
+instead of investigating the why, we look at the aftermath: legal
+battles, hurtful accusations in song and, ultimately, a sense of
+resolution. “Too Many People” opens Paul and Linda McCartney’s 1971
+album, “RAM” and serves as an opening to explore Lennon-McCartney’s
+dissolution ahead of ultimately resolving their differences and
+rekindling a friendsh…</p>
+<h3 id="mccartneylifeinlyrics-helter-skelter"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/d2c129ec-1f45-469f-98ff-b092015b88bc/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Helter
+Skelter</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/helter-skelter">Episode
+page</a></p>
+<p><strong>Date:</strong> December 13, 2023</p>
+<p><strong>Duration:</strong> 1402</p>
+<p><strong>Episode:</strong> 12</p>
+<p><strong>Season:</strong> 1</p>
+<p><strong>Summary:</strong> Season 1 of “McCartney: A Life in Lyrics”
+concludes with a band in flux. The Beatles had evolved significantly by
+1968 from when they first released “Love Me Do.” Back then, they were
+only competing with the likes of Andy Williams, Little Stevie Wonder,
+and Peter Paul and Mary. But by the recording of the “White Album” The
+Beatles were up against acts on the charts with a more hard driving
+sound like Cream, The Who, and Sly and the Family Stone. Paul McCartney
+sensed an opportunity to jump into the fray himself and wrote a song
+that many consider to be the genesis of the hard rock and metal ge…</p>
+<h2 id="2024">2024 (12)</h2>
+<h3 id="mccartneylifeinlyrics-band-on-the-run"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/f0cf08f5-01c7-4d3f-a948-b10901459507/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Band
+on the Run</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/band-on-the-run">Episode
+page</a></p>
+<p><strong>Date:</strong> February 7, 2024</p>
+<p><strong>Duration:</strong> 1741</p>
+<p><strong>Episode:</strong> 2</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> Paul McCartney found himself in a tricky
+place after The Beatles’ break up. What did his musical future look like
+without the three musicians he’d spent half of his life building a
+musical rapport with? McCartney’s other band, Wings, and an impromptu
+tour of UK colleges helped him find his footing. “McCartney: A Life in
+Lyrics” is a co-production between iHeart Media, MPL and Pushkin
+Industries. The series was produced by Pejk Malinovski and Sara McCrea;
+written by Sara McCrea; edited by Dan O’Donnell and Sophie Crane;
+mastered by Jason Gambrell with assistance from Jake Gorski and sound
+desig…</p>
+<h3 id="mccartneylifeinlyrics-love-me-do"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/dc61b8ad-107d-411a-b54c-b109013a3ec5/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Love
+Me Do</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/love-me-do">Episode
+page</a></p>
+<p><strong>Date:</strong> February 7, 2024</p>
+<p><strong>Duration:</strong> 1492</p>
+<p><strong>Episode:</strong> 1</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> Countless decisions, large and small, aided
+The Beatles’ ascent to the top of popular culture. The release of their
+debut single, “Love Me Do,” in the UK in the fall of 1962 was one of
+those decisions. Their debut on American television was another. In this
+first episode of season two, Paul McCartney and Paul Muldoon discuss the
+early evolution of The Beatles. “McCartney: A Life in Lyrics” is a
+co-production between iHeart Media, MPL and Pushkin Industries. The
+series was produced by Pejk Malinovski and Sara McCrea; written by Sara
+McCrea; edited by Dan O’Donnell and Sophie Crane; mastered by …</p>
+<h3 id="mccartneylifeinlyrics-maxwell-s-silver-hammer"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/2c58a556-c4b2-490a-814a-b10e0169ddf0/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Maxwell’s
+Silver Hammer</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/maxwell-s-silver-hammer">Episode
+page</a></p>
+<p><strong>Date:</strong> February 14, 2024</p>
+<p><strong>Duration:</strong> 1217</p>
+<p><strong>Episode:</strong> 3</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> One day in the car, Paul McCartney heard a
+BBC production of the absurdist play “Ubu Cocu” by french writer Alfred
+Jarry. Taken by the rebelliousness of the radio play, McCartney wrote a
+sweet-sounding tune about a murderous medical student that seemingly
+lives in the same universe as Ubu: “Maxwell’s Silver Hammer.”
+“McCartney: A Life in Lyrics” is a co-production between iHeart Media,
+MPL and Pushkin Industries. The series was produced by Pejk Malinovski
+and Sara McCrea; written by Sara McCrea; edited by Dan O’Donnell and
+Sophie Crane; mastered by Jason Gambrell with assistance from Jake
+Gors…</p>
+<h3 id="mccartneylifeinlyrics-yesterday"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/0e260514-1ea1-46a1-8afa-b110014968bb/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Yesterday</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/yesterday">Episode
+page</a></p>
+<p><strong>Date:</strong> February 21, 2024</p>
+<p><strong>Duration:</strong> 1805</p>
+<p><strong>Episode:</strong> 4</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> The Beatles’ songbook became standard
+repertoire for artists to perform almost as quickly as they kicked off
+“the British invasion.” But one was covered more than all the rest:
+Yesterday. “McCartney: A Life in Lyrics” is a co-production between
+iHeart Media, MPL and Pushkin Industries. The series was produced by
+Pejk Malinovski and Sara McCrea; written by Sara McCrea; edited by Dan
+O’Donnell and Sophie Crane; mastered by Jason Gambrell with assistance
+from Jake Gorski and sound design by Pejk Malinovski. The series is
+executive produced by Leital Molad, Justin Richmond, Lee Eastman, Scott
+Rodg…</p>
+<h3 id="mccartneylifeinlyrics-picasso-s-last-words-drink-to-me"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/2f1289f6-5fff-4428-83e2-b110014fed58/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Picasso’s
+Last Words (Drink to Me)</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/picasso-s-last-words-drink-to-me">Episode
+page</a></p>
+<p><strong>Date:</strong> February 28, 2024</p>
+<p><strong>Duration:</strong> 1400</p>
+<p><strong>Episode:</strong> 5</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> “Drink to me, drink to my health” were
+among the last words spoken by the great Spanish artist Pablo Picasso.
+On somewhat of a lark, Dustin Hoffman challenged Paul McCartney to use
+those words to write a song – on the spot. McCartney indulged Hoffman
+and, without hesitation, an early version of “Picasso’s Last Words
+(Drink to Me)” poured out of him. “McCartney: A Life in Lyrics” is a
+co-production between iHeart Media, MPL and Pushkin Industries. The
+series was produced by Pejk Malinovski and Sara McCrea; written by Sara
+McCrea; edited by Dan O’Donnell and Sophie Crane; mastered by Jason
+Gambr…</p>
+<h3 id="mccartneylifeinlyrics-silly-love-songs"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/aa1eb965-80d9-4ff3-9061-b1100157cbde/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Silly
+Love Songs</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/silly-love-songs">Episode
+page</a></p>
+<p><strong>Date:</strong> March 6, 2024</p>
+<p><strong>Duration:</strong> 1881</p>
+<p><strong>Episode:</strong> 6</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> From his earliest days as a songwriter,
+Paul McCartney was interested in love songs. But by the time of Wing’s
+1976 album “At the Speed of Sound” McCartney had become tired of critics
+suggesting that was all he wrote. And so he wrote the album’s lead
+single, a defiant anthem about the importance of love in our lives, and
+named it “Silly Love Songs.” Through discussing this song with Paul
+Muldoon, McCartney also touches on some of the other love songs in his
+catalogue: “Can’t Buy Me Love,” “All My Loving,” “I Will” and one he
+wrote for his wife, Nancy —”My Valentine.” “McCartney: A Life in
+Lyri…</p>
+<h3 id="mccartneylifeinlyrics-a-day-in-the-life"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/bbead8b5-6a90-4a37-8931-b115010b6fc3/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">A
+Day in the Life</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/a-day-in-the-life">Episode
+page</a></p>
+<p><strong>Date:</strong> March 13, 2024</p>
+<p><strong>Duration:</strong> 1599</p>
+<p><strong>Episode:</strong> 7</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> Paul McCartney and John Lennon had a knack
+for finishing each other’s songs. They collaborated by lending ideas for
+verses, choruses and middle eights many times over the course of their
+partnership. 1967’s “A Day in the Life” is one of the most prominent
+examples of McCartney and Lennon’s collaboration. What started as a
+Lennon song, once worked on with McCartney, became a truly collaborative
+piece—and a standout in The Beatles’ catalog. “McCartney: A Life in
+Lyrics” is a co-production between iHeart Media, MPL and Pushkin
+Industries. The series was produced by Pejk Malinovski and Sara
+McCrea…</p>
+<h3 id="mccartneylifeinlyrics-hey-jude"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/30b20fc3-92fe-4eb1-850b-b11501182251/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Hey
+Jude</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/hey-jude">Episode
+page</a></p>
+<p><strong>Date:</strong> March 20, 2024</p>
+<p><strong>Duration:</strong> 1176</p>
+<p><strong>Episode:</strong> 8</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> In 1968 the longest song to ever reach
+number one on the Billboard charts was Paul McCartney’s epic “Hey
+Jude”—clocking in at seven minutes and twelve seconds. The song was
+written to soothe John Lennon’s son Julian amid his parent’s divorce.
+But as with all great works, it has come to mean something a little
+different to everyone who hears it. “McCartney: A Life in Lyrics” is a
+co-production between iHeart Media, MPL and Pushkin Industries. The
+series was produced by Pejk Malinovski and Sara McCrea; written by Sara
+McCrea; edited by Dan O’Donnell and Sophie Crane; mastered by Jason
+Gambrell w…</p>
+<h3 id="mccartneylifeinlyrics-here-there-and-everywhere"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/4489b1d7-a79a-40b2-accb-b11701495d0f/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Here,
+There and Everywhere</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/here-there-and-everywhere">Episode
+page</a></p>
+<p><strong>Date:</strong> March 27, 2024</p>
+<p><strong>Duration:</strong> 1144</p>
+<p><strong>Episode:</strong> 9</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> The breadth of Paul McCartney’s influences
+is astounding. One of the many surprising places McCartney found
+inspiration was in the music of his parent’s generation. For 1966’s
+“Here, There and Everywhere”, he found himself looking to write
+something akin to Fred Astaire’s 1935 classic “Cheek to Cheek.” In the
+process, McCartney wrote what might be his favorite song in his catalog.
+“McCartney: A Life in Lyrics” is a co-production between iHeart Media,
+MPL and Pushkin Industries. The series was produced by Pejk Malinovski
+and Sara McCrea; written by Sara McCrea; edited by Dan O’Donnell and
+Sophi…</p>
+<h3 id="mccartneylifeinlyrics-give-ireland-back-to-the-irish"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/e2cc212a-2966-4d13-b616-b11701575647/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Give
+Ireland Back to the Irish</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/give-ireland-back-to-the-irish">Episode
+page</a></p>
+<p><strong>Date:</strong> April 3, 2024</p>
+<p><strong>Duration:</strong> 1272</p>
+<p><strong>Episode:</strong> 10</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> This episode deals with themes and events
+surrounding the Northern Ireland conflict. As such, this episode may be
+traumatic or emotional for some listeners. Paul McCartney doesn’t view
+himself as a writer of protest songs. But the events of Bloody Sunday
+sufficiently moved him to use his voice. Rush released as Wings first
+single in 1972, “Give Ireland Back To The Irish” was banned in Britain
+by the BBC and in the US radio avoided playing it. However, through any
+criticism, McCartney stood steadfastly behind the release which
+ultimately reached number one in Ireland. “McCartney: A Life in
+Lyri…</p>
+<h3 id="mccartneylifeinlyrics-michelle"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/9470141a-8964-4f5f-a3ef-b1170161928e/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Michelle</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/michelle">Episode
+page</a></p>
+<p><strong>Date:</strong> April 10, 2024</p>
+<p><strong>Duration:</strong> 1561</p>
+<p><strong>Episode:</strong> 11</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> “Michelle” from 1965’s Rubber Soul started
+as a kind of light-hearted party piece. But in McCartney’s quest to turn
+it into a legitimate Beatles song, he went on a bit of a journey to
+sound not only like a believable French chanteur but also to expand his
+approach to bass playing, taking inspiration from Motown’s James
+Jamerson. “McCartney: A Life in Lyrics” is a co-production between
+iHeart Media, MPL and Pushkin Industries. The series was produced by
+Pejk Malinovski and Sara McCrea; written by Sara McCrea; edited by Dan
+O’Donnell and Sophie Crane; mastered by Jason Gambrell with assistance
+f…</p>
+<h3 id="mccartneylifeinlyrics-the-end"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/75108f39-458c-4351-b0d7-b11701683809/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">The
+End</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/the-end">Episode
+page</a></p>
+<p><strong>Date:</strong> April 17, 2024</p>
+<p><strong>Duration:</strong> 1715</p>
+<p><strong>Episode:</strong> 12</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> Coming at the end of an intensely creative
+period, The Beatles’ Abbey Road features some of the most adventurous
+compositions in the quartet’s catalog. It’s fitting then that the album
+concludes with one of the most inventive and famous medley committed to
+record. To close season two of “A Life in Lyrics” McCartney discusses
+The Beatles’ send off to recording: “Golden Slumbers”, “Carry That
+Weight” and “The End.” “McCartney: A Life in Lyrics” is a co-production
+between iHeart Media, MPL and Pushkin Industries. The series was
+produced by Pejk Malinovski and Sara McCrea; written by Sara McCrea;
+…</p>
+<h2 id="trailers-and-cross-promotions">Trailers and Cross-Promotions
+(1)</h2>
+<h3
+id="mccartneylifeinlyrics-welcome-to-season-2-of-mccartney-a-life-in-lyrics"><a
+href="https://podtrac.com/pts/redirect.mp3/pdrl.fm/091863/tracking.swap.fm/track/SxlTEPDY7xDg35RXkASs/traffic.omny.fm/d/clips/e73c998e-6e60-432f-8610-ae210140c5b1/c4c8bc3c-054b-4c4f-a4b5-b03d0111a20c/bc6c3f4c-2a7e-45da-9189-b103015f1d08/audio.mp3?utm_source=Podcast&amp;in_playlist=0f3346d9-a2d7-4c41-827b-b03d0112826f">Welcome
+to Season 2 of McCartney: A Life in Lyrics</a></h3>
+<p><a
+href="https://omny.fm/shows/mccartney-a-life-in-lyrics/welcome-to-season-2-of-mccartney-a-life-in-lyrics">Episode
+page</a></p>
+<p><strong>Date:</strong> January 29, 2024</p>
+<p><strong>Duration:</strong> 96</p>
+<p><strong>Season:</strong> 2</p>
+<p><strong>Summary:</strong> Vote for “McCartney: A Life in Lyrics“ as
+the Webby Awards’ Best Music Podcast now: Season Two of McCartney: A
+Life in Lyrics comes out weekly starting February 7th, and features the
+stories behind songs like Yesterday, Band on the Run, Here, There and
+Everywhere, Picasso’s Last Words (Drink to Me) and many more. Binge the
+entire season early and ad-free starting February 7th by subscribing to
+Pushkin+ on our Apple show page or at pushkin.fm/plus . See
+omnystudio.com/listener for privacy information</p>
+<h2 id="appendix-a-episodes-by-date">Appendix A: Episodes by Date</h2>
+<p>Every episode in publication order, newest first, grouped by
+year.</p>
+<h3 id="section">2024</h3>
+<ul>
+<li><a href="#mccartneylifeinlyrics-the-end">The End</a> — April 17</li>
+<li><a href="#mccartneylifeinlyrics-michelle">Michelle</a> — April
+10</li>
+<li><a href="#mccartneylifeinlyrics-give-ireland-back-to-the-irish">Give
+Ireland Back to the Irish</a> — April 3</li>
+<li><a href="#mccartneylifeinlyrics-here-there-and-everywhere">Here,
+There and Everywhere</a> — March 27</li>
+<li><a href="#mccartneylifeinlyrics-hey-jude">Hey Jude</a> — March
+20</li>
+<li><a href="#mccartneylifeinlyrics-a-day-in-the-life">A Day in the
+Life</a> — March 13</li>
+<li><a href="#mccartneylifeinlyrics-silly-love-songs">Silly Love
+Songs</a> — March 6</li>
+<li><a
+href="#mccartneylifeinlyrics-picasso-s-last-words-drink-to-me">Picasso’s
+Last Words (Drink to Me)</a> — February 28</li>
+<li><a href="#mccartneylifeinlyrics-yesterday">Yesterday</a> — February
+21</li>
+<li><a href="#mccartneylifeinlyrics-maxwell-s-silver-hammer">Maxwell’s
+Silver Hammer</a> — February 14</li>
+<li><a href="#mccartneylifeinlyrics-band-on-the-run">Band on the Run</a>
+— February 7</li>
+<li><a href="#mccartneylifeinlyrics-love-me-do">Love Me Do</a> —
+February 7</li>
+</ul>
+<h3 id="section-1">2023</h3>
+<ul>
+<li><a href="#mccartneylifeinlyrics-helter-skelter">Helter Skelter</a> —
+December 13</li>
+<li><a href="#mccartneylifeinlyrics-too-many-people">Too Many People</a>
+— December 6</li>
+<li><a href="#mccartneylifeinlyrics-jenny-wren-blackbird">Jenny Wren /
+Blackbird</a> — November 29</li>
+<li><a href="#mccartneylifeinlyrics-magical-mystery-tour">Magical
+Mystery Tour</a> — November 22</li>
+<li><a href="#mccartneylifeinlyrics-live-and-let-die">Live and Let
+Die</a> — November 15</li>
+<li><a href="#mccartneylifeinlyrics-here-today">Here Today</a> —
+November 8</li>
+<li><a href="#mccartneylifeinlyrics-uncle-albert-admiral-halsey">Uncle
+Albert/Admiral Halsey</a> — November 1</li>
+<li><a href="#mccartneylifeinlyrics-penny-lane">Penny Lane</a> — October
+25</li>
+<li><a
+href="#mccartneylifeinlyrics-when-winter-comes-mull-of-kintyre">When
+Winter Comes / Mull of Kintyre</a> — October 18</li>
+<li><a href="#mccartneylifeinlyrics-let-it-be">Let It Be</a> — October
+11</li>
+<li><a href="#mccartneylifeinlyrics-back-in-the-u-s-s-r">Back In the
+U.S.S.R.</a> — October 4</li>
+<li><a href="#mccartneylifeinlyrics-eleanor-rigby">Eleanor Rigby</a> —
+October 4</li>
+<li><a
+href="#mccartneylifeinlyrics-welcome-to-mccartney-a-life-in-lyrics">Welcome
+to McCartney: A Life in Lyrics</a> — July 18</li>
+</ul>
+<h2 id="appendix-b-episodes-by-title">Appendix B: Episodes by Title</h2>
+<p>Every episode in order by title, ignoring a leading “A”, “An”, or
+“The”.</p>
+<ul>
+<li><a href="#mccartneylifeinlyrics-back-in-the-u-s-s-r">Back In the
+U.S.S.R.</a></li>
+<li><a href="#mccartneylifeinlyrics-band-on-the-run">Band on the
+Run</a></li>
+<li><a href="#mccartneylifeinlyrics-a-day-in-the-life">A Day in the
+Life</a></li>
+<li><a href="#mccartneylifeinlyrics-eleanor-rigby">Eleanor
+Rigby</a></li>
+<li><a href="#mccartneylifeinlyrics-the-end">The End</a></li>
+<li><a href="#mccartneylifeinlyrics-give-ireland-back-to-the-irish">Give
+Ireland Back to the Irish</a></li>
+<li><a href="#mccartneylifeinlyrics-helter-skelter">Helter
+Skelter</a></li>
+<li><a href="#mccartneylifeinlyrics-here-today">Here Today</a></li>
+<li><a href="#mccartneylifeinlyrics-here-there-and-everywhere">Here,
+There and Everywhere</a></li>
+<li><a href="#mccartneylifeinlyrics-hey-jude">Hey Jude</a></li>
+<li><a href="#mccartneylifeinlyrics-jenny-wren-blackbird">Jenny Wren /
+Blackbird</a></li>
+<li><a href="#mccartneylifeinlyrics-let-it-be">Let It Be</a></li>
+<li><a href="#mccartneylifeinlyrics-live-and-let-die">Live and Let
+Die</a></li>
+<li><a href="#mccartneylifeinlyrics-love-me-do">Love Me Do</a></li>
+<li><a href="#mccartneylifeinlyrics-magical-mystery-tour">Magical
+Mystery Tour</a></li>
+<li><a href="#mccartneylifeinlyrics-maxwell-s-silver-hammer">Maxwell’s
+Silver Hammer</a></li>
+<li><a href="#mccartneylifeinlyrics-michelle">Michelle</a></li>
+<li><a href="#mccartneylifeinlyrics-penny-lane">Penny Lane</a></li>
+<li><a
+href="#mccartneylifeinlyrics-picasso-s-last-words-drink-to-me">Picasso’s
+Last Words (Drink to Me)</a></li>
+<li><a href="#mccartneylifeinlyrics-silly-love-songs">Silly Love
+Songs</a></li>
+<li><a href="#mccartneylifeinlyrics-too-many-people">Too Many
+People</a></li>
+<li><a href="#mccartneylifeinlyrics-uncle-albert-admiral-halsey">Uncle
+Albert/Admiral Halsey</a></li>
+<li><a
+href="#mccartneylifeinlyrics-welcome-to-mccartney-a-life-in-lyrics">Welcome
+to McCartney: A Life in Lyrics</a></li>
+<li><a
+href="#mccartneylifeinlyrics-when-winter-comes-mull-of-kintyre">When
+Winter Comes / Mull of Kintyre</a></li>
+<li><a href="#mccartneylifeinlyrics-yesterday">Yesterday</a></li>
+</ul>
+</main>
+</body>
+</html>
